@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-integration-techniques" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Integration techniques</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./integration-by-substitution.ptx" />
+    <xi:include href="./integration-by-parts.ptx" />
+    <xi:include href="./trigonometric-integrals.ptx" />
+    <xi:include href="./trigonometric-substitution.ptx" />
+    <xi:include href="./partial-fractions.ptx" />
+</chapter>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-applications-of-derivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Applications of derivatives</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./related-rates.ptx" />
+    <xi:include href="./optimization.ptx" />
+    <xi:include href="./higher-order-derivatives.ptx" />
+    <xi:include href="./linear-approximation.ptx" />
+</chapter>

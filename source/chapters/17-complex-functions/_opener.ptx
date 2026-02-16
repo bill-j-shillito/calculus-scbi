@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-complex-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Complex functions</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./the-geometry-of-complex-numbers.ptx" />
+    <xi:include href="./complex-functions-as-transformations.ptx" />
+    <xi:include href="./complex-infinity.ptx" />
+    <xi:include href="./extending-complex-functions.ptx" />
+</chapter>

@@ -13,61 +13,56 @@
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
-    <chapter xml:id="course-documents">
-      <title>Course Documents</title>
+    <part xml:id="part-describing-change">
+      <title>Describing Change</title>
 
-      <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
-      <!-- Other documents could go here, like a schedule, project description, etc. -->
-    </chapter>
+      <xi:include href="./chapters/01-differentiation/_opener.ptx" />
+      <xi:include href="./chapters/02-applications-of-derivatives/_opener.ptx" />
+      <xi:include href="./chapters/03-integration/_opener.ptx" />
+      <xi:include href="./chapters/04-differential-equations/_opener.ptx" />
+      <xi:include href="./chapters/05-limits/_opener.ptx" />
+    </part>
 
-    <chapter xml:id="course-notes">
-      <title>Course Notes</title>
+    <part xml:id="part-harnessing-infinity">
+      <title>Harnessing Infinity</title>
+      
+      <xi:include href="./chapters/06-analytic-geometry/_opener.ptx" />
+      <xi:include href="./chapters/07-area-and-volume/_opener.ptx" />
+      <xi:include href="./chapters/08-integration-techniques/_opener.ptx" />
+      <xi:include href="./chapters/09-special-functions/_opener.ptx" />
+      <xi:include href="./chapters/10-infinite-series/_opener.ptx" />
+    </part>
 
-      <introduction>
-        <p>
-          The following notes are intended to remind you what we covered each week.
-          They are not a substitute for attending class and not a substitute for reading the textbook.
-        </p>
-      </introduction>
+    <part xml:id="part-new-dimensions">
+      <title>New Dimensions</title>
+      
+      <xi:include href="./chapters/11-higher-dimensions/_opener.ptx" />
+      <xi:include href="./chapters/12-partial-derivatives/_opener.ptx" />
+      <xi:include href="./chapters/13-vectors/_opener.ptx" />
+      <xi:include href="./chapters/14-gradients/_opener.ptx" />
+      <xi:include href="./chapters/15-multiple-integrals/_opener.ptx" />
+    </part>
 
-      <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
-      <!-- etc. -->
+    <part xml:id="part-transforming-perspectives">
+      <title>Transforming Perspectives</title>
+      
+      <xi:include href="./chapters/16-coordinate-transformations/_opener.ptx" />
+      <xi:include href="./chapters/17-complex-functions/_opener.ptx" />
+      <xi:include href="./chapters/18-vector-fields/_opener.ptx" />
+      <xi:include href="./chapters/19-line-and-surface-integrals/_opener.ptx" />
+      <xi:include href="./chapters/20-fundamental-theorems/_opener.ptx" />
+    </part>
 
-    </chapter>
-
-
-    <chapter xml:id="activities">
-      <title>In-Class Activities</title>
-
-      <introduction>
-        <p>
-          These are copies of the in-class activities distributed during the semester.
-        </p>
-      </introduction>
-
-      <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
-
-      <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
-
-    <chapter xml:id="handouts">
-      <title>Handouts</title>
-      <!-- Include handouts -->
-      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
-    </chapter>
-
-    <chapter xml:id="homework">
-      <title>Homework</title>
-
-      <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
-
-    </chapter>
-
-    <!-- Include additional chapters for other categories -->
+    <part xml:id="part-firm-foundations">
+      <title>Firm Foundations</title>
+      
+      <xi:include href="./chapters/21-properties-of-real-numbers/_opener.ptx" />
+      <xi:include href="./chapters/22-sequences-and-limits/_opener.ptx" />
+      <xi:include href="./chapters/23-differentiability/_opener.ptx" />
+      <xi:include href="./chapters/24-integrability/_opener.ptx" />
+      <xi:include href="./chapters/25-series-and-limiting-processes/_opener.ptx" />
+    </part>
+    
 
     </book>
   </pretext>

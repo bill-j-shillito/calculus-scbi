@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-coordinate-transformations" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Coordinate transformations</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./changes-of-coordinates.ptx" />
+    <xi:include href="./calculus-in-polar-coordinates.ptx" />
+    <xi:include href="./the-jacobian.ptx" />
+    <xi:include href="./polar-double-integrals.ptx" />
+    <xi:include href="./cylindrical-spherical.ptx" />
+</chapter>

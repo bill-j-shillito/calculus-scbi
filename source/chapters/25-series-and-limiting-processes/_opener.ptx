@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-series-and-limiting-processes" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Series and limiting processes</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./convergence-of-series.ptx" />
+    <xi:include href="./absolute-and-conditional-convergence.ptx" />
+    <xi:include href="./pointwise-and-uniform-convergence.ptx" />
+    <xi:include href="./interchanging-limit-processes.ptx" />
+    <xi:include href="./convergence-of-power-series.ptx" />
+    <xi:include href="./picards-theorem.ptx" />
+    <xi:include href="./non-standard-analysis.ptx" />
+</chapter>

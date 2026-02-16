@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-area-and-volume" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Area and volume</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./area-between-curves.ptx" />
+    <xi:include href="./volume-by-slicing.ptx" />
+    <xi:include href="./volume-by-shells.ptx" />
+    <xi:include href="./surfaces-of-revolution.ptx" />
+</chapter>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-analytic-geometry" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Analytic geometry</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./motion-in-the-plane.ptx" />
+    <xi:include href="./parametric-curves.ptx" />
+    <xi:include href="./arc-length.ptx" />
+    <xi:include href="./angle-of-inclination.ptx" />
+    <xi:include href="./curvature.ptx" />
+</chapter>

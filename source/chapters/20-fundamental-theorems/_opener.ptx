@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-fundamental-theorems" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Fundamental theorems</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./conservative-vector-fields.ptx" />
+    <xi:include href="./greens-theorem.ptx" />
+    <xi:include href="./fundamental-theorems-in-higher-dimensions.ptx" />
+    <xi:include href="./integrals-of-holomorphic-functions.ptx" />
+    <xi:include href="./singularities-and-laurent-series.ptx" />
+    <xi:include href="./the-residue-theorem.ptx" />
+    <xi:include href="./exterior-calculus.ptx" />
+</chapter>

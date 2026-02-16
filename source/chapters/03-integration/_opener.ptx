@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-integration" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Integration</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./the-integral.ptx" />
+    <xi:include href="./properties-of-integrals.ptx" />
+    <xi:include href="./the-fundamental-theorem-of-calculus.ptx" />
+    <xi:include href="./average-value-and-average-rates.ptx" />
+</chapter>

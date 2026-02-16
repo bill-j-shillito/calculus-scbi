@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-properties-of-real-numbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Properties of the real numbers</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./the-need-for-rigor.ptx" />
+    <xi:include href="./ordered-fields.ptx" />
+    <xi:include href="./the-completeness-property.ptx" />
+    <xi:include href="./topology-of-the-real-numbers.ptx" />
+</chapter>

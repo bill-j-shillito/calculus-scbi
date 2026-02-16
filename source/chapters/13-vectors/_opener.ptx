@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-vectors" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Vectors</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./vector-valued-functions.ptx" />
+    <xi:include href="./describing-motion-with-vectors.ptx" />
+    <xi:include href="./the-dot-product-and-cross-product.ptx" />
+    <xi:include href="./the-frenet-serret-frame.ptx" />
+</chapter>

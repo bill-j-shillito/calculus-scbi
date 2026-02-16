@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-differential-equations" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Differential equations</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+    
+    <xi:include href="./differential-equations.ptx" />
+    <xi:include href="./exponential-functions.ptx" />
+    <xi:include href="./trigonometric-functions.ptx" />
+    <xi:include href="./logarithmic-functions.ptx" />
+    <xi:include href="./separation-of-variables.ptx" />
+</chapter>

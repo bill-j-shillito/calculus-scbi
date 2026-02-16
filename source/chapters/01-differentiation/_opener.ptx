@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-differentiation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Differentiation</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./welcome-to-calculus.ptx" />
+    <xi:include href="./the-derivative.ptx" />
+    <xi:include href="./differentiating-products-and-powers.ptx" />
+    <xi:include href="./advanced-differentiation-techniques.ptx" />
+    <xi:include href="./implicit-differentiation.ptx" />
+</chapter>

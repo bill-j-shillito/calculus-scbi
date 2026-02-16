@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-multiple-integrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Multiple integrals</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./double-integrals-and-iterated-integrals.ptx" />
+    <xi:include href="./double-integrals-over-general-regions.ptx" />
+    <xi:include href="./surface-area.ptx" />
+    <xi:include href="./triple-integrals.ptx" />
+    <xi:include href="./center-of-mass.ptx" />
+    <xi:include href="./multivariable-probability.ptx" />
+    <xi:include href="./calculus-of-variations.ptx" />
+</chapter>

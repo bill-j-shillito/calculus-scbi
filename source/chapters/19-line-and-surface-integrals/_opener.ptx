@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-line-and-surface-integrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Line and surface integrals</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./line-integrals.ptx" />
+    <xi:include href="./work-circulation-and-flux.ptx" />
+    <xi:include href="./contour-integrals.ptx" />
+    <xi:include href="./surface-integrals.ptx" />
+    <xi:include href="./integrals-over-oriented-surfaces.ptx" />
+</chapter>

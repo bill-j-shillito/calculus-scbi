@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-vector-fields" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Vector fields</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./vector-fields.ptx" />
+    <xi:include href="./new-derivatives-and-del.ptx" />
+    <xi:include href="./cauchy-riemann.ptx" />
+    <xi:include href="./harmonic-functions.ptx" />
+</chapter>

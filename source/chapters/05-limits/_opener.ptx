@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-limits" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Limits</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./limits-and-continuity.ptx" />
+    <xi:include href="./analytic-techniques-for-limits.ptx" />
+    <xi:include href="./limits-and-differentiation.ptx" />
+    <xi:include href="./limits-and-integration.ptx" />
+    <xi:include href="./l-hopitals-rule.ptx" />
+    <xi:include href="./valuable-theorems.ptx" />
+    <xi:include href="./proving-the-fundamental-theorem.ptx" />
+</chapter>

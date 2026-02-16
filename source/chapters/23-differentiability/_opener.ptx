@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-differentiability" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Differentiability</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./differentiability-classes.ptx" />
+    <xi:include href="./the-mean-value-theorem.ptx" />
+    <xi:include href="./taylors-theorem.ptx" />
+    <xi:include href="./inverse-and-implicit-functions.ptx" />
+</chapter>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-sequences-and-limits" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Sequences and limits</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./convergence-of-sequences.ptx" />
+    <xi:include href="./proving-limit-laws.ptx" />
+    <xi:include href="./limits-of-functions.ptx" />
+    <xi:include href="./cauchy-sequences.ptx" />
+    <xi:include href="./constructing-the-real-numbers.ptx" />
+</chapter>

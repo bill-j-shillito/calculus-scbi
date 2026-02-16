@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-special-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Special functions</title>
+
+    <introduction>
+        <p>
+            Introduction will go here.
+        </p>
+    </introduction>
+
+    <xi:include href="./functions-defined-by-integrals.ptx" />
+    <xi:include href="./numerical-integration.ptx" />
+    <xi:include href="./improper-integrals.ptx" />
+    <xi:include href="./probability-distributions.ptx" />
+</chapter>
