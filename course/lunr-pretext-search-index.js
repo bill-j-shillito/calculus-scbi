@@ -726,8 +726,8 @@ var ptx_lunr_docs = [
   "url": "sec-cylindrical-spherical.html",
   "type": "Section",
   "number": "16.5",
-  "title": "Cylindrical and spherical coordinate systems",
-  "body": " Cylindrical and spherical coordinate systems  "
+  "title": "Cylindrical and spherical coordinates",
+  "body": " Cylindrical and spherical coordinates  "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers",
@@ -825,8 +825,8 @@ var ptx_lunr_docs = [
   "url": "sec-contour-integrals.html",
   "type": "Section",
   "number": "19.3",
-  "title": "Contour integarls",
-  "body": " Contour integarls  "
+  "title": "Contour integrals",
+  "body": " Contour integrals  "
 },
 {
   "id": "sec-surface-integrals",
