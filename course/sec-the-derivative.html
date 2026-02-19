@@ -10,7 +10,7 @@
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
 <!--*  Theme: denver                         *-->
-<!--*  Palette:                              *-->
+<!--*  Palette: bold                         *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -136,10 +136,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-welcome-to-calculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-differentiation.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-differentiating-products-and-powers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
+\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\inv}{^{-1}}
+\newcommand{\DS}{\displaystyle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -155,7 +158,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-differentiation.html" class="internal"><span class="codenumber">1</span> <span class="title">Differentiation</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-welcome-to-calculus.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Welcome to calculus!</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-welcome-to-calculus.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Welcome to calculus!</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-welcome-to-calculus.html#sec-welcome-to-calculus-4" class="internal"><span class="title">Things to include</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-welcome-to-calculus.html#sec-welcome-to-calculus-5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-the-derivative.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The derivative: sensitivity to change</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiating-products-and-powers.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Differentiating products and powers</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-advanced-differentiation-techniques.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Advanced differentiation techniques</span></a></div></li>
@@ -428,6 +437,75 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-the-derivative"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The derivative: sensitivity to change</span>
 </h2>
+<article class="objectives goal-like" id="sec-the-derivative-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ol class="decimal" id="sec-the-derivative-2-1">
+<li id="sec-the-derivative-2-1-1">
+<div class="para" id="sec-the-derivative-2-1-1-1">Measure a function’s responsiveness to small changes using differentials.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 1.2.1"><a href="#sec-the-derivative-2-1-1" title="Copy heading and permalink for Objective 1.2.1" aria-label="Copy heading and permalink for Objective 1.2.1">🔗</a></div>
+</li>
+<li id="sec-the-derivative-2-1-2">
+<div class="para" id="sec-the-derivative-2-1-2-1">Interpret the derivative as a ratio of differentials to analyze behavior.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 1.2.2"><a href="#sec-the-derivative-2-1-2" title="Copy heading and permalink for Objective 1.2.2" aria-label="Copy heading and permalink for Objective 1.2.2">🔗</a></div>
+</li>
+<li id="sec-the-derivative-2-1-3">
+<div class="para" id="sec-the-derivative-2-1-3-1">Use the sign of a derivative to identify increasing and decreasing intervals.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 1.2.3"><a href="#sec-the-derivative-2-1-3" title="Copy heading and permalink for Objective 1.2.3" aria-label="Copy heading and permalink for Objective 1.2.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 1.2"><a href="#sec-the-derivative-2" title="Copy heading and permalink for Objectives 1.2" aria-label="Copy heading and permalink for Objectives 1.2">🔗</a></div></article><section class="introduction" id="sec-the-derivative-3"><div class="para" id="sec-the-derivative-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><ul class="disc" id="sec-the-derivative-4">
+<li id="sec-the-derivative-4-1">
+<div class="para" id="sec-the-derivative-4-1-1">Kleiber’s law: <span class="process-math">\(C(m)=km^{3/4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-derivative-4-2">
+<div class="para" id="sec-the-derivative-4-2-1">Compare “sensitivity” of caloric intake to changes in mass for two different points, using approximate slopes between closer-and-closer points<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-derivative-4-3">
+<div class="para" id="sec-the-derivative-4-3-1">Small change is called a differential<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-derivative-4-3-2">Notation: <span class="process-math">\(\dd{x}\text{,}\)</span> <span class="process-math">\(\dd{y}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-derivative-4-4">
+<div class="para" id="sec-the-derivative-4-4-1">Ratio of differentials is the derivative<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-derivative-4-4-2">Notation: <span class="process-math">\(\DS\dv{y}{x}=f'(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-derivative-4-5">
+<div class="para" id="sec-the-derivative-4-5-1">Separate and you get <span class="process-math">\(\dd{y}=f'(x)\dd{x}\text{;}\)</span> this will often be the cleanest way to derive new derivative rules<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-derivative-4-6">
+<div class="para logical" id="sec-the-derivative-4-6-1">
+<div class="para">Sign analysis</div>
+<ul class="circle" id="sec-the-derivative-4-6-1-1">
+<li id="sec-the-derivative-4-6-1-1-1">
+<div class="para" id="sec-the-derivative-4-6-1-1-1-1">If <span class="process-math">\(\DS\dv{y}{x}&gt;0\)</span> on an interval, then <span class="process-math">\(f\)</span> is increasing on that interval<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-6-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-6-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-derivative-4-6-1-1-2">
+<div class="para" id="sec-the-derivative-4-6-1-1-2-1">If <span class="process-math">\(\DS\dv{y}{x}&lt;0\)</span> on an interval, then <span class="process-math">\(f\)</span> is decreasing on that interval<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-6-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-6-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-derivative-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-derivative-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
 <div class="autopermalink" data-description="Section 1.2: The derivative: sensitivity to change"><a href="#sec-the-derivative" title="Copy heading and permalink for Section 1.2: The derivative: sensitivity to change" aria-label="Copy heading and permalink for Section 1.2: The derivative: sensitivity to change">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-welcome-to-calculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-differentiating-products-and-powers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

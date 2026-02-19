@@ -7,7 +7,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Welcome to calculus!",
-  "body": " Welcome to calculus!  "
+  "body": " Welcome to calculus!      Understand how curves locally resemble straight lines when viewed up close.    Approximate lengths or areas by decomposing shapes into small pieces.    Relate familiar geometric ideas to their calculus counterparts.      Introduction goes here.    Things to include  Calculus lets you do all the stuff you used to do with simple shapes and do them with complex shapes.    Before calculus, you could find the slope of a line; using calculus, you can find the slope of a curve.    Before calculus, you could find the length of a line segment; using calculus, you can find the length of a curve.    Before calculus, you could find the area of a rectangle; using calculus, you can find the area under a curve.    Before calculus, you could find the average rate of change between two points; using calculus, you can find the instantaneous rate of change at a single point.    Before calculus, you could sum a finite number of terms in a sequence; using calculus, you can add infinitely many tiny pieces.    Example: Area of a circle by making thin pizza slices and rearranging them to make a parallelogram.     Consider the part of the parabola bounded between and .    Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.    Refine your estimate by breaking it into four equal-width segments.    Refine your estimate by breaking it into eight equal-width segments.    Conjecture the true length of the curve.      Consider a circle with a radius of . Inscribe an -sided polygon inside it. (The point of this activity is to inscribe AND circumscribe in a polygon, and let the number of sides go to infinity.)    "
+},
+{
+  "id": "sec-welcome-to-calculus-2",
+  "level": "2",
+  "url": "sec-welcome-to-calculus.html#sec-welcome-to-calculus-2",
+  "type": "Objectives",
+  "number": "1.1",
+  "title": "",
+  "body": "    Understand how curves locally resemble straight lines when viewed up close.    Approximate lengths or areas by decomposing shapes into small pieces.    Relate familiar geometric ideas to their calculus counterparts.    "
+},
+{
+  "id": "sec-welcome-to-calculus-5-1",
+  "level": "2",
+  "url": "sec-welcome-to-calculus.html#sec-welcome-to-calculus-5-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Consider the part of the parabola bounded between and .    Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.    Refine your estimate by breaking it into four equal-width segments.    Refine your estimate by breaking it into eight equal-width segments.    Conjecture the true length of the curve.    "
+},
+{
+  "id": "sec-welcome-to-calculus-5-2",
+  "level": "2",
+  "url": "sec-welcome-to-calculus.html#sec-welcome-to-calculus-5-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Consider a circle with a radius of . Inscribe an -sided polygon inside it. (The point of this activity is to inscribe AND circumscribe in a polygon, and let the number of sides go to infinity.)  "
 },
 {
   "id": "sec-the-derivative",
@@ -16,7 +43,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The derivative: sensitivity to change",
-  "body": " The derivative: sensitivity to change  "
+  "body": " The derivative: sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Introduction goes here.     Kleiber's law:     Compare sensitivity of caloric intake to changes in mass for two different points, using approximate slopes between closer-and-closer points    Small change is called a differential  Notation: ,     Ratio of differentials is the derivative  Notation:     Separate and you get ; this will often be the cleanest way to derive new derivative rules    Sign analysis   If on an interval, then is increasing on that interval    If on an interval, then is decreasing on that interval       "
+},
+{
+  "id": "sec-the-derivative-2",
+  "level": "2",
+  "url": "sec-the-derivative.html#sec-the-derivative-2",
+  "type": "Objectives",
+  "number": "1.2",
+  "title": "",
+  "body": "   Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.    "
 },
 {
   "id": "sec-differentiating-products-and-powers",
@@ -25,7 +61,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Differentiating products and powers",
-  "body": " Differentiating products and powers  "
+  "body": " Differentiating products and powers     Differentiate products by examining how each factor varies.    Justify and apply the Power Rule for natural-number exponents using differentials.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     Visual proof of Product Rule:          Apply to :     Extend to three variables:     Apply to :     Power Rule: (Only works when is a natural number right now)    Linearity properties:       Derivative of a polynomial term by term    "
+},
+{
+  "id": "sec-differentiating-products-and-powers-2",
+  "level": "2",
+  "url": "sec-differentiating-products-and-powers.html#sec-differentiating-products-and-powers-2",
+  "type": "Objectives",
+  "number": "1.3",
+  "title": "",
+  "body": "   Differentiate products by examining how each factor varies.    Justify and apply the Power Rule for natural-number exponents using differentials.    Combine linearity with product rules to differentiate polynomials.    "
 },
 {
   "id": "sec-advanced-differentiation-techniques",
@@ -34,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Advanced differentiation techniques",
-  "body": " Advanced differentiation techniques  In this section, you will learn to:   Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.      Content will go here.   "
+  "body": " Advanced differentiation techniques     Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.      Introduction goes here.     Find a few example functions that involve fractions and roots that we can use to justify wanting to do this chapter    Extend Power Rule to negative integers: Show this by computing in two ways.    Extend Power Rule to roots: Show this by computing in two different ways.    Chain Rule for differentials:     Chain Rule for derivatives:     Quotient Rule: Show this by computing .    Extend Power Rule to rational exponents: Show this by computing with the Chain Rule.    "
 },
 {
   "id": "sec-advanced-differentiation-techniques-2",
@@ -43,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "1.4",
   "title": "",
-  "body": "In this section, you will learn to:   Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.    "
+  "body": "   Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.    "
 },
 {
   "id": "sec-implicit-differentiation",
@@ -52,7 +97,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "Implicit differentiation",
-  "body": " Implicit differentiation  "
+  "body": " Implicit differentiation     Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.      Introduction goes here.     Use Bitcoin elliptic curve example?    Use differentials: take differential of both sides, then divide both sides by .  Example:     You can shortcut the differentials by taking derivatives and remembering to multiply by whenever you take a derivative of something involving .    Talk about tangent lines. Probably not normal lines; save that until the Analytic Geometry chapter in Part II.    "
+},
+{
+  "id": "sec-implicit-differentiation-2",
+  "level": "2",
+  "url": "sec-implicit-differentiation.html#sec-implicit-differentiation-2",
+  "type": "Objectives",
+  "number": "1.5",
+  "title": "",
+  "body": "   Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.    "
 },
 {
   "id": "sec-related-rates",
@@ -79,7 +133,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Higher order derivatives",
-  "body": " Higher order derivatives  "
+  "body": " Higher order derivatives    Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation nis still pretty standard and hence we should learn it.    Third and higher order derivatives    "
 },
 {
   "id": "sec-linear-approximation",
