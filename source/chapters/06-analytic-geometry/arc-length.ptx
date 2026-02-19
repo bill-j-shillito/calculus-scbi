@@ -29,5 +29,46 @@
     </p>
   </introduction>
 
+  <ul>
+    <li>
+      <p>
+        Differential of arc length:
+        <me>
+          \dd s=\sqrt{(\dd{x})^{2}+(\dd{y})^{2}}
+        </me>
+        (Show right triangle diagram)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Arc length:
+        <me>
+          s=\int_{a}^{b}\dd{s}=\int_{a}^{b}\sqrt{\qty(\dv{x}{t})^{2}+\qty(\dv{y}{t})^{2}}\dd{t}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If the curve is a function <m>y=f(x)</m>, the formula simplifies:
+        <me>
+          s=\int_{a}^{b} \sqrt{1+f'(x)^{2}}\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Easy to find arc length of a circle, but not doable for an ellipse! More on that later.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>(x,y)</m> is considered as the position of a particle, then the arc length is the distance traveled.
+      </p>
+    </li>
+  </ul>
   
 </section>
