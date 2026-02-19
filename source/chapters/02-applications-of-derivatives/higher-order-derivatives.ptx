@@ -31,7 +31,7 @@
 
     <li>
       <p>
-        Get into the Leibniz notation <m>\DS\dv[2]{y}{x}</m> ...and maybe why it’s NOT very good! The proper notation really should be <m>\DS\dv{x}(\dv{y}{x})</m>.
+        Get into the Leibniz notation <m>\DS{\dv[2]{y}{x}}</m> ...and maybe why it’s NOT very good! The proper notation really should be <m>\DS{\dv{x}(\dv{y}{x})}</m>.
         But the notation is still pretty standard and hence we should learn it.
       </p>
     </li>
