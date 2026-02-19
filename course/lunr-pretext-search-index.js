@@ -115,7 +115,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Related rates",
-  "body": " Related rates  "
+  "body": " Related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems    "
+},
+{
+  "id": "sec-related-rates-2",
+  "level": "2",
+  "url": "sec-related-rates.html#sec-related-rates-2",
+  "type": "Objectives",
+  "number": "2.1",
+  "title": "",
+  "body": "   Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.    "
 },
 {
   "id": "sec-optimization",
@@ -124,7 +133,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Optimization",
-  "body": " Optimization  "
+  "body": " Optimization     Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.      Introduction goes here.     Soda can example    Same modeling steps as in related rates    Don’t necessarily need to eliminate variables — using differentials also works!    Focus on absolute maxima and minima and candidates using Fermat's theorem: if has a local maximum at , then     Put First Derivative Test here?    "
+},
+{
+  "id": "sec-optimization-2",
+  "level": "2",
+  "url": "sec-optimization.html#sec-optimization-2",
+  "type": "Objectives",
+  "number": "2.2",
+  "title": "",
+  "body": "   Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.    "
 },
 {
   "id": "sec-higher-order-derivatives",
@@ -133,7 +151,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Higher order derivatives",
-  "body": " Higher order derivatives    Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
+  "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
+},
+{
+  "id": "sec-higher-order-derivatives-2",
+  "level": "2",
+  "url": "sec-higher-order-derivatives.html#sec-higher-order-derivatives-2",
+  "type": "Objectives",
+  "number": "2.3",
+  "title": "",
+  "body": "   Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.    "
 },
 {
   "id": "sec-linear-approximation",
@@ -142,7 +169,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Linear approximation",
-  "body": " Linear approximation  "
+  "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Approximation using differentials    Linearization of a function at :     Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Absolute error:     Relative error:     These can eventually get tied in with limits in Chapter 5.    "
+},
+{
+  "id": "sec-linear-approximation-2",
+  "level": "2",
+  "url": "sec-linear-approximation.html#sec-linear-approximation-2",
+  "type": "Objectives",
+  "number": "2.4",
+  "title": "",
+  "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
 },
 {
   "id": "sec-the-integral",
@@ -151,7 +187,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "The integral: accumulation of change",
-  "body": " The integral: accumulation of change  "
+  "body": " The integral: accumulation of change                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-integral-2",
+  "level": "2",
+  "url": "sec-the-integral.html#sec-the-integral-2",
+  "type": "Objectives",
+  "number": "3.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-properties-of-integrals",
@@ -160,7 +205,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Properties of integrals",
-  "body": " Properties of integrals  "
+  "body": " Properties of integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-properties-of-integrals-2",
+  "level": "2",
+  "url": "sec-properties-of-integrals.html#sec-properties-of-integrals-2",
+  "type": "Objectives",
+  "number": "3.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-fundamental-theorem-of-calculus",
@@ -169,7 +223,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "The Fundamental Theorem of Calculus",
-  "body": " The Fundamental Theorem of Calculus  "
+  "body": " The Fundamental Theorem of Calculus                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-fundamental-theorem-of-calculus-2",
+  "level": "2",
+  "url": "sec-the-fundamental-theorem-of-calculus.html#sec-the-fundamental-theorem-of-calculus-2",
+  "type": "Objectives",
+  "number": "3.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-average-value-and-average-rates",
@@ -178,7 +241,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Average value and average rates",
-  "body": " Average value and average rates  "
+  "body": " Average value and average rates                   Introduction goes here.   "
+},
+{
+  "id": "sec-average-value-and-average-rates-2",
+  "level": "2",
+  "url": "sec-average-value-and-average-rates.html#sec-average-value-and-average-rates-2",
+  "type": "Objectives",
+  "number": "3.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-differential-equations",
@@ -187,7 +259,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Differential equations",
-  "body": " Differential equations  "
+  "body": " Differential equations                   Introduction goes here.   "
+},
+{
+  "id": "sec-differential-equations-2",
+  "level": "2",
+  "url": "sec-differential-equations.html#sec-differential-equations-2",
+  "type": "Objectives",
+  "number": "4.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-exponential-functions",
@@ -196,7 +277,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Exponential functions",
-  "body": " Exponential functions  "
+  "body": " Exponential functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-exponential-functions-2",
+  "level": "2",
+  "url": "sec-exponential-functions.html#sec-exponential-functions-2",
+  "type": "Objectives",
+  "number": "4.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-trigonometric-functions",
@@ -205,7 +295,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Trigonometric functions",
-  "body": " Trigonometric functions  "
+  "body": " Trigonometric functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-trigonometric-functions-2",
+  "level": "2",
+  "url": "sec-trigonometric-functions.html#sec-trigonometric-functions-2",
+  "type": "Objectives",
+  "number": "4.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-logarithmic-functions",
@@ -214,7 +313,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Logarithmic functions",
-  "body": " Logarithmic functions  "
+  "body": " Logarithmic functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-logarithmic-functions-2",
+  "level": "2",
+  "url": "sec-logarithmic-functions.html#sec-logarithmic-functions-2",
+  "type": "Objectives",
+  "number": "4.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-separation-of-variables",
@@ -223,7 +331,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.5",
   "title": "Separation of variables",
-  "body": " Separation of variables  "
+  "body": " Separation of variables                   Introduction goes here.   "
+},
+{
+  "id": "sec-separation-of-variables-2",
+  "level": "2",
+  "url": "sec-separation-of-variables.html#sec-separation-of-variables-2",
+  "type": "Objectives",
+  "number": "4.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-limits-and-continuity",
@@ -232,7 +349,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Limits and continuity",
-  "body": " Limits and continuity  "
+  "body": " Limits and continuity                   Introduction goes here.   "
+},
+{
+  "id": "sec-limits-and-continuity-2",
+  "level": "2",
+  "url": "sec-limits-and-continuity.html#sec-limits-and-continuity-2",
+  "type": "Objectives",
+  "number": "5.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-analytic-techniques-for-limits",
@@ -241,7 +367,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Analytic techniques for limits",
-  "body": " Analytic techniques for limits  "
+  "body": " Analytic techniques for limits                   Introduction goes here.   "
+},
+{
+  "id": "sec-analytic-techniques-for-limits-2",
+  "level": "2",
+  "url": "sec-analytic-techniques-for-limits.html#sec-analytic-techniques-for-limits-2",
+  "type": "Objectives",
+  "number": "5.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-limits-and-differentiation",
@@ -250,7 +385,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Limits and differentiation",
-  "body": " Limits and differentiation  "
+  "body": " Limits and differentiation                   Introduction goes here.   "
+},
+{
+  "id": "sec-limits-and-differentiation-2",
+  "level": "2",
+  "url": "sec-limits-and-differentiation.html#sec-limits-and-differentiation-2",
+  "type": "Objectives",
+  "number": "5.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-limits-and-integration",
@@ -259,7 +403,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Limits and integration",
-  "body": " Limits and integration  "
+  "body": " Limits and integration                   Introduction goes here.   "
+},
+{
+  "id": "sec-limits-and-integration-2",
+  "level": "2",
+  "url": "sec-limits-and-integration.html#sec-limits-and-integration-2",
+  "type": "Objectives",
+  "number": "5.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-l-hopitals-rule",
@@ -268,7 +421,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.5",
   "title": "L’Hôpital’s rule",
-  "body": " L'Hôpital's rule  "
+  "body": " L'Hôpital's rule                   Introduction goes here.   "
+},
+{
+  "id": "sec-l-hopitals-rule-2",
+  "level": "2",
+  "url": "sec-l-hopitals-rule.html#sec-l-hopitals-rule-2",
+  "type": "Objectives",
+  "number": "5.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-valuable-theorems",
@@ -277,7 +439,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.6",
   "title": "Valuable theorems",
-  "body": " Valuable theorems  "
+  "body": " Valuable theorems                   Introduction goes here.   "
+},
+{
+  "id": "sec-valuable-theorems-2",
+  "level": "2",
+  "url": "sec-valuable-theorems.html#sec-valuable-theorems-2",
+  "type": "Objectives",
+  "number": "5.6",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-proving-the-fundamental-theorem",
@@ -295,7 +466,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Motion in the plane",
-  "body": " Motion in the plane  "
+  "body": " Motion in the plane                   Introduction goes here.   "
+},
+{
+  "id": "sec-motion-in-the-plane-2",
+  "level": "2",
+  "url": "sec-motion-in-the-plane.html#sec-motion-in-the-plane-2",
+  "type": "Objectives",
+  "number": "6.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-parametric-curves",
@@ -304,7 +484,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Parametric curves",
-  "body": " Parametric curves  "
+  "body": " Parametric curves                   Introduction goes here.   "
+},
+{
+  "id": "sec-parametric-curves-2",
+  "level": "2",
+  "url": "sec-parametric-curves.html#sec-parametric-curves-2",
+  "type": "Objectives",
+  "number": "6.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-arc-length",
@@ -313,7 +502,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Arc length",
-  "body": " Arc length  "
+  "body": " Arc length                   Introduction goes here.   "
+},
+{
+  "id": "sec-arc-length-2",
+  "level": "2",
+  "url": "sec-arc-length.html#sec-arc-length-2",
+  "type": "Objectives",
+  "number": "6.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-angle-of-inclination",
@@ -322,7 +520,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Angle of inclination",
-  "body": " Angle of inclination  "
+  "body": " Angle of inclination                   Introduction goes here.   "
+},
+{
+  "id": "sec-angle-of-inclination-2",
+  "level": "2",
+  "url": "sec-angle-of-inclination.html#sec-angle-of-inclination-2",
+  "type": "Objectives",
+  "number": "6.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-curvature",
@@ -331,7 +538,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.5",
   "title": "Curvature",
-  "body": " Curvature  "
+  "body": " Curvature                   Introduction goes here.   "
+},
+{
+  "id": "sec-curvature-2",
+  "level": "2",
+  "url": "sec-curvature.html#sec-curvature-2",
+  "type": "Objectives",
+  "number": "6.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-area-between-curves",
@@ -340,7 +556,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Area between curves",
-  "body": " Area between curves  "
+  "body": " Area between curves                   Introduction goes here.   "
+},
+{
+  "id": "sec-area-between-curves-2",
+  "level": "2",
+  "url": "sec-area-between-curves.html#sec-area-between-curves-2",
+  "type": "Objectives",
+  "number": "7.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-volume-by-slicing",
@@ -349,7 +574,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.2",
   "title": "Volume by slicing",
-  "body": " Volume by slicing  "
+  "body": " Volume by slicing                   Introduction goes here.   "
+},
+{
+  "id": "sec-volume-by-slicing-2",
+  "level": "2",
+  "url": "sec-volume-by-slicing.html#sec-volume-by-slicing-2",
+  "type": "Objectives",
+  "number": "7.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-volume-by-shells",
@@ -358,7 +592,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Volume by shells",
-  "body": " Volume by shells  "
+  "body": " Volume by shells                   Introduction goes here.   "
+},
+{
+  "id": "sec-volume-by-shells-2",
+  "level": "2",
+  "url": "sec-volume-by-shells.html#sec-volume-by-shells-2",
+  "type": "Objectives",
+  "number": "7.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-surfaces-of-revolution",
@@ -367,7 +610,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Surfaces of revolution",
-  "body": " Surfaces of revolution  "
+  "body": " Surfaces of revolution                   Introduction goes here.   "
+},
+{
+  "id": "sec-surfaces-of-revolution-2",
+  "level": "2",
+  "url": "sec-surfaces-of-revolution.html#sec-surfaces-of-revolution-2",
+  "type": "Objectives",
+  "number": "7.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-integration-by-substitution",
@@ -376,7 +628,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Integration by substitution",
-  "body": " Integration by substitution  "
+  "body": " Integration by substitution                   Introduction goes here.   "
+},
+{
+  "id": "sec-integration-by-substitution-2",
+  "level": "2",
+  "url": "sec-integration-by-substitution.html#sec-integration-by-substitution-2",
+  "type": "Objectives",
+  "number": "8.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-integration-by-parts",
@@ -385,7 +646,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Integration by parts",
-  "body": " Integration by parts  "
+  "body": " Integration by parts                   Introduction goes here.   "
+},
+{
+  "id": "sec-integration-by-parts-2",
+  "level": "2",
+  "url": "sec-integration-by-parts.html#sec-integration-by-parts-2",
+  "type": "Objectives",
+  "number": "8.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-trigonometric-integrals",
@@ -394,7 +664,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Trigonometric integrals",
-  "body": " Trigonometric integrals  "
+  "body": " Trigonometric integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-trigonometric-integrals-2",
+  "level": "2",
+  "url": "sec-trigonometric-integrals.html#sec-trigonometric-integrals-2",
+  "type": "Objectives",
+  "number": "8.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-trigonometric-substitution",
@@ -403,7 +682,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "Trigonometric substitution",
-  "body": " Trigonometric substitution  "
+  "body": " Trigonometric substitution                   Introduction goes here.   "
+},
+{
+  "id": "sec-trigonometric-substitution-2",
+  "level": "2",
+  "url": "sec-trigonometric-substitution.html#sec-trigonometric-substitution-2",
+  "type": "Objectives",
+  "number": "8.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-partial-fractions",
@@ -412,7 +700,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.5",
   "title": "Partial fractions",
-  "body": " Partial fractions  "
+  "body": " Partial fractions                   Introduction goes here.   "
+},
+{
+  "id": "sec-partial-fractions-2",
+  "level": "2",
+  "url": "sec-partial-fractions.html#sec-partial-fractions-2",
+  "type": "Objectives",
+  "number": "8.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-functions-defined-by-integrals",
@@ -421,7 +718,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "Functions defined by integrals",
-  "body": " Functions defined by integrals  "
+  "body": " Functions defined by integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-functions-defined-by-integrals-2",
+  "level": "2",
+  "url": "sec-functions-defined-by-integrals.html#sec-functions-defined-by-integrals-2",
+  "type": "Objectives",
+  "number": "9.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-numerical-integration",
@@ -430,7 +736,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.2",
   "title": "Numerical integration",
-  "body": " Numerical integration  "
+  "body": " Numerical integration                   Introduction goes here.   "
+},
+{
+  "id": "sec-numerical-integration-2",
+  "level": "2",
+  "url": "sec-numerical-integration.html#sec-numerical-integration-2",
+  "type": "Objectives",
+  "number": "9.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-improper-integrals",
@@ -439,7 +754,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.3",
   "title": "Improper integrals",
-  "body": " Improper integrals  "
+  "body": " Improper integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-improper-integrals-2",
+  "level": "2",
+  "url": "sec-improper-integrals.html#sec-improper-integrals-2",
+  "type": "Objectives",
+  "number": "9.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-probability-distributions",
@@ -448,7 +772,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.4",
   "title": "Probability distributions",
-  "body": " Probability distributions  "
+  "body": " Probability distributions                   Introduction goes here.   "
+},
+{
+  "id": "sec-probability-distributions-2",
+  "level": "2",
+  "url": "sec-probability-distributions.html#sec-probability-distributions-2",
+  "type": "Objectives",
+  "number": "9.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-taylor-approximations-and-series",
@@ -457,7 +790,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.1",
   "title": "Taylor approximations and series",
-  "body": " Taylor approximations and series  "
+  "body": " Taylor approximations and series                   Introduction goes here.   "
+},
+{
+  "id": "sec-taylor-approximations-and-series-2",
+  "level": "2",
+  "url": "sec-taylor-approximations-and-series.html#sec-taylor-approximations-and-series-2",
+  "type": "Objectives",
+  "number": "10.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-manipulating-power-series",
@@ -466,7 +808,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.2",
   "title": "Manipulating power series",
-  "body": " Manipulating power series  "
+  "body": " Manipulating power series                   Introduction goes here.   "
+},
+{
+  "id": "sec-manipulating-power-series-2",
+  "level": "2",
+  "url": "sec-manipulating-power-series.html#sec-manipulating-power-series-2",
+  "type": "Objectives",
+  "number": "10.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-geometric-series",
@@ -475,7 +826,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.3",
   "title": "Geometric series",
-  "body": " Geometric series  "
+  "body": " Geometric series                   Introduction goes here.   "
+},
+{
+  "id": "sec-geometric-series-2",
+  "level": "2",
+  "url": "sec-geometric-series.html#sec-geometric-series-2",
+  "type": "Objectives",
+  "number": "10.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-hyperbolic-functions",
@@ -484,7 +844,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.4",
   "title": "Hyperbolic functions",
-  "body": " Hyperbolic functions  "
+  "body": " Hyperbolic functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-hyperbolic-functions-2",
+  "level": "2",
+  "url": "sec-hyperbolic-functions.html#sec-hyperbolic-functions-2",
+  "type": "Objectives",
+  "number": "10.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-eulers-formula",
@@ -493,7 +862,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.5",
   "title": "Euler’s formula",
-  "body": " Euler's formula  "
+  "body": " Euler's formula                   Introduction goes here.   "
+},
+{
+  "id": "sec-eulers-formula-2",
+  "level": "2",
+  "url": "sec-eulers-formula.html#sec-eulers-formula-2",
+  "type": "Objectives",
+  "number": "10.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-fourier-series",
@@ -502,7 +880,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.6",
   "title": "Fourier series",
-  "body": " Fourier series  "
+  "body": " Fourier series                   Introduction goes here.   "
+},
+{
+  "id": "sec-fourier-series-2",
+  "level": "2",
+  "url": "sec-fourier-series.html#sec-fourier-series-2",
+  "type": "Objectives",
+  "number": "10.6",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-riemann-zeta-function",
@@ -520,7 +907,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.1",
   "title": "What are dimensions, really?",
-  "body": " What are dimensions, really?  "
+  "body": " What are dimensions, really?                   Introduction goes here.   "
+},
+{
+  "id": "sec-what-are-dimensions-really-2",
+  "level": "2",
+  "url": "sec-what-are-dimensions-really.html#sec-what-are-dimensions-really-2",
+  "type": "Objectives",
+  "number": "11.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-extending-to-higher-dimensions",
@@ -529,7 +925,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Extending to higher dimensions",
-  "body": " Extending to higher dimensions  "
+  "body": " Extending to higher dimensions                   Introduction goes here.   "
+},
+{
+  "id": "sec-extending-to-higher-dimensions-2",
+  "level": "2",
+  "url": "sec-extending-to-higher-dimensions.html#sec-extending-to-higher-dimensions-2",
+  "type": "Objectives",
+  "number": "11.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-",
@@ -538,7 +943,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.3",
   "title": "Slicing through dimensions",
-  "body": " Slicing through dimensions  "
+  "body": " Slicing through dimensions                   Introduction goes here.   "
+},
+{
+  "id": "sec--2",
+  "level": "2",
+  "url": "sec-.html#sec--2",
+  "type": "Objectives",
+  "number": "11.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-functions-of-multiple-variables",
@@ -547,7 +961,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Functions of multiple variables",
-  "body": " Functions of multiple variables  "
+  "body": " Functions of multiple variables                   Introduction goes here.   "
+},
+{
+  "id": "sec-functions-of-multiple-variables-2",
+  "level": "2",
+  "url": "sec-functions-of-multiple-variables.html#sec-functions-of-multiple-variables-2",
+  "type": "Objectives",
+  "number": "11.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-partial-derivatives",
@@ -556,7 +979,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.1",
   "title": "Partial derivatives",
-  "body": " Partial derivatives  "
+  "body": " Partial derivatives                   Introduction goes here.   "
+},
+{
+  "id": "sec-partial-derivatives-2",
+  "level": "2",
+  "url": "sec-partial-derivatives.html#sec-partial-derivatives-2",
+  "type": "Objectives",
+  "number": "12.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-tangent-plane-approximations",
@@ -565,7 +997,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.2",
   "title": "Tangent plane approximations",
-  "body": " Tangent plane approximations  "
+  "body": " Tangent plane approximations                   Introduction goes here.   "
+},
+{
+  "id": "sec-tangent-plane-approximations-2",
+  "level": "2",
+  "url": "sec-tangent-plane-approximations.html#sec-tangent-plane-approximations-2",
+  "type": "Objectives",
+  "number": "12.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-higher-order-partial-derivatives",
@@ -574,7 +1015,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.3",
   "title": "Higher order partial derivatives",
-  "body": " Higher order partial derivatives  "
+  "body": " Higher order partial derivatives                   Introduction goes here.   "
+},
+{
+  "id": "sec-higher-order-partial-derivatives-2",
+  "level": "2",
+  "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-2",
+  "type": "Objectives",
+  "number": "12.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-taylor-approximations-in-higher-dimensions",
@@ -583,7 +1033,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.4",
   "title": "Taylor approximations in higher dimensions",
-  "body": " Taylor approximations in higher dimensions  "
+  "body": " Taylor approximations in higher dimensions                   Introduction goes here.   "
+},
+{
+  "id": "sec-taylor-approximations-in-higher-dimensions-2",
+  "level": "2",
+  "url": "sec-taylor-approximations-in-higher-dimensions.html#sec-taylor-approximations-in-higher-dimensions-2",
+  "type": "Objectives",
+  "number": "12.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-multivariable-optimization",
@@ -592,7 +1051,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.5",
   "title": "Multivariable optimization",
-  "body": " Multivariable optimization  "
+  "body": " Multivariable optimization                   Introduction goes here.   "
+},
+{
+  "id": "sec-multivariable-optimization-2",
+  "level": "2",
+  "url": "sec-multivariable-optimization.html#sec-multivariable-optimization-2",
+  "type": "Objectives",
+  "number": "12.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-vector-valued-functions",
@@ -601,7 +1069,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.1",
   "title": "Vector-valued functions",
-  "body": " Vector-valued functions  "
+  "body": " Vector-valued functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-vector-valued-functions-2",
+  "level": "2",
+  "url": "sec-vector-valued-functions.html#sec-vector-valued-functions-2",
+  "type": "Objectives",
+  "number": "13.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-describing-motion-with-vectors",
@@ -610,7 +1087,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.2",
   "title": "Describing motion with vectors",
-  "body": " Describing motion with vectors  "
+  "body": " Describing motion with vectors                   Introduction goes here.   "
+},
+{
+  "id": "sec-describing-motion-with-vectors-2",
+  "level": "2",
+  "url": "sec-describing-motion-with-vectors.html#sec-describing-motion-with-vectors-2",
+  "type": "Objectives",
+  "number": "13.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-dot-product-and-cross-product",
@@ -619,7 +1105,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.3",
   "title": "The dot product and cross product",
-  "body": " The dot product and cross product  "
+  "body": " The dot product and cross product                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-dot-product-and-cross-product-2",
+  "level": "2",
+  "url": "sec-the-dot-product-and-cross-product.html#sec-the-dot-product-and-cross-product-2",
+  "type": "Objectives",
+  "number": "13.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-frenet-serret-frame",
@@ -628,7 +1123,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.4",
   "title": "The Frenet-Serret frame",
-  "body": " The Frenet-Serret frame  "
+  "body": " The Frenet-Serret frame                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-frenet-serret-frame-2",
+  "level": "2",
+  "url": "sec-the-frenet-serret-frame.html#sec-the-frenet-serret-frame-2",
+  "type": "Objectives",
+  "number": "13.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-chain-rule-in-higher-dimensions",
@@ -637,7 +1141,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.1",
   "title": "The chain rule in higher dimensions",
-  "body": " The chain rule in higher dimensions  "
+  "body": " The chain rule in higher dimensions                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-chain-rule-in-higher-dimensions-2",
+  "level": "2",
+  "url": "sec-the-chain-rule-in-higher-dimensions.html#sec-the-chain-rule-in-higher-dimensions-2",
+  "type": "Objectives",
+  "number": "14.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-absolute-extrema-in-higher-dimensions",
@@ -646,7 +1159,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.2",
   "title": "Absolute extrema in higher dimensions",
-  "body": " Absolute extrema in higher dimensions  "
+  "body": " Absolute extrema in higher dimensions                   Introduction goes here.   "
+},
+{
+  "id": "sec-absolute-extrema-in-higher-dimensions-2",
+  "level": "2",
+  "url": "sec-absolute-extrema-in-higher-dimensions.html#sec-absolute-extrema-in-higher-dimensions-2",
+  "type": "Objectives",
+  "number": "14.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-directional-derivatives-and-the-gradient",
@@ -655,7 +1177,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.3",
   "title": "Directional derivatives and the gradient",
-  "body": " Directional derivatives and the gradient  "
+  "body": " Directional derivatives and the gradient                   Introduction goes here.   "
+},
+{
+  "id": "sec-directional-derivatives-and-the-gradient-2",
+  "level": "2",
+  "url": "sec-directional-derivatives-and-the-gradient.html#sec-directional-derivatives-and-the-gradient-2",
+  "type": "Objectives",
+  "number": "14.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-lagrange-multipliers",
@@ -664,7 +1195,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.4",
   "title": "Lagrange multipliers",
-  "body": " Lagrange multipliers  "
+  "body": " Lagrange multipliers                   Introduction goes here.   "
+},
+{
+  "id": "sec-lagrange-multipliers-2",
+  "level": "2",
+  "url": "sec-lagrange-multipliers.html#sec-lagrange-multipliers-2",
+  "type": "Objectives",
+  "number": "14.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-lagrangian-functions",
@@ -673,7 +1213,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.5",
   "title": "The Lagrangian function",
-  "body": " The Lagrangian function  "
+  "body": " The Lagrangian function                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-lagrangian-functions-2",
+  "level": "2",
+  "url": "sec-the-lagrangian-functions.html#sec-the-lagrangian-functions-2",
+  "type": "Objectives",
+  "number": "14.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-double-integrals-and-iterated-integrals",
@@ -682,7 +1231,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.1",
   "title": "Double integrals and iterated integrals",
-  "body": " Double integrals and iterated integrals  "
+  "body": " Double integrals and iterated integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-double-integrals-and-iterated-integrals-2",
+  "level": "2",
+  "url": "sec-double-integrals-and-iterated-integrals.html#sec-double-integrals-and-iterated-integrals-2",
+  "type": "Objectives",
+  "number": "15.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-double-integrals-over-general-regions",
@@ -691,7 +1249,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.2",
   "title": "Double integrals over general regions",
-  "body": " Double integrals over general regions  "
+  "body": " Double integrals over general regions                   Introduction goes here.   "
+},
+{
+  "id": "sec-double-integrals-over-general-regions-2",
+  "level": "2",
+  "url": "sec-double-integrals-over-general-regions.html#sec-double-integrals-over-general-regions-2",
+  "type": "Objectives",
+  "number": "15.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-surface-area",
@@ -700,7 +1267,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.3",
   "title": "Surface area",
-  "body": " Surface area  "
+  "body": " Surface area                   Introduction goes here.   "
+},
+{
+  "id": "sec-surface-area-2",
+  "level": "2",
+  "url": "sec-surface-area.html#sec-surface-area-2",
+  "type": "Objectives",
+  "number": "15.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-triple-integrals",
@@ -709,7 +1285,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.4",
   "title": "Triple integrals",
-  "body": " Triple integrals  "
+  "body": " Triple integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-triple-integrals-2",
+  "level": "2",
+  "url": "sec-triple-integrals.html#sec-triple-integrals-2",
+  "type": "Objectives",
+  "number": "15.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-center-of-mass",
@@ -718,7 +1303,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.5",
   "title": "Center of mass",
-  "body": " Center of mass  "
+  "body": " Center of mass                   Introduction goes here.   "
+},
+{
+  "id": "sec-center-of-mass-2",
+  "level": "2",
+  "url": "sec-center-of-mass.html#sec-center-of-mass-2",
+  "type": "Objectives",
+  "number": "15.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-multivariate-probability",
@@ -727,7 +1321,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.6",
   "title": "Multivariate probability",
-  "body": " Multivariate probability  "
+  "body": " Multivariate probability                   Introduction goes here.   "
+},
+{
+  "id": "sec-multivariate-probability-2",
+  "level": "2",
+  "url": "sec-multivariate-probability.html#sec-multivariate-probability-2",
+  "type": "Objectives",
+  "number": "15.6",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-calculus-of-variations",
@@ -745,7 +1348,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.1",
   "title": "Changes of coordinates",
-  "body": " Changes of coordinates  "
+  "body": " Changes of coordinates                   Introduction goes here.   "
+},
+{
+  "id": "sec-changes-of-coordinates-2",
+  "level": "2",
+  "url": "sec-changes-of-coordinates.html#sec-changes-of-coordinates-2",
+  "type": "Objectives",
+  "number": "16.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-calculus-in-polar-coordinates",
@@ -754,7 +1366,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.2",
   "title": "Calculus in polar coordinates",
-  "body": " Calculus in polar coordinates  "
+  "body": " Calculus in polar coordinates                   Introduction goes here.   "
+},
+{
+  "id": "sec-calculus-in-polar-coordinates-2",
+  "level": "2",
+  "url": "sec-calculus-in-polar-coordinates.html#sec-calculus-in-polar-coordinates-2",
+  "type": "Objectives",
+  "number": "16.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-jacobian",
@@ -763,7 +1384,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.3",
   "title": "The Jacobian matrix and its determinant",
-  "body": " The Jacobian matrix and its determinant  "
+  "body": " The Jacobian matrix and its determinant                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-jacobian-2",
+  "level": "2",
+  "url": "sec-the-jacobian.html#sec-the-jacobian-2",
+  "type": "Objectives",
+  "number": "16.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-polar-double-integrals",
@@ -772,7 +1402,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.4",
   "title": "Double integrals over polar regions",
-  "body": " Double integrals over polar regions  "
+  "body": " Double integrals over polar regions                   Introduction goes here.   "
+},
+{
+  "id": "sec-polar-double-integrals-2",
+  "level": "2",
+  "url": "sec-polar-double-integrals.html#sec-polar-double-integrals-2",
+  "type": "Objectives",
+  "number": "16.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-cylindrical-spherical",
@@ -781,7 +1420,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.5",
   "title": "Cylindrical and spherical coordinates",
-  "body": " Cylindrical and spherical coordinates  "
+  "body": " Cylindrical and spherical coordinates                   Introduction goes here.   "
+},
+{
+  "id": "sec-cylindrical-spherical-2",
+  "level": "2",
+  "url": "sec-cylindrical-spherical.html#sec-cylindrical-spherical-2",
+  "type": "Objectives",
+  "number": "16.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers",
@@ -790,7 +1438,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.1",
   "title": "The geometry of complex numbers",
-  "body": " The geometry of complex numbers  "
+  "body": " The geometry of complex numbers                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-geometry-of-complex-numbers-2",
+  "level": "2",
+  "url": "sec-the-geometry-of-complex-numbers.html#sec-the-geometry-of-complex-numbers-2",
+  "type": "Objectives",
+  "number": "17.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-complex-functions-as-transformations",
@@ -799,7 +1456,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.2",
   "title": "Complex functions as transformations",
-  "body": " Complex functions as transformations  "
+  "body": " Complex functions as transformations                   Introduction goes here.   "
+},
+{
+  "id": "sec-complex-functions-as-transformations-2",
+  "level": "2",
+  "url": "sec-complex-functions-as-transformations.html#sec-complex-functions-as-transformations-2",
+  "type": "Objectives",
+  "number": "17.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-complex-infinity",
@@ -808,7 +1474,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.3",
   "title": "Complex infinity and the Riemann sphere",
-  "body": " Complex infinity and the Riemann sphere  "
+  "body": " Complex infinity and the Riemann sphere                   Introduction goes here.   "
+},
+{
+  "id": "sec-complex-infinity-2",
+  "level": "2",
+  "url": "sec-complex-infinity.html#sec-complex-infinity-2",
+  "type": "Objectives",
+  "number": "17.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-extending-complex-functions",
@@ -817,7 +1492,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.4",
   "title": "Extending functions to the complex plane",
-  "body": " Extending functions to the complex plane  "
+  "body": " Extending functions to the complex plane                   Introduction goes here.   "
+},
+{
+  "id": "sec-extending-complex-functions-2",
+  "level": "2",
+  "url": "sec-extending-complex-functions.html#sec-extending-complex-functions-2",
+  "type": "Objectives",
+  "number": "17.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-vector-fields",
@@ -826,7 +1510,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.1",
   "title": "Vector fields",
-  "body": " Vector fields  "
+  "body": " Vector fields                   Introduction goes here.   "
+},
+{
+  "id": "sec-vector-fields-2",
+  "level": "2",
+  "url": "sec-vector-fields.html#sec-vector-fields-2",
+  "type": "Objectives",
+  "number": "18.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-new-derivatives-and-del",
@@ -835,7 +1528,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.2",
   "title": "New derivatives and the del operator",
-  "body": " New derivatives and the del operator  "
+  "body": " New derivatives and the del operator                   Introduction goes here.   "
+},
+{
+  "id": "sec-new-derivatives-and-del-2",
+  "level": "2",
+  "url": "sec-new-derivatives-and-del.html#sec-new-derivatives-and-del-2",
+  "type": "Objectives",
+  "number": "18.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-cauchy-riemann",
@@ -844,7 +1546,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.3",
   "title": "The Cauchy-Riemann equations",
-  "body": " The Cauchy-Riemann equations  "
+  "body": " The Cauchy-Riemann equations                   Introduction goes here.   "
+},
+{
+  "id": "sec-cauchy-riemann-2",
+  "level": "2",
+  "url": "sec-cauchy-riemann.html#sec-cauchy-riemann-2",
+  "type": "Objectives",
+  "number": "18.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-harmonic-functions",
@@ -853,7 +1564,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.4",
   "title": "Harmonic functions and complex potentials",
-  "body": " Harmonic functions and complex potentials  "
+  "body": " Harmonic functions and complex potentials                   Introduction goes here.   "
+},
+{
+  "id": "sec-harmonic-functions-2",
+  "level": "2",
+  "url": "sec-harmonic-functions.html#sec-harmonic-functions-2",
+  "type": "Objectives",
+  "number": "18.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-line-integrals",
@@ -862,7 +1582,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.1",
   "title": "Line integrals",
-  "body": " Line integrals  "
+  "body": " Line integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-line-integrals-2",
+  "level": "2",
+  "url": "sec-line-integrals.html#sec-line-integrals-2",
+  "type": "Objectives",
+  "number": "19.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-work-circulation-and-flux",
@@ -871,7 +1600,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.2",
   "title": "Work, circulation, and flux",
-  "body": " Work, circulation, and flux  "
+  "body": " Work, circulation, and flux                   Introduction goes here.   "
+},
+{
+  "id": "sec-work-circulation-and-flux-2",
+  "level": "2",
+  "url": "sec-work-circulation-and-flux.html#sec-work-circulation-and-flux-2",
+  "type": "Objectives",
+  "number": "19.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-contour-integrals",
@@ -880,7 +1618,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.3",
   "title": "Contour integrals",
-  "body": " Contour integrals  "
+  "body": " Contour integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-contour-integrals-2",
+  "level": "2",
+  "url": "sec-contour-integrals.html#sec-contour-integrals-2",
+  "type": "Objectives",
+  "number": "19.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-surface-integrals",
@@ -889,7 +1636,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.4",
   "title": "Surface integrals",
-  "body": " Surface integrals  "
+  "body": " Surface integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-surface-integrals-2",
+  "level": "2",
+  "url": "sec-surface-integrals.html#sec-surface-integrals-2",
+  "type": "Objectives",
+  "number": "19.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-integrals-over-oriented-surfaces",
@@ -898,7 +1654,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.5",
   "title": "Integrals over oriented surfaces",
-  "body": " Integrals over oriented surfaces  "
+  "body": " Integrals over oriented surfaces                   Introduction goes here.   "
+},
+{
+  "id": "sec-integrals-over-oriented-surfaces-2",
+  "level": "2",
+  "url": "sec-integrals-over-oriented-surfaces.html#sec-integrals-over-oriented-surfaces-2",
+  "type": "Objectives",
+  "number": "19.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-conservative-vector-fields",
@@ -907,7 +1672,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.1",
   "title": "Conservative vector fields",
-  "body": " Conservative vector fields  "
+  "body": " Conservative vector fields                   Introduction goes here.   "
+},
+{
+  "id": "sec-conservative-vector-fields-2",
+  "level": "2",
+  "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-2",
+  "type": "Objectives",
+  "number": "20.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-greens-theorem",
@@ -916,7 +1690,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.2",
   "title": "Green’s theorems",
-  "body": " Green's theorems  "
+  "body": " Green's theorems                   Introduction goes here.   "
+},
+{
+  "id": "sec-greens-theorem-2",
+  "level": "2",
+  "url": "sec-greens-theorem.html#sec-greens-theorem-2",
+  "type": "Objectives",
+  "number": "20.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-fundamental-theorems-in-higher-dimensions",
@@ -925,7 +1708,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.3",
   "title": "Fundamental theorems in higher dimensions",
-  "body": " Fundamental theorems in higher dimensions  "
+  "body": " Fundamental theorems in higher dimensions                   Introduction goes here.   "
+},
+{
+  "id": "sec-fundamental-theorems-in-higher-dimensions-2",
+  "level": "2",
+  "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-2",
+  "type": "Objectives",
+  "number": "20.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-integrals-of-holomorphic-functions",
@@ -934,7 +1726,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.4",
   "title": "Integrals of holomorphic functions",
-  "body": " Integrals of holomorphic functions  "
+  "body": " Integrals of holomorphic functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-integrals-of-holomorphic-functions-2",
+  "level": "2",
+  "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-2",
+  "type": "Objectives",
+  "number": "20.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-singularities-and-laurent-series",
@@ -943,7 +1744,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.5",
   "title": "Singularities and Laurent series",
-  "body": " Singularities and Laurent series  "
+  "body": " Singularities and Laurent series                   Introduction goes here.   "
+},
+{
+  "id": "sec-singularities-and-laurent-series-2",
+  "level": "2",
+  "url": "sec-singularities-and-laurent-series.html#sec-singularities-and-laurent-series-2",
+  "type": "Objectives",
+  "number": "20.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-residue-theorem",
@@ -952,7 +1762,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.6",
   "title": "The residue theorem",
-  "body": " The residue theorem  "
+  "body": " The residue theorem                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-residue-theorem-2",
+  "level": "2",
+  "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-2",
+  "type": "Objectives",
+  "number": "20.6",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-exterior-calculus",
@@ -970,7 +1789,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.1",
   "title": "The need for rigor",
-  "body": " The need for rigor  "
+  "body": " The need for rigor                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-need-for-rigor-2",
+  "level": "2",
+  "url": "sec-the-need-for-rigor.html#sec-the-need-for-rigor-2",
+  "type": "Objectives",
+  "number": "21.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-ordered-fields",
@@ -979,7 +1807,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.2",
   "title": "Ordered fields",
-  "body": " Ordered fields  "
+  "body": " Ordered fields                   Introduction goes here.   "
+},
+{
+  "id": "sec-ordered-fields-2",
+  "level": "2",
+  "url": "sec-ordered-fields.html#sec-ordered-fields-2",
+  "type": "Objectives",
+  "number": "21.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-completeness-property",
@@ -988,7 +1825,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.3",
   "title": "The completeness property",
-  "body": " The completeness property  "
+  "body": " The completeness property                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-completeness-property-2",
+  "level": "2",
+  "url": "sec-the-completeness-property.html#sec-the-completeness-property-2",
+  "type": "Objectives",
+  "number": "21.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-topology-of-the-real-numbers",
@@ -997,7 +1843,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.4",
   "title": "Topology of the real numbers",
-  "body": " Topology of the real numbers  "
+  "body": " Topology of the real numbers                   Introduction goes here.   "
+},
+{
+  "id": "sec-topology-of-the-real-numbers-2",
+  "level": "2",
+  "url": "sec-topology-of-the-real-numbers.html#sec-topology-of-the-real-numbers-2",
+  "type": "Objectives",
+  "number": "21.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-convergence-of-sequences",
@@ -1006,7 +1861,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.1",
   "title": "Convergence of sequences",
-  "body": " Convergence of sequences  "
+  "body": " Convergence of sequences                   Introduction goes here.   "
+},
+{
+  "id": "sec-convergence-of-sequences-2",
+  "level": "2",
+  "url": "sec-convergence-of-sequences.html#sec-convergence-of-sequences-2",
+  "type": "Objectives",
+  "number": "22.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-proving-limit-laws",
@@ -1015,7 +1879,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.2",
   "title": "Proving limit laws",
-  "body": " Proving limit laws  "
+  "body": " Proving limit laws                   Introduction goes here.   "
+},
+{
+  "id": "sec-proving-limit-laws-2",
+  "level": "2",
+  "url": "sec-proving-limit-laws.html#sec-proving-limit-laws-2",
+  "type": "Objectives",
+  "number": "22.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-limits-of-functions",
@@ -1024,7 +1897,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.3",
   "title": "Limits of functions",
-  "body": " Limits of functions  "
+  "body": " Limits of functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-limits-of-functions-2",
+  "level": "2",
+  "url": "sec-limits-of-functions.html#sec-limits-of-functions-2",
+  "type": "Objectives",
+  "number": "22.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-cauchy-sequences",
@@ -1033,7 +1915,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.4",
   "title": "Cauchy sequences",
-  "body": " Cauchy sequences  "
+  "body": " Cauchy sequences                   Introduction goes here.   "
+},
+{
+  "id": "sec-cauchy-sequences-2",
+  "level": "2",
+  "url": "sec-cauchy-sequences.html#sec-cauchy-sequences-2",
+  "type": "Objectives",
+  "number": "22.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-constructing-the-real-numbers",
@@ -1042,7 +1933,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.5",
   "title": "Constructing the real numbers",
-  "body": " Constructing the real numbers  "
+  "body": " Constructing the real numbers                   Introduction goes here.   "
+},
+{
+  "id": "sec-constructing-the-real-numbers-2",
+  "level": "2",
+  "url": "sec-constructing-the-real-numbers.html#sec-constructing-the-real-numbers-2",
+  "type": "Objectives",
+  "number": "22.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-differentiability-classes",
@@ -1051,7 +1951,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.1",
   "title": "Differentiability classes",
-  "body": " Differentiability classes  "
+  "body": " Differentiability classes                   Introduction goes here.   "
+},
+{
+  "id": "sec-differentiability-classes-2",
+  "level": "2",
+  "url": "sec-differentiability-classes.html#sec-differentiability-classes-2",
+  "type": "Objectives",
+  "number": "23.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-the-mean-value-theorem",
@@ -1060,7 +1969,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.2",
   "title": "More on the Mean Value Theorem",
-  "body": " More on the Mean Value Theorem  "
+  "body": " More on the Mean Value Theorem                   Introduction goes here.   "
+},
+{
+  "id": "sec-the-mean-value-theorem-2",
+  "level": "2",
+  "url": "sec-the-mean-value-theorem.html#sec-the-mean-value-theorem-2",
+  "type": "Objectives",
+  "number": "23.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-taylors-theorem",
@@ -1069,7 +1987,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.3",
   "title": "Taylor’s theorem",
-  "body": " Taylor's theorem  "
+  "body": " Taylor's theorem                   Introduction goes here.   "
+},
+{
+  "id": "sec-taylors-theorem-2",
+  "level": "2",
+  "url": "sec-taylors-theorem.html#sec-taylors-theorem-2",
+  "type": "Objectives",
+  "number": "23.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-inverse-and-implicit-functions",
@@ -1078,7 +2005,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.4",
   "title": "Inverse and implicit functions",
-  "body": " Inverse and implicit functions  "
+  "body": " Inverse and implicit functions                   Introduction goes here.   "
+},
+{
+  "id": "sec-inverse-and-implicit-functions-2",
+  "level": "2",
+  "url": "sec-inverse-and-implicit-functions.html#sec-inverse-and-implicit-functions-2",
+  "type": "Objectives",
+  "number": "23.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-compactness",
@@ -1087,7 +2023,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.1",
   "title": "Compactness",
-  "body": " Compactness  "
+  "body": " Compactness                   Introduction goes here.   "
+},
+{
+  "id": "sec-compactness-2",
+  "level": "2",
+  "url": "sec-compactness.html#sec-compactness-2",
+  "type": "Objectives",
+  "number": "24.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-uniform-continuity",
@@ -1096,7 +2041,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.2",
   "title": "Uniform continuity",
-  "body": " Uniform continuity  "
+  "body": " Uniform continuity                   Introduction goes here.   "
+},
+{
+  "id": "sec-uniform-continuity-2",
+  "level": "2",
+  "url": "sec-uniform-continuity.html#sec-uniform-continuity-2",
+  "type": "Objectives",
+  "number": "24.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-riemann-and-darboux-integrals",
@@ -1105,7 +2059,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.3",
   "title": "Riemann and Darboux integrals",
-  "body": " Riemann and Darboux integrals  "
+  "body": " Riemann and Darboux integrals                   Introduction goes here.   "
+},
+{
+  "id": "sec-riemann-and-darboux-integrals-2",
+  "level": "2",
+  "url": "sec-riemann-and-darboux-integrals.html#sec-riemann-and-darboux-integrals-2",
+  "type": "Objectives",
+  "number": "24.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-conditions-for-integrability",
@@ -1114,7 +2077,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.4",
   "title": "Integrability conditions and properties",
-  "body": " Integrability conditions and properties  "
+  "body": " Integrability conditions and properties                   Introduction goes here.   "
+},
+{
+  "id": "sec-conditions-for-integrability-2",
+  "level": "2",
+  "url": "sec-conditions-for-integrability.html#sec-conditions-for-integrability-2",
+  "type": "Objectives",
+  "number": "24.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-lebesgue-measure",
@@ -1123,7 +2095,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.5",
   "title": "Lebesgue measure",
-  "body": " Lebesgue measure  "
+  "body": " Lebesgue measure                   Introduction goes here.   "
+},
+{
+  "id": "sec-lebesgue-measure-2",
+  "level": "2",
+  "url": "sec-lebesgue-measure.html#sec-lebesgue-measure-2",
+  "type": "Objectives",
+  "number": "24.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-convergence-of-series",
@@ -1132,7 +2113,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.1",
   "title": "Convergence of series",
-  "body": " Convergence of series  "
+  "body": " Convergence of series                   Introduction goes here.   "
+},
+{
+  "id": "sec-convergence-of-series-2",
+  "level": "2",
+  "url": "sec-convergence-of-series.html#sec-convergence-of-series-2",
+  "type": "Objectives",
+  "number": "25.1",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-absolute-and-conditional-convergence",
@@ -1141,7 +2131,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.2",
   "title": "Absolute and conditional convergence",
-  "body": " Absolute and conditional convergence  "
+  "body": " Absolute and conditional convergence                   Introduction goes here.   "
+},
+{
+  "id": "sec-absolute-and-conditional-convergence-2",
+  "level": "2",
+  "url": "sec-absolute-and-conditional-convergence.html#sec-absolute-and-conditional-convergence-2",
+  "type": "Objectives",
+  "number": "25.2",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-pointwise-and-uniform-convergence",
@@ -1150,7 +2149,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.3",
   "title": "Pointwise and uniform convergence",
-  "body": " Pointwise and uniform convergence  "
+  "body": " Pointwise and uniform convergence                   Introduction goes here.   "
+},
+{
+  "id": "sec-pointwise-and-uniform-convergence-2",
+  "level": "2",
+  "url": "sec-pointwise-and-uniform-convergence.html#sec-pointwise-and-uniform-convergence-2",
+  "type": "Objectives",
+  "number": "25.3",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-interchanging-limit-processes",
@@ -1159,7 +2167,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.4",
   "title": "Interchanging limit processes",
-  "body": " Interchanging limit processes  "
+  "body": " Interchanging limit processes                   Introduction goes here.   "
+},
+{
+  "id": "sec-interchanging-limit-processes-2",
+  "level": "2",
+  "url": "sec-interchanging-limit-processes.html#sec-interchanging-limit-processes-2",
+  "type": "Objectives",
+  "number": "25.4",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-convergence-of-power-series",
@@ -1168,7 +2185,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.5",
   "title": "Convergence of power series",
-  "body": " Convergence of power series  "
+  "body": " Convergence of power series                   Introduction goes here.   "
+},
+{
+  "id": "sec-convergence-of-power-series-2",
+  "level": "2",
+  "url": "sec-convergence-of-power-series.html#sec-convergence-of-power-series-2",
+  "type": "Objectives",
+  "number": "25.5",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-picards-theorem",
@@ -1177,7 +2203,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.6",
   "title": "Solutions to differential equations",
-  "body": " Solutions to differential equations  "
+  "body": " Solutions to differential equations                   Introduction goes here.   "
+},
+{
+  "id": "sec-picards-theorem-2",
+  "level": "2",
+  "url": "sec-picards-theorem.html#sec-picards-theorem-2",
+  "type": "Objectives",
+  "number": "25.6",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec-non-standard-analysis",
