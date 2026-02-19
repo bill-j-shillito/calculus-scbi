@@ -2,4 +2,62 @@
 
 <section xml:id="sec-optimization">
   <title>Optimization</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+           Model objectives and constraints to set up optimization problems.
+        </p>
+      </li>
+      <li>
+        <p>
+          Identify interior and boundary candidates using derivatives and Fermat's theorem.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Soda can example
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Same modeling steps as in related rates
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Don’t necessarily need to eliminate variables — using differentials also works!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Focus on absolute maxima and minima and <sq>candidates</sq> using Fermat's theorem: if <m>f</m> has a local maximum at <m>x=a</m>, then <m>f'(a)=0</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Put First Derivative Test here?
+      </p>
+    </li>
+  </ul>
 </section>

@@ -2,4 +2,84 @@
 
 <section xml:id="sec-linear-approximation">
   <title>Linear approximation</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Use differentials to construct linear approximations near a point.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret a function's linearization as its best local straight-line model.
+        </p>
+      </li>
+      <li>
+        <p>
+          Evaluate accuracy using concavity and basic error estimates.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Approximation using differentials
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Linearization of a function at <m>x=a</m>:
+        <me>
+          L(x)=f(a)+f'(a)(x-a)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use second derivative for over/underestimate analysis
+        <ul>
+          <li>
+            <p>
+              If <m>f''(a)>0</m>, then <m>f</m> is concave up around <m>a</m>, so <m>L(x)&lt;L(a)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>f''(a)&lt;0</m>, then <m>f</m> is concave down around <m>a</m>, so <m>L(x)>L(a)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Absolute error: <m>\eps=|y-y\tsub{approx}|</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Relative error: <m>\eta=\dfrac{\eps}{|y|}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        These can eventually get tied in with limits in Chapter 5.
+      </p>
+    </li>
+  </ul>
 </section>

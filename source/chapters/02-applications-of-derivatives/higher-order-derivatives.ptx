@@ -3,6 +3,32 @@
 <section xml:id="sec-higher-order-derivatives">
   <title>Higher order derivatives</title>
 
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Interpret the second derivative to understand concavity and curvature.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use the Second Derivative Test to classify critical points when possible.
+        </p>
+      </li>
+      <li>
+        <p>
+          Extend derivative ideas to third and higher orders to study patterns in a function's behavior.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
   <ul>
     <li>
       <p>

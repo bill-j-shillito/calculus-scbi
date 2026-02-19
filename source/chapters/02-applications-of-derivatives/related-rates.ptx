@@ -2,4 +2,50 @@
 
 <section xml:id="sec-related-rates">
   <title>Related rates</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Relate changing quantities by differentiating with respect to time.
+        </p>
+      </li>
+      <li>
+        <p>
+          Translate verbal descriptions of scenarios into equations and geometric diagrams.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret solutions equations with correct units to check consistency and meaning.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Same as implicit differentiation, except instead of dividing by <m>\dd{x}</m> we divide by <m>\dd{t}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Do a few different examples of <sq>canonical</sq> types of problems
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Lay out a step by step process of tackling modeling problems
+      </p>
+    </li>
+  </ul>
 </section>

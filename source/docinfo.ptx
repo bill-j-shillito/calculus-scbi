@@ -18,7 +18,8 @@
     \newcommand{\R}{\mathbb R}
     \newcommand{\inv}{^{-1}}
     \newcommand{\DS}{\displaystyle}
-
+    \newcommand{\eps}{\varepsilon}
+    \newcommand{\tsub}[1]{_{\mathrm{#1}}}
     
   </macros>
 
