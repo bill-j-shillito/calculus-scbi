@@ -2,4 +2,141 @@
 
 <section xml:id="sec-the-riemann-zeta-function">
   <title>CAPSTONE: The Riemann zeta function</title>
+
+  <ul>
+    <li>
+      <p>
+        Harmonic series:
+        <me>
+          \dfrac{1}{1}+\dfrac{1}{2}+\dfrac{1}{3}+\dfrac{1}{4}+\cdots
+        </me>
+        Can show pretty easily that it diverges, e.g.
+        by pointing out that the associated improper integral diverges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Basel problem:
+        <me>
+          \dfrac{1}{1^{2}}+\dfrac{1}{2^{2}}+\dfrac{1}{3^{2}}+\dfrac{1}{4^{2}}+\cdots
+        </me>
+        We can show it converges.
+        But what does it converge to?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Euler wrote <m>\sin x</m> as an infinite product:
+      </p>
+      <md>
+        <mrow>\sin x \amp = x\left(1-\dfrac{x}{\uppi}\right)\left(1+\dfrac{x}{\uppi}\right)\left(1-\dfrac{x}{2\uppi}\right)\left(1+\dfrac{x}{2\uppi}\right)\cdots</mrow>
+        <mrow>\amp = x\left(1-\dfrac{x^{2}}{\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{4\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{9\uppi^{2}}\right)\cdots</mrow>
+      </md>
+
+      <p>
+        Set this equal to Taylor series and divide through by <m>x</m>:
+        <me>
+          1-\dfrac{x^{2}}{3!}+\dfrac{x^{4}}{5!}-\dfrac{x^{6}}{7!}+\cdots=x\left(1-\dfrac{x^{2}}{\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{4\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{9\uppi^{2}}\right)\cdots
+        </me>
+        Collect <m>x^{2}</m> terms:
+        <me>
+          -\dfrac{x^{2}}{3!}=-x^{2}\left(\dfrac{1}{\uppi^{2}}+\dfrac{1}{4\uppi^{2}}+\dfrac{1}{9\uppi^{2}}+\cdots\right)
+        </me>
+        Rearranging, we find that
+        <me>
+          \dfrac{1}{1^{2}}+\dfrac{1}{2^{2}}+\dfrac{1}{3^{2}}+\dfrac{1}{4^{2}}+\cdots=\dfrac{\uppi^{2}}{6}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        What about for other powers? Preliminary definition:
+        <me>
+          \zeta(s)=\dfrac{1}{1^{s}}+\dfrac{1}{2^{s}}+\dfrac{1}{3^{s}}+\dfrac{1}{4^{s}}+\cdots
+        </me>
+        Factoring as an infinite product using geometric series:
+        <me>
+          \zeta(s)=\prod_{p\text{ prime}}\dfrac{1}{1-p^{-s}}=\prod_{p\text{ prime}}\dfrac{p}{p^{s}-1}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Easy to extend to complex powers if real part is at least <m>1</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Analytic continuation is where we pretend that the series converges even where it doesn't (for example with geometric series)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Alternating zeta function:
+        <me>
+          \zeta^{*}(s)=\dfrac{1}{1^{s}}-\dfrac{1}{2^{s}}+\dfrac{1}{3^{s}}-\dfrac{1}{4^{s}}+\cdots
+        </me>
+        Note that:
+        <me>
+          \zeta^{*}(s)=\zeta(s)-\dfrac{2}{2^{s}}\zeta(s)\quad\Rightarrow\quad\zeta(s)=\dfrac{\zeta^{*}(s)}{1-2^{1-s}}
+        </me>
+        This works for positive real, except when <m>s=1+\dfrac{2\uppi\ii n}{\ln 2}</m>, but we can just use limits for all of those except <m>s=1</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Reflection formula:
+        <me>
+          \zeta(s)=\left(2^{s}\uppi^{s-1}\sin\left(\dfrac{\uppi s}{2}\Gamma(1-s)\right)\right)\cdot\zeta(1-s)
+        </me>
+        Can show that <m>\zeta(n)=0</m> when <m>n</m> is negative and even, and <m>\zeta(-1)=-1/12</m>.
+        This now works for all complex numbers except <m>s=1</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Riemann Hypothesis: All nontrivial zeros of <m>\zeta(s)</m> have real part <m>\tfrac12</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Prime counting function: <m>\uppi(x)</m> is the number of prime numbers less than or equal to <m>x</m>.
+        Was shown to be asymptotic first to <m>\dfrac{x}{\ln x}</m> and then to <m>\int_{2}^{x}\dfrac{1}{\ln t}\dd{t}</m>.
+        This is the Prime Number Theorem.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Briefly mention Fourier transform:
+        <me>
+          \hat{f}(\xi)=\int_{-\infty}^{\infty} f(x)\ee^{-2\uppi\ii x\xi}\dd{x}
+        </me>
+        You give it a function <m>f</m>, it gives you a back a new function <m>\hat{f}</m> with spikes at the underlying frequencies of <m>f</m>.
+        It's like un-baking a cake.
+        It's awesome.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        When you take the Fourier transform of the error term of the Prime Number Theorem, the spikes happen right at the nontrivial zeros of the zeta function!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Why this capstone? It uses almost everything we've been talking about with integrals and series!
+      </p>
+    </li>
+  </ul>
 </section>

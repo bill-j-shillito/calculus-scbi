@@ -29,5 +29,36 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Review complex numbers, introduce the idea of <m>\ii</m> rotating by a quarter-turn counterclockwise
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Substitute <m>x=\ii\theta</m> into the Maclaurin series for <m>\ee^{x}</m> to arrive at Euler's formula:
+        <me>
+          \ee^{\ii\theta}=\cos\theta+\ii\sin\theta
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Apply to second-order linear differential equation:
+        <me>
+          y''+my'+by=0
+        </me>
+        Analyze different cases, including complex case.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Avoid the <sq>numerology</sq> of <m>\ee^{\ii\uppi}+1=0</m>.
+      </p>
+    </li>
+  </ul>
 </section>

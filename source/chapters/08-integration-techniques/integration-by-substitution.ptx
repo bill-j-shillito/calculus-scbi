@@ -29,5 +29,37 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        This is the <q>Anti-Chain Rule</q>: making the substitution <m>u=g(x)</m> and <m>\dd u=g'(x)\dd{x}</m> gives
+        <me>
+          \int f(g(x))g'(x)\dd{x}=\int f(u)\dd{u}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Transforming definite integrals:
+        <aside>
+          <p>
+            According to <em>Advanced Calculus</em> by James J. Callahan, this is a pushforward substitution!
+          </p>
+        </aside>
+        <me>
+          \int_{a}^{b} f(g(x))g'(x)\dd{x}=\int_{g(a)}^{g(b)}f(u)\dd{u}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Look at examples where multiple substitutions are needed, such as
+        <me>
+          \int x\sqrt{x+1}\dd{x}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

@@ -26,6 +26,19 @@
     \newcommand{\resid}[1]{\Res\limits_{#1}}
     \DeclareMathOperator{\sinc}{sinc}
     \DeclareMathOperator{\sgn}{sgn}
+    \newcommand{\uppi}{\symup{\pi}}
+    \DeclareMathOperator{\Prob}{P}
+    \DeclareMathOperator{\EV}{E}
+    \DeclareMathOperator{\Var}{Var}
+
+    <!-- Capitalized principal values -->
+    \DeclareMathOperator{\Sin}{Sin}
+    \DeclareMathOperator{\Cos}{Cos}
+    \DeclareMathOperator{\Tan}{Tan}
+    \DeclareMathOperator{\Sec}{Sec}
+    \DeclareMathOperator{\Csc}{Csc}
+    \DeclareMathOperator{\Cot}{Cot}
+    \DeclareMathOperator{\PV}{PV}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

@@ -29,5 +29,67 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        For <m>\int \sin^{m} x\cos^{n} x\dd{x}</m>:
+        <ul>
+          <li>
+            <p>
+              If either <m>m</m> or <m>n</m> is odd, save one factor and convert the rest using the identity <m>\sin^{2} x+\cos^{2} x=1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If both <m>m</m> and <m>n</m> are even, use the power reduction identities
+              <me>
+                \sin^{2} x=\tfrac12-\tfrac12\cos 2x,\qquad \cos^{2} x=\tfrac12+\tfrac12\cos 2x\text{.}
+              </me>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For <m>\int \tan^{m} x\sec^{n} x\dd{x}</m>:
+        <ul>
+          <li>
+            <p>
+              If <m>m</m> is even, save a factor of <m>\sec^{2} x</m> and use <m>\sec^{2} x=1+\tan x</m> to rewrite the integral.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>n</m> is odd, save a factor of <m>\sec x\tan x</m> and use <m>\tan^{2} x=\sec^{2} x-1</m> to rewrite the integral.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>m</m> is odd and <m>n</m> is even, use substitution and integration by parts as necessary.
+              The integral of <m>\sec x</m> comes up in analyzing the Mercator projection!
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Integral reduction formulas:
+      </p>
+      <md>
+        <mrow> \int \cos^n x\dd{x} \amp = \frac1n\cos^{n-1}x\sin x+\frac{n-1}{n}\int\cos^{n-2}x\dd{x} </mrow>
+        <mrow> \int \sin^n x\dd{x} \amp = -\frac1n\sin^{n-1}x\cos x+\frac{n-1}{n}\int\sin^{n-2}x\dd{x} </mrow>
+        <mrow> \int \tan^n x\dd{x} \amp = \frac{1}{n-1}\tan^{n-1}x-\int\tan^{n-2}x\dd{x} </mrow>
+        <mrow> \int \cot^n x\dd{x} \amp = -\frac{1}{n-1}\cot^{n-1}x-\int\cot^{n-2}x\dd{x} </mrow>
+        <mrow> \int \sec^n x\dd{x} \amp = \frac{1}{n-1}\sec^{n-1}x\sin x+\frac{n-2}{n-1}\int\sec^{n-2}x\dd{x} </mrow>
+        <mrow> \int \csc^n x\dd{x} \amp = -\frac{1}{n-1}\csc^{n-1}x\cos x+\frac{n-2}{n-1}\int\csc^{n-2}x\dd{x} </mrow>
+      </md>
+    </li>
+  </ul>
 </section>

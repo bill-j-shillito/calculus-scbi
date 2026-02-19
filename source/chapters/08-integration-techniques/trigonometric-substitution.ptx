@@ -29,5 +29,71 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Application: Hydrostatic pressure on a circular drum
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Make substitutions based on the following:
+      </p>
+
+      <p>
+        <tabular>
+          <col halign="center" right="minor" /> <col halign="center" />
+          <row>
+            <cell>When you see...</cell>
+            <cell>Substitute...</cell>
+          </row>
+
+          <row />
+            <row>
+              <cell> <m>a^{2}-x^{2}</m> </cell>
+              <cell> <m>x=a\sin\theta</m> </cell>
+            </row>
+
+            <row>
+              <cell> <m>x^{2}+a^{2}</m> </cell>
+              <cell> <m>x=a\tan\theta</m> </cell>
+            </row>
+
+            <row>
+              <cell> <m>x^{2}-a^{2}</m> </cell>
+              <cell> <m>x=a\sec\theta</m> </cell>
+            </row>
+          </tabular>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          With definite integrals:
+          <aside>
+            <p>
+              According to <em>Advanced Calculus</em> by James J. Callahan, this is a pullback substitution!
+            </p>
+          </aside>
+        </p>
+
+        <p>
+          <me>
+            \int_{a}^{b} f(x)\dd{x}=\int_{g\inv(a)}^{g\inv(b)}f(g(\theta))g'(\theta)\dd{\theta}
+          </me>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          From this we can get some basic derivatives of inverse trigonometric functions:
+        </p>
+        <md>
+          <mrow>\dv{x}\Sin\inv(x) \amp = \frac{1}{\sqrt{1-x^{2}}} </mrow>
+          <mrow>\dv{x}\Tan\inv(x) \amp = \frac{1}{1+x^{2}} </mrow>
+          <mrow>\dv{x}\Sec\inv(x) \amp = \frac{1}{|x|\sqrt{x^2-1}} </mrow>
+        </md>
+      </li>
+    </ul>
 </section>

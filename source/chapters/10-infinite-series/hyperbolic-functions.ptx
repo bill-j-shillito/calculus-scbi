@@ -29,5 +29,50 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        The similarity between the power series for <m>\ee^{x}</m>, <m>\sin x</m>, and <m>\cos x</m> suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:
+      </p>
+      <md>
+        <mrow>\sinh x \amp = x+\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+\frac{x^{7}}{7!}+\cdots=\frac{\ee^{x}-\ee^{-x}}{2} </mrow>
+        <mrow>\cosh x \amp = 1+\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+\frac{x^{6}}{6!}+\cdots=\frac{\ee^{x}+\ee^{-x}}{2}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Define hyperbolic tangent etc.
+        analogously
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Derivative properties:
+        <me>
+          \dv{x}\sinh x=\cosh x\qquad\dv{x}\cosh x=\sinh x
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as <m>\sinh^{2} x</m> or <m>\tanh a\tanh b</m>).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        By eliminating the parameter, we get that <m>(x,y)=(\cosh t,\sinh t)</m> traces out one branch of the hyperbola <m>x^{2}-y^{2}=1</m>, hence the name.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Catenary as the shape of a hanging chain...
+        try to derive this using just what we know from this course (for reference, see Kline 16.4)
+      </p>
+    </li>
+  </ul>
 </section>

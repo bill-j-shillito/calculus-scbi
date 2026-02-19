@@ -29,5 +29,48 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        One way of defining the natural logarithm is
+        <me>
+          \ln x=\int_{1}^{x}\frac{1}{t}\dd{t}
+        </me>.
+        You can then show that this function has all the properties you'd expect of the natural logarithm.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Many functions don't have closed-form antiderivatives! But we do something very similar to deal with them<mdash/>we define a new function.
+        A few examples:
+        <ul>
+          <li>
+            <p>
+              Logarithmic integral:
+              <me>
+                \mathrm{li}(x)=\int_{0}^{x}\frac{1}{\ln t}\dd{t}
+              </me>
+              This is used in number theory.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Fresnel integrals:
+            </p>
+            <md>
+              <mrow>\mathrm{S}(x) \amp = \int_{0}^{x}\sin(t^{2})\dd{t}</mrow>
+              <mrow> \mathrm{C}(x) \amp = \int_{0}^{x}\cos(t^{2})\dd{t}</mrow>
+            </md>
+
+            <p>
+              These are used in optics.
+              Also there's lots of cool stuff related to the Euler spiral, parametric stuff from Chapter 6, and a connection to roller coasters!
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

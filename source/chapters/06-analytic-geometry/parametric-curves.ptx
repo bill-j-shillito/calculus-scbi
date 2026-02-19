@@ -29,5 +29,57 @@
     </p>
   </introduction>
 
+  <ul>
+    <li>
+      <p>
+        Parametric curves are traced out by the motion of a particle, where <m>x</m> and <m>y</m> are given in terms of <m>t</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Eliminating the parameter
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Slope of a parametric curve:
+        <me>
+          \dv{y}{x}=\frac{\dd{y}/\dd{t}}{\dd{x}/\dd{t}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Parametrization of ellipse:
+        <me>
+          \frac{(x-h)^{2}}{a^{2}}+\frac{(y-k)^{2}}{b^{2}}=1
+        </me>
+      </p>
+      <md>
+        <mrow> x \amp = h + a\cos t </mrow>
+        <mrow> y \amp = k + b\sin t </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Parametrization of hyperbola:
+        <me>
+          \frac{(x-h)^{2}}{a^{2}}-\frac{(y-k)^{2}}{b^{2}}=1
+        </me>
+      </p>
+      <md>
+        <mrow> x \amp = h + a\sec t </mrow>
+        <mrow> y \amp = k + b\tan t </mrow>
+      </md>
+
+      <p>
+        (Or switch <m>\tan</m> or <m>\sec</m> for the other one)
+      </p>
+    </li>
+  </ul>
   
 </section>

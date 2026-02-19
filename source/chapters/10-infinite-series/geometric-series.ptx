@@ -29,5 +29,44 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A geometric series is the infinite sum.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sum of a geometric series: shift and subtract
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Graph the function...
+        it only converges when <m>-1&lt;x&lt;1</m>.
+        Verify that this makes sense with the numerical behavior.
+        Takeaway: we have to watch out for where any given power series converges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Include Maclaurin series for <m>\dfrac{1}{1+x}</m>, <m>\ln(1+x)</m>, <m>\dfrac{1}{1+x^{2}}</m>, <m>\arctan x</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Madhava series for <m>\dfrac{\uppi}{4}</m>
+      </p>
+    </li>
+  </ul>
 </section>

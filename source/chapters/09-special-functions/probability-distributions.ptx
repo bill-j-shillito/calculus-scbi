@@ -29,5 +29,59 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Brief review of probability
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A function <m>f</m> is a probability density function if
+        <me>
+          \int_{-\infty}^{\infty} f(x)\dd{x}=1\text{.}
+        </me>
+        Then we say the probability that <m>a\le x\le b</m> is
+        <me>
+          \Prob(a\le x\le b)=\int_{a}^{b} f(x)\dd{x}
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Mean of a random variable <m>X</m>:
+        <me>
+          \mu=\EV(X)=\int_{-\infty}^{\infty} xf(x)\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Variance:
+        <me>
+          \Var(X)=\EV[(X-\EV(X))^{2}]=\EV(X^{2})-\EV(X)^{2}
+        </me>
+        Standard deviation:
+        <me>
+          \sigma(X)=\sqrt{\Var(X)}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Gaussian integral:
+        <me>
+          \int_{-\infty}^{\infty}\ee^{-x^2}\dd{x}=\sqrt{\uppi}
+        </me>
+        Error function:
+        <me>
+          \erf(x)=\frac{2}{\sqrt{\uppi}}\int_{0}^{x}\ee^{-x^2}\dd{x}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

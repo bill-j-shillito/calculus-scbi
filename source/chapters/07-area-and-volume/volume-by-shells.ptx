@@ -29,5 +29,26 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Start with an example that can't be done with washers because of non-invertible functions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If the region under the curve <m>y=f(x)</m> from <m>a</m> to <m>b</m> (<m>0\le a &lt; b</m>) is revolved around the <m>x</m>-axis, the volume is
+        <me>
+          V=\int_{a}^{b} 2\uppi xf(x)\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Include something about how to know which method may be best.
+      </p>
+    </li>
+  </ul>
 </section>

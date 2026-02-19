@@ -29,5 +29,61 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Motivation: Given a function <m>f</m>, find a polynomial function <m>p</m> of degree <m>n</m> such that
+      </p>
+      <md>
+        <mrow>p(a) \amp = f(a)</mrow>
+        <mrow>p'(a) \amp = f'(a)</mrow>
+        <mrow>p''(a) \amp = f''(a)</mrow>
+        <mrow>\vdots</mrow>
+        <mrow>p^{(n)}(a) \amp = f^{(n)}(a)</mrow>
+      </md>
+
+      <p>
+        The resulting polynomial is called a Taylor polynomial.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Formula:
+      </p>
+      <md>
+        <mrow> p(x) \amp = f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^{2}+\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^{n} </mrow>
+        <mrow> \amp = \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x-a)^{k} </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        If we add more and more terms, we get a better and better approximation of the original function.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        So if we had <em>infinitely</em> many terms, we should match the function perfectly! This is called a Taylor series.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>a=0</m>, replace “Taylor” with “Maclaurin”.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Useful Maclaurin series:
+      </p>
+      <md>
+        <mrow>\ee^{x} \amp = \sum_{k=0}^{\infty} \frac{x^{k}}{k!}</mrow>
+        <mrow>\sin x \amp = \sum_{k=0}^{\infty} \frac{(-1)^{k+1}x^{2k+1}}{(2k+1)!}</mrow>
+        <mrow>\cos x \amp = \sum_{k=0}^{\infty} \frac{(-1)^{k+1}x^{2k}}{(2k)!}</mrow>
+      </md>
+    </li>
+  </ul>
 </section>

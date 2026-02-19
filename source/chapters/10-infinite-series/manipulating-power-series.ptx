@@ -29,5 +29,29 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      Adding power series
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Multiplying through by a factor
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Differentiating and integrating term by term
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Products of power series? Using a grid? Only if we're going to include Mertens' theorem in Part V.
+    </p>
+  </li>
+</ul>
 </section>

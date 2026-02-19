@@ -29,5 +29,29 @@
     </p>
   </introduction>
 
+  <ul>
+    <li>
+      <p>
+        This is the <q>Anti-Product Rule</q>: if we can write our integrand in the form <m>u\dd{v}</m>, then we have
+        <me>
+          \int u\dd{v}=uv-\int v\dd{u}
+        </me>
+        We want to choose <m>u</m> so it’s easy to differentiate and <m>v</m> so it's easy to integrate.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Tabular integration for IBP multiple times
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Cycle trick for <m>\DS\int \ee^{x}\cos x\dd{x}</m>
+      </p>
+    </li>
+  </ul>
+
   
 </section>

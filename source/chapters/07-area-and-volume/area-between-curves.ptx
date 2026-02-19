@@ -29,5 +29,48 @@
     </p>
   </introduction>
 
+  <ul>
+    <li>
+      <p>
+        Area bounded by <m>y=f(x)\le g(x)</m> over <m>a\le x\le b</m>:
+        <me>
+          A=\int_{a}^{b}(g(x)-f(x))\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Area bounded by <m>x=f(y)\le g(y)</m> over <m>c\le y\le d</m>:
+        <me>
+          A=\int_{c}^{d}(g(y)-f(y))\dd{y}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If the demand curve <m>p=D(q)</m> and the supply curve <m>p=S(q)</m> meet at the equilibrium point <m>(\bar{q},\bar{p})</m>, then the consumer surplus is
+        <me>
+          CS=\int_{0}^{\bar{q}}(D(q)-\bar p)\dd{q}
+        </me>,
+        and the producer surplus is
+        <me>
+          PS=\int_{0}^{\bar{q}}(\bar p-S(q))\dd{q}
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A Lorenz curve is a function <m>L(x)</m>, where <m>0\le x\le 1</m>, that describes how wealth is distributed among the members of a population.
+        Given any Lorenz curve <m>L</m>, the Gini coefficient is defined as
+        <me>
+          =\frac{1}{2}\int_{0}^{1}(x-L(x))\dd{x}
+        </me>.
+        This can be used as a quantitative measure of income inequality.
+      </p>
+    </li>
+  </ul>
   
 </section>

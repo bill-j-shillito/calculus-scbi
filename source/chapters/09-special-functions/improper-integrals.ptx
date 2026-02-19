@@ -29,5 +29,75 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      Infinite intervals:
+    </p>
+    <md>
+      <mrow> \int_a^\infty f(x)\dd{x} \amp = \limit{b\to\infty}\int_{a}^{b} f(x)\dd{x} </mrow>
+      <mrow> \int_{-\infty}^{b} f(x)\dd{x} \amp = \limit{a\to-\infty}\int_{a}^{b} f(x)\dd{x} </mrow>
+      <mrow> \int_{-\infty}^{\infty} f(x)\dd{x} \amp = \int_{-\infty}^{a} f(x)\dd{x} + \int_{a}^{\infty} f(x)\dd{x}</mrow>
+    </md>
+  </li>
+
+  <li>
+    <p>
+      Discontinuous integrands:
+    </p>
+
+    <p>
+      If <m>f</m> is continuous on <m>[a,b)</m> and discontinuous at <m>b</m>, then
+      <me>
+        \int_{a}^{b} f(x)\dd{x}=\limit{t\to b^-}\int_{a}^{t} f(x)\dd{x}\text{.}
+      </me>
+      If <m>f</m> is continuous on <m>(a,b]</m> and discontinuous at <m>a</m>, then
+      <me>
+        \int_{a}^{b} f(x)\dd{x}=\limit{t\to a^+}\int_{t}^{b} f(x)\dd{x}\text{.}
+      </me>
+      If <m>f</m> has a discontinuity at <m>c</m>, where <m>a &lt; c &lt; b</m>, then
+      <me>
+        \int_{a}^{b} f(x)\dd{x}=\int_{a}^{c} f(x)\dd{x}+\int_{c}^{b} f(x)\dd{x}
+      </me>
+      as long as the two indefinite integrals converge.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The <m>p</m>-integral <m>\DS\int_{1}^{\infty}\dfrac{1}{x^{p}}\dd{x}</m> converges if and only if <m>p>1</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The <m>p</m>-integral <m>\DS\int_{0}^{1}\dfrac{1}{x^{p}}\dd{x}</m> converges if and only if <m>p&#x3C;1</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Gamma function:
+      <me>
+        \Gamma(x)=\int_{0}^{\infty} t^{x-1}\ee^{-t}\dd{t}
+      </me>
+      For any integer <m>n</m> we have <m>\Gamma(n)=(n-1)!</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Some notational conventions I’d like to introduce (assuming the limits exist):
+    </p>
+    <md>
+      <mrow> f(\infty) \amp = \limit{x\to\infty} f(x) </mrow>
+      <mrow> f(-\infty) \amp = \limit{x\to-\infty} f(x) </mrow>
+      <mrow> f(a^{+}) \amp = \limit{x\to a^+} f(x) </mrow>
+      <mrow> f(a^{-}) \amp = \limit{x\to a^-} f(x) </mrow>
+    </md>
+    <p>
+      These could make writing out the improper integrals somewhat cleaner.
+    </p>
+  </li>
+</ul>
 </section>

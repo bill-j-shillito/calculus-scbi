@@ -29,5 +29,47 @@
     </p>
   </introduction>
 
+  <ul>
+    <li>
+      <p>
+        Application: logistic population growth
+      </p>
+    </li>
+
+    <li>
+      <p>
+        To integrate rational functions, we can use long division to separate out the polynomial part and the proper rational part, after which we can write every partial fraction as a sum of functions of the form
+        <me>
+          \frac{A}{(x-\alpha)^{k}}\qand\frac{Bx+C}{(x^{2}+\beta x+\gamma)^{k}}
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        When we have <m>(x-\alpha)^{k}</m> in the denominator, the partial fraction decomposition will contain an expression of the form
+        <me>
+          \frac{A_{1}}{x-\alpha}+\frac{A_{2}}{(x-\alpha)^{2}}+\cdots+\frac{A_{k}}{(x-\alpha)^{k}}
+        </me>.
+        These can be integrated using the Anti-Power Rule or the natural logarithm.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        When we have <m>(x+\beta x+\gamma)^{k}</m> in the denominator, the partial fraction decomposition will contain an expression of the form
+        <me>
+          \frac{B_{1}x+C_{1}}{x^{2}+\beta x+\gamma}+\frac{B_{2}x+C_{2}}{(x^{2}+\beta x+\gamma)^{2}}+\cdots+\frac{B_{k}x+C_{k}}{(x^{2}+\beta x+\gamma)^{k}}
+        </me>.
+        These can be integrated using (trigonometric) substitution.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Weierstrass substitution may fit here?
+      </p>
+    </li>
+  </ul>
   
 </section>

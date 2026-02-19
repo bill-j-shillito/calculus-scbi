@@ -29,5 +29,77 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Frame this as how we can deal with functions with no closed-form antiderivative, like the ones we just saw.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Left Rectangular Approximation:
+        <me>
+          L_{n}=\sum_{i=1}^{n} f(x_{i-1})\,\Delta x_{i}
+        </me>
+        If <m>f</m> is increasing/decreasing, this will be an under/overestimate.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Right Rectangular Approximation:
+        <me>
+          R_{n}=\sum_{i=1}^{n} f(x_{i})\,\Delta x_{i}
+        </me>
+        If <m>f</m> is increasing/decreasing, this will be an over/underestimate.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Midpoint Rectangular Approximation:
+        <me>
+          M_{n}=\sum_{i=1}^{n} f(\bar x_{i})\,\Delta x_{i}
+        </me>
+        (Here, <m>\bar x_{i}=\dfrac{x_{i-1}+x_{i}}{2}</m> is the midpoint of <m>x_{i-1}</m> and <m>x_{i}</m>.)
+      </p>
+
+      <p>
+        If <m>f</m> is concave up/down, this will be an under/overestimate.
+      </p>
+
+      <p>
+        Error if <m>|f''(x)|\le K</m> for <m>a\le x\le b</m>: <m>|E_{M}|\le\dfrac{K(b-a)^{3}}{24n^{2}}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Trapezoidal Approximation:
+        <me>
+          T_{n}=\sum_{i=1}^{n} \dfrac{f(x_{i-1})+f(x_{i})}{2}\,\Delta x_{i}=\dfrac{L_{n}+R_{n}}{2}
+        </me>
+        If <m>f</m> is concave up/down, this will be an over/underestimate.
+      </p>
+
+      <p>
+        Error if <m>|f''(x)|\le K</m> for <m>a\le x\le b</m>: <m>|E_{T}|\le\dfrac{K(b-a)^{3}}{12n^{2}}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Simpson’s rule:
+        <me>
+          \int_{a}^{b} f(x)\dd{x}\approx\dfrac{b-a}{6}\left(f(a)+4f\left(\tfrac{a+b}2\right)+f(b)\right)
+        </me>
+        Relation to trapezoid and midpoint rules: <m>S_{2n}=\dfrac{T_{n}+2M_{n}}{3}</m>
+      </p>
+
+      <p>
+        Error if <m>|f^{(4)}(x)|\le K</m> for <m>a\le x\le b</m>: <m>|E_{T}|\le\dfrac{K(b-a)^{5}}{180n^{4}}</m>
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,36 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      If a solid has cross sections perpendicular to the <m>x</m>-axis with area <m>A(x)</m>, then the volume of the solid over <m>a\le x\le b</m> is given by
+      <me>
+        V=\int_{a}^{b}\dd{A}=\int_{a}^{b} A(x)\dd{x}
+      </me>.
+      If a solid has cross sections perpendicular to the <m>y</m>-axis with area <m>A(y)</m>, then the volume of the solid over <m>c\le y\le d</m> is given by
+      <me>
+        V=\int_{c}^{d}\dd{A}=\int_{c}^{d} A(y)\dd{y}
+      </me>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Disk Method for solids of revolution (about horizontal axis):
+      <me>
+        V=\int_{a}^{b} \uppi R(x)^{2}\dd{x}
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Washer Method (about horizontal axis):
+      <me>
+        V=\int_{a}^{b} \uppi (R\tsub{outer}(x)^{2}-R\tsub{inner}(x)^{2})\dd{x}
+      </me>
+    </p>
+  </li>
+</ul>
 </section>

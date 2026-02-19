@@ -29,5 +29,130 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music/sound connection)
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Formula for a general Fourier series:
+      <me>
+        a_{0}+\sum_{k=1}^{\infty} \big(a_{k}\cos kx+b_{k}\sin kx\big)
+      </me>
+      Euler-Fourier formulas for coefficients:
+    </p>
+    <md>
+      <mrow>a_0 \amp = \frac{1}{2\uppi}\int_{-\uppi}^{\uppi}f(x)\dd{x} </mrow>
+      <mrow>a_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\cos(kx)\dd{x} </mrow>
+      <mrow>b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x} </mrow>
+    </md>
+  </li>
+
+  <li>
+    <p>
+      This all works because:
+    </p>
+    <md>
+      <mrow> \int_{-\uppi}^{\uppi}\sin(kx)\cos(nx)\dd{x} \amp = 0 \quad \text{for all }n,k </mrow>
+      <mrow> \int_{-\uppi}^{\uppi}\cos(kx)\cos(nx)\dd{x} \amp = \uppi\delta_{nk} </mrow>
+    </md>
+
+    <p>
+      Can use trig integrals to show this!
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Fourier Convergence Theorem (wording from Smith/Minton):
+      <theorem>
+        <title>Fourier Convergence Theorem</title>
+        
+        
+        <statement>
+          <p>
+            Suppose that <m>f</m> is periodic of period <m>2l</m> and that <m>f</m> and <m>f'</m> are continuous on the interval <m>[-l,l]</m>, expect for at most a finite number of jump discontinuities.
+            Then, <m>f</m> has a convergent Fourier series expansion.
+            Further, the series converges to <m>f(x)</m> when <m>f</m> is continuous at <m>x</m> and to
+            <me>
+              \frac{1}{2}\left(\limit{t\to x^+}f(t)+\limit{t\to x^-}f(t)\right)
+            </me>
+            at any points <m>x</m> where <m>f</m> is discontinuous.
+          </p>
+        </statement>
+      </theorem>
+      
+      If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as
+      <me>
+        \frac{f(x^{+})+f(x^{-})}{2}
+      </me>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Exponential form:
+      <me>
+        \sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Square wave:
+      <me>
+        \frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Sawtooth wave
+      <me>
+        \frac{2}{\uppi}\qty(\sin x-\frac{1}{2}\sin 2x+\frac{1}{3}\sin 3x-\frac{1}{4}\sin 4x+\cdots)
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Triangle wave
+      <me>
+        \frac{4}{\uppi}\qty(\sin x-\frac{1}{9}\sin 3x+\frac{1}{25}\sin 5x-\frac{1}{49}\sin 7x+\cdots)
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Up-down:
+      <me>
+        \frac{4}{\uppi}\qty(\cos x+\cos 3x+\cos 5x+\cos 7x+\cdots)
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Ramp:
+      <me>
+        \frac{\uppi}{2}-\frac{\uppi}{4}\qty(\cos x+\frac{1}{9}\cos 3x+\frac{1}{25}\cos 5x+\frac{1}{49}\cos 7x+\cdots)
+      </me>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Square pulse:
+      <me>
+        \frac{h}{2\uppi}+\sum_{k=1}^{\infty}\frac{\sin kh}{\uppi k}+\sum_{k=1}^{\infty}\frac{1-\cos kh}{\uppi k}
+      </me>
+    </p>
+  </li>
+</ul>
 </section>

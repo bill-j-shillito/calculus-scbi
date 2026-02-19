@@ -29,5 +29,31 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Projectile motion:
+      </p>
+      <md>
+        <mrow> x \amp = x_0 + v_x t</mrow>
+        <mrow> y \amp = y_0 + v_y t - \tfrac12 g t^2 </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Circular motion:
+      </p>
+      <md>
+        <mrow> x \amp = h + r\cos t </mrow>
+        <mrow> y \amp = k + r\sin t </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Velocity and acceleration in <m>x</m> and <m>y</m> directions; briefly mention the vector way of representing it?
+      </p>
+    </li>
+  </ul>
 </section>

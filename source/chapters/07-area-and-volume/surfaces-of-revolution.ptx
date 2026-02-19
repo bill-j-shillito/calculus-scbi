@@ -29,5 +29,23 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Area of a surface of revolution for a parametric curve about the <m>x</m>-axis:
+        <me>
+          S=\int_{a}^{b} 2\uppi y\sqrt{\left(\dv{x}{t}\right)^{2}+\left(\dv{y}{t}\right)^{2}}\dd{t}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If revolving a function <m>y=f(x)</m>, this simplifies:
+        <me>
+          S=\int_{a}^{b} 2\uppi f(x)\sqrt{1+f'(x)^{2}}\dd{x}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>
