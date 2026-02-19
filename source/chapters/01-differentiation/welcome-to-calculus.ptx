@@ -2,4 +2,102 @@
 
 <section xml:id="sec-welcome-to-calculus">
   <title>Welcome to calculus!</title>
+
+  <objectives>
+    <!-- Put the below in a list instead -->
+    <ol>
+      <li>
+        <p>
+          Understand how curves locally resemble straight lines when viewed up close.
+        </p>
+      </li>
+      <li>
+        <p>
+          Approximate lengths or areas by decomposing shapes into small pieces.
+        </p>
+      </li>
+      <li>
+        <p>
+          Relate familiar geometric ideas to their calculus counterparts.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Things to include</title>
+    <p>
+      Calculus lets you do all the stuff you used to do with simple shapes and do them with complex shapes.
+    </p>
+    <ul>
+      <li>
+        <p>
+          Before calculus, you could find the slope of a line; using calculus, you can find the slope of a curve.
+        </p>
+      </li>
+      <li>
+        <p>
+          Before calculus, you could find the length of a line segment; using calculus, you can find the length of a curve.
+        </p>
+      </li>
+      <li>
+        <p>
+          Before calculus, you could find the area of a rectangle; using calculus, you can find the area under a curve.
+        </p>
+      </li>
+      <li>
+        <p>
+          Before calculus, you could find the average rate of change between two points; using calculus, you can find the instantaneous rate of change at a single point.
+        </p>
+      </li>
+      <li>
+        <p>
+          Before calculus, you could sum a finite number of terms in a sequence; using calculus, you can add infinitely many tiny pieces.
+        </p>
+      </li>
+    </ul>
+    <p>
+      Example: Area of a circle by making thin <q>pizza slices</q> and rearranging them to make a parallelogram.
+    </p>
+  </subsection>
+
+  <exercises>
+    <exercise>
+      <p>Consider the part of the parabola <m>y=x^2</m> bounded between <m>x=-1</m> and <m>x=1</m>.</p>
+      <ol>
+        <li>
+          <p>
+            Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.
+          </p>
+        </li>
+        <li>
+          <p>
+            Refine your estimate by breaking it into four equal-width segments.
+          </p>
+        </li>
+        <li>
+          <p>
+            Refine your estimate by breaking it into eight equal-width segments.
+          </p>
+        </li>
+        <li>
+          <p>
+            Conjecture the true length of the curve.
+          </p>
+        </li>
+      </ol>
+    </exercise>
+    <exercise>
+      <p>
+        Consider a circle with a radius of <m>1</m>. Inscribe an <m>n</m>-sided polygon inside it. (The point of this activity is to inscribe AND circumscribe in a polygon, and let the number of sides go to infinity.)
+      </p>
+    </exercise>
+  </exercises>
 </section>

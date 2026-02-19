@@ -2,4 +2,44 @@
 
 <section xml:id="sec-higher-order-derivatives">
   <title>Higher order derivatives</title>
+
+  <ul>
+    <li>
+      <p>
+        Introduce second derivative <m>f''</m> and its relationship to concavity
+        <ul>
+          <li>
+            <p>
+              If <m>f''(x)>0</m>, then <m>f</m> is concave up
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>f''(x)&lt;0</m>, then <m>f</m> is concave down
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Second Derivative Test for optimization
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Get into the Leibniz notation <m>\dv[2]{y}{x}</m> ...and maybe why it’s NOT very good! The proper notation really should be <m>\dv{x}(\dv{y}{x})</m>.
+        But the notation nis still pretty standard and hence we should learn it.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Third and higher order derivatives
+      </p>
+    </li>
+  </ul>
 </section>

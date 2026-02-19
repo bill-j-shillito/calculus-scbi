@@ -2,4 +2,108 @@
 
 <section xml:id="sec-differentiating-products-and-powers">
   <title>Differentiating products and powers</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Differentiate products by examining how each factor varies.
+        </p>
+      </li>
+      <li>
+        <p>
+          Justify and apply the Power Rule for natural-number exponents using differentials.
+        </p>
+      </li>
+      <li>
+        <p>
+          Combine linearity with product rules to differentiate polynomials.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+  
+
+  <ul>
+    <li>
+      <p>
+        Visual proof of Product Rule:
+      </p>
+
+      <p>
+        <md>
+          <mrow>\dd(u\cdot v) \amp = \dd{u} \cdot v + u \cdot \dd{v}</mrow>
+          <mrow>\amp = u\dd{v} + v\dd{u}</mrow>
+        </md>
+      </p>
+      
+      <p>
+        <me>
+          \dv{x}(f(x)g(x))=f'(x) g(x)+f(x) g'(x)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Apply to <m>x^{2}</m>:
+        <me>
+          \dd(x^{2})=x\dd{x} + x\dd{x} = 2x\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extend to three variables:
+        <me>
+          \dd(u\cdot v\cdot w)=\dd{u}\cdot v\cdot w+u\cdot \dd{v}\cdot w+u\cdot v\cdot \dd{w}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Apply to <m>x^{3}</m>:
+        <me>
+          \dd(x^{3})=\dd(x\cdot x\cdot x)=3x^{2}\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Power Rule:
+        <me>
+          \dd(x^{n})=nx^{n-1}\dd{x}
+        </me>
+        (Only works when <m>n</m> is a natural number right now)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Linearity properties:
+      </p>
+      <p>
+        <md>
+          <mrow>\dd(u+v) \amp = \dd{u}+\dd{v}</mrow>
+          <mrow>\dd(cu) \amp = c\dd{u}</mrow>
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Derivative of a polynomial term by term
+      </p>
+    </li>
+  </ul>
 </section>
+

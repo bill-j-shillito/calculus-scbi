@@ -4,7 +4,6 @@
   <title>Advanced differentiation techniques</title>
 
   <objectives>
-    In this section, you will learn to:
     <ol>
       <li>
         <p>
@@ -27,7 +26,73 @@
 
   <introduction>
     <p>
-      Content will go here.
+      Introduction goes here.
     </p>
   </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Find a few example functions that involve fractions and roots that we can use to justify wanting to do this chapter
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extend Power Rule to negative integers:
+        <me>
+          \dd(x^{-n})=-nx^{-n-1}
+        </me>
+        Show this by computing <m>\dd(x^{n}x^{-n})</m> in two ways.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extend Power Rule to roots:
+        <me>
+          \dd(x^{1/n})=\tfrac1n x^{\tfrac1n-1}
+        </me>
+        Show this by computing <m>\dd(\underbrace{x^{1/n}\cdot\,\ldots\,\cdot x^{1/n}}_{n\text{ copies}})</m> in two different ways.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Chain Rule for differentials:
+        <me>
+          \dd(f(g))=f'(g)\dd{g}=f'(g(x))g'(x)\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Chain Rule for derivatives:
+        <me>
+          \dv{x} f(g(x))=f'(g(x))g'(x)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Quotient Rule:
+        <me>
+          \dd(\frac uv)=\frac{v\dd{u}-u\dd{v}}{v^2}
+        </me>
+        Show this by computing <m>\dd(u\cdot v\inv)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extend Power Rule to rational exponents:
+        <me>
+          \dd(x^{m/n})=\tfrac mn x^{\tfrac mn-1}
+        </me>
+        Show this by computing <m>\dd((x^{m})^{1/n})</m> with the Chain Rule.
+      </p>
+    </li>
+  </ul>
 </section>

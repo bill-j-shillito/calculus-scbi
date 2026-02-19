@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <section xml:id="sec-the-derivative">
-  <title>The derivative: sensitivity to change</title>
+	<title>The derivative: sensitivity to change</title>
+
+	<objectives>
+		<ol>
+			<li>
+				<p>
+					Measure a function's responsiveness to small changes using differentials.
+				</p>
+			</li>
+			<li>
+				<p>
+					Interpret the derivative as a ratio of differentials to analyze behavior.
+				</p>
+			</li>
+			<li>
+				<p>
+					Use the sign of a derivative to identify increasing and decreasing intervals.
+				</p>
+			</li>
+		</ol>
+	</objectives>
+
+	<introduction>
+		<p>
+			Introduction goes here.
+		</p>
+	</introduction>
+	
+	
+	<ul>
+		<li>
+			<p>
+	Kleiber's law: 
+				<m>C(m)=km^{3/4}</m>
+			</p>
+		</li>
+		<li>
+			<p>
+				Compare <q>sensitivity</q> of caloric intake to changes in mass for two different points, using approximate slopes between closer-and-closer points
+			</p>
+		</li>
+		<li>
+			<p>
+	Small change is called a differential
+	</p>
+			<p>
+	Notation: 
+				<m>\dd{x}</m>, 
+				<m>\dd{y}</m>
+			</p>
+		</li>
+		<li>
+			<p>
+	Ratio of differentials is the derivative
+	</p>
+			<p>
+	Notation: 
+				<m>\DS\dv{y}{x}=f'(x)</m>
+			</p>
+		</li>
+		<li>
+			<p>
+	Separate and you get 
+				<m>\dd{y}=f'(x)\dd{x}</m>; this will often be the cleanest way to derive new derivative rules
+	
+			</p>
+		</li>
+		<li>
+			<p>
+	Sign analysis
+	
+				<ul>
+					<li>
+						<p>
+			If 
+							<m>\DS\dv{y}{x}&gt;0</m> on an interval, then 
+							<m>f</m> is increasing on that interval
+		
+						</p>
+					</li>
+					<li>
+						<p>
+			If 
+							<m>\DS\dv{y}{x}&lt;0</m> on an interval, then 
+							<m>f</m> is decreasing on that interval
+		
+						</p>
+					</li>
+				</ul>
+			</p>
+		</li>
+	</ul>
 </section>
+

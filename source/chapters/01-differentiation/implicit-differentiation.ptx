@@ -2,4 +2,71 @@
 
 <section xml:id="sec-implicit-differentiation">
   <title>Implicit differentiation</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Differentiate relations without solving for <m>y</m> by working with differentials.
+        </p>
+      </li>
+      <li>
+        <p>
+          Relate <m>\dd{x}</m> and <m>\dd{y}</m> to compute <m>\DS\dv{y}{x}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use implicit derivatives to determine tangent lines to implicitly defined curves.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Use Bitcoin elliptic curve example?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use differentials: take differential of both sides, then divide both sides by <m>\dd{x}</m>.
+      </p>
+
+      <p>
+        Example:
+      </p>
+
+      <md>
+        <mrow> x^2 + y^2 \amp = 1 </mrow>
+        <mrow> \dd(x^2 + y^2) \amp = \dd(1) </mrow>
+        <mrow> 2x\dd{x} + 2y\dd{y} \amp = 0 </mrow>
+        <mrow> 2x\dv{x}{x} + 2y\dv{y}{x} \amp = 0 </mrow>
+        <mrow> 2x + 2y\dv{y}{x} \amp = 0 </mrow>
+        <mrow> 2y\dv{y}{x} \amp = -2x </mrow>
+        <mrow> \dv{y}{x} \amp = -\frac{x}{y} </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        You can shortcut the differentials by taking derivatives and remembering to multiply by <m>\DS\dv{y}{x}</m> whenever you take a derivative of something involving <m>y</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Talk about tangent lines.
+        Probably not normal lines; save that until the Analytic Geometry chapter in Part II.
+      </p>
+    </li>
+  </ul>
 </section>
