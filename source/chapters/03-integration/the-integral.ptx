@@ -29,5 +29,49 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Bathtub example? Work example instead? Both?
+        <ul>
+          <li>
+            <p>
+              NOT doing the bathtub example and avoiding integration of a rate until Chapter 4 could make the FTC more of a surprise!
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Approximation of <m>\DS\sum f(x)\,\Delta x</m> by hand using upper and lower sums
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Define <m>\DS\int_{a}^{b} f(x)\dd{x}</m> as the signed area between <m>f(x)</m> and the <m>x</m>-axis between <m>x=a</m> and <m>x=b</m>.
+        <ul>
+          <li>
+            <p>
+              The <m>\DS\int</m> symbol is a long <sq>S</sq> for a smooth Summation.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The <m>\dd{x}</m> is the infinitesimal width of an infinitely thin rectangle.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We multiply the units.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,42 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Limit definition of a derivative:
+      </p>
+      <md>
+        <mrow>f'(a) \amp = \limit{x\to a}\frac{f(x)-f(a)}{x-a}</mrow>
+        <mrow>f'(x) \amp = \limit{h\to 0}\frac{f(x+h)-f(x)}{h}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Prove Power Rule, Product Rule
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>0/0</m> as an indeterminate form
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Ways in which a function can fail to be differentiable, using <m>|x|</m> as the example:
+        <me>
+          \dv{x}|x|=\frac{|x|}{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Role of differentials as changes along the tangent line
+      </p>
+    </li>
+  </ul>
 </section>

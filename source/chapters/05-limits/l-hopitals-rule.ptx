@@ -29,5 +29,26 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        If <m>\limit{x\to a}f(x)=\limit{x\to a}g(x)=0</m>, then
+        <me>
+          \limit{x\to a}\frac{f(x)}{g(x)}=\limit{x\to a}\frac{f'(x)}{g'(x)}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Same goes for if <m>f</m> and <m>g</m> are both approaching infinity
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For other indeterminate forms, use algebraic massage or logarithms
+      </p>
+    </li>
+  </ul>
 </section>

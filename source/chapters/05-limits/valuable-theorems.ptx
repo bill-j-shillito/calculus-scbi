@@ -29,5 +29,59 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Emphasize the importance of hypotheses! The Pythagorean theorem is NOT <m>a^{2}+b^{2}=c^{2}</m>.
+      </p>
+    </li>
+
+    <li>
+      <theorem>
+        <title>Squeeze Theorem</title>
+        <statement>
+          <p>
+            If <m>f(x)\le g(x)\le h(x)</m> for all <m>x</m> sufficiently close to <m>c</m>, and <m>\limit{x\to c}f(x)=\limit{x\to c}h(x)=L</m>, then <m>\limit{x\to c}g(x)=L</m>.
+          </p>
+        </statement>
+      </theorem>
+    </li>
+
+    <li>
+      <theorem>
+        <title>Intermediate Value Theorem</title>
+        <statement>
+          <p>
+            If <m>f</m> is continuous on <m>[a,b]</m>, then for all <m>y</m> between <m>f(a)</m> and <m>f(b)</m>, there exists <m>c\in[a,b]</m> such that <m>f(c)=y</m>.
+          </p>
+        </statement>
+      </theorem>
+    </li>
+
+    <li>
+      <theorem>
+        <title>Extreme Value Theorem</title>
+        <statement>
+          <p>
+            If <m>f</m> is continuous on <m>[a,b]</m>, then there exist <m>u,v\in[a,b]</m> such that <m>f(u)\le f(x)\le f(v)</m> for all <m>x\in[a,b]</m>.
+          </p>
+        </statement>
+      </theorem>
+      
+    </li>
+
+    <li>
+      <theorem>
+        <title>Mean Value Theorem</title>
+        <statement>
+          <p>
+            If <m>f</m> is continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>, then there exists <m>c\in(a,b)</m> such that
+            <me>
+              f'(c)=\frac{f(b)-f(a)}{b-a}
+            </me>.
+          </p>
+        </statement>
+      </theorem>
+    </li>
+  </ul>
 </section>

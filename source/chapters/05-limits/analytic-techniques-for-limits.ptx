@@ -29,5 +29,45 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Basic limit laws:
+      </p>
+      <md>
+        <mrow>\limit{x\to a} c \amp = c \amp \limit{x\to a} x \amp = a</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Sum, difference, constant multiple, product, quotient laws for limits
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Evaluating a polynomial limit using the limit laws.
+        We just get the same as direct substitution; this demonstrates that limits can <sq>pass through</sq> continuous functions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Evaluating a limit near a hole using <sq>algebraic massage</sq>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Behavior near a vertical asymptote
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Algebraic massage for square roots and fractions
+      </p>
+    </li>
+  </ul>
 </section>

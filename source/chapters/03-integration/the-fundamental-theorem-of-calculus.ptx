@@ -29,5 +29,71 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Come back to the area of a circle?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        FTC part I (Evaluation Theorem)
+      </p>
+
+      <p>
+        If <m>f^{(-1)}</m> is an antiderivative of <m>f(x)</m>, then:
+        <aside>
+          <p>
+            These more descriptive names for the two parts are due to Bill Kinney at Bethel University.
+          </p>
+        </aside>
+        <me>
+          \int_{a}^{b} f(x)\dd{x}=f^{(-1)}(b)-f^{(-1)}(a)
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        FTC part II (Antiderivative Construction Theorem):
+      </p>
+
+      <p>
+        If <m>f</m> is continuous on <m>[a,b]</m>, then the function
+        <me>
+          \int_{c}^{x}f(t)\dd{t}
+        </me>
+        is an antiderivative of <m>f</m>, that is,
+        <me>
+          \dv{x}\int_{c}^{x} f(t)\dd{t}=f(x)
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Indefinite integral:
+      </p>
+
+      <p>
+        If <m>f^{(-1)}</m> is an antiderivative of <m>f</m>, we define
+        <me>
+          \int f(x)\dd{x}=f^{(-1)}(x)+C
+        </me>
+        where <m>C</m> is an arbitrary constant.
+        Hence the indefinite integral is the entire family of antiderivatives, all offset from each other by a constant.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Practice with antiderivatives, only using the Anti-Power Rule:
+        <me>
+          \int x^{n}\dd{x}=\frac{1}{n+1}x^{n+1}+C
+        </me>
+        (as long as <m>n\neq -1</m>)
+      </p>
+    </li>
+  </ul>
 </section>

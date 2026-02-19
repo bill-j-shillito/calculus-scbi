@@ -29,5 +29,35 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Review average conceptually in terms of redistribution (perhaps give <url href="https://www.reddit.com/r/etymology/comments/1oyp48a/the_fascinating_etymology_of_average/">Arabic origin of the word</url>?)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The average value of <m>f(x)</m> on the interval <m>[a,b]</m> is
+        <me>
+          \frac{\DS\int_{a}^{b} f(x)\dd{x}}{b-a}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If we think of <m>f'</m> as the instantaneous rate of change of <m>f</m>, then the average rate of change
+        of <m>f</m> is
+        <me>
+          \frac{\DS\int_{a}^{b} f'(x)\dd{x}}{b-a}=\frac{f(b)-f(a)}{b-a}
+        </me>
+      </p>
+      <aside>
+        <p>
+          This is something I never liked about the traditional curriculum — there's rarely any indication of why the AROC is any kind of <sq>average</sq>. For example, Stewart never explains this.
+        </p>
+      </aside>
+    </li>
+  </ul>
 </section>

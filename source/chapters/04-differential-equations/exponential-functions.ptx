@@ -29,5 +29,53 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Population growth:
+        <me>
+          \dv{y}{t}=ky
+        </me>
+        How can we figure out which function satisfies this relationship?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Introduce slope fields and Euler's method
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We find that the solution curves are always exponential curves
+      </p>
+    </li>
+
+    <li>
+      <p>
+        When <m>k=1</m>, the solution for which <m>y(0)=1</m> gives <m>y(1)=\ee</m>, so the solution must be the exponential function <m>\ee^{x}</m>.
+        That is, we have:
+      </p>
+      <md>
+        <mrow>\dv{x}\ee^x \amp = \ee^x</mrow>
+        <mrow>\int \ee^x\id x \amp = \ee^x+C</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        When <m>k&lt;0</m>, we get exponential decay.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Overall, the solution to the original differential equation is
+        <me>
+          y=y_{0}\ee^{kt}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

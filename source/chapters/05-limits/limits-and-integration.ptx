@@ -29,5 +29,44 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Zeno's arrow paradox
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Limits at infinity
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sums of powers:
+      </p>
+      <md>
+        <mrow>\sum_{k=1}^n c \amp = c n </mrow>
+        <mrow>\sum_{k=1}^n k \amp = \frac{n(n+1)}{2} \approx \frac{1}{2} n^2 </mrow>
+        <mrow>\sum_{k=1}^n k^2 \amp = \frac{n(n+1)(2n+1)}{6} \approx \frac{1}{3} n^3 </mrow>
+        <mrow>\sum_{k=1}^n k^3 \amp = \left(\frac{n(n+1)}{2}\right)^2 \approx \frac{1}{4} n^4 </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Riemann sum to compute <m>\DS\int_{0}^{1} x\dd{x}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Some functions aren't integrable: great example is the Dirichlet function
+        <me>
+          D(x)=\begin{cases}1 \amp \text{if $x$ is rational}\\ 0 \amp \text{if $x$ is irrational}\end{cases}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

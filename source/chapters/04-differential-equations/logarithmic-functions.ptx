@@ -29,5 +29,63 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Since <m>\ln x</m> and <m>\ee^{x}</m> are inverses, we can evaluate <m>\DS\dv{x} \ee^{\ln x}</m> two ways to find that <m>\DS\dv{x}\ln x=\frac{1}{x}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In general, derivatives of inverse functions:
+        <me>
+          \dv{x} f\inv(x)=\dfrac1{f'(f\inv(x))}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For any base <m>b</m>, we can use the fact that <m>\ee^{\ln b}=b</m> and the Chain Rule to get
+        <me>
+          \dv{x} b^{x}=\dv{x}(\ee^{\ln b})^{x}=\dv{x}(\ee^{x})^{\ln b}=\ln(b)(\ee^{x})^{\ln(b)-1}\cdot \ee^{x}=b^{x}\ln b
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can also rewrite <m>x^{a}</m> for any real <m>a</m> as <m>e^{a \ln x}</m> to show that the Power Rule works for any real exponent.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Logarithmic differentiation:
+        <me>
+          \dv{x}\ln y=\frac{y'}{y}
+        </me>
+        Good for complicated derivatives or derivatives involving <m>x</m> in both base and power.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Elasticity of a function:
+        <aside>
+          <p>
+            The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree.
+            This can in some sense be used to define the degree of non-power functions.
+          </p>
+        </aside>
+        <me>
+          E=\dv{(\ln y)}{(\ln x)}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
+        </me>
+        This is a relative rate of change, which is useful in economics (e.g.
+        price elasticity of demand).
+        Maybe use this as the guiding application?
+      </p>
+    </li>
+  </ul>
 </section>

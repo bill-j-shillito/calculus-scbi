@@ -2,4 +2,25 @@
 
 <section xml:id="sec-proving-the-fundamental-theorem">
   <title>CAPSTONE: Proving the fundamental theorem</title>
+
+  <ul>
+    <li>
+      <p>
+        Prove the Antiderivative Construction Theorem using Squeeze Theorem, EVT, MVT for derivatives.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Prove the Evaluation Theorem using MVT for integrals.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        This doesn't add new knowledge, but it explains why everything we've done all semester works.
+        That's what makes it a good capstone.
+      </p>
+    </li>
+  </ul>
 </section>

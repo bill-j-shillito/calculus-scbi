@@ -29,5 +29,61 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Linearity properties:
+      </p>
+      <md>
+        <mrow>\int_a^b [f(x)+g(x)]\dd{x} \amp = \int_a^b f(x)\dd{x}+\int_a^b g(x)\dd{x}</mrow>
+        <mrow>\int_a^b cf(x)\dd{x} \amp = c\int_a^b f(x)\dd{x}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Inequality property: If <m>f(x)\le g(x)</m> when <m>a\le x\le b</m>, then
+        <me>
+          \int_{a}^{b} f(x)\dd{x}\le\int_{a}^{b} g(x)\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Additive Interval Property:
+        <me>
+          \int_{a}^{b} f(x)\dd{x}+\int_{b}^{c} f(x)\dd{x} = \int_{a}^{c} f(x)\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use the idea of functional equations to play with the Additive Interval Property to find other properties.
+        <ul>
+          <li>
+            <p>
+              Zero Interval Property:
+            </p>
+            <md>
+              <mrow>\int_a^a f(x)\dd{x}+\int_a^b f(x)\dd{x} \amp = \int_a^b f(x)\dd{x}</mrow>
+              <mrow>\int_a^a f(x)\dd{x} \amp = 0</mrow>
+            </md>
+          </li>
+
+          <li>
+            <p>
+              Rewind Property:
+            </p>
+            <!-- Convert to mrow -->
+            <md>
+              <mrow>\int_a^b f(x)\dd{x} + \int_b^a f(x)\dd{x} \amp = \int_a^a f(x)\dd{x} = 0</mrow>
+              <mrow>\int_b^a f(x)\dd{x} \amp = -\int_a^b f(x)\dd{x}</mrow>
+            </md>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

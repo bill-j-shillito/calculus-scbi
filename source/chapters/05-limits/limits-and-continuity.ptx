@@ -29,5 +29,65 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Introduce limits as a way to <sq>clean up</sq> the infinitesimal arguments we've been making so far.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Examine the cardinal sine function
+        <me>
+          \sinc x=\frac{\sin x}{x}
+        </me>
+        around <m>x=0</m>.
+        As <m>x\to 0</m>, <m>\sinc x\to 1</m>, so we say
+        <me>
+          \limit{x\to 0}\frac{\sin x}{x}=1
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Avoid the epsilon-delta definition at this stage...
+        this can go in Part V.
+        But we can perhaps still talk about <sq>tolerance</sq> or <sq>arbitrary closeness.</sq> Might even be able to use the symbols <m>\delta</m> and <m>\eps</m> for tolerance in the <m>x</m>- and <m>y</m>-directions, but hold back from the full formal definition.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use the the Heaviside step function
+        <me>
+          H(x)=\begin{cases}0 \amp \text{if }x&lt;0\\ 1 \amp \text{if }x\ge 0\end{cases}
+        </me>
+        to discuss one-sided limits
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Continuity in terms of limits: <m>f</m> is continuous at <m>x=a</m> if
+        <me>
+          \limit{x\to a}f(x)=f(a)
+        </me>
+        This means the function must be defined, the limit must exist, and the function must match the limit.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Types of discontinuity: removable, jump, infinite, oscillating
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Importantly, do NOT throw away the infinitesimal ideas just because we're using limits now! We'll see the relationship between infinitesimals and everything we’ve done so far in more detail in Part V.
+      </p>
+    </li>
+  </ul>
 </section>

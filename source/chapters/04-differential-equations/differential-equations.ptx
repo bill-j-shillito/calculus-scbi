@@ -29,5 +29,23 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A differential equation is an equation that gives information about the derivative(s) of a function, and you need to find the original function that fits that description.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Initial value problems
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use motion example from physics to start with <m>s''(t)=a</m> and end up with <m>s(t)=s_{0}+v_{0}t+\tfrac12at^{2}</m>
+      </p>
+    </li>
+  </ul>
 </section>

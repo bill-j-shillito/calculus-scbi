@@ -29,5 +29,51 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Simple harmonic motion:
+        <me>
+          y''(t)=-ky(t)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Can't use slope fields, but can use a modified Euler's method to reconstruct the curve given initial conditions on <m>y</m> and <m>y'</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        When <m>y(0)=0</m> and <m>y'(0)=1</m>, we get a solution of <m>y=\sin x</m>.
+        Furthermore, observing the slopes shows that <m>\DS\dv{x} \sin x=\cos x</m>, and we can show that <m>\cos x</m> also satisfies the differential equation.
+        (There may be a cleaner way to show all this.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Quotient Rule on <m>\sin x</m> and <m>\cos x</m> gives the derivatives of the other trig functions:
+      </p>
+      <md>
+        <mrow> \dv{x}\tan x \amp = \sec^{2} x \amp \dv{x}\sec x \amp = \sec x \tan x</mrow>
+        <mrow> \dv{x}\cot x \amp = -\csc^{2} x \amp \dv{x}\csc x \amp = -\csc x \cot x</mrow>
+      </md>
+
+      <p>
+        Every one of these can be thought of backwards to become an antiderivative formula.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Briefly consider damped harmonic motion:
+        <me>
+          \ee^{-at}\cos bt
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>
