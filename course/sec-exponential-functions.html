@@ -145,6 +145,13 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\DS}{\displaystyle}
 \newcommand{\eps}{\varepsilon}
 \newcommand{\tsub}[1]{_{\mathrm{#1}}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\limit}[1]{\lim\limits_{#1}}
+\DeclareMathOperator{\Res}{Res}
+\newcommand{\Res}[1]{\Res\limits_{#1}}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\sgn}{sgn}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -458,7 +465,60 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 4.2"><a href="#sec-exponential-functions-2" title="Copy heading and permalink for Objectives 4.2" aria-label="Copy heading and permalink for Objectives 4.2">🔗</a></div></article><section class="introduction" id="sec-exponential-functions-3"><div class="para" id="sec-exponential-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 4.2: Exponential functions"><a href="#sec-exponential-functions" title="Copy heading and permalink for Section 4.2: Exponential functions" aria-label="Copy heading and permalink for Section 4.2: Exponential functions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-exponential-functions-4">
+<li id="sec-exponential-functions-4-1">
+<div class="para logical" id="sec-exponential-functions-4-1-1">
+<div class="para">Population growth:</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-1-1-1">
+\begin{equation*}
+\dv{y}{t}=ky
+\end{equation*}
+</div>
+<div class="para">How can we figure out which function satisfies this relationship?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exponential-functions-4-2">
+<div class="para" id="sec-exponential-functions-4-2-1">Introduce slope fields and Euler’s method<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exponential-functions-4-3">
+<div class="para" id="sec-exponential-functions-4-3-1">We find that the solution curves are always exponential curves<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exponential-functions-4-4">
+<div class="para" id="sec-exponential-functions-4-4-1">When <span class="process-math">\(k=1\text{,}\)</span> the solution for which <span class="process-math">\(y(0)=1\)</span> gives <span class="process-math">\(y(1)=\ee\text{,}\)</span> so the solution must be the exponential function <span class="process-math">\(\ee^{x}\text{.}\)</span> That is, we have:<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-4-2">
+\begin{align*}
+\dv{x}\ee^x \amp = \ee^x\\
+\int \ee^x\id x \amp = \ee^x+C
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exponential-functions-4-5">
+<div class="para" id="sec-exponential-functions-4-5-1">When <span class="process-math">\(k&lt;0\text{,}\)</span> we get exponential decay.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exponential-functions-4-6">
+<div class="para logical" id="sec-exponential-functions-4-6-1">
+<div class="para">Overall, the solution to the original differential equation is</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-6-1-1">
+\begin{equation*}
+y=y_{0}\ee^{kt}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 4.2: Exponential functions"><a href="#sec-exponential-functions" title="Copy heading and permalink for Section 4.2: Exponential functions" aria-label="Copy heading and permalink for Section 4.2: Exponential functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-differential-equations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-trigonometric-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

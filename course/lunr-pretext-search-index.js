@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "The integral: accumulation of change",
-  "body": " The integral: accumulation of change     Approximate total change by adding up many small contributions.    Interpret the definite integral as the signed area between a function and the horizontal axis.    Connect notation and units to the idea of accumulating tiny pieces.      Introduction goes here.   "
+  "body": " The integral: accumulation of change     Approximate total change by adding up many small contributions.    Interpret the definite integral as the signed area between a function and the horizontal axis.    Connect notation and units to the idea of accumulating tiny pieces.      Introduction goes here.     Bathtub example? Work example instead? Both?   NOT doing the bathtub example and avoiding integration of a rate until Chapter 4 could make the FTC more of a surprise!       Approximation of by hand using upper and lower sums    Define as the signed area between and the -axis between and .   The symbol is a long S for a smooth Summation.    The is the infinitesimal width of an infinitely thin rectangle.    We multiply the units.       "
 },
 {
   "id": "sec-the-integral-2",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Properties of integrals",
-  "body": " Properties of integrals     Use linearity to break integrals into simpler parts or scale them appropriately.    Compare integrals by reasoning about which functions lie above or below others.    Combine integrals over adjacent intervals and use these relationships to establish basic properties.      Introduction goes here.   "
+  "body": " Properties of integrals     Use linearity to break integrals into simpler parts or scale them appropriately.    Compare integrals by reasoning about which functions lie above or below others.    Combine integrals over adjacent intervals and use these relationships to establish basic properties.      Introduction goes here.     Linearity properties:     Inequality property: If when , then     Additive Interval Property:     Use the idea of functional equations to play with the Additive Interval Property to find other properties.   Zero Interval Property:     Rewind Property:         "
 },
 {
   "id": "sec-properties-of-integrals-2",
@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "The Fundamental Theorem of Calculus",
-  "body": " The Fundamental Theorem of Calculus     Relate accumulated area to antiderivatives through the Fundamental Theorem of Calculus.    Evaluate definite integrals by subtracting antiderivative values at endpoints.    Interpret indefinite integrals as families of antiderivatives.      Introduction goes here.   "
+  "body": " The Fundamental Theorem of Calculus     Relate accumulated area to antiderivatives through the Fundamental Theorem of Calculus.    Evaluate definite integrals by subtracting antiderivative values at endpoints.    Interpret indefinite integrals as families of antiderivatives.      Introduction goes here.     Come back to the area of a circle?    FTC part I (Evaluation Theorem)  If is an antiderivative of , then:  These more descriptive names for the two parts are due to Bill Kinney at Bethel University.   .    FTC part II (Antiderivative Construction Theorem):  If is continuous on , then the function is an antiderivative of , that is, .    Indefinite integral:  If is an antiderivative of , we define where is an arbitrary constant. Hence the indefinite integral is the entire family of antiderivatives, all offset from each other by a constant.    Practice with antiderivatives, only using the Anti-Power Rule: (as long as )    "
 },
 {
   "id": "sec-the-fundamental-theorem-of-calculus-2",
@@ -241,7 +241,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Average value and average rates",
-  "body": " Average value and average rates     Interpret an average as redistributing a quantity evenly across an interval.    View average value as the mean height of a function over a region.    Relate average rates of change to accumulated change over an interval.      Introduction goes here.   "
+  "body": " Average value and average rates     Interpret an average as redistributing a quantity evenly across an interval.    View average value as the mean height of a function over a region.    Relate average rates of change to accumulated change over an interval.      Introduction goes here.     Review average conceptually in terms of redistribution (perhaps give Arabic origin of the word ?)    The average value of on the interval is     If we think of as the instantaneous rate of change of , then the average rate of change of is    This is something I never liked about the traditional curriculum — there's rarely any indication of why the AROC is any kind of average . For example, Stewart never explains this.     "
 },
 {
   "id": "sec-average-value-and-average-rates-2",
@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Differential equations",
-  "body": " Differential equations     Recognize differential equations as statements about how a quantity changes over time.    Connect basic motion laws to solving simple differential equations.    Use initial conditions to identify the specific solution that fits a given situation.      Introduction goes here.   "
+  "body": " Differential equations     Recognize differential equations as statements about how a quantity changes over time.    Connect basic motion laws to solving simple differential equations.    Use initial conditions to identify the specific solution that fits a given situation.      Introduction goes here.     A differential equation is an equation that gives information about the derivative(s) of a function, and you need to find the original function that fits that description.    Initial value problems    Use motion example from physics to start with and end up with     "
 },
 {
   "id": "sec-differential-equations-2",
@@ -277,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Exponential functions",
-  "body": " Exponential functions     Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.      Introduction goes here.   "
+  "body": " Exponential functions     Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.      Introduction goes here.     Population growth: How can we figure out which function satisfies this relationship?    Introduce slope fields and Euler's method    We find that the solution curves are always exponential curves    When , the solution for which gives , so the solution must be the exponential function . That is, we have:     When , we get exponential decay.    Overall, the solution to the original differential equation is     "
 },
 {
   "id": "sec-exponential-functions-2",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Trigonometric functions",
-  "body": " Trigonometric functions     Model periodic behavior by linking a function to the negative of its second derivative.    Use numerical methods to reconstruct sine and cosine from basic motion information.    Compute derivatives and antiderivatives of the standard trigonometric functions.      Introduction goes here.   "
+  "body": " Trigonometric functions     Model periodic behavior by linking a function to the negative of its second derivative.    Use numerical methods to reconstruct sine and cosine from basic motion information.    Compute derivatives and antiderivatives of the standard trigonometric functions.      Introduction goes here.     Simple harmonic motion:     Can't use slope fields, but can use a modified Euler's method to reconstruct the curve given initial conditions on and .    When and , we get a solution of . Furthermore, observing the slopes shows that , and we can show that also satisfies the differential equation. (There may be a cleaner way to show all this.)    Quotient Rule on and gives the derivatives of the other trig functions:   Every one of these can be thought of backwards to become an antiderivative formula.    Briefly consider damped harmonic motion:     "
 },
 {
   "id": "sec-trigonometric-functions-2",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Logarithmic functions",
-  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.   "
+  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Since and are inverses, we can evaluate two ways to find that     In general, derivatives of inverse functions:     For any base , we can use the fact that and the Chain Rule to get     We can also rewrite for any real as to show that the Power Rule works for any real exponent.    Logarithmic differentiation: Good for complicated derivatives or derivatives involving in both base and power.    Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is a relative rate of change, which is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application?    "
 },
 {
   "id": "sec-logarithmic-functions-2",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.5",
   "title": "Separation of variables",
-  "body": " Separation of variables     Solve simple differential equations by separating variables and integrating each side.    Interpret solutions such as Newton's law of cooling in terms of approach to equilibrium.    Handle logarithmic integrals carefully by choosing signs consistent with initial conditions.      Introduction goes here.   "
+  "body": " Separation of variables     Solve simple differential equations by separating variables and integrating each side.    Interpret solutions such as Newton's law of cooling in terms of approach to equilibrium.    Handle logarithmic integrals carefully by choosing signs consistent with initial conditions.      Introduction goes here.     Use Newton's Law of Heat Transfer example. Solve using separation of variables, and in the process look at integrals of logarithmic functions (including the absolute value).    "
 },
 {
   "id": "sec-separation-of-variables-2",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Limits and continuity",
-  "body": " Limits and continuity     Use limits to describe when a function approaches a value.    Interpret continuity and one-sided behavior by examining how a function behaves near a point.    Recognize and classify common types of discontinuities.      Introduction goes here.   "
+  "body": " Limits and continuity     Use limits to describe when a function approaches a value.    Interpret continuity and one-sided behavior by examining how a function behaves near a point.    Recognize and classify common types of discontinuities.      Introduction goes here.     Introduce limits as a way to clean up the infinitesimal arguments we've been making so far.    Examine the cardinal sine function around . As , , so we say     Avoid the epsilon-delta definition at this stage... this can go in Part V. But we can perhaps still talk about tolerance or arbitrary closeness. Might even be able to use the symbols and for tolerance in the - and -directions, but hold back from the full formal definition.    Use the the Heaviside step function to discuss one-sided limits    Continuity in terms of limits: is continuous at if This means the function must be defined, the limit must exist, and the function must match the limit.    Types of discontinuity: removable, jump, infinite, oscillating    Importantly, do NOT throw away the infinitesimal ideas just because we're using limits now! We'll see the relationship between infinitesimals and everything we’ve done so far in more detail in Part V.    "
 },
 {
   "id": "sec-limits-and-continuity-2",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Analytic techniques for limits",
-  "body": " Analytic techniques for limits     Apply basic limit laws to evaluate limits of standard algebraic expressions.    Use algebraic techniques to evaluate limits of rational functions, including limits at infinity.    Recognize when limits agree with direct substitution because the function is continuous.      Introduction goes here.   "
+  "body": " Analytic techniques for limits     Apply basic limit laws to evaluate limits of standard algebraic expressions.    Use algebraic techniques to evaluate limits of rational functions, including limits at infinity.    Recognize when limits agree with direct substitution because the function is continuous.      Introduction goes here.     Basic limit laws:     Sum, difference, constant multiple, product, quotient laws for limits    Evaluating a polynomial limit using the limit laws. We just get the same as direct substitution; this demonstrates that limits can pass through continuous functions.    Evaluating a limit near a hole using algebraic massage     Behavior near a vertical asymptote    Algebraic massage for square roots and fractions    "
 },
 {
   "id": "sec-analytic-techniques-for-limits-2",
@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Limits and differentiation",
-  "body": " Limits and differentiation     Connect derivatives to limits by interpreting slope as a limiting ratio of changes.    Use limit reasoning to justify core differentiation rules and identify indeterminate forms.    Identify situations where a function fails to be differentiable.      Introduction goes here.   "
+  "body": " Limits and differentiation     Connect derivatives to limits by interpreting slope as a limiting ratio of changes.    Use limit reasoning to justify core differentiation rules and identify indeterminate forms.    Identify situations where a function fails to be differentiable.      Introduction goes here.     Limit definition of a derivative:     Prove Power Rule, Product Rule     as an indeterminate form    Ways in which a function can fail to be differentiable, using as the example:     Role of differentials as changes along the tangent line    "
 },
 {
   "id": "sec-limits-and-differentiation-2",
@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Limits and integration",
-  "body": " Limits and integration     Use limits to describe infinite processes and long-term behavior.    Interpret Riemann sums as limits of increasingly fine partitions to approximate area.    Recognize that not every function is integrable and understand why extreme examples fail.      Introduction goes here.   "
+  "body": " Limits and integration     Use limits to describe infinite processes and long-term behavior.    Interpret Riemann sums as limits of increasingly fine partitions to approximate area.    Recognize that not every function is integrable and understand why extreme examples fail.      Introduction goes here.     Zeno's arrow paradox    Limits at infinity    Sums of powers:     Riemann sum to compute     Some functions aren't integrable: great example is the Dirichlet function     "
 },
 {
   "id": "sec-limits-and-integration-2",
@@ -421,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.5",
   "title": "L’Hôpital’s rule",
-  "body": " L'Hôpital's rule     Use L'Hôpital's Rule to evaluate limits where numerator and denominator both approach zero or infinity.    Interpret limits in terms of relative growth rates.    Use algebraic or logarithmic rewrites to handle other indeterminate forms.      Introduction goes here.   "
+  "body": " L'Hôpital's rule     Use L'Hôpital's Rule to evaluate limits where numerator and denominator both approach zero or infinity.    Interpret limits in terms of relative growth rates.    Use algebraic or logarithmic rewrites to handle other indeterminate forms.      Introduction goes here.     If , then     Same goes for if and are both approaching infinity    For other indeterminate forms, use algebraic massage or logarithms    "
 },
 {
   "id": "sec-l-hopitals-rule-2",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.6",
   "title": "Valuable theorems",
-  "body": " Valuable theorems     Understand how a theorem's conclusion depends critically on its hypotheses.    Use limits and continuity to guarantee intermediate values, extrema, and comparisons between functions.    Relate average and instantaneous change through the Mean Value Theorem.      Introduction goes here.   "
+  "body": " Valuable theorems     Understand how a theorem's conclusion depends critically on its hypotheses.    Use limits and continuity to guarantee intermediate values, extrema, and comparisons between functions.    Relate average and instantaneous change through the Mean Value Theorem.      Introduction goes here.     Emphasize the importance of hypotheses! The Pythagorean theorem is NOT .     Squeeze Theorem   If for all sufficiently close to , and , then .       Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .       Extreme Value Theorem   If is continuous on , then there exist such that for all .       Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .      "
 },
 {
   "id": "sec-valuable-theorems-2",
@@ -451,13 +451,49 @@ var ptx_lunr_docs = [
   "body": "   Understand how a theorem's conclusion depends critically on its hypotheses.    Use limits and continuity to guarantee intermediate values, extrema, and comparisons between functions.    Relate average and instantaneous change through the Mean Value Theorem.    "
 },
 {
+  "id": "sec-valuable-theorems-4-2-1",
+  "level": "2",
+  "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-2-1",
+  "type": "Theorem",
+  "number": "1",
+  "title": "Squeeze Theorem.",
+  "body": " Squeeze Theorem   If for all sufficiently close to , and , then .   "
+},
+{
+  "id": "sec-valuable-theorems-4-3-1",
+  "level": "2",
+  "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-3-1",
+  "type": "Theorem",
+  "number": "2",
+  "title": "Intermediate Value Theorem.",
+  "body": " Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .   "
+},
+{
+  "id": "sec-valuable-theorems-4-4-1",
+  "level": "2",
+  "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-4-1",
+  "type": "Theorem",
+  "number": "3",
+  "title": "Extreme Value Theorem.",
+  "body": " Extreme Value Theorem   If is continuous on , then there exist such that for all .   "
+},
+{
+  "id": "sec-valuable-theorems-4-5-1",
+  "level": "2",
+  "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-5-1",
+  "type": "Theorem",
+  "number": "4",
+  "title": "Mean Value Theorem.",
+  "body": " Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .   "
+},
+{
   "id": "sec-proving-the-fundamental-theorem",
   "level": "1",
   "url": "sec-proving-the-fundamental-theorem.html",
   "type": "Section",
   "number": "5.7",
   "title": "CAPSTONE: Proving the fundamental theorem",
-  "body": " CAPSTONE: Proving the fundamental theorem  "
+  "body": " CAPSTONE: Proving the fundamental theorem    Prove the Antiderivative Construction Theorem using Squeeze Theorem, EVT, MVT for derivatives.    Prove the Evaluation Theorem using MVT for integrals.    This doesn't add new knowledge, but it explains why everything we've done all semester works. That's what makes it a good capstone.    "
 },
 {
   "id": "sec-motion-in-the-plane",

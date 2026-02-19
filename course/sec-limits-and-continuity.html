@@ -145,6 +145,13 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\DS}{\displaystyle}
 \newcommand{\eps}{\varepsilon}
 \newcommand{\tsub}[1]{_{\mathrm{#1}}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\limit}[1]{\lim\limits_{#1}}
+\DeclareMathOperator{\Res}{Res}
+\newcommand{\Res}[1]{\Res\limits_{#1}}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\sgn}{sgn}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -458,7 +465,73 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 5.1"><a href="#sec-limits-and-continuity-2" title="Copy heading and permalink for Objectives 5.1" aria-label="Copy heading and permalink for Objectives 5.1">🔗</a></div></article><section class="introduction" id="sec-limits-and-continuity-3"><div class="para" id="sec-limits-and-continuity-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 5.1: Limits and continuity"><a href="#sec-limits-and-continuity" title="Copy heading and permalink for Section 5.1: Limits and continuity" aria-label="Copy heading and permalink for Section 5.1: Limits and continuity">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-limits-and-continuity-4">
+<li id="sec-limits-and-continuity-4-1">
+<div class="para" id="sec-limits-and-continuity-4-1-1">Introduce limits as a way to ‘clean up’ the infinitesimal arguments we’ve been making so far.<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-limits-and-continuity-4-2">
+<div class="para logical" id="sec-limits-and-continuity-4-2-1">
+<div class="para">Examine the cardinal sine function</div>
+<div class="displaymath process-math" id="sec-limits-and-continuity-4-2-1-1">
+\begin{equation*}
+\sinc x=\frac{\sin x}{x}
+\end{equation*}
+</div>
+<div class="para">around <span class="process-math">\(x=0\text{.}\)</span> As <span class="process-math">\(x\to 0\text{,}\)</span> <span class="process-math">\(\sinc x\to 1\text{,}\)</span> so we say</div>
+<div class="displaymath process-math" id="sec-limits-and-continuity-4-2-1-5">
+\begin{equation*}
+\limit{x\to 0}\frac{\sin x}{x}=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-limits-and-continuity-4-3">
+<div class="para" id="sec-limits-and-continuity-4-3-1">Avoid the epsilon-delta definition at this stage... this can go in Part V. But we can perhaps still talk about ‘tolerance’ or ‘arbitrary closeness.’ Might even be able to use the symbols <span class="process-math">\(\delta\)</span> and <span class="process-math">\(\eps\)</span> for tolerance in the <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-directions, but hold back from the full formal definition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-limits-and-continuity-4-4">
+<div class="para logical" id="sec-limits-and-continuity-4-4-1">
+<div class="para">Use the the Heaviside step function</div>
+<div class="displaymath process-math" id="sec-limits-and-continuity-4-4-1-1">
+\begin{equation*}
+H(x)=\begin{cases}0 \amp \text{if }x&lt;0\\ 1 \amp \text{if }x\ge 0\end{cases}
+\end{equation*}
+</div>
+<div class="para">to discuss one-sided limits</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-limits-and-continuity-4-5">
+<div class="para logical" id="sec-limits-and-continuity-4-5-1">
+<div class="para">Continuity in terms of limits: <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x=a\)</span> if</div>
+<div class="displaymath process-math" id="sec-limits-and-continuity-4-5-1-3">
+\begin{equation*}
+\limit{x\to a}f(x)=f(a)
+\end{equation*}
+</div>
+<div class="para">This means the function must be defined, the limit must exist, and the function must match the limit.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-limits-and-continuity-4-6">
+<div class="para" id="sec-limits-and-continuity-4-6-1">Types of discontinuity: removable, jump, infinite, oscillating<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-limits-and-continuity-4-7">
+<div class="para" id="sec-limits-and-continuity-4-7-1">Importantly, do NOT throw away the infinitesimal ideas just because we’re using limits now! We’ll see the relationship between infinitesimals and everything we’ve done so far in more detail in Part V.<div class="autopermalink" data-description="Paragraph"><a href="#sec-limits-and-continuity-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-limits-and-continuity-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 5.1: Limits and continuity"><a href="#sec-limits-and-continuity" title="Copy heading and permalink for Section 5.1: Limits and continuity" aria-label="Copy heading and permalink for Section 5.1: Limits and continuity">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-limits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-analytic-techniques-for-limits.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
