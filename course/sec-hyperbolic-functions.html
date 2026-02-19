@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,52 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 10.4"><a href="#sec-hyperbolic-functions-2" title="Copy heading and permalink for Objectives 10.4" aria-label="Copy heading and permalink for Objectives 10.4">🔗</a></div></article><section class="introduction" id="sec-hyperbolic-functions-3"><div class="para" id="sec-hyperbolic-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 10.4: Hyperbolic functions"><a href="#sec-hyperbolic-functions" title="Copy heading and permalink for Section 10.4: Hyperbolic functions" aria-label="Copy heading and permalink for Section 10.4: Hyperbolic functions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-hyperbolic-functions-4">
+<li id="sec-hyperbolic-functions-4-1">
+<div class="para" id="sec-hyperbolic-functions-4-1-1">The similarity between the power series for <span class="process-math">\(\ee^{x}\text{,}\)</span> <span class="process-math">\(\sin x\text{,}\)</span> and <span class="process-math">\(\cos x\)</span> suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-hyperbolic-functions-4-1-2">
+\begin{align*}
+\sinh x \amp = x+\frac{x^{3}}{3!}+\frac{x^{5}}{5!}+\frac{x^{7}}{7!}+\cdots=\frac{\ee^{x}-\ee^{-x}}{2} \\
+\cosh x \amp = 1+\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+\frac{x^{6}}{6!}+\cdots=\frac{\ee^{x}+\ee^{-x}}{2}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyperbolic-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-hyperbolic-functions-4-2">
+<div class="para" id="sec-hyperbolic-functions-4-2-1">Define hyperbolic tangent etc. analogously<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyperbolic-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-hyperbolic-functions-4-3">
+<div class="para logical" id="sec-hyperbolic-functions-4-3-1">
+<div class="para">Derivative properties:</div>
+<div class="displaymath process-math" id="sec-hyperbolic-functions-4-3-1-1">
+\begin{equation*}
+\dv{x}\sinh x=\cosh x\qquad\dv{x}\cosh x=\sinh x
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyperbolic-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-hyperbolic-functions-4-4">
+<div class="para" id="sec-hyperbolic-functions-4-4-1">Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as <span class="process-math">\(\sinh^{2} x\)</span> or <span class="process-math">\(\tanh a\tanh b\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyperbolic-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-hyperbolic-functions-4-5">
+<div class="para" id="sec-hyperbolic-functions-4-5-1">By eliminating the parameter, we get that <span class="process-math">\((x,y)=(\cosh t,\sinh t)\)</span> traces out one branch of the hyperbola <span class="process-math">\(x^{2}-y^{2}=1\text{,}\)</span> hence the name.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyperbolic-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-hyperbolic-functions-4-6">
+<div class="para" id="sec-hyperbolic-functions-4-6-1">Catenary as the shape of a hanging chain... try to derive this using just what we know from this course (for reference, see Kline 16.4)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyperbolic-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyperbolic-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 10.4: Hyperbolic functions"><a href="#sec-hyperbolic-functions" title="Copy heading and permalink for Section 10.4: Hyperbolic functions" aria-label="Copy heading and permalink for Section 10.4: Hyperbolic functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-geometric-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-eulers-formula.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,88 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 9.2"><a href="#sec-numerical-integration-2" title="Copy heading and permalink for Objectives 9.2" aria-label="Copy heading and permalink for Objectives 9.2">🔗</a></div></article><section class="introduction" id="sec-numerical-integration-3"><div class="para" id="sec-numerical-integration-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 9.2: Numerical integration"><a href="#sec-numerical-integration" title="Copy heading and permalink for Section 9.2: Numerical integration" aria-label="Copy heading and permalink for Section 9.2: Numerical integration">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-numerical-integration-4">
+<li id="sec-numerical-integration-4-1">
+<div class="para" id="sec-numerical-integration-4-1-1">Frame this as how we can deal with functions with no closed-form antiderivative, like the ones we just saw.<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-numerical-integration-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-numerical-integration-4-2">
+<div class="para logical" id="sec-numerical-integration-4-2-1">
+<div class="para">Left Rectangular Approximation:</div>
+<div class="displaymath process-math" id="sec-numerical-integration-4-2-1-1">
+\begin{equation*}
+L_{n}=\sum_{i=1}^{n} f(x_{i-1})\,\Delta x_{i}
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(f\)</span> is increasing/decreasing, this will be an under/overestimate.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-numerical-integration-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-numerical-integration-4-3">
+<div class="para logical" id="sec-numerical-integration-4-3-1">
+<div class="para">Right Rectangular Approximation:</div>
+<div class="displaymath process-math" id="sec-numerical-integration-4-3-1-1">
+\begin{equation*}
+R_{n}=\sum_{i=1}^{n} f(x_{i})\,\Delta x_{i}
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(f\)</span> is increasing/decreasing, this will be an over/underestimate.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-numerical-integration-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-numerical-integration-4-4">
+<div class="para logical" id="sec-numerical-integration-4-4-1">
+<div class="para">Midpoint Rectangular Approximation:</div>
+<div class="displaymath process-math" id="sec-numerical-integration-4-4-1-1">
+\begin{equation*}
+M_{n}=\sum_{i=1}^{n} f(\bar x_{i})\,\Delta x_{i}
+\end{equation*}
+</div>
+<div class="para">(Here, <span class="process-math">\(\bar x_{i}=\dfrac{x_{i-1}+x_{i}}{2}\)</span> is the midpoint of <span class="process-math">\(x_{i-1}\)</span> and <span class="process-math">\(x_{i}\text{.}\)</span>)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-numerical-integration-4-4-2">If <span class="process-math">\(f\)</span> is concave up/down, this will be an under/overestimate.<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-numerical-integration-4-4-3">Error if <span class="process-math">\(|f''(x)|\le K\)</span> for <span class="process-math">\(a\le x\le b\text{:}\)</span> <span class="process-math">\(|E_{M}|\le\dfrac{K(b-a)^{3}}{24n^{2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-numerical-integration-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-numerical-integration-4-5">
+<div class="para logical" id="sec-numerical-integration-4-5-1">
+<div class="para">Trapezoidal Approximation:</div>
+<div class="displaymath process-math" id="sec-numerical-integration-4-5-1-1">
+\begin{equation*}
+T_{n}=\sum_{i=1}^{n} \dfrac{f(x_{i-1})+f(x_{i})}{2}\,\Delta x_{i}=\dfrac{L_{n}+R_{n}}{2}
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(f\)</span> is concave up/down, this will be an over/underestimate.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-numerical-integration-4-5-2">Error if <span class="process-math">\(|f''(x)|\le K\)</span> for <span class="process-math">\(a\le x\le b\text{:}\)</span> <span class="process-math">\(|E_{T}|\le\dfrac{K(b-a)^{3}}{12n^{2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-numerical-integration-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-numerical-integration-4-6">
+<div class="para logical" id="sec-numerical-integration-4-6-1">
+<div class="para">Simpson’s rule:</div>
+<div class="displaymath process-math" id="sec-numerical-integration-4-6-1-1">
+\begin{equation*}
+\int_{a}^{b} f(x)\dd{x}\approx\dfrac{b-a}{6}\left(f(a)+4f\left(\tfrac{a+b}2\right)+f(b)\right)
+\end{equation*}
+</div>
+<div class="para">Relation to trapezoid and midpoint rules: <span class="process-math">\(S_{2n}=\dfrac{T_{n}+2M_{n}}{3}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-numerical-integration-4-6-2">Error if <span class="process-math">\(|f^{(4)}(x)|\le K\)</span> for <span class="process-math">\(a\le x\le b\text{:}\)</span> <span class="process-math">\(|E_{T}|\le\dfrac{K(b-a)^{5}}{180n^{4}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-numerical-integration-4-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-numerical-integration-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 9.2: Numerical integration"><a href="#sec-numerical-integration" title="Copy heading and permalink for Section 9.2: Numerical integration" aria-label="Copy heading and permalink for Section 9.2: Numerical integration">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-functions-defined-by-integrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-improper-integrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

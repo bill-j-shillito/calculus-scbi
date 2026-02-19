@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,57 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 9.1"><a href="#sec-functions-defined-by-integrals-2" title="Copy heading and permalink for Objectives 9.1" aria-label="Copy heading and permalink for Objectives 9.1">🔗</a></div></article><section class="introduction" id="sec-functions-defined-by-integrals-3"><div class="para" id="sec-functions-defined-by-integrals-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-functions-defined-by-integrals-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 9.1: Functions defined by integrals"><a href="#sec-functions-defined-by-integrals" title="Copy heading and permalink for Section 9.1: Functions defined by integrals" aria-label="Copy heading and permalink for Section 9.1: Functions defined by integrals">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-functions-defined-by-integrals-4">
+<li id="sec-functions-defined-by-integrals-4-1">
+<div class="para logical" id="sec-functions-defined-by-integrals-4-1-1">
+<div class="para">One way of defining the natural logarithm is</div>
+<div class="displaymath process-math" id="sec-functions-defined-by-integrals-4-1-1-1">
+\begin{equation*}
+\ln x=\int_{1}^{x}\frac{1}{t}\dd{t}\text{.}
+\end{equation*}
+</div>
+<div class="para">You can then show that this function has all the properties you’d expect of the natural logarithm.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-functions-defined-by-integrals-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-functions-defined-by-integrals-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-functions-defined-by-integrals-4-2">
+<div class="para logical" id="sec-functions-defined-by-integrals-4-2-1">
+<div class="para">Many functions don’t have closed-form antiderivatives! But we do something very similar to deal with them—we define a new function. A few examples:</div>
+<ul class="circle" id="sec-functions-defined-by-integrals-4-2-1-2">
+<li id="sec-functions-defined-by-integrals-4-2-1-2-1">
+<div class="para logical" id="sec-functions-defined-by-integrals-4-2-1-2-1-1">
+<div class="para">Logarithmic integral:</div>
+<div class="displaymath process-math" id="sec-functions-defined-by-integrals-4-2-1-2-1-1-1">
+\begin{equation*}
+\mathrm{li}(x)=\int_{0}^{x}\frac{1}{\ln t}\dd{t}
+\end{equation*}
+</div>
+<div class="para">This is used in number theory.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-functions-defined-by-integrals-4-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-functions-defined-by-integrals-4-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-functions-defined-by-integrals-4-2-1-2-2">
+<div class="para" id="sec-functions-defined-by-integrals-4-2-1-2-2-1">Fresnel integrals:<div class="autopermalink" data-description="Paragraph"><a href="#sec-functions-defined-by-integrals-4-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-functions-defined-by-integrals-4-2-1-2-2-2">
+\begin{align*}
+\mathrm{S}(x) \amp = \int_{0}^{x}\sin(t^{2})\dd{t}\\
+\mathrm{C}(x) \amp = \int_{0}^{x}\cos(t^{2})\dd{t}
+\end{align*}
+</div>
+<div class="para" id="sec-functions-defined-by-integrals-4-2-1-2-2-3">These are used in optics. Also there’s lots of cool stuff related to the Euler spiral, parametric stuff from Chapter 6, and a connection to roller coasters!<div class="autopermalink" data-description="Paragraph"><a href="#sec-functions-defined-by-integrals-4-2-1-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-functions-defined-by-integrals-4-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-functions-defined-by-integrals-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-functions-defined-by-integrals-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 9.1: Functions defined by integrals"><a href="#sec-functions-defined-by-integrals" title="Copy heading and permalink for Section 9.1: Functions defined by integrals" aria-label="Copy heading and permalink for Section 9.1: Functions defined by integrals">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-special-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-numerical-integration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

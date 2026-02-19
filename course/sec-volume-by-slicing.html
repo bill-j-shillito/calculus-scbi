@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,51 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 7.2"><a href="#sec-volume-by-slicing-2" title="Copy heading and permalink for Objectives 7.2" aria-label="Copy heading and permalink for Objectives 7.2">🔗</a></div></article><section class="introduction" id="sec-volume-by-slicing-3"><div class="para" id="sec-volume-by-slicing-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-volume-by-slicing-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 7.2: Volume by slicing"><a href="#sec-volume-by-slicing" title="Copy heading and permalink for Section 7.2: Volume by slicing" aria-label="Copy heading and permalink for Section 7.2: Volume by slicing">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-volume-by-slicing-4">
+<li id="sec-volume-by-slicing-4-1">
+<div class="para logical" id="sec-volume-by-slicing-4-1-1">
+<div class="para">If a solid has cross sections perpendicular to the <span class="process-math">\(x\)</span>-axis with area <span class="process-math">\(A(x)\text{,}\)</span> then the volume of the solid over <span class="process-math">\(a\le x\le b\)</span> is given by</div>
+<div class="displaymath process-math" id="sec-volume-by-slicing-4-1-1-4">
+\begin{equation*}
+V=\int_{a}^{b}\dd{A}=\int_{a}^{b} A(x)\dd{x}\text{.}
+\end{equation*}
+</div>
+<div class="para">If a solid has cross sections perpendicular to the <span class="process-math">\(y\)</span>-axis with area <span class="process-math">\(A(y)\text{,}\)</span> then the volume of the solid over <span class="process-math">\(c\le y\le d\)</span> is given by</div>
+<div class="displaymath process-math" id="sec-volume-by-slicing-4-1-1-8">
+\begin{equation*}
+V=\int_{c}^{d}\dd{A}=\int_{c}^{d} A(y)\dd{y}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-volume-by-slicing-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-volume-by-slicing-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-volume-by-slicing-4-2">
+<div class="para logical" id="sec-volume-by-slicing-4-2-1">
+<div class="para">Disk Method for solids of revolution (about horizontal axis):</div>
+<div class="displaymath process-math" id="sec-volume-by-slicing-4-2-1-1">
+\begin{equation*}
+V=\int_{a}^{b} \uppi R(x)^{2}\dd{x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-volume-by-slicing-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-volume-by-slicing-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-volume-by-slicing-4-3">
+<div class="para logical" id="sec-volume-by-slicing-4-3-1">
+<div class="para">Washer Method (about horizontal axis):</div>
+<div class="displaymath process-math" id="sec-volume-by-slicing-4-3-1-1">
+\begin{equation*}
+V=\int_{a}^{b} \uppi (R\tsub{outer}(x)^{2}-R\tsub{inner}(x)^{2})\dd{x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-volume-by-slicing-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-volume-by-slicing-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 7.2: Volume by slicing"><a href="#sec-volume-by-slicing" title="Copy heading and permalink for Section 7.2: Volume by slicing" aria-label="Copy heading and permalink for Section 7.2: Volume by slicing">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-area-between-curves.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-volume-by-shells.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

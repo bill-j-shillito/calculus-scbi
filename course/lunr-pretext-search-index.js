@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Motion in the plane",
-  "body": " Motion in the plane                   Introduction goes here.   "
+  "body": " Motion in the plane                   Introduction goes here.     Projectile motion:     Circular motion:     Velocity and acceleration in and directions; briefly mention the vector way of representing it?    "
 },
 {
   "id": "sec-motion-in-the-plane-2",
@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Parametric curves",
-  "body": " Parametric curves                   Introduction goes here.   "
+  "body": " Parametric curves                   Introduction goes here.     Parametric curves are traced out by the motion of a particle, where and are given in terms of     Eliminating the parameter    Slope of a parametric curve:     Parametrization of ellipse:      Parametrization of hyperbola:    (Or switch or for the other one)    "
 },
 {
   "id": "sec-parametric-curves-2",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Area between curves",
-  "body": " Area between curves                   Introduction goes here.   "
+  "body": " Area between curves                   Introduction goes here.     Area bounded by over :     Area bounded by over :     If the demand curve and the supply curve meet at the equilibrium point , then the consumer surplus is , and the producer surplus is .    A Lorenz curve is a function , where , that describes how wealth is distributed among the members of a population. Given any Lorenz curve , the Gini coefficient is defined as . This can be used as a quantitative measure of income inequality.    "
 },
 {
   "id": "sec-area-between-curves-2",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.2",
   "title": "Volume by slicing",
-  "body": " Volume by slicing                   Introduction goes here.   "
+  "body": " Volume by slicing                   Introduction goes here.     If a solid has cross sections perpendicular to the -axis with area , then the volume of the solid over is given by . If a solid has cross sections perpendicular to the -axis with area , then the volume of the solid over is given by .    Disk Method for solids of revolution (about horizontal axis):     Washer Method (about horizontal axis):     "
 },
 {
   "id": "sec-volume-by-slicing-2",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Volume by shells",
-  "body": " Volume by shells                   Introduction goes here.   "
+  "body": " Volume by shells                   Introduction goes here.     Start with an example that can't be done with washers because of non-invertible functions.    If the region under the curve from to ( ) is revolved around the -axis, the volume is     Include something about how to know which method may be best.    "
 },
 {
   "id": "sec-volume-by-shells-2",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Surfaces of revolution",
-  "body": " Surfaces of revolution                   Introduction goes here.   "
+  "body": " Surfaces of revolution                   Introduction goes here.     Area of a surface of revolution for a parametric curve about the -axis:     If revolving a function , this simplifies:     "
 },
 {
   "id": "sec-surfaces-of-revolution-2",
@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Integration by substitution",
-  "body": " Integration by substitution                   Introduction goes here.   "
+  "body": " Integration by substitution                   Introduction goes here.     This is the Anti-Chain Rule : making the substitution and gives     Transforming definite integrals:  According to Advanced Calculus by James J. Callahan, this is a pushforward substitution!       Look at examples where multiple substitutions are needed, such as     "
 },
 {
   "id": "sec-integration-by-substitution-2",
@@ -682,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Integration by parts",
-  "body": " Integration by parts                   Introduction goes here.   "
+  "body": " Integration by parts                   Introduction goes here.     This is the Anti-Product Rule : if we can write our integrand in the form , then we have We want to choose so it’s easy to differentiate and so it's easy to integrate.    Tabular integration for IBP multiple times    Cycle trick for     "
 },
 {
   "id": "sec-integration-by-parts-2",
@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Trigonometric integrals",
-  "body": " Trigonometric integrals                   Introduction goes here.   "
+  "body": " Trigonometric integrals                   Introduction goes here.     For :   If either or is odd, save one factor and convert the rest using the identity .    If both and are even, use the power reduction identities        For :   If is even, save a factor of and use to rewrite the integral.    If is odd, save a factor of and use to rewrite the integral.    If is odd and is even, use substitution and integration by parts as necessary. The integral of comes up in analyzing the Mercator projection!       Integral reduction formulas:     "
 },
 {
   "id": "sec-trigonometric-integrals-2",
@@ -718,7 +718,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "Trigonometric substitution",
-  "body": " Trigonometric substitution                   Introduction goes here.   "
+  "body": " Trigonometric substitution                   Introduction goes here.     Application: Hydrostatic pressure on a circular drum    Make substitutions based on the following:       When you see...  Substitute...                                With definite integrals:  According to Advanced Calculus by James J. Callahan, this is a pullback substitution!         From this we can get some basic derivatives of inverse trigonometric functions:     "
 },
 {
   "id": "sec-trigonometric-substitution-2",
@@ -736,7 +736,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.5",
   "title": "Partial fractions",
-  "body": " Partial fractions                   Introduction goes here.   "
+  "body": " Partial fractions                   Introduction goes here.     Application: logistic population growth    To integrate rational functions, we can use long division to separate out the polynomial part and the proper rational part, after which we can write every partial fraction as a sum of functions of the form .    When we have in the denominator, the partial fraction decomposition will contain an expression of the form . These can be integrated using the Anti-Power Rule or the natural logarithm.    When we have in the denominator, the partial fraction decomposition will contain an expression of the form . These can be integrated using (trigonometric) substitution.    Weierstrass substitution may fit here?    "
 },
 {
   "id": "sec-partial-fractions-2",
@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "Functions defined by integrals",
-  "body": " Functions defined by integrals                   Introduction goes here.   "
+  "body": " Functions defined by integrals                   Introduction goes here.     One way of defining the natural logarithm is . You can then show that this function has all the properties you'd expect of the natural logarithm.    Many functions don't have closed-form antiderivatives! But we do something very similar to deal with them we define a new function. A few examples:   Logarithmic integral: This is used in number theory.    Fresnel integrals:   These are used in optics. Also there's lots of cool stuff related to the Euler spiral, parametric stuff from Chapter 6, and a connection to roller coasters!       "
 },
 {
   "id": "sec-functions-defined-by-integrals-2",
@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.2",
   "title": "Numerical integration",
-  "body": " Numerical integration                   Introduction goes here.   "
+  "body": " Numerical integration                   Introduction goes here.     Frame this as how we can deal with functions with no closed-form antiderivative, like the ones we just saw.    Left Rectangular Approximation: If is increasing\/decreasing, this will be an under\/overestimate.    Right Rectangular Approximation: If is increasing\/decreasing, this will be an over\/underestimate.    Midpoint Rectangular Approximation: (Here, is the midpoint of and .)  If is concave up\/down, this will be an under\/overestimate.  Error if for :     Trapezoidal Approximation: If is concave up\/down, this will be an over\/underestimate.  Error if for :     Simpson’s rule: Relation to trapezoid and midpoint rules:   Error if for :     "
 },
 {
   "id": "sec-numerical-integration-2",
@@ -790,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.3",
   "title": "Improper integrals",
-  "body": " Improper integrals                   Introduction goes here.   "
+  "body": " Improper integrals                   Introduction goes here.     Infinite intervals:     Discontinuous integrands:  If is continuous on and discontinuous at , then If is continuous on and discontinuous at , then If has a discontinuity at , where , then as long as the two indefinite integrals converge.    The -integral converges if and only if .    The -integral converges if and only if .    Gamma function: For any integer we have .    Some notational conventions I’d like to introduce (assuming the limits exist):   These could make writing out the improper integrals somewhat cleaner.    "
 },
 {
   "id": "sec-improper-integrals-2",
@@ -808,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.4",
   "title": "Probability distributions",
-  "body": " Probability distributions                   Introduction goes here.   "
+  "body": " Probability distributions                   Introduction goes here.     Brief review of probability    A function is a probability density function if Then we say the probability that is .    Mean of a random variable :     Variance: Standard deviation:     Gaussian integral: Error function:     "
 },
 {
   "id": "sec-probability-distributions-2",
@@ -826,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.1",
   "title": "Taylor approximations and series",
-  "body": " Taylor approximations and series                   Introduction goes here.   "
+  "body": " Taylor approximations and series                   Introduction goes here.     Motivation: Given a function , find a polynomial function of degree such that   The resulting polynomial is called a Taylor polynomial.    Formula:     If we add more and more terms, we get a better and better approximation of the original function.    So if we had infinitely many terms, we should match the function perfectly! This is called a Taylor series.    If , replace “Taylor” with “Maclaurin”.    Useful Maclaurin series:     "
 },
 {
   "id": "sec-taylor-approximations-and-series-2",
@@ -844,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.2",
   "title": "Manipulating power series",
-  "body": " Manipulating power series                   Introduction goes here.   "
+  "body": " Manipulating power series                   Introduction goes here.     Adding power series    Multiplying through by a factor    Differentiating and integrating term by term    Products of power series? Using a grid? Only if we're going to include Mertens' theorem in Part V.    "
 },
 {
   "id": "sec-manipulating-power-series-2",
@@ -862,7 +862,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.3",
   "title": "Geometric series",
-  "body": " Geometric series                   Introduction goes here.   "
+  "body": " Geometric series                   Introduction goes here.     A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.    A geometric series is the infinite sum.    Sum of a geometric series: shift and subtract    Graph the function... it only converges when . Verify that this makes sense with the numerical behavior. Takeaway: we have to watch out for where any given power series converges.    Include Maclaurin series for , , ,     Madhava series for     "
 },
 {
   "id": "sec-geometric-series-2",
@@ -880,7 +880,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.4",
   "title": "Hyperbolic functions",
-  "body": " Hyperbolic functions                   Introduction goes here.   "
+  "body": " Hyperbolic functions                   Introduction goes here.     The similarity between the power series for , , and suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:     Define hyperbolic tangent etc. analogously    Derivative properties:     Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as or ).    By eliminating the parameter, we get that traces out one branch of the hyperbola , hence the name.    Catenary as the shape of a hanging chain... try to derive this using just what we know from this course (for reference, see Kline 16.4)    "
 },
 {
   "id": "sec-hyperbolic-functions-2",
@@ -898,7 +898,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.5",
   "title": "Euler’s formula",
-  "body": " Euler's formula                   Introduction goes here.   "
+  "body": " Euler's formula                   Introduction goes here.     Review complex numbers, introduce the idea of rotating by a quarter-turn counterclockwise    Substitute into the Maclaurin series for to arrive at Euler's formula:     Apply to second-order linear differential equation: Analyze different cases, including complex case.    Avoid the numerology of .    "
 },
 {
   "id": "sec-eulers-formula-2",
@@ -916,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.6",
   "title": "Fourier series",
-  "body": " Fourier series                   Introduction goes here.   "
+  "body": " Fourier series                   Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Exponential form:     Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
 },
 {
   "id": "sec-fourier-series-2",
@@ -928,13 +928,22 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-fourier-series-4-4-1-1",
+  "level": "2",
+  "url": "sec-fourier-series.html#sec-fourier-series-4-4-1-1",
+  "type": "Theorem",
+  "number": "5",
+  "title": "Fourier Convergence Theorem.",
+  "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
+},
+{
   "id": "sec-the-riemann-zeta-function",
   "level": "1",
   "url": "sec-the-riemann-zeta-function.html",
   "type": "Section",
   "number": "10.7",
   "title": "CAPSTONE: The Riemann zeta function",
-  "body": " CAPSTONE: The Riemann zeta function  "
+  "body": " CAPSTONE: The Riemann zeta function    Harmonic series: Can show pretty easily that it diverges, e.g. by pointing out that the associated improper integral diverges.    Basel problem: We can show it converges. But what does it converge to?    Euler wrote as an infinite product:   Set this equal to Taylor series and divide through by : Collect terms: Rearranging, we find that     What about for other powers? Preliminary definition: Factoring as an infinite product using geometric series:     Easy to extend to complex powers if real part is at least     Analytic continuation is where we pretend that the series converges even where it doesn't (for example with geometric series)    Alternating zeta function: Note that: This works for positive real, except when , but we can just use limits for all of those except .    Reflection formula: Can show that when is negative and even, and . This now works for all complex numbers except .    Riemann Hypothesis: All nontrivial zeros of have real part .    Prime counting function: is the number of prime numbers less than or equal to . Was shown to be asymptotic first to and then to . This is the Prime Number Theorem.    Briefly mention Fourier transform: You give it a function , it gives you a back a new function with spikes at the underlying frequencies of . It's like un-baking a cake. It's awesome.    When you take the Fourier transform of the error term of the Prime Number Theorem, the spikes happen right at the nontrivial zeros of the zeta function!    Why this capstone? It uses almost everything we've been talking about with integrals and series!    "
 },
 {
   "id": "sec-what-are-dimensions-really",

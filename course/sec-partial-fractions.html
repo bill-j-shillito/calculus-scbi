@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,57 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 8.5"><a href="#sec-partial-fractions-2" title="Copy heading and permalink for Objectives 8.5" aria-label="Copy heading and permalink for Objectives 8.5">🔗</a></div></article><section class="introduction" id="sec-partial-fractions-3"><div class="para" id="sec-partial-fractions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 8.5: Partial fractions"><a href="#sec-partial-fractions" title="Copy heading and permalink for Section 8.5: Partial fractions" aria-label="Copy heading and permalink for Section 8.5: Partial fractions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-partial-fractions-4">
+<li id="sec-partial-fractions-4-1">
+<div class="para" id="sec-partial-fractions-4-1-1">Application: logistic population growth<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-partial-fractions-4-2">
+<div class="para logical" id="sec-partial-fractions-4-2-1">
+<div class="para">To integrate rational functions, we can use long division to separate out the polynomial part and the proper rational part, after which we can write every partial fraction as a sum of functions of the form</div>
+<div class="displaymath process-math" id="sec-partial-fractions-4-2-1-1">
+\begin{equation*}
+\frac{A}{(x-\alpha)^{k}}\qand\frac{Bx+C}{(x^{2}+\beta x+\gamma)^{k}}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-partial-fractions-4-3">
+<div class="para logical" id="sec-partial-fractions-4-3-1">
+<div class="para">When we have <span class="process-math">\((x-\alpha)^{k}\)</span> in the denominator, the partial fraction decomposition will contain an expression of the form</div>
+<div class="displaymath process-math" id="sec-partial-fractions-4-3-1-2">
+\begin{equation*}
+\frac{A_{1}}{x-\alpha}+\frac{A_{2}}{(x-\alpha)^{2}}+\cdots+\frac{A_{k}}{(x-\alpha)^{k}}\text{.}
+\end{equation*}
+</div>
+<div class="para">These can be integrated using the Anti-Power Rule or the natural logarithm.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-partial-fractions-4-4">
+<div class="para logical" id="sec-partial-fractions-4-4-1">
+<div class="para">When we have <span class="process-math">\((x+\beta x+\gamma)^{k}\)</span> in the denominator, the partial fraction decomposition will contain an expression of the form</div>
+<div class="displaymath process-math" id="sec-partial-fractions-4-4-1-2">
+\begin{equation*}
+\frac{B_{1}x+C_{1}}{x^{2}+\beta x+\gamma}+\frac{B_{2}x+C_{2}}{(x^{2}+\beta x+\gamma)^{2}}+\cdots+\frac{B_{k}x+C_{k}}{(x^{2}+\beta x+\gamma)^{k}}\text{.}
+\end{equation*}
+</div>
+<div class="para">These can be integrated using (trigonometric) substitution.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-partial-fractions-4-5">
+<div class="para" id="sec-partial-fractions-4-5-1">Weierstrass substitution may fit here?<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 8.5: Partial fractions"><a href="#sec-partial-fractions" title="Copy heading and permalink for Section 8.5: Partial fractions" aria-label="Copy heading and permalink for Section 8.5: Partial fractions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-trigonometric-substitution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-special-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -445,6 +458,162 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-the-riemann-zeta-function"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">CAPSTONE: The Riemann zeta function</span>
 </h2>
+<ul class="disc" id="sec-the-riemann-zeta-function-2">
+<li id="sec-the-riemann-zeta-function-2-1">
+<div class="para logical" id="sec-the-riemann-zeta-function-2-1-1">
+<div class="para">Harmonic series:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-1-1-1">
+\begin{equation*}
+\dfrac{1}{1}+\dfrac{1}{2}+\dfrac{1}{3}+\dfrac{1}{4}+\cdots
+\end{equation*}
+</div>
+<div class="para">Can show pretty easily that it diverges, e.g. by pointing out that the associated improper integral diverges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-2">
+<div class="para logical" id="sec-the-riemann-zeta-function-2-2-1">
+<div class="para">Basel problem:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-2-1-1">
+\begin{equation*}
+\dfrac{1}{1^{2}}+\dfrac{1}{2^{2}}+\dfrac{1}{3^{2}}+\dfrac{1}{4^{2}}+\cdots
+\end{equation*}
+</div>
+<div class="para">We can show it converges. But what does it converge to?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-3">
+<div class="para" id="sec-the-riemann-zeta-function-2-3-1">Euler wrote <span class="process-math">\(\sin x\)</span> as an infinite product:<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-3-2">
+\begin{align*}
+\sin x \amp = x\left(1-\dfrac{x}{\uppi}\right)\left(1+\dfrac{x}{\uppi}\right)\left(1-\dfrac{x}{2\uppi}\right)\left(1+\dfrac{x}{2\uppi}\right)\cdots\\
+\amp = x\left(1-\dfrac{x^{2}}{\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{4\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{9\uppi^{2}}\right)\cdots
+\end{align*}
+</div>
+<div class="para logical" id="sec-the-riemann-zeta-function-2-3-3">
+<div class="para">Set this equal to Taylor series and divide through by <span class="process-math">\(x\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-3-3-2">
+\begin{equation*}
+1-\dfrac{x^{2}}{3!}+\dfrac{x^{4}}{5!}-\dfrac{x^{6}}{7!}+\cdots=x\left(1-\dfrac{x^{2}}{\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{4\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{9\uppi^{2}}\right)\cdots
+\end{equation*}
+</div>
+<div class="para">Collect <span class="process-math">\(x^{2}\)</span> terms:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-3-3-4">
+\begin{equation*}
+-\dfrac{x^{2}}{3!}=-x^{2}\left(\dfrac{1}{\uppi^{2}}+\dfrac{1}{4\uppi^{2}}+\dfrac{1}{9\uppi^{2}}+\cdots\right)
+\end{equation*}
+</div>
+<div class="para">Rearranging, we find that</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-3-3-5">
+\begin{equation*}
+\dfrac{1}{1^{2}}+\dfrac{1}{2^{2}}+\dfrac{1}{3^{2}}+\dfrac{1}{4^{2}}+\cdots=\dfrac{\uppi^{2}}{6}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-4">
+<div class="para logical" id="sec-the-riemann-zeta-function-2-4-1">
+<div class="para">What about for other powers? Preliminary definition:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-4-1-1">
+\begin{equation*}
+\zeta(s)=\dfrac{1}{1^{s}}+\dfrac{1}{2^{s}}+\dfrac{1}{3^{s}}+\dfrac{1}{4^{s}}+\cdots
+\end{equation*}
+</div>
+<div class="para">Factoring as an infinite product using geometric series:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-4-1-2">
+\begin{equation*}
+\zeta(s)=\prod_{p\text{ prime}}\dfrac{1}{1-p^{-s}}=\prod_{p\text{ prime}}\dfrac{p}{p^{s}-1}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-5">
+<div class="para" id="sec-the-riemann-zeta-function-2-5-1">Easy to extend to complex powers if real part is at least <span class="process-math">\(1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-6">
+<div class="para" id="sec-the-riemann-zeta-function-2-6-1">Analytic continuation is where we pretend that the series converges even where it doesn’t (for example with geometric series)<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-7">
+<div class="para logical" id="sec-the-riemann-zeta-function-2-7-1">
+<div class="para">Alternating zeta function:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-7-1-1">
+\begin{equation*}
+\zeta^{*}(s)=\dfrac{1}{1^{s}}-\dfrac{1}{2^{s}}+\dfrac{1}{3^{s}}-\dfrac{1}{4^{s}}+\cdots
+\end{equation*}
+</div>
+<div class="para">Note that:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-7-1-2">
+\begin{equation*}
+\zeta^{*}(s)=\zeta(s)-\dfrac{2}{2^{s}}\zeta(s)\quad\Rightarrow\quad\zeta(s)=\dfrac{\zeta^{*}(s)}{1-2^{1-s}}
+\end{equation*}
+</div>
+<div class="para">This works for positive real, except when <span class="process-math">\(s=1+\dfrac{2\uppi\ii n}{\ln 2}\text{,}\)</span> but we can just use limits for all of those except <span class="process-math">\(s=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-8">
+<div class="para logical" id="sec-the-riemann-zeta-function-2-8-1">
+<div class="para">Reflection formula:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-8-1-1">
+\begin{equation*}
+\zeta(s)=\left(2^{s}\uppi^{s-1}\sin\left(\dfrac{\uppi s}{2}\Gamma(1-s)\right)\right)\cdot\zeta(1-s)
+\end{equation*}
+</div>
+<div class="para">Can show that <span class="process-math">\(\zeta(n)=0\)</span> when <span class="process-math">\(n\)</span> is negative and even, and <span class="process-math">\(\zeta(-1)=-1/12\text{.}\)</span> This now works for all complex numbers except <span class="process-math">\(s=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-9">
+<div class="para" id="sec-the-riemann-zeta-function-2-9-1">Riemann Hypothesis: All nontrivial zeros of <span class="process-math">\(\zeta(s)\)</span> have real part <span class="process-math">\(\tfrac12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-10">
+<div class="para" id="sec-the-riemann-zeta-function-2-10-1">Prime counting function: <span class="process-math">\(\uppi(x)\)</span> is the number of prime numbers less than or equal to <span class="process-math">\(x\text{.}\)</span> Was shown to be asymptotic first to <span class="process-math">\(\dfrac{x}{\ln x}\)</span> and then to <span class="process-math">\(\int_{2}^{x}\dfrac{1}{\ln t}\dd{t}\text{.}\)</span> This is the Prime Number Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-11">
+<div class="para logical" id="sec-the-riemann-zeta-function-2-11-1">
+<div class="para">Briefly mention Fourier transform:</div>
+<div class="displaymath process-math" id="sec-the-riemann-zeta-function-2-11-1-1">
+\begin{equation*}
+\hat{f}(\xi)=\int_{-\infty}^{\infty} f(x)\ee^{-2\uppi\ii x\xi}\dd{x}
+\end{equation*}
+</div>
+<div class="para">You give it a function <span class="process-math">\(f\text{,}\)</span> it gives you a back a new function <span class="process-math">\(\hat{f}\)</span> with spikes at the underlying frequencies of <span class="process-math">\(f\text{.}\)</span> It’s like un-baking a cake. It’s awesome.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-12">
+<div class="para" id="sec-the-riemann-zeta-function-2-12-1">When you take the Fourier transform of the error term of the Prime Number Theorem, the spikes happen right at the nontrivial zeros of the zeta function!<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-12" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-riemann-zeta-function-2-13">
+<div class="para" id="sec-the-riemann-zeta-function-2-13-1">Why this capstone? It uses almost everything we’ve been talking about with integrals and series!<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-riemann-zeta-function-2-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-riemann-zeta-function-2-13" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
 <div class="autopermalink" data-description="Section 10.7: CAPSTONE: The Riemann zeta function"><a href="#sec-the-riemann-zeta-function" title="Copy heading and permalink for Section 10.7: CAPSTONE: The Riemann zeta function" aria-label="Copy heading and permalink for Section 10.7: CAPSTONE: The Riemann zeta function">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-fourier-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-new-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

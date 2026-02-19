@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,47 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 8.1"><a href="#sec-integration-by-substitution-2" title="Copy heading and permalink for Objectives 8.1" aria-label="Copy heading and permalink for Objectives 8.1">🔗</a></div></article><section class="introduction" id="sec-integration-by-substitution-3"><div class="para" id="sec-integration-by-substitution-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-integration-by-substitution-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 8.1: Integration by substitution"><a href="#sec-integration-by-substitution" title="Copy heading and permalink for Section 8.1: Integration by substitution" aria-label="Copy heading and permalink for Section 8.1: Integration by substitution">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-integration-by-substitution-4">
+<li id="sec-integration-by-substitution-4-1">
+<div class="para logical" id="sec-integration-by-substitution-4-1-1">
+<div class="para">This is the “Anti-Chain Rule”: making the substitution <span class="process-math">\(u=g(x)\)</span> and <span class="process-math">\(\dd u=g'(x)\dd{x}\)</span> gives</div>
+<div class="displaymath process-math" id="sec-integration-by-substitution-4-1-1-4">
+\begin{equation*}
+\int f(g(x))g'(x)\dd{x}=\int f(u)\dd{u}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integration-by-substitution-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integration-by-substitution-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integration-by-substitution-4-2">
+<div class="para logical" id="sec-integration-by-substitution-4-2-1">
+<div class="para">Transforming definite integrals: <details id="sec-integration-by-substitution-4-2-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-integration-by-substitution-4-2-1-1-1">According to <em class="emphasis">Advanced Calculus</em> by James J. Callahan, this is a pushforward substitution!<div class="autopermalink" data-description="Paragraph"><a href="#sec-integration-by-substitution-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details>
+</div>
+<div class="displaymath process-math" id="sec-integration-by-substitution-4-2-1-2">
+\begin{equation*}
+\int_{a}^{b} f(g(x))g'(x)\dd{x}=\int_{g(a)}^{g(b)}f(u)\dd{u}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integration-by-substitution-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integration-by-substitution-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integration-by-substitution-4-3">
+<div class="para logical" id="sec-integration-by-substitution-4-3-1">
+<div class="para">Look at examples where multiple substitutions are needed, such as</div>
+<div class="displaymath process-math" id="sec-integration-by-substitution-4-3-1-1">
+\begin{equation*}
+\int x\sqrt{x+1}\dd{x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integration-by-substitution-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integration-by-substitution-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 8.1: Integration by substitution"><a href="#sec-integration-by-substitution" title="Copy heading and permalink for Section 8.1: Integration by substitution" aria-label="Copy heading and permalink for Section 8.1: Integration by substitution">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-integration-techniques.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-integration-by-parts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

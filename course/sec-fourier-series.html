@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,156 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 10.6"><a href="#sec-fourier-series-2" title="Copy heading and permalink for Objectives 10.6" aria-label="Copy heading and permalink for Objectives 10.6">🔗</a></div></article><section class="introduction" id="sec-fourier-series-3"><div class="para" id="sec-fourier-series-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 10.6: Fourier series"><a href="#sec-fourier-series" title="Copy heading and permalink for Section 10.6: Fourier series" aria-label="Copy heading and permalink for Section 10.6: Fourier series">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-fourier-series-4">
+<li id="sec-fourier-series-4-1">
+<div class="para" id="sec-fourier-series-4-1-1">Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music/sound connection)<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-2">
+<div class="para logical" id="sec-fourier-series-4-2-1">
+<div class="para">Formula for a general Fourier series:</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-2-1-1">
+\begin{equation*}
+a_{0}+\sum_{k=1}^{\infty} \big(a_{k}\cos kx+b_{k}\sin kx\big)
+\end{equation*}
+</div>
+<div class="para">Euler-Fourier formulas for coefficients:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-2-2">
+\begin{align*}
+a_0 \amp = \frac{1}{2\uppi}\int_{-\uppi}^{\uppi}f(x)\dd{x} \\
+a_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\cos(kx)\dd{x} \\
+b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-3">
+<div class="para" id="sec-fourier-series-4-3-1">This all works because:<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-3-2">
+\begin{align*}
+\int_{-\uppi}^{\uppi}\sin(kx)\cos(nx)\dd{x} \amp = 0 \quad \text{for all }n,k \\
+\int_{-\uppi}^{\uppi}\cos(kx)\cos(nx)\dd{x} \amp = \uppi\delta_{nk} 
+\end{align*}
+</div>
+<div class="para" id="sec-fourier-series-4-3-3">Can use trig integrals to show this!<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-4">
+<div class="para logical" id="sec-fourier-series-4-4-1">
+<div class="para">Fourier Convergence Theorem (wording from Smith/Minton): <article class="theorem theorem-like" id="sec-fourier-series-4-4-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fourier Convergence Theorem.</span>
+</h3>
+<div class="para logical" id="sec-fourier-series-4-4-1-1-2-1">
+<div class="para">Suppose that <span class="process-math">\(f\)</span> is periodic of period <span class="process-math">\(2l\)</span> and that <span class="process-math">\(f\)</span> and <span class="process-math">\(f'\)</span> are continuous on the interval <span class="process-math">\([-l,l]\text{,}\)</span> expect for at most a finite number of jump discontinuities. Then, <span class="process-math">\(f\)</span> has a convergent Fourier series expansion. Further, the series converges to <span class="process-math">\(f(x)\)</span> when <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x\)</span> and to</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-4-1-1-2-1-10">
+\begin{equation*}
+\frac{1}{2}\left(\limit{t\to x^+}f(t)+\limit{t\to x^-}f(t)\right)
+\end{equation*}
+</div>
+<div class="para">at any points <span class="process-math">\(x\)</span> where <span class="process-math">\(f\)</span> is discontinuous.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-4-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 5: Fourier Convergence Theorem"><a href="#sec-fourier-series-4-4-1-1" title="Copy heading and permalink for Theorem 5: Fourier Convergence Theorem" aria-label="Copy heading and permalink for Theorem 5: Fourier Convergence Theorem">🔗</a></div></article> If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-4-1-2">
+\begin{equation*}
+\frac{f(x^{+})+f(x^{-})}{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-5">
+<div class="para logical" id="sec-fourier-series-4-5-1">
+<div class="para">Exponential form:</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-5-1-1">
+\begin{equation*}
+\sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-6">
+<div class="para logical" id="sec-fourier-series-4-6-1">
+<div class="para">Square wave:</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-6-1-1">
+\begin{equation*}
+\frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-7">
+<div class="para logical" id="sec-fourier-series-4-7-1">
+<div class="para">Sawtooth wave</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-7-1-1">
+\begin{equation*}
+\frac{2}{\uppi}\qty(\sin x-\frac{1}{2}\sin 2x+\frac{1}{3}\sin 3x-\frac{1}{4}\sin 4x+\cdots)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-8">
+<div class="para logical" id="sec-fourier-series-4-8-1">
+<div class="para">Triangle wave</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-8-1-1">
+\begin{equation*}
+\frac{4}{\uppi}\qty(\sin x-\frac{1}{9}\sin 3x+\frac{1}{25}\sin 5x-\frac{1}{49}\sin 7x+\cdots)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-9">
+<div class="para logical" id="sec-fourier-series-4-9-1">
+<div class="para">Up-down:</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-9-1-1">
+\begin{equation*}
+\frac{4}{\uppi}\qty(\cos x+\cos 3x+\cos 5x+\cos 7x+\cdots)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-10">
+<div class="para logical" id="sec-fourier-series-4-10-1">
+<div class="para">Ramp:</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-10-1-1">
+\begin{equation*}
+\frac{\uppi}{2}-\frac{\uppi}{4}\qty(\cos x+\frac{1}{9}\cos 3x+\frac{1}{25}\cos 5x+\frac{1}{49}\cos 7x+\cdots)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-fourier-series-4-11">
+<div class="para logical" id="sec-fourier-series-4-11-1">
+<div class="para">Square pulse:</div>
+<div class="displaymath process-math" id="sec-fourier-series-4-11-1-1">
+\begin{equation*}
+\frac{h}{2\uppi}+\sum_{k=1}^{\infty}\frac{\sin kh}{\uppi k}+\sum_{k=1}^{\infty}\frac{1-\cos kh}{\uppi k}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 10.6: Fourier series"><a href="#sec-fourier-series" title="Copy heading and permalink for Section 10.6: Fourier series" aria-label="Copy heading and permalink for Section 10.6: Fourier series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-eulers-formula.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-riemann-zeta-function.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

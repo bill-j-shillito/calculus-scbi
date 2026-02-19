@@ -151,6 +151,19 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uppi}{\symup{\pi}}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\EV}{E}
+\DeclareMathOperator{\Var}{Var}
+
+
+\DeclareMathOperator{\Sin}{Sin}
+\DeclareMathOperator{\Cos}{Cos}
+\DeclareMathOperator{\Tan}{Tan}
+\DeclareMathOperator{\Sec}{Sec}
+\DeclareMathOperator{\Csc}{Csc}
+\DeclareMathOperator{\Cot}{Cot}
+\DeclareMathOperator{\PV}{PV}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -461,7 +474,69 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 6.2"><a href="#sec-parametric-curves-2" title="Copy heading and permalink for Objectives 6.2" aria-label="Copy heading and permalink for Objectives 6.2">🔗</a></div></article><section class="introduction" id="sec-parametric-curves-3"><div class="para" id="sec-parametric-curves-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 6.2: Parametric curves"><a href="#sec-parametric-curves" title="Copy heading and permalink for Section 6.2: Parametric curves" aria-label="Copy heading and permalink for Section 6.2: Parametric curves">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-parametric-curves-4">
+<li id="sec-parametric-curves-4-1">
+<div class="para" id="sec-parametric-curves-4-1-1">Parametric curves are traced out by the motion of a particle, where <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are given in terms of <span class="process-math">\(t\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-parametric-curves-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-parametric-curves-4-2">
+<div class="para" id="sec-parametric-curves-4-2-1">Eliminating the parameter<div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-parametric-curves-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-parametric-curves-4-3">
+<div class="para logical" id="sec-parametric-curves-4-3-1">
+<div class="para">Slope of a parametric curve:</div>
+<div class="displaymath process-math" id="sec-parametric-curves-4-3-1-1">
+\begin{equation*}
+\dv{y}{x}=\frac{\dd{y}/\dd{t}}{\dd{x}/\dd{t}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-parametric-curves-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-parametric-curves-4-4">
+<div class="para logical" id="sec-parametric-curves-4-4-1">
+<div class="para">Parametrization of ellipse:</div>
+<div class="displaymath process-math" id="sec-parametric-curves-4-4-1-1">
+\begin{equation*}
+\frac{(x-h)^{2}}{a^{2}}+\frac{(y-k)^{2}}{b^{2}}=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-parametric-curves-4-4-2">
+\begin{align*}
+x \amp = h + a\cos t \\
+y \amp = k + b\sin t 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-parametric-curves-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-parametric-curves-4-5">
+<div class="para logical" id="sec-parametric-curves-4-5-1">
+<div class="para">Parametrization of hyperbola:</div>
+<div class="displaymath process-math" id="sec-parametric-curves-4-5-1-1">
+\begin{equation*}
+\frac{(x-h)^{2}}{a^{2}}-\frac{(y-k)^{2}}{b^{2}}=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-parametric-curves-4-5-2">
+\begin{align*}
+x \amp = h + a\sec t \\
+y \amp = k + b\tan t 
+\end{align*}
+</div>
+<div class="para" id="sec-parametric-curves-4-5-3">(Or switch <span class="process-math">\(\tan\)</span> or <span class="process-math">\(\sec\)</span> for the other one)<div class="autopermalink" data-description="Paragraph"><a href="#sec-parametric-curves-4-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-parametric-curves-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 6.2: Parametric curves"><a href="#sec-parametric-curves" title="Copy heading and permalink for Section 6.2: Parametric curves" aria-label="Copy heading and permalink for Section 6.2: Parametric curves">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-motion-in-the-plane.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-arc-length.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
