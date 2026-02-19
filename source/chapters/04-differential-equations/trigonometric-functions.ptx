@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+           Model periodic behavior by linking a function to the negative of its second derivative.
         </p>
       </li>
       <li>
         <p>
-          
+          Use numerical methods to reconstruct sine and cosine from basic motion information.
         </p>
       </li>
       <li>
         <p>
-          
+          Compute derivatives and antiderivatives of the standard trigonometric functions.
         </p>
       </li>
     </ol>
