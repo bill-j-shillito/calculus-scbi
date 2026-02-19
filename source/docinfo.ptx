@@ -23,11 +23,9 @@
     \newcommand{\ee}{\mathrm{e}}
     \newcommand{\ii}{\mathrm{i}}
     \newcommand{\limit}[1]{\lim\limits_{#1}}
-    \DeclareMathOperator{\Res}{Res}
-    \newcommand{\Res}[1]{\Res\limits_{#1}}
+    \newcommand{\resid}[1]{\Res\limits_{#1}}
     \DeclareMathOperator{\sinc}{sinc}
     \DeclareMathOperator{\sgn}{sgn}
-    
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

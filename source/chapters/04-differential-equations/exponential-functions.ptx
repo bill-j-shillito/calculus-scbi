@@ -59,7 +59,7 @@
       </p>
       <md>
         <mrow>\dv{x}\ee^x \amp = \ee^x</mrow>
-        <mrow>\int \ee^x\id x \amp = \ee^x+C</mrow>
+        <mrow>\int \ee^x\dd{x} \amp = \ee^x+C</mrow>
       </md>
     </li>
 
