@@ -133,7 +133,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Higher order derivatives",
-  "body": " Higher order derivatives    Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation nis still pretty standard and hence we should learn it.    Third and higher order derivatives    "
+  "body": " Higher order derivatives    Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
 },
 {
   "id": "sec-linear-approximation",
