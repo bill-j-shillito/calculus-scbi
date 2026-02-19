@@ -148,8 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\DeclareMathOperator{\Res}{Res}
-\newcommand{\Res}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\Res\limits_{#1}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
 \newcommand{\lt}{&lt;}
@@ -462,7 +461,56 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 6.3"><a href="#sec-arc-length-2" title="Copy heading and permalink for Objectives 6.3" aria-label="Copy heading and permalink for Objectives 6.3">🔗</a></div></article><section class="introduction" id="sec-arc-length-3"><div class="para" id="sec-arc-length-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-arc-length-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 6.3: Arc length"><a href="#sec-arc-length" title="Copy heading and permalink for Section 6.3: Arc length" aria-label="Copy heading and permalink for Section 6.3: Arc length">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-arc-length-4">
+<li id="sec-arc-length-4-1">
+<div class="para logical" id="sec-arc-length-4-1-1">
+<div class="para">Differential of arc length:</div>
+<div class="displaymath process-math" id="sec-arc-length-4-1-1-1">
+\begin{equation*}
+\dd s=\sqrt{(\dd{x})^{2}+(\dd{y})^{2}}
+\end{equation*}
+</div>
+<div class="para">(Show right triangle diagram)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-arc-length-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-arc-length-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-arc-length-4-2">
+<div class="para logical" id="sec-arc-length-4-2-1">
+<div class="para">Arc length:</div>
+<div class="displaymath process-math" id="sec-arc-length-4-2-1-1">
+\begin{equation*}
+s=\int_{a}^{b}\dd{s}=\int_{a}^{b}\sqrt{\qty(\dv{x}{t})^{2}+\qty(\dv{y}{t})^{2}}\dd{t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-arc-length-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-arc-length-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-arc-length-4-3">
+<div class="para logical" id="sec-arc-length-4-3-1">
+<div class="para">If the curve is a function <span class="process-math">\(y=f(x)\text{,}\)</span> the formula simplifies:</div>
+<div class="displaymath process-math" id="sec-arc-length-4-3-1-2">
+\begin{equation*}
+s=\int_{a}^{b} \sqrt{1+f'(x)^{2}}\dd{x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-arc-length-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-arc-length-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-arc-length-4-4">
+<div class="para" id="sec-arc-length-4-4-1">Easy to find arc length of a circle, but not doable for an ellipse! More on that later.<div class="autopermalink" data-description="Paragraph"><a href="#sec-arc-length-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-arc-length-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-arc-length-4-5">
+<div class="para" id="sec-arc-length-4-5-1">If <span class="process-math">\((x,y)\)</span> is considered as the position of a particle, then the arc length is the distance traveled.<div class="autopermalink" data-description="Paragraph"><a href="#sec-arc-length-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-arc-length-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 6.3: Arc length"><a href="#sec-arc-length" title="Copy heading and permalink for Section 6.3: Arc length" aria-label="Copy heading and permalink for Section 6.3: Arc length">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-parametric-curves.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-angle-of-inclination.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

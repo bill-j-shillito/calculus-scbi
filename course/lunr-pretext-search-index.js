@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Arc length",
-  "body": " Arc length                   Introduction goes here.   "
+  "body": " Arc length                   Introduction goes here.     Differential of arc length: (Show right triangle diagram)    Arc length:     If the curve is a function , the formula simplifies:     Easy to find arc length of a circle, but not doable for an ellipse! More on that later.    If is considered as the position of a particle, then the arc length is the distance traveled.    "
 },
 {
   "id": "sec-arc-length-2",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Angle of inclination",
-  "body": " Angle of inclination                   Introduction goes here.   "
+  "body": " Angle of inclination                   Introduction goes here.     The angle of inclination is the angle between the tangent to the curve and the horizontal, defined by     Normal line has negative reciprocal slope     Angle between curves can be found using the tangent of a difference formula:     Focal reflection properties of parabola, ellipse, and hyperbola    "
 },
 {
   "id": "sec-angle-of-inclination-2",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.5",
   "title": "Curvature",
-  "body": " Curvature                   Introduction goes here.   "
+  "body": " Curvature                   Introduction goes here.     Curvature of a plane curve:     Derivation:         Radius of curvature is     Center of curvature is the limit of where normal lines intersect    "
 },
 {
   "id": "sec-curvature-2",
