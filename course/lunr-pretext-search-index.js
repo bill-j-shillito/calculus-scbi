@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "The integral: accumulation of change",
-  "body": " The integral: accumulation of change                   Introduction goes here.   "
+  "body": " The integral: accumulation of change     Approximate total change by adding up many small contributions.    Interpret the definite integral as the signed area between a function and the horizontal axis.    Connect notation and units to the idea of accumulating tiny pieces.      Introduction goes here.   "
 },
 {
   "id": "sec-the-integral-2",
@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "3.1",
   "title": "",
-  "body": "               "
+  "body": "   Approximate total change by adding up many small contributions.    Interpret the definite integral as the signed area between a function and the horizontal axis.    Connect notation and units to the idea of accumulating tiny pieces.    "
 },
 {
   "id": "sec-properties-of-integrals",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Properties of integrals",
-  "body": " Properties of integrals                   Introduction goes here.   "
+  "body": " Properties of integrals     Use linearity to break integrals into simpler parts or scale them appropriately.    Compare integrals by reasoning about which functions lie above or below others.    Combine integrals over adjacent intervals and use these relationships to establish basic properties.      Introduction goes here.   "
 },
 {
   "id": "sec-properties-of-integrals-2",
@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "3.2",
   "title": "",
-  "body": "               "
+  "body": "   Use linearity to break integrals into simpler parts or scale them appropriately.    Compare integrals by reasoning about which functions lie above or below others.    Combine integrals over adjacent intervals and use these relationships to establish basic properties.    "
 },
 {
   "id": "sec-the-fundamental-theorem-of-calculus",
@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "The Fundamental Theorem of Calculus",
-  "body": " The Fundamental Theorem of Calculus                   Introduction goes here.   "
+  "body": " The Fundamental Theorem of Calculus     Relate accumulated area to antiderivatives through the Fundamental Theorem of Calculus.    Evaluate definite integrals by subtracting antiderivative values at endpoints.    Interpret indefinite integrals as families of antiderivatives.      Introduction goes here.   "
 },
 {
   "id": "sec-the-fundamental-theorem-of-calculus-2",
@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "3.3",
   "title": "",
-  "body": "               "
+  "body": "   Relate accumulated area to antiderivatives through the Fundamental Theorem of Calculus.    Evaluate definite integrals by subtracting antiderivative values at endpoints.    Interpret indefinite integrals as families of antiderivatives.    "
 },
 {
   "id": "sec-average-value-and-average-rates",
@@ -241,7 +241,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Average value and average rates",
-  "body": " Average value and average rates                   Introduction goes here.   "
+  "body": " Average value and average rates     Interpret an average as redistributing a quantity evenly across an interval.    View average value as the mean height of a function over a region.    Relate average rates of change to accumulated change over an interval.      Introduction goes here.   "
 },
 {
   "id": "sec-average-value-and-average-rates-2",
@@ -250,7 +250,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "3.4",
   "title": "",
-  "body": "               "
+  "body": "   Interpret an average as redistributing a quantity evenly across an interval.    View average value as the mean height of a function over a region.    Relate average rates of change to accumulated change over an interval.    "
 },
 {
   "id": "sec-differential-equations",
@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Differential equations",
-  "body": " Differential equations                   Introduction goes here.   "
+  "body": " Differential equations     Recognize differential equations as statements about how a quantity changes over time.    Connect basic motion laws to solving simple differential equations.    Use initial conditions to identify the specific solution that fits a given situation.      Introduction goes here.   "
 },
 {
   "id": "sec-differential-equations-2",
@@ -268,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.1",
   "title": "",
-  "body": "               "
+  "body": "   Recognize differential equations as statements about how a quantity changes over time.    Connect basic motion laws to solving simple differential equations.    Use initial conditions to identify the specific solution that fits a given situation.    "
 },
 {
   "id": "sec-exponential-functions",
@@ -277,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Exponential functions",
-  "body": " Exponential functions                   Introduction goes here.   "
+  "body": " Exponential functions     Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.      Introduction goes here.   "
 },
 {
   "id": "sec-exponential-functions-2",
@@ -286,7 +286,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.2",
   "title": "",
-  "body": "               "
+  "body": "   Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.    "
 },
 {
   "id": "sec-trigonometric-functions",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Trigonometric functions",
-  "body": " Trigonometric functions                   Introduction goes here.   "
+  "body": " Trigonometric functions     Model periodic behavior by linking a function to the negative of its second derivative.    Use numerical methods to reconstruct sine and cosine from basic motion information.    Compute derivatives and antiderivatives of the standard trigonometric functions.      Introduction goes here.   "
 },
 {
   "id": "sec-trigonometric-functions-2",
@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.3",
   "title": "",
-  "body": "               "
+  "body": "   Model periodic behavior by linking a function to the negative of its second derivative.    Use numerical methods to reconstruct sine and cosine from basic motion information.    Compute derivatives and antiderivatives of the standard trigonometric functions.    "
 },
 {
   "id": "sec-logarithmic-functions",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Logarithmic functions",
-  "body": " Logarithmic functions                   Introduction goes here.   "
+  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.   "
 },
 {
   "id": "sec-logarithmic-functions-2",
@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.4",
   "title": "",
-  "body": "               "
+  "body": "   Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.    "
 },
 {
   "id": "sec-separation-of-variables",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.5",
   "title": "Separation of variables",
-  "body": " Separation of variables                   Introduction goes here.   "
+  "body": " Separation of variables     Solve simple differential equations by separating variables and integrating each side.    Interpret solutions such as Newton's law of cooling in terms of approach to equilibrium.    Handle logarithmic integrals carefully by choosing signs consistent with initial conditions.      Introduction goes here.   "
 },
 {
   "id": "sec-separation-of-variables-2",
@@ -340,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "4.5",
   "title": "",
-  "body": "               "
+  "body": "   Solve simple differential equations by separating variables and integrating each side.    Interpret solutions such as Newton's law of cooling in terms of approach to equilibrium.    Handle logarithmic integrals carefully by choosing signs consistent with initial conditions.    "
 },
 {
   "id": "sec-limits-and-continuity",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Limits and continuity",
-  "body": " Limits and continuity                   Introduction goes here.   "
+  "body": " Limits and continuity     Use limits to describe when a function approaches a value.    Interpret continuity and one-sided behavior by examining how a function behaves near a point.    Recognize and classify common types of discontinuities.      Introduction goes here.   "
 },
 {
   "id": "sec-limits-and-continuity-2",
@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.1",
   "title": "",
-  "body": "               "
+  "body": "   Use limits to describe when a function approaches a value.    Interpret continuity and one-sided behavior by examining how a function behaves near a point.    Recognize and classify common types of discontinuities.    "
 },
 {
   "id": "sec-analytic-techniques-for-limits",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Analytic techniques for limits",
-  "body": " Analytic techniques for limits                   Introduction goes here.   "
+  "body": " Analytic techniques for limits     Apply basic limit laws to evaluate limits of standard algebraic expressions.    Use algebraic techniques to evaluate limits of rational functions, including limits at infinity.    Recognize when limits agree with direct substitution because the function is continuous.      Introduction goes here.   "
 },
 {
   "id": "sec-analytic-techniques-for-limits-2",
@@ -376,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.2",
   "title": "",
-  "body": "               "
+  "body": "   Apply basic limit laws to evaluate limits of standard algebraic expressions.    Use algebraic techniques to evaluate limits of rational functions, including limits at infinity.    Recognize when limits agree with direct substitution because the function is continuous.    "
 },
 {
   "id": "sec-limits-and-differentiation",
@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Limits and differentiation",
-  "body": " Limits and differentiation                   Introduction goes here.   "
+  "body": " Limits and differentiation     Connect derivatives to limits by interpreting slope as a limiting ratio of changes.    Use limit reasoning to justify core differentiation rules and identify indeterminate forms.    Identify situations where a function fails to be differentiable.      Introduction goes here.   "
 },
 {
   "id": "sec-limits-and-differentiation-2",
@@ -394,7 +394,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.3",
   "title": "",
-  "body": "               "
+  "body": "   Connect derivatives to limits by interpreting slope as a limiting ratio of changes.    Use limit reasoning to justify core differentiation rules and identify indeterminate forms.    Identify situations where a function fails to be differentiable.    "
 },
 {
   "id": "sec-limits-and-integration",
@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Limits and integration",
-  "body": " Limits and integration                   Introduction goes here.   "
+  "body": " Limits and integration     Use limits to describe infinite processes and long-term behavior.    Interpret Riemann sums as limits of increasingly fine partitions to approximate area.    Recognize that not every function is integrable and understand why extreme examples fail.      Introduction goes here.   "
 },
 {
   "id": "sec-limits-and-integration-2",
@@ -412,7 +412,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.4",
   "title": "",
-  "body": "               "
+  "body": "   Use limits to describe infinite processes and long-term behavior.    Interpret Riemann sums as limits of increasingly fine partitions to approximate area.    Recognize that not every function is integrable and understand why extreme examples fail.    "
 },
 {
   "id": "sec-l-hopitals-rule",
@@ -421,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.5",
   "title": "L’Hôpital’s rule",
-  "body": " L'Hôpital's rule                   Introduction goes here.   "
+  "body": " L'Hôpital's rule     Use L'Hôpital's Rule to evaluate limits where numerator and denominator both approach zero or infinity.    Interpret limits in terms of relative growth rates.    Use algebraic or logarithmic rewrites to handle other indeterminate forms.      Introduction goes here.   "
 },
 {
   "id": "sec-l-hopitals-rule-2",
@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.5",
   "title": "",
-  "body": "               "
+  "body": "   Use L'Hôpital's Rule to evaluate limits where numerator and denominator both approach zero or infinity.    Interpret limits in terms of relative growth rates.    Use algebraic or logarithmic rewrites to handle other indeterminate forms.    "
 },
 {
   "id": "sec-valuable-theorems",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.6",
   "title": "Valuable theorems",
-  "body": " Valuable theorems                   Introduction goes here.   "
+  "body": " Valuable theorems     Understand how a theorem's conclusion depends critically on its hypotheses.    Use limits and continuity to guarantee intermediate values, extrema, and comparisons between functions.    Relate average and instantaneous change through the Mean Value Theorem.      Introduction goes here.   "
 },
 {
   "id": "sec-valuable-theorems-2",
@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "5.6",
   "title": "",
-  "body": "               "
+  "body": "   Understand how a theorem's conclusion depends critically on its hypotheses.    Use limits and continuity to guarantee intermediate values, extrema, and comparisons between functions.    Relate average and instantaneous change through the Mean Value Theorem.    "
 },
 {
   "id": "sec-proving-the-fundamental-theorem",
