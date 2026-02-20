@@ -66,6 +66,7 @@
             <me>
                 \dv{\theta}{y} = \frac{1}{\cos \theta} = \frac{1}{\sqrt{1-y^2}}
             </me>
+            And we can show that this matches the formula for the derivative of an inverse function.
         </p>
     </li>
 
