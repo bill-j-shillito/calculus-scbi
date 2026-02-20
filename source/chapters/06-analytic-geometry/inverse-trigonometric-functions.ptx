@@ -31,17 +31,6 @@
 
   <ul>
     <li>
-      <p>
-        If a function <m>f</m> is invertible, then its inverse <m>f^{-1}</m> is defined by the property that <m>f(f^{-1}(x))=x</m> for all <m>x</m> in the domain of <m>f^{-1}</m>.
-      </p>
-    </li>
-    <li>
-        <p>
-            The graph can be parametrized by both <m>(t,f(t))</m> and <m>(f^{-1}(t),t)</m>
-        </p>
-    </li>
-
-    <li>
         <p>
             Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the <q>arc</q> refers to the arc length of the unit circle corresponding to that angle.
         </p>

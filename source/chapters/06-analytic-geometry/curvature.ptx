@@ -77,17 +77,17 @@
         </me>
 <!-- 
         <me>
-          \dv{t}\tan\phi=\sec^{2}\phi \dv{\phi}{t}=\dfrac{x'y''-y'x''}{(x')^2}
+          \dv{t}\tan\phi=\sec^{2}\phi \dv{\phi}{t}=\dfrac{x'\ddot{y}-y'x''}{(x')^2}
         </me>
          -->
         <me>
-          \dv{\phi}{t}=\dfrac{\dot{x}\ddot{y}-\dot{y}\ddot{x}}{(\dot{x})^2}\cdot\dfrac{1}{1+\tan^2\phi}=\frac{\dot{x}\dot{y}''-\dot{y}\dot{x}''}{(\dot{x})^{2}+(\dot{y})^{2}}
+          \dv{\phi}{t}=\dfrac{\dot{x}\ddot{y}-\dot{y}\ddot{x}}{(\dot{x})^2}\cdot\dfrac{1}{1+\tan^2\phi}=\frac{\dot{x}\ddot{y}-\dot{y}\ddot{x}}{(\dot{x})^{2}+(\dot{y})^{2}}
         </me>
         <me>
-          \dv{\phi}{s}=\dfrac{\dd\phi/\dd{t}}{\dd s/\dd{t}}=\dfrac{\dot{x}\dot{y}''-\dot{y}\dot{x}''}{((\dot{x})^2+(\dot{y})^2)^{3/2}}
+          \dv{\phi}{s}=\dfrac{\dd\phi/\dd{t}}{\dd s/\dd{t}}=\dfrac{\dot{x}\ddot{y}-\dot{y}\ddot{x}}{((\dot{x})^2+(\dot{y})^2)^{3/2}}
         </me>
         <me>
-          \kappa=\dfrac{|\dot{x}\dot{y}''-\dot{y}\dot{x}''|}{((\dot{x})^2+(\dot{y})^2)^{3/2}}
+          \kappa=\dfrac{|\dot{x}\ddot{y}-\dot{y}\ddot{x}|}{((\dot{x})^2+(\dot{y})^2)^{3/2}}
         </me>
       </p>
     </li>
