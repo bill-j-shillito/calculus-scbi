@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Motion in the plane",
-  "body": " Motion in the plane                   Introduction goes here.     Projectile motion:     Circular motion:     Velocity and acceleration in and directions; briefly mention the vector way of representing it?    "
+  "body": " Motion in the plane                   Introduction goes here.     Projectile motion:     Circular motion:     Velocity and acceleration in and directions    We can combine these representations into a vector (which we'll draw as an arrow):    Position vector:     Velocity vector:     Acceleration vector:       Since we have multiple variables floating around, we can use dot notation to denote derivatives with respect to time:    Velocity vector:     Acceleration vector:       "
 },
 {
   "id": "sec-motion-in-the-plane-2",
@@ -550,18 +550,18 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
-  "id": "sec-angle-of-inclination",
+  "id": "sec-inverse-trigonometric-functions",
   "level": "1",
-  "url": "sec-angle-of-inclination.html",
+  "url": "sec-inverse-trigonometric-functions.html",
   "type": "Section",
   "number": "6.4",
-  "title": "Angle of inclination",
-  "body": " Angle of inclination                   Introduction goes here.     The angle of inclination is the angle between the tangent to the curve and the horizontal, defined by     Normal line has negative reciprocal slope     Angle between curves can be found using the tangent of a difference formula:     Focal reflection properties of parabola, ellipse, and hyperbola    "
+  "title": "Inverse Trigonometric Functions",
+  "body": " Inverse Trigonometric Functions                   Introduction goes here.     If a function is invertible, then its inverse is defined by the property that for all in the domain of .    The graph can be parametrized by both and     Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the arc refers to the arc length of the unit circle corresponding to that angle.    Let , , and . Then we can express the inverse trigonometric functions in terms of these variables:     The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if , then we have . Differentiating both sides with respect to gives: Solving for yields:     Similarly, for , we have . Differentiating both sides gives: Solving for yields:     For , we have . Differentiating both sides gives: Solving for yields:     Put another way, the derivatives of , , and can be thought of as , , and respectively, where is the angle corresponding to the given trigonometric value.    Using as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of :     "
 },
 {
-  "id": "sec-angle-of-inclination-2",
+  "id": "sec-inverse-trigonometric-functions-2",
   "level": "2",
-  "url": "sec-angle-of-inclination.html#sec-angle-of-inclination-2",
+  "url": "sec-inverse-trigonometric-functions.html#sec-inverse-trigonometric-functions-2",
   "type": "Objectives",
   "number": "6.4",
   "title": "",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.5",
   "title": "Curvature",
-  "body": " Curvature                   Introduction goes here.     Curvature of a plane curve:     Derivation:         Radius of curvature is     Center of curvature is the limit of where normal lines intersect    "
+  "body": " Curvature                   Introduction goes here.     The angle of inclination is the angle between the tangent to the curve and the horizontal, defined by     Normal line has negative reciprocal slope     Angle between curves can be found using the tangent of a difference formula:     Focal reflection properties of parabola, ellipse, and hyperbola    Curvature of a plane curve:     Derivation:         Radius of curvature is     Center of curvature is the limit of where normal lines intersect    The osculating circle is the circle with center at the center of curvature and radius equal to the radius of curvature. It is the circle that best approximates the curve at that point.    "
 },
 {
   "id": "sec-curvature-2",
@@ -826,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.1",
   "title": "Taylor approximations and series",
-  "body": " Taylor approximations and series                   Introduction goes here.     Motivation: Given a function , find a polynomial function of degree such that   The resulting polynomial is called a Taylor polynomial.    Formula:     If we add more and more terms, we get a better and better approximation of the original function.    So if we had infinitely many terms, we should match the function perfectly! This is called a Taylor series.    If , replace “Taylor” with “Maclaurin”.    Useful Maclaurin series:     "
+  "body": " Taylor approximations and series                   Introduction goes here.     We saw when we were doing curvature that there may be better approximations of a function than just lines; the osculating circle was one such example. So what other kinds of approximations can we have? (Also, we can note that the osculating circle depends only on the first and second derivatives, so it’s a second-order approximation.)  Given a function , we can find a polynomial function of degree such that   The resulting polynomial is called a Taylor polynomial.    Formula:     If we add more and more terms, we get a better and better approximation of the original function.    So if we had infinitely many terms, we should match the function perfectly! This is called a Taylor series.    If , replace “Taylor” with “Maclaurin”.    Useful Maclaurin series:     "
 },
 {
   "id": "sec-taylor-approximations-and-series-2",
