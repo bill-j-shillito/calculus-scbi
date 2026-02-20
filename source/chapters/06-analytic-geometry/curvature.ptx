@@ -32,6 +32,36 @@
   <ul>
     <li>
       <p>
+        The angle of inclination <m>\phi</m> is the angle between the tangent to the curve and the horizontal, defined by
+        <me>
+          \tan\phi=\dv{y}{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Normal line has negative reciprocal slope <m>\DS-\dv{x}{y}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Angle between curves can be found using the tangent of a difference formula:
+        <me>
+          \tan(\theta-\phi)=\frac{\tan\theta-\tan\phi}{1+\tan\theta\tan\phi}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Focal reflection properties of parabola, ellipse, and hyperbola
+      </p>
+    </li>
+    
+    <li>
+      <p>
         Curvature of a plane curve:
         <me>
           \kappa=\abs{\dv{\phi}{s}}
@@ -43,19 +73,21 @@
       <p>
         Derivation:
         <me>
-          \tan\phi=\dv{y}{x}=\frac{\dd{y}/\dd{t}}{\dd{x}/\dd{t}}=\frac{y'}{x'}
+          \phi=\arctan\left(\dv{y}{x}\right)=\arctan\left(\frac{\dd{y}/\dd{t}}{\dd{x}/\dd{t}}\right)=\arctan\left(\frac{\dot{y}}{\dot{x}}\right)
         </me>
+<!-- 
         <me>
           \dv{t}\tan\phi=\sec^{2}\phi \dv{\phi}{t}=\dfrac{x'y''-y'x''}{(x')^2}
         </me>
+         -->
         <me>
-          \dv{\phi}{t}=\dfrac{x'y''-y'x''}{(x')^2}\cdot\dfrac{1}{1+\tan^2\phi}=\frac{x'y''-y'x''}{(x')^{2}+(y')^{2}}
+          \dv{\phi}{t}=\dfrac{\dot{x}\ddot{y}-\dot{y}\ddot{x}}{(\dot{x})^2}\cdot\dfrac{1}{1+\tan^2\phi}=\frac{\dot{x}\dot{y}''-\dot{y}\dot{x}''}{(\dot{x})^{2}+(\dot{y})^{2}}
         </me>
         <me>
-          \dv{\phi}{s}=\dfrac{\dd\phi/\dd{t}}{\dd s/\dd{t}}=\dfrac{x'y''-y'x''}{((x')^2+(y')^2)^{3/2}}
+          \dv{\phi}{s}=\dfrac{\dd\phi/\dd{t}}{\dd s/\dd{t}}=\dfrac{\dot{x}\dot{y}''-\dot{y}\dot{x}''}{((\dot{x})^2+(\dot{y})^2)^{3/2}}
         </me>
         <me>
-          \kappa=\dfrac{|x'y''-y'x''|}{((x')^2+(y')^2)^{3/2}}
+          \kappa=\dfrac{|\dot{x}\dot{y}''-\dot{y}\dot{x}''|}{((\dot{x})^2+(\dot{y})^2)^{3/2}}
         </me>
       </p>
     </li>
@@ -69,6 +101,12 @@
     <li>
       <p>
         Center of curvature is the limit of where normal lines intersect
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The osculating circle is the circle with center at the center of curvature and radius equal to the radius of curvature. It is the circle that best approximates the curve at that point.
       </p>
     </li>
   </ul>

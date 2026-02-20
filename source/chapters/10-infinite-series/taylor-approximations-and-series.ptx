@@ -32,7 +32,10 @@
   <ul>
     <li>
       <p>
-        Motivation: Given a function <m>f</m>, find a polynomial function <m>p</m> of degree <m>n</m> such that
+        We saw when we were doing curvature that there may be better approximations of a function than just lines; the osculating circle was one such example. So what other kinds of approximations can we have? (Also, we can note that the osculating circle depends only on the first and second derivatives, so it’s a second-order approximation.)
+      </p>
+      <p>
+        Given a function <m>f</m>, we can find a polynomial function <m>p</m> of degree <m>n</m> such that
       </p>
       <md>
         <mrow>p(a) \amp = f(a)</mrow>

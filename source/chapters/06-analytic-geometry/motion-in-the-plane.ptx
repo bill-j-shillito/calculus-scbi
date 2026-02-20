@@ -52,8 +52,48 @@
 
     <li>
       <p>
-        Velocity and acceleration in <m>x</m> and <m>y</m> directions; briefly mention the vector way of representing it?
+        Velocity and acceleration in <m>x</m> and <m>y</m> directions
       </p>
+    </li>
+
+    <li>
+      <p>
+        We can combine these representations into a vector (which we'll draw as an arrow):
+      </p>
+      <ul>
+        <li>
+          <p>
+            Position vector: <me> \langle x(t), y(t) \rangle </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Velocity vector: <me> \langle x'(t), y'(t) \rangle </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Acceleration vector: <me> \langle x''(t), y''(t) \rangle </me>
+          </p>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <p>
+        Since we have multiple variables floating around, we can use <sq>dot notation</sq> to denote derivatives with respect to time:
+      </p>
+      <ul>
+        <li>
+          <p>
+            Velocity vector: <me> \langle \dot{x}(t), \dot{y}(t) \rangle </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Acceleration vector: <me> \langle \ddot{x}(t), \ddot{y}(t) \rangle </me>
+          </p>
+      </ul>
     </li>
   </ul>
 </section>

@@ -12,6 +12,6 @@
     <xi:include href="./motion-in-the-plane.ptx" />
     <xi:include href="./parametric-curves.ptx" />
     <xi:include href="./arc-length.ptx" />
-    <xi:include href="./angle-of-inclination.ptx" />
+    <xi:include href="./inverse-trigonometric-functions.ptx" />
     <xi:include href="./curvature.ptx" />
 </chapter>

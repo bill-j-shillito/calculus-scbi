@@ -30,34 +30,6 @@
   </introduction>
 
   <ul>
-    <li>
-      <p>
-        The angle of inclination <m>\phi</m> is the angle between the tangent to the curve and the horizontal, defined by
-        <me>
-          \tan\phi=\dv{y}{x}
-        </me>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Normal line has negative reciprocal slope <m>\DS-\dv{x}{y}</m>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Angle between curves can be found using the tangent of a difference formula:
-        <me>
-          \tan(\theta-\phi)=\frac{\tan\theta-\tan\phi}{1+\tan\theta\tan\phi}
-        </me>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Focal reflection properties of parabola, ellipse, and hyperbola
-      </p>
-    </li>
+    
   </ul>
 </section>

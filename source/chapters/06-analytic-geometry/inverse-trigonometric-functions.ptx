@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-inverse-trigonometric-functions">
+  <title>Inverse Trigonometric Functions</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          
+        </p>
+      </li>
+      <li>
+        <p>
+          
+        </p>
+      </li>
+      <li>
+        <p>
+          
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        If a function <m>f</m> is invertible, then its inverse <m>f^{-1}</m> is defined by the property that <m>f(f^{-1}(x))=x</m> for all <m>x</m> in the domain of <m>f^{-1}</m>.
+      </p>
+    </li>
+    <li>
+        <p>
+            The graph can be parametrized by both <m>(t,f(t))</m> and <m>(f^{-1}(t),t)</m>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the <q>arc</q> refers to the arc length of the unit circle corresponding to that angle.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Let <m>x=\cos\theta</m>, <m>y=\sin\theta</m>, and <m>m=\tan\theta</m>. Then we can express the inverse trigonometric functions in terms of these variables:
+            <me>
+                \theta = \arcsin y = \arccos x = \arctan m
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if <m>\theta=\arcsin y</m>, then we have <m>\sin \theta = y</m>. Differentiating both sides with respect to <m>x</m> gives:
+            <me>
+                \cos \theta \cdot \dv{\theta}{y} = 1
+            </me>
+            Solving for <m>\dv{\theta}{y}</m> yields:
+            <me>
+                \dv{\theta}{y} = \frac{1}{\cos \theta} = \frac{1}{\sqrt{1-y^2}}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Similarly, for <m>\theta=\arccos x</m>, we have <m>\cos \theta = x</m>. Differentiating both sides gives:
+            <me>
+                -\sin \theta \cdot \dv{\theta}{x} = 1
+            </me>
+            Solving for <m>\dv{\theta}{x}</m> yields:
+            <me>
+                \dv{\theta}{x} = -\frac{1}{\sin \theta} = -\frac{1}{\sqrt{1-x^2}}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            For <m>\theta=\arctan x</m>, we have <m>\tan \theta = x</m>. Differentiating both sides gives:
+            <me>
+                \sec^2 \theta \cdot \dv{\theta}{x} = 1
+            </me>
+            Solving for <m>\dv{\theta}{x}</m> yields:
+            <me>
+                \dv{\theta}{x} = \frac{1}{\sec^2 \theta} = \frac{1}{1+x^2}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Put another way, the derivatives of <m>\arcsin</m>, <m>\arccos</m>, and <m>\arctan</m> can be thought of as <m>\dv{\theta}{y}</m>, <m>\dv{\theta}{x}</m>, and <m>\dv{\theta}{x}</m> respectively, where <m>\theta</m> is the angle corresponding to the given trigonometric value.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Using <m>x</m> as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of <m>x</m>:
+            <md>
+                <mrow>\dv{x}\arcsin x \amp x = \frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow>\dv{x}\arccos x \amp x = -\frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow>\dv{x}\arctan x \amp x = \frac{1}{1+x^2}</mrow>
+            </md>
+        </p>
+    </li>
+  </ul>
+</section>
