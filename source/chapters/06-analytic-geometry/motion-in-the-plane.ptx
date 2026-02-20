@@ -86,12 +86,12 @@
       <ul>
         <li>
           <p>
-            Velocity vector: <me> \langle \dot{x}(t), \dot{y}(t) \rangle </me>
+            Velocity vector: <me> \langle \dot{x}, \dot{y} \rangle </me>
           </p>
         </li>
         <li>
           <p>
-            Acceleration vector: <me> \langle \ddot{x}(t), \ddot{y}(t) \rangle </me>
+            Acceleration vector: <me> \langle \ddot{x}, \ddot{y} \rangle </me>
           </p>
         </li>
       </ul>
