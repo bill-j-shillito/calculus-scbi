@@ -84,13 +84,13 @@
 
     <li>
         <p>
-            For <m>\theta=\arctan x</m>, we have <m>\tan \theta = x</m>. Differentiating both sides gives:
+            For <m>\theta=\arctan m</m>, we have <m>\tan \theta = m</m>. Differentiating both sides gives:
             <me>
-                \sec^2 \theta \cdot \dv{\theta}{x} = 1
+                \sec^2 \theta \cdot \dv{\theta}{m} = 1
             </me>
-            Solving for <m>\DS\dv{\theta}{x}</m> yields:
+            Solving for <m>\DS\dv{\theta}{m}</m> yields:
             <me>
-                \dv{\theta}{x} = \frac{1}{\sec^2 \theta} = \frac{1}{1+x^2}
+                \dv{\theta}{m} = \frac{1}{\sec^2 \theta} = \frac{1}{1+m^2}
             </me>
         </p>
     </li>
