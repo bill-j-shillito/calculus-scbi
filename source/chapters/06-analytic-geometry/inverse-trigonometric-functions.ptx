@@ -97,7 +97,7 @@
 
     <li>
         <p>
-            Put another way, the derivatives of <m>\arcsin</m>, <m>\arccos</m>, and <m>\arctan</m> can be thought of as <m>\DS\dv{\theta}{y}</m>, <m>\DS\dv{\theta}{x}</m>, and <m>\DS\dv{\theta}{x}</m> respectively, where <m>\theta</m> is the angle corresponding to the given trigonometric value.
+            Put another way, the derivatives of <m>\arcsin</m>, <m>\arccos</m>, and <m>\arctan</m> can be thought of as <m>\DS\dv{\theta}{y}</m>, <m>\DS\dv{\theta}{x}</m>, and <m>\DS\dv{\theta}{m}</m> respectively, where <m>\theta</m> is the angle corresponding to the given trigonometric value.
         </p>
     </li>
 
