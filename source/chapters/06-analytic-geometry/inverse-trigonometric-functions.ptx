@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-inverse-trigonometric-functions">
-  <title>Inverse Trigonometric Functions</title>
+  <title>Inverse trigonometric functions</title>
 
   <objectives>
     <ol>
@@ -62,7 +62,7 @@
             <me>
                 \cos \theta \cdot \dv{\theta}{y} = 1
             </me>
-            Solving for <m>\dv{\theta}{y}</m> yields:
+            Solving for <m>\DS\dv{\theta}{y}</m> yields:
             <me>
                 \dv{\theta}{y} = \frac{1}{\cos \theta} = \frac{1}{\sqrt{1-y^2}}
             </me>
@@ -75,7 +75,7 @@
             <me>
                 -\sin \theta \cdot \dv{\theta}{x} = 1
             </me>
-            Solving for <m>\dv{\theta}{x}</m> yields:
+            Solving for <m>\DS\dv{\theta}{x}</m> yields:
             <me>
                 \dv{\theta}{x} = -\frac{1}{\sin \theta} = -\frac{1}{\sqrt{1-x^2}}
             </me>
@@ -88,7 +88,7 @@
             <me>
                 \sec^2 \theta \cdot \dv{\theta}{x} = 1
             </me>
-            Solving for <m>\dv{\theta}{x}</m> yields:
+            Solving for <m>\DS\dv{\theta}{x}</m> yields:
             <me>
                 \dv{\theta}{x} = \frac{1}{\sec^2 \theta} = \frac{1}{1+x^2}
             </me>
@@ -97,7 +97,7 @@
 
     <li>
         <p>
-            Put another way, the derivatives of <m>\arcsin</m>, <m>\arccos</m>, and <m>\arctan</m> can be thought of as <m>\dv{\theta}{y}</m>, <m>\dv{\theta}{x}</m>, and <m>\dv{\theta}{x}</m> respectively, where <m>\theta</m> is the angle corresponding to the given trigonometric value.
+            Put another way, the derivatives of <m>\arcsin</m>, <m>\arccos</m>, and <m>\arctan</m> can be thought of as <m>\DS\dv{\theta}{y}</m>, <m>\DS\dv{\theta}{x}</m>, and <m>\DS\dv{\theta}{x}</m> respectively, where <m>\theta</m> is the angle corresponding to the given trigonometric value.
         </p>
     </li>
 
@@ -105,9 +105,9 @@
         <p>
             Using <m>x</m> as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of <m>x</m>:
             <md>
-                <mrow>\dv{x}\arcsin x \amp x = \frac{1}{\sqrt{1-x^2}}</mrow>
-                <mrow>\dv{x}\arccos x \amp x = -\frac{1}{\sqrt{1-x^2}}</mrow>
-                <mrow>\dv{x}\arctan x \amp x = \frac{1}{1+x^2}</mrow>
+                <mrow>\dv{x}\arcsin x \amp = \frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow>\dv{x}\arccos x \amp = -\frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow>\dv{x}\arctan x \amp = \frac{1}{1+x^2}</mrow>
             </md>
         </p>
     </li>
