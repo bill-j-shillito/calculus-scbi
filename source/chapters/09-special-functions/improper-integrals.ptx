@@ -55,7 +55,7 @@
       <me>
         \int_{a}^{b} f(x)\dd{x}=\limit{t\to a^+}\int_{t}^{b} f(x)\dd{x}\text{.}
       </me>
-      If <m>f</m> has a discontinuity at <m>c</m>, where <m>a &lt; c &lt; b</m>, then
+      If <m>f</m> has a discontinuity at <m>c</m>, where <m>a \lt  c \lt  b</m>, then
       <me>
         \int_{a}^{b} f(x)\dd{x}=\int_{a}^{c} f(x)\dd{x}+\int_{c}^{b} f(x)\dd{x}
       </me>

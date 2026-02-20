@@ -42,7 +42,7 @@
 
           <li>
             <p>
-              If <m>f''(x)&lt;0</m>, then <m>f</m> is concave down
+              If <m>f''(x)\lt 0</m>, then <m>f</m> is concave down
             </p>
           </li>
         </ul>

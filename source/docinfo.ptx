@@ -30,6 +30,8 @@
     \DeclareMathOperator{\Prob}{P}
     \DeclareMathOperator{\EV}{E}
     \DeclareMathOperator{\Var}{Var}
+    \newcommand{\lt}{&lt;}
+    \newcommand{\gt}{&gt;}
 
     <!-- Capitalized principal values -->
     \DeclareMathOperator{\Sin}{Sin}

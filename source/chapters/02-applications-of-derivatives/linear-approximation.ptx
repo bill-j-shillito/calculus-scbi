@@ -51,13 +51,13 @@
         <ul>
           <li>
             <p>
-              If <m>f''(a)>0</m>, then <m>f</m> is concave up around <m>a</m>, so <m>L(x)&lt;L(a)</m>.
+              If <m>f''(a)>0</m>, then <m>f</m> is concave up around <m>a</m>, so <m>L(x)\lt L(a)</m>.
             </p>
           </li>
 
           <li>
             <p>
-              If <m>f''(a)&lt;0</m>, then <m>f</m> is concave down around <m>a</m>, so <m>L(x)>L(a)</m>.
+              If <m>f''(a)\lt 0</m>, then <m>f</m> is concave down around <m>a</m>, so <m>L(x)>L(a)</m>.
             </p>
           </li>
         </ul>

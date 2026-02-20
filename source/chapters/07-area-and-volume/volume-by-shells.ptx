@@ -38,7 +38,7 @@
 
     <li>
       <p>
-        If the region under the curve <m>y=f(x)</m> from <m>a</m> to <m>b</m> (<m>0\le a &lt; b</m>) is revolved around the <m>x</m>-axis, the volume is
+        If the region under the curve <m>y=f(x)</m> from <m>a</m> to <m>b</m> (<m>0\le a \lt  b</m>) is revolved around the <m>x</m>-axis, the volume is
         <me>
           V=\int_{a}^{b} 2\uppi xf(x)\dd{x}
         </me>

@@ -83,7 +83,7 @@
 					<li>
 						<p>
 			If 
-							<m>\DS\dv{y}{x}&lt;0</m> on an interval, then 
+							<m>\DS\dv{y}{x}\lt 0</m> on an interval, then 
 							<m>f</m> is decreasing on that interval
 		
 						</p>

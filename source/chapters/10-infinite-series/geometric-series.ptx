@@ -51,7 +51,7 @@
     <li>
       <p>
         Graph the function...
-        it only converges when <m>-1&lt;x&lt;1</m>.
+        it only converges when <m>-1\lt x\lt 1</m>.
         Verify that this makes sense with the numerical behavior.
         Takeaway: we have to watch out for where any given power series converges.
       </p>

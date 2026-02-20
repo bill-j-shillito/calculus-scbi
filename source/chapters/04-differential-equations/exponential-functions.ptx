@@ -65,7 +65,7 @@
 
     <li>
       <p>
-        When <m>k&lt;0</m>, we get exponential decay.
+        When <m>k\lt 0</m>, we get exponential decay.
       </p>
     </li>
 
