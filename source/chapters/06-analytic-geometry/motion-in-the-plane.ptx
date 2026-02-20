@@ -93,6 +93,7 @@
           <p>
             Acceleration vector: <me> \langle \ddot{x}(t), \ddot{y}(t) \rangle </me>
           </p>
+        </li>
       </ul>
     </li>
   </ul>
