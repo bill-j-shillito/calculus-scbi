@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,161 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 20.4"><a href="#sec-integrals-of-holomorphic-functions-2" title="Copy heading and permalink for Objectives 20.4" aria-label="Copy heading and permalink for Objectives 20.4">🔗</a></div></article><section class="introduction" id="sec-integrals-of-holomorphic-functions-3"><div class="para" id="sec-integrals-of-holomorphic-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 20.4: Integrals of holomorphic functions"><a href="#sec-integrals-of-holomorphic-functions" title="Copy heading and permalink for Section 20.4: Integrals of holomorphic functions" aria-label="Copy heading and permalink for Section 20.4: Integrals of holomorphic functions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-integrals-of-holomorphic-functions-4">
+<li id="sec-integrals-of-holomorphic-functions-4-1">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-1-1">LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier. The proofs essentially boil down to using the things we already used in the other sections, e.g. path independence if and only if closed paths give zero integral .<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-2">
+<div class="para" id="p-derived-sec-integrals-of-holomorphic-functions-4-2">
+<article class="theorem theorem-like" id="sec-integrals-of-holomorphic-functions-4-2-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cauchy’s integral theorem.</span>
+</h3>
+<div class="para logical" id="sec-integrals-of-holomorphic-functions-4-2-1-2-1">
+<div class="para">Suppose <span class="process-math">\(f\)</span> is holomorphic in a simply connected domain <span class="process-math">\(D\)</span> and that <span class="process-math">\(f'\)</span> is continuous in <span class="process-math">\(D\text{.}\)</span> Then for every simple closed contour <span class="process-math">\(C\)</span> in <span class="process-math">\(D\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-2-1-2-1-7">
+\begin{equation*}
+\oint_{C} f(z)\dd{z}=0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 12: Cauchy’s integral theorem"><a href="#sec-integrals-of-holomorphic-functions-4-2-1" title="Copy heading and permalink for Theorem 12: Cauchy’s integral theorem" aria-label="Copy heading and permalink for Theorem 12: Cauchy’s integral theorem">🔗</a></div></article><details id="sec-integrals-of-holomorphic-functions-4-2-1-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-integrals-of-holomorphic-functions-4-2-1-3-1">Let <span class="process-math">\(\bv{F}=(u,-v)\)</span> be the Pólya vector field of <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-2-1-3-2">
+\begin{align*}
+\oint_C f(z)\dd{z} \amp = \oint_C (u+\ii v)(\dd{x}+\ii\dd{y})\\
+\amp = \oint_C (u\dd{x}-v\dd{y}) + \ii\oint_C (v\dd{x}+u\dd{y})\\
+\amp = \oint_C \bv{F}\cdot\uv{t}\dd{s} + \ii\oint_C \bv{F}\cdot\uv{n}\dd{s}\\
+\amp = \iint_D \Curl\bv{F}\dd{A} + \ii\iint_D \Div\bv{F}\dd{A}\\
+\amp = \iint_D \qty(\pdv{u}{y}+\pdv{v}{x})\dd{A} + \ii\iint_D \qty(\pdv{u}{x}-\pdv{v}{y})\dd{A}
+\end{align*}
+</div>
+<div class="para logical" id="sec-integrals-of-holomorphic-functions-4-2-1-3-3">
+<div class="para">Since <span class="process-math">\(f\)</span> is holomorphic, it satisfies the Cauchy-Riemann equation, so <span class="process-math">\(\bv F\)</span> is irrational and incompressible. Hence</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-2-1-3-3-3">
+\begin{equation*}
+\int_{C} f(z)\dd{z}=0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-2-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 12.1"><a href="#sec-integrals-of-holomorphic-functions-4-2-1-3" title="Copy heading and permalink for Proof 12.1" aria-label="Copy heading and permalink for Proof 12.1">🔗</a></div></article></details>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-3">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-3-1">
+<article class="theorem theorem-like" id="sec-integrals-of-holomorphic-functions-4-3-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cauchy-Goursat theorem.</span>
+</h3>Suppose <span class="process-math">\(f\)</span> is holomorphic in a simply connected domain <span class="process-math">\(D\text{.}\)</span> Then for every simple closed contour <span class="process-math">\(C\)</span> in <span class="process-math">\(D\text{,}\)</span><div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-3-1-1-2-5">
+\begin{equation*}
+\oint_{C} f(z)\dd{z}=0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Theorem 13: Cauchy-Goursat theorem"><a href="#sec-integrals-of-holomorphic-functions-4-3-1-1" title="Copy heading and permalink for Theorem 13: Cauchy-Goursat theorem" aria-label="Copy heading and permalink for Theorem 13: Cauchy-Goursat theorem">🔗</a></div></article> Much harder to prove! Does it based on triangular contours, then polygonal, then any.<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-4">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-4-1">Multiply connected domains lead to deformation of contours!<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-4-2">
+\begin{align*}
+\oint_{C\tsub{outside}} \bv{F}\cdot\dd{\bv{r}} - \oint_{C\tsub{inside}} \bv{F}\cdot\dd{\bv{r}} \amp = 0\\
+\oint_{C\tsub{outside}} \bv{F}\cdot\dd{\bv{r}} \amp = \oint_{C\tsub{inside}} \bv{F}\cdot\dd{\bv{r}}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-5">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-5-1">
+<article class="theorem theorem-like" id="sec-integrals-of-holomorphic-functions-4-5-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cauchy-Goursat for simply connected domains.</span>
+</h3>
+<div class="para logical" id="sec-integrals-of-holomorphic-functions-4-5-1-1-2-1">
+<div class="para">Suppose <span class="process-math">\(C, C_{1}, \cdots, C_{n}\)</span> are simple closed curves with positive orientation such that <span class="process-math">\(C_{1},C_{2},\cdots,C_{n}\)</span> are interior to <span class="process-math">\(C\)</span> but the regions interior to each <span class="process-math">\(C_{k}\text{,}\)</span> <span class="process-math">\(k=1,2,\cdots,n\text{,}\)</span> have no points in common. If <span class="process-math">\(f\)</span> is holomorphic on each contour and at each point interior to <span class="process-math">\(C\)</span> but exterior to all the <span class="process-math">\(C_{k}\text{,}\)</span> <span class="process-math">\(k=1,2,\cdots,n\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-5-1-1-2-1-10">
+\begin{equation*}
+\int_{C} f(z)\dd{z}=\sum_{k=1}^{n}\oint_{C_k}f(z)\dd{z}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-5-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 14: Cauchy-Goursat for simply connected domains"><a href="#sec-integrals-of-holomorphic-functions-4-5-1-1" title="Copy heading and permalink for Theorem 14: Cauchy-Goursat for simply connected domains" aria-label="Copy heading and permalink for Theorem 14: Cauchy-Goursat for simply connected domains">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-6">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-6-1">Can also be shown to work for non-simply-connected contours.<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-7">
+<div class="para logical" id="sec-integrals-of-holomorphic-functions-4-7-1">
+<div class="para">Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts. If <span class="process-math">\(F\)</span> is an antiderivative of a continuous function <span class="process-math">\(f\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-7-1-3">
+\begin{equation*}
+\int_{C} f(z)\dd{z}=F(b)-F(a)
+\end{equation*}
+</div>
+<div class="para">Furthermore path independence of continuous <span class="process-math">\(f\)</span> implies the existence of an antiderivative.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-8">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-8-1">If <span class="process-math">\(f\)</span> is holomorphic in a simply connected domain <span class="process-math">\(D\text{,}\)</span> then it has an antiderivative.<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-9">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-9-1">
+<article class="theorem theorem-like" id="sec-integrals-of-holomorphic-functions-4-9-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cauchy’s integral formula.</span>
+</h3>
+<div class="para logical" id="sec-integrals-of-holomorphic-functions-4-9-1-1-2-1">
+<div class="para">Suppose that <span class="process-math">\(f\)</span> is holomorphic in a simply connected domain <span class="process-math">\(D\)</span> and <span class="process-math">\(C\)</span> is any simple closed contour lying entirely within <span class="process-math">\(D\text{.}\)</span> Then for any point <span class="process-math">\(z_{0}\)</span> within <span class="process-math">\(C\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-9-1-1-2-1-7">
+\begin{equation*}
+f(z_{0})=\frac{1}{2\uppi\ii}\oint_{C}\frac{f(z)}{z-z_{0}}\dd{z}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-9-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 15: Cauchy’s integral formula"><a href="#sec-integrals-of-holomorphic-functions-4-9-1-1" title="Copy heading and permalink for Theorem 15: Cauchy’s integral formula" aria-label="Copy heading and permalink for Theorem 15: Cauchy’s integral formula">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-10">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-10-1">
+<article class="theorem theorem-like" id="sec-integrals-of-holomorphic-functions-4-10-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cauchy’s integral formula for derivatives.</span>
+</h3>
+<div class="para logical" id="sec-integrals-of-holomorphic-functions-4-10-1-1-2-1">
+<div class="para">Suppose that <span class="process-math">\(f\)</span> is holomorphic in a simply connected domain <span class="process-math">\(D\)</span> and <span class="process-math">\(C\)</span> is any simple closed contour lying entirely within <span class="process-math">\(D\text{.}\)</span> Then for any point <span class="process-math">\(z_{0}\)</span> within <span class="process-math">\(C\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-integrals-of-holomorphic-functions-4-10-1-1-2-1-7">
+\begin{equation*}
+f^{(n)}(z_{0})=\frac{n!}{2\uppi\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{n+1}}\dd{z}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-10-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 16: Cauchy’s integral formula for derivatives"><a href="#sec-integrals-of-holomorphic-functions-4-10-1-1" title="Copy heading and permalink for Theorem 16: Cauchy’s integral formula for derivatives" aria-label="Copy heading and permalink for Theorem 16: Cauchy’s integral formula for derivatives">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-integrals-of-holomorphic-functions-4-11">
+<div class="para" id="sec-integrals-of-holomorphic-functions-4-11-1">These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.<div class="autopermalink" data-description="Paragraph"><a href="#sec-integrals-of-holomorphic-functions-4-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-integrals-of-holomorphic-functions-4-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 20.4: Integrals of holomorphic functions"><a href="#sec-integrals-of-holomorphic-functions" title="Copy heading and permalink for Section 20.4: Integrals of holomorphic functions" aria-label="Copy heading and permalink for Section 20.4: Integrals of holomorphic functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-fundamental-theorems-in-higher-dimensions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-singularities-and-laurent-series.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

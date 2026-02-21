@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,59 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 20.1"><a href="#sec-conservative-vector-fields-2" title="Copy heading and permalink for Objectives 20.1" aria-label="Copy heading and permalink for Objectives 20.1">🔗</a></div></article><section class="introduction" id="sec-conservative-vector-fields-3"><div class="para" id="sec-conservative-vector-fields-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 20.1: Conservative vector fields"><a href="#sec-conservative-vector-fields" title="Copy heading and permalink for Section 20.1: Conservative vector fields" aria-label="Copy heading and permalink for Section 20.1: Conservative vector fields">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-conservative-vector-fields-4">
+<li id="sec-conservative-vector-fields-4-1">
+<div class="para" id="sec-conservative-vector-fields-4-1-1">A vector field is called conservative if its line integral is path independent; that is, the choice of path does not change the value of the line integral. Under what conditions is a vector field conservative?<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-conservative-vector-fields-4-2">
+<div class="para" id="sec-conservative-vector-fields-4-2-1">
+<article class="theorem theorem-like" id="sec-conservative-vector-fields-4-2-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gradient thoerem.</span>
+</h3>
+<div class="para logical" id="sec-conservative-vector-fields-4-2-1-1-2-1">
+<div class="para">Suppose <span class="process-math">\(C\)</span> is a smooth curve parametrized by the vector function <span class="process-math">\(\bv r(t)\)</span> with <span class="process-math">\(a\le t\le b\text{,}\)</span> and let <span class="process-math">\(f\)</span> be a differentiable function whose gradient <span class="process-math">\(\nabla f\)</span> is continuous. Then</div>
+<div class="displaymath process-math" id="sec-conservative-vector-fields-4-2-1-1-2-1-6">
+\begin{equation*}
+\int_{C}\nabla f\cdot\dd{\bv{r}}=f(\bv{r}(b))-f(\bv{r}(a))
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 8: Gradient thoerem"><a href="#sec-conservative-vector-fields-4-2-1-1" title="Copy heading and permalink for Theorem 8: Gradient thoerem" aria-label="Copy heading and permalink for Theorem 8: Gradient thoerem">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-conservative-vector-fields-4-3">
+<div class="para" id="sec-conservative-vector-fields-4-3-1">If <span class="process-math">\(\bv F\)</span> is a gradient field, it must be conservative.<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-conservative-vector-fields-4-4">
+<div class="para" id="sec-conservative-vector-fields-4-4-1">As for the converse, if <span class="process-math">\(\bv F\)</span> is conservative and is continuous on an open connected region <span class="process-math">\(D\text{,}\)</span> then <span class="process-math">\(\bv F\)</span> is a gradient field on <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-conservative-vector-fields-4-5">
+<div class="para" id="sec-conservative-vector-fields-4-5-1">A vector field is conservative if and only if every closed path integral is zero.<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-conservative-vector-fields-4-6">
+<div class="para" id="sec-conservative-vector-fields-4-6-1">The fact that the curl of a gradient is zero gives another test for whether a field is conservative. Suppose <span class="process-math">\(\bv{F}=(P,Q)\)</span> is defined on an open simply connected region <span class="process-math">\(D\)</span> and has continuous first order partial derivatives.<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-conservative-vector-fields-4-6-2">If <span class="process-math">\(\DS\pdv{P}{y}=\DS\pdv{Q}{x}\)</span> throughout <span class="process-math">\(D\text{,}\)</span> then <span class="process-math">\(\bv{F}\)</span> is conservative.<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-conservative-vector-fields-4-7">
+<div class="para" id="sec-conservative-vector-fields-4-7-1">Make sure to do an example using energy to show the conservation law actually happening!<div class="autopermalink" data-description="Paragraph"><a href="#sec-conservative-vector-fields-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-conservative-vector-fields-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 20.1: Conservative vector fields"><a href="#sec-conservative-vector-fields" title="Copy heading and permalink for Section 20.1: Conservative vector fields" aria-label="Copy heading and permalink for Section 20.1: Conservative vector fields">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-fundamental-theorems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-greens-theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

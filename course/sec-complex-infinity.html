@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,65 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 17.3"><a href="#sec-complex-infinity-2" title="Copy heading and permalink for Objectives 17.3" aria-label="Copy heading and permalink for Objectives 17.3">🔗</a></div></article><section class="introduction" id="sec-complex-infinity-3"><div class="para" id="sec-complex-infinity-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 17.3: Complex infinity and the Riemann sphere"><a href="#sec-complex-infinity" title="Copy heading and permalink for Section 17.3: Complex infinity and the Riemann sphere" aria-label="Copy heading and permalink for Section 17.3: Complex infinity and the Riemann sphere">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-complex-infinity-4">
+<li id="sec-complex-infinity-4-1">
+<div class="para logical" id="sec-complex-infinity-4-1-1">
+<div class="para">Focus on <span class="process-math">\(f(z)=\frac{1}{z}\text{.}\)</span>
+</div>
+<ul class="circle" id="sec-complex-infinity-4-1-1-2">
+<li id="sec-complex-infinity-4-1-1-2-1">
+<div class="para" id="sec-complex-infinity-4-1-1-2-1-1">Domain coloring: Swaps light and dark, and colors cycle the other way.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-infinity-4-1-1-2-2">
+<div class="para logical" id="sec-complex-infinity-4-1-1-2-2-1">
+<div class="para">Transformations: Flips points inside and outside the unit circle, along with a conjugtion. That is,</div>
+<div class="displaymath process-math" id="sec-complex-infinity-4-1-1-2-2-1-1">
+\begin{equation*}
+\frac{1}{r\ee^{\ii\theta}}=\frac{1}{r}\ee^{-\ii\theta}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-infinity-4-2">
+<div class="para" id="sec-complex-infinity-4-2-1">Division by zero and the Riemann sphere<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-infinity-4-3">
+<div class="para" id="sec-complex-infinity-4-3-1">Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-infinity-4-4">
+<div class="para logical" id="sec-complex-infinity-4-4-1">
+<div class="para">Möbius tranformation:</div>
+<div class="displaymath process-math" id="sec-complex-infinity-4-4-1-1">
+\begin{equation*}
+f(z)=\frac{az+b}{cz+d},\qquad ad-bc\neq 0
+\end{equation*}
+</div>
+<div class="para">Can be thought of as a composition of scaling, rotation, and inversion + conjugation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-infinity-4-5">
+<div class="para" id="sec-complex-infinity-4-5-1">
+<a class="external" href="https://www.youtube.com/watch?v=0z1fIsUNhO4" target="_blank">https://www.youtube.com/watch?v=0z1fIsUNhO4</a><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-infinity-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-infinity-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 17.3: Complex infinity and the Riemann sphere"><a href="#sec-complex-infinity" title="Copy heading and permalink for Section 17.3: Complex infinity and the Riemann sphere" aria-label="Copy heading and permalink for Section 17.3: Complex infinity and the Riemann sphere">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-complex-functions-as-transformations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-extending-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

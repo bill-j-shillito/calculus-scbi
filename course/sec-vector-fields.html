@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,61 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 18.1"><a href="#sec-vector-fields-2" title="Copy heading and permalink for Objectives 18.1" aria-label="Copy heading and permalink for Objectives 18.1">🔗</a></div></article><section class="introduction" id="sec-vector-fields-3"><div class="para" id="sec-vector-fields-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 18.1: Vector fields"><a href="#sec-vector-fields" title="Copy heading and permalink for Section 18.1: Vector fields" aria-label="Copy heading and permalink for Section 18.1: Vector fields">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-vector-fields-4">
+<li id="sec-vector-fields-4-1">
+<div class="para" id="sec-vector-fields-4-1-1">This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-fields-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-fields-4-2">
+<div class="para" id="sec-vector-fields-4-2-1">2D vector fields:<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-vector-fields-4-2-2">
+\begin{align*}
+\bv{F}(x,y) \amp = (P(x,y),Q(x,y))\\
+\amp = P(x,y)\,\uv{x}+Q(x,y)\,\uv{y}
+\end{align*}
+</div>
+<div class="para" id="sec-vector-fields-4-2-3">Good examples are <span class="process-math">\((x,y)\)</span> and <span class="process-math">\((-y,x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-fields-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-fields-4-3">
+<div class="para" id="sec-vector-fields-4-3-1">3D vector fields:<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-vector-fields-4-3-2">
+\begin{align*}
+\bv{F}(x,y,z) \amp = (P(x,y,z),Q(x,y,z),R(x,y,z))\\
+\amp = P(x,y,z)\,\uv{x}+Q(x,y,z)\,\uv{y}+R(x,y,z)\,\uv{z}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-fields-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-fields-4-4">
+<div class="para" id="sec-vector-fields-4-4-1">Inverse square fields<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-fields-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-fields-4-5">
+<div class="para" id="sec-vector-fields-4-5-1">Interpreting as a force field vs a velocity field<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-fields-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-fields-4-6">
+<div class="para logical" id="sec-vector-fields-4-6-1">
+<div class="para">Dynamical system (in 2D):</div>
+<div class="displaymath process-math" id="sec-vector-fields-4-6-1-1">
+\begin{equation*}
+\qty(\dv{x}{t},\dv{y}{t})=(P(x,y),Q(x,y))
+\end{equation*}
+</div>
+<div class="para">Streamlines are the paths taken by integrating this over time; can have students experiment with these!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-fields-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-fields-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 18.1: Vector fields"><a href="#sec-vector-fields" title="Copy heading and permalink for Section 18.1: Vector fields" aria-label="Copy heading and permalink for Section 18.1: Vector fields">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-vector-fields.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-new-derivatives-and-del.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

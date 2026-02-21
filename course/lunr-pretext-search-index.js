@@ -1402,7 +1402,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.1",
   "title": "Changes of coordinates",
-  "body": " Changes of coordinates                   Introduction goes here.   "
+  "body": " Changes of coordinates                   Introduction goes here.     Frame this in terms of choosing a change of variables that makes it easier to represent a problem. It's all about finding the right frame of reference.    Linear change of variables:     Rotated coordinates: Show how this turns into a hyperbola in coordinates.    A very useful non-linear change of coordinates is polar coordinates.    Converting from polar to rectangular:     Converting from rectangular to polar:     Some graphs:   Rose curves: ,     Lima con: ,     Circle: , ,     Lemniscate: ,        "
 },
 {
   "id": "sec-changes-of-coordinates-2",
@@ -1420,7 +1420,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.2",
   "title": "Calculus in polar coordinates",
-  "body": " Calculus in polar coordinates                   Introduction goes here.   "
+  "body": " Calculus in polar coordinates                   Introduction goes here.     Derivative:     Arc length:     Polar area bounded by one curve:     Polar area bounded by two curves:     "
 },
 {
   "id": "sec-calculus-in-polar-coordinates-2",
@@ -1438,7 +1438,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.3",
   "title": "The Jacobian matrix and its determinant",
-  "body": " The Jacobian matrix and its determinant                   Introduction goes here.   "
+  "body": " The Jacobian matrix and its determinant                   Introduction goes here.     Show how spaces gets turned into space through an arrow diagram with what happens to a grid    The Jacobian matrix of the transformation given by and is     The Jacobian is a generalization of all the derivatives we’ve seen so far:    : The Jacobian is just the derivative.     : The Jacobian is the vector derivative.     : The Jacobian is the transpose of the gradient.     : This is the most general case.       Determinant of a matrix being a scale factor \/ orientation change factor; demonstrate with 2D area of a parallelogram    The determinant is This is a scale factor of how small areas will change shape and orientation locally.    Polar Jacobian:     "
 },
 {
   "id": "sec-the-jacobian-2",
@@ -1456,7 +1456,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.4",
   "title": "Double integrals over polar regions",
-  "body": " Double integrals over polar regions                   Introduction goes here.   "
+  "body": " Double integrals over polar regions                   Introduction goes here.     Change of variables in an integral:     Moment of inertia:     Do the Gaussian integral using the polar trick    "
 },
 {
   "id": "sec-polar-double-integrals-2",
@@ -1474,7 +1474,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.5",
   "title": "Cylindrical and spherical coordinates",
-  "body": " Cylindrical and spherical coordinates                   Introduction goes here.   "
+  "body": " Cylindrical and spherical coordinates                   Introduction goes here.     3D Jacobians are set up the same way, but might need to show how determinant works (expansion by minors or maybe Rule of Sarrus would be enough)    Cylindrical coordinates:   Jacobian:     Spherical coordinates:   Jacobian:   This is assuming is spherical radius, is longitude (azimuthal angle), is co-latitude (polar angle).    Show how to use them to convert triple integrals, applied problems (most likely center of mass, moment of inertia)    "
 },
 {
   "id": "sec-cylindrical-spherical-2",
@@ -1492,7 +1492,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.1",
   "title": "The geometry of complex numbers",
-  "body": " The geometry of complex numbers                   Introduction goes here.   "
+  "body": " The geometry of complex numbers                   Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      By Euler's formula we also have: This gives us exponential form of a complex number:  Engineers also write .       Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula: This works with roots as well, but we'll get roots evenly spaced apart along the unit circle. Also mention as principal value of .    "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers-2",
@@ -1510,7 +1510,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.2",
   "title": "Complex functions as transformations",
-  "body": " Complex functions as transformations                   Introduction goes here.   "
+  "body": " Complex functions as transformations                   Introduction goes here.     Regions in the complex plane:   Circle:     Disk:     Half planes: , , etc    Annulus:        We can visualize complex functions by considering what they do to particular regions of the complex plane. This is just like what we did with the Jacobian section!  Example: What does do? We can expand it out and get: So we can view this as the transformation The Jacobian determinant of this matrix is and the determinant is . This shows how the lengths of small boxes will be scaled.    Parametric curves in the complex plane   Line (segment, ray):     Circle:    Image of curve: If , then .    Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =    Based on this, we can tell where the zeros are because (1) the colors approach black, and (2) the colors will cycle around the points.    "
 },
 {
   "id": "sec-complex-functions-as-transformations-2",
@@ -1528,7 +1528,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.3",
   "title": "Complex infinity and the Riemann sphere",
-  "body": " Complex infinity and the Riemann sphere                   Introduction goes here.   "
+  "body": " Complex infinity and the Riemann sphere                   Introduction goes here.     Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.    Transformations: Flips points inside and outside the unit circle, along with a conjugtion. That is,        Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    Möbius tranformation: Can be thought of as a composition of scaling, rotation, and inversion + conjugation.     https:\/\/www.youtube.com\/watch?v=0z1fIsUNhO4     "
 },
 {
   "id": "sec-complex-infinity-2",
@@ -1546,7 +1546,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.4",
   "title": "Extending functions to the complex plane",
-  "body": " Extending functions to the complex plane                   Introduction goes here.   "
+  "body": " Extending functions to the complex plane                   Introduction goes here.     Mostly focuses on what happens if you plug a complex number into well-known functions. For all of these, view their domain coloring, and some important mappings of planar regions.    Exponential functions:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometirc and hyperbolic functions:     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don’t carry over to complex numbers because of this!   The principal value is .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
 },
 {
   "id": "sec-extending-complex-functions-2",
@@ -1564,7 +1564,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.1",
   "title": "Vector fields",
-  "body": " Vector fields                   Introduction goes here.   "
+  "body": " Vector fields                   Introduction goes here.     This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.    2D vector fields:   Good examples are and     3D vector fields:     Inverse square fields    Interpreting as a force field vs a velocity field    Dynamical system (in 2D): Streamlines are the paths taken by integrating this over time; can have students experiment with these!    "
 },
 {
   "id": "sec-vector-fields-2",
@@ -1582,7 +1582,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.2",
   "title": "New derivatives and the del operator",
-  "body": " New derivatives and the del operator                   Introduction goes here.   "
+  "body": " New derivatives and the del operator                   Introduction goes here.     Divergence of a vector field:   This measures how much a vector field is “flowing outward”. If the divergence in a region is positive, it’s acting like a source, while if it’s negative, it’s acting like a sink.    Curl of a vector field:   This measures how much a vector field is “rotating”.  A vector field with zero divergence is called incompressible or solenoidal.   In the 2D case, the curl is a scalar. If curl is positive, the field is rotating counterclockwise, while if negative, it’s rotating clockwise.    In the 3D case, the curl is a vector, which points along the direction of the right-hand rule, so that the field is flowing counterclockwise around that vector as an axis. The magnitude is the strength of rotation.   A vector field with zero curl is called irrotational.    In fluid dynamics, an ideal fluid is incompressible and irrotational.    Some useful properties:     The del operator is a vector operator.  In 2D: In 3D: With this operator, we have:     Divergence and curl act like derivatives in that they distribute over sums and satisfy a product rule in many cases:      https:\/\/mathintuitions.com\/2025\/05\/27\/divergence-curl-and-the-taylor-series-approximation\/     Include polar versions as an exercise    "
 },
 {
   "id": "sec-new-derivatives-and-del-2",
@@ -1600,7 +1600,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.3",
   "title": "The Cauchy-Riemann equations",
-  "body": " The Cauchy-Riemann equations                   Introduction goes here.   "
+  "body": " The Cauchy-Riemann equations                   Introduction goes here.     Derivative of complex function: Note that is complex here! Alternatively:     Limits are defined exactly as you think they are based on multivariable calculus: means that approaches as closely as desired when approaches along any path.    Some functions aren’t differentiable. Great example is :  Another fun one is , which is differentiable everywhere for real functions but is differentiable only at as a complex function!   If along the real line, this quotient approaches , but if it approaches over the imaginary line, the quotient approaches . Therefore the limit does not exist, and hence the complex conjugate is not differentiable.... anywhere!     If a function is differentiable at and at every point in some neighborhood of , we say is holomorphic at .    If a function is differentiable at a point, it must satisfy the Cauchy-Riemann equations: Furthermore, if and are continuous and have continuous first partial derivatives in a domain , then satisfying the Cauchy-Riemann equations at all points of implies that is holomorphic in .    All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric. (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!    If is holomorphic in a domain , then is constant if is constant or if .    A function that is holomorphic at every point in the complex plane is called entire.    The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.    Linear approximation: Should be able to relate this to being holomorphic.    L’Hôpital’s rule works!    "
 },
 {
   "id": "sec-cauchy-riemann-2",
@@ -1618,7 +1618,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.4",
   "title": "Harmonic functions and complex potentials",
-  "body": " Harmonic functions and complex potentials                   Introduction goes here.   "
+  "body": " Harmonic functions and complex potentials                   Introduction goes here.     The Laplacian operator: In other words, Laplace’s equation (from PDE) is just . Real-valued functions that satisfy this requirement are called harmonic functions.    Laplacian for vector functions:     If is analytic, then and are holomorphic, and we say that is the harmonic conjugate of . Furthermore, is the harmonic conjugate of .    The level curves of and will be orthogonal families, that is, the tangent lines at all points of intersection will always be perpendicular.    If is a scalar function and , we say that is a potential function (or just a potential) of , and we call a gradient field.    If is harmonic, it has a harmonic conjugate , and we say that is the complex potential of .    If is the velocity field of an ideal fluid (that is, incompressible and irrotational), then is holomorphic (it satisfies the Cauchy Riemann equations), and furthermore as defined above is its potential function, which is also holomorphic.  We say that is the Pólya vector field of the complex function .  Notice that this shows a connection between the equations for curl and divergence and the Cauchy-Riemann equations, but they’re each off by a minus sign. The reason for this sign change will become clear when we do contour integrals later.    Applications:        Application  Level curves of   Level curves of      electrostatics  equipotential curves  lines of force    gravitation  equipotential curves  lines of force    fluid flow  equipotential curves  streamlines of flow    heat flow  isotherms  lines of heat flux       Should get into why we care about solutions to Laplace’s equation.    "
 },
 {
   "id": "sec-harmonic-functions-2",
@@ -1636,7 +1636,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.1",
   "title": "Line integrals",
-  "body": " Line integrals                   Introduction goes here.   "
+  "body": " Line integrals                   Introduction goes here.     If is a curve, then the line integral of along is: Similar works for 3D.    Let be a parametrization of ; then we can write Similar works for 3D.    Integrating just returns the arc length, so the arc length was really a line integral all along!    If we integrate a density, we get the mass, as usual.    Always independent of parametrization!    For piecewise parametrizations, add the individual integrals.    Consider the Jacobian of our transformation from to : This matrix is not square so it doesn’t have a determinant; however we can calculate a related quantity (called the metric tensor, I think?): This is precisely the fudge factor that shows up when we convert our variables of integration from to .    "
 },
 {
   "id": "sec-line-integrals-2",
@@ -1654,7 +1654,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.2",
   "title": "Work, circulation, and flux",
-  "body": " Work, circulation, and flux                   Introduction goes here.   "
+  "body": " Work, circulation, and flux                   Introduction goes here.     If is a force field that acts on an object moving along a path parametrized by , , then the line integral of along is This is the work done by on the object as it moves along .    We can rewrite this as That is, we’re really integrating the component of in the tangent direction of the curve.    If , we have:   This is often abbreviated as .    Suppose is a closed curve.   If we compute , where is the outward-pointing unit normal, we call this the flux of through . The notation means we’re computing an integral of a closed curve. We can think of this as the amount of fluid that passes through the curve per unit time.    If we compute , we call this the circulation of along . We can think of this as the tendency of the fluid to flow along .    If is parametrized counterclockwise, we say it positively oriented.       Work and circulation can be extended to 3D. Flux will have to wait.    "
 },
 {
   "id": "sec-work-circulation-and-flux-2",
@@ -1672,7 +1672,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.3",
   "title": "Contour integrals",
-  "body": " Contour integrals                   Introduction goes here.   "
+  "body": " Contour integrals                   Introduction goes here.     A contour integral is just a line integral over a curve in the complex plane: We evaluate it by parametrizing :     Great example to go through: if is the unit circle parametrized counterclockwise, and is an integer, then However, as an exception,       ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .       Suppose that is the Pólya vector field of the function . Then:   Thus the contour integral computes BOTH the circulation AND the flux at the same time!    Winding number?    "
 },
 {
   "id": "sec-contour-integrals-2",
@@ -1684,13 +1684,22 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-contour-integrals-4-3-1-1",
+  "level": "2",
+  "url": "sec-contour-integrals.html#sec-contour-integrals-4-3-1-1",
+  "type": "Theorem",
+  "number": "7",
+  "title": "ML Inequality.",
+  "body": " ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .   "
+},
+{
   "id": "sec-surface-integrals",
   "level": "1",
   "url": "sec-surface-integrals.html",
   "type": "Section",
   "number": "19.4",
   "title": "Surface integrals",
-  "body": " Surface integrals                   Introduction goes here.   "
+  "body": " Surface integrals                   Introduction goes here.     Just as curves can be written as functions of a parameter , surfaces can be written as functions of two parameters, often called and .    A few examples:   Sphere of radius :     Helicoid:     Surface of revolution about -axis:    For all of these, are points of some domain .    Surface area element: Here, .    Surface area:     Similarly to with line integrals, we can extend this to make the surface integral of a function over that surface: Notice this is just the next level up of what we already do with line integrals.    If is density, then we can compute mass, center of mass, moment of inertia, etc.    Again, if , and the Jacobian is then we end up with .    "
 },
 {
   "id": "sec-surface-integrals-2",
@@ -1708,7 +1717,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.5",
   "title": "Integrals over oriented surfaces",
-  "body": " Integrals over oriented surfaces                   Introduction goes here.   "
+  "body": " Integrals over oriented surfaces                   Introduction goes here.     For a surface to be oriented it has to have two sides. We take the tangent plane at each point and notice there are two unit normal vectors and . As we move around the surface, these two normal vary smoothly. The surface is oriented if it is impossible to move around the surface following and end up with it overlapping . Alternatively, we can make sure that a counterclockwise loop can’t be moved around the surface and end up with it going clockwise.    An example of a non-orientable surface is a Möbius strip.    If is an oriented surface, then the surface integral of over is . This can also be written as . That is, this surface integral represents the flux of through the surface.    For closed surfaces, positive orientation means the normals point out of the surface.    Can do examples with electric flux, heat flux, etc.    "
 },
 {
   "id": "sec-integrals-over-oriented-surfaces-2",
@@ -1726,7 +1735,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.1",
   "title": "Conservative vector fields",
-  "body": " Conservative vector fields                   Introduction goes here.   "
+  "body": " Conservative vector fields                   Introduction goes here.     A vector field is called conservative if its line integral is path independent; that is, the choice of path does not change the value of the line integral. Under what conditions is a vector field conservative?      Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then        If is a gradient field, it must be conservative.    As for the converse, if is conservative and is continuous on an open connected region , then is a gradient field on .    A vector field is conservative if and only if every closed path integral is zero.    The fact that the curl of a gradient is zero gives another test for whether a field is conservative. Suppose is defined on an open simply connected region and has continuous first order partial derivatives.  If throughout , then is conservative.    Make sure to do an example using energy to show the conservation law actually happening!    "
 },
 {
   "id": "sec-conservative-vector-fields-2",
@@ -1738,13 +1747,22 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-conservative-vector-fields-4-2-1-1",
+  "level": "2",
+  "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-4-2-1-1",
+  "type": "Theorem",
+  "number": "8",
+  "title": "Gradient thoerem.",
+  "body": " Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then    "
+},
+{
   "id": "sec-greens-theorem",
   "level": "1",
   "url": "sec-greens-theorem.html",
   "type": "Section",
   "number": "20.2",
   "title": "Green’s theorems",
-  "body": " Green's theorems                   Introduction goes here.   "
+  "body": " Green's theorems                   Introduction goes here.     Motivation: What’s the relationship between circulation, flux, curl, and divergence?      Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green’s curl theorem:     Green’s divergence theorem:           Area of :     Multiply connected domain:     Can think of divergence as flux per unit infinitesimal area and curl as circulation per unit infinitesimal area.    "
 },
 {
   "id": "sec-greens-theorem-2",
@@ -1756,13 +1774,22 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-greens-theorem-4-2-1-1",
+  "level": "2",
+  "url": "sec-greens-theorem.html#sec-greens-theorem-4-2-1-1",
+  "type": "Theorem",
+  "number": "9",
+  "title": "Green’s theorems.",
+  "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green’s curl theorem:     Green’s divergence theorem:       "
+},
+{
   "id": "sec-fundamental-theorems-in-higher-dimensions",
   "level": "1",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html",
   "type": "Section",
   "number": "20.3",
   "title": "Fundamental theorems in higher dimensions",
-  "body": " Fundamental theorems in higher dimensions                   Introduction goes here.   "
+  "body": " Fundamental theorems in higher dimensions                   Introduction goes here.     Analogs of Green's theorems in higher dimensions     Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:        Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:       Relate to Maxwell's equations in both integral and derivative form    "
 },
 {
   "id": "sec-fundamental-theorems-in-higher-dimensions-2",
@@ -1774,13 +1801,31 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-fundamental-theorems-in-higher-dimensions-4-2-1",
+  "level": "2",
+  "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-2-1",
+  "type": "Theorem",
+  "number": "10",
+  "title": "Gauss’s divergence theorem.",
+  "body": " Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
+},
+{
+  "id": "sec-fundamental-theorems-in-higher-dimensions-4-3-1",
+  "level": "2",
+  "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-3-1",
+  "type": "Theorem",
+  "number": "11",
+  "title": "Stokes’s curl theorem.",
+  "body": " Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
+},
+{
   "id": "sec-integrals-of-holomorphic-functions",
   "level": "1",
   "url": "sec-integrals-of-holomorphic-functions.html",
   "type": "Section",
   "number": "20.4",
   "title": "Integrals of holomorphic functions",
-  "body": " Integrals of holomorphic functions                   Introduction goes here.   "
+  "body": " Integrals of holomorphic functions                   Introduction goes here.     LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier. The proofs essentially boil down to using the things we already used in the other sections, e.g. path independence if and only if closed paths give zero integral .     Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrational and incompressible. Hence .        Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  Much harder to prove! Does it based on triangular contours, then polygonal, then any.    Multiply connected domains lead to deformation of contours!       Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then        Can also be shown to work for non-simply-connected contours.    Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts. If is an antiderivative of a continuous function , then Furthermore path independence of continuous implies the existence of an antiderivative.    If is holomorphic in a simply connected domain , then it has an antiderivative.      Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,          Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,        These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.    "
 },
 {
   "id": "sec-integrals-of-holomorphic-functions-2",
@@ -1792,13 +1837,58 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-integrals-of-holomorphic-functions-4-2-1",
+  "level": "2",
+  "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-2-1",
+  "type": "Theorem",
+  "number": "12",
+  "title": "Cauchy’s integral theorem.",
+  "body": " Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrational and incompressible. Hence .   "
+},
+{
+  "id": "sec-integrals-of-holomorphic-functions-4-3-1-1",
+  "level": "2",
+  "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-3-1-1",
+  "type": "Theorem",
+  "number": "13",
+  "title": "Cauchy-Goursat theorem.",
+  "body": " Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  "
+},
+{
+  "id": "sec-integrals-of-holomorphic-functions-4-5-1-1",
+  "level": "2",
+  "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-5-1-1",
+  "type": "Theorem",
+  "number": "14",
+  "title": "Cauchy-Goursat for simply connected domains.",
+  "body": " Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then    "
+},
+{
+  "id": "sec-integrals-of-holomorphic-functions-4-9-1-1",
+  "level": "2",
+  "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-9-1-1",
+  "type": "Theorem",
+  "number": "15",
+  "title": "Cauchy’s integral formula.",
+  "body": " Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
+},
+{
+  "id": "sec-integrals-of-holomorphic-functions-4-10-1-1",
+  "level": "2",
+  "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-10-1-1",
+  "type": "Theorem",
+  "number": "16",
+  "title": "Cauchy’s integral formula for derivatives.",
+  "body": " Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
+},
+{
   "id": "sec-singularities-and-laurent-series",
   "level": "1",
   "url": "sec-singularities-and-laurent-series.html",
   "type": "Section",
   "number": "20.5",
   "title": "Singularities and Laurent series",
-  "body": " Singularities and Laurent series                   Introduction goes here.   "
+  "body": " Singularities and Laurent series                   Introduction goes here.     A function is analytic on if its power series converges to the function. Cauchy's integral theorems imply that a function is holmorphic if and only if it is analytic and thus we can use the terms interchangeably.    If a function is not holomorphic at , we say has a singularity at .    If has a singularity at , we can represent it with a Laurent series, in which we allow negative powers of : The part with the negative powers is called the principal part and the part with the nonnegative powers is called the analytic part.    If is holomorphic within the annular domain defined by , then has a valid Laurent series representation, with the coefficeints given by , where is a simple closed curve that lies entirely within and has in its interior.    Annular domains don't have to be ring-shaped... they could be circles, complements of circles, or the entire complex plane.    Manipulations of power series by writing things in terms of for some given     Types of singularities:   If the principal part has no terms, the singularity is a removable singularity. In this case we can always redefine a single point and make it holomorphic.    If the principal part has terms, the singularity is a pole of order . A pole of order is a simple pole.    If the principal part has infinitely many terms, the singularity is an essential singularity.       Zeros and poles:   A function that is holomorphic in some disk has a zero of order if and only if can be written where is holomorphic at and .    A function that is holomorphic in a punctured disk has a pole of order if and only if can be written where is holomorphic at and .    If and are analytic at , and has a zero of order at and , then has a pole of order at .    A function is meromorphic if it is analytic except at some set of isolated poles.       Would this be the right place to talk about limits at infinity?    "
 },
 {
   "id": "sec-singularities-and-laurent-series-2",
@@ -1816,7 +1906,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.6",
   "title": "The residue theorem",
-  "body": " The residue theorem                   Introduction goes here.   "
+  "body": " The residue theorem                   Introduction goes here.     The coefficient of in the Laurent series of is called the residue of at , and is denoted     Simple pole:     Pole of order :     If and has a simple pole at , then      Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then       Some examples of real integrals evaluated using residues     Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .        Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   This can be used to prove the Fundamental theorem of algebra! THAT would be a great cherry on top!    "
 },
 {
   "id": "sec-the-residue-theorem-2",
@@ -1828,13 +1918,40 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-the-residue-theorem-4-5-1",
+  "level": "2",
+  "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-5-1",
+  "type": "Theorem",
+  "number": "17",
+  "title": "Cauchy’s residue theorem.",
+  "body": " Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then    "
+},
+{
+  "id": "sec-the-residue-theorem-4-7-1",
+  "level": "2",
+  "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-7-1",
+  "type": "Theorem",
+  "number": "18",
+  "title": "Argument principle.",
+  "body": " Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .   "
+},
+{
+  "id": "sec-the-residue-theorem-4-8-1-1",
+  "level": "2",
+  "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-8-1-1",
+  "type": "Theorem",
+  "number": "19",
+  "title": "Rouché’s theorem.",
+  "body": " Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   "
+},
+{
   "id": "sec-exterior-calculus",
   "level": "1",
   "url": "sec-exterior-calculus.html",
   "type": "Section",
   "number": "20.7",
   "title": "CAPSTONE: Differential forms and exterior calculus",
-  "body": " CAPSTONE: Differential forms and exterior calculus  "
+  "body": " CAPSTONE: Differential forms and exterior calculus    Would like to go over cells, chains, cycles, and boundaries, with . Need to figure out at what level to do this. But it's all about talking about what you're integrating over .  Great resource: https:\/\/josephmellor.xyz\/articles\/       The wedge product combines vectors to create bivectors and trivectors, each of which has an orientation: It's anticommutative.    A covector measures how far a vector points in a given direction. Uses superscripts for some reason but I want to avoid that if possible. I'll use the idea that are covectors — they measure how much a vector points in those directions.    Convert from vectors to covectors with the sharp operator ( ) and from covectors to vectors with the flat operator ( ). These are the musical isomorphisms.  These convert between vectors and differential forms.    Wedge product of covectors measures areas and volumes.    Hodge star is what we'd have to wedge by to get the basis -vector in dimensions.    Hodge star can turn dot products into wedge products:     Wedge and cross products are Hodge duals:     Exterior derivative:   Applied to a -form:     Linearity properties:     Product rule:     Zero property:        Previous derivatives are all manifestations of the exterior derivative:     Fundamental Theorem of Exterior Calculus:Possible reference for calculus in four dimensions: https:\/\/people.math.harvard.edu\/~knill\/teaching\/summer2020\/handouts\/lecture25.pdf      For residue theorem, the requirement that is holomorphic is the same as saying that .    Exterior derivative of complex :     "
 },
 {
   "id": "sec-the-need-for-rigor",

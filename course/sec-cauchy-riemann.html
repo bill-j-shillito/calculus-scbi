@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,113 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 18.3"><a href="#sec-cauchy-riemann-2" title="Copy heading and permalink for Objectives 18.3" aria-label="Copy heading and permalink for Objectives 18.3">🔗</a></div></article><section class="introduction" id="sec-cauchy-riemann-3"><div class="para" id="sec-cauchy-riemann-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 18.3: The Cauchy-Riemann equations"><a href="#sec-cauchy-riemann" title="Copy heading and permalink for Section 18.3: The Cauchy-Riemann equations" aria-label="Copy heading and permalink for Section 18.3: The Cauchy-Riemann equations">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-cauchy-riemann-4">
+<li id="sec-cauchy-riemann-4-1">
+<div class="para logical" id="sec-cauchy-riemann-4-1-1">
+<div class="para">Derivative of complex function:</div>
+<div class="displaymath process-math" id="sec-cauchy-riemann-4-1-1-1">
+\begin{equation*}
+f'(z)=\limit{h\to 0}\frac{f(z+h)-f(z)}{h}
+\end{equation*}
+</div>
+<div class="para">Note that <span class="process-math">\(h\)</span> is complex here! Alternatively:</div>
+<div class="displaymath process-math" id="sec-cauchy-riemann-4-1-1-3">
+\begin{equation*}
+f'(z_{0})=\limit{z\to z_0}\frac{f(z)-f(z_{0})}{z-z_{0}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-2">
+<div class="para logical" id="sec-cauchy-riemann-4-2-1">
+<div class="para">Limits are defined exactly as you think they are based on multivariable calculus:</div>
+<div class="displaymath process-math" id="sec-cauchy-riemann-4-2-1-1">
+\begin{equation*}
+\limit{z\to z_0}f(z)=L
+\end{equation*}
+</div>
+<div class="para">means that <span class="process-math">\(f(z)\)</span> approaches <span class="process-math">\(L\)</span> as closely as desired when <span class="process-math">\(z\)</span> approaches <span class="process-math">\(z_{0}\)</span> along <em class="emphasis">any</em> path.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-3">
+<div class="para logical" id="sec-cauchy-riemann-4-3-1">
+<div class="para">Some functions aren’t differentiable. Great example is <span class="process-math">\(f(z)=\overline{z}\text{:}\)</span> <details id="sec-cauchy-riemann-4-3-1-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-cauchy-riemann-4-3-1-2-1">Another fun one is <span class="process-math">\(f(z)=|z|^{2}\text{,}\)</span> which is differentiable everywhere for real functions but is differentiable only at <span class="process-math">\(z=0\)</span> as a complex function!<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details>
+</div>
+<div class="displaymath process-math" id="sec-cauchy-riemann-4-3-1-3">
+\begin{equation*}
+\limit{h\to 0}\frac{\overline{z+h}-\overline{z}}{h}=\limit{h\to 0}\frac{\ \ \overline{h}\ \ }{h}
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(h\to 0\)</span> along the real line, this quotient approaches <span class="process-math">\(1\text{,}\)</span> but if it approaches over the imaginary line, the quotient approaches <span class="process-math">\(-1\text{.}\)</span> Therefore the limit does not exist, and hence the complex conjugate is not differentiable.... <em class="emphasis">anywhere!</em>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-4">
+<div class="para" id="sec-cauchy-riemann-4-4-1">If a function <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(z_{0}\)</span> and at every point in some neighborhood of <span class="process-math">\(z_{0}\text{,}\)</span> we say <span class="process-math">\(f\)</span> is holomorphic at <span class="process-math">\(z_{0}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-5">
+<div class="para logical" id="sec-cauchy-riemann-4-5-1">
+<div class="para">If a function <span class="process-math">\(f(z)=u(x,y)+\ii v(x,y)\)</span> is differentiable at a point, it must satisfy the Cauchy-Riemann equations:</div>
+<div class="displaymath process-math" id="sec-cauchy-riemann-4-5-1-2">
+\begin{equation*}
+\pdv{u}{x}=\pdv{v}{x}\qquad \pdv{u}{y}=-\pdv{v}{y}
+\end{equation*}
+</div>
+<div class="para">Furthermore, if <span class="process-math">\(u\)</span> and <span class="process-math">\(v\)</span> are continuous and have continuous first partial derivatives in a domain <span class="process-math">\(D\text{,}\)</span> then satisfying the Cauchy-Riemann equations at all points of <span class="process-math">\(D\)</span> implies that <span class="process-math">\(f\)</span> is holomorphic in <span class="process-math">\(D\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-6">
+<div class="para" id="sec-cauchy-riemann-4-6-1">All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric. (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-7">
+<div class="para" id="sec-cauchy-riemann-4-7-1">If <span class="process-math">\(f\)</span> is holomorphic in a domain <span class="process-math">\(D\text{,}\)</span> then <span class="process-math">\(f\)</span> is constant if <span class="process-math">\(|f|\)</span> is constant or if <span class="process-math">\(f'=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-8">
+<div class="para" id="sec-cauchy-riemann-4-8-1">A function that is holomorphic at every point in the complex plane is called entire.<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-9">
+<div class="para" id="sec-cauchy-riemann-4-9-1">The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-10">
+<div class="para logical" id="sec-cauchy-riemann-4-10-1">
+<div class="para">Linear approximation:</div>
+<div class="displaymath process-math" id="sec-cauchy-riemann-4-10-1-1">
+\begin{equation*}
+f(z)=f(z_{0})+f'(z_{0})(z-z_{0})
+\end{equation*}
+</div>
+<div class="para">Should be able to relate this to being holomorphic.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-cauchy-riemann-4-11">
+<div class="para" id="sec-cauchy-riemann-4-11-1">L’Hôpital’s rule works!<div class="autopermalink" data-description="Paragraph"><a href="#sec-cauchy-riemann-4-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-cauchy-riemann-4-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 18.3: The Cauchy-Riemann equations"><a href="#sec-cauchy-riemann" title="Copy heading and permalink for Section 18.3: The Cauchy-Riemann equations" aria-label="Copy heading and permalink for Section 18.3: The Cauchy-Riemann equations">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-new-derivatives-and-del.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-harmonic-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

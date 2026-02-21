@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -466,6 +473,180 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-exterior-calculus"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">CAPSTONE: Differential forms and exterior calculus</span>
 </h2>
+<ul class="disc" id="sec-exterior-calculus-2">
+<li id="sec-exterior-calculus-2-1">
+<div class="para" id="sec-exterior-calculus-2-1-1">Would like to go over cells, chains, cycles, and boundaries, with <span class="process-math">\(\partial(\partial C)=\emptyset\text{.}\)</span> Need to figure out at what level to do this. But it’s all about talking about what you’re integrating <em class="emphasis">over</em>. <details id="sec-exterior-calculus-2-1-1-3" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-exterior-calculus-2-1-1-3-1">Great resource: <a class="external" href="https://josephmellor.xyz/articles/" target="_blank">https://josephmellor.xyz/articles/</a><div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-2">
+<div class="para logical" id="sec-exterior-calculus-2-2-1">
+<div class="para">The wedge product combines vectors to create bivectors and trivectors, each of which has an orientation:</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-2-1-1">
+\begin{equation*}
+\bv u\wedge\bv v\qquad\bv u\wedge\bv v\wedge\bv w
+\end{equation*}
+</div>
+<div class="para">It’s anticommutative.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-3">
+<div class="para logical" id="sec-exterior-calculus-2-3-1">
+<div class="para">A covector measures how far a vector points in a given direction. Uses superscripts for some reason but I want to avoid that if possible.</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-3-1-1">
+\begin{equation*}
+\uv{e}^{i}=\dd{x}^{i}=\langle x^{i}|
+\end{equation*}
+</div>
+<div class="para">I’ll use the idea that <span class="process-math">\(\dd{x},\dd{y},\dd{z}\)</span> are covectors — they measure how much a vector points in those directions.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-4">
+<div class="para" id="sec-exterior-calculus-2-4-1">Convert from vectors to covectors with the sharp operator (<span class="process-math">\(^{\sharp}\)</span>) and from covectors to vectors with the flat operator (<span class="process-math">\(^{\flat}\)</span>). These are the musical isomorphisms.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-exterior-calculus-2-4-2">These convert between vectors and differential forms.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-5">
+<div class="para" id="sec-exterior-calculus-2-5-1">Wedge product of covectors measures areas and volumes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-6">
+<div class="para" id="sec-exterior-calculus-2-6-1">Hodge star is what we’d have to wedge by to get the basis <span class="process-math">\(k\)</span>-vector in <span class="process-math">\(k\)</span> dimensions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-7">
+<div class="para logical" id="sec-exterior-calculus-2-7-1">
+<div class="para">Hodge star can turn dot products into wedge products:</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-7-1-1">
+\begin{equation*}
+\bv v\wedge\star\bv w=(\bv v\cdot \bv w){\star}1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-8">
+<div class="para logical" id="sec-exterior-calculus-2-8-1">
+<div class="para">Wedge and cross products are Hodge duals:</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-8-1-1">
+\begin{equation*}
+\bv v\wedge\bv w=\star(\bv v\times\bv w)\qquad\bv v\times\bv w=\star(\bv v\wedge\bv w)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-9">
+<div class="para logical" id="sec-exterior-calculus-2-9-1">
+<div class="para">Exterior derivative:</div>
+<ul class="circle" id="sec-exterior-calculus-2-9-1-1">
+<li id="sec-exterior-calculus-2-9-1-1-1">
+<div class="para logical" id="sec-exterior-calculus-2-9-1-1-1-1">
+<div class="para">Applied to a <span class="process-math">\(0\)</span>-form:</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-9-1-1-1-1-2">
+\begin{equation*}
+\xd f=f'(x)\dd{x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-9-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-9-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-9-1-1-2">
+<div class="para" id="sec-exterior-calculus-2-9-1-1-2-1">Linearity properties:<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-9-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-9-1-1-2-2">
+\begin{align*}
+\xd(\alpha+\beta) \amp = \xd\alpha+\xd\beta\\
+\xd(c\alpha) \amp = c\,\xd\alpha
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-9-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-9-1-1-3">
+<div class="para logical" id="sec-exterior-calculus-2-9-1-1-3-1">
+<div class="para">Product rule:</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-9-1-1-3-1-1">
+\begin{equation*}
+\xd(\alpha\wedge\beta)=\alpha\wedge\xd\beta+(-1)^{k}\xd\alpha\wedge\beta
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-9-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-9-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-9-1-1-4">
+<div class="para logical" id="sec-exterior-calculus-2-9-1-1-4-1">
+<div class="para">Zero property:</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-9-1-1-4-1-1">
+\begin{equation*}
+\xd(\xd\alpha)=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-9-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-9-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-10">
+<div class="para" id="sec-exterior-calculus-2-10-1">Previous derivatives are all manifestations of the exterior derivative:<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-10-2">
+\begin{align*}
+\Grad f \amp = (\xd f)^{\sharp}\\
+\Div\bv F \amp = \star\xd{\star}(\bv F^{\flat})\\
+\Curl\bv F \amp = \qty(\star\xd(\bv F^\flat))^{\sharp}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-11">
+<div class="para logical" id="sec-exterior-calculus-2-11-1">
+<div class="para">Fundamental Theorem of Exterior Calculus:Possible reference for calculus in four dimensions: <a class="external" href="https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf" target="_blank">https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf</a>
+</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-11-1-2">
+\begin{equation*}
+\int_{C}\xd\omega=\int_{\partial C}\omega
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-12">
+<div class="para" id="sec-exterior-calculus-2-12-1">For residue theorem, the requirement that <span class="process-math">\(f\)</span> is holomorphic is the same as saying that <span class="process-math">\(\xd(f\dd{z})=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-12" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exterior-calculus-2-13">
+<div class="para logical" id="sec-exterior-calculus-2-13-1">
+<div class="para">Exterior derivative of complex <span class="process-math">\(f\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-exterior-calculus-2-13-1-2">
+\begin{equation*}
+\xd f=\pdv{f}{z}\dd{z}+\pdv{f}{\overline{z}}\dd{\overline{z}}=\pdv{f}{z}\dd{z}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exterior-calculus-2-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exterior-calculus-2-13" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
 <div class="autopermalink" data-description="Section 20.7: CAPSTONE: Differential forms and exterior calculus"><a href="#sec-exterior-calculus" title="Copy heading and permalink for Section 20.7: CAPSTONE: Differential forms and exterior calculus" aria-label="Copy heading and permalink for Section 20.7: CAPSTONE: Differential forms and exterior calculus">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-the-residue-theorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-firm-foundations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

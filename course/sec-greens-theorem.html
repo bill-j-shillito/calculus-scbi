@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,79 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 20.2"><a href="#sec-greens-theorem-2" title="Copy heading and permalink for Objectives 20.2" aria-label="Copy heading and permalink for Objectives 20.2">🔗</a></div></article><section class="introduction" id="sec-greens-theorem-3"><div class="para" id="sec-greens-theorem-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 20.2: Green’s theorems"><a href="#sec-greens-theorem" title="Copy heading and permalink for Section 20.2: Green’s theorems" aria-label="Copy heading and permalink for Section 20.2: Green’s theorems">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-greens-theorem-4">
+<li id="sec-greens-theorem-4-1">
+<div class="para" id="sec-greens-theorem-4-1-1">Motivation: What’s the relationship between circulation, flux, curl, and divergence?<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-greens-theorem-4-2">
+<div class="para" id="sec-greens-theorem-4-2-1">
+<article class="theorem theorem-like" id="sec-greens-theorem-4-2-1-1"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Green’s theorems.</span>
+</h3>
+<div class="para logical" id="sec-greens-theorem-4-2-1-1-2-1">
+<div class="para">Let <span class="process-math">\(C\)</span> be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let <span class="process-math">\(D\)</span> be the region bounded by <span class="process-math">\(C\text{.}\)</span> Furthermore, let <span class="process-math">\(\bv F=(P,Q)\)</span> be a vector field such that <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> have continuous partial derivatives on an open region that contains <span class="process-math">\(D\text{.}\)</span> Then:</div>
+<ul class="circle" id="sec-greens-theorem-4-2-1-1-2-1-8">
+<li id="sec-greens-theorem-4-2-1-1-2-1-8-1">
+<div class="para" id="sec-greens-theorem-4-2-1-1-2-1-8-1-1">Green’s curl theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-2-1-1-2-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-greens-theorem-4-2-1-1-2-1-8-1-2">
+\begin{align*}
+\oint_C \bv{F}\cdot\dd{\bv{r}} = \int_C \bv{F}\cdot\uv{t}\dd{s} \amp = \iint_D \Curl\bv{F}\dd{A}\\
+\oint_C P\dd{x} + Q\dd{y} \amp = \iint_D \qty(\pdv{Q}{x} - \pdv{P}{y})\dd{A}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-2-1-1-2-1-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-greens-theorem-4-2-1-1-2-1-8-2">
+<div class="para" id="sec-greens-theorem-4-2-1-1-2-1-8-2-1">Green’s divergence theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-2-1-1-2-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-greens-theorem-4-2-1-1-2-1-8-2-2">
+\begin{align*}
+\int_C \bv{F}\cdot\uv{n}\dd{s} = \iint_D \Div\bv{F}\dd{A}\\
+\oint_C P\dd{y} - Q\dd{x} \amp = \iint_D \qty(\pdv{P}{x} + \pdv{Q}{y})\dd{A}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-2-1-1-2-1-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9: Green’s theorems"><a href="#sec-greens-theorem-4-2-1-1" title="Copy heading and permalink for Theorem 9: Green’s theorems" aria-label="Copy heading and permalink for Theorem 9: Green’s theorems">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-greens-theorem-4-3">
+<div class="para logical" id="sec-greens-theorem-4-3-1">
+<div class="para">Area of <span class="process-math">\(D\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-greens-theorem-4-3-1-2">
+\begin{equation*}
+A=\oint_{C} x\dd{y}=-\oint_{C} y\dd{x}=\frac{1}{2}\oint_{C} x\dd{y}-y\dd{x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-greens-theorem-4-4">
+<div class="para" id="sec-greens-theorem-4-4-1">Multiply connected domain:<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-greens-theorem-4-4-2">
+\begin{equation*}
+\iint_D \Curl\bv{F}\dd{A} = \oint_{C\tsub{outside}}\bv{F}\cdot\dd{\bv{r}} - \oint_{C\tsub{inside}}\bv{F}\cdot\dd{\bv{r}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-greens-theorem-4-5">
+<div class="para" id="sec-greens-theorem-4-5-1">Can think of divergence as flux per unit infinitesimal area and curl as circulation per unit infinitesimal area.<div class="autopermalink" data-description="Paragraph"><a href="#sec-greens-theorem-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-greens-theorem-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 20.2: Green’s theorems"><a href="#sec-greens-theorem" title="Copy heading and permalink for Section 20.2: Green’s theorems" aria-label="Copy heading and permalink for Section 20.2: Green’s theorems">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-conservative-vector-fields.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-fundamental-theorems-in-higher-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

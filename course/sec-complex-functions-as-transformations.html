@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,106 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 17.2"><a href="#sec-complex-functions-as-transformations-2" title="Copy heading and permalink for Objectives 17.2" aria-label="Copy heading and permalink for Objectives 17.2">🔗</a></div></article><section class="introduction" id="sec-complex-functions-as-transformations-3"><div class="para" id="sec-complex-functions-as-transformations-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 17.2: Complex functions as transformations"><a href="#sec-complex-functions-as-transformations" title="Copy heading and permalink for Section 17.2: Complex functions as transformations" aria-label="Copy heading and permalink for Section 17.2: Complex functions as transformations">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-complex-functions-as-transformations-4">
+<li id="sec-complex-functions-as-transformations-4-1">
+<div class="para logical" id="sec-complex-functions-as-transformations-4-1-1">
+<div class="para">Regions in the complex plane:</div>
+<ul class="circle" id="sec-complex-functions-as-transformations-4-1-1-1">
+<li id="sec-complex-functions-as-transformations-4-1-1-1-1">
+<div class="para" id="sec-complex-functions-as-transformations-4-1-1-1-1-1">Circle: <span class="process-math">\(|z-z_{0}|=r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-1-1-1-2">
+<div class="para" id="sec-complex-functions-as-transformations-4-1-1-1-2-1">Disk: <span class="process-math">\(|z-z_{0}|&lt;r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-1-1-1-3">
+<div class="para" id="sec-complex-functions-as-transformations-4-1-1-1-3-1">Half planes: <span class="process-math">\(\Real z&gt;a\text{,}\)</span> <span class="process-math">\(\Imag z\le b\text{,}\)</span> etc<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-1-1-1-4">
+<div class="para" id="sec-complex-functions-as-transformations-4-1-1-1-4-1">Annulus: <span class="process-math">\(r_{1}\le |z-z_{0}|\le r_{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-1-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-2">
+<div class="para" id="sec-complex-functions-as-transformations-4-2-1">We can visualize complex functions by considering what they do to particular regions of the complex plane. This is just like what we did with the Jacobian section!<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-complex-functions-as-transformations-4-2-2">
+<div class="para">Example: What does <span class="process-math">\(f(z)=z^{2}\)</span> do? We can expand it out and get:</div>
+<div class="displaymath process-math" id="sec-complex-functions-as-transformations-4-2-2-2">
+\begin{equation*}
+f(z)=(x+\ii y)^{2}=(x^{2}-y^{2})+\ii(2xy)
+\end{equation*}
+</div>
+<div class="para">So we can view this as the transformation</div>
+<div class="displaymath process-math" id="sec-complex-functions-as-transformations-4-2-2-3">
+\begin{equation*}
+(x,y)\mapsto(x^{2}-y^{2},2xy)\text{.}
+\end{equation*}
+</div>
+<div class="para">The Jacobian determinant of this matrix is</div>
+<div class="displaymath process-math" id="sec-complex-functions-as-transformations-4-2-2-4">
+\begin{equation*}
+\bv J=\begin{bmatrix}2x&amp;-2y\\ 2y&amp;2x\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">and the determinant is <span class="process-math">\(4(x^{2}+y^{2})\text{.}\)</span> This shows how the lengths of small boxes will be scaled.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-3">
+<div class="para logical" id="sec-complex-functions-as-transformations-4-3-1">
+<div class="para">Parametric curves in the complex plane</div>
+<ul class="circle" id="sec-complex-functions-as-transformations-4-3-1-1">
+<li id="sec-complex-functions-as-transformations-4-3-1-1-1">
+<div class="para" id="sec-complex-functions-as-transformations-4-3-1-1-1-1">Line (segment, ray): <span class="process-math">\(z(t)=z_{0}(1-t)+z_{1}t\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-3-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-3-1-1-2">
+<div class="para" id="sec-complex-functions-as-transformations-4-3-1-1-2-1">Circle: <span class="process-math">\(z(t)=z_{0}+r(\cos t+\ii\sin t)=z_{0}+r\ee^{\ii t}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-3-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Image of curve: If <span class="process-math">\(w=f(z)\text{,}\)</span> then <span class="process-math">\(w(t)=f(z(t))\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-4">
+<div class="para logical" id="sec-complex-functions-as-transformations-4-4-1">
+<div class="para">Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.</div>
+<ul class="circle" id="sec-complex-functions-as-transformations-4-4-1-1">
+<li id="sec-complex-functions-as-transformations-4-4-1-1-1">
+<div class="para" id="sec-complex-functions-as-transformations-4-4-1-1-1-1">Lightness = modulus (black = <span class="process-math">\(0\text{,}\)</span> full color = <span class="process-math">\(1\text{,}\)</span> white = <span class="process-math">\(\infty\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-4-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-4-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-complex-functions-as-transformations-4-4-1-1-2">
+<div class="para" id="sec-complex-functions-as-transformations-4-4-1-1-2-1">Hue = argument (red = <span class="process-math">\(0\text{,}\)</span> lime = <span class="process-math">\(\uppi/2\text{,}\)</span> cyan = <span class="process-math">\(\uppi\text{,}\)</span> purple = <span class="process-math">\(3\uppi/2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-4-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-4-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Based on this, we can tell where the zeros are because (1) the colors approach black, and (2) the colors will cycle around the points.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-complex-functions-as-transformations-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 17.2: Complex functions as transformations"><a href="#sec-complex-functions-as-transformations" title="Copy heading and permalink for Section 17.2: Complex functions as transformations" aria-label="Copy heading and permalink for Section 17.2: Complex functions as transformations">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-complex-infinity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

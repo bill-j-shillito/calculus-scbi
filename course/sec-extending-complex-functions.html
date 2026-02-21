@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,117 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 17.4"><a href="#sec-extending-complex-functions-2" title="Copy heading and permalink for Objectives 17.4" aria-label="Copy heading and permalink for Objectives 17.4">🔗</a></div></article><section class="introduction" id="sec-extending-complex-functions-3"><div class="para" id="sec-extending-complex-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 17.4: Extending functions to the complex plane"><a href="#sec-extending-complex-functions" title="Copy heading and permalink for Section 17.4: Extending functions to the complex plane" aria-label="Copy heading and permalink for Section 17.4: Extending functions to the complex plane">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-extending-complex-functions-4">
+<li id="sec-extending-complex-functions-4-1">
+<div class="para" id="sec-extending-complex-functions-4-1-1">Mostly focuses on what happens if you plug a complex number into well-known functions. For all of these, view their domain coloring, and some important mappings of planar regions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-2">
+<div class="para" id="sec-extending-complex-functions-4-2-1">Exponential functions: <details id="sec-extending-complex-functions-4-2-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-extending-complex-functions-4-2-1-1-1">The exponential function is used to define pretty much all the other functions!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-2-2">
+\begin{align*}
+\ee^z \amp = \ee^{x+\ii y}\\
+\amp = \ee^{x}\ee^{\ii y}\\
+\amp = \ee^{x}\cos y + \ii\ee^{x}\sin y
+\end{align*}
+</div>
+<div class="para" id="sec-extending-complex-functions-4-2-3">Is now <span class="process-math">\(2\uppi\ii\)</span> periodic in the imaginary direction!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-3">
+<div class="para" id="sec-extending-complex-functions-4-3-1">Trigonometric functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-3-2">
+\begin{align*}
+\sin z \amp = \frac{\ee^{\ii z}-\ee^{-\ii z}}{2\ii} = \sin x \cosh y + \ii\cos x\sinh y\\
+\cos z \amp = \frac{\ee^{\ii z}+\ee^{-\ii z}}{2} = \cos x \cosh y - \ii\sin x\sinh y
+\end{align*}
+</div>
+<div class="para" id="sec-extending-complex-functions-4-3-3">All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like <span class="process-math">\(\sin z=5\)</span> now!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-4">
+<div class="para" id="sec-extending-complex-functions-4-4-1">Hyperbolic functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-4-2">
+\begin{align*}
+\sinh z \amp = \frac{\ee^{z}-\ee^{-z}}{2} = \sinh x \cos y + \ii\cosh x\sin y\\
+\cosh z \amp = \frac{\ee^{z}+\ee^{-z}}{2} = \cosh x \cos y + \ii\sinh x\sin y
+\end{align*}
+</div>
+<div class="para" id="sec-extending-complex-functions-4-4-3">Relationships between trigonometirc and hyperbolic functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-4-4">
+\begin{align*}
+\sin \ii z \amp = \ii \sinh z \amp \cos \ii z \amp = \cosh z\\
+\sinh \ii z \amp = \ii \sin z \amp \cosh \ii z \amp = \cos z
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-5">
+<div class="para logical" id="sec-extending-complex-functions-4-5-1">
+<div class="para">Logarithmic function:</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-5-1-1">
+\begin{equation*}
+\ln z=\ln|z|+\ii\arg z
+\end{equation*}
+</div>
+<div class="para">Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-5-1-2">
+\begin{equation*}
+\Ln z=\ln|z|+\ii\Arg z
+\end{equation*}
+</div>
+<div class="para">Here, we use the principal argument with <span class="process-math">\(-\uppi&lt;\Arg z\le\uppi\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-6">
+<div class="para logical" id="sec-extending-complex-functions-4-6-1">
+<div class="para">Complex powers: <details id="sec-extending-complex-functions-4-6-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-extending-complex-functions-4-6-1-1-1">Some exponent and root laws don’t carry over to complex numbers because of this!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details>
+</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-6-1-2">
+\begin{equation*}
+z^{\alpha}=\ee^{\alpha\ln z}
+\end{equation*}
+</div>
+<div class="para">The principal value is <span class="process-math">\(z^{\alpha}=\ee^{\alpha\Ln z}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-7">
+<div class="para" id="sec-extending-complex-functions-4-7-1">Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-complex-functions-4-7-2">
+\begin{align*}
+\sin\inv z \amp = -\ii\ln\qty(\ii z+(1-z^2)^{1/2})\\
+\cos\inv z \amp = -\ii\ln\qty(z+\ii (1-z^2)^{1/2})\\
+\tan\inv z \amp = \frac{\ii}{2}\ln\qty(\frac{\ii+z}{\ii-z})\\
+\sinh\inv z \amp = \ln\qty(z+(z^2+1)^{1/2})\\
+\cosh\inv z \amp = \ln\qty(z+(z^2-1)^{1/2})\\
+\tanh\inv z \amp = \frac{1}{2}\ln\qty(\frac{1+z}{1-z})
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-complex-functions-4-8">
+<div class="para" id="sec-extending-complex-functions-4-8-1">Brief look at Riemann surfaces — just enough to show where the “rest” of the function is for the functions with branch cuts.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-complex-functions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-complex-functions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 17.4: Extending functions to the complex plane"><a href="#sec-extending-complex-functions" title="Copy heading and permalink for Section 17.4: Extending functions to the complex plane" aria-label="Copy heading and permalink for Section 17.4: Extending functions to the complex plane">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-complex-infinity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-vector-fields.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

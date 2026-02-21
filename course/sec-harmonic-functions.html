@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,115 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 18.4"><a href="#sec-harmonic-functions-2" title="Copy heading and permalink for Objectives 18.4" aria-label="Copy heading and permalink for Objectives 18.4">🔗</a></div></article><section class="introduction" id="sec-harmonic-functions-3"><div class="para" id="sec-harmonic-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 18.4: Harmonic functions and complex potentials"><a href="#sec-harmonic-functions" title="Copy heading and permalink for Section 18.4: Harmonic functions and complex potentials" aria-label="Copy heading and permalink for Section 18.4: Harmonic functions and complex potentials">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-harmonic-functions-4">
+<li id="sec-harmonic-functions-4-1">
+<div class="para logical" id="sec-harmonic-functions-4-1-1">
+<div class="para">The Laplacian operator:</div>
+<div class="displaymath process-math" id="sec-harmonic-functions-4-1-1-1">
+\begin{equation*}
+\nabla^{2} f = \nabla\cdot\nabla f = \pdv[2]{f}{x}+\pdv[2]{f}{y}+\pdv[2]{f}{z}
+\end{equation*}
+</div>
+<div class="para">In other words, Laplace’s equation (from PDE) is just <span class="process-math">\(\nabla^{2} f=0\text{.}\)</span> Real-valued functions that satisfy this requirement are called harmonic functions.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-2">
+<div class="para logical" id="sec-harmonic-functions-4-2-1">
+<div class="para">Laplacian for vector functions:</div>
+<div class="displaymath process-math" id="sec-harmonic-functions-4-2-1-1">
+\begin{equation*}
+\nabla^{2} \bv F =\qty(\nabla^2 P,\nabla^2 Q,\nabla^2 R)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-3">
+<div class="para" id="sec-harmonic-functions-4-3-1">If <span class="process-math">\(f=u+\ii v\)</span> is analytic, then <span class="process-math">\(u\)</span> and <span class="process-math">\(v\)</span> are holomorphic, and we say that <span class="process-math">\(v\)</span> is the harmonic conjugate of <span class="process-math">\(u\text{.}\)</span> Furthermore, <span class="process-math">\(-u\)</span> is the harmonic conjugate of <span class="process-math">\(v\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-4">
+<div class="para" id="sec-harmonic-functions-4-4-1">The level curves of <span class="process-math">\(u\)</span> and <span class="process-math">\(v\)</span> will be orthogonal families, that is, the tangent lines at all points of intersection will always be perpendicular.<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-5">
+<div class="para" id="sec-harmonic-functions-4-5-1">If <span class="process-math">\(\phi\)</span> is a scalar function and <span class="process-math">\(\nabla\phi=\bv F\text{,}\)</span> we say that <span class="process-math">\(\phi\)</span> is a potential function (or just a potential) of <span class="process-math">\(\bv F\text{,}\)</span> and we call <span class="process-math">\(\bv F\)</span> a gradient field.<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-6">
+<div class="para logical" id="sec-harmonic-functions-4-6-1">
+<div class="para">If <span class="process-math">\(\phi\)</span> is harmonic, it has a harmonic conjugate <span class="process-math">\(\phi\text{,}\)</span> and we say that</div>
+<div class="displaymath process-math" id="sec-harmonic-functions-4-6-1-3">
+\begin{equation*}
+\bv{\Omega}(z)=\phi(x,y)+\ii\psi(x,y)
+\end{equation*}
+</div>
+<div class="para">is the complex potential of <span class="process-math">\(\bv F\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-7">
+<div class="para" id="sec-harmonic-functions-4-7-1">If <span class="process-math">\(\bv F(x,y)=(u(x,y),v(x,y))\)</span> is the velocity field of an ideal fluid (that is, incompressible and irrotational), then <span class="process-math">\(f(x,y)=u(x,y)-\ii v(x,y)\)</span> is holomorphic (it satisfies the Cauchy Riemann equations), and furthermore <span class="process-math">\(\bv{\Omega}(z)\)</span> as defined above is its potential function, which is also holomorphic.<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-harmonic-functions-4-7-2">We say that <span class="process-math">\(\bv F\)</span> is the Pólya vector field of the complex function <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-harmonic-functions-4-7-3">Notice that this shows a connection between the equations for curl and divergence and the Cauchy-Riemann equations, but they’re each off by a minus sign. The reason for this sign change will become clear when we do contour integrals later.<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-8">
+<div class="para" id="sec-harmonic-functions-4-8-1">Applications:<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-harmonic-functions-4-8-2">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r1 l0 t0 lines">Application</td>
+<td class="c m b0 r1 l0 t0 lines">Level curves of <span class="process-math">\(\phi\)</span>
+</td>
+<td class="c m b0 r0 l0 t0 lines">Level curves of <span class="process-math">\(\psi\)</span>
+</td>
+</tr>
+<tr></tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">electrostatics</td>
+<td class="c m b0 r1 l0 t0 lines">equipotential curves</td>
+<td class="c m b0 r0 l0 t0 lines">lines of force</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">gravitation</td>
+<td class="c m b0 r1 l0 t0 lines">equipotential curves</td>
+<td class="c m b0 r0 l0 t0 lines">lines of force</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">fluid flow</td>
+<td class="c m b0 r1 l0 t0 lines">equipotential curves</td>
+<td class="c m b0 r0 l0 t0 lines">streamlines of flow</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">heat flow</td>
+<td class="c m b0 r1 l0 t0 lines">isotherms</td>
+<td class="c m b0 r0 l0 t0 lines">lines of heat flux</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-harmonic-functions-4-9">
+<div class="para" id="sec-harmonic-functions-4-9-1">Should get into why we care about solutions to Laplace’s equation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-harmonic-functions-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-harmonic-functions-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 18.4: Harmonic functions and complex potentials"><a href="#sec-harmonic-functions" title="Copy heading and permalink for Section 18.4: Harmonic functions and complex potentials" aria-label="Copy heading and permalink for Section 18.4: Harmonic functions and complex potentials">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-cauchy-riemann.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-line-and-surface-integrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

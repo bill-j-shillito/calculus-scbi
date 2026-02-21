@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,121 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 18.2"><a href="#sec-new-derivatives-and-del-2" title="Copy heading and permalink for Objectives 18.2" aria-label="Copy heading and permalink for Objectives 18.2">🔗</a></div></article><section class="introduction" id="sec-new-derivatives-and-del-3"><div class="para" id="sec-new-derivatives-and-del-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 18.2: New derivatives and the del operator"><a href="#sec-new-derivatives-and-del" title="Copy heading and permalink for Section 18.2: New derivatives and the del operator" aria-label="Copy heading and permalink for Section 18.2: New derivatives and the del operator">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-new-derivatives-and-del-4">
+<li id="sec-new-derivatives-and-del-4-1">
+<div class="para" id="sec-new-derivatives-and-del-4-1-1">Divergence of a vector field:<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-1-2">
+\begin{align*}
+\Div(P,Q) \amp = \pdv{P}{x}+\pdv{Q}{y}\\
+\Div(P,Q,R) \amp = \pdv{P}{x}+\pdv{Q}{y}+\pdv{R}{z}
+\end{align*}
+</div>
+<div class="para" id="sec-new-derivatives-and-del-4-1-3">This measures how much a vector field is “flowing outward”. If the divergence in a region is positive, it’s acting like a source, while if it’s negative, it’s acting like a sink.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-2">
+<div class="para" id="sec-new-derivatives-and-del-4-2-1">Curl of a vector field:<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-2-2">
+\begin{align*}
+\Curl(P,Q) \amp = \pdv{Q}{x}-\pdv{P}{y}\\
+\Curl(P,Q,R) \amp = \qty(\pdv{R}{y}-\pdv{Q}{z},\pdv{P}{z}-\pdv{R}{x},\pdv{Q}{x}-\pdv{P}{y})
+\end{align*}
+</div>
+<div class="para" id="sec-new-derivatives-and-del-4-2-3">This measures how much a vector field is “rotating”.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-new-derivatives-and-del-4-2-4">
+<div class="para">A vector field with zero divergence is called incompressible or solenoidal.</div>
+<ul class="circle" id="sec-new-derivatives-and-del-4-2-4-1">
+<li id="sec-new-derivatives-and-del-4-2-4-1-1">
+<div class="para" id="sec-new-derivatives-and-del-4-2-4-1-1-1">In the 2D case, the curl is a scalar. If curl is positive, the field is rotating counterclockwise, while if negative, it’s rotating clockwise.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-2-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-2-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-2-4-1-2">
+<div class="para" id="sec-new-derivatives-and-del-4-2-4-1-2-1">In the 3D case, the curl is a vector, which points along the direction of the right-hand rule, so that the field is flowing counterclockwise around that vector as an axis. The magnitude is the strength of rotation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-2-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-2-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">A vector field with zero curl is called irrotational.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-3">
+<div class="para" id="sec-new-derivatives-and-del-4-3-1">In fluid dynamics, an ideal fluid is incompressible and irrotational.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-4">
+<div class="para logical" id="sec-new-derivatives-and-del-4-4-1">
+<div class="para">Some useful properties:</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-4-1-1">
+\begin{equation*}
+\Curl(\Grad f)=\bv 0\qquad\Div(\Curl\bv F)=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-5">
+<div class="para" id="sec-new-derivatives-and-del-4-5-1">The del operator <span class="process-math">\(\nabla\)</span> is a vector operator.<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-new-derivatives-and-del-4-5-2">
+<div class="para">In 2D:</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-5-2-1">
+\begin{equation*}
+\nabla=\qty(\pdv{x},\pdv{y})
+\end{equation*}
+</div>
+<div class="para">In 3D:</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-5-2-2">
+\begin{equation*}
+\nabla=\qty(\pdv{x},\pdv{y},\pdv{z})
+\end{equation*}
+</div>
+<div class="para">With this operator, we have:</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-5-2-3">
+\begin{align*}
+\Grad f \amp = \nabla f\\
+\Div\bv{F} \amp = \nabla\cdot\bv{F}\\
+\Curl\bv{F} \amp = \nabla\times\bv{F}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-6">
+<div class="para" id="sec-new-derivatives-and-del-4-6-1">Divergence and curl act like derivatives in that they distribute over sums and satisfy a product rule in many cases:<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-new-derivatives-and-del-4-6-2">
+\begin{align*}
+\Div(\bv{F}+\bv{G}) \amp = \Div\bv{F}+\Div\bv{G}\\
+\Curl(\bv{F}+\bv{G}) \amp = \Curl\bv{F}+\Curl\bv{G}\\
+\Div(f\bv{F}) \amp = f\Div\bv{F}+\nabla f\cdot \bv{F}\\
+\Curl(f\bv{F}) \amp = f\Curl\bv{F}+\nabla f\times\bv{F}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-7">
+<div class="para" id="sec-new-derivatives-and-del-4-7-1">
+<a class="external" href="https://mathintuitions.com/2025/05/27/divergence-curl-and-the-taylor-series-approximation/" target="_blank">https://mathintuitions.com/2025/05/27/divergence-curl-and-the-taylor-series-approximation/</a><div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-new-derivatives-and-del-4-8">
+<div class="para" id="sec-new-derivatives-and-del-4-8-1">Include polar versions as an exercise<div class="autopermalink" data-description="Paragraph"><a href="#sec-new-derivatives-and-del-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-new-derivatives-and-del-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 18.2: New derivatives and the del operator"><a href="#sec-new-derivatives-and-del" title="Copy heading and permalink for Section 18.2: New derivatives and the del operator" aria-label="Copy heading and permalink for Section 18.2: New derivatives and the del operator">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-vector-fields.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-cauchy-riemann.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

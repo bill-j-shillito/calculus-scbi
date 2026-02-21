@@ -148,18 +148,23 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\limit}[1]{\lim\limits_{#1}}
-\newcommand{\resid}[1]{\Res\limits_{#1}}
+\newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
-\newcommand{\uppi}{\symup{\pi}}
+
+\newcommand{\uppi}{\pi}
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\bv}[1]{\boldsymbol{#1}}
 \newcommand{\uv}[1]{\hat{\bv{#1}}}
-\newcommand{\cl}[1]{\symcal{#1}}
+\newcommand{\cl}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\DeclareMathOperator{\Cis}{cis}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\newcommand{\xd}{\mathbf{d}}
+\newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -168,7 +173,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Sec}{Sec}
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
-\DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Ln}{Ln}
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
@@ -482,7 +489,57 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 16.2"><a href="#sec-calculus-in-polar-coordinates-2" title="Copy heading and permalink for Objectives 16.2" aria-label="Copy heading and permalink for Objectives 16.2">🔗</a></div></article><section class="introduction" id="sec-calculus-in-polar-coordinates-3"><div class="para" id="sec-calculus-in-polar-coordinates-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-in-polar-coordinates-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 16.2: Calculus in polar coordinates"><a href="#sec-calculus-in-polar-coordinates" title="Copy heading and permalink for Section 16.2: Calculus in polar coordinates" aria-label="Copy heading and permalink for Section 16.2: Calculus in polar coordinates">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-calculus-in-polar-coordinates-4">
+<li id="sec-calculus-in-polar-coordinates-4-1">
+<div class="para logical" id="sec-calculus-in-polar-coordinates-4-1-1">
+<div class="para">Derivative:</div>
+<div class="displaymath process-math" id="sec-calculus-in-polar-coordinates-4-1-1-1">
+\begin{equation*}
+\dv{y}{x} =\frac{\dd(r\sin\theta)}{\dd(r\cos\theta)}=\frac{r\cos\theta\dd{\theta}+\sin\theta\dd{r}}{-r\sin\theta\dd{\theta}+\cos\theta\dd{r}}=\frac{r\cos\theta+r'\sin\theta}{-r\sin\theta+r'\cos\theta}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-in-polar-coordinates-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-in-polar-coordinates-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-in-polar-coordinates-4-2">
+<div class="para logical" id="sec-calculus-in-polar-coordinates-4-2-1">
+<div class="para">Arc length:</div>
+<div class="displaymath process-math" id="sec-calculus-in-polar-coordinates-4-2-1-1">
+\begin{equation*}
+s=\int_{\alpha}^{\beta} \sqrt{r^{2}+\qty(\dv{r}{\theta})^{2}}\dd{\theta}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-in-polar-coordinates-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-in-polar-coordinates-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-in-polar-coordinates-4-3">
+<div class="para logical" id="sec-calculus-in-polar-coordinates-4-3-1">
+<div class="para">Polar area bounded by one curve:</div>
+<div class="displaymath process-math" id="sec-calculus-in-polar-coordinates-4-3-1-1">
+\begin{equation*}
+A=\frac{1}{2}\int_{\alpha}^{\beta} r^{2}\dd{\theta}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-in-polar-coordinates-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-in-polar-coordinates-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-in-polar-coordinates-4-4">
+<div class="para logical" id="sec-calculus-in-polar-coordinates-4-4-1">
+<div class="para">Polar area bounded by two curves:</div>
+<div class="displaymath process-math" id="sec-calculus-in-polar-coordinates-4-4-1-1">
+\begin{equation*}
+A=\frac{1}{2}\int_{\alpha}^{\beta} (r\tsub{outer}^{2}-r\tsub{inner}^{2})\dd{\theta}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-in-polar-coordinates-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-in-polar-coordinates-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 16.2: Calculus in polar coordinates"><a href="#sec-calculus-in-polar-coordinates" title="Copy heading and permalink for Section 16.2: Calculus in polar coordinates" aria-label="Copy heading and permalink for Section 16.2: Calculus in polar coordinates">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-changes-of-coordinates.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-jacobian.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
