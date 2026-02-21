@@ -1,0 +1,48 @@
+<preface xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>About this project</title>
+    <p>
+        This project has grown out of my experiences teaching calculus at multiple levels, starting with AP Calculus in high school and most recently getting to take a cohort through the full Calculus I-IV sequence at Oglethorpe. Over time, I've become less satisfied with covering topics in the traditional order and more interested in the intellectual experience students were actually having. Calculus is a sequence of ideas that developed historically in response to real problems, but when students encounter these ideas for the first time, they often have uneven preparation and varying expectations.
+    </p>
+    <p>
+        Rather than presenting Topic A before Topic B simply because A is logically required to prove B, I'd rather ask a different question: where are we in the story? My aim here is to structure each course so that concepts appear when they are needed. I try to introduce tools <sq>just in time</sq>, when students have already felt the need for them. Applications are placed front and center whenever possible so that the necessary techniques arise as responses to concrete questions. Each part ends with a capstone designed to synthesize the material or push it further. At this stage, the project exists primarily as a detailed outline, with some sections more fully written than others; the goal has been to clarify the overall story arc before filling in every detail and writing up the prose, the practice questions, and so on.
+    </p>
+    <p>
+        This project remains a work in progress <mdash/> the structure is established, and I'm always refining individual sections. Feedback is always welcome!
+    </p>
+
+    <paragraphs>
+        <title>Part I: Describing Change</title>
+        <p>
+            The first part corresponds to Calculus I and begins with differentiation rather than limits. Students work with derivatives immediately, appealing to differentials as infinitesimal changes, much as the early developers of calculus did. To reduce cognitive overload, the initial functions are restricted to power functions with rational coefficients, allowing students to internalize structural rules before memorizing a large catalog of derivatives. Applications such as related rates and optimization appear early, along with higher-order derivatives so that concavity can be used naturally. Integration is introduced as accumulation of change, followed by the Fundamental Theorem of Calculus and a chapter on differential equations. Exponential and trigonometric functions emerge as solutions to physical models, and logarithms are used as a technique to solve some of those differential equations. Only after all of these tools are in place are limits introduced formally as a way to clarify and justify earlier reasoning. The capstone uses the full development of the course to prove the Fundamental Theorem of Calculus in a deliberate and comprehensive way.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Part II: Harnessing Infinity</title>
+        <p>
+            The second part, corresponding to Calculus II, begins with analytic geometry and motion in the plane, providing continuity with earlier material while expanding students' visual intuition. A subsequent chapter on area and volume emphasizes slicing and accumulation, moving students away from the narrow view that integrals simply <sq>mean area.</sq> Integration techniques are introduced with attention to structure <mdash/> substitution and integration by parts are presented as reversals of differentiation rules, and more advanced strategy appears later in a section devoted to reasoning about the form of an integrand. A separate chapter addresses situations in which closed-form antiderivatives do not exist and numerical methods become necessary. The series chapter departs most sharply from tradition <mdash/> rather than beginning with sequences and convergence tests, it begins with Taylor series as practical tools for approximation and integration, and questions of convergence arise naturally from that context. This approach creates space for hyperbolic functions, Euler's formula, Fourier series, and culminates in a capstone on the Riemann zeta function.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Part III: New Dimensions</title>
+        <p>
+            The third part, corresponding to Calculus III, expands calculus into higher dimensions. It begins by examining what <sq>dimension</sq> means and how familiar ideas extend into unfamiliar settings. Functions of multiple variables and their continuity are introduced before partial derivatives are developed systematically, including multivariable Taylor approximations and foundational optimization techniques. The chapter on vectors moves past thinking them as lists of numbers or functions and toward treating them as mathematical objects in their own right. These assist with introducing gradients and directional derivatives to deepen the understanding of how multivariable functions change in different ways. Constrained optimization and Lagrange multipliers are more carefully developed, and the Lagrangian function is interpreted in terms of sensitivity, giving meaning to the Lagrange multiplier instead of throwing it out. Multiple integrals are developed exclusively in Cartesian coordinates to reinforce the idea of reducing complex regions to iterated problems, with applications such as center of mass and probability. The capstone introduces calculus of variations, where optimization occurs over infinite-dimensional spaces of functions rather than points.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Part IV: Transforming Perspectives</title>
+        <p>
+            The fourth part expands the usual treatment of vector calculus by interleaving complex variales. The opening chapter treats coordinate transformations as a central idea: polar, cylindrical, and spherical systems are introduced as alternate descriptions of space, and the Jacobian matrix is studied as a generalization of all the derivative concepts encountered earlier. Complex functions are presented as transformations of the plane, with geometric interpretation emphasized alongside analytic structure. Vector fields are analyzed through divergence and curl, which are introduced as new kinds of derivatives, and complex differentiability is connected to physical interpretations such as incompressible and irrotational flow. Line and surface integrals are developed carefully, with scalar and vector cases each given their own space, and contour integrals incorporated into the same framework. The fundamental theorems of Green, Gauss, and Stokes are explored side by side, and Cauchy's integral theorem leads to the powerful calculus of residues. The capstone introduces differential forms and exterior calculus as a unified language for these results.
+        </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Part V: Firm Foundations</title>
+        <p>
+            The final part of this book turns to real analysis. Students have already worked extensively with derivatives, integrals, and series; here the aim is to revisit those tools with careful attention to foundations. The opening chapter motivates rigor through counterintuitive examples from Fourier analysis and develops structural properties of the real numbers. Subsequent chapters treat sequences and limits, differentiability and Taylor's theorem, and conditions for integrability. Compactness, uniform continuity, and Lebesgue measure appear where they are needed to clarify earlier ideas. The final chapter studies series and the interchange of limiting processes, addressing the foundational issues that originally prompted the development of analysis. The capstone introduces non-standard analysis as an alternate framework, showing that the infinitesimal language from the beginning of the project can be made precise in a modern setting.
+        </p>
+    </paragraphs>
+    
+</preface>
