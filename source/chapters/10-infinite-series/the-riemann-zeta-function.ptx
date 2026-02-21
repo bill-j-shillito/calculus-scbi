@@ -110,7 +110,7 @@
     <li>
       <p>
         Prime counting function: <m>\uppi(x)</m> is the number of prime numbers less than or equal to <m>x</m>.
-        Was shown to be asymptotic first to <m>\dfrac{x}{\ln x}</m> and then to <m>\int_{2}^{x}\dfrac{1}{\ln t}\dd{t}</m>.
+        Was shown to be asymptotic first to <m>\dfrac{x}{\ln x}</m> and then to <m>\DS\int_{2}^{x}\dfrac{1}{\ln t}\dd{t}</m>.
         This is the Prime Number Theorem.
       </p>
     </li>
