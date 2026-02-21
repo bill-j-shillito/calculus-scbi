@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -460,6 +466,219 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-calculus-of-variations"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">CAPSTONE: Calculus of variations</span>
 </h2>
+<ul class="disc" id="sec-calculus-of-variations-2">
+<li id="sec-calculus-of-variations-2-1">
+<div class="para" id="sec-calculus-of-variations-2-1-1">In ordinary optimization, we search for a number <span class="process-math">\(x\)</span> that minimizes a function <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-1-2">In multivariable optimization, we search for a point <span class="process-math">\((x,y)\)</span> that minimizes a function <span class="process-math">\(f(x,y)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-1-3">
+<div class="para">In the calculus of variations, we search for an entire function <span class="process-math">\(y(x)\)</span> that minimizes a quantity of the form</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-1-3-2">
+\begin{equation*}
+J[y]=\int_{a}^{b} F(x,y,y')\dd{x}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-1-4">Such a map <span class="process-math">\(J\)</span> is called a functional, because it assigns a number to a function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-2">
+<div class="para logical" id="sec-calculus-of-variations-2-2-1">
+<div class="para">Suppose <span class="process-math">\(y\)</span> is a candidate minimizer. Consider a small perturbation</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-2-1-2">
+\begin{equation*}
+y_{\eps}(x)=y(x)+\eps \eta(x),
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\eta(a)=\eta(b)=0\)</span> so that the endpoints remain fixed.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-2-2">
+<div class="para">Define</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-2-2-1">
+\begin{equation*}
+\Phi(\eps)=J[y_{\eps}].
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-2-3">If <span class="process-math">\(y\)</span> minimizes <span class="process-math">\(J\text{,}\)</span> then <span class="process-math">\(\Phi'(0)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-2-4">Thus the problem reduces to differentiating with respect to the ordinary variable <span class="process-math">\(\eps\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-3">
+<div class="para logical" id="sec-calculus-of-variations-2-3-1">
+<div class="para">Differentiating under the integral sign gives</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-3-1-1">
+\begin{equation*}
+\Phi'(0) = \int_{a}^{b} \left( \pdv{F}{y}\eta + \pdv{F}{y'}\eta' \right)\dd{x}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-3-2">
+<div class="para">Integrating the second term by parts,</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-3-2-1">
+\begin{equation*}
+\int_{a}^{b} \pdv{F}{y'}\eta'\dd{x} = \left[ \pdv{F}{y'}\eta \right]_{a}^{b} - \int_{a}^{b} \dv{x} \qty(\pdv{F}{y'})\eta\dd{x}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-3-3">
+<div class="para">Because <span class="process-math">\(\eta(a)=\eta(b)=0\text{,}\)</span> the boundary term vanishes. Hence</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-3-3-2">
+\begin{equation*}
+\Phi'(0) = \int_{a}^{b} \left( \pdv{F}{y}- \dv{x} \qty(\pdv{F}{y'})\right) \eta \dd{x}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-3-4">
+<div class="para">Since this must hold for every admissible <span class="process-math">\(\eta\text{,}\)</span> we obtain the Euler-Lagrange equation:</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-3-4-2">
+\begin{equation*}
+\pdv{F}{y}- \dv{x} \qty(\pdv{F}{y'})=0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-4">
+<div class="para logical" id="sec-calculus-of-variations-2-4-1">
+<div class="para">The length of a curve from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-4-1-3">
+\begin{equation*}
+J[y]=\int_{a}^{b} \sqrt{1+(y')^{2}}\dd{x}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-4-2">Here <span class="process-math">\(F(x,y,y')=\sqrt{1+(y')^{2}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-4-3">
+<div class="para">Since <span class="process-math">\(\partial F/\partial y=0\text{,}\)</span> the Euler-Lagrange equation reduces to</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-4-3-2">
+\begin{equation*}
+\dv{x} \qty( \frac{y'}{\sqrt{1+(y')^{2}}} )=0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-4-4">
+<div class="para">Therefore</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-4-4-1">
+\begin{equation*}
+\frac{y'}{\sqrt{1+(y')^{2}}}=\text{constant},
+\end{equation*}
+</div>
+<div class="para">which implies <span class="process-math">\(y'=\text{constant}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-4-5">The shortest path between two points is a straight line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-5">
+<div class="para logical" id="sec-calculus-of-variations-2-5-1">
+<div class="para">If <span class="process-math">\(z=u(x,y)\)</span> describes a surface over a region <span class="process-math">\(R\text{,}\)</span> its surface area is</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-5-1-3">
+\begin{equation*}
+A[u]=\iint_{R} \sqrt{1+u_{x}^{2}+u_{y}^{2}}\dd{A}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-5-2">
+<div class="para">Minimizing this functional leads to</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-5-2-1">
+\begin{equation*}
+\frac{\partial}{\partial x}\qty( \frac{u_{x}}{\sqrt{1+u_{x}^{2}+u_{y}^{2}}} )+ \frac{\partial}{\partial y}\qty( \frac{u_{y}}{\sqrt{1+u_{x}^{2}+u_{y}^{2}}} )=0\text{,}
+\end{equation*}
+</div>
+<div class="para">the minimal surface equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-5-3">Unlike the one-dimensional case, this condition is now a partial differential equation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-6">
+<div class="para" id="sec-calculus-of-variations-2-6-1">For a curve, curvature <span class="process-math">\(\kappa\)</span> measures how sharply the curve bends.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-6-2">For a surface, there are two distinguished directions of bending. The corresponding curvatures are the principal curvatures <span class="process-math">\(\kappa_{1}\)</span> and <span class="process-math">\(\kappa_{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-6-3">
+<div class="para">Two natural measurements arise:</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-6-3-1">
+\begin{equation*}
+H=\frac{\kappa_{1}+\kappa_{2}}{2}\qquad\text{and}\qquad K=\kappa_{1}\kappa_{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-6-4">Here <span class="process-math">\(H\)</span> is the mean curvature and <span class="process-math">\(K\)</span> is the Gaussian curvature.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-6-5">
+<div class="para">In coordinates <span class="process-math">\(z=u(x,y)\text{,}\)</span> Gaussian curvature can be expressed as</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-6-5-2">
+\begin{equation*}
+K=u_{xx}u_{yy}-u_{xy}^{2}\text{.}
+\end{equation*}
+</div>
+<div class="para">This is in fact the quantity we used when doing the Second Derivative Test.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-6-6">
+<div class="para">Mean curvature can be expressed as</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-6-6-1">
+\begin{equation*}
+H = \frac{(1+u_{y}^{2})u_{xx}-2u_{x}u_{y}u_{xy}+(1+u_{x}^{2})u_{yy}}{2(1+u_{x}^{2}+u_{y}^{2})^{3/2}}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-calculus-of-variations-2-6-7">
+<div class="para">Expanding the minimal surface equation shows that it is exactly the condition</div>
+<div class="displaymath process-math" id="sec-calculus-of-variations-2-6-7-1">
+\begin{equation*}
+H=0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-6-8">Thus minimal surfaces are characterized by zero <em class="emphasis">average</em> bending, not by zero Gaussian curvature.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-6-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-7">
+<div class="para logical" id="sec-calculus-of-variations-2-7-1">
+<ul class="circle" id="sec-calculus-of-variations-2-7-1-1">
+<li id="sec-calculus-of-variations-2-7-1-1-1">
+<div class="para" id="sec-calculus-of-variations-2-7-1-1-1-1">In multivariable optimization, we solve <span class="process-math">\(\Grad f=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-7-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-7-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-calculus-of-variations-2-7-1-1-2">
+<div class="para" id="sec-calculus-of-variations-2-7-1-1-2-1">In calculus of variations, we set the functional derivative equal to zero.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-7-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-7-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-calculus-of-variations-2-7-2">Both express stationarity, but now the object being optimized is a shape.<div class="autopermalink" data-description="Paragraph"><a href="#sec-calculus-of-variations-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-calculus-of-variations-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
 <div class="autopermalink" data-description="Section 15.7: CAPSTONE: Calculus of variations"><a href="#sec-calculus-of-variations" title="Copy heading and permalink for Section 15.7: CAPSTONE: Calculus of variations" aria-label="Copy heading and permalink for Section 15.7: CAPSTONE: Calculus of variations">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-multivariate-probability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-transforming-perspectives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -476,7 +482,67 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 13.1"><a href="#sec-vector-valued-functions-2" title="Copy heading and permalink for Objectives 13.1" aria-label="Copy heading and permalink for Objectives 13.1">🔗</a></div></article><section class="introduction" id="sec-vector-valued-functions-3"><div class="para" id="sec-vector-valued-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 13.1: Vector-valued functions"><a href="#sec-vector-valued-functions" title="Copy heading and permalink for Section 13.1: Vector-valued functions" aria-label="Copy heading and permalink for Section 13.1: Vector-valued functions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-vector-valued-functions-4">
+<li id="sec-vector-valued-functions-4-1">
+<div class="para" id="sec-vector-valued-functions-4-1-1">Call back to Chapter 6 with motion in the plane:<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-vector-valued-functions-4-1-2">
+\begin{align*}
+x \amp = f(t)\\
+y \amp = g(t)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-valued-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-valued-functions-4-2">
+<div class="para logical" id="sec-vector-valued-functions-4-2-1">
+<div class="para">We also thought of this as a vector, packing these functions into a single object:</div>
+<div class="displaymath process-math" id="sec-vector-valued-functions-4-2-1-1">
+\begin{equation*}
+\big(f(t),g(t)\big)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-valued-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-valued-functions-4-3">
+<div class="para logical" id="sec-vector-valued-functions-4-3-1">
+<div class="para">Now we consider the vector to be an object in its own right, and we give it a name:</div>
+<div class="displaymath process-math" id="sec-vector-valued-functions-4-3-1-1">
+\begin{equation*}
+\bv{r}(t)=\big(f(t),g(t)\big)
+\end{equation*}
+</div>
+<div class="para">The boldface is used to denote that <span class="process-math">\(\bv{r}\)</span> returns a vector.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-valued-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-valued-functions-4-4">
+<div class="para" id="sec-vector-valued-functions-4-4-1">Since the vector depends on <span class="process-math">\(t\text{,}\)</span> this is a vector-valued function. Notice that now we have a single input and two outputs, the opposite of what was in the last chapter.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-valued-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-valued-functions-4-5">
+<div class="para" id="sec-vector-valued-functions-4-5-1">Visual + algebraic look at vector addition, scalar multiplication... we’re extending our usual arithmetic operations to these new objects.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-valued-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-vector-valued-functions-4-6">
+<div class="para" id="sec-vector-valued-functions-4-6-1">Extend parametric equation to 3D space:<div class="autopermalink" data-description="Paragraph"><a href="#sec-vector-valued-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-vector-valued-functions-4-6-2">
+\begin{align*}
+x \amp = f(t)\\
+y \amp = g(t)\\
+z \amp = h(t)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-vector-valued-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 13.1: Vector-valued functions"><a href="#sec-vector-valued-functions" title="Copy heading and permalink for Section 13.1: Vector-valued functions" aria-label="Copy heading and permalink for Section 13.1: Vector-valued functions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-vectors.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-describing-motion-with-vectors.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

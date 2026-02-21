@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -476,7 +482,101 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 11.2"><a href="#sec-extending-to-higher-dimensions-2" title="Copy heading and permalink for Objectives 11.2" aria-label="Copy heading and permalink for Objectives 11.2">🔗</a></div></article><section class="introduction" id="sec-extending-to-higher-dimensions-3"><div class="para" id="sec-extending-to-higher-dimensions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 11.2: Extending to higher dimensions"><a href="#sec-extending-to-higher-dimensions" title="Copy heading and permalink for Section 11.2: Extending to higher dimensions" aria-label="Copy heading and permalink for Section 11.2: Extending to higher dimensions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-extending-to-higher-dimensions-4">
+<li id="sec-extending-to-higher-dimensions-4-1">
+<div class="para" id="sec-extending-to-higher-dimensions-4-1-1">Taking familiar concepts from 2D and extending them to 3D<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-2">
+<div class="para" id="sec-extending-to-higher-dimensions-4-2-1">3D coordinates: <span class="process-math">\((x,y,z)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-3">
+<div class="para logical" id="sec-extending-to-higher-dimensions-4-3-1">
+<div class="para">Midpoint:</div>
+<div class="displaymath process-math" id="sec-extending-to-higher-dimensions-4-3-1-1">
+\begin{equation*}
+M=\qty(\frac{x_{1}+x_{2}}{2},\frac{y_{1}+y_{2}}{2},\frac{z_{1}+z_{2}}{2})
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-4">
+<div class="para logical" id="sec-extending-to-higher-dimensions-4-4-1">
+<div class="para">Distance:</div>
+<div class="displaymath process-math" id="sec-extending-to-higher-dimensions-4-4-1-1">
+\begin{equation*}
+d=\sqrt{\Delta x^{2}+\Delta y^{2}+\Delta z^{2}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-5">
+<div class="para logical" id="sec-extending-to-higher-dimensions-4-5-1">
+<div class="para">Equation of a plane:</div>
+<div class="displaymath process-math" id="sec-extending-to-higher-dimensions-4-5-1-1">
+\begin{equation*}
+ax+by+cz=d
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-6">
+<div class="para logical" id="sec-extending-to-higher-dimensions-4-6-1">
+<div class="para">Sphere:</div>
+<div class="displaymath process-math" id="sec-extending-to-higher-dimensions-4-6-1-1">
+\begin{equation*}
+(x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}=r^{2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-7">
+<div class="para" id="sec-extending-to-higher-dimensions-4-7-1">Interior, exterior, boundary (intuitively)<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-8">
+<div class="para logical" id="sec-extending-to-higher-dimensions-4-8-1">
+<div class="para">Open ball:</div>
+<div class="displaymath process-math" id="sec-extending-to-higher-dimensions-4-8-1-1">
+\begin{equation*}
+(x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}\lt r^{2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-9">
+<div class="para logical" id="sec-extending-to-higher-dimensions-4-9-1">
+<div class="para">Closed ball:</div>
+<div class="displaymath process-math" id="sec-extending-to-higher-dimensions-4-9-1-1">
+\begin{equation*}
+(x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}\le r^{2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-to-higher-dimensions-4-10">
+<div class="para" id="sec-extending-to-higher-dimensions-4-10-1">Cylinders: Take an equation in two variables and think of the third variable as ‘free’<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-to-higher-dimensions-4-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-to-higher-dimensions-4-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 11.2: Extending to higher dimensions"><a href="#sec-extending-to-higher-dimensions" title="Copy heading and permalink for Section 11.2: Extending to higher dimensions" aria-label="Copy heading and permalink for Section 11.2: Extending to higher dimensions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-what-are-dimensions-really.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

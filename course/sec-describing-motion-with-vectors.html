@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Describing motion with vectors</title>
+<title>Motion in space</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -458,7 +464,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-describing-motion-with-vectors"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describing motion with vectors</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Motion in space</span>
 </h2>
 <article class="objectives goal-like" id="sec-describing-motion-with-vectors-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ol class="decimal" id="sec-describing-motion-with-vectors-2-1">
@@ -476,7 +482,88 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 13.2"><a href="#sec-describing-motion-with-vectors-2" title="Copy heading and permalink for Objectives 13.2" aria-label="Copy heading and permalink for Objectives 13.2">🔗</a></div></article><section class="introduction" id="sec-describing-motion-with-vectors-3"><div class="para" id="sec-describing-motion-with-vectors-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 13.2: Describing motion with vectors"><a href="#sec-describing-motion-with-vectors" title="Copy heading and permalink for Section 13.2: Describing motion with vectors" aria-label="Copy heading and permalink for Section 13.2: Describing motion with vectors">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-describing-motion-with-vectors-4">
+<li id="sec-describing-motion-with-vectors-4-1">
+<div class="para logical" id="sec-describing-motion-with-vectors-4-1-1">
+<div class="para">2D Velocity:</div>
+<div class="displaymath process-math" id="sec-describing-motion-with-vectors-4-1-1-1">
+\begin{equation*}
+\bv{v}(t)=\dv{\bv{r}}{t}=\qty(f'(t),g'(t))
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-2">
+<div class="para logical" id="sec-describing-motion-with-vectors-4-2-1">
+<div class="para">2D Acceleration:</div>
+<div class="displaymath process-math" id="sec-describing-motion-with-vectors-4-2-1-1">
+\begin{equation*}
+\bv{a}(t)=\dv{\bv{v}}{t}=\qty(f''(t),g''(t))
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-3">
+<div class="para" id="sec-describing-motion-with-vectors-4-3-1">We’ve started with 2D, but point out how the vector notation makes it work for any dimension<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-4">
+<div class="para logical" id="sec-describing-motion-with-vectors-4-4-1">
+<div class="para">Equation of a line in 3D:</div>
+<div class="displaymath process-math" id="sec-describing-motion-with-vectors-4-4-1-1">
+\begin{equation*}
+\bv{r}(t)=\bv{r}_{0}+\bv{v}_{0}t=(x_{0}+v_{0x}t,y_{0}+v_{0y}t,z_{0}+v_{0z}t)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-5">
+<div class="para logical" id="sec-describing-motion-with-vectors-4-5-1">
+<div class="para">Length / norm of a vector is related to distance and Pythagorean theorem:</div>
+<div class="displaymath process-math" id="sec-describing-motion-with-vectors-4-5-1-1">
+\begin{equation*}
+\norm{(a,b,c)}=\sqrt{a^{2}+b^{2}+c^{2}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-6">
+<div class="para" id="sec-describing-motion-with-vectors-4-6-1">Arc length:<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-describing-motion-with-vectors-4-6-2">
+\begin{align*}
+s \amp = \int_a^b \norm{\bv{r}'(t)}\dd{t} \\
+\amp = \int_a^b \sqrt{\qty(\dv{r_x}{t})^{2}+\qty(\dv{r_y}{t})^{2}+\qty(\dv{r_z}{t})^{2}}\dd{t} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-7">
+<div class="para" id="sec-describing-motion-with-vectors-4-7-1">If we define <span class="process-math">\(s(t)=\int_{a}^{t}\norm{\bv{r}'(u)}\dd{u}\text{,}\)</span> then <span class="process-math">\(s(t)\)</span> is a one-to-one increasing function so it has an inverse. Hence if we solve for <span class="process-math">\(t\)</span> as a function of <span class="process-math">\(s\text{,}\)</span> i.e. <span class="process-math">\(t(s)\text{,}\)</span> then <span class="process-math">\(\bar{\bv{r}}(s)=\bv{r}(t(s))\)</span> is parametrized by arc length. This is called the natural parametrization of the curve.<div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-8">
+<div class="para" id="sec-describing-motion-with-vectors-4-8-1">If we parametrize by arc length, then <span class="process-math">\(\norm{\bar{\bv{r}}'(s)}=1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-describing-motion-with-vectors-4-9">
+<div class="para" id="sec-describing-motion-with-vectors-4-9-1">Difficult to do in practice, but often useful for theoretical arguments, and can be turned back into parametrization by <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-describing-motion-with-vectors-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-describing-motion-with-vectors-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 13.2: Motion in space"><a href="#sec-describing-motion-with-vectors" title="Copy heading and permalink for Section 13.2: Motion in space" aria-label="Copy heading and permalink for Section 13.2: Motion in space">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-vector-valued-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-dot-product-and-cross-product.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

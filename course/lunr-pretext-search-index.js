@@ -952,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.1",
   "title": "What are dimensions, really?",
-  "body": " What are dimensions, really?                   Introduction goes here.   "
+  "body": " What are dimensions, really?                   Introduction goes here.     Dimensions are just a measure of how many numbers you need to specify a state.    Minard map of Napoleon's march through Russia    Give multiple real-world examples    Don't have to be spatial dimensions, but our spatial intuition can give us insight on how we can understand non-spatial variables (e.g. using a time axis)    Which mathematical skills could be developed in this chapter?    "
 },
 {
   "id": "sec-what-are-dimensions-really-2",
@@ -970,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Extending to higher dimensions",
-  "body": " Extending to higher dimensions                   Introduction goes here.   "
+  "body": " Extending to higher dimensions                   Introduction goes here.     Taking familiar concepts from 2D and extending them to 3D    3D coordinates:     Midpoint:     Distance:     Equation of a plane:     Sphere:     Interior, exterior, boundary (intuitively)    Open ball:     Closed ball:     Cylinders: Take an equation in two variables and think of the third variable as free     "
 },
 {
   "id": "sec-extending-to-higher-dimensions-2",
@@ -988,7 +988,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.3",
   "title": "Slicing through dimensions",
-  "body": " Slicing through dimensions                   Introduction goes here.   "
+  "body": " Slicing through dimensions                   Introduction goes here.     We can hold one variable constant to get a cross-section of a 3D surface. This is called a trace, and it's the same as looking at the intersection between a surface and a plane parallel to one of the coordinate planes.    Ellipsoid: Traces are all ellipses.    Hyperboloid of one sheet: Traces are ellipses or hyperbolas.    Hyperboloid of two sheets: Again traces are ellipses or hyperbolas, but one trace is empty, which gives two sheets.    Elliptic Paraboloid: Traces are ellipses or parabolas.    Elliptic Paraboloid: Traces are hyperbolas or parabolas.    "
 },
 {
   "id": "sec--2",
@@ -1006,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Functions of multiple variables",
-  "body": " Functions of multiple variables                   Introduction goes here.   "
+  "body": " Functions of multiple variables                   Introduction goes here.     If we can solve for in terms of and , we can write .    Lots of real-world examples! Will list a bunch later.    Domain of such a function is a region in the plane.    Sets of points for which for some constant are called level curves. They’re essentially traces parallel to the -plane.    Viewing all the level curves of a function gives a contour map, which is a common 2D representation.   Talk about isotherms, isobars, etc.       Level curves of planes are always lines.    The quadric surfaces can be thought of as level surface of functions of three variables, just like the conic sections can be thought of as level curves of functions of two variables.    The limit of a multivariable function at is a value such that whenever along any path, .    Simple example: Looking at traces found by setting or constant. If these give different results when appraoching , then is not continuous.    Some functions require more complicated approaches.    requires an approach along the line .     requires an approach along the parabola .       Same definition of continuity at a point: the limit has to match the function value.    Polynomial functions are continuous on their domains, as are all the other nice functions, as well as sums, differences, products, quotients with nonzero denominator, and compositions.   Yes, including rational functions. Where things break is where those functions are not defined.       "
 },
 {
   "id": "sec-functions-of-multiple-variables-2",
@@ -1024,7 +1024,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.1",
   "title": "Partial derivatives",
-  "body": " Partial derivatives                   Introduction goes here.   "
+  "body": " Partial derivatives                   Introduction goes here.     Start with windchill example? Or maybe business example?    If is a function, then the partial derivatives are defined as follows:   This represents the sensitivity of to changes in or  alone .    Geometrically, this is like taking a trace with a constant or .    To compute the partial derivative with respect to one variable, treat the other variable as constant and take the single-variable derivative.   Might it be a good idea to actually numerically set a variable equal to a few different constants first, and only then treat the variable as an arbitrary constant?  Example:      , so .     , so .     , so .    In general, .     , so .     , so .     , so .    In general, .         Three-variable example of some kind    "
 },
 {
   "id": "sec-partial-derivatives-2",
@@ -1042,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.2",
   "title": "Tangent plane approximations",
-  "body": " Tangent plane approximations                   Introduction goes here.   "
+  "body": " Tangent plane approximations                   Introduction goes here.     Start with total differential: Show how this can be used to approximate changes in :     If etc, we get: This is an equation of the tangent plane to at the point .    Interpret geometrically:   The surface is locally approximated by a plane.    The coefficients and represent slopes in the - and -trace directions.    The tangent plane matches the surface exactly at the base point and closely nearby.       Emphasize the connection to single-variable calculus: The tangent plane is the two-variable analogue of the tangent line     Include a worked example:   Compute partial derivatives at a point.    Write the tangent plane equation.    Use it to approximate a nearby function value.    Compare to the actual value to assess accuracy.       Briefly discuss limitations:   Accuracy improves as approaches .    Non-differentiable points do not admit a tangent plane.    Curvature effects motivate higher-order approximations.       "
 },
 {
   "id": "sec-tangent-plane-approximations-2",
@@ -1060,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.3",
   "title": "Higher order partial derivatives",
-  "body": " Higher order partial derivatives                   Introduction goes here.   "
+  "body": " Higher order partial derivatives                   Introduction goes here.     Second-order partial derivatives of :   Yes, the mixed partial notation is confusing. In differential notation, the operators are applied inside-out, while in function notation, the operators are applied left to right.      Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .       Some partial differential equations:   Wave equation:     Heat equation:     Laplace's equation:        "
 },
 {
   "id": "sec-higher-order-partial-derivatives-2",
@@ -1072,13 +1072,22 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-higher-order-partial-derivatives-4-2-1-1",
+  "level": "2",
+  "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-4-2-1-1",
+  "type": "Theorem",
+  "number": "6",
+  "title": "Clairaut’s Theorem.",
+  "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
+},
+{
   "id": "sec-taylor-approximations-in-higher-dimensions",
   "level": "1",
   "url": "sec-taylor-approximations-in-higher-dimensions.html",
   "type": "Section",
   "number": "12.4",
   "title": "Taylor approximations in higher dimensions",
-  "body": " Taylor approximations in higher dimensions                   Introduction goes here.   "
+  "body": " Taylor approximations in higher dimensions                   Introduction goes here.     Begin by recalling the single-variable Taylor expansion: .  The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.    Connect to the previous section: The tangent plane is the first-order Taylor polynomial for .    Introduce second-order terms using higher partial derivatives:      Interpret each term:   First-order terms describe tilt.    Pure second derivatives describe curvature in coordinate directions.    Mixed partials describe interaction between variables.       Emphasize symmetry of mixed partials when conditions allow (Clairaut's theorem).    Provide a worked example:   Compute first and second partial derivatives at a point.    Write the quadratic Taylor approximation.    Use it to estimate a nearby value.    Compare to the actual value.       Geometric meaning:   First-order: tangent plane.    Second-order: quadratic surface approximating curvature.    The quadratic form determines local shape.       General multivariable Taylor expansion: where each term involves partial derivatives of total order evaluated at .  Each degree term consists of all products with , multiplied by the corresponding partial derivative   The approximation improves as higher-order terms are included.    "
 },
 {
   "id": "sec-taylor-approximations-in-higher-dimensions-2",
@@ -1096,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.5",
   "title": "Multivariable optimization",
-  "body": " Multivariable optimization                   Introduction goes here.   "
+  "body": " Multivariable optimization                   Introduction goes here.     If a function has a local maximum or minimum at , then both partial derivatives must be zero (meaning that is a critical points.    However, just because we have a critical point doesn’t mean it’s a local maximum or minimum; it can also be a saddle point.  An example is at the origin.    Second Derivative Test:  Suppose has a critical point at . Let: The discriminant is .   If , then is a saddle point.    If , then is a local maximum (if ) or local minimum (if ). This is just like the single variable case.    If , no conclusion can be made.       Justify this using the Taylor approximations. (Look at Thomas for reference.)    Potential motivating application could be least squares regression.  Given a set of points , we want to find the line that best fits the data.  The residuals are , so we want to minimize the sum of the squares of the residuals, which we can represent as the function   The solution ends up being the solution to the equations     "
 },
 {
   "id": "sec-multivariable-optimization-2",
@@ -1114,7 +1123,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.1",
   "title": "Vector-valued functions",
-  "body": " Vector-valued functions                   Introduction goes here.   "
+  "body": " Vector-valued functions                   Introduction goes here.     Call back to Chapter 6 with motion in the plane:     We also thought of this as a vector, packing these functions into a single object:     Now we consider the vector to be an object in its own right, and we give it a name: The boldface is used to denote that returns a vector.    Since the vector depends on , this is a vector-valued function. Notice that now we have a single input and two outputs, the opposite of what was in the last chapter.    Visual + algebraic look at vector addition, scalar multiplication... we're extending our usual arithmetic operations to these new objects.    Extend parametric equation to 3D space:     "
 },
 {
   "id": "sec-vector-valued-functions-2",
@@ -1131,8 +1140,8 @@ var ptx_lunr_docs = [
   "url": "sec-describing-motion-with-vectors.html",
   "type": "Section",
   "number": "13.2",
-  "title": "Describing motion with vectors",
-  "body": " Describing motion with vectors                   Introduction goes here.   "
+  "title": "Motion in space",
+  "body": " Motion in space                   Introduction goes here.     2D Velocity:     2D Acceleration:     We've started with 2D, but point out how the vector notation makes it work for any dimension    Equation of a line in 3D:     Length \/ norm of a vector is related to distance and Pythagorean theorem:     Arc length:     If we define , then is a one-to-one increasing function so it has an inverse. Hence if we solve for as a function of , i.e. , then is parametrized by arc length. This is called the natural parametrization of the curve.    If we parametrize by arc length, then .    Difficult to do in practice, but often useful for theoretical arguments, and can be turned back into parametrization by .    "
 },
 {
   "id": "sec-describing-motion-with-vectors-2",
@@ -1150,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.3",
   "title": "The dot product and cross product",
-  "body": " The dot product and cross product                   Introduction goes here.   "
+  "body": " The dot product and cross product                   Introduction goes here.     In 2D, if and with angle between them (from to , then we define the dot product and cross product as follows:   Hence the dot product is maximized when the vectors are parallel, and the cross product is maximized when the vectors are perpendicular.    Calculated componentwise this gives us:     Show that an object in circular motion has velocity perpendicular to position and acceleration parallel to position.    In 3D, if and with angle between them (from to , then we define:   where is the unit vector that completes a right-handed coordinate system.    Componentwise:     If , then the motion stays in a plane.    Need to include the relationship between planes and their normals here. Uses dot products, and the cross product can be used to find the normal to two given vectors.    "
 },
 {
   "id": "sec-the-dot-product-and-cross-product-2",
@@ -1168,7 +1177,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.4",
   "title": "The Frenet-Serret frame",
-  "body": " The Frenet-Serret frame                   Introduction goes here.   "
+  "body": " The Frenet-Serret frame                   Introduction goes here.     Unit tangent:     Unit normal:     Curvature:     Tangent component of acceleration: Normal component of acceleration:     In 3D, we get the binormal:     Torsion:      The unit tangent, unit normal, and binormal together form the Frenet-Serret frame.    "
 },
 {
   "id": "sec-the-frenet-serret-frame-2",
@@ -1186,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.1",
   "title": "The chain rule in higher dimensions",
-  "body": " The chain rule in higher dimensions                   Introduction goes here.   "
+  "body": " The chain rule in higher dimensions                   Introduction goes here.     Suppose we move along a parametric curve . How does the value of change with ?    We can now write the total differential that we saw in Part I in terms of partial derivatives:     Dividing by , we now get the Chain Rule in higher dimensions:     If and are both functions of and , then we have     New way to do implicit differentiation! Rewrite implicit curve as a level curve ; then     Sometimes we need to be more explicit about which variables we're holding constant. Use Hughes-Hallett for reference here, they have a great explanation. Let be the internal energy of some amount of gas. According to the Ideal Gas Law, we have where is the (constant) amount of gas and is the ideal gas constant. In particular, , , and are NOT independent.  Suppose we want to find , that is, how depends on while is being held constant. This means we're implicitly thinking of as a function of and , with as an intermediate variable. This makes our total differential . We could also have thought of as depending on and , with as an intermediate variable: But since is a function of and we have: Substituting this gives us:   We now have two expressions for . Setting the parts equal we get , and setting the parts equal we get .    May decide NOT to do it the way described above ... instead we can just extend the tree diagram so that the only ‘leaves' are the independent variables. Explain in terms of the ambiguity of the partial derivative notation and what we're actually looking for.    Dimensionless variables?    Should we use the notation to clean things up more?    "
 },
 {
   "id": "sec-the-chain-rule-in-higher-dimensions-2",
@@ -1204,7 +1213,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.2",
   "title": "Absolute extrema in higher dimensions",
-  "body": " Absolute extrema in higher dimensions                   Introduction goes here.   "
+  "body": " Absolute extrema in higher dimensions                   Introduction goes here.     In single-variable calculus, to find absolute extrema, we had to look at critical points and boundary points. In multivariable calculus, that boundary is now an entire shape, so we can’t just check a few points.    To check the boundary of a shape, we can often substitute the boundary curve equation into the thing we want to optimize in order to reduce the number of variables, and then use single-variable calculus.    We also may be able to parameterize the boundary curve to get things in terms of a single variable. This uses the Chain Rule.    At that point, we just check all the candidates and take the highest and lowest one.    So the big theme here is, reduce a higher dimensional problem to a lower dimensional problem.    "
 },
 {
   "id": "sec-absolute-extrema-in-higher-dimensions-2",
@@ -1222,7 +1231,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.3",
   "title": "Directional derivatives and the gradient",
-  "body": " Directional derivatives and the gradient                   Introduction goes here.   "
+  "body": " Directional derivatives and the gradient                   Introduction goes here.     Suppose we're at the point and we want to find the rate of change as we move in the direction of the unit vector .    Parametrize the line in the -plane:   Differentiate with respect to using the Chain Rule:   This is the directional derivative of in the direction of , written .    Notice this looks a lot like a dot product! Define the gradient vector as:     Going to avoid the notation so that it can be saved for Part IV. Then the directional derivative can be written .    If we use basis vectors, we recover partial derivatives by projection:     Since the directional derivative is a dot product, it's maximized when points the same direction as the gradient, minimized when it points in the opposite direction. This leads to the gradient ascent\/descent algorithm.    Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero. This means that the gradient is perpendicular to the level curves of a surface.    Chain Rule can now be rewritten as:     Tangent plane can also be written in vector form: This much more closely resembles our linearization from Chapter 2.    Rearrange slightly: Again this looks like a dot product! We're saying that is parallel to . Since the latter vector represents an arbitary motion in the plane, this vector must be normal to the plane.    Can we include something about why the normal to a surface is important? Maybe something about lighting?    "
 },
 {
   "id": "sec-directional-derivatives-and-the-gradient-2",
@@ -1240,7 +1249,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.4",
   "title": "Lagrange multipliers",
-  "body": " Lagrange multipliers                   Introduction goes here.   "
+  "body": " Lagrange multipliers                   Introduction goes here.     Need to justify this using an example where substitution goes wrong.  Smith and Minton has an example: Find the points on the hyperbolic cylinder that are closest to the origin.    Let be a constraint curve that lies along the surface , and suppose has a local extreme value at along .  Parametrize the curve as so that .  Now consider the function . Then has an extreme value at , so . By the Chain Rule, we have:   Hence is perpendicular to the tangent vector . Since is a level curve of , we know that is also perpendicular to , and hence and are parallel. Hence, if , there exists some real number such that . This value is called the Lagrange multiplier.    Perhaps would be good to do the “milkmaid” problem... its solution visually goes with the reflection property of an ellipse. And it can be explained without needing a specific curve, but then made precise using a specific curve.    "
 },
 {
   "id": "sec-lagrange-multipliers-2",
@@ -1258,7 +1267,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.5",
   "title": "The Lagrangian function",
-  "body": " The Lagrangian function                   Introduction goes here.   "
+  "body": " The Lagrangian function                   Introduction goes here.      http:\/\/www.slimy.com\/~steuard\/teaching\/tutorials\/Lagrange.html     Here's another way we can “zoom out” and see the Lagrange multiplier method as part of a bigger story.    Suppose we want to maximize subject to the constraint . Define the Lagrangian function:  Then the solution to our maximization problem is the point where :   Note that we're assuming that is a constant for now.    Note that , which means that represents the sensitivity of the Lagrangian function to changes in our constraint amount. It can also be shown (will have to look at how!) that ; apparently this uses the “envelope theorem.”    Let be the solution to the constrained optimization problem. This depends on the given value of , so we'll write them as , and we'll write the optimum value of here as . If we differentiate with respect to , we get: Additionally, the constraint satisfies the equation . Differentiate both sides with respect to using the Chain Rule: By the Lagrange multiplier property we know that: Taking dot products with : Since we have:     Might actually be able to tie this to holding certain variables constant in , à la thermodynamics notation.    "
 },
 {
   "id": "sec-the-lagrangian-functions-2",
@@ -1276,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.1",
   "title": "Double integrals and iterated integrals",
-  "body": " Double integrals and iterated integrals                   Introduction goes here.   "
+  "body": " Double integrals and iterated integrals                   Introduction goes here.     Define the double integral of over a rectangular region :     Include some simple by-hand approximations with the rectangular region broken into small squares or rectangles    Fubini’s theorem says that we can write such a double integral as an iterated integral under certain niceness conditions (will have to find later):     Work out some iterated integrals    If , then     Area:     Average value:     "
 },
 {
   "id": "sec-double-integrals-and-iterated-integrals-2",
@@ -1294,7 +1303,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.2",
   "title": "Double integrals over general regions",
-  "body": " Double integrals over general regions                   Introduction goes here.   "
+  "body": " Double integrals over general regions                   Introduction goes here.     Can use a bounding box approach to take double integrals over regions with more general regions. If is a region over which is defined, let be a rectangle containing , and let Then .    If is bounded below by and above by :     If is bounded on the left by and the right by :     Changing order of integration:     "
 },
 {
   "id": "sec-double-integrals-over-general-regions-2",
@@ -1312,7 +1321,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.3",
   "title": "Surface area",
-  "body": " Surface area                   Introduction goes here.   "
+  "body": " Surface area                   Introduction goes here.     Area of the surface over the region : Notice similarity with arc length formula.    Derivation has to do with surface area element:     "
 },
 {
   "id": "sec-surface-area-2",
@@ -1330,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.4",
   "title": "Triple integrals",
-  "body": " Triple integrals                   Introduction goes here.   "
+  "body": " Triple integrals                   Introduction goes here.     Triple integral of over box :     Iterated integrals can take any of six orders of , , , for example:     Would like to find a good way to go over setting them up    Volume:     "
 },
 {
   "id": "sec-triple-integrals-2",
@@ -1348,7 +1357,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.5",
   "title": "Center of mass",
-  "body": " Center of mass                   Introduction goes here.   "
+  "body": " Center of mass                   Introduction goes here.     Mass in 2D (where is density): Moments in 2D:   Center of mass:     Mass in 3D (where is density): Moments in 3D:   Center of mass:     If we assume uniform density, we get the centroid of the region.    Start with density along a rod first?    "
 },
 {
   "id": "sec-center-of-mass-2",
@@ -1366,7 +1375,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.6",
   "title": "Multivariate probability",
-  "body": " Multivariate probability                   Introduction goes here.   "
+  "body": " Multivariate probability                   Introduction goes here.     Joint density function of and :     Expected values:   These are just the center of mass again!    Marginal probability density functions:     Could do Monte Carlo integration! Would be good practice still for setting up regions!    "
 },
 {
   "id": "sec-multivariate-probability-2",
@@ -1384,7 +1393,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.7",
   "title": "CAPSTONE: Calculus of variations",
-  "body": " CAPSTONE: Calculus of variations  "
+  "body": " CAPSTONE: Calculus of variations    In ordinary optimization, we search for a number that minimizes a function .  In multivariable optimization, we search for a point that minimizes a function .  In the calculus of variations, we search for an entire function that minimizes a quantity of the form .  Such a map is called a functional, because it assigns a number to a function.    Suppose is a candidate minimizer. Consider a small perturbation where so that the endpoints remain fixed.  Define   If minimizes , then .  Thus the problem reduces to differentiating with respect to the ordinary variable .    Differentiating under the integral sign gives .  Integrating the second term by parts,   Because , the boundary term vanishes. Hence .  Since this must hold for every admissible , we obtain the Euler-Lagrange equation: .    The length of a curve from to is .  Here .  Since , the Euler-Lagrange equation reduces to .  Therefore which implies .  The shortest path between two points is a straight line.    If describes a surface over a region , its surface area is .  Minimizing this functional leads to , the minimal surface equation.  Unlike the one-dimensional case, this condition is now a partial differential equation.    For a curve, curvature measures how sharply the curve bends.  For a surface, there are two distinguished directions of bending. The corresponding curvatures are the principal curvatures and .  Two natural measurements arise: .  Here is the mean curvature and is the Gaussian curvature.  In coordinates , Gaussian curvature can be expressed as . This is in fact the quantity we used when doing the Second Derivative Test.  Mean curvature can be expressed as .  Expanding the minimal surface equation shows that it is exactly the condition .  Thus minimal surfaces are characterized by zero average bending, not by zero Gaussian curvature.       In multivariable optimization, we solve .    In calculus of variations, we set the functional derivative equal to zero.     Both express stationarity, but now the object being optimized is a shape.    "
 },
 {
   "id": "sec-changes-of-coordinates",

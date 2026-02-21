@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -476,7 +482,167 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 12.4"><a href="#sec-taylor-approximations-in-higher-dimensions-2" title="Copy heading and permalink for Objectives 12.4" aria-label="Copy heading and permalink for Objectives 12.4">🔗</a></div></article><section class="introduction" id="sec-taylor-approximations-in-higher-dimensions-3"><div class="para" id="sec-taylor-approximations-in-higher-dimensions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 12.4: Taylor approximations in higher dimensions"><a href="#sec-taylor-approximations-in-higher-dimensions" title="Copy heading and permalink for Section 12.4: Taylor approximations in higher dimensions" aria-label="Copy heading and permalink for Section 12.4: Taylor approximations in higher dimensions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-taylor-approximations-in-higher-dimensions-4">
+<li id="sec-taylor-approximations-in-higher-dimensions-4-1">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-1-1">
+<div class="para">Begin by recalling the single-variable Taylor expansion:</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-1-1-1">
+\begin{equation*}
+f(x) \approx f(a) + f'(a)(x-a) + \frac{1}{2} f''(a)(x-a)^{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-1-2">The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-2">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-2-1">
+<div class="para">Connect to the previous section: The tangent plane</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-2-1-1">
+\begin{equation*}
+z \approx z_{0} + \pdv{f}{x}(x-x_{0}) + \pdv{f}{y}(y-y_{0})
+\end{equation*}
+</div>
+<div class="para">is the first-order Taylor polynomial for <span class="process-math">\(f(x,y)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-3">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-3-1">
+<div class="para">Introduce second-order terms using higher partial derivatives:</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-3-1-1">
+\begin{equation*}
+f(x,y) \approx f(x_{0},y_{0}) + \pdv{f}{x}(x-x_{0}) + \pdv{f}{y}(y-y_{0})
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-3-1-2">
+\begin{equation*}
+\quad + \frac{1}{2} \pdv[2]{f}{x}(x-x_{0})^{2} + \pdv[2]{f}{x}{y}(x-x_{0})(y-y_{0}) + \frac{1}{2} \pdv[2]{f}{y}(y-y_{0})^{2}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-4">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-4-1">
+<div class="para">Interpret each term:</div>
+<ul class="circle" id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1">
+<li id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1-1">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1-1-1">First-order terms describe tilt.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1-2">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1-2-1">Pure second derivatives describe curvature in coordinate directions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1-3">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-4-1-1-3-1">Mixed partials describe interaction between variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-5">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-5-1">Emphasize symmetry of mixed partials when conditions allow (Clairaut’s theorem).<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-6">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-6-1">
+<div class="para">Provide a worked example:</div>
+<ul class="circle" id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1">
+<li id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-1">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-1-1">Compute first and second partial derivatives at a point.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-2">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-2-1">Write the quadratic Taylor approximation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-3">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-3-1">Use it to estimate a nearby value.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-4">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-6-1-1-4-1">Compare to the actual value.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-7">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-7-1">
+<div class="para">Geometric meaning:</div>
+<ul class="circle" id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1">
+<li id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1-1">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1-1-1">First-order: tangent plane.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1-2">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1-2-1">Second-order: quadratic surface approximating curvature.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1-3">
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-7-1-1-3-1">The quadratic form determines local shape.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-taylor-approximations-in-higher-dimensions-4-8">
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-8-1">
+<div class="para">General multivariable Taylor expansion:</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-8-1-1">
+\begin{equation*}
+f(x,y) = \sum_{k=0}^{n}\text{(all $k$th-order partial terms in $(x-x_{0}),(y-y_{0})$)}+ R_{n},\text{,}
+\end{equation*}
+</div>
+<div class="para">where each term involves partial derivatives of total order <span class="process-math">\(k\)</span> evaluated at <span class="process-math">\((x_{0},y_{0})\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-taylor-approximations-in-higher-dimensions-4-8-2">
+<div class="para">Each degree <span class="process-math">\(k\)</span> term consists of all products</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-8-2-2">
+\begin{equation*}
+(x-x_{0})^{i} (y-y_{0})^{j}
+\end{equation*}
+</div>
+<div class="para">with <span class="process-math">\(i+j=k\text{,}\)</span> multiplied by the corresponding partial derivative</div>
+<div class="displaymath process-math" id="sec-taylor-approximations-in-higher-dimensions-4-8-2-4">
+\begin{equation*}
+\frac{\partial^{k}f}{\partial x^{i}\partial y^{j}}(x_{0},y_{0}).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-taylor-approximations-in-higher-dimensions-4-8-3">The approximation improves as higher-order terms are included.<div class="autopermalink" data-description="Paragraph"><a href="#sec-taylor-approximations-in-higher-dimensions-4-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-taylor-approximations-in-higher-dimensions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 12.4: Taylor approximations in higher dimensions"><a href="#sec-taylor-approximations-in-higher-dimensions" title="Copy heading and permalink for Section 12.4: Taylor approximations in higher dimensions" aria-label="Copy heading and permalink for Section 12.4: Taylor approximations in higher dimensions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-higher-order-partial-derivatives.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-multivariable-optimization.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

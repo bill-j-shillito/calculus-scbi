@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -476,7 +482,132 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 14.1"><a href="#sec-the-chain-rule-in-higher-dimensions-2" title="Copy heading and permalink for Objectives 14.1" aria-label="Copy heading and permalink for Objectives 14.1">🔗</a></div></article><section class="introduction" id="sec-the-chain-rule-in-higher-dimensions-3"><div class="para" id="sec-the-chain-rule-in-higher-dimensions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 14.1: The chain rule in higher dimensions"><a href="#sec-the-chain-rule-in-higher-dimensions" title="Copy heading and permalink for Section 14.1: The chain rule in higher dimensions" aria-label="Copy heading and permalink for Section 14.1: The chain rule in higher dimensions">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-the-chain-rule-in-higher-dimensions-4">
+<li id="sec-the-chain-rule-in-higher-dimensions-4-1">
+<div class="para" id="sec-the-chain-rule-in-higher-dimensions-4-1-1">Suppose we move along a parametric curve <span class="process-math">\((x(t),y(t))\text{.}\)</span> How does the value of <span class="process-math">\(f(x,y)\)</span> change with <span class="process-math">\(t\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-2">
+<div class="para logical" id="sec-the-chain-rule-in-higher-dimensions-4-2-1">
+<div class="para">We can now write the total differential that we saw in Part I in terms of partial derivatives:</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-2-1-1">
+\begin{equation*}
+\dd f=\pdv{f}{x}\dd{x}+\pdv{f}{y}\dd{y}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-3">
+<div class="para logical" id="sec-the-chain-rule-in-higher-dimensions-4-3-1">
+<div class="para">Dividing by <span class="process-math">\(\dd t\text{,}\)</span> we now get the Chain Rule in higher dimensions:</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-3-1-2">
+\begin{equation*}
+\dv{f}{t}=\pdv{f}{x}\cdot\dv{x}{t}+\pdv{f}{y}\cdot\dv{y}{t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-4">
+<div class="para" id="sec-the-chain-rule-in-higher-dimensions-4-4-1">If <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are both functions of <span class="process-math">\(s\)</span> and <span class="process-math">\(t\text{,}\)</span> then we have<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-4-2">
+\begin{align*}
+\pdv{f}{s} \amp = \pdv{f}{x}\cdot\pdv{x}{s}+\pdv{f}{y}\cdot\pdv{y}{s}\\
+\pdv{f}{t} \amp = \pdv{f}{x}\cdot\pdv{x}{t}+\pdv{f}{y}\cdot\pdv{y}{t}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-5">
+<div class="para logical" id="sec-the-chain-rule-in-higher-dimensions-4-5-1">
+<div class="para">New way to do implicit differentiation! Rewrite implicit curve as a level curve <span class="process-math">\(F(x,y)=0\text{;}\)</span> then</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-5-1-2">
+\begin{equation*}
+\dv{y}{x} = -\frac{\partial F/\partial x}{\partial F/\partial y}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-6">
+<div class="para logical" id="sec-the-chain-rule-in-higher-dimensions-4-6-1">
+<div class="para">Sometimes we need to be more explicit about which variables we’re holding constant. Use Hughes-Hallett for reference here, they have a great explanation. Let <span class="process-math">\(U(P,V,T)\)</span> be the internal energy of some amount of gas. According to the Ideal Gas Law, we have</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-1-2">
+\begin{equation*}
+PV=nRT
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(n\)</span> is the (constant) amount of gas and <span class="process-math">\(R\)</span> is the ideal gas constant. In particular, <span class="process-math">\(P\text{,}\)</span> <span class="process-math">\(V\text{,}\)</span> and <span class="process-math">\(T\)</span> are NOT independent.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-the-chain-rule-in-higher-dimensions-4-6-2">
+<div class="para">Suppose we want to find <span class="process-math">\(\DS\qty(\pdv{U}{T})_{P}\text{,}\)</span> that is, how <span class="process-math">\(U\)</span> depends on <span class="process-math">\(T\)</span> while <span class="process-math">\(P\)</span> is being held constant. This means we’re implicitly thinking of <span class="process-math">\(U\)</span> as a function of <span class="process-math">\(T\)</span> and <span class="process-math">\(P\text{,}\)</span> with <span class="process-math">\(V\)</span> as an intermediate variable. This makes our total differential</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-2-9">
+\begin{equation*}
+\dd U=\qty(\pdv{U}{T})_{P}\dd{T}+\qty(\pdv{U}{P})_{T}\dd{P}\text{.}
+\end{equation*}
+</div>
+<div class="para">We could also have thought of <span class="process-math">\(U\)</span> as depending on <span class="process-math">\(V\)</span> and <span class="process-math">\(T\text{,}\)</span> with <span class="process-math">\(P\)</span> as an intermediate variable:</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-2-14">
+\begin{equation*}
+\dd U=\qty(\pdv{U}{T})_{V}\dd{T}+\qty(\pdv{U}{V})_{T}\dd{V}
+\end{equation*}
+</div>
+<div class="para">But since <span class="process-math">\(V\)</span> is a function of <span class="process-math">\(P\)</span> and <span class="process-math">\(T\)</span> we have:</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-2-18">
+\begin{equation*}
+\dd V=\qty(\pdv{V}{T})_{P}\dd{T}+\qty(\pdv{V}{P})_{T}\dd{P}
+\end{equation*}
+</div>
+<div class="para">Substituting this gives us:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-3">
+\begin{align*}
+\dd{U} \amp = \qty(\pdv{U}{T})_{V}\dd{T}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{T})_{P}\dd{T}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{P})_{T}\dd{P})\\
+\amp = \qty(\qty(\pdv{U}{T})_{V}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{T})_{P})\dd{T}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{P})_{T}\dd{P}
+\end{align*}
+</div>
+<div class="para logical" id="sec-the-chain-rule-in-higher-dimensions-4-6-4">
+<div class="para">We now have two expressions for <span class="process-math">\(\dd{U}\text{.}\)</span> Setting the <span class="process-math">\(\dd T\)</span> parts equal we get</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-4-3">
+\begin{equation*}
+\qty(\pdv{U}{T})_{P}=\qty(\pdv{U}{T})_{V}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{T})_{P}\text{,}
+\end{equation*}
+</div>
+<div class="para">and setting the <span class="process-math">\(\dd P\)</span> parts equal we get</div>
+<div class="displaymath process-math" id="sec-the-chain-rule-in-higher-dimensions-4-6-4-5">
+\begin{equation*}
+\qty(\pdv{U}{P})_{T}=\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{P})_{T}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-7">
+<div class="para" id="sec-the-chain-rule-in-higher-dimensions-4-7-1">May decide NOT to do it the way described above ... instead we can just extend the tree diagram so that the only ‘leaves’ are the independent variables. Explain in terms of the ambiguity of the partial derivative notation and what we’re actually looking for.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-8">
+<div class="para" id="sec-the-chain-rule-in-higher-dimensions-4-8-1">Dimensionless variables?<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-chain-rule-in-higher-dimensions-4-9">
+<div class="para" id="sec-the-chain-rule-in-higher-dimensions-4-9-1">Should we use the <span class="process-math">\(D\)</span> notation to clean things up more?<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-chain-rule-in-higher-dimensions-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-chain-rule-in-higher-dimensions-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 14.1: The chain rule in higher dimensions"><a href="#sec-the-chain-rule-in-higher-dimensions" title="Copy heading and permalink for Section 14.1: The chain rule in higher dimensions" aria-label="Copy heading and permalink for Section 14.1: The chain rule in higher dimensions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-gradients.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-absolute-extrema-in-higher-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

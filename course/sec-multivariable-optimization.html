@@ -157,6 +157,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Var}{Var}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
+\newcommand{\bv}[1]{\symbfit{#1}}
+\newcommand{\uv}[1]{\hat{\bv{#1}}}
+\newcommand{\cl}[1]{\symcal{#1}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -166,6 +169,9 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Csc}{Csc}
 \DeclareMathOperator{\Cot}{Cot}
 \DeclareMathOperator{\PV}{PV}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Curl}{curl}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -317,7 +323,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Describing motion with vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -476,7 +482,83 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 12.5"><a href="#sec-multivariable-optimization-2" title="Copy heading and permalink for Objectives 12.5" aria-label="Copy heading and permalink for Objectives 12.5">🔗</a></div></article><section class="introduction" id="sec-multivariable-optimization-3"><div class="para" id="sec-multivariable-optimization-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 12.5: Multivariable optimization"><a href="#sec-multivariable-optimization" title="Copy heading and permalink for Section 12.5: Multivariable optimization" aria-label="Copy heading and permalink for Section 12.5: Multivariable optimization">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-multivariable-optimization-4">
+<li id="sec-multivariable-optimization-4-1">
+<div class="para" id="sec-multivariable-optimization-4-1-1">If a function has a local maximum or minimum at <span class="process-math">\((a,b)\text{,}\)</span> then both partial derivatives must be zero (meaning that <span class="process-math">\((a,b)\)</span> is a critical points.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-multivariable-optimization-4-2">
+<div class="para" id="sec-multivariable-optimization-4-2-1">However, just because we have a critical point doesn’t mean it’s a local maximum or minimum; it can also be a saddle point.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-multivariable-optimization-4-2-2">An example is <span class="process-math">\(f(x,y)=x^{2}-y^{2}\)</span> at the origin.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-multivariable-optimization-4-3">
+<div class="para" id="sec-multivariable-optimization-4-3-1">Second Derivative Test:<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-multivariable-optimization-4-3-2">
+<div class="para">Suppose <span class="process-math">\(f\)</span> has a critical point at <span class="process-math">\((a,b)\text{.}\)</span> Let:</div>
+<div class="displaymath process-math" id="sec-multivariable-optimization-4-3-2-3">
+\begin{equation*}
+A=f_{xx}(a,b)\qquad B=f_{xy}(a,b)\qquad C=f_{yy}(a,b)
+\end{equation*}
+</div>
+<div class="para">The discriminant is <span class="process-math">\(K=AC-B^{2}\text{.}\)</span>
+</div>
+<ul class="circle" id="sec-multivariable-optimization-4-3-2-5">
+<li id="sec-multivariable-optimization-4-3-2-5-1">
+<div class="para" id="sec-multivariable-optimization-4-3-2-5-1-1">If <span class="process-math">\(K\lt 0\text{,}\)</span> then <span class="process-math">\((a,b)\)</span> is a saddle point.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-3-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-3-2-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-multivariable-optimization-4-3-2-5-2">
+<div class="para" id="sec-multivariable-optimization-4-3-2-5-2-1">If <span class="process-math">\(K\gt 0\text{,}\)</span> then <span class="process-math">\(f(a,b)\)</span> is a local maximum (if <span class="process-math">\(A\lt 0\)</span>) or local minimum (if <span class="process-math">\(A\gt 0\)</span>). This is just like the single variable case.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-3-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-3-2-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-multivariable-optimization-4-3-2-5-3">
+<div class="para" id="sec-multivariable-optimization-4-3-2-5-3-1">If <span class="process-math">\(K=0\text{,}\)</span> no conclusion can be made.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-3-2-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-3-2-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-multivariable-optimization-4-4">
+<div class="para" id="sec-multivariable-optimization-4-4-1">Justify this using the Taylor approximations. (Look at Thomas for reference.)<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-multivariable-optimization-4-5">
+<div class="para" id="sec-multivariable-optimization-4-5-1">Potential motivating application could be least squares regression.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-multivariable-optimization-4-5-2">Given a set of points <span class="process-math">\((x_{1},y_{1}),\cdots,(x_{n},y_{n})\text{,}\)</span> we want to find the line <span class="process-math">\(y=ax+b\)</span> that ‘best fits’ the data.<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-multivariable-optimization-4-5-3">
+<div class="para">The residuals are <span class="process-math">\(\eps_{k}=y_{k}-(ax_{k}+b)\text{,}\)</span> so we want to minimize the sum of the squares of the residuals, which we can represent as the function</div>
+<div class="displaymath process-math" id="sec-multivariable-optimization-4-5-3-2">
+\begin{equation*}
+S(a,b)=\sum_{k=1}^{n} \eps_{k}^{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-multivariable-optimization-4-5-4">The solution ends up being the solution to the equations<div class="autopermalink" data-description="Paragraph"><a href="#sec-multivariable-optimization-4-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-multivariable-optimization-4-5-5">
+\begin{align*}
+a\sum_{k=1}^n x_{k} \amp = \sum_{k=1}^n x_{k}y_{k}\\
+b\sum_{k=1}^n 1 \amp = \sum_{k=1}^n y_{k} - a\sum_{k=1}^n x_{k}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-multivariable-optimization-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 12.5: Multivariable optimization"><a href="#sec-multivariable-optimization" title="Copy heading and permalink for Section 12.5: Multivariable optimization" aria-label="Copy heading and permalink for Section 12.5: Multivariable optimization">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-taylor-approximations-in-higher-dimensions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-vectors.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
