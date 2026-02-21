@@ -158,7 +158,7 @@
 
     <!-- Table of Contents: focused="yes" enables expand/collapse functionality. -->
     <!-- @preexpanded-levels controls how deep to expend toc initially.          -->
-      <tableofcontents focused="yes" preexpanded-levels="2" />
+      <tableofcontents focused="yes" preexpanded-levels="3" />
 
     <!-- Navigation options: linear or tree, and whether there is an "up" button -->
       <!--<navigation logic="tree" upbutton="no" />-->
