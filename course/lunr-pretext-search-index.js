@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "Functions defined by integrals",
-  "body": " Functions defined by integrals                   Introduction goes here.     One way of defining the natural logarithm is . You can then show that this function has all the properties you'd expect of the natural logarithm.    Many functions don't have closed-form antiderivatives! But we do something very similar to deal with them we define a new function. A few examples:   Logarithmic integral: This is used in number theory.    Fresnel integrals:   These are used in optics. Also there's lots of cool stuff related to the Euler spiral, parametric stuff from Chapter 6, and a connection to roller coasters!       "
+  "body": " Functions defined by integrals     Define new functions using integrals when no closed-form antiderivative exists.    Recover properties of the natural logarithm from its integral definition.    Examine examples of special functions from number theory and physics.      Introduction goes here.     One way of defining the natural logarithm is . You can then show that this function has all the properties you'd expect of the natural logarithm.    Many functions don't have closed-form antiderivatives! But we do something very similar to deal with them we define a new function. A few examples:   Logarithmic integral: This is used in number theory.    Fresnel integrals:   These are used in optics. Also there's lots of cool stuff related to the Euler spiral, parametric stuff from Chapter 6, and a connection to roller coasters!       "
 },
 {
   "id": "sec-functions-defined-by-integrals-2",
@@ -763,7 +763,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "9.1",
   "title": "",
-  "body": "               "
+  "body": "   Define new functions using integrals when no closed-form antiderivative exists.    Recover properties of the natural logarithm from its integral definition.    Examine examples of special functions from number theory and physics.    "
 },
 {
   "id": "sec-numerical-integration",
@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.2",
   "title": "Numerical integration",
-  "body": " Numerical integration                   Introduction goes here.     Frame this as how we can deal with functions with no closed-form antiderivative, like the ones we just saw.    Left Rectangular Approximation: If is increasing\/decreasing, this will be an under\/overestimate.    Right Rectangular Approximation: If is increasing\/decreasing, this will be an over\/underestimate.    Midpoint Rectangular Approximation: (Here, is the midpoint of and .)  If is concave up\/down, this will be an under\/overestimate.  Error if for :     Trapezoidal Approximation: If is concave up\/down, this will be an over\/underestimate.  Error if for :     Simpson’s rule: Relation to trapezoid and midpoint rules:   Error if for :     "
+  "body": " Numerical integration     Approximate integrals numerically when no closed-form antiderivative is available.    Compare rectangular, trapezoidal, and parabolic approximations of integrals.    Use concavity and derivative bounds to identify when each method over- or underestimates the true value.      Introduction goes here.     Frame this as how we can deal with functions with no closed-form antiderivative, like the ones we just saw.    Left Rectangular Approximation: If is increasing\/decreasing, this will be an under\/overestimate.    Right Rectangular Approximation: If is increasing\/decreasing, this will be an over\/underestimate.    Midpoint Rectangular Approximation: (Here, is the midpoint of and .)  If is concave up\/down, this will be an under\/overestimate.  Error if for :     Trapezoidal Approximation: If is concave up\/down, this will be an over\/underestimate.  Error if for :     Simpson’s rule: Relation to trapezoid and midpoint rules:   Error if for :     "
 },
 {
   "id": "sec-numerical-integration-2",
@@ -781,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "9.2",
   "title": "",
-  "body": "               "
+  "body": "   Approximate integrals numerically when no closed-form antiderivative is available.    Compare rectangular, trapezoidal, and parabolic approximations of integrals.    Use concavity and derivative bounds to identify when each method over- or underestimates the true value.    "
 },
 {
   "id": "sec-improper-integrals",
@@ -790,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.3",
   "title": "Improper integrals",
-  "body": " Improper integrals                   Introduction goes here.     Infinite intervals:     Discontinuous integrands:  If is continuous on and discontinuous at , then If is continuous on and discontinuous at , then If has a discontinuity at , where , then as long as the two indefinite integrals converge.    The -integral converges if and only if .    The -integral converges if and only if .    Gamma function: For any integer we have .    Some notational conventions I’d like to introduce (assuming the limits exist):   These could make writing out the improper integrals somewhat cleaner.    "
+  "body": " Improper integrals     Interpret integrals over infinite intervals or near discontinuities by replacing them with limits.    Determine convergence of improper integrals using benchmark cases such as -integrals.    Study examples such as the gamma function that emerge from improper integrals.      Introduction goes here.     Infinite intervals:     Discontinuous integrands:  If is continuous on and discontinuous at , then If is continuous on and discontinuous at , then If has a discontinuity at , where , then as long as the two indefinite integrals converge.    The -integral converges if and only if .    The -integral converges if and only if .    Gamma function: For any integer we have .    Some notational conventions I’d like to introduce (assuming the limits exist):   These could make writing out the improper integrals somewhat cleaner.    "
 },
 {
   "id": "sec-improper-integrals-2",
@@ -799,7 +799,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "9.3",
   "title": "",
-  "body": "               "
+  "body": "   Interpret integrals over infinite intervals or near discontinuities by replacing them with limits.    Determine convergence of improper integrals using benchmark cases such as -integrals.    Study examples such as the gamma function that emerge from improper integrals.    "
 },
 {
   "id": "sec-probability-distributions",
@@ -808,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.4",
   "title": "Probability distributions",
-  "body": " Probability distributions                   Introduction goes here.     Brief review of probability    A function is a probability density function if Then we say the probability that is .    Mean of a random variable :     Variance: Standard deviation:     Gaussian integral: Error function:     "
+  "body": " Probability distributions     Describe probability densities and compute probabilities by integrating over intervals.    Summarize a distribution using mean, variance, and standard deviation.    Examine important examples such as the Gaussian curve and the error function.      Introduction goes here.     Brief review of probability    A function is a probability density function if Then we say the probability that is .    Mean of a random variable :     Variance: Standard deviation:     Gaussian integral: Error function:     "
 },
 {
   "id": "sec-probability-distributions-2",
@@ -817,7 +817,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "9.4",
   "title": "",
-  "body": "               "
+  "body": "   Describe probability densities and compute probabilities by integrating over intervals.    Summarize a distribution using mean, variance, and standard deviation.    Examine important examples such as the Gaussian curve and the error function.    "
 },
 {
   "id": "sec-taylor-approximations-and-series",
@@ -826,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.1",
   "title": "Taylor approximations and series",
-  "body": " Taylor approximations and series                   Introduction goes here.     We saw when we were doing curvature that there may be better approximations of a function than just lines; the osculating circle was one such example. So what other kinds of approximations can we have? (Also, we can note that the osculating circle depends only on the first and second derivatives, so it’s a second-order approximation.)    Given a function , we can find a polynomial function of degree such that   The resulting polynomial is called a Taylor polynomial.    Formula:     If we add more and more terms, we get a better and better approximation of the original function.    So if we had infinitely many terms, we should match the function perfectly! This is called a Taylor series.    If , replace “Taylor” with “Maclaurin”.    Useful Maclaurin series:     "
+  "body": " Taylor approximations and series     Approximate functions near a point by matching derivatives with a chosen polynomial.    Improve accuracy by adding terms and extending the idea to infinite series.    Derive Maclaurin series for , , and .      Introduction goes here.     We saw when we were doing curvature that there may be better approximations of a function than just lines; the osculating circle was one such example. So what other kinds of approximations can we have? (Also, we can note that the osculating circle depends only on the first and second derivatives, so it’s a second-order approximation.)    Given a function , we can find a polynomial function of degree such that   The resulting polynomial is called a Taylor polynomial.    Formula:     If we add more and more terms, we get a better and better approximation of the original function.    So if we had infinitely many terms, we should match the function perfectly! This is called a Taylor series.    If , replace “Taylor” with “Maclaurin”.    Useful Maclaurin series:     "
 },
 {
   "id": "sec-taylor-approximations-and-series-2",
@@ -835,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "10.1",
   "title": "",
-  "body": "               "
+  "body": "   Approximate functions near a point by matching derivatives with a chosen polynomial.    Improve accuracy by adding terms and extending the idea to infinite series.    Derive Maclaurin series for , , and .    "
 },
 {
   "id": "sec-manipulating-power-series",
@@ -844,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.2",
   "title": "Manipulating power series",
-  "body": " Manipulating power series                   Introduction goes here.     Adding power series    Multiplying through by a factor    Differentiating and integrating term by term    Products of power series? Using a grid? Only if we're going to include Mertens' theorem in Part V.    "
+  "body": " Manipulating power series     Combine and rescale power series by addition and constant multiplication.    Use substitution to construct new series from familiar ones.    Differentiate and integrate power series term by term.      Introduction goes here.     Adding power series    Multiplying through by a factor    Differentiating and integrating term by term    Products of power series? Using a grid? Only if we're going to include Mertens' theorem in Part V.    "
 },
 {
   "id": "sec-manipulating-power-series-2",
@@ -853,7 +853,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "10.2",
   "title": "",
-  "body": "               "
+  "body": "   Combine and rescale power series by addition and constant multiplication.    Use substitution to construct new series from familiar ones.    Differentiate and integrate power series term by term.    "
 },
 {
   "id": "sec-geometric-series",
@@ -862,7 +862,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.3",
   "title": "Geometric series",
-  "body": " Geometric series                   Introduction goes here.     A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.    A geometric series is the infinite sum.    Sum of a geometric series: shift and subtract    Graph the function... it only converges when . Verify that this makes sense with the numerical behavior. Takeaway: we have to watch out for where any given power series converges.    Include Maclaurin series for , , ,     Madhava series for     "
+  "body": " Geometric series     Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.      Introduction goes here.     A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.    A geometric series is the infinite sum.    Sum of a geometric series: shift and subtract    Graph the function... it only converges when . Verify that this makes sense with the numerical behavior. Takeaway: we have to watch out for where any given power series converges.    Include Maclaurin series for , , ,     Madhava series for     "
 },
 {
   "id": "sec-geometric-series-2",
@@ -871,7 +871,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "10.3",
   "title": "",
-  "body": "               "
+  "body": "   Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.    "
 },
 {
   "id": "sec-hyperbolic-functions",
@@ -880,7 +880,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.4",
   "title": "Hyperbolic functions",
-  "body": " Hyperbolic functions                   Introduction goes here.     The similarity between the power series for , , and suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:     Define hyperbolic tangent etc. analogously    Derivative properties:     Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as or ).    By eliminating the parameter, we get that traces out one branch of the hyperbola , hence the name.    Catenary as the shape of a hanging chain... try to derive this using just what we know from this course (for reference, see Kline 16.4)    "
+  "body": " Hyperbolic functions     Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.      Introduction goes here.     The similarity between the power series for , , and suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:     Define hyperbolic tangent etc. analogously    Derivative properties:     Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as or ).    By eliminating the parameter, we get that traces out one branch of the hyperbola , hence the name.    Catenary as the shape of a hanging chain... try to derive this using just what we know from this course (for reference, see Kline 16.4)    "
 },
 {
   "id": "sec-hyperbolic-functions-2",
@@ -889,7 +889,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "10.4",
   "title": "",
-  "body": "               "
+  "body": "   Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.    "
 },
 {
   "id": "sec-eulers-formula",
@@ -898,7 +898,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.5",
   "title": "Euler’s formula",
-  "body": " Euler's formula                   Introduction goes here.     Review complex numbers, introduce the idea of rotating by a quarter-turn counterclockwise    Substitute into the Maclaurin series for to arrive at Euler's formula:     Apply to second-order linear differential equation: Analyze different cases, including complex case.    Avoid the numerology of .    "
+  "body": " Euler's formula     Interpret complex numbers geometrically, including the role of as a rotation.    Derive Euler's formula by extending the exponential series to imaginary inputs.    Analyze solutions of second-order linear differential equations using complex exponents.      Introduction goes here.     Review complex numbers, introduce the idea of rotating by a quarter-turn counterclockwise    Substitute into the Maclaurin series for to arrive at Euler's formula:     Apply to second-order linear differential equation: Analyze different cases, including complex case.    Avoid the numerology of .    "
 },
 {
   "id": "sec-eulers-formula-2",
@@ -907,7 +907,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "10.5",
   "title": "",
-  "body": "               "
+  "body": "   Interpret complex numbers geometrically, including the role of as a rotation.    Derive Euler's formula by extending the exponential series to imaginary inputs.    Analyze solutions of second-order linear differential equations using complex exponents.    "
 },
 {
   "id": "sec-fourier-series",
@@ -916,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.6",
   "title": "Fourier series",
-  "body": " Fourier series                   Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Exponential form:     Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
+  "body": " Fourier series     Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.      Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Exponential form:     Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
 },
 {
   "id": "sec-fourier-series-2",
@@ -925,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "10.6",
   "title": "",
-  "body": "               "
+  "body": "   Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.    "
 },
 {
   "id": "sec-fourier-series-4-4-1-1",
@@ -952,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.1",
   "title": "What are dimensions, really?",
-  "body": " What are dimensions, really?                   Introduction goes here.     Dimensions are just a measure of how many numbers you need to specify a state.    Minard map of Napoleon's march through Russia    Give multiple real-world examples    Don't have to be spatial dimensions, but our spatial intuition can give us insight on how we can understand non-spatial variables (e.g. using a time axis)    Which mathematical skills could be developed in this chapter?    "
+  "body": " What are dimensions, really?     Interpret dimension as the number of values needed to describe a state.    Identify real-world contexts that naturally give rise to additional dimensions.    Apply spatial intuition to conceptualize non-spatial dimensions such as time.      Introduction goes here.     Dimensions are just a measure of how many numbers you need to specify a state.    Minard map of Napoleon's march through Russia    Give multiple real-world examples    Don't have to be spatial dimensions, but our spatial intuition can give us insight on how we can understand non-spatial variables (e.g. using a time axis)    "
 },
 {
   "id": "sec-what-are-dimensions-really-2",
@@ -961,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "11.1",
   "title": "",
-  "body": "               "
+  "body": "   Interpret dimension as the number of values needed to describe a state.    Identify real-world contexts that naturally give rise to additional dimensions.    Apply spatial intuition to conceptualize non-spatial dimensions such as time.    "
 },
 {
   "id": "sec-extending-to-higher-dimensions",
@@ -970,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Extending to higher dimensions",
-  "body": " Extending to higher dimensions                   Introduction goes here.     Taking familiar concepts from 2D and extending them to 3D    3D coordinates:     Midpoint:     Distance:     Equation of a plane:     Sphere:     Interior, exterior, boundary (intuitively)    Open ball:     Closed ball:     Cylinders: Take an equation in two variables and think of the third variable as free     "
+  "body": " Extending to higher dimensions     Extend familiar geometric ideas from two dimensions to three dimensions.    Describe points, distances, surfaces, and regions using three coordinates.    Interpret equations in two variables as three-dimensional cylinders with one free variable.      Introduction goes here.     Taking familiar concepts from 2D and extending them to 3D    3D coordinates:     Midpoint:     Distance:     Equation of a plane:     Sphere:     Interior, exterior, boundary (intuitively)    Open ball:     Closed ball:     Cylinders: Take an equation in two variables and think of the third variable as free     "
 },
 {
   "id": "sec-extending-to-higher-dimensions-2",
@@ -979,7 +979,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "11.2",
   "title": "",
-  "body": "               "
+  "body": "   Extend familiar geometric ideas from two dimensions to three dimensions.    Describe points, distances, surfaces, and regions using three coordinates.    Interpret equations in two variables as three-dimensional cylinders with one free variable.    "
 },
 {
   "id": "sec-",
@@ -988,7 +988,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.3",
   "title": "Slicing through dimensions",
-  "body": " Slicing through dimensions                   Introduction goes here.     We can hold one variable constant to get a cross-section of a 3D surface. This is called a trace, and it's the same as looking at the intersection between a surface and a plane parallel to one of the coordinate planes.    Ellipsoid: Traces are all ellipses.    Hyperboloid of one sheet: Traces are ellipses or hyperbolas.    Hyperboloid of two sheets: Again traces are ellipses or hyperbolas, but one trace is empty, which gives two sheets.    Elliptic Paraboloid: Traces are ellipses or parabolas.    Elliptic Paraboloid: Traces are hyperbolas or parabolas.    "
+  "body": " Slicing through dimensions     Hold one variable constant to examine a surface through its planar cross-sections.    Identify how algebraic forms produce traces shaped like ellipses, hyperbolas, or parabolas.    Use traces to understand the structure of common quadric surfaces.      Introduction goes here.     We can hold one variable constant to get a cross-section of a 3D surface. This is called a trace, and it's the same as looking at the intersection between a surface and a plane parallel to one of the coordinate planes.    Ellipsoid: Traces are all ellipses.    Hyperboloid of one sheet: Traces are ellipses or hyperbolas.    Hyperboloid of two sheets: Again traces are ellipses or hyperbolas, but one trace is empty, which gives two sheets.    Elliptic Paraboloid: Traces are ellipses or parabolas.    Elliptic Paraboloid: Traces are hyperbolas or parabolas.    "
 },
 {
   "id": "sec--2",
@@ -997,7 +997,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "11.3",
   "title": "",
-  "body": "               "
+  "body": "   Hold one variable constant to examine a surface through its planar cross-sections.    Identify how algebraic forms produce traces shaped like ellipses, hyperbolas, or parabolas.    Use traces to understand the structure of common quadric surfaces.    "
 },
 {
   "id": "sec-functions-of-multiple-variables",
@@ -1006,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Functions of multiple variables",
-  "body": " Functions of multiple variables                   Introduction goes here.     If we can solve for in terms of and , we can write .    Lots of real-world examples! Will list a bunch later.    Domain of such a function is a region in the plane.    Sets of points for which for some constant are called level curves. They’re essentially traces parallel to the -plane.    Viewing all the level curves of a function gives a contour map, which is a common 2D representation.   Talk about isotherms, isobars, etc.       Level curves of planes are always lines.    The quadric surfaces can be thought of as level surface of functions of three variables, just like the conic sections can be thought of as level curves of functions of two variables.    The limit of a multivariable function at is a value such that whenever along any path, .    Simple example: Looking at traces found by setting or constant. If these give different results when appraoching , then is not continuous.    Some functions require more complicated approaches.    requires an approach along the line .     requires an approach along the parabola .       Same definition of continuity at a point: the limit has to match the function value.    Polynomial functions are continuous on their domains, as are all the other nice functions, as well as sums, differences, products, quotients with nonzero denominator, and compositions.   Yes, including rational functions. Where things break is where those functions are not defined.       "
+  "body": " Functions of multiple variables     Describe quantities depending on two variables by expressing them as .    Use families of level curves or surfaces to visualize the behavior of multivariable functions.    Determine limits of multivariable functions by examining behavior along all possible paths.      Introduction goes here.     If we can solve for in terms of and , we can write .    Lots of real-world examples! Will list a bunch later.    Domain of such a function is a region in the plane.    Sets of points for which for some constant are called level curves. They’re essentially traces parallel to the -plane.    Viewing all the level curves of a function gives a contour map, which is a common 2D representation.   Talk about isotherms, isobars, etc.       Level curves of planes are always lines.    The quadric surfaces can be thought of as level surface of functions of three variables, just like the conic sections can be thought of as level curves of functions of two variables.    The limit of a multivariable function at is a value such that whenever along any path, .    Simple example: Looking at traces found by setting or constant. If these give different results when appraoching , then is not continuous.    Some functions require more complicated approaches.    requires an approach along the line .     requires an approach along the parabola .       Same definition of continuity at a point: the limit has to match the function value.    Polynomial functions are continuous on their domains, as are all the other nice functions, as well as sums, differences, products, quotients with nonzero denominator, and compositions.   Yes, including rational functions. Where things break is where those functions are not defined.       "
 },
 {
   "id": "sec-functions-of-multiple-variables-2",
@@ -1015,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "11.4",
   "title": "",
-  "body": "               "
+  "body": "   Describe quantities depending on two variables by expressing them as .    Use families of level curves or surfaces to visualize the behavior of multivariable functions.    Determine limits of multivariable functions by examining behavior along all possible paths.    "
 },
 {
   "id": "sec-partial-derivatives",
@@ -1024,7 +1024,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.1",
   "title": "Partial derivatives",
-  "body": " Partial derivatives                   Introduction goes here.     Start with windchill example? Or maybe business example?    If is a function, then the partial derivatives are defined as follows:   This represents the sensitivity of to changes in or  alone .    Geometrically, this is like taking a trace with a constant or .    To compute the partial derivative with respect to one variable, treat the other variable as constant and take the single-variable derivative.   Might it be a good idea to actually numerically set a variable equal to a few different constants first, and only then treat the variable as an arbitrary constant?  Example:      , so .     , so .     , so .    In general, .     , so .     , so .     , so .    In general, .         Three-variable example of some kind    "
+  "body": " Partial derivatives     Measure how a multivariable function changes when only one input varies.    Interpret partial derivatives visually using traces with one variable held constant.    Compute partial derivatives by treating other variables as fixed and applying single-variable rules.      Introduction goes here.     Start with windchill example? Or maybe business example?    If is a function, then the partial derivatives are defined as follows:   This represents the sensitivity of to changes in or  alone .    Geometrically, this is like taking a trace with a constant or .    To compute the partial derivative with respect to one variable, treat the other variable as constant and take the single-variable derivative.   Might it be a good idea to actually numerically set a variable equal to a few different constants first, and only then treat the variable as an arbitrary constant?  Example:      , so .     , so .     , so .    In general, .     , so .     , so .     , so .    In general, .         Three-variable example of some kind    "
 },
 {
   "id": "sec-partial-derivatives-2",
@@ -1033,7 +1033,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "12.1",
   "title": "",
-  "body": "               "
+  "body": "   Measure how a multivariable function changes when only one input varies.    Interpret partial derivatives visually using traces with one variable held constant.    Compute partial derivatives by treating other variables as fixed and applying single-variable rules.    "
 },
 {
   "id": "sec-tangent-plane-approximations",
@@ -1042,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.2",
   "title": "Tangent plane approximations",
-  "body": " Tangent plane approximations                   Introduction goes here.     Start with total differential: Show how this can be used to approximate changes in :     If etc, we get: This is an equation of the tangent plane to at the point .    Interpret geometrically:   The surface is locally approximated by a plane.    The coefficients and represent slopes in the - and -trace directions.    The tangent plane matches the surface exactly at the base point and closely nearby.       Emphasize the connection to single-variable calculus: The tangent plane is the two-variable analogue of the tangent line     Include a worked example:   Compute partial derivatives at a point.    Write the tangent plane equation.    Use it to approximate a nearby function value.    Compare to the actual value to assess accuracy.       Briefly discuss limitations:   Accuracy improves as approaches .    Non-differentiable points do not admit a tangent plane.    Curvature effects motivate higher-order approximations.       "
+  "body": " Tangent plane approximations     Interpret the tangent plane as the best linear approximation to a surface near a point.    Derive equations of tangent planes using partial derivatives and total differentials.    Use tangent plane approximations to estimate nearby function values.      Introduction goes here.     Start with total differential: Show how this can be used to approximate changes in :     If etc, we get: This is an equation of the tangent plane to at the point .    Interpret geometrically:   The surface is locally approximated by a plane.    The coefficients and represent slopes in the - and -trace directions.    The tangent plane matches the surface exactly at the base point and closely nearby.       Emphasize the connection to single-variable calculus: The tangent plane is the two-variable analogue of the tangent line     Include a worked example:   Compute partial derivatives at a point.    Write the tangent plane equation.    Use it to approximate a nearby function value.    Compare to the actual value to assess accuracy.       Briefly discuss limitations:   Accuracy improves as approaches .    Non-differentiable points do not admit a tangent plane.    Curvature effects motivate higher-order approximations.       "
 },
 {
   "id": "sec-tangent-plane-approximations-2",
@@ -1051,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "12.2",
   "title": "",
-  "body": "               "
+  "body": "   Interpret the tangent plane as the best linear approximation to a surface near a point.    Derive equations of tangent planes using partial derivatives and total differentials.    Use tangent plane approximations to estimate nearby function values.    "
 },
 {
   "id": "sec-higher-order-partial-derivatives",
@@ -1060,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.3",
   "title": "Higher order partial derivatives",
-  "body": " Higher order partial derivatives                   Introduction goes here.     Second-order partial derivatives of :   Yes, the mixed partial notation is confusing. In differential notation, the operators are applied inside-out, while in function notation, the operators are applied left to right.      Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .       Some partial differential equations:   Wave equation:     Heat equation:     Laplace's equation:        "
+  "body": " Higher order partial derivatives     Differentiate partial derivatives again to study second-order behavior.    Use Clairaut's theorem to identify when mixed partials agree.    Recognize how higher-order partials appear in fundamental equations of physics.      Introduction goes here.     Second-order partial derivatives of :   Yes, the mixed partial notation is confusing. In differential notation, the operators are applied inside-out, while in function notation, the operators are applied left to right.      Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .       Some partial differential equations:   Wave equation:     Heat equation:     Laplace's equation:        "
 },
 {
   "id": "sec-higher-order-partial-derivatives-2",
@@ -1069,7 +1069,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "12.3",
   "title": "",
-  "body": "               "
+  "body": "   Differentiate partial derivatives again to study second-order behavior.    Use Clairaut's theorem to identify when mixed partials agree.    Recognize how higher-order partials appear in fundamental equations of physics.    "
 },
 {
   "id": "sec-higher-order-partial-derivatives-4-2-1-1",
@@ -1087,7 +1087,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.4",
   "title": "Taylor approximations in higher dimensions",
-  "body": " Taylor approximations in higher dimensions                   Introduction goes here.     Begin by recalling the single-variable Taylor expansion: .  The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.    Connect to the previous section: The tangent plane is the first-order Taylor polynomial for .    Introduce second-order terms using higher partial derivatives:      Interpret each term:   First-order terms describe tilt.    Pure second derivatives describe curvature in coordinate directions.    Mixed partials describe interaction between variables.       Emphasize symmetry of mixed partials when conditions allow (Clairaut's theorem).    Provide a worked example:   Compute first and second partial derivatives at a point.    Write the quadratic Taylor approximation.    Use it to estimate a nearby value.    Compare to the actual value.       Geometric meaning:   First-order: tangent plane.    Second-order: quadratic surface approximating curvature.    The quadratic form determines local shape.       General multivariable Taylor expansion: where each term involves partial derivatives of total order evaluated at .  Each degree term consists of all products with , multiplied by the corresponding partial derivative   The approximation improves as higher-order terms are included.    "
+  "body": " Taylor approximations in higher dimensions     Construct second- and higher-order Taylor polynomials for functions of several variables.    Use quadratic approximations to model curvature near a point.    Estimate function values and analyze local behavior using Taylor expansions.      Introduction goes here.     Begin by recalling the single-variable Taylor expansion: .  The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.    Connect to the previous section: The tangent plane is the first-order Taylor polynomial for .    Introduce second-order terms using higher partial derivatives:      Interpret each term:   First-order terms describe tilt.    Pure second derivatives describe curvature in coordinate directions.    Mixed partials describe interaction between variables.       Emphasize symmetry of mixed partials when conditions allow (Clairaut's theorem).    Provide a worked example:   Compute first and second partial derivatives at a point.    Write the quadratic Taylor approximation.    Use it to estimate a nearby value.    Compare to the actual value.       Geometric meaning:   First-order: tangent plane.    Second-order: quadratic surface approximating curvature.    The quadratic form determines local shape.       General multivariable Taylor expansion: where each term involves partial derivatives of total order evaluated at .  Each degree term consists of all products with , multiplied by the corresponding partial derivative   The approximation improves as higher-order terms are included.    "
 },
 {
   "id": "sec-taylor-approximations-in-higher-dimensions-2",
@@ -1096,7 +1096,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "12.4",
   "title": "",
-  "body": "               "
+  "body": "   Construct second- and higher-order Taylor polynomials for functions of several variables.    Use quadratic approximations to model curvature near a point.    Estimate function values and analyze local behavior using Taylor expansions.    "
 },
 {
   "id": "sec-multivariable-optimization",
@@ -1105,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.5",
   "title": "Multivariable optimization",
-  "body": " Multivariable optimization                   Introduction goes here.     If a function has a local maximum or minimum at , then both partial derivatives must be zero (meaning that is a critical points.    However, just because we have a critical point doesn’t mean it’s a local maximum or minimum; it can also be a saddle point.  An example is at the origin.    Second Derivative Test:  Suppose has a critical point at . Let: The discriminant is .   If , then is a saddle point.    If , then is a local maximum (if ) or local minimum (if ). This is just like the single variable case.    If , no conclusion can be made.       Justify this using the Taylor approximations. (Look at Thomas for reference.)    Potential motivating application could be least squares regression.  Given a set of points , we want to find the line that best fits the data.  The residuals are , so we want to minimize the sum of the squares of the residuals, which we can represent as the function   The solution ends up being the solution to the equations     "
+  "body": " Multivariable optimization     Locate potential maxima, minima, and saddle points by finding where all first partials vanish.    Use the multivariable Second Derivative Test to classify critical points.    Apply optimization methods to problems such as fitting a line by minimizing squared error.      Introduction goes here.     If a function has a local maximum or minimum at , then both partial derivatives must be zero (meaning that is a critical points.    However, just because we have a critical point doesn’t mean it’s a local maximum or minimum; it can also be a saddle point.  An example is at the origin.    Second Derivative Test:  Suppose has a critical point at . Let: The discriminant is .   If , then is a saddle point.    If , then is a local maximum (if ) or local minimum (if ). This is just like the single variable case.    If , no conclusion can be made.       Justify this using the Taylor approximations. (Look at Thomas for reference.)    Potential motivating application could be least squares regression.  Given a set of points , we want to find the line that best fits the data.  The residuals are , so we want to minimize the sum of the squares of the residuals, which we can represent as the function   The solution ends up being the solution to the equations     "
 },
 {
   "id": "sec-multivariable-optimization-2",
@@ -1114,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "12.5",
   "title": "",
-  "body": "               "
+  "body": "   Locate potential maxima, minima, and saddle points by finding where all first partials vanish.    Use the multivariable Second Derivative Test to classify critical points.    Apply optimization methods to problems such as fitting a line by minimizing squared error.    "
 },
 {
   "id": "sec-vector-valued-functions",
@@ -1123,7 +1123,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.1",
   "title": "Vector-valued functions",
-  "body": " Vector-valued functions                   Introduction goes here.     Call back to Chapter 6 with motion in the plane:     We also thought of this as a vector, packing these functions into a single object:     Now we consider the vector to be an object in its own right, and we give it a name: The boldface is used to denote that returns a vector.    Since the vector depends on , this is a vector-valued function. Notice that now we have a single input and two outputs, the opposite of what was in the last chapter.    Visual + algebraic look at vector addition, scalar multiplication... we're extending our usual arithmetic operations to these new objects.    Extend parametric equation to 3D space:     "
+  "body": " Vector-valued functions     Package component functions into a single vector-valued function.    Extend addition and scalar multiplication to vector-valued outputs.    Generalize parametric descriptions from the plane to three-dimensional space.      Introduction goes here.     Call back to Chapter 6 with motion in the plane:     We also thought of this as a vector, packing these functions into a single object:     Now we consider the vector to be an object in its own right, and we give it a name: The boldface is used to denote that returns a vector.    Since the vector depends on , this is a vector-valued function. Notice that now we have a single input and two outputs, the opposite of what was in the last chapter.    Visual + algebraic look at vector addition, scalar multiplication... we're extending our usual arithmetic operations to these new objects.    Extend parametric equation to 3D space:     "
 },
 {
   "id": "sec-vector-valued-functions-2",
@@ -1132,25 +1132,25 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "13.1",
   "title": "",
-  "body": "               "
+  "body": "   Package component functions into a single vector-valued function.    Extend addition and scalar multiplication to vector-valued outputs.    Generalize parametric descriptions from the plane to three-dimensional space.    "
 },
 {
-  "id": "sec-describing-motion-with-vectors",
+  "id": "sec-motion-in-space",
   "level": "1",
-  "url": "sec-describing-motion-with-vectors.html",
+  "url": "sec-motion-in-space.html",
   "type": "Section",
   "number": "13.2",
   "title": "Motion in space",
-  "body": " Motion in space                   Introduction goes here.     2D Velocity:     2D Acceleration:     We've started with 2D, but point out how the vector notation makes it work for any dimension    Equation of a line in 3D:     Length \/ norm of a vector is related to distance and Pythagorean theorem:     Arc length:     If we define , then is a one-to-one increasing function so it has an inverse. Hence if we solve for as a function of , i.e. , then is parametrized by arc length. This is called the natural parametrization of the curve.    If we parametrize by arc length, then .    Difficult to do in practice, but often useful for theoretical arguments, and can be turned back into parametrization by .    "
+  "body": " Motion in space     Describe velocity and acceleration as derivatives of a vector-valued position function.    Express arc length as the integral of the magnitude of a vector-valued function.    Re-parametrize curves in terms of their arc length.      Introduction goes here.     2D Velocity:     2D Acceleration:     We've started with 2D, but point out how the vector notation makes it work for any dimension    Equation of a line in 3D:     Length \/ norm of a vector is related to distance and Pythagorean theorem:     Arc length:     If we define , then is a one-to-one increasing function so it has an inverse. Hence if we solve for as a function of , i.e. , then is parametrized by arc length. This is called the natural parametrization of the curve.    If we parametrize by arc length, then .    Difficult to do in practice, but often useful for theoretical arguments, and can be turned back into parametrization by .    "
 },
 {
-  "id": "sec-describing-motion-with-vectors-2",
+  "id": "sec-motion-in-space-2",
   "level": "2",
-  "url": "sec-describing-motion-with-vectors.html#sec-describing-motion-with-vectors-2",
+  "url": "sec-motion-in-space.html#sec-motion-in-space-2",
   "type": "Objectives",
   "number": "13.2",
   "title": "",
-  "body": "               "
+  "body": "   Describe velocity and acceleration as derivatives of a vector-valued position function.    Express arc length as the integral of the magnitude of a vector-valued function.    Re-parametrize curves in terms of their arc length.    "
 },
 {
   "id": "sec-the-dot-product-and-cross-product",
@@ -1159,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.3",
   "title": "The dot product and cross product",
-  "body": " The dot product and cross product                   Introduction goes here.     In 2D, if and with angle between them (from to , then we define the dot product and cross product as follows:   Hence the dot product is maximized when the vectors are parallel, and the cross product is maximized when the vectors are perpendicular.    Calculated componentwise this gives us:     Show that an object in circular motion has velocity perpendicular to position and acceleration parallel to position.    In 3D, if and with angle between them (from to , then we define:   where is the unit vector that completes a right-handed coordinate system.    Componentwise:     If , then the motion stays in a plane.    Need to include the relationship between planes and their normals here. Uses dot products, and the cross product can be used to find the normal to two given vectors.    "
+  "body": " The dot product and cross product     Use dot and cross products to capture alignment, perpendicularity, and orientation.    Compute these products from components to analyze motion and geometry in two and three dimensions.    Use normal vectors derived from cross products to express equations of planes.      Introduction goes here.     In 2D, if and with angle between them (from to , then we define the dot product and cross product as follows:   Hence the dot product is maximized when the vectors are parallel, and the cross product is maximized when the vectors are perpendicular.    Calculated componentwise this gives us:     Show that an object in circular motion has velocity perpendicular to position and acceleration parallel to position.    In 3D, if and with angle between them (from to , then we define:   where is the unit vector that completes a right-handed coordinate system.    Componentwise:     If , then the motion stays in a plane.    Need to include the relationship between planes and their normals here. Uses dot products, and the cross product can be used to find the normal to two given vectors.    "
 },
 {
   "id": "sec-the-dot-product-and-cross-product-2",
@@ -1168,7 +1168,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "13.3",
   "title": "",
-  "body": "               "
+  "body": "   Use dot and cross products to capture alignment, perpendicularity, and orientation.    Compute these products from components to analyze motion and geometry in two and three dimensions.    Use normal vectors derived from cross products to express equations of planes.    "
 },
 {
   "id": "sec-the-frenet-serret-frame",
@@ -1177,7 +1177,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.4",
   "title": "The Frenet-Serret frame",
-  "body": " The Frenet-Serret frame                   Introduction goes here.     Unit tangent:     Unit normal:     Curvature:     Tangent component of acceleration: Normal component of acceleration:     In 3D, we get the binormal:     Torsion:      The unit tangent, unit normal, and binormal together form the Frenet-Serret frame.    "
+  "body": " The Frenet-Serret frame     Describe a curve's local geometry using the unit tangent, unit normal, and binormal.    Relate curvature and torsion to how a curve bends and twists in space.    Decompose acceleration into tangential and normal components using the moving frame.      Introduction goes here.     Unit tangent:     Unit normal:     Curvature:     Tangent component of acceleration: Normal component of acceleration:     In 3D, we also get the binormal:     Torsion:      The unit tangent, unit normal, and binormal together form the Frenet-Serret frame.    "
 },
 {
   "id": "sec-the-frenet-serret-frame-2",
@@ -1186,7 +1186,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "13.4",
   "title": "",
-  "body": "               "
+  "body": "   Describe a curve's local geometry using the unit tangent, unit normal, and binormal.    Relate curvature and torsion to how a curve bends and twists in space.    Decompose acceleration into tangential and normal components using the moving frame.    "
 },
 {
   "id": "sec-the-chain-rule-in-higher-dimensions",
@@ -1195,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.1",
   "title": "The chain rule in higher dimensions",
-  "body": " The chain rule in higher dimensions                   Introduction goes here.     Suppose we move along a parametric curve . How does the value of change with ?    We can now write the total differential that we saw in Part I in terms of partial derivatives:     Dividing by , we now get the Chain Rule in higher dimensions:     If and are both functions of and , then we have     New way to do implicit differentiation! Rewrite implicit curve as a level curve ; then     Sometimes we need to be more explicit about which variables we're holding constant. Use Hughes-Hallett for reference here, they have a great explanation. Let be the internal energy of some amount of gas. According to the Ideal Gas Law, we have where is the (constant) amount of gas and is the ideal gas constant. In particular, , , and are NOT independent.  Suppose we want to find , that is, how depends on while is being held constant. This means we're implicitly thinking of as a function of and , with as an intermediate variable. This makes our total differential . We could also have thought of as depending on and , with as an intermediate variable: But since is a function of and we have: Substituting this gives us:   We now have two expressions for . Setting the parts equal we get , and setting the parts equal we get .    May decide NOT to do it the way described above ... instead we can just extend the tree diagram so that the only ‘leaves' are the independent variables. Explain in terms of the ambiguity of the partial derivative notation and what we're actually looking for.    Dimensionless variables?    Should we use the notation to clean things up more?    "
+  "body": " The chain rule in higher dimensions     Track how a multivariable function changes along curves or surfaces using the Chain Rule.    Rewrite total differentials in terms of partial derivatives to relate dependent quantities.    Analyze implicit relationships and contexts where variables are not independent.      Introduction goes here.     Suppose we move along a parametric curve . How does the value of change with ?    We can now write the total differential that we saw in Part I in terms of partial derivatives:     Dividing by , we now get the Chain Rule in higher dimensions:     If and are both functions of and , then we have     New way to do implicit differentiation! Rewrite implicit curve as a level curve ; then     Sometimes we need to be more explicit about which variables we're holding constant. Use Hughes-Hallett for reference here, they have a great explanation. Let be the internal energy of some amount of gas. According to the Ideal Gas Law, we have where is the (constant) amount of gas and is the ideal gas constant. In particular, , , and are NOT independent.  Suppose we want to find , that is, how depends on while is being held constant. This means we're implicitly thinking of as a function of and , with as an intermediate variable. This makes our total differential . We could also have thought of as depending on and , with as an intermediate variable: But since is a function of and we have: Substituting this gives us:   We now have two expressions for . Setting the parts equal we get , and setting the parts equal we get .    May decide NOT to do it the way described above ... instead we can just extend the tree diagram so that the only ‘leaves' are the independent variables. Explain in terms of the ambiguity of the partial derivative notation and what we're actually looking for.    Dimensionless variables?    Should we use the notation to clean things up more?    "
 },
 {
   "id": "sec-the-chain-rule-in-higher-dimensions-2",
@@ -1204,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "14.1",
   "title": "",
-  "body": "               "
+  "body": "   Track how a multivariable function changes along curves or surfaces using the Chain Rule.    Rewrite total differentials in terms of partial derivatives to relate dependent quantities.    Analyze implicit relationships and contexts where variables are not independent.    "
 },
 {
   "id": "sec-absolute-extrema-in-higher-dimensions",
@@ -1213,7 +1213,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.2",
   "title": "Absolute extrema in higher dimensions",
-  "body": " Absolute extrema in higher dimensions                   Introduction goes here.     In single-variable calculus, to find absolute extrema, we had to look at critical points and boundary points. In multivariable calculus, that boundary is now an entire shape, so we can’t just check a few points.    To check the boundary of a shape, we can often substitute the boundary curve equation into the thing we want to optimize in order to reduce the number of variables, and then use single-variable calculus.    We also may be able to parameterize the boundary curve to get things in terms of a single variable. This uses the Chain Rule.    At that point, we just check all the candidates and take the highest and lowest one.    So the big theme here is, reduce a higher dimensional problem to a lower dimensional problem.    "
+  "body": " Absolute extrema in higher dimensions     Find absolute extrema by checking interior critical points and boundary behavior.    Reduce boundary analysis to single-variable calculus by substitution or parametrization.    Compare all candidates to determine global maxima and minima.      Introduction goes here.     In single-variable calculus, to find absolute extrema, we had to look at critical points and boundary points. In multivariable calculus, that boundary is now an entire shape, so we can’t just check a few points.    To check the boundary of a shape, we can often substitute the boundary curve equation into the thing we want to optimize in order to reduce the number of variables, and then use single-variable calculus.    We also may be able to parameterize the boundary curve to get things in terms of a single variable. This uses the Chain Rule.    At that point, we just check all the candidates and take the highest and lowest one.    So the big theme here is, reduce a higher dimensional problem to a lower dimensional problem.    "
 },
 {
   "id": "sec-absolute-extrema-in-higher-dimensions-2",
@@ -1222,7 +1222,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "14.2",
   "title": "",
-  "body": "               "
+  "body": "   Find absolute extrema by checking interior critical points and boundary behavior.    Reduce boundary analysis to single-variable calculus by substitution or parametrization.    Compare all candidates to determine global maxima and minima.    "
 },
 {
   "id": "sec-directional-derivatives-and-the-gradient",
@@ -1231,7 +1231,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.3",
   "title": "Directional derivatives and the gradient",
-  "body": " Directional derivatives and the gradient                   Introduction goes here.     Suppose we're at the point and we want to find the rate of change as we move in the direction of the unit vector .    Parametrize the line in the -plane:   Differentiate with respect to using the Chain Rule:   This is the directional derivative of in the direction of , written .    Notice this looks a lot like a dot product! Define the gradient vector as:     Going to avoid the notation so that it can be saved for Part IV. Then the directional derivative can be written .    If we use basis vectors, we recover partial derivatives by projection:     Since the directional derivative is a dot product, it's maximized when points the same direction as the gradient, minimized when it points in the opposite direction. This leads to the gradient ascent\/descent algorithm.    Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero. This means that the gradient is perpendicular to the level curves of a surface.    Chain Rule can now be rewritten as:     Tangent plane can also be written in vector form: This much more closely resembles our linearization from Chapter 2.    Rearrange slightly: Again this looks like a dot product! We're saying that is parallel to . Since the latter vector represents an arbitary motion in the plane, this vector must be normal to the plane.    Can we include something about why the normal to a surface is important? Maybe something about lighting?    "
+  "body": " Directional derivatives and the gradient     Measure how a function changes in any direction using directional derivatives.    Use the gradient vector to express directional changes as dot products.    Interpret the gradient as pointing perpendicular to level sets and toward the direction of greatest increase.      Introduction goes here.     Suppose we're at the point and we want to find the rate of change as we move in the direction of the unit vector .    Parametrize the line in the -plane:   Differentiate with respect to using the Chain Rule:   This is the directional derivative of in the direction of , written .    Notice this looks a lot like a dot product! Define the gradient vector as:     Going to avoid the notation so that it can be saved for Part IV. Then the directional derivative can be written .    If we use basis vectors, we recover partial derivatives by projection:     Since the directional derivative is a dot product, it's maximized when points the same direction as the gradient, minimized when it points in the opposite direction. This leads to the gradient ascent\/descent algorithm.    Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero. This means that the gradient is perpendicular to the level curves of a surface.    Chain Rule can now be rewritten as:     Tangent plane can also be written in vector form: This much more closely resembles our linearization from Chapter 2.    Rearrange slightly: Again this looks like a dot product! We're saying that is parallel to . Since the latter vector represents an arbitary motion in the plane, this vector must be normal to the plane.    Can we include something about why the normal to a surface is important? Maybe something about lighting?    "
 },
 {
   "id": "sec-directional-derivatives-and-the-gradient-2",
@@ -1240,7 +1240,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "14.3",
   "title": "",
-  "body": "               "
+  "body": "   Measure how a function changes in any direction using directional derivatives.    Use the gradient vector to express directional changes as dot products.    Interpret the gradient as pointing perpendicular to level sets and toward the direction of greatest increase.    "
 },
 {
   "id": "sec-lagrange-multipliers",
@@ -1249,7 +1249,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.4",
   "title": "Lagrange multipliers",
-  "body": " Lagrange multipliers                   Introduction goes here.     Need to justify this using an example where substitution goes wrong.  Smith and Minton has an example: Find the points on the hyperbolic cylinder that are closest to the origin.    Let be a constraint curve that lies along the surface , and suppose has a local extreme value at along .  Parametrize the curve as so that .  Now consider the function . Then has an extreme value at , so . By the Chain Rule, we have:   Hence is perpendicular to the tangent vector . Since is a level curve of , we know that is also perpendicular to , and hence and are parallel. Hence, if , there exists some real number such that . This value is called the Lagrange multiplier.    Perhaps would be good to do the “milkmaid” problem... its solution visually goes with the reflection property of an ellipse. And it can be explained without needing a specific curve, but then made precise using a specific curve.    "
+  "body": " Lagrange multipliers     Recognize when substitution fails and a constraint must be handled through gradients instead.    Use the Lagrange multiplier equation to locate candidate points for constrained extrema.    Interpret constrained optimization geometrically through level curves and tangent directions.      Introduction goes here.     Need to justify this using an example where substitution goes wrong.  Smith and Minton has an example: Find the points on the hyperbolic cylinder that are closest to the origin.    Let be a constraint curve that lies along the surface , and suppose has a local extreme value at along .  Parametrize the curve as so that .  Now consider the function . Then has an extreme value at , so . By the Chain Rule, we have:   Hence is perpendicular to the tangent vector . Since is a level curve of , we know that is also perpendicular to , and hence and are parallel. Hence, if , there exists some real number such that . This value is called the Lagrange multiplier.    Perhaps would be good to do the “milkmaid” problem... its solution visually goes with the reflection property of an ellipse. And it can be explained without needing a specific curve, but then made precise using a specific curve.    "
 },
 {
   "id": "sec-lagrange-multipliers-2",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "14.4",
   "title": "",
-  "body": "               "
+  "body": "   Recognize when substitution fails and a constraint must be handled through gradients instead.    Use the Lagrange multiplier equation to locate candidate points for constrained extrema.    Interpret constrained optimization geometrically through level curves and tangent directions.    "
 },
 {
   "id": "sec-the-lagrangian-functions",
@@ -1267,7 +1267,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.5",
   "title": "The Lagrangian function",
-  "body": " The Lagrangian function                   Introduction goes here.      http:\/\/www.slimy.com\/~steuard\/teaching\/tutorials\/Lagrange.html     Here's another way we can “zoom out” and see the Lagrange multiplier method as part of a bigger story.    Suppose we want to maximize subject to the constraint . Define the Lagrangian function:  Then the solution to our maximization problem is the point where :   Note that we're assuming that is a constant for now.    Note that , which means that represents the sensitivity of the Lagrangian function to changes in our constraint amount. It can also be shown (will have to look at how!) that ; apparently this uses the “envelope theorem.”    Let be the solution to the constrained optimization problem. This depends on the given value of , so we'll write them as , and we'll write the optimum value of here as . If we differentiate with respect to , we get: Additionally, the constraint satisfies the equation . Differentiate both sides with respect to using the Chain Rule: By the Lagrange multiplier property we know that: Taking dot products with : Since we have:     Might actually be able to tie this to holding certain variables constant in , à la thermodynamics notation.    "
+  "body": " The Lagrangian function     Formulate constrained optimization problems by introducing the Lagrangian .    Locate solutions by setting all partial derivatives of the Lagrangian equal to zero.    Interpret the multiplier as measuring how the optimal value responds to changes in the constraint.      Introduction goes here.      http:\/\/www.slimy.com\/~steuard\/teaching\/tutorials\/Lagrange.html     Here's another way we can “zoom out” and see the Lagrange multiplier method as part of a bigger story.    Suppose we want to maximize subject to the constraint . Define the Lagrangian function:  Then the solution to our maximization problem is the point where :   Note that we're assuming that is a constant for now.    Note that , which means that represents the sensitivity of the Lagrangian function to changes in our constraint amount. It can also be shown (will have to look at how!) that ; apparently this uses the “envelope theorem.”    Let be the solution to the constrained optimization problem. This depends on the given value of , so we'll write them as , and we'll write the optimum value of here as . If we differentiate with respect to , we get: Additionally, the constraint satisfies the equation . Differentiate both sides with respect to using the Chain Rule: By the Lagrange multiplier property we know that: Taking dot products with : Since we have:     Might actually be able to tie this to holding certain variables constant in , à la thermodynamics notation.    "
 },
 {
   "id": "sec-the-lagrangian-functions-2",
@@ -1276,7 +1276,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "14.5",
   "title": "",
-  "body": "               "
+  "body": "   Formulate constrained optimization problems by introducing the Lagrangian .    Locate solutions by setting all partial derivatives of the Lagrangian equal to zero.    Interpret the multiplier as measuring how the optimal value responds to changes in the constraint.    "
 },
 {
   "id": "sec-double-integrals-and-iterated-integrals",
@@ -1285,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.1",
   "title": "Double integrals and iterated integrals",
-  "body": " Double integrals and iterated integrals                   Introduction goes here.     Define the double integral of over a rectangular region :     Include some simple by-hand approximations with the rectangular region broken into small squares or rectangles    Fubini’s theorem says that we can write such a double integral as an iterated integral under certain niceness conditions (will have to find later):     Work out some iterated integrals    If , then     Area:     Average value:     "
+  "body": " Double integrals and iterated integrals     Define double integrals as limits of sums over finely divided rectangular regions.    Evaluate double integrals using iterated integrals.    Apply double integrals to compute area and average value.      Introduction goes here.     Define the double integral of over a rectangular region :     Include some simple by-hand approximations with the rectangular region broken into small squares or rectangles    Fubini’s theorem says that we can write such a double integral as an iterated integral under certain niceness conditions (will have to find later):     Work out some iterated integrals    If , then     Area:     Average value:     "
 },
 {
   "id": "sec-double-integrals-and-iterated-integrals-2",
@@ -1294,7 +1294,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "15.1",
   "title": "",
-  "body": "               "
+  "body": "   Define double integrals as limits of sums over finely divided rectangular regions.    Evaluate double integrals using iterated integrals.    Apply double integrals to compute area and average value.    "
 },
 {
   "id": "sec-double-integrals-over-general-regions",
@@ -1303,7 +1303,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.2",
   "title": "Double integrals over general regions",
-  "body": " Double integrals over general regions                   Introduction goes here.     Can use a bounding box approach to take double integrals over regions with more general regions. If is a region over which is defined, let be a rectangle containing , and let Then .    If is bounded below by and above by :     If is bounded on the left by and the right by :     Changing order of integration:     "
+  "body": " Double integrals over general regions     Handle irregular regions by extending the integrand to a surrounding rectangle.    Set up iterated integrals by describing the region with inequalities bounding one variable in terms of the other.    Reverse the order of integration to simplify difficult integrals.      Introduction goes here.     Can use a bounding box approach to take double integrals over regions with more general regions. If is a region over which is defined, let be a rectangle containing , and let Then .    If is bounded below by and above by :     If is bounded on the left by and the right by :     Changing order of integration:     "
 },
 {
   "id": "sec-double-integrals-over-general-regions-2",
@@ -1312,7 +1312,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "15.2",
   "title": "",
-  "body": "               "
+  "body": "   Handle irregular regions by extending the integrand to a surrounding rectangle.    Set up iterated integrals by describing the region with inequalities bounding one variable in terms of the other.    Reverse the order of integration to simplify difficult integrals.    "
 },
 {
   "id": "sec-surface-area",
@@ -1321,7 +1321,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.3",
   "title": "Surface area",
-  "body": " Surface area                   Introduction goes here.     Area of the surface over the region : Notice similarity with arc length formula.    Derivation has to do with surface area element:     "
+  "body": " Surface area     Compute the area of a surface by integrating a surface-area element over its domain.    Relate the surface-area formula to the structure of the arc length formula in one dimension.    Interpret the integrand as the magnitude of a cross product formed from tangent vectors on the surface.      Introduction goes here.     Area of the surface over the region : Notice similarity with arc length formula.    Derivation has to do with surface area element:     "
 },
 {
   "id": "sec-surface-area-2",
@@ -1330,7 +1330,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "15.3",
   "title": "",
-  "body": "               "
+  "body": "   Compute the area of a surface by integrating a surface-area element over its domain.    Relate the surface-area formula to the structure of the arc length formula in one dimension.    Interpret the integrand as the magnitude of a cross product formed from tangent vectors on the surface.    "
 },
 {
   "id": "sec-triple-integrals",
@@ -1339,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.4",
   "title": "Triple integrals",
-  "body": " Triple integrals                   Introduction goes here.     Triple integral of over box :     Iterated integrals can take any of six orders of , , , for example:     Would like to find a good way to go over setting them up    Volume:     "
+  "body": " Triple integrals     Define triple integrals as limits of sums over subdivided three-dimensional regions.    Evaluate triple integrals through iterated integrals in various orders.    Apply triple integrals to compute volume and other quantities over 3D regions.      Introduction goes here.     Triple integral of over box :     Iterated integrals can take any of six orders of , , , for example:     Would like to find a good way to go over setting them up    Volume:     "
 },
 {
   "id": "sec-triple-integrals-2",
@@ -1348,7 +1348,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "15.4",
   "title": "",
-  "body": "               "
+  "body": "   Define triple integrals as limits of sums over subdivided three-dimensional regions.    Evaluate triple integrals through iterated integrals in various orders.    Apply triple integrals to compute volume and other quantities over 3D regions.    "
 },
 {
   "id": "sec-center-of-mass",
@@ -1357,7 +1357,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.5",
   "title": "Center of mass",
-  "body": " Center of mass                   Introduction goes here.     Mass in 2D (where is density): Moments in 2D:   Center of mass:     Mass in 3D (where is density): Moments in 3D:   Center of mass:     If we assume uniform density, we get the centroid of the region.    Start with density along a rod first?    "
+  "body": " Center of mass     Compute mass and moments of planar or spatial regions using double and triple integrals.    Find centers of mass by normalizing moments with total mass.    Interpret centroids as centers of mass of shapes with uniform density.      Introduction goes here.     Mass in 2D (where is density): Moments in 2D:   Center of mass:     Mass in 3D (where is density): Moments in 3D:   Center of mass:     If we assume uniform density, we get the centroid of the region.    Start with density along a rod first?    "
 },
 {
   "id": "sec-center-of-mass-2",
@@ -1366,7 +1366,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "15.5",
   "title": "",
-  "body": "               "
+  "body": "   Compute mass and moments of planar or spatial regions using double and triple integrals.    Find centers of mass by normalizing moments with total mass.    Interpret centroids as centers of mass of shapes with uniform density.    "
 },
 {
   "id": "sec-multivariate-probability",
@@ -1375,7 +1375,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.6",
   "title": "Multivariate probability",
-  "body": " Multivariate probability                   Introduction goes here.     Joint density function of and :     Expected values:   These are just the center of mass again!    Marginal probability density functions:     Could do Monte Carlo integration! Would be good practice still for setting up regions!    "
+  "body": " Multivariate probability     Compute probabilities and expectations for jointly distributed variables using double integrals.    Obtain marginal densities by integrating out one variable from the joint distribution.    Approximate probabilities numerically with Monte Carlo methods when regions or densities are complex.      Introduction goes here.     Joint density function of and :     Expected values:   These are just the center of mass again!    Marginal probability density functions:     Could do Monte Carlo integration! Would be good practice still for setting up regions!    "
 },
 {
   "id": "sec-multivariate-probability-2",
@@ -1384,7 +1384,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "15.6",
   "title": "",
-  "body": "               "
+  "body": "   Compute probabilities and expectations for jointly distributed variables using double integrals.    Obtain marginal densities by integrating out one variable from the joint distribution.    Approximate probabilities numerically with Monte Carlo methods when regions or densities are complex.    "
 },
 {
   "id": "sec-calculus-of-variations",
@@ -1402,7 +1402,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.1",
   "title": "Changes of coordinates",
-  "body": " Changes of coordinates                   Introduction goes here.     Frame this in terms of choosing a change of variables that makes it easier to represent a problem. It's all about finding the right frame of reference.    Linear change of variables:     Rotated coordinates: Show how this turns into a hyperbola in coordinates.    A very useful non-linear change of coordinates is polar coordinates.    Converting from polar to rectangular:     Converting from rectangular to polar:     Some graphs:   Rose curves: ,     Lima con: ,     Circle: , ,     Lemniscate: ,        "
+  "body": " Changes of coordinates     Use coordinate changes to recast a problem in a more convenient frame of reference.    Express relationships between variables in new coordinates and observe how familiar equations transform.    Work with polar coordinates to describe curves and regions that are difficult to express in rectangular form.      Introduction goes here.     Frame this in terms of choosing a change of variables that makes it easier to represent a problem. It's all about finding the right frame of reference.    Linear change of variables:     Rotated coordinates: Show how this turns into a hyperbola in coordinates.    A very useful non-linear change of coordinates is polar coordinates.    Converting from polar to rectangular:     Converting from rectangular to polar:     Some graphs:   Rose curves: ,     Lima con: ,     Circle: , ,     Lemniscate: ,        "
 },
 {
   "id": "sec-changes-of-coordinates-2",
@@ -1411,7 +1411,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "16.1",
   "title": "",
-  "body": "               "
+  "body": "   Use coordinate changes to recast a problem in a more convenient frame of reference.    Express relationships between variables in new coordinates and observe how familiar equations transform.    Work with polar coordinates to describe curves and regions that are difficult to express in rectangular form.    "
 },
 {
   "id": "sec-calculus-in-polar-coordinates",
@@ -1420,7 +1420,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.2",
   "title": "Calculus in polar coordinates",
-  "body": " Calculus in polar coordinates                   Introduction goes here.     Derivative:     Arc length:     Polar area bounded by one curve:     Polar area bounded by two curves:     "
+  "body": " Calculus in polar coordinates     Find slopes of tangent lines to curves given in polar form.    Compute arc lengths using the polar arc length formula.    Determine areas of regions bounded by one or more polar curves.      Introduction goes here.     Derivative:     Arc length:     Polar area bounded by one curve:     Polar area bounded by two curves:     "
 },
 {
   "id": "sec-calculus-in-polar-coordinates-2",
@@ -1429,7 +1429,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "16.2",
   "title": "",
-  "body": "               "
+  "body": "   Find slopes of tangent lines to curves given in polar form.    Compute arc lengths using the polar arc length formula.    Determine areas of regions bounded by one or more polar curves.    "
 },
 {
   "id": "sec-the-jacobian",
@@ -1438,7 +1438,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.3",
   "title": "The Jacobian matrix and its determinant",
-  "body": " The Jacobian matrix and its determinant                   Introduction goes here.     Show how spaces gets turned into space through an arrow diagram with what happens to a grid    The Jacobian matrix of the transformation given by and is     The Jacobian is a generalization of all the derivatives we’ve seen so far:    : The Jacobian is just the derivative.     : The Jacobian is the vector derivative.     : The Jacobian is the transpose of the gradient.     : This is the most general case.       Determinant of a matrix being a scale factor \/ orientation change factor; demonstrate with 2D area of a parallelogram    The determinant is This is a scale factor of how small areas will change shape and orientation locally.    Polar Jacobian:     "
+  "body": " The Jacobian matrix and its determinant     Describe how a coordinate transformation reshapes regions using its Jacobian matrix.    Interpret the determinant of the Jacobian as the local area-scaling and orientation factor.    View the Jacobian as a unifying framework that generalizes earlier derivative concepts.      Introduction goes here.     Show how spaces gets turned into space through an arrow diagram with what happens to a grid    The Jacobian matrix of the transformation given by and is     The Jacobian is a generalization of all the derivatives we’ve seen so far:    : The Jacobian is just the derivative.     : The Jacobian is the vector derivative.     : The Jacobian is the transpose of the gradient.     : This is the most general case.       Determinant of a matrix being a scale factor \/ orientation change factor; demonstrate with 2D area of a parallelogram    The determinant is This is a scale factor of how small areas will change shape and orientation locally.    Polar Jacobian:     "
 },
 {
   "id": "sec-the-jacobian-2",
@@ -1447,7 +1447,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "16.3",
   "title": "",
-  "body": "               "
+  "body": "   Describe how a coordinate transformation reshapes regions using its Jacobian matrix.    Interpret the determinant of the Jacobian as the local area-scaling and orientation factor.    View the Jacobian as a unifying framework that generalizes earlier derivative concepts.    "
 },
 {
   "id": "sec-polar-double-integrals",
@@ -1456,7 +1456,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.4",
   "title": "Double integrals over polar regions",
-  "body": " Double integrals over polar regions                   Introduction goes here.     Change of variables in an integral:     Moment of inertia:     Do the Gaussian integral using the polar trick    "
+  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Moment of inertia:     Do the Gaussian integral using the polar trick    "
 },
 {
   "id": "sec-polar-double-integrals-2",
@@ -1465,7 +1465,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "16.4",
   "title": "",
-  "body": "               "
+  "body": "   Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.    "
 },
 {
   "id": "sec-cylindrical-spherical",
@@ -1474,7 +1474,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.5",
   "title": "Cylindrical and spherical coordinates",
-  "body": " Cylindrical and spherical coordinates                   Introduction goes here.     3D Jacobians are set up the same way, but might need to show how determinant works (expansion by minors or maybe Rule of Sarrus would be enough)    Cylindrical coordinates:   Jacobian:     Spherical coordinates:   Jacobian:   This is assuming is spherical radius, is longitude (azimuthal angle), is co-latitude (polar angle).    Show how to use them to convert triple integrals, applied problems (most likely center of mass, moment of inertia)    "
+  "body": " Cylindrical and spherical coordinates     Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.    Compute the associated Jacobians that describe how volume elements transform.    Rewrite triple integrals in these coordinates when symmetry simplifies computation.      Introduction goes here.     3D Jacobians are set up the same way, but might need to show how determinant works (expansion by minors or maybe Rule of Sarrus would be enough)    Cylindrical coordinates:   Jacobian:     Spherical coordinates:   Jacobian:   This is assuming is spherical radius, is longitude (azimuthal angle), is co-latitude (polar angle).    Show how to use them to convert triple integrals, applied problems (most likely center of mass, moment of inertia)    "
 },
 {
   "id": "sec-cylindrical-spherical-2",
@@ -1483,7 +1483,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "16.5",
   "title": "",
-  "body": "               "
+  "body": "   Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.    Compute the associated Jacobians that describe how volume elements transform.    Rewrite triple integrals in these coordinates when symmetry simplifies computation.    "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers",
@@ -1492,7 +1492,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.1",
   "title": "The geometry of complex numbers",
-  "body": " The geometry of complex numbers                   Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      By Euler's formula we also have: This gives us exponential form of a complex number:  Engineers also write .       Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula: This works with roots as well, but we'll get roots evenly spaced apart along the unit circle. Also mention as principal value of .    "
+  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      By Euler's formula we also have: This gives us exponential form of a complex number:  Engineers also write .       Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula: This works with roots as well, but we'll get roots evenly spaced apart along the unit circle. Also mention as principal value of .    "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers-2",
@@ -1501,7 +1501,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "17.1",
   "title": "",
-  "body": "               "
+  "body": "   Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.    "
 },
 {
   "id": "sec-complex-functions-as-transformations",
@@ -1510,7 +1510,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.2",
   "title": "Complex functions as transformations",
-  "body": " Complex functions as transformations                   Introduction goes here.     Regions in the complex plane:   Circle:     Disk:     Half planes: , , etc    Annulus:        We can visualize complex functions by considering what they do to particular regions of the complex plane. This is just like what we did with the Jacobian section!  Example: What does do? We can expand it out and get: So we can view this as the transformation The Jacobian determinant of this matrix is and the determinant is . This shows how the lengths of small boxes will be scaled.    Parametric curves in the complex plane   Line (segment, ray):     Circle:    Image of curve: If , then .    Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =    Based on this, we can tell where the zeros are because (1) the colors approach black, and (2) the colors will cycle around the points.    "
+  "body": " Complex functions as transformations     Describe curves and regions in the complex plane.    Interpret complex functions by studying how they transform curves and regions.    Visualize complex mappings using domain coloring to encode magnitude and argument.      Introduction goes here.     Regions in the complex plane:   Circle:     Disk:     Half planes: , , etc    Annulus:        We can visualize complex functions by considering what they do to particular regions of the complex plane. This is just like what we did with the Jacobian section!  Example: What does do? We can expand it out and get: So we can view this as the transformation The Jacobian determinant of this matrix is and the determinant is . This shows how the lengths of small boxes will be scaled.    Parametric curves in the complex plane   Line (segment, ray):     Circle:    Image of curve: If , then .    Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =    Based on this, we can tell where the zeros are because (1) the colors approach black, and (2) the colors will cycle around the points.    "
 },
 {
   "id": "sec-complex-functions-as-transformations-2",
@@ -1519,43 +1519,43 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "17.2",
   "title": "",
-  "body": "               "
-},
-{
-  "id": "sec-complex-infinity",
-  "level": "1",
-  "url": "sec-complex-infinity.html",
-  "type": "Section",
-  "number": "17.3",
-  "title": "Complex infinity and the Riemann sphere",
-  "body": " Complex infinity and the Riemann sphere                   Introduction goes here.     Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.    Transformations: Flips points inside and outside the unit circle, along with a conjugtion. That is,        Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    Möbius tranformation: Can be thought of as a composition of scaling, rotation, and inversion + conjugation.     https:\/\/www.youtube.com\/watch?v=0z1fIsUNhO4     "
-},
-{
-  "id": "sec-complex-infinity-2",
-  "level": "2",
-  "url": "sec-complex-infinity.html#sec-complex-infinity-2",
-  "type": "Objectives",
-  "number": "17.3",
-  "title": "",
-  "body": "               "
+  "body": "   Describe curves and regions in the complex plane.    Interpret complex functions by studying how they transform curves and regions.    Visualize complex mappings using domain coloring to encode magnitude and argument.    "
 },
 {
   "id": "sec-extending-complex-functions",
   "level": "1",
   "url": "sec-extending-complex-functions.html",
   "type": "Section",
-  "number": "17.4",
+  "number": "17.3",
   "title": "Extending functions to the complex plane",
-  "body": " Extending functions to the complex plane                   Introduction goes here.     Mostly focuses on what happens if you plug a complex number into well-known functions. For all of these, view their domain coloring, and some important mappings of planar regions.    Exponential functions:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometirc and hyperbolic functions:     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don’t carry over to complex numbers because of this!   The principal value is .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
+  "body": " Extending functions to the complex plane     Extend familiar real functions to complex inputs and analyze their behavior.    Interpret complex outputs through domain coloring and mappings of planar regions.    Understand multivalued functions using principal branches and Riemann surfaces.      Introduction goes here.     Mostly focuses on what happens if you plug a complex number into well-known functions. For all of these, view their domain coloring, and some important mappings of planar regions.    Exponential functions:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometirc and hyperbolic functions:     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don’t carry over to complex numbers because of this!   The principal value is .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
 },
 {
   "id": "sec-extending-complex-functions-2",
   "level": "2",
   "url": "sec-extending-complex-functions.html#sec-extending-complex-functions-2",
   "type": "Objectives",
+  "number": "17.3",
+  "title": "",
+  "body": "   Extend familiar real functions to complex inputs and analyze their behavior.    Interpret complex outputs through domain coloring and mappings of planar regions.    Understand multivalued functions using principal branches and Riemann surfaces.    "
+},
+{
+  "id": "sec-complex-infinity",
+  "level": "1",
+  "url": "sec-complex-infinity.html",
+  "type": "Section",
+  "number": "17.4",
+  "title": "Complex infinity and the Riemann sphere",
+  "body": " Complex infinity and the Riemann sphere     Examine how inversion transforms magnitudes, angles, and regions in the complex plane.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Study Möbius transformations as compositions of basic geometric actions.      Introduction goes here.     Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.    Transformations: Flips points inside and outside the unit circle, along with a conjugtion. That is,        Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    Möbius tranformation: Can be thought of as a composition of scaling, rotation, and inversion + conjugation.     https:\/\/www.youtube.com\/watch?v=0z1fIsUNhO4     "
+},
+{
+  "id": "sec-complex-infinity-2",
+  "level": "2",
+  "url": "sec-complex-infinity.html#sec-complex-infinity-2",
+  "type": "Objectives",
   "number": "17.4",
   "title": "",
-  "body": "               "
+  "body": "   Examine how inversion transforms magnitudes, angles, and regions in the complex plane.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Study Möbius transformations as compositions of basic geometric actions.    "
 },
 {
   "id": "sec-vector-fields",
@@ -1564,7 +1564,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.1",
   "title": "Vector fields",
-  "body": " Vector fields                   Introduction goes here.     This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.    2D vector fields:   Good examples are and     3D vector fields:     Inverse square fields    Interpreting as a force field vs a velocity field    Dynamical system (in 2D): Streamlines are the paths taken by integrating this over time; can have students experiment with these!    "
+  "body": " Vector fields     Interpret vector fields as functions assigning a vector to each point.    Examine key examples such as radial, rotational, and inverse-square fields in 2D and 3D.    View vector fields as dynamical systems and study their streamlines.      Introduction goes here.     This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.    2D vector fields:   Good examples are and     3D vector fields:     Inverse square fields    Interpreting as a force field vs a velocity field    Dynamical system (in 2D): Streamlines are the paths taken by integrating this over time; can have students experiment with these!    "
 },
 {
   "id": "sec-vector-fields-2",
@@ -1573,7 +1573,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "18.1",
   "title": "",
-  "body": "               "
+  "body": "   Interpret vector fields as functions assigning a vector to each point.    Examine key examples such as radial, rotational, and inverse-square fields in 2D and 3D.    View vector fields as dynamical systems and study their streamlines.    "
 },
 {
   "id": "sec-new-derivatives-and-del",
@@ -1582,7 +1582,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.2",
   "title": "New derivatives and the del operator",
-  "body": " New derivatives and the del operator                   Introduction goes here.     Divergence of a vector field:   This measures how much a vector field is “flowing outward”. If the divergence in a region is positive, it’s acting like a source, while if it’s negative, it’s acting like a sink.    Curl of a vector field:   This measures how much a vector field is “rotating”.  A vector field with zero divergence is called incompressible or solenoidal.   In the 2D case, the curl is a scalar. If curl is positive, the field is rotating counterclockwise, while if negative, it’s rotating clockwise.    In the 3D case, the curl is a vector, which points along the direction of the right-hand rule, so that the field is flowing counterclockwise around that vector as an axis. The magnitude is the strength of rotation.   A vector field with zero curl is called irrotational.    In fluid dynamics, an ideal fluid is incompressible and irrotational.    Some useful properties:     The del operator is a vector operator.  In 2D: In 3D: With this operator, we have:     Divergence and curl act like derivatives in that they distribute over sums and satisfy a product rule in many cases:      https:\/\/mathintuitions.com\/2025\/05\/27\/divergence-curl-and-the-taylor-series-approximation\/     Include polar versions as an exercise    "
+  "body": " New derivatives and the del operator     Define divergence and curl as measures of outward flow and rotational behavior.    Interpret incompressible and irrotational vector fields as ideal fluid flows.    Use the del operator to express gradient, divergence, and curl in unified notation.      Introduction goes here.     Divergence of a vector field:   This measures how much a vector field is flowing outward . If the divergence in a region is positive, it's acting like a source, while if it's negative, it's acting like a sink.    Curl of a vector field:   This measures how much a vector field is rotating .  A vector field with zero divergence is called incompressible or solenoidal.   In the 2D case, the curl is a scalar. If curl is positive, the field is rotating counterclockwise, while if negative, it's rotating clockwise.    In the 3D case, the curl is a vector, which points along the direction of the right-hand rule, so that the field is flowing counterclockwise around that vector as an axis. The magnitude is the strength of rotation.   A vector field with zero curl is called irrotational.    In fluid dynamics, an ideal fluid is incompressible and irrotational.    Some useful properties:     The del operator is a vector operator.  In 2D: In 3D: With this operator, we have:     Divergence and curl act like derivatives in that they distribute over sums and satisfy a product rule in many cases:      https:\/\/mathintuitions.com\/2025\/05\/27\/divergence-curl-and-the-taylor-series-approximation\/     Include polar versions as an exercise    "
 },
 {
   "id": "sec-new-derivatives-and-del-2",
@@ -1591,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "18.2",
   "title": "",
-  "body": "               "
+  "body": "   Define divergence and curl as measures of outward flow and rotational behavior.    Interpret incompressible and irrotational vector fields as ideal fluid flows.    Use the del operator to express gradient, divergence, and curl in unified notation.    "
 },
 {
   "id": "sec-cauchy-riemann",
@@ -1600,7 +1600,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.3",
   "title": "The Cauchy-Riemann equations",
-  "body": " The Cauchy-Riemann equations                   Introduction goes here.     Derivative of complex function: Note that is complex here! Alternatively:     Limits are defined exactly as you think they are based on multivariable calculus: means that approaches as closely as desired when approaches along any path.    Some functions aren’t differentiable. Great example is :  Another fun one is , which is differentiable everywhere for real functions but is differentiable only at as a complex function!   If along the real line, this quotient approaches , but if it approaches over the imaginary line, the quotient approaches . Therefore the limit does not exist, and hence the complex conjugate is not differentiable.... anywhere!     If a function is differentiable at and at every point in some neighborhood of , we say is holomorphic at .    If a function is differentiable at a point, it must satisfy the Cauchy-Riemann equations: Furthermore, if and are continuous and have continuous first partial derivatives in a domain , then satisfying the Cauchy-Riemann equations at all points of implies that is holomorphic in .    All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric. (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!    If is holomorphic in a domain , then is constant if is constant or if .    A function that is holomorphic at every point in the complex plane is called entire.    The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.    Linear approximation: Should be able to relate this to being holomorphic.    L’Hôpital’s rule works!    "
+  "body": " The Cauchy-Riemann equations     Determine continuity and differentiability of complex functions.    Use the Cauchy-Riemann equations to characterize when a complex function is holomorphic.    Interpret holomorphic functions as conformal mappings.      Introduction goes here.     Derivative of complex function: Note that is complex here! Alternatively:     Limits are defined exactly as you think they are based on multivariable calculus: means that approaches as closely as desired when approaches along any path.    Some functions aren’t differentiable. Great example is :  Another fun one is , which is differentiable everywhere for real functions but is differentiable only at as a complex function!   If along the real line, this quotient approaches , but if it approaches over the imaginary line, the quotient approaches . Therefore the limit does not exist, and hence the complex conjugate is not differentiable.... anywhere!     If a function is differentiable at and at every point in some neighborhood of , we say is holomorphic at .    If a function is differentiable at a point, it must satisfy the Cauchy-Riemann equations: Furthermore, if and are continuous and have continuous first partial derivatives in a domain , then satisfying the Cauchy-Riemann equations at all points of implies that is holomorphic in .    All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric. (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!    If is holomorphic in a domain , then is constant if is constant or if .    A function that is holomorphic at every point in the complex plane is called entire.    The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.    Linear approximation: Should be able to relate this to being holomorphic.    L’Hôpital’s rule works!    "
 },
 {
   "id": "sec-cauchy-riemann-2",
@@ -1609,7 +1609,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "18.3",
   "title": "",
-  "body": "               "
+  "body": "   Determine continuity and differentiability of complex functions.    Use the Cauchy-Riemann equations to characterize when a complex function is holomorphic.    Interpret holomorphic functions as conformal mappings.    "
 },
 {
   "id": "sec-harmonic-functions",
@@ -1618,7 +1618,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.4",
   "title": "Harmonic functions and complex potentials",
-  "body": " Harmonic functions and complex potentials                   Introduction goes here.     The Laplacian operator: In other words, Laplace’s equation (from PDE) is just . Real-valued functions that satisfy this requirement are called harmonic functions.    Laplacian for vector functions:     If is analytic, then and are holomorphic, and we say that is the harmonic conjugate of . Furthermore, is the harmonic conjugate of .    The level curves of and will be orthogonal families, that is, the tangent lines at all points of intersection will always be perpendicular.    If is a scalar function and , we say that is a potential function (or just a potential) of , and we call a gradient field.    If is harmonic, it has a harmonic conjugate , and we say that is the complex potential of .    If is the velocity field of an ideal fluid (that is, incompressible and irrotational), then is holomorphic (it satisfies the Cauchy Riemann equations), and furthermore as defined above is its potential function, which is also holomorphic.  We say that is the Pólya vector field of the complex function .  Notice that this shows a connection between the equations for curl and divergence and the Cauchy-Riemann equations, but they’re each off by a minus sign. The reason for this sign change will become clear when we do contour integrals later.    Applications:        Application  Level curves of   Level curves of      electrostatics  equipotential curves  lines of force    gravitation  equipotential curves  lines of force    fluid flow  equipotential curves  streamlines of flow    heat flow  isotherms  lines of heat flux       Should get into why we care about solutions to Laplace’s equation.    "
+  "body": " Harmonic functions and complex potentials     Define harmonic functions as solutions to Laplace's equation.    Relate harmonic conjugates to orthogonal level curves.    Connect ideal fluid flow and other physical systems to holomorphic complex potentials.      Introduction goes here.     The Laplacian operator: In other words, Laplace’s equation (from PDE) is just . Real-valued functions that satisfy this requirement are called harmonic functions.    Laplacian for vector functions:     If is analytic, then and are holomorphic, and we say that is the harmonic conjugate of . Furthermore, is the harmonic conjugate of .    The level curves of and will be orthogonal families, that is, the tangent lines at all points of intersection will always be perpendicular.    If is a scalar function and , we say that is a potential function (or just a potential) of , and we call a gradient field.    If is harmonic, it has a harmonic conjugate , and we say that is the complex potential of .    If is the velocity field of an ideal fluid (that is, incompressible and irrotational), then is holomorphic (it satisfies the Cauchy Riemann equations), and furthermore as defined above is its potential function, which is also holomorphic.  We say that is the Pólya vector field of the complex function .  Notice that this shows a connection between the equations for curl and divergence and the Cauchy-Riemann equations, but they’re each off by a minus sign. The reason for this sign change will become clear when we do contour integrals later.    Applications:        Application  Level curves of   Level curves of      electrostatics  equipotential curves  lines of force    gravitation  equipotential curves  lines of force    fluid flow  equipotential curves  streamlines of flow    heat flow  isotherms  lines of heat flux       Should get into why we care about solutions to Laplace’s equation.    "
 },
 {
   "id": "sec-harmonic-functions-2",
@@ -1627,7 +1627,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "18.4",
   "title": "",
-  "body": "               "
+  "body": "   Define harmonic functions as solutions to Laplace's equation.    Relate harmonic conjugates to orthogonal level curves.    Connect ideal fluid flow and other physical systems to holomorphic complex potentials.    "
 },
 {
   "id": "sec-line-integrals",
@@ -1636,7 +1636,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.1",
   "title": "Line integrals",
-  "body": " Line integrals                   Introduction goes here.     If is a curve, then the line integral of along is: Similar works for 3D.    Let be a parametrization of ; then we can write Similar works for 3D.    Integrating just returns the arc length, so the arc length was really a line integral all along!    If we integrate a density, we get the mass, as usual.    Always independent of parametrization!    For piecewise parametrizations, add the individual integrals.    Consider the Jacobian of our transformation from to : This matrix is not square so it doesn’t have a determinant; however we can calculate a related quantity (called the metric tensor, I think?): This is precisely the fudge factor that shows up when we convert our variables of integration from to .    "
+  "body": " Line integrals     Compute line integrals over a parametrized curve.    Interpret line integrals as accumulated quantities along a path, such as length or mass.    Recognize that line integrals are independent of the specific parametrization of the curve.      Introduction goes here.     If is a curve, then the line integral of along is: Similar works for 3D.    Let be a parametrization of ; then we can write Similar works for 3D.    Integrating just returns the arc length, so the arc length was really a line integral all along!    If we integrate a density, we get the mass, as usual.    Always independent of parametrization!    For piecewise parametrizations, add the individual integrals.    Consider the Jacobian of our transformation from to : This matrix is not square so it doesn’t have a determinant; however we can calculate a related quantity (called the metric tensor, I think?): This is precisely the fudge factor that shows up when we convert our variables of integration from to .    "
 },
 {
   "id": "sec-line-integrals-2",
@@ -1645,7 +1645,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "19.1",
   "title": "",
-  "body": "               "
+  "body": "   Compute line integrals over a parametrized curve.    Interpret line integrals as accumulated quantities along a path, such as length or mass.    Recognize that line integrals are independent of the specific parametrization of the curve.    "
 },
 {
   "id": "sec-work-circulation-and-flux",
@@ -1654,7 +1654,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.2",
   "title": "Work, circulation, and flux",
-  "body": " Work, circulation, and flux                   Introduction goes here.     If is a force field that acts on an object moving along a path parametrized by , , then the line integral of along is This is the work done by on the object as it moves along .    We can rewrite this as That is, we’re really integrating the component of in the tangent direction of the curve.    If , we have:   This is often abbreviated as .    Suppose is a closed curve.   If we compute , where is the outward-pointing unit normal, we call this the flux of through . The notation means we’re computing an integral of a closed curve. We can think of this as the amount of fluid that passes through the curve per unit time.    If we compute , we call this the circulation of along . We can think of this as the tendency of the fluid to flow along .    If is parametrized counterclockwise, we say it positively oriented.       Work and circulation can be extended to 3D. Flux will have to wait.    "
+  "body": " Work, circulation, and flux     Compute work by integrating the tangential component of a vector field along a path.    Express line integrals of vector fields in component form.    Interpret flux as outward flow and circulation as tangential flow along a closed curve.      Introduction goes here.     If is a force field that acts on an object moving along a path parametrized by , , then the line integral of along is This is the work done by on the object as it moves along .    We can rewrite this as That is, we’re really integrating the component of in the tangent direction of the curve.    If , we have:   This is often abbreviated as .    Suppose is a closed curve.   If we compute , where is the outward-pointing unit normal, we call this the flux of through . The notation means we’re computing an integral of a closed curve. We can think of this as the amount of fluid that passes through the curve per unit time.    If we compute , we call this the circulation of along . We can think of this as the tendency of the fluid to flow along .    If is parametrized counterclockwise, we say it positively oriented.       Work and circulation can be extended to 3D. Flux will have to wait.    "
 },
 {
   "id": "sec-work-circulation-and-flux-2",
@@ -1663,7 +1663,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "19.2",
   "title": "",
-  "body": "               "
+  "body": "   Compute work by integrating the tangential component of a vector field along a path.    Express line integrals of vector fields in component form.    Interpret flux as outward flow and circulation as tangential flow along a closed curve.    "
 },
 {
   "id": "sec-contour-integrals",
@@ -1672,7 +1672,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.3",
   "title": "Contour integrals",
-  "body": " Contour integrals                   Introduction goes here.     A contour integral is just a line integral over a curve in the complex plane: We evaluate it by parametrizing :     Great example to go through: if is the unit circle parametrized counterclockwise, and is an integer, then However, as an exception,       ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .       Suppose that is the Pólya vector field of the function . Then:   Thus the contour integral computes BOTH the circulation AND the flux at the same time!    Winding number?    "
+  "body": " Contour integrals     Evaluate contour integrals by parametrizing curves in the complex plane.    Use the inequality to bound contour integrals.    Relate contour integrals to circulation and flux via the associated Pólya vector field.      Introduction goes here.     A contour integral is just a line integral over a curve in the complex plane: We evaluate it by parametrizing :     Great example to go through: if is the unit circle parametrized counterclockwise, and is an integer, then However, as an exception,       ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .       Suppose that is the Pólya vector field of the function . Then:   Thus the contour integral computes BOTH the circulation AND the flux at the same time!    Winding number?    "
 },
 {
   "id": "sec-contour-integrals-2",
@@ -1681,7 +1681,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "19.3",
   "title": "",
-  "body": "               "
+  "body": "   Evaluate contour integrals by parametrizing curves in the complex plane.    Use the inequality to bound contour integrals.    Relate contour integrals to circulation and flux via the associated Pólya vector field.    "
 },
 {
   "id": "sec-contour-integrals-4-3-1-1",
@@ -1699,7 +1699,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.4",
   "title": "Surface integrals",
-  "body": " Surface integrals                   Introduction goes here.     Just as curves can be written as functions of a parameter , surfaces can be written as functions of two parameters, often called and .    A few examples:   Sphere of radius :     Helicoid:     Surface of revolution about -axis:    For all of these, are points of some domain .    Surface area element: Here, .    Surface area:     Similarly to with line integrals, we can extend this to make the surface integral of a function over that surface: Notice this is just the next level up of what we already do with line integrals.    If is density, then we can compute mass, center of mass, moment of inertia, etc.    Again, if , and the Jacobian is then we end up with .    "
+  "body": " Surface integrals     Parametrize surfaces in three dimensions using mappings from a planar region.    Evaluate surface integrals of scalar functions using the surface-area element.    Apply surface integrals to compute surface area and mass.      Introduction goes here.     Just as curves can be written as functions of a parameter , surfaces can be written as functions of two parameters, often called and .    A few examples:   Sphere of radius :     Helicoid:     Surface of revolution about -axis:    For all of these, are points of some domain .    Surface area element: Here, .    Surface area:     Similarly to with line integrals, we can extend this to make the surface integral of a function over that surface: Notice this is just the next level up of what we already do with line integrals.    If is density, then we can compute mass, center of mass, moment of inertia, etc.    Again, if , and the Jacobian is then we end up with .    "
 },
 {
   "id": "sec-surface-integrals-2",
@@ -1708,7 +1708,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "19.4",
   "title": "",
-  "body": "               "
+  "body": "   Parametrize surfaces in three dimensions using mappings from a planar region.    Evaluate surface integrals of scalar functions using the surface-area element.    Apply surface integrals to compute surface area and mass.    "
 },
 {
   "id": "sec-integrals-over-oriented-surfaces",
@@ -1717,7 +1717,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "19.5",
   "title": "Integrals over oriented surfaces",
-  "body": " Integrals over oriented surfaces                   Introduction goes here.     For a surface to be oriented it has to have two sides. We take the tangent plane at each point and notice there are two unit normal vectors and . As we move around the surface, these two normal vary smoothly. The surface is oriented if it is impossible to move around the surface following and end up with it overlapping . Alternatively, we can make sure that a counterclockwise loop can’t be moved around the surface and end up with it going clockwise.    An example of a non-orientable surface is a Möbius strip.    If is an oriented surface, then the surface integral of over is . This can also be written as . That is, this surface integral represents the flux of through the surface.    For closed surfaces, positive orientation means the normals point out of the surface.    Can do examples with electric flux, heat flux, etc.    "
+  "body": " Integrals over oriented surfaces     Understand what it means for a surface to be orientable.    Compute flux integrals by parametrizing the surface.    Interpret flux integrals in physical contexts involving flow across a surface.      Introduction goes here.     For a surface to be oriented it has to have two sides. We take the tangent plane at each point and notice there are two unit normal vectors and . As we move around the surface, these two normal vary smoothly. The surface is oriented if it is impossible to move around the surface following and end up with it overlapping . Alternatively, we can make sure that a counterclockwise loop can’t be moved around the surface and end up with it going clockwise.    An example of a non-orientable surface is a Möbius strip.    If is an oriented surface, then the surface integral of over is . This can also be written as . That is, this surface integral represents the flux of through the surface.    For closed surfaces, positive orientation means the normals point out of the surface.    Can do examples with electric flux, heat flux, etc.    "
 },
 {
   "id": "sec-integrals-over-oriented-surfaces-2",
@@ -1726,7 +1726,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "19.5",
   "title": "",
-  "body": "               "
+  "body": "   Understand what it means for a surface to be orientable.    Compute flux integrals by parametrizing the surface.    Interpret flux integrals in physical contexts involving flow across a surface.    "
 },
 {
   "id": "sec-conservative-vector-fields",
@@ -1735,7 +1735,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.1",
   "title": "Conservative vector fields",
-  "body": " Conservative vector fields                   Introduction goes here.     A vector field is called conservative if its line integral is path independent; that is, the choice of path does not change the value of the line integral. Under what conditions is a vector field conservative?      Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then        If is a gradient field, it must be conservative.    As for the converse, if is conservative and is continuous on an open connected region , then is a gradient field on .    A vector field is conservative if and only if every closed path integral is zero.    The fact that the curl of a gradient is zero gives another test for whether a field is conservative. Suppose is defined on an open simply connected region and has continuous first order partial derivatives.  If throughout , then is conservative.    Make sure to do an example using energy to show the conservation law actually happening!    "
+  "body": " Conservative vector fields     Recognize when a vector field's line integral is path independent.    Relate conservative fields to potential functions via the gradient theorem.    Use curl and closed-curve integrals to test whether a field is conservative.      Introduction goes here.     A vector field is called conservative if its line integral is path independent; that is, the choice of path does not change the value of the line integral. Under what conditions is a vector field conservative?      Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then        If is a gradient field, it must be conservative.    As for the converse, if is conservative and is continuous on an open connected region , then is a gradient field on .    A vector field is conservative if and only if every closed path integral is zero.    The fact that the curl of a gradient is zero gives another test for whether a field is conservative. Suppose is defined on an open simply connected region and has continuous first order partial derivatives.  If throughout , then is conservative.    Make sure to do an example using energy to show the conservation law actually happening!    "
 },
 {
   "id": "sec-conservative-vector-fields-2",
@@ -1744,7 +1744,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "20.1",
   "title": "",
-  "body": "               "
+  "body": "   Recognize when a vector field's line integral is path independent.    Relate conservative fields to potential functions via the gradient theorem.    Use curl and closed-curve integrals to test whether a field is conservative.    "
 },
 {
   "id": "sec-conservative-vector-fields-4-2-1-1",
@@ -1762,7 +1762,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.2",
   "title": "Green’s theorems",
-  "body": " Green's theorems                   Introduction goes here.     Motivation: What’s the relationship between circulation, flux, curl, and divergence?      Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green’s curl theorem:     Green’s divergence theorem:           Area of :     Multiply connected domain:     Can think of divergence as flux per unit infinitesimal area and curl as circulation per unit infinitesimal area.    "
+  "body": " Green's theorems     Apply Green's theorems to compute line integrals and planar areas.    Relate circulation and flux to curl and divergence in the plane.    Interpret multiply connected regions and orientation when applying the theorems.      Introduction goes here.     Motivation: What's the relationship between circulation, flux, curl, and divergence?      Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:           Area of :     Multiply connected domain:     Can think of divergence as flux per unit infinitesimal area and curl as circulation per unit infinitesimal area.    "
 },
 {
   "id": "sec-greens-theorem-2",
@@ -1771,7 +1771,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "20.2",
   "title": "",
-  "body": "               "
+  "body": "   Apply Green's theorems to compute line integrals and planar areas.    Relate circulation and flux to curl and divergence in the plane.    Interpret multiply connected regions and orientation when applying the theorems.    "
 },
 {
   "id": "sec-greens-theorem-4-2-1-1",
@@ -1780,7 +1780,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "9",
   "title": "Green’s theorems.",
-  "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green’s curl theorem:     Green’s divergence theorem:       "
+  "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:       "
 },
 {
   "id": "sec-fundamental-theorems-in-higher-dimensions",
@@ -1789,7 +1789,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.3",
   "title": "Fundamental theorems in higher dimensions",
-  "body": " Fundamental theorems in higher dimensions                   Introduction goes here.     Analogs of Green's theorems in higher dimensions     Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:        Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:       Relate to Maxwell's equations in both integral and derivative form    "
+  "body": " Fundamental theorems in higher dimensions     Connect Green's theorem with its higher-dimensional analogs.    Interpret divergence and curl through Gauss's and Stokes' theorems.    Relate these theorems to the structure of Maxwell's equations.      Introduction goes here.     Analogs of Green's theorems in higher dimensions     Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:        Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:       Relate to Maxwell's equations in both integral and derivative form    "
 },
 {
   "id": "sec-fundamental-theorems-in-higher-dimensions-2",
@@ -1798,7 +1798,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "20.3",
   "title": "",
-  "body": "               "
+  "body": "   Connect Green's theorem with its higher-dimensional analogs.    Interpret divergence and curl through Gauss's and Stokes' theorems.    Relate these theorems to the structure of Maxwell's equations.    "
 },
 {
   "id": "sec-fundamental-theorems-in-higher-dimensions-4-2-1",
@@ -1825,7 +1825,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.4",
   "title": "Integrals of holomorphic functions",
-  "body": " Integrals of holomorphic functions                   Introduction goes here.     LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier. The proofs essentially boil down to using the things we already used in the other sections, e.g. path independence if and only if closed paths give zero integral .     Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrational and incompressible. Hence .        Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  Much harder to prove! Does it based on triangular contours, then polygonal, then any.    Multiply connected domains lead to deformation of contours!       Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then        Can also be shown to work for non-simply-connected contours.    Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts. If is an antiderivative of a continuous function , then Furthermore path independence of continuous implies the existence of an antiderivative.    If is holomorphic in a simply connected domain , then it has an antiderivative.      Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,          Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,        These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.    "
+  "body": " Integrals of holomorphic functions     Explain why contour integrals of holomorphic functions vanish on closed curves.    Use Cauchy's integral formulas to evaluate values and derivatives of holomorphic functions.    Recognize when antiderivatives exist and apply path independence.      Introduction goes here.     LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier. The proofs essentially boil down to using the things we already used in the other sections, e.g. path independence if and only if closed paths give zero integral .     Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrational and incompressible. Hence .        Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  Much harder to prove! Does it based on triangular contours, then polygonal, then any.    Multiply connected domains lead to deformation of contours!       Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then        Can also be shown to work for non-simply-connected contours.    Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts. If is an antiderivative of a continuous function , then Furthermore path independence of continuous implies the existence of an antiderivative.    If is holomorphic in a simply connected domain , then it has an antiderivative.      Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,          Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,        These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.    "
 },
 {
   "id": "sec-integrals-of-holomorphic-functions-2",
@@ -1834,7 +1834,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "20.4",
   "title": "",
-  "body": "               "
+  "body": "   Explain why contour integrals of holomorphic functions vanish on closed curves.    Use Cauchy's integral formulas to evaluate values and derivatives of holomorphic functions.    Recognize when antiderivatives exist and apply path independence.    "
 },
 {
   "id": "sec-integrals-of-holomorphic-functions-4-2-1",
@@ -1888,7 +1888,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.5",
   "title": "Singularities and Laurent series",
-  "body": " Singularities and Laurent series                   Introduction goes here.     A function is analytic on if its power series converges to the function. Cauchy's integral theorems imply that a function is holmorphic if and only if it is analytic and thus we can use the terms interchangeably.    If a function is not holomorphic at , we say has a singularity at .    If has a singularity at , we can represent it with a Laurent series, in which we allow negative powers of : The part with the negative powers is called the principal part and the part with the nonnegative powers is called the analytic part.    If is holomorphic within the annular domain defined by , then has a valid Laurent series representation, with the coefficeints given by , where is a simple closed curve that lies entirely within and has in its interior.    Annular domains don't have to be ring-shaped... they could be circles, complements of circles, or the entire complex plane.    Manipulations of power series by writing things in terms of for some given     Types of singularities:   If the principal part has no terms, the singularity is a removable singularity. In this case we can always redefine a single point and make it holomorphic.    If the principal part has terms, the singularity is a pole of order . A pole of order is a simple pole.    If the principal part has infinitely many terms, the singularity is an essential singularity.       Zeros and poles:   A function that is holomorphic in some disk has a zero of order if and only if can be written where is holomorphic at and .    A function that is holomorphic in a punctured disk has a pole of order if and only if can be written where is holomorphic at and .    If and are analytic at , and has a zero of order at and , then has a pole of order at .    A function is meromorphic if it is analytic except at some set of isolated poles.       Would this be the right place to talk about limits at infinity?    "
+  "body": " Singularities and Laurent series     Identify isolated singularities and classify them using Laurent expansions.    Represent functions on annular domains with Laurent series and compute coefficients.    Relate zeros, poles, and removable or essential singularities to local factorizations.      Introduction goes here.     A function is analytic on if its power series converges to the function. Cauchy's integral theorems imply that a function is holmorphic if and only if it is analytic and thus we can use the terms interchangeably.    If a function is not holomorphic at , we say has a singularity at .    If has a singularity at , we can represent it with a Laurent series, in which we allow negative powers of : The part with the negative powers is called the principal part and the part with the nonnegative powers is called the analytic part.    If is holomorphic within the annular domain defined by , then has a valid Laurent series representation, with the coefficeints given by , where is a simple closed curve that lies entirely within and has in its interior.    Annular domains don't have to be ring-shaped... they could be circles, complements of circles, or the entire complex plane.    Manipulations of power series by writing things in terms of for some given     Types of singularities:   If the principal part has no terms, the singularity is a removable singularity. In this case we can always redefine a single point and make it holomorphic.    If the principal part has terms, the singularity is a pole of order . A pole of order is a simple pole.    If the principal part has infinitely many terms, the singularity is an essential singularity.       Zeros and poles:   A function that is holomorphic in some disk has a zero of order if and only if can be written where is holomorphic at and .    A function that is holomorphic in a punctured disk has a pole of order if and only if can be written where is holomorphic at and .    If and are analytic at , and has a zero of order at and , then has a pole of order at .    A function is meromorphic if it is analytic except at some set of isolated poles.       Would this be the right place to talk about limits at infinity?    "
 },
 {
   "id": "sec-singularities-and-laurent-series-2",
@@ -1897,7 +1897,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "20.5",
   "title": "",
-  "body": "               "
+  "body": "   Identify isolated singularities and classify them using Laurent expansions.    Represent functions on annular domains with Laurent series and compute coefficients.    Relate zeros, poles, and removable or essential singularities to local factorizations.    "
 },
 {
   "id": "sec-the-residue-theorem",
@@ -1906,7 +1906,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.6",
   "title": "The residue theorem",
-  "body": " The residue theorem                   Introduction goes here.     The coefficient of in the Laurent series of is called the residue of at , and is denoted     Simple pole:     Pole of order :     If and has a simple pole at , then      Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then       Some examples of real integrals evaluated using residues     Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .        Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   This can be used to prove the Fundamental theorem of algebra! THAT would be a great cherry on top!    "
+  "body": " The residue theorem     Compute residues at isolated singularities using Laurent series or targeted formulas.    Apply the Residue Theorem to evaluate complex and real integrals.    Use the Argument Principle and Rouché's theorem to count zeros of functions.      Introduction goes here.     The coefficient of in the Laurent series of is called the residue of at , and is denoted     Simple pole:     Pole of order :     If and has a simple pole at , then      Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then       Some examples of real integrals evaluated using residues     Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .        Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   This can be used to prove the Fundamental theorem of algebra! THAT would be a great cherry on top!    "
 },
 {
   "id": "sec-the-residue-theorem-2",
@@ -1915,7 +1915,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "20.6",
   "title": "",
-  "body": "               "
+  "body": "   Compute residues at isolated singularities using Laurent series or targeted formulas.    Apply the Residue Theorem to evaluate complex and real integrals.    Use the Argument Principle and Rouché's theorem to count zeros of functions.    "
 },
 {
   "id": "sec-the-residue-theorem-4-5-1",
@@ -1960,7 +1960,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.1",
   "title": "The need for rigor",
-  "body": " The need for rigor                   Introduction goes here.     Recall the basic square wave with amplitude and period : Every term in this series is a continuous function — it’s just a sinusoid — but the resulting function is discontinuous!    The Gibbs phenomenon is the overshooting and undershooting that occurs around the points of discontinuity for any finite sum. It never goes away even with more and more times, because the series is not uniformly convergent.    From Wikipedia: “It is impossible for a discontinuous function to have absolutely convergent Fourier coefficients, since the function would thus be the uniform limit of continuous functions and therefore be continuous, a contradiction.”    If you integrate and then differentiate the infinite series, you get points where the derivative is undefined.    Derivative of the square wave term by term goes nuts!!    Fourier’s series caused a lot of mathematicians to slam on the brakes and try to figure out what was really going on. The result was real analysis.    "
+  "body": " The need for rigor     See how infinite sums of continuous functions can produce discontinuous behavior.    Recognize that informal rules may fail when dealing with infinite processes.    Motivate real analysis as a rigorous framework that explains and controls these phenomena.      Introduction goes here.     Recall the basic square wave with amplitude and period : Every term in this series is a continuous function — it’s just a sinusoid — but the resulting function is discontinuous!    The Gibbs phenomenon is the overshooting and undershooting that occurs around the points of discontinuity for any finite sum. It never goes away even with more and more times, because the series is not uniformly convergent.    From Wikipedia: “It is impossible for a discontinuous function to have absolutely convergent Fourier coefficients, since the function would thus be the uniform limit of continuous functions and therefore be continuous, a contradiction.”    If you integrate and then differentiate the infinite series, you get points where the derivative is undefined.    Derivative of the square wave term by term goes nuts!!    Fourier’s series caused a lot of mathematicians to slam on the brakes and try to figure out what was really going on. The result was real analysis.    "
 },
 {
   "id": "sec-the-need-for-rigor-2",
@@ -1969,7 +1969,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "21.1",
   "title": "",
-  "body": "               "
+  "body": "   See how infinite sums of continuous functions can produce discontinuous behavior.    Recognize that informal rules may fail when dealing with infinite processes.    Motivate real analysis as a rigorous framework that explains and controls these phenomena.    "
 },
 {
   "id": "sec-ordered-fields",
@@ -1978,7 +1978,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.2",
   "title": "Ordered fields",
-  "body": " Ordered fields                   Introduction goes here.     Motivation: We need to start somewhere. Discuss the role of axioms in building a logical system. Alternatively: what the heck are numbers?    Field axioms:   Commutativity of addition and multiplication    Distributivity of multiplication over addition    Associativity of addition and multiplication    Existence of additive and multiplicative identities    Existence of additive and multiplicative inverses       Order axiom:  There is a nonempty subset , called the positive numbers, such that:   If , then and .    If and , then or , but not both.   A field that satisfies this axiom is called an ordered field.    Real numbers are ordered. Complex numbers are not.    "
+  "body": " Ordered fields     Explain how axioms provide a precise foundation for number systems.    Use the field axioms to justify basic arithmetic properties.    Identify when a field can be ordered and what the order axioms require.      Introduction goes here.     Motivation: We need to start somewhere. Discuss the role of axioms in building a logical system. Alternatively: what the heck are numbers?    Field axioms:   Commutativity of addition and multiplication    Distributivity of multiplication over addition    Associativity of addition and multiplication    Existence of additive and multiplicative identities    Existence of additive and multiplicative inverses       Order axiom:  There is a nonempty subset , called the positive numbers, such that:   If , then and .    If and , then or , but not both.   A field that satisfies this axiom is called an ordered field.    Real numbers are ordered. Complex numbers are not.    "
 },
 {
   "id": "sec-ordered-fields-2",
@@ -1987,7 +1987,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "21.2",
   "title": "",
-  "body": "               "
+  "body": "   Explain how axioms provide a precise foundation for number systems.    Use the field axioms to justify basic arithmetic properties.    Identify when a field can be ordered and what the order axioms require.    "
 },
 {
   "id": "sec-the-completeness-property",
@@ -1996,7 +1996,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.3",
   "title": "The completeness property",
-  "body": " The completeness property                   Introduction goes here.     A set is bounded above if there is some such that for all .  Simiilarly, is bounded below if there is some such that for all .    The supremum of a set , denoted , is the least upper bound of that set. That is, is an upper bound of , and if is any upper bound of , then .  The infimum of , denoted , is the greatest lower bound.    A set has the supremum property if any subset which is bounded above has a least upper bound in . Such a set is called complete.    The real numbers are complete. The rationals are not. (Neither are the hyperreals.)    We can say that is the completion of , we we have added just enough numbers to make it complete.    If , then for any , there is somet such that .    An ordered field is Archimedean if for any with , there exists some such that .    In essence this says that there is no pair such that is infinitesimal with respect to , or is infinitesimal with respect to .    The real numbers are Archimedean. The hyperreals are not.    Can be used to show that is dense in , that is, for any , there exists such that .    "
+  "body": " The completeness property     Compute the supremum and infimum of subsets of real numbers.    Understand completeness as the property that every bounded set has a least upper bound.    Use completeness to establish the Archimedean property and density results.      Introduction goes here.     A set is bounded above if there is some such that for all .  Simiilarly, is bounded below if there is some such that for all .    The supremum of a set , denoted , is the least upper bound of that set. That is, is an upper bound of , and if is any upper bound of , then .  The infimum of , denoted , is the greatest lower bound.    A set has the supremum property if any subset which is bounded above has a least upper bound in . Such a set is called complete.    The real numbers are complete. The rationals are not. (Neither are the hyperreals.)    We can say that is the completion of , we we have added just enough numbers to make it complete.    If , then for any , there is somet such that .    An ordered field is Archimedean if for any with , there exists some such that .    In essence this says that there is no pair such that is infinitesimal with respect to , or is infinitesimal with respect to .    The real numbers are Archimedean. The hyperreals are not.    Can be used to show that is dense in , that is, for any , there exists such that .    "
 },
 {
   "id": "sec-the-completeness-property-2",
@@ -2005,7 +2005,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "21.3",
   "title": "",
-  "body": "               "
+  "body": "   Compute the supremum and infimum of subsets of real numbers.    Understand completeness as the property that every bounded set has a least upper bound.    Use completeness to establish the Archimedean property and density results.    "
 },
 {
   "id": "sec-topology-of-the-real-numbers",
@@ -2014,7 +2014,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.4",
   "title": "Topology of the real numbers",
-  "body": " Topology of the real numbers                   Introduction goes here.     A metric on a set is a function that satisfies the following properties:   Positive definite: for all , and if and only if .    Symmetric: for all .    Triangle inequality: for all .       The absolute value can be used as a distance function: .    Other corollaries of the triangle inequality:             Extended:        A set is open if, for every , there exists such that . We call the -neighborhood of and denote it , so .    Open sets are closed under arbitrary units and finite intersections.    Every open set is a countable union of disjoint open intervals.    A set is closed if its complement is open.    De Morgan’s laws for open and closed sets    "
+  "body": " Topology of the real numbers     Understand metrics and how they formalize the idea of distance on a set.    Use key properties of the absolute value function, especially the triangle inequality.    Describe and prove properties of open and closed sets.      Introduction goes here.     A metric on a set is a function that satisfies the following properties:   Positive definite: for all , and if and only if .    Symmetric: for all .    Triangle inequality: for all .       The absolute value can be used as a distance function: .    Other corollaries of the triangle inequality:             Extended:        A set is open if, for every , there exists such that . We call the -neighborhood of and denote it , so .    Open sets are closed under arbitrary units and finite intersections.    Every open set is a countable union of disjoint open intervals.    A set is closed if its complement is open.    De Morgan’s laws for open and closed sets    "
 },
 {
   "id": "sec-topology-of-the-real-numbers-2",
@@ -2023,7 +2023,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "21.4",
   "title": "",
-  "body": "               "
+  "body": "   Understand metrics and how they formalize the idea of distance on a set.    Use key properties of the absolute value function, especially the triangle inequality.    Describe and prove properties of open and closed sets.    "
 },
 {
   "id": "sec-convergence-of-sequences",
@@ -2032,7 +2032,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.1",
   "title": "Convergence of sequences",
-  "body": " Convergence of sequences                   Introduction goes here.     A sequence of real numbers is a function . We write instead of .    A sequence is bounded if there exists and such that for all .    A sequence converges to if for all there exists some such that for all . We say is the limit of , and we write .    If a sequence does not converge, it diverges.    We say if for all there exists some such that for all . Similarly, if for all there exists some such that for all .    A point is a limit point of a set if there is a sequence of points from such that . (This seems off... not that general. Look up again.)    A set is closed if and only if it contains all its limit points.    "
+  "body": " Convergence of sequences     Define sequences and determine when they are bounded or convergent.    Apply the - definition to prove sequence limits.    Relate closed sets to limits of sequences and characterize limit points.      Introduction goes here.     A sequence of real numbers is a function . We write instead of .    A sequence is bounded if there exists and such that for all .    A sequence converges to if for all there exists some such that for all . We say is the limit of , and we write .    If a sequence does not converge, it diverges.    We say if for all there exists some such that for all . Similarly, if for all there exists some such that for all .    A point is a limit point of a set if there is a sequence of points from such that . (This seems off... not that general. Look up again.)    A set is closed if and only if it contains all its limit points.    "
 },
 {
   "id": "sec-convergence-of-sequences-2",
@@ -2041,7 +2041,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "22.1",
   "title": "",
-  "body": "               "
+  "body": "   Define sequences and determine when they are bounded or convergent.    Apply the - definition to prove sequence limits.    Relate closed sets to limits of sequences and characterize limit points.    "
 },
 {
   "id": "sec-proving-limit-laws",
@@ -2050,7 +2050,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.2",
   "title": "Proving limit laws",
-  "body": " Proving limit laws                   Introduction goes here.     Limits are unique.    Convergent sequences must be bounded.    Sequence limits respect addition, subtraction, scalar multiplication, multiplication, nonzero division, and inequalities.    Sequence squeeze theorem    "
+  "body": " Proving limit laws     Show that convergent sequences have unique limits and must be bounded.    Prove algebraic and order limit laws using the - definition.    Apply the Squeeze Theorem to establish limits of sequences.      Introduction goes here.     Limits are unique.    Convergent sequences must be bounded.    Sequence limits respect addition, subtraction, scalar multiplication, multiplication, nonzero division, and inequalities.    Sequence squeeze theorem    "
 },
 {
   "id": "sec-proving-limit-laws-2",
@@ -2059,7 +2059,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "22.2",
   "title": "",
-  "body": "               "
+  "body": "   Show that convergent sequences have unique limits and must be bounded.    Prove algebraic and order limit laws using the - definition.    Apply the Squeeze Theorem to establish limits of sequences.    "
 },
 {
   "id": "sec-limits-of-functions",
@@ -2068,7 +2068,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.3",
   "title": "Limits of functions",
-  "body": " Limits of functions                   Introduction goes here.     Let and let be a limit point of . Then we say that if for all there exists such that for every for which , we have     Sequential limits: if and only if, for every sequence from for which each and , we have .    Relate to continuity using - definition    "
+  "body": " Limits of functions     Define function limits using the - definition.    Use sequences to characterize limits of functions.    Connect the - limit definition to continuity at a point.      Introduction goes here.     Let and let be a limit point of . Then we say that if for all there exists such that for every for which , we have     Sequential limits: if and only if, for every sequence from for which each and , we have .    Relate to continuity using - definition    "
 },
 {
   "id": "sec-limits-of-functions-2",
@@ -2077,7 +2077,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "22.3",
   "title": "",
-  "body": "               "
+  "body": "   Define function limits using the - definition.    Use sequences to characterize limits of functions.    Connect the - limit definition to continuity at a point.    "
 },
 {
   "id": "sec-cauchy-sequences",
@@ -2086,7 +2086,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.4",
   "title": "Cauchy sequences",
-  "body": " Cauchy sequences                   Introduction goes here.     A sequence is a Cauchy sequence if for all there exists some such that for all .    If a sequence is Cauchy, then it is bounded.    If a sequence converges, then it is Cauchy.    If a sequence in a complete space is Cauchy, then it converges. This property is called Cauchy completeness.     trick    “Ratio test”: If is positive and , then .    Monotone convergence theorem: A monotone sequence of real numbers converges if and only if it is bounded. Furthermore, the limit is the supremum or infimum. (Could apply to definition of .)    "
+  "body": " Cauchy sequences     Characterize sequences using the Cauchy condition and relate it to convergence.    Use completeness of to conclude that Cauchy sequences converge.    Prove the Monotone Convergence Theorem.      Introduction goes here.     A sequence is a Cauchy sequence if for all there exists some such that for all .    If a sequence is Cauchy, then it is bounded.    If a sequence converges, then it is Cauchy.    If a sequence in a complete space is Cauchy, then it converges. This property is called Cauchy completeness.     trick    “Ratio test”: If is positive and , then .    Monotone convergence theorem: A monotone sequence of real numbers converges if and only if it is bounded. Furthermore, the limit is the supremum or infimum. (Could apply to definition of .)    "
 },
 {
   "id": "sec-cauchy-sequences-2",
@@ -2095,7 +2095,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "22.4",
   "title": "",
-  "body": "               "
+  "body": "   Characterize sequences using the Cauchy condition and relate it to convergence.    Use completeness of to conclude that Cauchy sequences converge.    Prove the Monotone Convergence Theorem.    "
 },
 {
   "id": "sec-constructing-the-real-numbers",
@@ -2104,7 +2104,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.5",
   "title": "Constructing the real numbers",
-  "body": " Constructing the real numbers                   Introduction goes here.     Axiomatic construction is nice, but it would be even nicer if we could exhibit an object that exhibits all those axioms, what would be called a model of the real numbers.    Could construct it as the equivalence classes of Cauchy sequences, where two sequences are equivalent if and only if their difference tends to zero. This generalizes to the completion of any metric space. Operations are defined termwise. This seems to be the easiest, and infinite decimals work well here.    Could construct it using Dedekind cuts, which are partitions of such that neither nor is empty, for all and , and has no greatest element. Operations are defined elementwise, though multiplication is difficult.    Could construct it using nested intervals.    "
+  "body": " Constructing the real numbers     Explain why explicit models are needed to realize the real-number axioms.    Construct using equivalence classes of Cauchy sequences.    Compare alternative constructions such as Dedekind cuts and nested intervals.      Introduction goes here.     Axiomatic construction is nice, but it would be even nicer if we could exhibit an object that exhibits all those axioms, what would be called a model of the real numbers.    Could construct it as the equivalence classes of Cauchy sequences, where two sequences are equivalent if and only if their difference tends to zero. This generalizes to the completion of any metric space. Operations are defined termwise. This seems to be the easiest, and infinite decimals work well here.    Could construct it using Dedekind cuts, which are partitions of such that neither nor is empty, for all and , and has no greatest element. Operations are defined elementwise, though multiplication is difficult.    Could construct it using nested intervals.    "
 },
 {
   "id": "sec-constructing-the-real-numbers-2",
@@ -2113,7 +2113,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "22.5",
   "title": "",
-  "body": "               "
+  "body": "   Explain why explicit models are needed to realize the real-number axioms.    Construct using equivalence classes of Cauchy sequences.    Compare alternative constructions such as Dedekind cuts and nested intervals.    "
 },
 {
   "id": "sec-differentiability-classes",
@@ -2122,7 +2122,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.1",
   "title": "Differentiability classes",
-  "body": " Differentiability classes                   Introduction goes here.     Every differentiable function is continuous.    A function is continuously differentiable if it is differentiable and its derivative is continuous.    A function is of differentiability class if the derivatives exist and are continuous.    : continuous functions     : continuously differentiable functions     : smooth functions     : analytic functions. (May not put this here in the end.)  An example of a function that is smooth but not analytic is the bump function        Often interesting example:     Remind about Intermediate Value Theorem, which can now be proven using known tools    Darboux’s theorem: Suppose is differentiable. If is between and , there exists such that .    "
+  "body": " Differentiability classes     Prove the relationship between continuity and differentiability.    Identify examples that separate and functions.    Use Darboux's theorem and related results to analyze derivative behavior.      Introduction goes here.     Every differentiable function is continuous.    A function is continuously differentiable if it is differentiable and its derivative is continuous.    A function is of differentiability class if the derivatives exist and are continuous.    : continuous functions     : continuously differentiable functions     : smooth functions     : analytic functions. (May not put this here in the end.)  An example of a function that is smooth but not analytic is the bump function        Often interesting example:     Remind about Intermediate Value Theorem, which can now be proven using known tools    Darboux’s theorem: Suppose is differentiable. If is between and , there exists such that .    "
 },
 {
   "id": "sec-differentiability-classes-2",
@@ -2131,7 +2131,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "23.1",
   "title": "",
-  "body": "               "
+  "body": "   Prove the relationship between continuity and differentiability.    Identify examples that separate and functions.    Use Darboux's theorem and related results to analyze derivative behavior.    "
 },
 {
   "id": "sec-the-mean-value-theorem",
@@ -2140,7 +2140,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.2",
   "title": "More on the Mean Value Theorem",
-  "body": " More on the Mean Value Theorem                   Introduction goes here.     Rolle's theorem Let be continuous on and differentiable on . If , then there exists where . (This can be used to prove the MVT.)   If a function has zero derivative on an interval, it must be constant.    If two functions have the same derivative on an interval, they must differ by a constant.    A function is monotone increasing if and only if its derivative is nonnegative on an interval.       Cauchy's mean value theorem: If and are continuous on and differentiable on , then there is a number such that Another way to visualize it is to have a parametric curve for and point out that there exists such that (assuming that the denominators aren't zero).    Cauchy's MVT can be used to prove L'Hôpital's rule.    "
+  "body": " More on the Mean Value Theorem     Use Rolle's theorem to prove the Mean Value Theorem.    Use Cauchy's Mean Value Theorem to compare rates of change of two functions.    Derive and justify L'Hôpital's rule.      Introduction goes here.     Rolle's theorem Let be continuous on and differentiable on . If , then there exists where . (This can be used to prove the MVT.)   If a function has zero derivative on an interval, it must be constant.    If two functions have the same derivative on an interval, they must differ by a constant.    A function is monotone increasing if and only if its derivative is nonnegative on an interval.       Cauchy's mean value theorem: If and are continuous on and differentiable on , then there is a number such that Another way to visualize it is to have a parametric curve for and point out that there exists such that (assuming that the denominators aren't zero).    Cauchy's MVT can be used to prove L'Hôpital's rule.    "
 },
 {
   "id": "sec-the-mean-value-theorem-2",
@@ -2149,7 +2149,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "23.2",
   "title": "",
-  "body": "               "
+  "body": "   Use Rolle's theorem to prove the Mean Value Theorem.    Use Cauchy's Mean Value Theorem to compare rates of change of two functions.    Derive and justify L'Hôpital's rule.    "
 },
 {
   "id": "sec-taylors-theorem",
@@ -2158,7 +2158,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.3",
   "title": "Taylor’s theorem",
-  "body": " Taylor's theorem                   Introduction goes here.     Taylor’s theorem: For any other there exists some between and (which depends on and and ) such that That is, , for some between and .    Integral form of remainder function:     Lagrange error bound: If for , then for .    "
+  "body": " Taylor's theorem     Use Taylor's theorem with remainder to approximate functions near a point.    Interpret remainder terms in both Lagrange and integral forms.    Estimate approximation error using Lagrange's bound.      Introduction goes here.     Taylor’s theorem: For any other there exists some between and (which depends on and and ) such that That is, , for some between and .    Integral form of remainder function:     Lagrange error bound: If for , then for .    "
 },
 {
   "id": "sec-taylors-theorem-2",
@@ -2167,7 +2167,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "23.3",
   "title": "",
-  "body": "               "
+  "body": "   Use Taylor's theorem with remainder to approximate functions near a point.    Interpret remainder terms in both Lagrange and integral forms.    Estimate approximation error using Lagrange's bound.    "
 },
 {
   "id": "sec-inverse-and-implicit-functions",
@@ -2176,7 +2176,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.4",
   "title": "The inverse and implicit function theorems",
-  "body": " The inverse and implicit function theorems                   Introduction goes here.     The preimage of a set under a function is the set     A function is continuous if the preimage of every open set is open.    Inverse function theorem: A continuous function of a single variable is invertible on its image if and only if it is strictly monotonic. If is continuously differentiable on an interval and for each , then is continuously differentiable on and     In multiple dimensions, the Jacobian needs to be nonzero, and it guarantees the existence of a unique solution.    If we drop the assumption that is continuous, may not be invertible. Great example is .    If is invertible, it maps open sets to open sets (it’s an open map).    Implicit function theorem: If is a function that is continuously differentiable in a neighborhood of , and , then there exists a unique differentiable function such that and in a neighborhood of . We have:     "
+  "body": " The inverse and implicit function theorems     Describe continuity in terms of preimages of open sets.    Prove when a function has a differentiable inverse using the inverse function theorem.    Establish local solvability of equations using the implicit function theorem.      Introduction goes here.     The preimage of a set under a function is the set     A function is continuous if the preimage of every open set is open.    Inverse function theorem: A continuous function of a single variable is invertible on its image if and only if it is strictly monotonic. If is continuously differentiable on an interval and for each , then is continuously differentiable on and     In multiple dimensions, the Jacobian needs to be nonzero, and it guarantees the existence of a unique solution.    If we drop the assumption that is continuous, may not be invertible. Great example is .    If is invertible, it maps open sets to open sets (it’s an open map).    Implicit function theorem: If is a function that is continuously differentiable in a neighborhood of , and , then there exists a unique differentiable function such that and in a neighborhood of . We have:     "
 },
 {
   "id": "sec-inverse-and-implicit-functions-2",
@@ -2185,7 +2185,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "23.4",
   "title": "",
-  "body": "               "
+  "body": "   Describe continuity in terms of preimages of open sets.    Prove when a function has a differentiable inverse using the inverse function theorem.    Establish local solvability of equations using the implicit function theorem.    "
 },
 {
   "id": "sec-compactness",
@@ -2194,7 +2194,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.1",
   "title": "Compactness",
-  "body": " Compactness                   Introduction goes here.     An open cover of is a collection such that     If has a finite subset (with ) which is still a cover of , then is called a finite subcover of .    A set is compact if every open cover of admits a finite subcover of .Great note I saw online: “A has B” suggests that B is part of the nature of A. For example, every Cauchy sequence (in ) has a limit. “A admits B” suggests that it is possible to find B, but this existence is not inherent to A, and we may not be able to find B explicitly.    Heine-Borel theorem: A set is compact if and only if is closed and bounded.    A continuous function on a compact set is bounded.    Extreme value theorem: A continuous function on a compact set attains its supremum and infimum.    A sequence is monotone increasing if for all . Similarly, is monotone decreasing if for all .    Monotone convergence theorem: A monotone sequence converges if and only if it is bounded. Moreover, if is increasing, then , and if is decreasing, then     Bounded sets contain bounded sequences.    If , then is called a subsequence of and is denoted .    A sequence converges to if and only if every subsequence converges to .    If has two subsequences that converge to different limits, then diverges.    If is monotone and has a subsequence converging to , then also converges to .    Bolzano-Weierstrass theorem: Every bounded sequence has a convergent subsequence.    A space is sequentially compact if every sequence has a convergent subsequence.    "
+  "body": " Compactness     Work with open covers and finite subcovers to understand compactness.    Use compactness to guarantee boundedness and attainment of extrema.    Connect compactness, subsequences, and convergence through the Heine-Borel and Bolzano-Weierstrass theorems.      Introduction goes here.     An open cover of is a collection such that     If has a finite subset (with ) which is still a cover of , then is called a finite subcover of .    A set is compact if every open cover of admits a finite subcover of .Great note I saw online: “A has B” suggests that B is part of the nature of A. For example, every Cauchy sequence (in ) has a limit. “A admits B” suggests that it is possible to find B, but this existence is not inherent to A, and we may not be able to find B explicitly.    Heine-Borel theorem: A set is compact if and only if is closed and bounded.    A continuous function on a compact set is bounded.    Extreme value theorem: A continuous function on a compact set attains its supremum and infimum.    A sequence is monotone increasing if for all . Similarly, is monotone decreasing if for all .    Monotone convergence theorem: A monotone sequence converges if and only if it is bounded. Moreover, if is increasing, then , and if is decreasing, then     Bounded sets contain bounded sequences.    If , then is called a subsequence of and is denoted .    A sequence converges to if and only if every subsequence converges to .    If has two subsequences that converge to different limits, then diverges.    If is monotone and has a subsequence converging to , then also converges to .    Bolzano-Weierstrass theorem: Every bounded sequence has a convergent subsequence.    A space is sequentially compact if every sequence has a convergent subsequence.    "
 },
 {
   "id": "sec-compactness-2",
@@ -2203,7 +2203,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "24.1",
   "title": "",
-  "body": "               "
+  "body": "   Work with open covers and finite subcovers to understand compactness.    Use compactness to guarantee boundedness and attainment of extrema.    Connect compactness, subsequences, and convergence through the Heine-Borel and Bolzano-Weierstrass theorems.    "
 },
 {
   "id": "sec-uniform-continuity",
@@ -2212,7 +2212,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.2",
   "title": "Uniform continuity",
-  "body": " Uniform continuity                   Introduction goes here.     We say is uniformly continuous if for all there exists some such that for all , implies . Notable, the same works everywhere.    A continuous function on a compact set is uniformly continuous.    A uniformly continuous function has a uniformly continuous extension to the closure of that set. This helps eventually show that exists, by extending from a function on to a function on .    A function is Lipschitz continuous if there is a positive real constant such that, for all real and , or put another way The value of is called the Lipschitz constant or the modulus of (uniform) continuity. Lipschitz functions are “almost differentiable.”    Continuously differentiable Lipschitz continuous uniformly continuous continuous.    "
+  "body": " Uniform continuity     Recognize uniform continuity as a global version of the - condition.    Extend uniformly continuous functions to closures of their domains.    Compare continuity classes using Lipschitz conditions and related implications.      Introduction goes here.     We say is uniformly continuous if for all there exists some such that for all , implies . Notable, the same works everywhere.    A continuous function on a compact set is uniformly continuous.    A uniformly continuous function has a uniformly continuous extension to the closure of that set. This helps eventually show that exists, by extending from a function on to a function on .    A function is Lipschitz continuous if there is a positive real constant such that, for all real and , or put another way The value of is called the Lipschitz constant or the modulus of (uniform) continuity. Lipschitz functions are “almost differentiable.”    Continuously differentiable Lipschitz continuous uniformly continuous continuous.    "
 },
 {
   "id": "sec-uniform-continuity-2",
@@ -2221,7 +2221,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "24.2",
   "title": "",
-  "body": "               "
+  "body": "   Recognize uniform continuity as a global version of the - condition.    Extend uniformly continuous functions to closures of their domains.    Compare continuity classes using Lipschitz conditions and related implications.    "
 },
 {
   "id": "sec-riemann-and-darboux-integrals",
@@ -2230,7 +2230,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.3",
   "title": "Riemann and Darboux integrals",
-  "body": " Riemann and Darboux integrals                   Introduction goes here.     A partition of is a finite set such that , , and .    Given a partition of , for each subinterval , we denote:   Now we can define the upper sum as and the lower sum as     A partition of is a refinement of if .  If so, then     If is a partition of , then .    If and are any partitions of , then     Let be a bounded function and let be the collection of all partition of . The upper integral of is defined to be and the lower integral is If , we say that is Darboux integrable. This is equivalent to being Riemann integrable.    If and , then     "
+  "body": " Riemann and Darboux integrals     Build upper and lower sums using partitions and refinements.    Compare upper and lower integrals to determine integrability.    Relate Darboux integrability to the classical Riemann integral.      Introduction goes here.     A partition of is a finite set such that , , and .    Given a partition of , for each subinterval , we denote:   Now we can define the upper sum as and the lower sum as     A partition of is a refinement of if .  If so, then     If is a partition of , then .    If and are any partitions of , then     Let be a bounded function and let be the collection of all partition of . The upper integral of is defined to be and the lower integral is If , we say that is Darboux integrable. This is equivalent to being Riemann integrable.    If and , then     "
 },
 {
   "id": "sec-riemann-and-darboux-integrals-2",
@@ -2239,7 +2239,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "24.3",
   "title": "",
-  "body": "               "
+  "body": "   Build upper and lower sums using partitions and refinements.    Compare upper and lower integrals to determine integrability.    Relate Darboux integrability to the classical Riemann integral.    "
 },
 {
   "id": "sec-conditions-for-integrability",
@@ -2248,7 +2248,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.4",
   "title": "Integrability conditions and properties",
-  "body": " Integrability conditions and properties                   Introduction goes here.     Let be bounded. Then is integrable if and only if for all there exists a partition of such that     If is integrable, then there exists a sequence of partitions of for which     Continuous functions are integrable. The proof relies on uniform continuity, which is why compactness and uniform continuity were covered in this chapter.    Linearity properties    Inequality properties         "
+  "body": " Integrability conditions and properties     Use upper and lower sums to test whether a bounded function is integrable.    Apply linearity and basic inequalities to analyze integrals.    Explain why continuous functions on compact intervals are always integrable.      Introduction goes here.     Let be bounded. Then is integrable if and only if for all there exists a partition of such that     If is integrable, then there exists a sequence of partitions of for which     Continuous functions are integrable. The proof relies on uniform continuity, which is why compactness and uniform continuity were covered in this chapter.    Linearity properties    Inequality properties         "
 },
 {
   "id": "sec-conditions-for-integrability-2",
@@ -2257,7 +2257,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "24.4",
   "title": "",
-  "body": "               "
+  "body": "   Use upper and lower sums to test whether a bounded function is integrable.    Apply linearity and basic inequalities to analyze integrals.    Explain why continuous functions on compact intervals are always integrable.    "
 },
 {
   "id": "sec-lebesgue-measure",
@@ -2266,7 +2266,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.5",
   "title": "Lebesgue measure",
-  "body": " Lebesgue measure                   Introduction goes here.     The length of an interval is and is denoted . This is also the length of , , and . Intervals that involve are said to have length .    A set has measure zero if for all there exists a countable collection of intervals such that     Lebesgue’s theorem: Assume is a bounded function and let be the set of points at which is discontinuous. Then is integrable if and only if has measure zero.    Go into the Lebesgue integral    "
+  "body": " Lebesgue measure     Develop the idea of length and measure using countable coverings by intervals.    Apply Lebesgue's criterion to decide when a function is Riemann integrable.    Motivate the Lebesgue integral as a response to limitations of the Riemann integral.      Introduction goes here.     The length of an interval is and is denoted . This is also the length of , , and . Intervals that involve are said to have length .    A set has measure zero if for all there exists a countable collection of intervals such that     Lebesgue’s theorem: Assume is a bounded function and let be the set of points at which is discontinuous. Then is integrable if and only if has measure zero.    Go into the Lebesgue integral    "
 },
 {
   "id": "sec-lebesgue-measure-2",
@@ -2275,7 +2275,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "24.5",
   "title": "",
-  "body": "               "
+  "body": "   Develop the idea of length and measure using countable coverings by intervals.    Apply Lebesgue's criterion to decide when a function is Riemann integrable.    Motivate the Lebesgue integral as a response to limitations of the Riemann integral.    "
 },
 {
   "id": "sec-convergence-of-series",
@@ -2284,7 +2284,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.1",
   "title": "Convergence of series",
-  "body": " Convergence of series                   Introduction goes here.     The infinite series is defined as the limit of the sequence of partial sums (if it exists):     Series limit laws    Divergence test: If , then diverges.    If a series has all nonnegative terms, then either it converges or it diverges to infinity.    Comparison test: Assume for all .   If converges, then converges.    If diverges, then diverges.       The harmonic series diverges.    Integral test: If , then converges if and only if converges.     -series test: converges if and only if .    Limit comparison test: Assume for all . If where , then converges if and only if converges.    "
+  "body": " Convergence of series     Interpret a series as the limit of its partial sums.    Analyze series with nonnegative terms using comparison, -series, and integral tests.    Apply limit comparison to determine convergence when direct comparison is difficult.      Introduction goes here.     The infinite series is defined as the limit of the sequence of partial sums (if it exists):     Series limit laws    Divergence test: If , then diverges.    If a series has all nonnegative terms, then either it converges or it diverges to infinity.    Comparison test: Assume for all .   If converges, then converges.    If diverges, then diverges.       The harmonic series diverges.    Integral test: If , then converges if and only if converges.     -series test: converges if and only if .    Limit comparison test: Assume for all . If where , then converges if and only if converges.    "
 },
 {
   "id": "sec-convergence-of-series-2",
@@ -2293,7 +2293,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "25.1",
   "title": "",
-  "body": "               "
+  "body": "   Interpret a series as the limit of its partial sums.    Analyze series with nonnegative terms using comparison, -series, and integral tests.    Apply limit comparison to determine convergence when direct comparison is difficult.    "
 },
 {
   "id": "sec-absolute-and-conditional-convergence",
@@ -2302,7 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.2",
   "title": "Absolute and conditional convergence",
-  "body": " Absolute and conditional convergence                   Introduction goes here.     Alternating series test: If the alternating series satisfies the conditions and , then the series converges.         A series is called absolutely convergent if the series converges. (Absolute convergence implies convergence.)    A series is called conditionally convergent if converges but diverges.    Riemann rearrangement theorem: If is a conditionally convergent series and is any real number (or or ), then there is a rearrangement of that has a sum equal to .    Ratio test: Let    If , then converges absolutely.    If , then diverges.    If , the test is inconclusive.       Root test: Let    If , then converges absolutely.    If , then diverges.    If , the test is inconclusive.       "
+  "body": " Absolute and conditional convergence     Distinguish between absolute and conditional convergence and interpret the consequences.    Use alternating, ratio, and root tests to determine convergence behavior.    Explain how conditional convergence allows rearrangements to change the value of a series.      Introduction goes here.     Alternating series test: If the alternating series satisfies the conditions and , then the series converges.         A series is called absolutely convergent if the series converges. (Absolute convergence implies convergence.)    A series is called conditionally convergent if converges but diverges.    Riemann rearrangement theorem: If is a conditionally convergent series and is any real number (or or ), then there is a rearrangement of that has a sum equal to .    Ratio test: Let    If , then converges absolutely.    If , then diverges.    If , the test is inconclusive.       Root test: Let    If , then converges absolutely.    If , then diverges.    If , the test is inconclusive.       "
 },
 {
   "id": "sec-absolute-and-conditional-convergence-2",
@@ -2311,7 +2311,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "25.2",
   "title": "",
-  "body": "               "
+  "body": "   Distinguish between absolute and conditional convergence and interpret the consequences.    Use alternating, ratio, and root tests to determine convergence behavior.    Explain how conditional convergence allows rearrangements to change the value of a series.    "
 },
 {
   "id": "sec-pointwise-and-uniform-convergence",
@@ -2320,7 +2320,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.3",
   "title": "Pointwise and uniform convergence",
-  "body": " Pointwise and uniform convergence                   Introduction goes here.     If, for each , we have a function , then is a sequence of functions and is denoted .    Suppose is a sequence of functions, each defined on . The sequence of functions converges pointwise to a function if, for each ,     We say converges uniformly to to a function if, for every , there exists an such that for all and for all .    If each is continuous at some , and converges uniformly to , then is continuous at .    "
+  "body": " Pointwise and uniform convergence     Define sequences of functions and the meaning of pointwise convergence.    Define uniform convergence and understand how it strengthens pointwise convergence.    Recognize that uniform convergence preserves continuity of the limit function.      Introduction goes here.     If, for each , we have a function , then is a sequence of functions and is denoted .    Suppose is a sequence of functions, each defined on . The sequence of functions converges pointwise to a function if, for each ,     We say converges uniformly to to a function if, for every , there exists an such that for all and for all .    If each is continuous at some , and converges uniformly to , then is continuous at .    "
 },
 {
   "id": "sec-pointwise-and-uniform-convergence-2",
@@ -2329,7 +2329,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "25.3",
   "title": "",
-  "body": "               "
+  "body": "   Define sequences of functions and the meaning of pointwise convergence.    Define uniform convergence and understand how it strengthens pointwise convergence.    Recognize that uniform convergence preserves continuity of the limit function.    "
 },
 {
   "id": "sec-interchanging-limit-processes",
@@ -2338,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.4",
   "title": "Interchanging limit processes",
-  "body": " Interchanging limit processes                   Introduction goes here.     Uniform convergence preserves uniform continuity, boundedness, and integrability. Additionally, if the derivatives converge uniformly, then uniform convergence preserves differentiability.    The sequence is equicontinuous if for all , there exists a single such that implies for all and for all . (It’s like the sequence of functions version of uniform continuity, in a way?)    Arzelà-Ascoli theorem: If is uniformly bounded and equicontinuous on , then contains a uniformly convergent subsequence. (This is like functions version of Bolzano-Weierstrass.)    "
+  "body": " Interchanging limit processes     Determine when limit processes can be interchanged using uniform convergence.    Identify conditions under which limits and derivatives can be interchanged.    Use equicontinuity and the Arzelà-Ascoli theorem to guarantee uniformly convergent subsequences.      Introduction goes here.     Uniform convergence preserves uniform continuity, boundedness, and integrability. Additionally, if the derivatives converge uniformly, then uniform convergence preserves differentiability.    The sequence is equicontinuous if for all , there exists a single such that implies for all and for all . (It’s like the sequence of functions version of uniform continuity, in a way?)    Arzelà-Ascoli theorem: If is uniformly bounded and equicontinuous on , then contains a uniformly convergent subsequence. (This is like functions version of Bolzano-Weierstrass.)    "
 },
 {
   "id": "sec-interchanging-limit-processes-2",
@@ -2347,7 +2347,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "25.4",
   "title": "",
-  "body": "               "
+  "body": "   Determine when limit processes can be interchanged using uniform convergence.    Identify conditions under which limits and derivatives can be interchanged.    Use equicontinuity and the Arzelà-Ascoli theorem to guarantee uniformly convergent subsequences.    "
 },
 {
   "id": "sec-convergence-of-power-series",
@@ -2356,7 +2356,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.5",
   "title": "Convergence of power series",
-  "body": " Convergence of power series                   Introduction goes here.     For a power series , there are only three possibilities:   The series converges only when .    The series converges for all .    There is a positive number called the radius of convergence such that the series converges if and diverges if .  In this case, the interval of convergence can be open, closed, or half-open. The power series converges absolutely, since we use the Ratio Test to find it.       A series of functions converges pointwise\/uniformly if its sequence of partial sums converges pointwise\/uniformly.    Cauchy criterion for series of functions: Let . The series converges uniformly on if and only if for every there exists some such that for all and all .    Weierstrass -test: Let and suppose that, for each , there exists such that for all . If converges, then converges uniformly on .    Power series converge uniformly on closed intervals.    If a power series converges absolutely at it converges uniformly on the closed interval .    Power series can be differentiated and integrated term-by-term.    Let be the error term of a finite Taylor approximation.    Assume is smooth in an interval and . Then for , if and only if pointwise.    A Fourier series converges uniformly if any of these hold:    satisfies a Hölder condition such as Lipschitz continuity     is continuous with bounded variation     is continuous and its Fourier coefficients are absolutely summable       "
+  "body": " Convergence of power series     Determine the radius of convergence of a power series.    Analyze convergence behavior at boundary points of the interval of convergence.    Use uniform convergence to justify term-by-term differentiation and integration.      Introduction goes here.     For a power series , there are only three possibilities:   The series converges only when .    The series converges for all .    There is a positive number called the radius of convergence such that the series converges if and diverges if .  In this case, the interval of convergence can be open, closed, or half-open. The power series converges absolutely, since we use the Ratio Test to find it.       A series of functions converges pointwise\/uniformly if its sequence of partial sums converges pointwise\/uniformly.    Cauchy criterion for series of functions: Let . The series converges uniformly on if and only if for every there exists some such that for all and all .    Weierstrass -test: Let and suppose that, for each , there exists such that for all . If converges, then converges uniformly on .    Power series converge uniformly on closed intervals.    If a power series converges absolutely at it converges uniformly on the closed interval .    Power series can be differentiated and integrated term-by-term.    Let be the error term of a finite Taylor approximation.    Assume is smooth in an interval and . Then for , if and only if pointwise.    A Fourier series converges uniformly if any of these hold:    satisfies a Hölder condition such as Lipschitz continuity     is continuous with bounded variation     is continuous and its Fourier coefficients are absolutely summable       "
 },
 {
   "id": "sec-convergence-of-power-series-2",
@@ -2365,7 +2365,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "25.5",
   "title": "",
-  "body": "               "
+  "body": "   Determine the radius of convergence of a power series.    Analyze convergence behavior at boundary points of the interval of convergence.    Use uniform convergence to justify term-by-term differentiation and integration.    "
 },
 {
   "id": "sec-picards-theorem",
@@ -2374,7 +2374,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.6",
   "title": "Solutions to differential equations",
-  "body": " Solutions to differential equations                   Introduction goes here.     Sequential definition of continuity in 2D: Let be a set, be a function, and be a point. The function is continuous at if for every sequence of points in such that and , we have       Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    In other words, initial value problems have unique solutions under suitable conditions.    Proof relies on the idea of Picard iteration, the FTC, and uniform convergence of a sequence of functions, as well as the uniform norm.    "
+  "body": " Solutions to differential equations     Define sequential continuity for functions on .    Construct approximate solutions to differential equations using Picard iteration.    Prove the Picard-Lindelöf theorem to establish existence and uniqueness of solutions to initial value problems.      Introduction goes here.     Sequential definition of continuity in 2D: Let be a set, be a function, and be a point. The function is continuous at if for every sequence of points in such that and , we have       Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    In other words, initial value problems have unique solutions under suitable conditions.    Proof relies on the idea of Picard iteration, the FTC, and uniform convergence of a sequence of functions, as well as the uniform norm.    "
 },
 {
   "id": "sec-picards-theorem-2",
@@ -2383,7 +2383,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "25.6",
   "title": "",
-  "body": "               "
+  "body": "   Define sequential continuity for functions on .    Construct approximate solutions to differential equations using Picard iteration.    Prove the Picard-Lindelöf theorem to establish existence and uniqueness of solutions to initial value problems.    "
 },
 {
   "id": "sec-picards-theorem-4-2-1-1",

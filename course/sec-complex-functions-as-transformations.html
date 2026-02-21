@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-complex-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-complex-infinity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-complex-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-extending-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -334,7 +334,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-vectors.html" class="internal"><span class="codenumber">13</span> <span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-valued-functions.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Vector-valued functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-describing-motion-with-vectors.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-motion-in-space.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Motion in space</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-dot-product-and-cross-product.html" class="internal"><span class="codenumber">13.3</span> <span class="title">The dot product and cross product</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-frenet-serret-frame.html" class="internal"><span class="codenumber">13.4</span> <span class="title">The Frenet-Serret frame</span></a></div></li>
 </ul>
@@ -381,8 +381,8 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-geometry-of-complex-numbers.html" class="internal"><span class="codenumber">17.1</span> <span class="title">The geometry of complex numbers</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-complex-functions-as-transformations.html" class="internal"><span class="codenumber">17.2</span> <span class="title">Complex functions as transformations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-complex-infinity.html" class="internal"><span class="codenumber">17.3</span> <span class="title">Complex infinity and the Riemann sphere</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-extending-complex-functions.html" class="internal"><span class="codenumber">17.4</span> <span class="title">Extending functions to the complex plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-extending-complex-functions.html" class="internal"><span class="codenumber">17.3</span> <span class="title">Extending functions to the complex plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-complex-infinity.html" class="internal"><span class="codenumber">17.4</span> <span class="title">Complex infinity and the Riemann sphere</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -480,15 +480,18 @@ eBookConfig.enable_chatcodes =  false;
 <article class="objectives goal-like" id="sec-complex-functions-as-transformations-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ol class="decimal" id="sec-complex-functions-as-transformations-2-1">
 <li id="sec-complex-functions-as-transformations-2-1-1">
-<div class="para" id="sec-complex-functions-as-transformations-2-1-1-1"><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="sec-complex-functions-as-transformations-2-1-1-1">Describe curves and regions in the complex plane.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="autopermalink" data-description="Objective 17.2.1"><a href="#sec-complex-functions-as-transformations-2-1-1" title="Copy heading and permalink for Objective 17.2.1" aria-label="Copy heading and permalink for Objective 17.2.1">🔗</a></div>
 </li>
 <li id="sec-complex-functions-as-transformations-2-1-2">
-<div class="para" id="sec-complex-functions-as-transformations-2-1-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="sec-complex-functions-as-transformations-2-1-2-1">Interpret complex functions by studying how they transform curves and regions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="autopermalink" data-description="Objective 17.2.2"><a href="#sec-complex-functions-as-transformations-2-1-2" title="Copy heading and permalink for Objective 17.2.2" aria-label="Copy heading and permalink for Objective 17.2.2">🔗</a></div>
 </li>
 <li id="sec-complex-functions-as-transformations-2-1-3">
-<div class="para" id="sec-complex-functions-as-transformations-2-1-3-1"><div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="sec-complex-functions-as-transformations-2-1-3-1">Visualize complex mappings using domain coloring to encode magnitude and argument.<div class="autopermalink" data-description="Paragraph"><a href="#sec-complex-functions-as-transformations-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="autopermalink" data-description="Objective 17.2.3"><a href="#sec-complex-functions-as-transformations-2-1-3" title="Copy heading and permalink for Objective 17.2.3" aria-label="Copy heading and permalink for Objective 17.2.3">🔗</a></div>
 </li>
 </ol>
@@ -594,7 +597,7 @@ f(z)=(x+\ii y)^{2}=(x^{2}-y^{2})+\ii(2xy)
 </ul>
 <div class="autopermalink" data-description="Section 17.2: Complex functions as transformations"><a href="#sec-complex-functions-as-transformations" title="Copy heading and permalink for Section 17.2: Complex functions as transformations" aria-label="Copy heading and permalink for Section 17.2: Complex functions as transformations">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-complex-infinity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-extending-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
