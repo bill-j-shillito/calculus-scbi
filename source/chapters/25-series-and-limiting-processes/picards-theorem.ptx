@@ -47,7 +47,7 @@
           <statement>
             <p>
               Let <m>I,J\subseteq\bb R</m> be compact intervals, let <m>I^{\circ}</m> and <m>J^{\circ}</m> be their interiors, and let <m>(x_{0},y_{0})\in I^{\circ}\times J^{\circ}</m>.
-              Suppose <m>F:I\times J\top\bb R</m> is continuous and Lipschitz in the second variable, that is, there exists an <m>L\in\bb R</m> such that
+              Suppose <m>F:I\times J\to\bb R</m> is continuous and Lipschitz in the second variable, that is, there exists an <m>L\in\bb R</m> such that
               <me>
                 \abs{F(x,y)-F(x,z)}\le L\abs{y-z}\qquad\text{for all }y,z\in J, x\in I\text{.}
               </me>
