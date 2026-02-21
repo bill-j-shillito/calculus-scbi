@@ -29,5 +29,60 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Mass in 2D (where <m>\rho(x,y)</m> is density):
+        <me>
+          M = \iint_{D}\rho(x,y)\dd{A}
+        </me>
+        Moments in 2D:
+      </p>
+      <md>
+        <mrow>M_{x=0} \amp = \iint_{D} x\rho(x,y)\dd{A}</mrow>
+        <mrow>M_{y=0} \amp = \iint_{D} y\rho(x,y)\dd{A}</mrow>
+      </md>
+
+      <p>
+        Center of mass:
+        <me>
+          (\bar{x},\bar{y})=\qty(\frac{M_{x=0}}{M},\frac{M_{y=0}}{M})
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Mass in 3D (where <m>\rho(x,y,z)</m> is density):
+        <me>
+          M = \iiint_{D}\rho(x,y,z)\dd{V}
+        </me>
+        Moments in 3D:
+      </p>
+      <md>
+        <mrow>M_{x=0} \amp = \iiint_{D} x\rho(x,y,z)\dd{V}</mrow>
+        <mrow>M_{y=0} \amp = \iiint_{D} y\rho(x,y,z)\dd{V}</mrow>
+        <mrow>M_{z=0} \amp = \iiint_{D} z\rho(x,y,z)\dd{V}</mrow>
+      </md>
+
+      <p>
+        Center of mass:
+        <me>
+          (\bar{x},\bar{y},\bar{z})=\qty(\frac{M_{x=0}}{M},\frac{M_{y=0}}{M},\frac{M_{z=0}}{M})
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If we assume uniform density, we get the centroid of the region.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Start with density along a rod first?
+      </p>
+    </li>
+  </ul>
 </section>

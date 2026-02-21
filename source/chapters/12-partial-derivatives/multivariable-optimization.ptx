@@ -29,5 +29,88 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        If a function has a local maximum or minimum at <m>(a,b)</m>, then both partial derivatives must be zero (meaning that <m>(a,b)</m> is a critical points.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        However, just because we have a critical point doesn’t mean it’s a local maximum or minimum; it can also be a saddle point.
+      </p>
+
+      <p>
+        An example is <m>f(x,y)=x^{2}-y^{2}</m> at the origin.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Second Derivative Test:
+      </p>
+
+      <p>
+        Suppose <m>f</m> has a critical point at <m>(a,b)</m>.
+        Let:
+        <me>
+          A=f_{xx}(a,b)\qquad B=f_{xy}(a,b)\qquad C=f_{yy}(a,b)
+        </me>
+        The discriminant is <m>K=AC-B^{2}</m>.
+        <ul>
+          <li>
+            <p>
+              If <m>K\lt 0</m>, then <m>(a,b)</m> is a saddle point.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>K\gt 0</m>, then <m>f(a,b)</m> is a local maximum (if <m>A\lt 0</m>) or local minimum (if <m>A\gt 0</m>).
+              This is just like the single variable case.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>K=0</m>, no conclusion can be made.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Justify this using the Taylor approximations.
+        (Look at Thomas for reference.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Potential motivating application could be least squares regression.
+      </p>
+
+      <p>
+        Given a set of points <m>(x_{1},y_{1}),\cdots,(x_{n},y_{n})</m>, we want to find the line <m>y=ax+b</m> that <sq>best fits</sq> the data.
+      </p>
+
+      <p>
+        The residuals are <m>\eps_{k}=y_{k}-(ax_{k}+b)</m>, so we want to minimize the sum of the squares of the residuals, which we can represent as the function
+        <me>
+          S(a,b)=\sum_{k=1}^{n} \eps_{k}^{2}\text{.}
+        </me>
+      </p>
+
+      <p>
+        The solution ends up being the solution to the equations
+      </p>
+      <md>
+        <mrow>a\sum_{k=1}^n x_{k} \amp = \sum_{k=1}^n x_{k}y_{k}</mrow>
+        <mrow>b\sum_{k=1}^n 1 \amp = \sum_{k=1}^n y_{k} - a\sum_{k=1}^n x_{k}</mrow>
+      </md>
+    </li>
+  </ul>
 </section>

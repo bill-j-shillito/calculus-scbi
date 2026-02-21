@@ -32,6 +32,9 @@
     \DeclareMathOperator{\Var}{Var}
     \newcommand{\lt}{&lt;}
     \newcommand{\gt}{&gt;}
+    \newcommand{\bv}[1]{\symbfit{#1}}
+    \newcommand{\uv}[1]{\hat{\bv{#1}}}
+    \newcommand{\cl}[1]{\symcal{#1}}
 
     <!-- Capitalized principal values -->
     \DeclareMathOperator{\Sin}{Sin}
@@ -41,6 +44,9 @@
     \DeclareMathOperator{\Csc}{Csc}
     \DeclareMathOperator{\Cot}{Cot}
     \DeclareMathOperator{\PV}{PV}
+    \DeclareMathOperator{\Grad}{grad}
+    \DeclareMathOperator{\Div}{div}
+    \DeclareMathOperator{\Curl}{curl}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

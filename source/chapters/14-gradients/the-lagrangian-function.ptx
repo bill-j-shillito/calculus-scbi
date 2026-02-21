@@ -29,5 +29,87 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        <url href="http://www.slimy.com/~steuard/teaching/tutorials/Lagrange.html">http://www.slimy.com/~steuard/teaching/tutorials/Lagrange.html</url>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Here's another way we can “zoom out” and see the Lagrange multiplier method as part of a bigger story.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Suppose we want to maximize <m>f(x,y)</m> subject to the constraint <m>g(x,y)=c</m>.
+        Define the Lagrangian function:
+        <me>
+          \cl{L}(x,y,\lambda)=f(x,y)+\lambda(c-g(x,y))
+        </me>
+        <me>
+          \cl{L}=f+\lambda(c-g)
+        </me>
+        Then the solution to our maximization problem is the point where <m>\Grad\cl{L}=0</m>:
+      </p>
+      <md>
+        <mrow>\pdv{f}{x} - \lambda\pdv{g}{x} \amp = 0</mrow>
+        <mrow>\pdv{f}{y} - \lambda\pdv{g}{y} \amp = 0</mrow>
+        <mrow>c - g(x,y) \amp = 0</mrow>
+      </md>
+
+      <p>
+        Note that we're assuming that <m>c</m> is a constant for now.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Note that <m>\DS\pdv{\cl{L}}{c}=\lambda</m>, which means that <m>\lambda</m> represents the sensitivity of the Lagrangian function to changes in our constraint amount.
+        It can also be shown (will have to look at how!) that <m>\DS\pdv{\cl{L}}{c}=\pdv{f}{c}</m>; apparently this uses the “envelope theorem.”
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Let <m>(x^{*},y^{*})</m> be the solution to the constrained optimization problem.
+        This depends on the given value of <m>c</m>, so we'll write them as <m>(x^{*}(c),y^{*}(c))</m>, and we'll write the optimum value of <m>f</m> here as
+        <me>
+          f(x^{*}(c),y^{*}(c))
+        </me>.
+        If we differentiate with respect to <m>c</m>, we get:
+        <me>
+          \dv{f}{c}=\pdv f{x^*}\dv{x^*}{c}+\pdv f{y^*}\dv{y^*}{c}
+        </me>
+        Additionally, the constraint satisfies the equation
+        <me>
+          g(x^{*}(c),y^{*}(c))=c
+        </me>.
+        Differentiate both sides with respect to <m>c</m> using the Chain Rule:
+        <me>
+          \pdv g{x^*}\dv{x^*}{c}+\pdv g{y^*}\dv{y^*}{c}=1
+        </me>
+        By the Lagrange multiplier property we know that:
+        <me>
+          \Grad f=\lambda\Grad g
+        </me>
+        Taking dot products with <m>\DS\dd{\bv{r}}^{*}=\qty(\dv{x^*}{c},\dv{y^*}{c})</m>:
+        <me>
+          \Grad f\cdot\dd{\bv{r}}^{*}=\lambda\Grad g\cdot\dd{\bv{r}}^{*}
+        </me>
+        Since <m>\Grad g\cdot\dd{\bv{r}}^{*}=1</m> we have:
+        <me>
+          \dv{f}{c}=\lambda
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Might actually be able to tie this to holding certain variables constant in <m>\cl{L}(x,y,\lambda,c)</m>, à la thermodynamics notation.
+      </p>
+    </li>
+  </ul>
 </section>

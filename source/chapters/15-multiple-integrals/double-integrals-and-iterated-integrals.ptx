@@ -29,5 +29,62 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Define the double integral of <m>f(x,y)</m> over a rectangular region <m>D=[a,b]\times[c,d]</m>:
+        <me>
+          \iint_{D} f(x,y)\dd{A}=\limit{\Delta x,\Delta y\to 0}\sum_{i=1}^{m}\sum_{j=1}^{n} f(x,y)\,\Delta x\,\Delta y
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Include some simple by-hand approximations with the rectangular region broken into small squares or rectangles
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Fubini’s theorem says that we can write such a double integral as an iterated integral under certain <sq>niceness</sq> conditions (will have to find later):
+        <me>
+          \iint_{D} f(x,y)\dd{A}=\int_{c}^{d}\int_{a}^{b} f(x,y)\dd{x}\dd{y}=\int_{a}^{b}\int_{c}^{d} f(x,y)\dd{y}\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Work out some iterated integrals
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f(x,y)=g(x)\cdot h(y)</m>, then
+        <me>
+          \iint_{D} f(x,y)=\int_{a}^{b} g(x)\dd{x}\cdot \int_{c}^{d} h(y)\dd{y}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Area:
+        <me>
+          A=\iint_{D} \dd{A}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Average value:
+        <me>
+          \frac{\DS\iint_{D} f(x,y)\dd{A}}{(b-a)(d-c)}=\frac{\DS\iint_{D} f(x,y)\dd{A}}{\DS\iint_{D} \dd{A}}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

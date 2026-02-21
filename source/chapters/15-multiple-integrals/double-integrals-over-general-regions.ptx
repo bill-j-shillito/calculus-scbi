@@ -29,5 +29,43 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Can use a <sq>bounding box</sq> approach to take double integrals over regions with more general regions.
+        If <m>D</m> is a region over which <m>f</m> is defined, let <m>R</m> be a rectangle containing <m>D</m>, and let
+        <me>
+          F(x,y)=\begin{cases}f(x,y) \amp \text{if }(x,y)\in D\\ 0 \amp \text{if }(x,y)\in R\setminus D\end{cases}
+        </me>
+        Then <m>\DS\iint_{D} f(x,y)\dd{A}=\iint_{R} F(x,y)\dd{A}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>D</m> is bounded below by <m>y=g(x)</m> and above by <m>y=h(x)</m>:
+        <me>
+          \iint_{D} f(x,y)\dd{A}=\int_{x=a}^{x=b}\int_{y=g(x)}^{y=h(x)}f(x,y)\dd{y}\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>D</m> is bounded on the left by <m>x=g(y)</m> and the right by <m>x=h(y)</m>:
+        <me>
+          \iint_{D} f(x,y)\dd{A}=\int_{y=c}^{y=d}\int_{x=g(y)}^{x=h(y)}f(x,y)\dd{x}\dd{y}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Changing order of integration:
+        <me>
+          \int_{x=0}^{x=1}\int_{y=x}^{y=1}\sin(y^{2})\dd{y}\dd{x}=\int_{y=0}^{y=1}\int_{x=0}^{x=y}\sin(y^{2})\dd{x}\dd{y}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

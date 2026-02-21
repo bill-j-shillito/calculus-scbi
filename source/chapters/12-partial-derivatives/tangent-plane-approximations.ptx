@@ -29,5 +29,118 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Start with total differential:
+        <me>
+          \dd z=\pdv{f}{x}\dd{x}+\pdv{f}{y}\dd{y}
+        </me>
+        Show how this can be used to approximate changes in <m>z</m>:
+        <me>
+          \Delta\,z \approx\pdv{f}{x}\,\Delta x+\pdv{f}{y}\,\Delta y
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\Delta x=x-x_{0}</m> etc, we get:
+        <me>
+          z-z_{0}=\pdv{f}{x}(x-x_{0})+\pdv{f}{y}(y-y_{0})
+        </me>
+        This is an equation of the tangent plane to <m>z=f(x,y)</m> at the point <m>(x_{0},y_{0},z_{0})</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Interpret geometrically:
+        <ul>
+          <li>
+            <p>
+              The surface is locally approximated by a plane.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The coefficients <m>\pdv{f}{x}</m> and <m>\pdv{f}{y}</m> represent slopes in the <m>x</m>- and <m>y</m>-trace directions.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The tangent plane matches the surface exactly at the base point and closely nearby.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Emphasize the connection to single-variable calculus: The tangent plane is the two-variable analogue of the tangent line
+        <me>
+          y=f(a)+f'(a)(x-a).
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Include a worked example:
+        <ul>
+          <li>
+            <p>
+              Compute partial derivatives at a point.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write the tangent plane equation.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use it to approximate a nearby function value.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compare to the actual value to assess accuracy.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Briefly discuss limitations:
+        <ul>
+          <li>
+            <p>
+              Accuracy improves as <m>(x,y)</m> approaches <m>(x_{0},y_{0})</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Non-differentiable points do not admit a tangent plane.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Curvature effects motivate higher-order approximations.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

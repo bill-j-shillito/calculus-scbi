@@ -29,5 +29,62 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        We can hold one variable constant to get a cross-section of a 3D surface.
+        This is called a trace, and it's the same as looking at the intersection between a surface and a plane parallel to one of the coordinate planes.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Ellipsoid:
+        <me>
+          \frac{(x-x_{0})^{2}}{a^{2}}+\frac{(y-y_{0})^{2}}{b^{2}}+\frac{(z-z_{0})^{2}}{c^{2}}=1
+        </me>
+        Traces are all ellipses.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Hyperboloid of one sheet:
+        <me>
+          \frac{(x-x_{0})^{2}}{a^{2}}+\frac{(y-y_{0})^{2}}{b^{2}}-\frac{(z-z_{0})^{2}}{c^{2}}=1
+        </me>
+        Traces are ellipses or hyperbolas.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Hyperboloid of two sheets:
+        <me>
+          \frac{(x-x_{0})^{2}}{a^{2}}-\frac{(y-y_{0})^{2}}{b^{2}}-\frac{(z-z_{0})^{2}}{c^{2}}=1
+        </me>
+        Again traces are ellipses or hyperbolas, but one trace is empty, which gives two sheets.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Elliptic Paraboloid:
+        <me>
+          z=\frac{(x-x_{0})^{2}}{a^{2}}+\frac{(y-y_{0})^{2}}{b^{2}}
+        </me>
+        Traces are ellipses or parabolas.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Elliptic Paraboloid:
+        <me>
+          z=\frac{(x-x_{0})^{2}}{a^{2}}-\frac{(y-y_{0})^{2}}{b^{2}}
+        </me>
+        Traces are hyperbolas or parabolas.
+      </p>
+    </li>
+  </ul>
 </section>

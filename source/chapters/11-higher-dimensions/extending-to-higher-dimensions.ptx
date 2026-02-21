@@ -29,5 +29,83 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Taking familiar concepts from 2D and extending them to 3D
+      </p>
+    </li>
+
+    <li>
+      <p>
+        3D coordinates: <m>(x,y,z)</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Midpoint:
+        <me>
+          M=\qty(\frac{x_{1}+x_{2}}{2},\frac{y_{1}+y_{2}}{2},\frac{z_{1}+z_{2}}{2})
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Distance:
+        <me>
+          d=\sqrt{\Delta x^{2}+\Delta y^{2}+\Delta z^{2}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Equation of a plane:
+        <me>
+          ax+by+cz=d
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sphere:
+        <me>
+          (x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}=r^{2}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Interior, exterior, boundary (intuitively)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Open ball:
+        <me>
+          (x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}\lt r^{2}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Closed ball:
+        <me>
+          (x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}\le r^{2}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Cylinders: Take an equation in two variables and think of the third variable as <sq>free</sq>
+      </p>
+    </li>
+  </ul>
 </section>

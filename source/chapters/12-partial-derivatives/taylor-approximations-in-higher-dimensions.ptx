@@ -29,5 +29,152 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Begin by recalling the single-variable Taylor expansion:
+        <me>
+          f(x) \approx f(a) + f'(a)(x-a) + \frac{1}{2} f''(a)(x-a)^{2}
+        </me>.
+      </p>
+
+      <p>
+        The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Connect to the previous section: The tangent plane
+        <me>
+          z \approx z_{0} + \pdv{f}{x}(x-x_{0}) + \pdv{f}{y}(y-y_{0})
+        </me>
+        is the first-order Taylor polynomial for <m>f(x,y)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Introduce second-order terms using higher partial derivatives:
+        <me>
+          f(x,y) \approx f(x_{0},y_{0}) + \pdv{f}{x}(x-x_{0}) + \pdv{f}{y}(y-y_{0})
+        </me>
+        <me>
+          \quad + \frac{1}{2} \pdv[2]{f}{x}(x-x_{0})^{2} + \pdv[2]{f}{x}{y}(x-x_{0})(y-y_{0}) + \frac{1}{2} \pdv[2]{f}{y}(y-y_{0})^{2}.
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Interpret each term:
+        <ul>
+          <li>
+            <p>
+              First-order terms describe tilt.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Pure second derivatives describe curvature in coordinate directions.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Mixed partials describe interaction between variables.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Emphasize symmetry of mixed partials when conditions allow (Clairaut's theorem).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Provide a worked example:
+        <ul>
+          <li>
+            <p>
+              Compute first and second partial derivatives at a point.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write the quadratic Taylor approximation.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use it to estimate a nearby value.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compare to the actual value.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Geometric meaning:
+        <ul>
+          <li>
+            <p>
+              First-order: tangent plane.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Second-order: quadratic surface approximating curvature.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The quadratic form determines local shape.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        General multivariable Taylor expansion:
+        <me>
+          f(x,y) = \sum_{k=0}^{n}\text{(all $k$th-order partial terms in $(x-x_{0}),(y-y_{0})$)}+ R_{n},\text{,}
+        </me>
+        where each term involves partial derivatives of total order <m>k</m> evaluated at <m>(x_{0},y_{0})</m>.
+      </p>
+
+      <p>
+        Each degree <m>k</m> term consists of all products
+        <me>
+          (x-x_{0})^{i} (y-y_{0})^{j}
+        </me>
+        with <m>i+j=k</m>, multiplied by the corresponding partial derivative
+        <me>
+          \frac{\partial^{k}f}{\partial x^{i}\partial y^{j}}(x_{0},y_{0}).
+        </me>
+      </p>
+
+      <p>
+        The approximation improves as higher-order terms are included.
+      </p>
+    </li>
+  </ul>
 </section>

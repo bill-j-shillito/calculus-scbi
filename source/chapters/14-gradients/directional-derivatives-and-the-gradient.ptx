@@ -29,5 +29,109 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Suppose we're at the point <m>(a,b)</m> and we want to find the rate of change as we move in the direction of the unit vector <m>\uv u=(\cos\theta,\sin\theta)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Parametrize the line in the <m>xy</m>-plane:
+      </p>
+      <md>
+        <mrow>x \amp = a + t\cos\theta</mrow>
+        <mrow>y \amp = b + t\sin\theta</mrow>
+      </md>
+
+      <p>
+        Differentiate <m>f</m> with respect to <m>t</m> using the Chain Rule:
+      </p>
+      <md>
+        <mrow>\pdv{f}{t} \amp = \pdv{f}{x}\cdot\pdv{x}{t}+\pdv{f}{y}\cdot\pdv{y}{t}</mrow>
+        <mrow> \amp = \pdv{f}{x}\cos\theta + \pdv{f}{y}\sin\theta</mrow>
+      </md>
+
+      <p>
+        This is the directional derivative of <m>f</m> in the direction of <m>\uv{u}</m>, written <m>D_{\uv{u}}f</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Notice this looks a lot like a dot product! Define the gradient vector as:
+        <me>
+          \Grad f=\qty(\pdv{f}{x},\pdv{f}{y})
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Going to <em>avoid</em> the notation <m>\nabla f</m> so that it can be saved for Part IV.
+        Then the directional derivative can be written <m>D_{\uv{u}}f=\Grad f\cdot\uv{u}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If we use basis vectors, we recover partial derivatives by projection:
+      </p>
+      <md>
+        <mrow>D_{\uv{x}} f\amp = \Grad f\cdot(1,0)=\pdv{f}{x}</mrow>
+        <mrow>D_{\uv{y}} f\amp = \Grad f\cdot(0,1)=\pdv{f}{y}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Since the directional derivative is a dot product, it's maximized when <m>\uv u</m> points the same direction as the gradient, minimized when it points in the opposite direction.
+        This leads to the gradient ascent/descent algorithm.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero.
+        This means that the gradient is perpendicular to the level curves of a surface.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Chain Rule can now be rewritten as:
+        <me>
+          \dv{f}{t}=\Grad f(\bv{r})\cdot \bv{r}'(t)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Tangent plane can also be written in vector form:
+        <me>
+          z=f(\bv{r}_{0})+\Grad f\cdot (\bv{r}-\bv{r}_{0})
+        </me>
+        This much more closely resembles our linearization from Chapter 2.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Rearrange slightly:
+        <me>
+          \pdv{f}{x}(x-x_{0})+\pdv{f}{y}(y-y_{0})-1(z-z_{0})=0
+        </me>
+        Again this looks like a dot product! We're saying that <m>\DS\qty(\pdv{f}{x},\pdv{f}{y},-1)</m> is parallel to <m>(x-x_{0},y-y_{0},z-z_{0})</m>.
+        Since the latter vector represents an arbitary motion in the plane, this vector <m>\DS\qty(\pdv{f}{x},\pdv{f}{y},-1)</m> must be normal to the plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Can we include something about why the normal to a surface is important? Maybe something about lighting?
+      </p>
+    </li>
+  </ul>
 </section>

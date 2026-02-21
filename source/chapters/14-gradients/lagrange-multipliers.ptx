@@ -29,5 +29,53 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Need to justify this using an example where substitution goes wrong.
+      </p>
+
+      <p>
+        Smith and Minton has an example: Find the points on the hyperbolic cylinder <m>x^{2}-z^{2}-1=0</m> that are closest to the origin.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Let <m>C</m> be a constraint curve <m>g(x,y)=k</m> that lies along the surface <m>z=f(x,y)</m>, and suppose <m>f</m> has a local extreme value at <m>P_{0}=(x_{0},y_{0})</m> along <m>C</m>.
+      </p>
+
+      <p>
+        Parametrize the curve as <m>\bv{r}(t)=(x(t),y(t))</m> so that <m>\bv r(0)=P_{0}</m>.
+      </p>
+
+      <p>
+        Now consider the function <m>h(t)=f(\bv{r}(t))</m>.
+        Then <m>h</m> has an extreme value at <m>t=0</m>, so <m>h'(0)=0</m>.
+        By the Chain Rule, we have:
+      </p>
+      <md>
+        <mrow>h'(0) \amp = \pdv{f}{x}\cdot\dv{x}{t}+\pdv{f}{y}\cdot\dv{y}{t}</mrow>
+        <mrow> \amp = \Grad f(P_{0})\cdot\bv{r}'(0)</mrow>
+      </md>
+
+      <p>
+        Hence <m>\Grad f</m> is perpendicular to the tangent vector <m>\bv{r}'(0)</m>.
+        Since <m>C</m> is a level curve of <m>g</m>, we know that <m>\Grad g</m> is also perpendicular to <m>\bv{r}'(0)</m>, and hence <m>\Grad f</m> and <m>\Grad g</m> are parallel.
+        Hence, if <m>\Grad g\neq 0</m>, there exists some real number <m>\lambda</m> such that
+        <me>
+          \Grad f=\lambda\Grad g
+        </me>.
+        This value <m>\lambda</m> is called the Lagrange multiplier.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Perhaps would be good to do the “milkmaid” problem...
+        its solution visually goes with the reflection property of an ellipse.
+        And it can be explained without needing a specific curve, but then made precise using a specific curve.
+      </p>
+    </li>
+  </ul>
 </section>

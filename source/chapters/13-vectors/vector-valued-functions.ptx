@@ -29,5 +29,59 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Call back to Chapter 6 with motion in the plane:
+      </p>
+      <md>
+        <mrow>x \amp = f(t)</mrow>
+        <mrow>y \amp = g(t)</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        We also thought of this as a vector, packing these functions into a single object:
+        <me>
+          \big(f(t),g(t)\big)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Now we consider the vector to be an object in its own right, and we give it a name:
+        <me>
+          \bv{r}(t)=\big(f(t),g(t)\big)
+        </me>
+        The boldface is used to denote that <m>\bv{r}</m> returns a vector.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Since the vector depends on <m>t</m>, this is a vector-valued function.
+        Notice that now we have a single input and two outputs, the opposite of what was in the last chapter.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Visual + algebraic look at vector addition, scalar multiplication...
+        we're extending our usual arithmetic operations to these new objects.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extend parametric equation to 3D space:
+      </p>
+      <md>
+        <mrow>x \amp = f(t)</mrow>
+        <mrow>y \amp = g(t)</mrow>
+        <mrow>z \amp = h(t)</mrow>
+      </md>
+    </li>
+  </ul>
 </section>

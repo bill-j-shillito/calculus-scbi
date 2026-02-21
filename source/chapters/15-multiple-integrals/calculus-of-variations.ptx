@@ -2,4 +2,209 @@
 
 <section xml:id="sec-calculus-of-variations">
   <title>CAPSTONE: Calculus of variations</title>
+
+  <ul>
+    <li>
+      <p>
+        In ordinary optimization, we search for a number <m>x</m> that minimizes a function <m>f(x)</m>.
+      </p>
+
+      <p>
+        In multivariable optimization, we search for a point <m>(x,y)</m> that minimizes a function <m>f(x,y)</m>.
+      </p>
+
+      <p>
+        In the calculus of variations, we search for an entire function <m>y(x)</m> that minimizes a quantity of the form
+        <me>
+          J[y]=\int_{a}^{b} F(x,y,y')\dd{x}
+        </me>.
+      </p>
+
+      <p>
+        Such a map <m>J</m> is called a functional, because it assigns a number to a function.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Suppose <m>y</m> is a candidate minimizer.
+        Consider a small perturbation
+        <me>
+          y_{\eps}(x)=y(x)+\eps \eta(x),
+        </me>
+        where <m>\eta(a)=\eta(b)=0</m> so that the endpoints remain fixed.
+      </p>
+
+      <p>
+        Define
+        <me>
+          \Phi(\eps)=J[y_{\eps}].
+        </me>
+      </p>
+
+      <p>
+        If <m>y</m> minimizes <m>J</m>, then <m>\Phi'(0)=0</m>.
+      </p>
+
+      <p>
+        Thus the problem reduces to differentiating with respect to the ordinary variable <m>\eps</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiating under the integral sign gives
+        <me>
+        \Phi'(0) = \int_{a}^{b} \left( \pdv{F}{y}\eta + \pdv{F}{y'}\eta' \right)\dd{x}
+      </me>.
+      </p>
+      
+      
+
+      <p>
+        Integrating the second term by parts,
+        <me>
+          \int_{a}^{b} \pdv{F}{y'}\eta'\dd{x} = \left[ \pdv{F}{y'}\eta \right]_{a}^{b} - \int_{a}^{b} \dv{x} \qty(\pdv{F}{y'})\eta\dd{x}.
+        </me>
+      </p>
+
+      <p>
+        Because <m>\eta(a)=\eta(b)=0</m>, the boundary term vanishes.
+        Hence
+        <me>
+          \Phi'(0) = \int_{a}^{b} \left( \pdv{F}{y}- \dv{x} \qty(\pdv{F}{y'})\right) \eta \dd{x}
+        </me>.
+      </p>
+
+      <p>
+        Since this must hold for every admissible <m>\eta</m>, we obtain the Euler-Lagrange equation:
+        <me>
+          \pdv{F}{y}- \dv{x} \qty(\pdv{F}{y'})=0
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The length of a curve from <m>x=a</m> to <m>x=b</m> is
+        <me>
+          J[y]=\int_{a}^{b} \sqrt{1+(y')^{2}}\dd{x}
+        </me>.
+      </p>
+
+      <p>
+        Here <m>F(x,y,y')=\sqrt{1+(y')^{2}}</m>.
+      </p>
+
+      <p>
+        Since <m>\partial F/\partial y=0</m>, the Euler-Lagrange equation reduces to
+        <me>
+          \dv{x} \qty( \frac{y'}{\sqrt{1+(y')^{2}}} )=0
+        </me>.
+      </p>
+
+      <p>
+        Therefore
+        <me>
+          \frac{y'}{\sqrt{1+(y')^{2}}}=\text{constant},
+        </me>
+        which implies <m>y'=\text{constant}</m>.
+      </p>
+
+      <p>
+        The shortest path between two points is a straight line.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>z=u(x,y)</m> describes a surface over a region <m>R</m>, its surface area is
+        <me>
+          A[u]=\iint_{R} \sqrt{1+u_{x}^{2}+u_{y}^{2}}\dd{A}
+        </me>.
+      </p>
+
+      <p>
+        Minimizing this functional leads to
+        <me>
+          \frac{\partial}{\partial x}\qty( \frac{u_{x}}{\sqrt{1+u_{x}^{2}+u_{y}^{2}}} )+ \frac{\partial}{\partial y}\qty( \frac{u_{y}}{\sqrt{1+u_{x}^{2}+u_{y}^{2}}} )=0
+        </me>,
+        the minimal surface equation.
+      </p>
+
+      <p>
+        Unlike the one-dimensional case, this condition is now a partial differential equation.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For a curve, curvature <m>\kappa</m> measures how sharply the curve bends.
+      </p>
+
+      <p>
+        For a surface, there are two distinguished directions of bending.
+        The corresponding curvatures are the principal curvatures <m>\kappa_{1}</m> and <m>\kappa_{2}</m>.
+      </p>
+
+      <p>
+        Two natural measurements arise:
+        <me>
+          H=\frac{\kappa_{1}+\kappa_{2}}{2}\qquad\text{and}\qquad K=\kappa_{1}\kappa_{2}
+        </me>.
+      </p>
+
+      <p>
+        Here <m>H</m> is the mean curvature and <m>K</m> is the Gaussian curvature.
+      </p>
+
+      <p>
+        In coordinates <m>z=u(x,y)</m>, Gaussian curvature can be expressed as
+        <me>
+          K=u_{xx}u_{yy}-u_{xy}^{2}
+        </me>.
+        This is in fact the quantity we used when doing the Second Derivative Test.
+      </p>
+
+      <p>
+        Mean curvature can be expressed as
+        <me>
+          H = \frac{(1+u_{y}^{2})u_{xx}-2u_{x}u_{y}u_{xy}+(1+u_{x}^{2})u_{yy}}{2(1+u_{x}^{2}+u_{y}^{2})^{3/2}}
+        </me>.
+      </p>
+
+      <p>
+        Expanding the minimal surface equation shows that it is exactly the condition
+        <me>
+          H=0
+        </me>.
+      </p>
+
+      <p>
+        Thus minimal surfaces are characterized by zero <em>average</em> bending, not by zero Gaussian curvature.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <ul>
+          <li>
+            <p>
+              In multivariable optimization, we solve <m>\Grad f=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In calculus of variations, we set the functional derivative equal to zero.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        Both express stationarity, but now the object being optimized is a shape.
+      </p>
+    </li>
+  </ul>
 </section>

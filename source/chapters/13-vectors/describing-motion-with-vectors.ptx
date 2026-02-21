@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-describing-motion-with-vectors">
-  <title>Describing motion with vectors</title>
+  <title>Motion in space</title>
 
   <objectives>
     <ol>
@@ -29,5 +29,78 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        2D Velocity:
+        <me>
+          \bv{v}(t)=\dv{\bv{r}}{t}=\qty(f'(t),g'(t))
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        2D Acceleration:
+        <me>
+          \bv{a}(t)=\dv{\bv{v}}{t}=\qty(f''(t),g''(t))
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We've started with 2D, but point out how the vector notation makes it work for any dimension
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Equation of a line in 3D:
+        <me>
+          \bv{r}(t)=\bv{r}_{0}+\bv{v}_{0}t=(x_{0}+v_{0x}t,y_{0}+v_{0y}t,z_{0}+v_{0z}t)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Length / norm of a vector is related to distance and Pythagorean theorem:
+        <me>
+          \norm{(a,b,c)}=\sqrt{a^{2}+b^{2}+c^{2}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Arc length:
+      </p>
+      <md>
+        <mrow>s \amp = \int_a^b \norm{\bv{r}'(t)}\dd{t} </mrow>
+        <mrow>\amp = \int_a^b \sqrt{\qty(\dv{r_x}{t})^{2}+\qty(\dv{r_y}{t})^{2}+\qty(\dv{r_z}{t})^{2}}\dd{t} </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        If we define <m>s(t)=\int_{a}^{t}\norm{\bv{r}'(u)}\dd{u}</m>, then <m>s(t)</m> is a one-to-one increasing function so it has an inverse.
+        Hence if we solve for <m>t</m> as a function of <m>s</m>, i.e.
+        <m>t(s)</m>, then <m>\bar{\bv{r}}(s)=\bv{r}(t(s))</m> is parametrized by arc length.
+        This is called the natural parametrization of the curve.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If we parametrize by arc length, then <m>\norm{\bar{\bv{r}}'(s)}=1</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Difficult to do in practice, but often useful for theoretical arguments, and can be turned back into parametrization by <m>t</m>.
+      </p>
+    </li>
+  </ul>
 </section>

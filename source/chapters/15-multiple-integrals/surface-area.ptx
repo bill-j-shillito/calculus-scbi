@@ -29,5 +29,26 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Area of the surface <m>z=f(x,y)</m> over the region <m>D</m>:
+        <me>
+          \iint_{\cl{S}}\dd{\cl{S}}=\iint_{D}\sqrt{\qty(\pdv{f}{x})^{2}+\qty(\pdv{f}{y})^{2}+1}\dd{A}
+        </me>
+        Notice similarity with arc length formula.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Derivation has to do with surface area element:
+      </p>
+      <md>
+        <mrow>\bv{a} \amp = \qty(\dd{x},0,\pdv{f}{x}\dd{x}) </mrow>
+        <mrow>\bv{b} \amp = \qty(0,\dd{y},\pdv{f}{y}\dd{y}) </mrow>
+        <mrow>\dd{\cl{S}} \amp = \norm{\bv{a}\times\bv{b}} = \sqrt{\qty(\pdv{f}{x})^{2}+\qty(\pdv{f}{y})^{2}+1}\dd{A} </mrow>
+      </md>
+    </li>
+  </ul>
 </section>

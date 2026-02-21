@@ -29,5 +29,107 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        If we can solve for <m>z</m> in terms of <m>x</m> and <m>y</m>, we can write <m>z=f(x,y)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Lots of real-world examples! Will list a bunch later.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Domain of such a function is a region in the plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sets of points for which <m>f(x,y)=k</m> for some constant <m>k</m> are called level curves.
+        They’re essentially traces parallel to the <m>xy</m>-plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Viewing all the level curves of a function gives a contour map, which is a common 2D representation.
+        <ul>
+          <li>
+            <p>
+              Talk about isotherms, isobars, etc.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Level curves of planes are always lines.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The quadric surfaces can be thought of as level surface of functions of three variables, just like the conic sections can be thought of as level curves of functions of two variables.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The limit of a multivariable function <m>f</m> at <m>(x_{0},y_{0})</m> is a value <m>L</m> such that <m>f(x,y)</m> whenever <m>(x,y)\to(x_{0},y_{0})</m> along <em>any</em> path, <m>f(x,y)\to L</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Simple example: Looking at traces found by setting <m>x</m> or <m>y</m> constant.
+        If these give different results when appraoching <m>(x_{0},y_{0})</m>, then <m>f</m> is not continuous.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Some functions require more complicated approaches.
+        <ul>
+          <li>
+            <p>
+              <m>f(x,y)=\frac{xy}{x^{2}+y^{2}}</m> requires an approach along the line <m>y=x</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x,y)=\frac{xy^{2}}{x^{2}+y^{4}}</m> requires an approach along the parabola <m>x=y^{2}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Same definition of continuity at a point: the limit has to match the function value.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Polynomial functions are continuous on their domains, as are all the other <sq>nice</sq> functions, as well as sums, differences, products, quotients with nonzero denominator, and compositions.
+        <ul>
+          <li>
+            <p>
+              Yes, including rational functions.
+              Where things break is where those functions are not defined.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

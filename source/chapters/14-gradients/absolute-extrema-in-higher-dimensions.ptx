@@ -29,5 +29,37 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        In single-variable calculus, to find absolute extrema, we had to look at critical points and boundary points.
+        In multivariable calculus, that boundary is now an entire shape, so we can’t just check a few points.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        To check the boundary of a shape, we can often substitute the boundary curve equation into the thing we want to optimize in order to reduce the number of variables, and then use single-variable calculus.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We also may be able to parameterize the boundary curve to get things in terms of a single variable.
+        This uses the Chain Rule.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        At that point, we just check all the candidates and take the highest and lowest one.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        So the big theme here is, reduce a higher dimensional problem to a lower dimensional problem.
+      </p>
+    </li>
+  </ul>
 </section>

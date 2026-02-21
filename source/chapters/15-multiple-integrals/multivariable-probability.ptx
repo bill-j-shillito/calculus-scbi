@@ -29,5 +29,43 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Joint density function of <m>X</m> and <m>Y</m>:
+        <me>
+          \Prob ((X,Y)\in D)=\iint_{D} f(x,y)\dd{A}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Expected values:
+      </p>
+      <md>
+        <mrow>\mu_X \amp = \iint_{D} xf(x,y)\dd{A}</mrow>
+        <mrow>\mu_Y \amp = \iint_{D} yf(x,y)\dd{A}</mrow>
+      </md>
+      <p>
+        These are just the center of mass again!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Marginal probability density functions:
+      </p>
+      <md>
+        <mrow>f_X(x) \amp = \int_{c}^{d} f(x,y)\dd{y}</mrow>
+        <mrow>f_Y(y) \amp = \int_{a}^{b} f(x,y)\dd{x}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Could do Monte Carlo integration! Would be good practice still for setting up regions!
+      </p>
+    </li>
+  </ul>
 </section>

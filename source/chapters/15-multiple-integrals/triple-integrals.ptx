@@ -29,5 +29,38 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Triple integral of <m>f(x,y,z)</m> over box <m>B=[a,b]\times[c,d]\times[e,f]</m>:
+        <me>
+          \iiint_{B} f(x,y,z)\dd{V}=\limit{\Delta x,\Delta y,\Delta z\to 0}\sum_{i=1}^{m}\sum_{j=1}^{n}\sum_{k=1}^{p} f(x,y,z)\,\Delta x\,\Delta y\,\Delta z
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Iterated integrals can take any of six orders of <m>\dd{x}</m>, <m>\dd{y}</m>, <m>\dd{z}</m>, for example:
+        <me>
+          \int_{x=a}^{x=b}\int_{y=g(x)}^{y=h(x)}\int_{z=p(x,y)}^{z=q(x,y)}f(x,y,z)\dd{z}\dd{y}\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Would like to find a good way to go over setting them up
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Volume:
+        <me>
+          V=\iiint_{D}\dd{V}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

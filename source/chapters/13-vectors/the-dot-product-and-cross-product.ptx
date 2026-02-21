@@ -29,5 +29,72 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        In 2D, if <m>\bv{u}=(a,b)</m> and <m>\bv{v}=(c,d)</m> with angle <m>\theta</m> between them (from <m>\bv{v}</m> to <m>\bv{w}</m>, then we define the dot product and cross product as follows:
+      </p>
+      <md>
+        <mrow>\bv{u}\cdot\bv{v} \amp = \norm\big{u}\norm\big{v}\cos\theta</mrow>
+        <mrow>\bv{u}\times\bv{v} \amp = \norm\big{u}\norm\big{v}\sin\theta</mrow>
+      </md>
+
+      <p>
+        Hence the dot product is maximized when the vectors are parallel, and the cross product is maximized when the vectors are perpendicular.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Calculated componentwise this gives us:
+      </p>
+      <md>
+        <mrow>\bv{u}\cdot\bv{v} \amp = ac+bd</mrow>
+        <mrow>\bv{u}\times\bv{v} \amp = ad-bc</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Show that an object in circular motion has velocity perpendicular to position and acceleration parallel to position.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In 3D, if <m>\bv{u}=(a,b,c)</m> and <m>\bv{v}=(d,e,f)</m> with angle <m>\theta</m> between them (from <m>\bv{u}</m> to <m>\bv{v}</m>, then we define:
+      </p>
+      <md>
+        <mrow>\bv{u}\cdot\bv{v} \amp = \norm\big{u}\norm\big{v}\cos\theta</mrow>
+        <mrow>\bv{u}\times\bv{v} \amp = (\norm\big{u}\norm\big{v}\sin\theta)\hat{\bv{w}}</mrow>
+      </md>
+
+      <p>
+        where <m>\hat{\bv{w}}</m> is the unit vector that completes a right-handed coordinate system.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Componentwise:
+      </p>
+      <md>
+        <mrow>\bv{u}\cdot\bv{v} \amp = ad+be+cf</mrow>
+        <mrow>\bv{u}\times\bv{v} \amp = (bf-ce,cd-af,ae-bd)</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        If <m>\DS\dv{t}(\bv{r}\times\bv{r}')=0</m>, then the motion stays in a plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Need to include the relationship between planes and their normals here.
+        Uses dot products, and the cross product can be used to find the normal to two given vectors.
+      </p>
+    </li>
+  </ul>
 </section>

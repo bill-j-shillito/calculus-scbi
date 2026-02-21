@@ -29,5 +29,72 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Unit tangent:
+        <me>
+          \bv{t}=\frac{\bv{r}'}{\norm{\bv{r}'}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Unit normal:
+        <me>
+          \bv{n}=\frac{\bv{t}'}{\norm{\bv{t}'}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Curvature:
+        <me>
+          \kappa=\norm{\dv{\bv{t}}{s}}=\frac{\norm{\bv{t}'}}{\norm{\bv{r}'}}=\frac{\bv{r}'\times\bv{r}''}{\norm{\bv{r}'}^{3}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Tangent component of acceleration:
+        <me>
+          \bv a_{t}=\bv{a}\cdot\bv{n}
+        </me>
+        Normal component of acceleration:
+        <me>
+          \bv a_{n}=\bv{a}\times\bv{n}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In 3D, we get the binormal:
+        <me>
+          \bv B=\bv{t}\times\bv{n}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Torsion:
+        <me>
+          \dv{\bv{b}}{s}=-\tau\bv{n}
+        </me>
+        <me>
+          \tau=-\dv{\bv{b}}{s}\cdot\bv{n}=-\dfrac{\bv{b}'\cdot\bv{n}}{\norm{\bv{r}'}}=\dfrac{(\bv{r}'\times\bv{r}'')\cdot\bv{r}'''}{\norm{\bv{r}'\times\bv{r}''}^2}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The unit tangent, unit normal, and binormal together form the Frenet-Serret frame.
+      </p>
+    </li>
+  </ul>
 </section>

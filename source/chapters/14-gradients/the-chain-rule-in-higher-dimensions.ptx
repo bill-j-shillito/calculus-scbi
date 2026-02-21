@@ -29,5 +29,117 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Suppose we move along a parametric curve <m>(x(t),y(t))</m>.
+        How does the value of <m>f(x,y)</m> change with <m>t</m>?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can now write the total differential that we saw in Part I in terms of partial derivatives:
+        <me>
+          \dd f=\pdv{f}{x}\dd{x}+\pdv{f}{y}\dd{y}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Dividing by <m>\dd t</m>, we now get the Chain Rule in higher dimensions:
+        <me>
+          \dv{f}{t}=\pdv{f}{x}\cdot\dv{x}{t}+\pdv{f}{y}\cdot\dv{y}{t}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>x</m> and <m>y</m> are both functions of <m>s</m> and <m>t</m>, then we have
+      </p>
+      <md>
+        <mrow>\pdv{f}{s} \amp = \pdv{f}{x}\cdot\pdv{x}{s}+\pdv{f}{y}\cdot\pdv{y}{s}</mrow>
+        <mrow>\pdv{f}{t} \amp = \pdv{f}{x}\cdot\pdv{x}{t}+\pdv{f}{y}\cdot\pdv{y}{t}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        New way to do implicit differentiation! Rewrite implicit curve as a level curve <m>F(x,y)=0</m>; then
+        <me>
+          \dv{y}{x} = -\frac{\partial F/\partial x}{\partial F/\partial y}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sometimes we need to be more explicit about which variables we're holding constant.
+        Use Hughes-Hallett for reference here, they have a great explanation.
+        Let <m>U(P,V,T)</m> be the internal energy of some amount of gas.
+        According to the Ideal Gas Law, we have
+        <me>
+          PV=nRT
+        </me>
+        where <m>n</m> is the (constant) amount of gas and <m>R</m> is the ideal gas constant.
+        In particular, <m>P</m>, <m>V</m>, and <m>T</m> are NOT independent.
+      </p>
+
+      <p>
+        Suppose we want to find <m>\DS\qty(\pdv{U}{T})_{P}</m>, that is, how <m>U</m> depends on <m>T</m> while <m>P</m> is being held constant.
+        This means we're implicitly thinking of <m>U</m> as a function of <m>T</m> and <m>P</m>, with <m>V</m> as an intermediate variable.
+        This makes our total differential
+        <me>
+          \dd U=\qty(\pdv{U}{T})_{P}\dd{T}+\qty(\pdv{U}{P})_{T}\dd{P}
+        </me>.
+        We could also have thought of <m>U</m> as depending on <m>V</m> and <m>T</m>, with <m>P</m> as an intermediate variable:
+        <me>
+          \dd U=\qty(\pdv{U}{T})_{V}\dd{T}+\qty(\pdv{U}{V})_{T}\dd{V}
+        </me>
+        But since <m>V</m> is a function of <m>P</m> and <m>T</m> we have:
+        <me>
+          \dd V=\qty(\pdv{V}{T})_{P}\dd{T}+\qty(\pdv{V}{P})_{T}\dd{P}
+        </me>
+        Substituting this gives us:
+      </p>
+      <md>
+        <mrow>\dd{U} \amp = \qty(\pdv{U}{T})_{V}\dd{T}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{T})_{P}\dd{T}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{P})_{T}\dd{P})</mrow>
+        <mrow> \amp = \qty(\qty(\pdv{U}{T})_{V}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{T})_{P})\dd{T}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{P})_{T}\dd{P}</mrow>
+      </md>
+
+      <p>
+        We now have two expressions for <m>\dd{U}</m>.
+        Setting the <m>\dd T</m> parts equal we get
+        <me>
+          \qty(\pdv{U}{T})_{P}=\qty(\pdv{U}{T})_{V}+\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{T})_{P}
+        </me>,
+        and setting the <m>\dd P</m> parts equal we get
+        <me>
+          \qty(\pdv{U}{P})_{T}=\qty(\pdv{U}{V})_{T}\qty(\pdv{V}{P})_{T}
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        May decide NOT to do it the way described above ...
+        instead we can just extend the tree diagram so that the only ‘leaves' are the independent variables.
+        Explain in terms of the ambiguity of the partial derivative notation and what we're actually looking for.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Dimensionless variables?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Should we use the <m>D</m> notation to clean things up more?
+      </p>
+    </li>
+  </ul>
 </section>
