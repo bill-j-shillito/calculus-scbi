@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Motion in the plane",
-  "body": " Motion in the plane                   Introduction goes here.     Projectile motion:     Circular motion:     Velocity and acceleration in and directions    We can combine these representations into a vector (which we'll draw as an arrow):    Position vector:     Velocity vector:     Acceleration vector:       Since we have multiple variables floating around, we can use dot notation to denote derivatives with respect to time:    Velocity vector:     Acceleration vector:       "
+  "body": " Motion in the plane     Represent motion in the plane by expressing each coordinate as a function of time.    Interpret velocity and acceleration vectors by examining changes in horizontal and vertical components.    Model physical behaviors such as projectile motion and circular paths.      Introduction goes here.     Projectile motion:     Circular motion:     Velocity and acceleration in and directions    We can combine these representations into a vector (which we'll draw as an arrow):    Position vector:     Velocity vector:     Acceleration vector:       Since we have multiple variables floating around, we can use dot notation to denote derivatives with respect to time:    Velocity vector:     Acceleration vector:       "
 },
 {
   "id": "sec-motion-in-the-plane-2",
@@ -511,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "6.1",
   "title": "",
-  "body": "               "
+  "body": "   Represent motion in the plane by expressing each coordinate as a function of time.    Interpret velocity and acceleration vectors by examining changes in horizontal and vertical components.    Model physical behaviors such as projectile motion and circular paths.    "
 },
 {
   "id": "sec-parametric-curves",
@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Parametric curves",
-  "body": " Parametric curves                   Introduction goes here.     Parametric curves are traced out by the motion of a particle, where and are given in terms of     Eliminating the parameter    Slope of a parametric curve:     Parametrization of ellipse:      Parametrization of hyperbola:    (Or switch or for the other one)    "
+  "body": " Parametric curves     Describe curves by giving each coordinate as a separate function of a parameter.    Relate motion along a curve to its slope by comparing how $x$ and $y$ change with the parameter.    Generate familiar shapes such as lines, ellipses, and hyperbolas.      Introduction goes here.     Parametric curves are traced out by the motion of a particle, where and are given in terms of     Eliminating the parameter    Slope of a parametric curve:     Parametrization of ellipse:      Parametrization of hyperbola:    (Or switch or for the other one)    "
 },
 {
   "id": "sec-parametric-curves-2",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "6.2",
   "title": "",
-  "body": "               "
+  "body": "   Describe curves by giving each coordinate as a separate function of a parameter.    Relate motion along a curve to its slope by comparing how $x$ and $y$ change with the parameter.    Generate familiar shapes such as lines, ellipses, and hyperbolas.    "
 },
 {
   "id": "sec-arc-length",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Arc length",
-  "body": " Arc length                   Introduction goes here.     Differential of arc length: (Show right triangle diagram)    Arc length:     If the curve is a function , the formula simplifies:     Easy to find arc length of a circle, but not doable for an ellipse! More on that later.    If is considered as the position of a particle, then the arc length is the distance traveled.    "
+  "body": " Arc length     Measure the length of a curve by accumulating tiny distance increments along its path.    Relate arc length to how quickly the coordinates change along the curve.    Interpret arc length as the total distance traveled by a moving particle.      Introduction goes here.     Differential of arc length: (Show right triangle diagram)    Arc length:     If the curve is a function , the formula simplifies:     Easy to find arc length of a circle, but not doable for an ellipse! More on that later.    If is considered as the position of a particle, then the arc length is the distance traveled.    "
 },
 {
   "id": "sec-arc-length-2",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "6.3",
   "title": "",
-  "body": "               "
+  "body": "   Measure the length of a curve by accumulating tiny distance increments along its path.    Relate arc length to how quickly the coordinates change along the curve.    Interpret arc length as the total distance traveled by a moving particle.    "
 },
 {
   "id": "sec-inverse-trigonometric-functions",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Inverse trigonometric functions",
-  "body": " Inverse trigonometric functions                   Introduction goes here.     Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the arc refers to the arc length of the unit circle corresponding to that angle.    Let , , and . Then we can express the inverse trigonometric functions in terms of these variables:     The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if , then we have . Differentiating both sides with respect to gives: Solving for yields:     Similarly, for , we have . Differentiating both sides gives: Solving for yields:     For , we have . Differentiating both sides gives: Solving for yields:     Put another way, the derivatives of , , and can be thought of as , , and respectively, where is the angle corresponding to the given trigonometric value.    Using as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of :     "
+  "body": " Inverse trigonometric functions     Understand the geometric meaning of inverse trigonometric functions in terms of arc length.    Compute the derivatives of inverse trigonometric functions using implicit differentiation.    Decide on appropriate domains and ranges for the inverse trigonometric functions.      Introduction goes here.     Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the arc refers to the arc length of the unit circle corresponding to that angle.    Let , , and . Then we can express the inverse trigonometric functions in terms of these variables:     The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if , then we have . Differentiating both sides with respect to gives: Solving for yields:     Similarly, for , we have . Differentiating both sides gives: Solving for yields:     For , we have . Differentiating both sides gives: Solving for yields:     Put another way, the derivatives of , , and can be thought of as , , and respectively, where is the angle corresponding to the given trigonometric value.    Using as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of :     "
 },
 {
   "id": "sec-inverse-trigonometric-functions-2",
@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "6.4",
   "title": "",
-  "body": "               "
+  "body": "   Understand the geometric meaning of inverse trigonometric functions in terms of arc length.    Compute the derivatives of inverse trigonometric functions using implicit differentiation.    Decide on appropriate domains and ranges for the inverse trigonometric functions.    "
 },
 {
   "id": "sec-curvature",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.5",
   "title": "Curvature",
-  "body": " Curvature                   Introduction goes here.     The angle of inclination is the angle between the tangent to the curve and the horizontal, defined by     Normal line has negative reciprocal slope     Angle between curves can be found using the tangent of a difference formula:     Focal reflection properties of parabola, ellipse, and hyperbola    Curvature of a plane curve:     Derivation:         Radius of curvature is     Center of curvature is the limit of where normal lines intersect    The osculating circle is the circle with center at the center of curvature and radius equal to the radius of curvature. It is the circle that best approximates the curve at that point.    "
+  "body": " Curvature     Measure how sharply a curve bends by examining changes in its tangent direction.    Relate curvature to the radius and center of the circle that best fits the curve at a point.    Interpret curvature geometrically using normals and the behavior of nearby points on the curve.      Introduction goes here.     The angle of inclination is the angle between the tangent to the curve and the horizontal, defined by     Normal line has negative reciprocal slope     Angle between curves can be found using the tangent of a difference formula:     Focal reflection properties of parabola, ellipse, and hyperbola    Curvature of a plane curve:     Derivation:         Radius of curvature is     Center of curvature is the limit of where normal lines intersect    The osculating circle is the circle with center at the center of curvature and radius equal to the radius of curvature. It is the circle that best approximates the curve at that point.    "
 },
 {
   "id": "sec-curvature-2",
@@ -583,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "6.5",
   "title": "",
-  "body": "               "
+  "body": "   Measure how sharply a curve bends by examining changes in its tangent direction.    Relate curvature to the radius and center of the circle that best fits the curve at a point.    Interpret curvature geometrically using normals and the behavior of nearby points on the curve.    "
 },
 {
   "id": "sec-area-between-curves",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Area between curves",
-  "body": " Area between curves                   Introduction goes here.     Area bounded by over :     Area bounded by over :     If the demand curve and the supply curve meet at the equilibrium point , then the consumer surplus is , and the producer surplus is .    A Lorenz curve is a function , where , that describes how wealth is distributed among the members of a population. Given any Lorenz curve , the Gini coefficient is defined as . This can be used as a quantitative measure of income inequality.    "
+  "body": " Area between curves     Compute area by comparing one curve to another across an interval.    Switch perspectives by integrating with respect to or when appropriate.    Apply area comparisons to economic quantities such as surplus and measures of inequality.      Introduction goes here.     Area bounded by over :     Area bounded by over :     If the demand curve and the supply curve meet at the equilibrium point , then the consumer surplus is , and the producer surplus is .    A Lorenz curve is a function , where , that describes how wealth is distributed among the members of a population. Given any Lorenz curve , the Gini coefficient is defined as . This can be used as a quantitative measure of income inequality.    "
 },
 {
   "id": "sec-area-between-curves-2",
@@ -601,7 +601,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.1",
   "title": "",
-  "body": "               "
+  "body": "   Compute area by comparing one curve to another across an interval.    Switch perspectives by integrating with respect to or when appropriate.    Apply area comparisons to economic quantities such as surplus and measures of inequality.    "
 },
 {
   "id": "sec-volume-by-slicing",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.2",
   "title": "Volume by slicing",
-  "body": " Volume by slicing                   Introduction goes here.     If a solid has cross sections perpendicular to the -axis with area , then the volume of the solid over is given by . If a solid has cross sections perpendicular to the -axis with area , then the volume of the solid over is given by .    Disk Method for solids of revolution (about horizontal axis):     Washer Method (about horizontal axis):     "
+  "body": " Volume by slicing     Find volume by accumulating the areas of thin cross sections through a solid.    Select slices perpendicular to the - or -axis based on the geometry.    Model solids of revolution using disk and washer cross sections.      Introduction goes here.     If a solid has cross sections perpendicular to the -axis with area , then the volume of the solid over is given by . If a solid has cross sections perpendicular to the -axis with area , then the volume of the solid over is given by .    Disk Method for solids of revolution (about horizontal axis):     Washer Method (about horizontal axis):     "
 },
 {
   "id": "sec-volume-by-slicing-2",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.2",
   "title": "",
-  "body": "               "
+  "body": "   Find volume by accumulating the areas of thin cross sections through a solid.    Select slices perpendicular to the - or -axis based on the geometry.    Model solids of revolution using disk and washer cross sections.    "
 },
 {
   "id": "sec-volume-by-shells",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Volume by shells",
-  "body": " Volume by shells                   Introduction goes here.     Start with an example that can't be done with washers because of non-invertible functions.    If the region under the curve from to ( ) is revolved around the -axis, the volume is     Include something about how to know which method may be best.    "
+  "body": " Volume by shells     Compute volume by adding the contributions of thin cylindrical shells.    Use shell height and radius to quantify each shell's contribution.    Choose shells or washers based on which method aligns with the region's geometry.      Introduction goes here.     Start with an example that can't be done with washers because of non-invertible functions.    If the region under the curve from to ( ) is revolved around the -axis, the volume is     Include something about how to know which method may be best.    "
 },
 {
   "id": "sec-volume-by-shells-2",
@@ -637,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.3",
   "title": "",
-  "body": "               "
+  "body": "   Compute volume by adding the contributions of thin cylindrical shells.    Use shell height and radius to quantify each shell's contribution.    Choose shells or washers based on which method aligns with the region's geometry.    "
 },
 {
   "id": "sec-surfaces-of-revolution",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Surfaces of revolution",
-  "body": " Surfaces of revolution                   Introduction goes here.     Area of a surface of revolution for a parametric curve about the -axis:     If revolving a function , this simplifies:     "
+  "body": " Surfaces of revolution     Measure the area of a surface formed by revolving a curve around an axis.    Relate each thin surface band to its radius and to the curve's rate of change.    Use simplified formulas when the revolving curve is expressed as a function.      Introduction goes here.     Area of a surface of revolution for a parametric curve about the -axis:     If revolving a function , this simplifies:     "
 },
 {
   "id": "sec-surfaces-of-revolution-2",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.4",
   "title": "",
-  "body": "               "
+  "body": "   Measure the area of a surface formed by revolving a curve around an axis.    Relate each thin surface band to its radius and to the curve's rate of change.    Use simplified formulas when the revolving curve is expressed as a function.    "
 },
 {
   "id": "sec-integration-by-substitution",
@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Integration by substitution",
-  "body": " Integration by substitution                   Introduction goes here.     This is the Anti-Chain Rule : making the substitution and gives     Transforming definite integrals:  According to Advanced Calculus by James J. Callahan, this is a pushforward substitution!       Look at examples where multiple substitutions are needed, such as     "
+  "body": " Integration by substitution     Reverse the Chain Rule by introducing a substitution to simplify the integrand.    Adjust limits of integration after changing variables in definite integrals.    Use multi-stage substitutions for more complicated expressions.      Introduction goes here.     This is the Anti-Chain Rule : making the substitution and gives     Transforming definite integrals:  According to Advanced Calculus by James J. Callahan, this is a pushforward substitution!       Look at examples where multiple substitutions are needed, such as     "
 },
 {
   "id": "sec-integration-by-substitution-2",
@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "8.1",
   "title": "",
-  "body": "               "
+  "body": "   Reverse the Chain Rule by introducing a substitution to simplify the integrand.    Adjust limits of integration after changing variables in definite integrals.    Use multi-stage substitutions for more complicated expressions.    "
 },
 {
   "id": "sec-integration-by-parts",
@@ -682,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Integration by parts",
-  "body": " Integration by parts                   Introduction goes here.     This is the Anti-Product Rule : if we can write our integrand in the form , then we have We want to choose so it’s easy to differentiate and so it's easy to integrate.    Tabular integration for IBP multiple times    Cycle trick for     "
+  "body": " Integration by parts     Reverse the Product Rule by choosing parts to differentiate and integrate.    Use tabular integration for repeated applications.    Identify cyclic integrals and solve them by recognizing reappearing terms.      Introduction goes here.     This is the Anti-Product Rule : if we can write our integrand in the form , then we have We want to choose so it’s easy to differentiate and so it's easy to integrate.    Tabular integration for IBP multiple times    Cycle trick for     "
 },
 {
   "id": "sec-integration-by-parts-2",
@@ -691,61 +691,61 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "8.2",
   "title": "",
-  "body": "               "
-},
-{
-  "id": "sec-trigonometric-integrals",
-  "level": "1",
-  "url": "sec-trigonometric-integrals.html",
-  "type": "Section",
-  "number": "8.3",
-  "title": "Trigonometric integrals",
-  "body": " Trigonometric integrals                   Introduction goes here.     For :   If either or is odd, save one factor and convert the rest using the identity .    If both and are even, use the power reduction identities        For :   If is even, save a factor of and use to rewrite the integral.    If is odd, save a factor of and use to rewrite the integral.    If is odd and is even, use substitution and integration by parts as necessary. The integral of comes up in analyzing the Mercator projection!       Integral reduction formulas:     "
-},
-{
-  "id": "sec-trigonometric-integrals-2",
-  "level": "2",
-  "url": "sec-trigonometric-integrals.html#sec-trigonometric-integrals-2",
-  "type": "Objectives",
-  "number": "8.3",
-  "title": "",
-  "body": "               "
+  "body": "   Reverse the Product Rule by choosing parts to differentiate and integrate.    Use tabular integration for repeated applications.    Identify cyclic integrals and solve them by recognizing reappearing terms.    "
 },
 {
   "id": "sec-trigonometric-substitution",
   "level": "1",
   "url": "sec-trigonometric-substitution.html",
   "type": "Section",
-  "number": "8.4",
+  "number": "8.3",
   "title": "Trigonometric substitution",
-  "body": " Trigonometric substitution                   Introduction goes here.     Application: Hydrostatic pressure on a circular drum    Make substitutions based on the following:       When you see...  Substitute...                                With definite integrals:  According to Advanced Calculus by James J. Callahan, this is a pullback substitution!         From this we can get some basic derivatives of inverse trigonometric functions:     "
+  "body": " Trigonometric substitution     Match algebraic expressions to trigonometric identities to simplify integrals.    Choose substitutions that transform square-root expressions into trig forms.    Understand how symmetry can make certain definite integrals easier.      Introduction goes here.     Application: Hydrostatic pressure on a circular drum    Emphasize that we're introducing a more complicated function to simplify the integrand, which is the opposite of the first kind of substitution we did. The rationale is that we're doing it based on recognizing the format of Pythagorean identities.    Make substitutions based on the following:       When you see...  Substitute...                                With definite integrals:  According to Advanced Calculus by James J. Callahan, this is a pullback substitution!         Look at examples where symmetry can be used to simplify the limits of integration, such as     If is an even function, then . If is an odd function, then .    "
 },
 {
   "id": "sec-trigonometric-substitution-2",
   "level": "2",
   "url": "sec-trigonometric-substitution.html#sec-trigonometric-substitution-2",
   "type": "Objectives",
-  "number": "8.4",
+  "number": "8.3",
   "title": "",
-  "body": "               "
+  "body": "   Match algebraic expressions to trigonometric identities to simplify integrals.    Choose substitutions that transform square-root expressions into trig forms.    Understand how symmetry can make certain definite integrals easier.    "
 },
 {
   "id": "sec-partial-fractions",
   "level": "1",
   "url": "sec-partial-fractions.html",
   "type": "Section",
-  "number": "8.5",
+  "number": "8.4",
   "title": "Partial fractions",
-  "body": " Partial fractions                   Introduction goes here.     Application: logistic population growth    To integrate rational functions, we can use long division to separate out the polynomial part and the proper rational part, after which we can write every partial fraction as a sum of functions of the form .    When we have in the denominator, the partial fraction decomposition will contain an expression of the form . These can be integrated using the Anti-Power Rule or the natural logarithm.    When we have in the denominator, the partial fraction decomposition will contain an expression of the form . These can be integrated using (trigonometric) substitution.    Weierstrass substitution may fit here?    "
+  "body": " Partial fractions     Decompose rational functions into simpler fractions for direct integration.    Separate linear and quadratic factors using algebraic decomposition.    Integrate each component using logarithms, power rules, or trig substitutions.      Introduction goes here.     Application: logistic population growth    To integrate rational functions, we can use long division to separate out the polynomial part and the proper rational part, after which we can write every partial fraction as a sum of functions of the form .    When we have in the denominator, the partial fraction decomposition will contain an expression of the form . These can be integrated using the Anti-Power Rule or the natural logarithm.    When we have in the denominator, the partial fraction decomposition will contain an expression of the form . These can be integrated using (trigonometric) substitution.    Weierstrass substitution may fit here?    "
 },
 {
   "id": "sec-partial-fractions-2",
   "level": "2",
   "url": "sec-partial-fractions.html#sec-partial-fractions-2",
   "type": "Objectives",
+  "number": "8.4",
+  "title": "",
+  "body": "   Decompose rational functions into simpler fractions for direct integration.    Separate linear and quadratic factors using algebraic decomposition.    Integrate each component using logarithms, power rules, or trig substitutions.    "
+},
+{
+  "id": "sec-advanced-integration-strategy",
+  "level": "1",
+  "url": "sec-advanced-integration-strategy.html",
+  "type": "Section",
+  "number": "8.5",
+  "title": "Advanced integration strategy",
+  "body": " Advanced integration strategy     Decide which integration technique is most promising based on the structure of an integrand.    Combine multiple techniques (substitution, parts, trig substitution, partial fractions) in a single problem.    Use reduction formulas to simplify or reorganize difficult integrals.      Introduction goes here.     How do you know what to try? Recognizing structural signals: composition (substitution), products (parts), radicals of quadratics (trig substitution), rational functions (partial fractions), and algebraic simplification before applying any method.    Choosing what powers to set apart in trigonometric integrals: handling odd and even powers of sine and cosine; strategies for powers of tangent and secant; rewriting with identities before integrating.    For :   If either or is odd, save one factor and convert the rest using the identity .    If both and are even, use the power reduction identities        For :   If is even, save a factor of and use to rewrite the integral.    If is odd, save a factor of and use to rewrite the integral.    If is odd and is even, use substitution and integration by parts as necessary. The integral of comes up in analyzing the Mercator projection!         Combining multiple techniques in one problem: substitution followed by parts, long division before partial fractions, completing the square before trig substitution, and back-substitution.    Integration cycles and solving for the integral: applying integration by parts twice and rearranging algebraically. Example:     Reduction formulas: defining integrals like or and expressing them recursively in terms of lower powers.     Looking at an integral table    "
+},
+{
+  "id": "sec-advanced-integration-strategy-2",
+  "level": "2",
+  "url": "sec-advanced-integration-strategy.html#sec-advanced-integration-strategy-2",
+  "type": "Objectives",
   "number": "8.5",
   "title": "",
-  "body": "               "
+  "body": "   Decide which integration technique is most promising based on the structure of an integrand.    Combine multiple techniques (substitution, parts, trig substitution, partial fractions) in a single problem.    Use reduction formulas to simplify or reorganize difficult integrals.    "
 },
 {
   "id": "sec-functions-defined-by-integrals",
