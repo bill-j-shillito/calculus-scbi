@@ -136,10 +136,16 @@
 
     <li>
       <p>
-        Fundamental Theorem of Exterior Calculus:Possible reference for calculus in four dimensions: <url href="https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf">https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf</url>
+        Fundamental Theorem of Exterior Calculus:
+        <aside>
+          <p>
+            Possible reference for calculus in four dimensions: <url href="https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf">https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf</url>
+          </p>
+        </aside>
         <me>
           \int_{C}\xd\omega=\int_{\partial C}\omega
         </me>
+        This encompasses the Fundamental Theorem of Calculus, the Gradient Theorem, Green's Theorems, Gauss's Divergence Theorem, and Stokes' Curl Theorem, all at once.
       </p>
     </li>
 

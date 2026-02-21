@@ -71,7 +71,7 @@
 
     <li>
       <p>
-        If <m>\phi</m> is harmonic, it has a harmonic conjugate <m>\phi</m>, and we say that
+        If <m>\phi</m> is harmonic, it has a harmonic conjugate <m>\psi</m>, and we say that
         <me>
           \bv{\Omega}(z)=\phi(x,y)+\ii\psi(x,y)
         </me>
