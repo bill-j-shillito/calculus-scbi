@@ -99,13 +99,13 @@
         <ul>
           <li>
             <p>
-              <m>f(x,y)=\frac{xy}{x^{2}+y^{2}}</m> requires an approach along the line <m>y=x</m>.
+              <m>f(x,y)=\dfrac{xy}{x^{2}+y^{2}}</m> requires an approach along the line <m>y=x</m>.
             </p>
           </li>
 
           <li>
             <p>
-              <m>f(x,y)=\frac{xy^{2}}{x^{2}+y^{4}}</m> requires an approach along the parabola <m>x=y^{2}</m>.
+              <m>f(x,y)=\dfrac{xy^{2}}{x^{2}+y^{4}}</m> requires an approach along the parabola <m>x=y^{2}</m>.
             </p>
           </li>
         </ul>
