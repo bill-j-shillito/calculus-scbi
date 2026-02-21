@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,48 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 21.1"><a href="#sec-the-need-for-rigor-2" title="Copy heading and permalink for Objectives 21.1" aria-label="Copy heading and permalink for Objectives 21.1">🔗</a></div></article><section class="introduction" id="sec-the-need-for-rigor-3"><div class="para" id="sec-the-need-for-rigor-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 21.1: The need for rigor"><a href="#sec-the-need-for-rigor" title="Copy heading and permalink for Section 21.1: The need for rigor" aria-label="Copy heading and permalink for Section 21.1: The need for rigor">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-the-need-for-rigor-4">
+<li id="sec-the-need-for-rigor-4-1">
+<div class="para logical" id="sec-the-need-for-rigor-4-1-1">
+<div class="para">Recall the basic square wave with amplitude <span class="process-math">\(1\)</span> and period <span class="process-math">\(2\uppi\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-the-need-for-rigor-4-1-1-3">
+\begin{equation*}
+S(x)=\frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
+\end{equation*}
+</div>
+<div class="para">Every term in this series is a continuous function — it’s just a sinusoid — but the resulting function is discontinuous!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-need-for-rigor-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-need-for-rigor-4-2">
+<div class="para" id="sec-the-need-for-rigor-4-2-1">The Gibbs phenomenon is the overshooting and undershooting that occurs around the points of discontinuity for any finite sum. It never goes away even with more and more times, because the series is not uniformly convergent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-need-for-rigor-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-need-for-rigor-4-3">
+<div class="para" id="sec-the-need-for-rigor-4-3-1">From Wikipedia: “It is impossible for a discontinuous function to have absolutely convergent Fourier coefficients, since the function would thus be the uniform limit of continuous functions and therefore be continuous, a contradiction.”<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-need-for-rigor-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-need-for-rigor-4-4">
+<div class="para" id="sec-the-need-for-rigor-4-4-1">If you integrate and then differentiate the infinite series, you get points where the derivative is undefined.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-need-for-rigor-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-need-for-rigor-4-5">
+<div class="para" id="sec-the-need-for-rigor-4-5-1">Derivative of the square wave term by term goes nuts!!<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-need-for-rigor-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-need-for-rigor-4-6">
+<div class="para" id="sec-the-need-for-rigor-4-6-1">Fourier’s series caused a lot of mathematicians to slam on the brakes and try to figure out what was really going on. The result was real analysis.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-need-for-rigor-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-need-for-rigor-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 21.1: The need for rigor"><a href="#sec-the-need-for-rigor" title="Copy heading and permalink for Section 21.1: The need for rigor" aria-label="Copy heading and permalink for Section 21.1: The need for rigor">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-properties-of-real-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ordered-fields.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

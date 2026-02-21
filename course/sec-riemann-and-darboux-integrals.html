@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -489,7 +493,111 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 24.3"><a href="#sec-riemann-and-darboux-integrals-2" title="Copy heading and permalink for Objectives 24.3" aria-label="Copy heading and permalink for Objectives 24.3">🔗</a></div></article><section class="introduction" id="sec-riemann-and-darboux-integrals-3"><div class="para" id="sec-riemann-and-darboux-integrals-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 24.3: Riemann and Darboux integrals"><a href="#sec-riemann-and-darboux-integrals" title="Copy heading and permalink for Section 24.3: Riemann and Darboux integrals" aria-label="Copy heading and permalink for Section 24.3: Riemann and Darboux integrals">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-riemann-and-darboux-integrals-4">
+<li id="sec-riemann-and-darboux-integrals-4-1">
+<div class="para logical" id="sec-riemann-and-darboux-integrals-4-1-1">
+<div class="para">A partition of <span class="process-math">\([a,b]\)</span> is a finite set</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-1-1-2">
+\begin{equation*}
+P=\set{x_0,x_1,x_2,\cdots,x_n}
+\end{equation*}
+</div>
+<div class="para">such that <span class="process-math">\(a=x_{0}\text{,}\)</span> <span class="process-math">\(b=x_{n}\text{,}\)</span> and <span class="process-math">\(x_{0}&lt;x_{1}&lt;x_{2}&lt;\cdots&lt;x_{n}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-riemann-and-darboux-integrals-4-2">
+<div class="para" id="sec-riemann-and-darboux-integrals-4-2-1">Given a partition <span class="process-math">\(\set{\seq x0n}\)</span> of <span class="process-math">\([a,b]\text{,}\)</span> for each subinterval <span class="process-math">\([x_{i-1},x_{i}]\text{,}\)</span> we denote:<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-2-2">
+\begin{align*}
+m_i \amp = \inf\set{f(x):x\in[x_{i-1},x_i]}\\
+M_i \amp = \sup\set{f(x):x\in[x_{i-1},x_i]}
+\end{align*}
+</div>
+<div class="para logical" id="sec-riemann-and-darboux-integrals-4-2-3">
+<div class="para">Now we can define the upper sum as</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-2-3-1">
+\begin{equation*}
+U(f,P)=\sum_{i=1}^{n} M_{i}\cdot(x_{i}-x_{i-1})
+\end{equation*}
+</div>
+<div class="para">and the lower sum as</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-2-3-2">
+\begin{equation*}
+L(f,P)=\sum_{i=1}^{n} m_{i}\cdot(x_{i}-x_{i-1})\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-riemann-and-darboux-integrals-4-3">
+<div class="para" id="sec-riemann-and-darboux-integrals-4-3-1">A partition <span class="process-math">\(Q\)</span> of <span class="process-math">\([a,b]\)</span> is a refinement of <span class="process-math">\(P\)</span> if <span class="process-math">\(P\subseteq Q\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-riemann-and-darboux-integrals-4-3-2">
+<div class="para">If so, then</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-3-2-1">
+\begin{equation*}
+U(f,P)\ge U(f,Q)\quad\text{and}\quad L(f,P)\le L(f,Q)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-riemann-and-darboux-integrals-4-4">
+<div class="para" id="sec-riemann-and-darboux-integrals-4-4-1">If <span class="process-math">\(P\)</span> is a partition of <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(L(f,P)\le U(f,P)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-riemann-and-darboux-integrals-4-5">
+<div class="para logical" id="sec-riemann-and-darboux-integrals-4-5-1">
+<div class="para">If <span class="process-math">\(P_{1}\)</span> and <span class="process-math">\(P_{2}\)</span> are any partitions of <span class="process-math">\([a,b]\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-5-1-4">
+\begin{equation*}
+L(f,P_{1})\le U(f,P_{2})\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-riemann-and-darboux-integrals-4-6">
+<div class="para logical" id="sec-riemann-and-darboux-integrals-4-6-1">
+<div class="para">Let <span class="process-math">\(f:[a,b]\to\bb R\)</span> be a bounded function and let <span class="process-math">\(\cl P\)</span> be the collection of <em class="emphasis">all</em> partition of <span class="process-math">\([a,b]\text{.}\)</span> The upper integral of <span class="process-math">\(f\)</span> is defined to be</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-6-1-6">
+\begin{equation*}
+U(f)=\inf_{P\in\cl P}U(f,P)
+\end{equation*}
+</div>
+<div class="para">and the lower integral is</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-6-1-7">
+\begin{equation*}
+L(f)=\sup_{P\in\cl P}L(f,P)
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(L(f)=U(f)\text{,}\)</span> we say that <span class="process-math">\(f\)</span> is Darboux integrable. This is equivalent to being Riemann integrable.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-riemann-and-darboux-integrals-4-7">
+<div class="para logical" id="sec-riemann-and-darboux-integrals-4-7-1">
+<div class="para">If <span class="process-math">\(m=\inf\limits_{a\le x\le b}f(x)\)</span> and <span class="process-math">\(M=\sup\limits_{a\le x\le b}f(x)\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec-riemann-and-darboux-integrals-4-7-1-3">
+\begin{equation*}
+m(b-a)\le L(f)\le U(f)\le M(b-a)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-riemann-and-darboux-integrals-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-riemann-and-darboux-integrals-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 24.3: Riemann and Darboux integrals"><a href="#sec-riemann-and-darboux-integrals" title="Copy heading and permalink for Section 24.3: Riemann and Darboux integrals" aria-label="Copy heading and permalink for Section 24.3: Riemann and Darboux integrals">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-uniform-continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-conditions-for-integrability.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

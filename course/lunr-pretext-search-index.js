@@ -1960,7 +1960,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.1",
   "title": "The need for rigor",
-  "body": " The need for rigor                   Introduction goes here.   "
+  "body": " The need for rigor                   Introduction goes here.     Recall the basic square wave with amplitude and period : Every term in this series is a continuous function — it’s just a sinusoid — but the resulting function is discontinuous!    The Gibbs phenomenon is the overshooting and undershooting that occurs around the points of discontinuity for any finite sum. It never goes away even with more and more times, because the series is not uniformly convergent.    From Wikipedia: “It is impossible for a discontinuous function to have absolutely convergent Fourier coefficients, since the function would thus be the uniform limit of continuous functions and therefore be continuous, a contradiction.”    If you integrate and then differentiate the infinite series, you get points where the derivative is undefined.    Derivative of the square wave term by term goes nuts!!    Fourier’s series caused a lot of mathematicians to slam on the brakes and try to figure out what was really going on. The result was real analysis.    "
 },
 {
   "id": "sec-the-need-for-rigor-2",
@@ -1978,7 +1978,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.2",
   "title": "Ordered fields",
-  "body": " Ordered fields                   Introduction goes here.   "
+  "body": " Ordered fields                   Introduction goes here.     Motivation: We need to start somewhere. Discuss the role of axioms in building a logical system. Alternatively: what the heck are numbers?    Field axioms:   Commutativity of addition and multiplication    Distributivity of multiplication over addition    Associativity of addition and multiplication    Existence of additive and multiplicative identities    Existence of additive and multiplicative inverses       Order axiom:  There is a nonempty subset , called the positive numbers, such that:   If , then and .    If and , then or , but not both.   A field that satisfies this axiom is called an ordered field.    Real numbers are ordered. Complex numbers are not.    "
 },
 {
   "id": "sec-ordered-fields-2",
@@ -1996,7 +1996,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.3",
   "title": "The completeness property",
-  "body": " The completeness property                   Introduction goes here.   "
+  "body": " The completeness property                   Introduction goes here.     A set is bounded above if there is some such that for all .  Simiilarly, is bounded below if there is some such that for all .    The supremum of a set , denoted , is the least upper bound of that set. That is, is an upper bound of , and if is any upper bound of , then .  The infimum of , denoted , is the greatest lower bound.    A set has the supremum property if any subset which is bounded above has a least upper bound in . Such a set is called complete.    The real numbers are complete. The rationals are not. (Neither are the hyperreals.)    We can say that is the completion of , we we have added just enough numbers to make it complete.    If , then for any , there is somet such that .    An ordered field is Archimedean if for any with , there exists some such that .    In essence this says that there is no pair such that is infinitesimal with respect to , or is infinitesimal with respect to .    The real numbers are Archimedean. The hyperreals are not.    Can be used to show that is dense in , that is, for any , there exists such that .    "
 },
 {
   "id": "sec-the-completeness-property-2",
@@ -2014,7 +2014,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "21.4",
   "title": "Topology of the real numbers",
-  "body": " Topology of the real numbers                   Introduction goes here.   "
+  "body": " Topology of the real numbers                   Introduction goes here.     A metric on a set is a function that satisfies the following properties:   Positive definite: for all , and if and only if .    Symmetric: for all .    Triangle inequality: for all .       The absolute value can be used as a distance function: .    Other corollaries of the triangle inequality:             Extended:        A set is open if, for every , there exists such that . We call the -neighborhood of and denote it , so .    Open sets are closed under arbitrary units and finite intersections.    Every open set is a countable union of disjoint open intervals.    A set is closed if its complement is open.    De Morgan’s laws for open and closed sets    "
 },
 {
   "id": "sec-topology-of-the-real-numbers-2",
@@ -2032,7 +2032,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.1",
   "title": "Convergence of sequences",
-  "body": " Convergence of sequences                   Introduction goes here.   "
+  "body": " Convergence of sequences                   Introduction goes here.     A sequence of real numbers is a function . We write instead of .    A sequence is bounded if there exists and such that for all .    A sequence converges to if for all there exists some such that for all . We say is the limit of , and we write .    If a sequence does not converge, it diverges.    We say if for all there exists some such that for all . Similarly, if for all there exists some such that for all .    A point is a limit point of a set if there is a sequence of points from such that . (This seems off... not that general. Look up again.)    A set is closed if and only if it contains all its limit points.    "
 },
 {
   "id": "sec-convergence-of-sequences-2",
@@ -2050,7 +2050,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.2",
   "title": "Proving limit laws",
-  "body": " Proving limit laws                   Introduction goes here.   "
+  "body": " Proving limit laws                   Introduction goes here.     Limits are unique.    Convergent sequences must be bounded.    Sequence limits respect addition, subtraction, scalar multiplication, multiplication, nonzero division, and inequalities.    Sequence squeeze theorem    "
 },
 {
   "id": "sec-proving-limit-laws-2",
@@ -2068,7 +2068,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.3",
   "title": "Limits of functions",
-  "body": " Limits of functions                   Introduction goes here.   "
+  "body": " Limits of functions                   Introduction goes here.     Let and let be a limit point of . Then we say that if for all there exists such that for every for which , we have     Sequential limits: if and only if, for every sequence from for which each and , we have .    Relate to continuity using - definition    "
 },
 {
   "id": "sec-limits-of-functions-2",
@@ -2086,7 +2086,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.4",
   "title": "Cauchy sequences",
-  "body": " Cauchy sequences                   Introduction goes here.   "
+  "body": " Cauchy sequences                   Introduction goes here.     A sequence is a Cauchy sequence if for all there exists some such that for all .    If a sequence is Cauchy, then it is bounded.    If a sequence converges, then it is Cauchy.    If a sequence in a complete space is Cauchy, then it converges. This property is called Cauchy completeness.     trick    “Ratio test”: If is positive and , then .    Monotone convergence theorem: A monotone sequence of real numbers converges if and only if it is bounded. Furthermore, the limit is the supremum or infimum. (Could apply to definition of .)    "
 },
 {
   "id": "sec-cauchy-sequences-2",
@@ -2104,7 +2104,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "22.5",
   "title": "Constructing the real numbers",
-  "body": " Constructing the real numbers                   Introduction goes here.   "
+  "body": " Constructing the real numbers                   Introduction goes here.     Axiomatic construction is nice, but it would be even nicer if we could exhibit an object that exhibits all those axioms, what would be called a model of the real numbers.    Could construct it as the equivalence classes of Cauchy sequences, where two sequences are equivalent if and only if their difference tends to zero. This generalizes to the completion of any metric space. Operations are defined termwise. This seems to be the easiest, and infinite decimals work well here.    Could construct it using Dedekind cuts, which are partitions of such that neither nor is empty, for all and , and has no greatest element. Operations are defined elementwise, though multiplication is difficult.    Could construct it using nested intervals.    "
 },
 {
   "id": "sec-constructing-the-real-numbers-2",
@@ -2122,7 +2122,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.1",
   "title": "Differentiability classes",
-  "body": " Differentiability classes                   Introduction goes here.   "
+  "body": " Differentiability classes                   Introduction goes here.     Every differentiable function is continuous.    A function is continuously differentiable if it is differentiable and its derivative is continuous.    A function is of differentiability class if the derivatives exist and are continuous.    : continuous functions     : continuously differentiable functions     : smooth functions     : analytic functions. (May not put this here in the end.)  An example of a function that is smooth but not analytic is the bump function        Often interesting example:     Remind about Intermediate Value Theorem, which can now be proven using known tools    Darboux’s theorem: Suppose is differentiable. If is between and , there exists such that .    "
 },
 {
   "id": "sec-differentiability-classes-2",
@@ -2140,7 +2140,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.2",
   "title": "More on the Mean Value Theorem",
-  "body": " More on the Mean Value Theorem                   Introduction goes here.   "
+  "body": " More on the Mean Value Theorem                   Introduction goes here.     Rolle's theorem Let be continuous on and differentiable on . If , then there exists where . (This can be used to prove the MVT.)   If a function has zero derivative on an interval, it must be constant.    If two functions have the same derivative on an interval, they must differ by a constant.    A function is monotone increasing if and only if its derivative is nonnegative on an interval.       Cauchy's mean value theorem: If and are continuous on and differentiable on , then there is a number such that Another way to visualize it is to have a parametric curve for and point out that there exists such that (assuming that the denominators aren't zero).    Cauchy's MVT can be used to prove L'Hôpital's rule.    "
 },
 {
   "id": "sec-the-mean-value-theorem-2",
@@ -2158,7 +2158,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "23.3",
   "title": "Taylor’s theorem",
-  "body": " Taylor's theorem                   Introduction goes here.   "
+  "body": " Taylor's theorem                   Introduction goes here.     Taylor’s theorem: For any other there exists some between and (which depends on and and ) such that That is, , for some between and .    Integral form of remainder function:     Lagrange error bound: If for , then for .    "
 },
 {
   "id": "sec-taylors-theorem-2",
@@ -2175,8 +2175,8 @@ var ptx_lunr_docs = [
   "url": "sec-inverse-and-implicit-functions.html",
   "type": "Section",
   "number": "23.4",
-  "title": "Inverse and implicit functions",
-  "body": " Inverse and implicit functions                   Introduction goes here.   "
+  "title": "The inverse and implicit function theorems",
+  "body": " The inverse and implicit function theorems                   Introduction goes here.     The preimage of a set under a function is the set     A function is continuous if the preimage of every open set is open.    Inverse function theorem: A continuous function of a single variable is invertible on its image if and only if it is strictly monotonic. If is continuously differentiable on an interval and for each , then is continuously differentiable on and     In multiple dimensions, the Jacobian needs to be nonzero, and it guarantees the existence of a unique solution.    If we drop the assumption that is continuous, may not be invertible. Great example is .    If is invertible, it maps open sets to open sets (it’s an open map).    Implicit function theorem: If is a function that is continuously differentiable in a neighborhood of , and , then there exists a unique differentiable function such that and in a neighborhood of . We have:     "
 },
 {
   "id": "sec-inverse-and-implicit-functions-2",
@@ -2194,7 +2194,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.1",
   "title": "Compactness",
-  "body": " Compactness                   Introduction goes here.   "
+  "body": " Compactness                   Introduction goes here.     An open cover of is a collection such that     If has a finite subset (with ) which is still a cover of , then is called a finite subcover of .    A set is compact if every open cover of admits a finite subcover of .Great note I saw online: “A has B” suggests that B is part of the nature of A. For example, every Cauchy sequence (in ) has a limit. “A admits B” suggests that it is possible to find B, but this existence is not inherent to A, and we may not be able to find B explicitly.    Heine-Borel theorem: A set is compact if and only if is closed and bounded.    A continuous function on a compact set is bounded.    Extreme value theorem: A continuous function on a compact set attains its supremum and infimum.    A sequence is monotone increasing if for all . Similarly, is monotone decreasing if for all .    Monotone convergence theorem: A monotone sequence converges if and only if it is bounded. Moreover, if is increasing, then , and if is decreasing, then     Bounded sets contain bounded sequences.    If , then is called a subsequence of and is denoted .    A sequence converges to if and only if every subsequence converges to .    If has two subsequences that converge to different limits, then diverges.    If is monotone and has a subsequence converging to , then also converges to .    Bolzano-Weierstrass theorem: Every bounded sequence has a convergent subsequence.    A space is sequentially compact if every sequence has a convergent subsequence.    "
 },
 {
   "id": "sec-compactness-2",
@@ -2212,7 +2212,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.2",
   "title": "Uniform continuity",
-  "body": " Uniform continuity                   Introduction goes here.   "
+  "body": " Uniform continuity                   Introduction goes here.     We say is uniformly continuous if for all there exists some such that for all , implies . Notable, the same works everywhere.    A continuous function on a compact set is uniformly continuous.    A uniformly continuous function has a uniformly continuous extension to the closure of that set. This helps eventually show that exists, by extending from a function on to a function on .    A function is Lipschitz continuous if there is a positive real constant such that, for all real and , or put another way The value of is called the Lipschitz constant or the modulus of (uniform) continuity. Lipschitz functions are “almost differentiable.”    Continuously differentiable Lipschitz continuous uniformly continuous continuous.    "
 },
 {
   "id": "sec-uniform-continuity-2",
@@ -2230,7 +2230,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.3",
   "title": "Riemann and Darboux integrals",
-  "body": " Riemann and Darboux integrals                   Introduction goes here.   "
+  "body": " Riemann and Darboux integrals                   Introduction goes here.     A partition of is a finite set such that , , and .    Given a partition of , for each subinterval , we denote:   Now we can define the upper sum as and the lower sum as     A partition of is a refinement of if .  If so, then     If is a partition of , then .    If and are any partitions of , then     Let be a bounded function and let be the collection of all partition of . The upper integral of is defined to be and the lower integral is If , we say that is Darboux integrable. This is equivalent to being Riemann integrable.    If and , then     "
 },
 {
   "id": "sec-riemann-and-darboux-integrals-2",
@@ -2248,7 +2248,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.4",
   "title": "Integrability conditions and properties",
-  "body": " Integrability conditions and properties                   Introduction goes here.   "
+  "body": " Integrability conditions and properties                   Introduction goes here.     Let be bounded. Then is integrable if and only if for all there exists a partition of such that     If is integrable, then there exists a sequence of partitions of for which     Continuous functions are integrable. The proof relies on uniform continuity, which is why compactness and uniform continuity were covered in this chapter.    Linearity properties    Inequality properties         "
 },
 {
   "id": "sec-conditions-for-integrability-2",
@@ -2266,7 +2266,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "24.5",
   "title": "Lebesgue measure",
-  "body": " Lebesgue measure                   Introduction goes here.   "
+  "body": " Lebesgue measure                   Introduction goes here.     The length of an interval is and is denoted . This is also the length of , , and . Intervals that involve are said to have length .    A set has measure zero if for all there exists a countable collection of intervals such that     Lebesgue’s theorem: Assume is a bounded function and let be the set of points at which is discontinuous. Then is integrable if and only if has measure zero.    Go into the Lebesgue integral    "
 },
 {
   "id": "sec-lebesgue-measure-2",
@@ -2284,7 +2284,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.1",
   "title": "Convergence of series",
-  "body": " Convergence of series                   Introduction goes here.   "
+  "body": " Convergence of series                   Introduction goes here.     The infinite series is defined as the limit of the sequence of partial sums (if it exists):     Series limit laws    Divergence test: If , then diverges.    If a series has all nonnegative terms, then either it converges or it diverges to infinity.    Comparison test: Assume for all .   If converges, then converges.    If diverges, then diverges.       The harmonic series diverges.    Integral test: If , then converges if and only if converges.     -series test: converges if and only if .    Limit comparison test: Assume for all . If where , then converges if and only if converges.    "
 },
 {
   "id": "sec-convergence-of-series-2",
@@ -2302,7 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.2",
   "title": "Absolute and conditional convergence",
-  "body": " Absolute and conditional convergence                   Introduction goes here.   "
+  "body": " Absolute and conditional convergence                   Introduction goes here.     Alternating series test: If the alternating series satisfies the conditions and , then the series converges.         A series is called absolutely convergent if the series converges. (Absolute convergence implies convergence.)    A series is called conditionally convergent if converges but diverges.    Riemann rearrangement theorem: If is a conditionally convergent series and is any real number (or or ), then there is a rearrangement of that has a sum equal to .    Ratio test: Let    If , then converges absolutely.    If , then diverges.    If , the test is inconclusive.       Root test: Let    If , then converges absolutely.    If , then diverges.    If , the test is inconclusive.       "
 },
 {
   "id": "sec-absolute-and-conditional-convergence-2",
@@ -2320,7 +2320,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.3",
   "title": "Pointwise and uniform convergence",
-  "body": " Pointwise and uniform convergence                   Introduction goes here.   "
+  "body": " Pointwise and uniform convergence                   Introduction goes here.     If, for each , we have a function , then is a sequence of functions and is denoted .    Suppose is a sequence of functions, each defined on . The sequence of functions converges pointwise to a function if, for each ,     We say converges uniformly to to a function if, for every , there exists an such that for all and for all .    If each is continuous at some , and converges uniformly to , then is continuous at .    "
 },
 {
   "id": "sec-pointwise-and-uniform-convergence-2",
@@ -2338,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.4",
   "title": "Interchanging limit processes",
-  "body": " Interchanging limit processes                   Introduction goes here.   "
+  "body": " Interchanging limit processes                   Introduction goes here.     Uniform convergence preserves uniform continuity, boundedness, and integrability. Additionally, if the derivatives converge uniformly, then uniform convergence preserves differentiability.    The sequence is equicontinuous if for all , there exists a single such that implies for all and for all . (It’s like the sequence of functions version of uniform continuity, in a way?)    Arzelà-Ascoli theorem: If is uniformly bounded and equicontinuous on , then contains a uniformly convergent subsequence. (This is like functions version of Bolzano-Weierstrass.)    "
 },
 {
   "id": "sec-interchanging-limit-processes-2",
@@ -2356,7 +2356,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.5",
   "title": "Convergence of power series",
-  "body": " Convergence of power series                   Introduction goes here.   "
+  "body": " Convergence of power series                   Introduction goes here.     For a power series , there are only three possibilities:   The series converges only when .    The series converges for all .    There is a positive number called the radius of convergence such that the series converges if and diverges if .  In this case, the interval of convergence can be open, closed, or half-open. The power series converges absolutely, since we use the Ratio Test to find it.       A series of functions converges pointwise\/uniformly if its sequence of partial sums converges pointwise\/uniformly.    Cauchy criterion for series of functions: Let . The series converges uniformly on if and only if for every there exists some such that for all and all .    Weierstrass -test: Let and suppose that, for each , there exists such that for all . If converges, then converges uniformly on .    Power series converge uniformly on closed intervals.    If a power series converges absolutely at it converges uniformly on the closed interval .    Power series can be differentiated and integrated term-by-term.    Let be the error term of a finite Taylor approximation.    Assume is smooth in an interval and . Then for , if and only if pointwise.    A Fourier series converges uniformly if any of these hold:    satisfies a Hölder condition such as Lipschitz continuity     is continuous with bounded variation     is continuous and its Fourier coefficients are absolutely summable       "
 },
 {
   "id": "sec-convergence-of-power-series-2",
@@ -2374,7 +2374,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "25.6",
   "title": "Solutions to differential equations",
-  "body": " Solutions to differential equations                   Introduction goes here.   "
+  "body": " Solutions to differential equations                   Introduction goes here.     Sequential definition of continuity in 2D: Let be a set, be a function, and be a point. The function is continuous at if for every sequence of points in such that and , we have       Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    In other words, initial value problems have unique solutions under suitable conditions.    Proof relies on the idea of Picard iteration, the FTC, and uniform convergence of a sequence of functions, as well as the uniform norm.    "
 },
 {
   "id": "sec-picards-theorem-2",
@@ -2386,13 +2386,22 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "sec-picards-theorem-4-2-1-1",
+  "level": "2",
+  "url": "sec-picards-theorem.html#sec-picards-theorem-4-2-1-1",
+  "type": "Theorem",
+  "number": "20",
+  "title": "Picard-Lindelöf theorem.",
+  "body": " Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    "
+},
+{
   "id": "sec-non-standard-analysis",
   "level": "1",
   "url": "sec-non-standard-analysis.html",
   "type": "Section",
   "number": "25.7",
   "title": "CAPSTONE: Non-standard analysis",
-  "body": " CAPSTONE: Non-standard analysis  "
+  "body": " CAPSTONE: Non-standard analysis    The hyperreal numbers, denoted , are a number system where the real numbers have been extended by infinite and infinitesimal elements.    The whole idea was to make Newton and (especially?) Leibniz’s ideas of infinitesimals rigorous.    It’s actually pretty easy to algebraically extend the real numbers by adding an infinitesimal element. The difficult comes in extending things like transcendental functions to work with these new numbers.    Developed by Abraham Robinson in the 1960s    Extension principle:   The real numbers form a subset of the hyperreal numbers, and the order relation for the real numbers is a subset of the order relation for the hyperreal numbers.    There is a hyperreal number that is greater than zero but less than every positive real number.    For every real function of one or more variables, there exists a corresponding hyperreal function of the same number of variables, called the natural extension of . For any , we have .       Transfer principle: Every real statement that holds for one or more particular real functions holds for the hyperreal natural extensions of those functions. Essentially, algebraic formulas are true in the real numbers if and only if they’re true in the hyperreal numbers.    Basic laws of arithmetic: if is infinitesimal, is limited (finite but not infinitesimal), and is infinite:    is infinitesimal     is infinite     is infinite     is infinitesimal     is infinitesimal     is infinite     may be infinite, infinitesimal, or limited       Define the following symbols:   Then we have the following:                The standard part of a hyperreal number , denoted , is the unique real number such that . This function is external.    Continuity: A function is continuous at if whenever is infinitesimal. (This is called microcontinuity.)    Uniform continuity: A function is uniformly continuous if whenever and is infinitesimal, .    Derivative: If is infinitesimal, then     Extended subsets: (hypernatural, hyperinteger, hyperrational)    Integral:     Construction:   Start with the collection of all sequences in     Define addition and multiplication pointwise    Constant sequences are associated with real numbers    Comparisons are based on individual comparisons on a “large” number of terms:   For any set , either is large or its complement is large.    No finite sets are large \/ all cofinite sets are large.    Large sets are closed under intersections.    Large sets are upward closed; that is, if is large and , then is large.   A specification of these “large” sets is called a nonprincipal ultrafilter on . A nonprincipal ultrafilter exists if you assume Zorn’s lemma, and it’s unique up to isomorphism if you assume the Continuum Hypothesis. (May need to include countability somewhere in the RA section as a result if I want to say this.)    From here, is infinite, and is infinitesimal.       "
 }
 ]
 

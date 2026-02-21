@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -489,7 +493,36 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 24.5"><a href="#sec-lebesgue-measure-2" title="Copy heading and permalink for Objectives 24.5" aria-label="Copy heading and permalink for Objectives 24.5">🔗</a></div></article><section class="introduction" id="sec-lebesgue-measure-3"><div class="para" id="sec-lebesgue-measure-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lebesgue-measure-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 24.5: Lebesgue measure"><a href="#sec-lebesgue-measure" title="Copy heading and permalink for Section 24.5: Lebesgue measure" aria-label="Copy heading and permalink for Section 24.5: Lebesgue measure">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-lebesgue-measure-4">
+<li id="sec-lebesgue-measure-4-1">
+<div class="para" id="sec-lebesgue-measure-4-1-1">The length of an interval <span class="process-math">\([a,b]\)</span> is <span class="process-math">\(b-a\)</span> and is denoted <span class="process-math">\(\cl L[a,b]\text{.}\)</span> This is also the length of <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((a,b]\text{,}\)</span> and <span class="process-math">\([a,b)\text{.}\)</span> Intervals that involve <span class="process-math">\(\pm\infty\)</span> are said to have length <span class="process-math">\(\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lebesgue-measure-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-lebesgue-measure-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-lebesgue-measure-4-2">
+<div class="para logical" id="sec-lebesgue-measure-4-2-1">
+<div class="para">A set <span class="process-math">\(A\)</span> has measure zero if for all <span class="process-math">\(\eps&gt;0\)</span> there exists a countable collection <span class="process-math">\(I_{1},I_{2},I_{3},\cdots\)</span> of intervals such that</div>
+<div class="displaymath process-math" id="sec-lebesgue-measure-4-2-1-4">
+\begin{equation*}
+A\subseteq\bigcup_{k=1}^{\infty} I_{k}\quad\text{and}\quad\sum_{k=1}^{\infty}\cl L(I_{k})&lt;\eps\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lebesgue-measure-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-lebesgue-measure-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-lebesgue-measure-4-3">
+<div class="para" id="sec-lebesgue-measure-4-3-1">Lebesgue’s theorem: Assume <span class="process-math">\(f:[a,b]\to\bb R\)</span> is a bounded function and let <span class="process-math">\(\cl D\)</span> be the set of points at which <span class="process-math">\(f\)</span> is discontinuous. Then <span class="process-math">\(f\)</span> is integrable if and only if <span class="process-math">\(\cl D\)</span> has measure zero.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lebesgue-measure-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-lebesgue-measure-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-lebesgue-measure-4-4">
+<div class="para" id="sec-lebesgue-measure-4-4-1">Go into the Lebesgue integral<div class="autopermalink" data-description="Paragraph"><a href="#sec-lebesgue-measure-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-lebesgue-measure-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 24.5: Lebesgue measure"><a href="#sec-lebesgue-measure" title="Copy heading and permalink for Section 24.5: Lebesgue measure" aria-label="Copy heading and permalink for Section 24.5: Lebesgue measure">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-conditions-for-integrability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-series-and-limiting-processes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

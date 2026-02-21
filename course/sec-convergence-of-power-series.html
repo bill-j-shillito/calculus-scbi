@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,120 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 25.5"><a href="#sec-convergence-of-power-series-2" title="Copy heading and permalink for Objectives 25.5" aria-label="Copy heading and permalink for Objectives 25.5">🔗</a></div></article><section class="introduction" id="sec-convergence-of-power-series-3"><div class="para" id="sec-convergence-of-power-series-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 25.5: Convergence of power series"><a href="#sec-convergence-of-power-series" title="Copy heading and permalink for Section 25.5: Convergence of power series" aria-label="Copy heading and permalink for Section 25.5: Convergence of power series">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-convergence-of-power-series-4">
+<li id="sec-convergence-of-power-series-4-1">
+<div class="para logical" id="sec-convergence-of-power-series-4-1-1">
+<div class="para">For a power series <span class="process-math">\(\DS\sum_{k=0}^{\infty} c_{k}(x-a)^{k}\text{,}\)</span> there are only three possibilities:</div>
+<ul class="circle" id="sec-convergence-of-power-series-4-1-1-2">
+<li id="sec-convergence-of-power-series-4-1-1-2-1">
+<div class="para" id="sec-convergence-of-power-series-4-1-1-2-1-1">The series converges only when <span class="process-math">\(x=a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-1-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-1-1-2-2">
+<div class="para" id="sec-convergence-of-power-series-4-1-1-2-2-1">The series converges for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-1-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-1-1-2-3">
+<div class="para" id="sec-convergence-of-power-series-4-1-1-2-3-1">There is a positive number <span class="process-math">\(R\)</span> called the radius of convergence such that the series converges if <span class="process-math">\(|x-a|&lt;R\)</span> and diverges if <span class="process-math">\(|x-a|&gt;R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-convergence-of-power-series-4-1-1-2-3-2">In this case, the interval of convergence can be open, closed, or half-open. The power series converges absolutely, since we use the Ratio Test to find it.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-1-1-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-1-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-2">
+<div class="para" id="sec-convergence-of-power-series-4-2-1">A series of functions converges pointwise/uniformly if its sequence of partial sums converges pointwise/uniformly.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-3">
+<div class="para logical" id="sec-convergence-of-power-series-4-3-1">
+<div class="para">Cauchy criterion for series of functions: Let <span class="process-math">\(f_{k}:A\to\bb R\text{.}\)</span> The series <span class="process-math">\(\DS\sum f_{k}\)</span> converges uniformly on <span class="process-math">\(A\)</span> if and only if for every <span class="process-math">\(\eps&gt;0\)</span> there exists some <span class="process-math">\(N\in\bb N\)</span> such that</div>
+<div class="displaymath process-math" id="sec-convergence-of-power-series-4-3-1-6">
+\begin{equation*}
+\abs{\sum_{k=m}^n f_k(x)}&lt;\eps
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(n\ge m\ge N\)</span> and all <span class="process-math">\(x\in A\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-4">
+<div class="para" id="sec-convergence-of-power-series-4-4-1">Weierstrass <span class="process-math">\(M\)</span>-test: Let <span class="process-math">\(f_{k}:A\to\bb R\)</span> and suppose that, for each <span class="process-math">\(k\in\bb N\text{,}\)</span> there exists <span class="process-math">\(M_{k}\in\bb R\)</span> such that <span class="process-math">\(|f_{k}(x)|\le M_{k}\)</span> for all <span class="process-math">\(x\in A\text{.}\)</span> If <span class="process-math">\(\DS\sum M_{k}\)</span> converges, then <span class="process-math">\(\DS\sum f_{k}\)</span> converges uniformly on <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-5">
+<div class="para" id="sec-convergence-of-power-series-4-5-1">Power series converge uniformly on closed intervals.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-6">
+<div class="para" id="sec-convergence-of-power-series-4-6-1">If a power series converges absolutely at <span class="process-math">\(x=c\)</span> it converges uniformly on the closed interval <span class="process-math">\([-|c|,|c|]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-7">
+<div class="para" id="sec-convergence-of-power-series-4-7-1">Power series can be differentiated and integrated term-by-term.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-8">
+<div class="para" id="sec-convergence-of-power-series-4-8-1">Let <span class="process-math">\(E_{n}(x)=f(x)-T_{x=c}^{n}(f)\)</span> be the error term of a finite Taylor approximation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-9">
+<div class="para logical" id="sec-convergence-of-power-series-4-9-1">
+<div class="para">Assume <span class="process-math">\(f\)</span> is smooth in an interval <span class="process-math">\(I\)</span> and <span class="process-math">\(c\in I\text{.}\)</span> Then for <span class="process-math">\(x\in I\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-convergence-of-power-series-4-9-1-5">
+\begin{equation*}
+f(x)=\sum_{k=0}^{\infty}\frac{f\psup k(c)}{k!}(x-c)^{k}
+\end{equation*}
+</div>
+<div class="para">if and only if <span class="process-math">\(E_{n}(x)\to 0\)</span> pointwise.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-10">
+<div class="para logical" id="sec-convergence-of-power-series-4-10-1">
+<div class="para">A Fourier series converges uniformly if any of these hold:</div>
+<ul class="circle" id="sec-convergence-of-power-series-4-10-1-1">
+<li id="sec-convergence-of-power-series-4-10-1-1-1">
+<div class="para" id="sec-convergence-of-power-series-4-10-1-1-1-1">
+<span class="process-math">\(f\)</span> satisfies a Hölder condition such as Lipschitz continuity<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-10-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-10-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-10-1-1-2">
+<div class="para" id="sec-convergence-of-power-series-4-10-1-1-2-1">
+<span class="process-math">\(f\)</span> is continuous with bounded variation<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-10-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-10-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-power-series-4-10-1-1-3">
+<div class="para" id="sec-convergence-of-power-series-4-10-1-1-3-1">
+<span class="process-math">\(f\)</span> is continuous and its Fourier coefficients are absolutely summable<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-10-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-10-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-power-series-4-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-power-series-4-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 25.5: Convergence of power series"><a href="#sec-convergence-of-power-series" title="Copy heading and permalink for Section 25.5: Convergence of power series" aria-label="Copy heading and permalink for Section 25.5: Convergence of power series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-interchanging-limit-processes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-picards-theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,29 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 22.5"><a href="#sec-constructing-the-real-numbers-2" title="Copy heading and permalink for Objectives 22.5" aria-label="Copy heading and permalink for Objectives 22.5">🔗</a></div></article><section class="introduction" id="sec-constructing-the-real-numbers-3"><div class="para" id="sec-constructing-the-real-numbers-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-constructing-the-real-numbers-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 22.5: Constructing the real numbers"><a href="#sec-constructing-the-real-numbers" title="Copy heading and permalink for Section 22.5: Constructing the real numbers" aria-label="Copy heading and permalink for Section 22.5: Constructing the real numbers">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-constructing-the-real-numbers-4">
+<li id="sec-constructing-the-real-numbers-4-1">
+<div class="para" id="sec-constructing-the-real-numbers-4-1-1">Axiomatic construction is nice, but it would be even nicer if we could exhibit an object that exhibits all those axioms, what would be called a model of the real numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-constructing-the-real-numbers-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-constructing-the-real-numbers-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-constructing-the-real-numbers-4-2">
+<div class="para" id="sec-constructing-the-real-numbers-4-2-1">Could construct it as the equivalence classes of Cauchy sequences, where two sequences are equivalent if and only if their difference tends to zero. This generalizes to the completion of any metric space. Operations are defined termwise. This seems to be the easiest, and infinite decimals work well here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-constructing-the-real-numbers-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-constructing-the-real-numbers-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-constructing-the-real-numbers-4-3">
+<div class="para" id="sec-constructing-the-real-numbers-4-3-1">Could construct it using Dedekind cuts, which are partitions <span class="process-math">\((A,B)\)</span> of <span class="process-math">\(\bb Q\)</span> such that neither <span class="process-math">\(A\)</span> nor <span class="process-math">\(B\)</span> is empty, <span class="process-math">\(a&lt;b\)</span> for all <span class="process-math">\(a\in A\)</span> and <span class="process-math">\(b\in B\text{,}\)</span> and <span class="process-math">\(A\)</span> has no greatest element. Operations are defined elementwise, though multiplication is difficult.<div class="autopermalink" data-description="Paragraph"><a href="#sec-constructing-the-real-numbers-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-constructing-the-real-numbers-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-constructing-the-real-numbers-4-4">
+<div class="para" id="sec-constructing-the-real-numbers-4-4-1">Could construct it using nested intervals.<div class="autopermalink" data-description="Paragraph"><a href="#sec-constructing-the-real-numbers-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-constructing-the-real-numbers-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 22.5: Constructing the real numbers"><a href="#sec-constructing-the-real-numbers" title="Copy heading and permalink for Section 22.5: Constructing the real numbers" aria-label="Copy heading and permalink for Section 22.5: Constructing the real numbers">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-cauchy-sequences.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-differentiability.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

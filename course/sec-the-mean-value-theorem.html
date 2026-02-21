@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,57 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 23.2"><a href="#sec-the-mean-value-theorem-2" title="Copy heading and permalink for Objectives 23.2" aria-label="Copy heading and permalink for Objectives 23.2">🔗</a></div></article><section class="introduction" id="sec-the-mean-value-theorem-3"><div class="para" id="sec-the-mean-value-theorem-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 23.2: More on the Mean Value Theorem"><a href="#sec-the-mean-value-theorem" title="Copy heading and permalink for Section 23.2: More on the Mean Value Theorem" aria-label="Copy heading and permalink for Section 23.2: More on the Mean Value Theorem">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-the-mean-value-theorem-4">
+<li id="sec-the-mean-value-theorem-4-1">
+<div class="para logical" id="sec-the-mean-value-theorem-4-1-1">
+<div class="para">Rolle’s theorem Let <span class="process-math">\(f:[a,b]\to\bb R\)</span> be continuous on <span class="process-math">\([a,b]\)</span> and differentiable on <span class="process-math">\((a,b)\text{.}\)</span> If <span class="process-math">\(f(a)=f(b)\text{,}\)</span> then there exists <span class="process-math">\(c\in(a,b)\)</span> where <span class="process-math">\(f'(c)=0\text{.}\)</span> (This can be used to prove the MVT.)</div>
+<ul class="circle" id="sec-the-mean-value-theorem-4-1-1-7">
+<li id="sec-the-mean-value-theorem-4-1-1-7-1">
+<div class="para" id="sec-the-mean-value-theorem-4-1-1-7-1-1">If a function has zero derivative on an interval, it must be constant.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-4-1-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-mean-value-theorem-4-1-1-7-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-mean-value-theorem-4-1-1-7-2">
+<div class="para" id="sec-the-mean-value-theorem-4-1-1-7-2-1">If two functions have the same derivative on an interval, they must differ by a constant.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-4-1-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-mean-value-theorem-4-1-1-7-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-mean-value-theorem-4-1-1-7-3">
+<div class="para" id="sec-the-mean-value-theorem-4-1-1-7-3-1">A function is monotone increasing if and only if its derivative is nonnegative on an interval.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-4-1-1-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-mean-value-theorem-4-1-1-7-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-mean-value-theorem-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-mean-value-theorem-4-2">
+<div class="para logical" id="sec-the-mean-value-theorem-4-2-1">
+<div class="para">Cauchy’s mean value theorem: If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous on <span class="process-math">\([a,b]\)</span> and differentiable on <span class="process-math">\((a,b)\text{,}\)</span> then there is a number <span class="process-math">\(c\in (a,b)\)</span> such that</div>
+<div class="displaymath process-math" id="sec-the-mean-value-theorem-4-2-1-6">
+\begin{equation*}
+[f(b)-f(a)]\cdot g'(c)=[g(b)-g(a)]\cdot f'(c)\text{.}
+\end{equation*}
+</div>
+<div class="para">Another way to visualize it is to have a parametric curve <span class="process-math">\((f(t),g(t))\)</span> for <span class="process-math">\(a\le t\le b\)</span> and point out that there exists <span class="process-math">\(c\in(a,b)\)</span> such that</div>
+<div class="displaymath process-math" id="sec-the-mean-value-theorem-4-2-1-10">
+\begin{equation*}
+\frac{f(b)-f(a)}{g(b)-g(a)}=\dfrac{f'(c)}{g'(c)}
+\end{equation*}
+</div>
+<div class="para">(assuming that the denominators aren’t zero).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-mean-value-theorem-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-mean-value-theorem-4-3">
+<div class="para" id="sec-the-mean-value-theorem-4-3-1">Cauchy’s MVT can be used to prove L’Hôpital’s rule.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-mean-value-theorem-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-mean-value-theorem-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 23.2: More on the Mean Value Theorem"><a href="#sec-the-mean-value-theorem" title="Copy heading and permalink for Section 23.2: More on the Mean Value Theorem" aria-label="Copy heading and permalink for Section 23.2: More on the Mean Value Theorem">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-differentiability-classes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-taylors-theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

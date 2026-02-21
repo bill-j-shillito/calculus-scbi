@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,93 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 25.2"><a href="#sec-absolute-and-conditional-convergence-2" title="Copy heading and permalink for Objectives 25.2" aria-label="Copy heading and permalink for Objectives 25.2">🔗</a></div></article><section class="introduction" id="sec-absolute-and-conditional-convergence-3"><div class="para" id="sec-absolute-and-conditional-convergence-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 25.2: Absolute and conditional convergence"><a href="#sec-absolute-and-conditional-convergence" title="Copy heading and permalink for Section 25.2: Absolute and conditional convergence" aria-label="Copy heading and permalink for Section 25.2: Absolute and conditional convergence">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-absolute-and-conditional-convergence-4">
+<li id="sec-absolute-and-conditional-convergence-4-1">
+<div class="para logical" id="sec-absolute-and-conditional-convergence-4-1-1">
+<div class="para">Alternating series test: If the alternating series</div>
+<div class="displaymath process-math" id="sec-absolute-and-conditional-convergence-4-1-1-1">
+\begin{equation*}
+\sum_{k=1}^{\infty} (-1)^{k-1}b_{k}=b_{1}-b_{2}+b_{3}-b_{4}+\cdots\quad(b_{k}&gt;0)
+\end{equation*}
+</div>
+<div class="para">satisfies the conditions <span class="process-math">\(b_{k+1}\le b_{k}\)</span> and <span class="process-math">\(b_{n}\to 0\text{,}\)</span> then the series converges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-2">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-2-1">
+<span class="process-math">\(\displaystyle |R_{n}|=|s-s_{n}|\le b_{n+1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-3">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-3-1">A series <span class="process-math">\(\DS\sum a_{k}\)</span> is called absolutely convergent if the series <span class="process-math">\(\DS\sum |a_{k}|\)</span> converges. (Absolute convergence implies convergence.)<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-4">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-4-1">A series <span class="process-math">\(\DS\sum a_{k}\)</span> is called conditionally convergent if <span class="process-math">\(\DS\sum a_{k}\)</span> converges but <span class="process-math">\(\DS\sum |a_{k}|\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-5">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-5-1">Riemann rearrangement theorem: If <span class="process-math">\(\DS\sum a_{k}\)</span> is a conditionally convergent series and <span class="process-math">\(r\)</span> is any real number (or <span class="process-math">\(\infty\)</span> or <span class="process-math">\(-\infty\)</span>), then there is a rearrangement of <span class="process-math">\(\DS\sum a_{k}\)</span> that has a sum equal to <span class="process-math">\(r\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-6">
+<div class="para logical" id="sec-absolute-and-conditional-convergence-4-6-1">
+<div class="para">Ratio test: Let <span class="process-math">\(L=\limit{k\to\infty}\abs{\dfrac{a_{k+1}}{a_{k}}}\text{.}\)</span>
+</div>
+<ul class="circle" id="sec-absolute-and-conditional-convergence-4-6-1-2">
+<li id="sec-absolute-and-conditional-convergence-4-6-1-2-1">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-6-1-2-1-1">If <span class="process-math">\(L&lt;1\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{k}\)</span> converges absolutely.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-6-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-6-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-6-1-2-2">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-6-1-2-2-1">If <span class="process-math">\(L&gt;1\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{k}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-6-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-6-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-6-1-2-3">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-6-1-2-3-1">If <span class="process-math">\(L=1\text{,}\)</span> the test is inconclusive.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-6-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-6-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-7">
+<div class="para logical" id="sec-absolute-and-conditional-convergence-4-7-1">
+<div class="para">Root test: Let <span class="process-math">\(L=\limit{k\to\infty}\sqrt[k]{\abs{a_k}}\text{.}\)</span>
+</div>
+<ul class="circle" id="sec-absolute-and-conditional-convergence-4-7-1-2">
+<li id="sec-absolute-and-conditional-convergence-4-7-1-2-1">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-7-1-2-1-1">If <span class="process-math">\(L&lt;1\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{k}\)</span> converges absolutely.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-7-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-7-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-7-1-2-2">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-7-1-2-2-1">If <span class="process-math">\(L&gt;1\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{k}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-7-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-7-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-absolute-and-conditional-convergence-4-7-1-2-3">
+<div class="para" id="sec-absolute-and-conditional-convergence-4-7-1-2-3-1">If <span class="process-math">\(L=1\text{,}\)</span> the test is inconclusive.<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-7-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-7-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-absolute-and-conditional-convergence-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-absolute-and-conditional-convergence-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 25.2: Absolute and conditional convergence"><a href="#sec-absolute-and-conditional-convergence" title="Copy heading and permalink for Section 25.2: Absolute and conditional convergence" aria-label="Copy heading and permalink for Section 25.2: Absolute and conditional convergence">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-convergence-of-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-pointwise-and-uniform-convergence.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,75 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 21.2"><a href="#sec-ordered-fields-2" title="Copy heading and permalink for Objectives 21.2" aria-label="Copy heading and permalink for Objectives 21.2">🔗</a></div></article><section class="introduction" id="sec-ordered-fields-3"><div class="para" id="sec-ordered-fields-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 21.2: Ordered fields"><a href="#sec-ordered-fields" title="Copy heading and permalink for Section 21.2: Ordered fields" aria-label="Copy heading and permalink for Section 21.2: Ordered fields">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-ordered-fields-4">
+<li id="sec-ordered-fields-4-1">
+<div class="para" id="sec-ordered-fields-4-1-1">Motivation: We need to start somewhere. Discuss the role of axioms in building a logical system. Alternatively: what the heck <em class="emphasis">are</em> numbers?<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-2">
+<div class="para logical" id="sec-ordered-fields-4-2-1">
+<div class="para">Field axioms:</div>
+<ul class="circle" id="sec-ordered-fields-4-2-1-1">
+<li id="sec-ordered-fields-4-2-1-1-1">
+<div class="para" id="sec-ordered-fields-4-2-1-1-1-1">Commutativity of addition and multiplication<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-2-1-1-2">
+<div class="para" id="sec-ordered-fields-4-2-1-1-2-1">Distributivity of multiplication over addition<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-2-1-1-3">
+<div class="para" id="sec-ordered-fields-4-2-1-1-3-1">Associativity of addition and multiplication<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-2-1-1-4">
+<div class="para" id="sec-ordered-fields-4-2-1-1-4-1">Existence of additive and multiplicative identities<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-2-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-2-1-1-5">
+<div class="para" id="sec-ordered-fields-4-2-1-1-5-1">Existence of additive and multiplicative inverses<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-2-1-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-3">
+<div class="para" id="sec-ordered-fields-4-3-1">Order axiom:<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-ordered-fields-4-3-2">
+<div class="para">There is a nonempty subset <span class="process-math">\(P\subseteq F\text{,}\)</span> called the positive numbers, such that:</div>
+<ul class="circle" id="sec-ordered-fields-4-3-2-2">
+<li id="sec-ordered-fields-4-3-2-2-1">
+<div class="para" id="sec-ordered-fields-4-3-2-2-1-1">If <span class="process-math">\(a,b\in P\text{,}\)</span> then <span class="process-math">\(a+b\in P\)</span> and <span class="process-math">\(a\cdot b\in P\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-3-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-3-2-2-2">
+<div class="para" id="sec-ordered-fields-4-3-2-2-2-1">If <span class="process-math">\(a\in F\)</span> and <span class="process-math">\(a\neq 0\text{,}\)</span> then <span class="process-math">\(a\in P\)</span> or <span class="process-math">\(-a\in P\text{,}\)</span> but not both.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-3-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-3-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">A field that satisfies this axiom is called an ordered field.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-ordered-fields-4-4">
+<div class="para" id="sec-ordered-fields-4-4-1">Real numbers are ordered. Complex numbers are not.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ordered-fields-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-ordered-fields-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 21.2: Ordered fields"><a href="#sec-ordered-fields" title="Copy heading and permalink for Section 21.2: Ordered fields" aria-label="Copy heading and permalink for Section 21.2: Ordered fields">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-the-need-for-rigor.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-completeness-property.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

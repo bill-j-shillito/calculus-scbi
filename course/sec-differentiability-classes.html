@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,83 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 23.1"><a href="#sec-differentiability-classes-2" title="Copy heading and permalink for Objectives 23.1" aria-label="Copy heading and permalink for Objectives 23.1">🔗</a></div></article><section class="introduction" id="sec-differentiability-classes-3"><div class="para" id="sec-differentiability-classes-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 23.1: Differentiability classes"><a href="#sec-differentiability-classes" title="Copy heading and permalink for Section 23.1: Differentiability classes" aria-label="Copy heading and permalink for Section 23.1: Differentiability classes">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-differentiability-classes-4">
+<li id="sec-differentiability-classes-4-1">
+<div class="para" id="sec-differentiability-classes-4-1-1">Every differentiable function is continuous.<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-2">
+<div class="para" id="sec-differentiability-classes-4-2-1">A function is continuously differentiable if it is differentiable and its derivative is continuous.<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-3">
+<div class="para logical" id="sec-differentiability-classes-4-3-1">
+<div class="para">A function is of differentiability class <span class="process-math">\(C^{k}\)</span> if the derivatives <span class="process-math">\(f',f'',\cdots,f^{(k)}\)</span> exist and are continuous.</div>
+<ul class="circle" id="sec-differentiability-classes-4-3-1-3">
+<li id="sec-differentiability-classes-4-3-1-3-1">
+<div class="para" id="sec-differentiability-classes-4-3-1-3-1-1">
+<span class="process-math">\(C^{0}\text{:}\)</span> continuous functions<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-3-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-3-1-3-2">
+<div class="para" id="sec-differentiability-classes-4-3-1-3-2-1">
+<span class="process-math">\(C^{1}\text{:}\)</span> continuously differentiable functions<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-3-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-3-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-3-1-3-3">
+<div class="para" id="sec-differentiability-classes-4-3-1-3-3-1">
+<span class="process-math">\(C^{\infty}\text{:}\)</span> smooth functions<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-3-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-3-1-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-3-1-3-4">
+<div class="para" id="sec-differentiability-classes-4-3-1-3-4-1">
+<span class="process-math">\(C^{\omega}\text{:}\)</span> analytic functions. (May not put this here in the end.)<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-3-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-differentiability-classes-4-3-1-3-4-2">
+<div class="para">An example of a function that is smooth but not analytic is the bump function</div>
+<div class="displaymath process-math" id="sec-differentiability-classes-4-3-1-3-4-2-1">
+\begin{equation*}
+f(x)=\begin{cases}\ee^{-\frac{1}{1-x^2}}&amp;\text{if $|x|&lt;1$}\\ 0&amp;\text{otherwise}\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-3-1-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-3-1-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-4">
+<div class="para logical" id="sec-differentiability-classes-4-4-1">
+<div class="para">Often interesting example:</div>
+<div class="displaymath process-math" id="sec-differentiability-classes-4-4-1-1">
+\begin{equation*}
+g_{n}(x)=\begin{cases}x^{n}\sin(1/x)&amp;\text{if $x\neq 0$}\\ 0&amp;\text{if $x= 0$}\end{cases}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-5">
+<div class="para" id="sec-differentiability-classes-4-5-1">Remind about Intermediate Value Theorem, which can now be proven using known tools<div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-differentiability-classes-4-6">
+<div class="para" id="sec-differentiability-classes-4-6-1">Darboux’s theorem: Suppose <span class="process-math">\(f:[a,b]\to\bb R\)</span> is differentiable. If <span class="process-math">\(\alpha\)</span> is between <span class="process-math">\(f'(a)\)</span> and <span class="process-math">\(f'(b)\text{,}\)</span> there exists <span class="process-math">\(c\in(a,b)\)</span> such that <span class="process-math">\(f'(c)=\alpha\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-differentiability-classes-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-differentiability-classes-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 23.1: Differentiability classes"><a href="#sec-differentiability-classes" title="Copy heading and permalink for Section 23.1: Differentiability classes" aria-label="Copy heading and permalink for Section 23.1: Differentiability classes">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-differentiability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-mean-value-theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

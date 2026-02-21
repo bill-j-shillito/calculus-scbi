@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,24 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 25.4"><a href="#sec-interchanging-limit-processes-2" title="Copy heading and permalink for Objectives 25.4" aria-label="Copy heading and permalink for Objectives 25.4">🔗</a></div></article><section class="introduction" id="sec-interchanging-limit-processes-3"><div class="para" id="sec-interchanging-limit-processes-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-interchanging-limit-processes-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 25.4: Interchanging limit processes"><a href="#sec-interchanging-limit-processes" title="Copy heading and permalink for Section 25.4: Interchanging limit processes" aria-label="Copy heading and permalink for Section 25.4: Interchanging limit processes">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-interchanging-limit-processes-4">
+<li id="sec-interchanging-limit-processes-4-1">
+<div class="para" id="sec-interchanging-limit-processes-4-1-1">Uniform convergence preserves uniform continuity, boundedness, and integrability. Additionally, if the derivatives converge uniformly, then uniform convergence preserves differentiability.<div class="autopermalink" data-description="Paragraph"><a href="#sec-interchanging-limit-processes-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-interchanging-limit-processes-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-interchanging-limit-processes-4-2">
+<div class="para" id="sec-interchanging-limit-processes-4-2-1">The sequence <span class="process-math">\((f_{k})\)</span> is equicontinuous if for all <span class="process-math">\(\eps&gt;0\text{,}\)</span> there exists a single <span class="process-math">\(\delta&gt;0\)</span> such that <span class="process-math">\(|x-y|&lt;\delta\)</span> implies <span class="process-math">\(|f_{k}(x)-f_{k}(y)|&lt;\eps\)</span> for all <span class="process-math">\(x,y\in A\)</span> and for all <span class="process-math">\(k\in\bb N\text{.}\)</span> (It’s like the sequence of functions version of uniform continuity, in a way?)<div class="autopermalink" data-description="Paragraph"><a href="#sec-interchanging-limit-processes-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-interchanging-limit-processes-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-interchanging-limit-processes-4-3">
+<div class="para" id="sec-interchanging-limit-processes-4-3-1">Arzelà-Ascoli theorem: If <span class="process-math">\((f_{k})\)</span> is uniformly bounded and equicontinuous on <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\((f_{k})\)</span> contains a uniformly convergent subsequence. (This is like functions version of Bolzano-Weierstrass.)<div class="autopermalink" data-description="Paragraph"><a href="#sec-interchanging-limit-processes-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-interchanging-limit-processes-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 25.4: Interchanging limit processes"><a href="#sec-interchanging-limit-processes" title="Copy heading and permalink for Section 25.4: Interchanging limit processes" aria-label="Copy heading and permalink for Section 25.4: Interchanging limit processes">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-pointwise-and-uniform-convergence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-convergence-of-power-series.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -165,6 +165,10 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Imag}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+\newcommand{\psup}[1]{^{(#1)}}
+\newcommand{\hypext}{{}^*}
+\DeclareMathOperator{\st}{st}
+\newcommand{\set}[1]{\left\{#1\right\}}
 
 
 \DeclareMathOperator{\Sin}{Sin}
@@ -442,7 +446,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-differentiability-classes.html" class="internal"><span class="codenumber">23.1</span> <span class="title">Differentiability classes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-mean-value-theorem.html" class="internal"><span class="codenumber">23.2</span> <span class="title">More on the Mean Value Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylors-theorem.html" class="internal"><span class="codenumber">23.3</span> <span class="title">Taylor’s theorem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">Inverse and implicit functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverse-and-implicit-functions.html" class="internal"><span class="codenumber">23.4</span> <span class="title">The inverse and implicit function theorems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -489,7 +493,85 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 25.1"><a href="#sec-convergence-of-series-2" title="Copy heading and permalink for Objectives 25.1" aria-label="Copy heading and permalink for Objectives 25.1">🔗</a></div></article><section class="introduction" id="sec-convergence-of-series-3"><div class="para" id="sec-convergence-of-series-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 25.1: Convergence of series"><a href="#sec-convergence-of-series" title="Copy heading and permalink for Section 25.1: Convergence of series" aria-label="Copy heading and permalink for Section 25.1: Convergence of series">🔗</a></div></section></div>
+</div></section><ul class="disc" id="sec-convergence-of-series-4">
+<li id="sec-convergence-of-series-4-1">
+<div class="para logical" id="sec-convergence-of-series-4-1-1">
+<div class="para">The infinite series <span class="process-math">\(\DS\sum_{k=1}^{\infty} a_{k}\)</span> is defined as the limit of the sequence of partial sums (if it exists):</div>
+<div class="displaymath process-math" id="sec-convergence-of-series-4-1-1-2">
+\begin{equation*}
+\sum_{k=1}^{\infty} a_{k}=\limit{n\to\infty}\sum_{k=1}^{n} a_{k}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-2">
+<div class="para" id="sec-convergence-of-series-4-2-1">Series limit laws<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-3">
+<div class="para" id="sec-convergence-of-series-4-3-1">Divergence test: If <span class="process-math">\(a_{k}\not\to 0\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{k}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-4">
+<div class="para" id="sec-convergence-of-series-4-4-1">If a series has all nonnegative terms, then either it converges or it diverges to infinity.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-5">
+<div class="para logical" id="sec-convergence-of-series-4-5-1">
+<div class="para">Comparison test: Assume <span class="process-math">\(0\le a_{k}\le b_{k}\)</span> for all <span class="process-math">\(k\text{.}\)</span>
+</div>
+<ul class="circle" id="sec-convergence-of-series-4-5-1-3">
+<li id="sec-convergence-of-series-4-5-1-3-1">
+<div class="para" id="sec-convergence-of-series-4-5-1-3-1-1">If <span class="process-math">\(\DS\sum b_{k}\)</span> converges, then <span class="process-math">\(\DS\sum a_{k}\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-5-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-5-1-3-2">
+<div class="para" id="sec-convergence-of-series-4-5-1-3-2-1">If <span class="process-math">\(\DS\sum a_{k}\)</span> diverges, then <span class="process-math">\(\DS\sum b_{k}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-5-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-5-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-6">
+<div class="para" id="sec-convergence-of-series-4-6-1">The harmonic series diverges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-7">
+<div class="para" id="sec-convergence-of-series-4-7-1">Integral test: If <span class="process-math">\(a_{n}=f(n)\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{n}\)</span> converges if and only if <span class="process-math">\(\DS\int_{1}^{\infty} f(x)\dd{x}\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-8">
+<div class="para" id="sec-convergence-of-series-4-8-1">
+<span class="process-math">\(p\)</span>-series test: <span class="process-math">\(\DS\sum \frac{1}{k^{p}}\)</span> converges if and only if <span class="process-math">\(p&gt;1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-convergence-of-series-4-9">
+<div class="para logical" id="sec-convergence-of-series-4-9-1">
+<div class="para">Limit comparison test: Assume <span class="process-math">\(0\le a_{k}\le b_{k}\)</span> for all <span class="process-math">\(k\text{.}\)</span> If</div>
+<div class="displaymath process-math" id="sec-convergence-of-series-4-9-1-3">
+\begin{equation*}
+\limit{k\to\infty}\dfrac{a_{k}}{b_{k}}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(0&lt;c&lt;\infty\text{,}\)</span> then <span class="process-math">\(\DS\sum a_{k}\)</span> converges if and only if <span class="process-math">\(\DS\sum b_{k}\)</span> converges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-convergence-of-series-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-convergence-of-series-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 25.1: Convergence of series"><a href="#sec-convergence-of-series" title="Copy heading and permalink for Section 25.1: Convergence of series" aria-label="Copy heading and permalink for Section 25.1: Convergence of series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-series-and-limiting-processes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-absolute-and-conditional-convergence.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
