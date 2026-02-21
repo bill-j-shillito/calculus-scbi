@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Locate potential maxima, minima, and saddle points by finding where all first partials vanish.
         </p>
       </li>
       <li>
         <p>
-          
+          Use the multivariable Second Derivative Test to classify critical points.
         </p>
       </li>
       <li>
         <p>
-          
+          Apply optimization methods to problems such as fitting a line by minimizing squared error.
         </p>
       </li>
     </ol>

@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Formulate constrained optimization problems by introducing the Lagrangian <m>\cl{L}=f+\lambda(c-g)</m>.
         </p>
       </li>
       <li>
         <p>
-          
+          Locate solutions by setting all partial derivatives of the Lagrangian equal to zero.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret the multiplier <m>\lambda</m> as measuring how the optimal value responds to changes in the constraint.
         </p>
       </li>
     </ol>

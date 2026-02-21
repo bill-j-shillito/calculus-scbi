@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Compute residues at isolated singularities using Laurent series or targeted formulas.
         </p>
       </li>
       <li>
         <p>
-          
+          Apply the Residue Theorem to evaluate complex and real integrals.
         </p>
       </li>
       <li>
         <p>
-          
+          Use the Argument Principle and Rouché's theorem to count zeros of functions.
         </p>
       </li>
     </ol>

@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Characterize sequences using the Cauchy condition and relate it to convergence.
         </p>
       </li>
       <li>
         <p>
-          
+          Use completeness of <m>\bb{R}</m> to conclude that Cauchy sequences converge.
         </p>
       </li>
       <li>
         <p>
-          
+          Prove the Monotone Convergence Theorem.
         </p>
       </li>
     </ol>

@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Measure how a multivariable function changes when only one input varies.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret partial derivatives visually using traces with one variable held constant.
         </p>
       </li>
       <li>
         <p>
-          
+          Compute partial derivatives by treating other variables as fixed and applying single-variable rules.
         </p>
       </li>
     </ol>

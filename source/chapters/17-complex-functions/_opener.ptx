@@ -11,6 +11,6 @@
 
     <xi:include href="./the-geometry-of-complex-numbers.ptx" />
     <xi:include href="./complex-functions-as-transformations.ptx" />
-    <xi:include href="./complex-infinity.ptx" />
     <xi:include href="./extending-complex-functions.ptx" />
+    <xi:include href="./complex-infinity.ptx" />
 </chapter>

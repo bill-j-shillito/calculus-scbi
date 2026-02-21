@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Define divergence and curl as measures of outward flow and rotational behavior.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret incompressible and irrotational vector fields as ideal fluid flows.
         </p>
       </li>
       <li>
         <p>
-          
+          Use the del operator to express gradient, divergence, and curl in unified notation.
         </p>
       </li>
     </ol>
@@ -40,8 +40,8 @@
       </md>
 
       <p>
-        This measures how much a vector field is “flowing outward”.
-        If the divergence in a region is positive, it’s acting like a source, while if it’s negative, it’s acting like a sink.
+        This measures how much a vector field is <sq>flowing outward</sq>.
+        If the divergence in a region is positive, it's acting like a source, while if it's negative, it's acting like a sink.
       </p>
     </li>
 
@@ -55,7 +55,7 @@
       </md>
 
       <p>
-        This measures how much a vector field is “rotating”.
+        This measures how much a vector field is <sq>rotating</sq>.
       </p>
 
       <p>
@@ -64,7 +64,7 @@
           <li>
             <p>
               In the 2D case, the curl is a scalar.
-              If curl is positive, the field is rotating counterclockwise, while if negative, it’s rotating clockwise.
+              If curl is positive, the field is rotating counterclockwise, while if negative, it's rotating clockwise.
             </p>
           </li>
 

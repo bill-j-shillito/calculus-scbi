@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.
         </p>
       </li>
       <li>
         <p>
-          
+          Compute the associated Jacobians that describe how volume elements transform.
         </p>
       </li>
       <li>
         <p>
-          
+          Rewrite triple integrals in these coordinates when symmetry simplifies computation.
         </p>
       </li>
     </ol>

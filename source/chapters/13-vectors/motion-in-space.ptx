@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-describing-motion-with-vectors">
+<section xml:id="sec-motion-in-space">
   <title>Motion in space</title>
 
   <objectives>
     <ol>
       <li>
         <p>
-          
+          Describe velocity and acceleration as derivatives of a vector-valued position function.
         </p>
       </li>
       <li>
         <p>
-          
+          Express arc length as the integral of the magnitude of a vector-valued function.
         </p>
       </li>
       <li>
         <p>
-          
+          Re-parametrize curves in terms of their arc length.
         </p>
       </li>
     </ol>

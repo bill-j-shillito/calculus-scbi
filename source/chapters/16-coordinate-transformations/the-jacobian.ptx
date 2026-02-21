@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Describe how a coordinate transformation reshapes regions using its Jacobian matrix.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret the determinant of the Jacobian as the local area-scaling and orientation factor.
         </p>
       </li>
       <li>
         <p>
-          
+          View the Jacobian as a unifying framework that generalizes earlier derivative concepts.
         </p>
       </li>
     </ol>

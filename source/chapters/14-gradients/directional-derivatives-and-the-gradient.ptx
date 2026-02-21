@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Measure how a function changes in any direction using directional derivatives.
         </p>
       </li>
       <li>
         <p>
-          
+          Use the gradient vector to express directional changes as dot products.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret the gradient as pointing perpendicular to level sets and toward the direction of greatest increase.
         </p>
       </li>
     </ol>

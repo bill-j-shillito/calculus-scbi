@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Use Taylor's theorem with remainder to approximate functions near a point.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret remainder terms in both Lagrange and integral forms.
         </p>
       </li>
       <li>
         <p>
-          
+          Estimate approximation error using Lagrange's bound.
         </p>
       </li>
     </ol>

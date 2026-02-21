@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Recognize when substitution fails and a constraint must be handled through gradients instead.
         </p>
       </li>
       <li>
         <p>
-          
+          Use the Lagrange multiplier equation <m>\Grad f=\lambda\Grad g</m> to locate candidate points for constrained extrema.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret constrained optimization geometrically through level curves and tangent directions.
         </p>
       </li>
     </ol>

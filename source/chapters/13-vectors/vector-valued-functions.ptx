@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Package component functions into a single vector-valued function.
         </p>
       </li>
       <li>
         <p>
-          
+          Extend addition and scalar multiplication to vector-valued outputs.
         </p>
       </li>
       <li>
         <p>
-          
+          Generalize parametric descriptions from the plane to three-dimensional space.
         </p>
       </li>
     </ol>

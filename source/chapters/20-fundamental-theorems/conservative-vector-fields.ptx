@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Recognize when a vector field's line integral is path independent.
         </p>
       </li>
       <li>
         <p>
-          
+          Relate conservative fields to potential functions via the gradient theorem.
         </p>
       </li>
       <li>
         <p>
-          
+          Use curl and closed-curve integrals to test whether a field is conservative.
         </p>
       </li>
     </ol>

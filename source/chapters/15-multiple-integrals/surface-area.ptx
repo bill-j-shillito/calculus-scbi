@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Compute the area of a surface <m>z = f(x,y)</m> by integrating a surface-area element over its domain.
         </p>
       </li>
       <li>
         <p>
-          
+          Relate the surface-area formula to the structure of the arc length formula in one dimension.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret the integrand as the magnitude of a cross product formed from tangent vectors on the surface.
         </p>
       </li>
     </ol>
@@ -34,7 +34,7 @@
       <p>
         Area of the surface <m>z=f(x,y)</m> over the region <m>D</m>:
         <me>
-          \iint_{\cl{S}}\dd{\cl{S}}=\iint_{D}\sqrt{\qty(\pdv{f}{x})^{2}+\qty(\pdv{f}{y})^{2}+1}\dd{A}
+          \iint_{S}\dd{S}=\iint_{D}\sqrt{\qty(\pdv{f}{x})^{2}+\qty(\pdv{f}{y})^{2}+1}\dd{A}
         </me>
         Notice similarity with arc length formula.
       </p>
@@ -47,7 +47,7 @@
       <md>
         <mrow>\bv{a} \amp = \qty(\dd{x},0,\pdv{f}{x}\dd{x}) </mrow>
         <mrow>\bv{b} \amp = \qty(0,\dd{y},\pdv{f}{y}\dd{y}) </mrow>
-        <mrow>\dd{\cl{S}} \amp = \norm{\bv{a}\times\bv{b}} = \sqrt{\qty(\pdv{f}{x})^{2}+\qty(\pdv{f}{y})^{2}+1}\dd{A} </mrow>
+        <mrow>\dd{S} \amp = \norm{\bv{a}\times\bv{b}} = \sqrt{\qty(\pdv{f}{x})^{2}+\qty(\pdv{f}{y})^{2}+1}\dd{A} </mrow>
       </md>
     </li>
   </ul>

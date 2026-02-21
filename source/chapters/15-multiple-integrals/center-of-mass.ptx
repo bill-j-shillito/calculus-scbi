@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Compute mass and moments of planar or spatial regions using double and triple integrals.
         </p>
       </li>
       <li>
         <p>
-          
+          Find centers of mass by normalizing moments with total mass.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret centroids as centers of mass of shapes with uniform density.
         </p>
       </li>
     </ol>

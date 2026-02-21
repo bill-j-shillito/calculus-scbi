@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Apply Green's theorems to compute line integrals and planar areas.
         </p>
       </li>
       <li>
         <p>
-          
+          Relate circulation and flux to curl and divergence in the plane.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret multiply connected regions and orientation when applying the theorems.
         </p>
       </li>
     </ol>
@@ -32,7 +32,7 @@
   <ul>
     <li>
       <p>
-        Motivation: What’s the relationship between circulation, flux, curl, and divergence?
+        Motivation: What's the relationship between circulation, flux, curl, and divergence?
       </p>
     </li>
 
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <p>
-                    Green’s curl theorem:
+                    Green's curl theorem:
                   </p>
                   <md>
                     <mrow>\oint_C \bv{F}\cdot\dd{\bv{r}} = \int_C \bv{F}\cdot\uv{t}\dd{s} \amp = \iint_D \Curl\bv{F}\dd{A}</mrow>
@@ -58,7 +58,7 @@
 
                 <li>
                   <p>
-                    Green’s divergence theorem:
+                    Green's divergence theorem:
                   </p>
                   <md>
                     <mrow>\int_C \bv{F}\cdot\uv{n}\dd{s} = \iint_D \Div\bv{F}\dd{A}</mrow>

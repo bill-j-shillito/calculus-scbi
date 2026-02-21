@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+           Approximate integrals numerically when no closed-form antiderivative is available.
         </p>
       </li>
       <li>
         <p>
-          
+          Compare rectangular, trapezoidal, and parabolic approximations of integrals.
         </p>
       </li>
       <li>
         <p>
-          
+          Use concavity and derivative bounds to identify when each method over- or underestimates the true value.
         </p>
       </li>
     </ol>

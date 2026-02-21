@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Parametrize surfaces in three dimensions using mappings from a planar region.
         </p>
       </li>
       <li>
         <p>
-          
+          Evaluate surface integrals of scalar functions using the surface-area element.
         </p>
       </li>
       <li>
         <p>
-          
+          Apply surface integrals to compute surface area and mass.
         </p>
       </li>
     </ol>

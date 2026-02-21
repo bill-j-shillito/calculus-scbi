@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Determine when limit processes can be interchanged using uniform convergence.
         </p>
       </li>
       <li>
         <p>
-          
+          Identify conditions under which limits and derivatives can be interchanged.
         </p>
       </li>
       <li>
         <p>
-          
+          Use equicontinuity and the Arzelà-Ascoli theorem to guarantee uniformly convergent subsequences.
         </p>
       </li>
     </ol>

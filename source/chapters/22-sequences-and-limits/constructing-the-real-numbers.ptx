@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Explain why explicit models are needed to realize the real-number axioms.
         </p>
       </li>
       <li>
         <p>
-          
+          Construct <m>\bb{R}</m> using equivalence classes of Cauchy sequences.
         </p>
       </li>
       <li>
         <p>
-          
+          Compare alternative constructions such as Dedekind cuts and nested intervals.
         </p>
       </li>
     </ol>

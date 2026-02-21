@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Represent periodic functions as infinite sums of sines and cosines.
         </p>
       </li>
       <li>
         <p>
-          
+          Compute Fourier coefficients using orthogonality to isolate each frequency.
         </p>
       </li>
       <li>
         <p>
-          
+          Approximate common waveforms with Fourier series.
         </p>
       </li>
     </ol>

@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Handle irregular regions by extending the integrand to a surrounding rectangle.
         </p>
       </li>
       <li>
         <p>
-          
+          Set up iterated integrals by describing the region with inequalities bounding one variable in terms of the other.
         </p>
       </li>
       <li>
         <p>
-          
+          Reverse the order of integration to simplify difficult integrals.
         </p>
       </li>
     </ol>

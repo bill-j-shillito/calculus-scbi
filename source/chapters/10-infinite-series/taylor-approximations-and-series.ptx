@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Approximate functions near a point by matching derivatives with a chosen polynomial.
         </p>
       </li>
       <li>
         <p>
-          
+          Improve accuracy by adding terms and extending the idea to infinite series.
         </p>
       </li>
       <li>
         <p>
-          
+          Derive Maclaurin series for <m>\ee^x</m>, <m>\sin x</m>, and <m>\cos x</m>.
         </p>
       </li>
     </ol>

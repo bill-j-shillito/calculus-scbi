@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Describe a curve's local geometry using the unit tangent, unit normal, and binormal.
         </p>
       </li>
       <li>
         <p>
-          
+          Relate curvature and torsion to how a curve bends and twists in space.
         </p>
       </li>
       <li>
         <p>
-          
+          Decompose acceleration into tangential and normal components using the moving frame.
         </p>
       </li>
     </ol>
@@ -72,7 +72,7 @@
 
     <li>
       <p>
-        In 3D, we get the binormal:
+        In 3D, we also get the binormal:
         <me>
           \bv B=\bv{t}\times\bv{n}
         </me>

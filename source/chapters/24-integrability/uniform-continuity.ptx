@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Recognize uniform continuity as a global version of the <m>\eps</m>-<m>\delta</m> condition.
         </p>
       </li>
       <li>
         <p>
-          
+          Extend uniformly continuous functions to closures of their domains.
         </p>
       </li>
       <li>
         <p>
-          
+          Compare continuity classes using Lipschitz conditions and related implications.
         </p>
       </li>
     </ol>

@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Define sequential continuity for functions on <m>\bb{R}^2</m>.
         </p>
       </li>
       <li>
         <p>
-          
+          Construct approximate solutions to differential equations using Picard iteration.
         </p>
       </li>
       <li>
         <p>
-          
+          Prove the Picard-Lindelöf theorem to establish existence and uniqueness of solutions to initial value problems.
         </p>
       </li>
     </ol>

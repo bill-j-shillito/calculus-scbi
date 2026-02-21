@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Construct second- and higher-order Taylor polynomials for functions of several variables.
         </p>
       </li>
       <li>
         <p>
-          
+          Use quadratic approximations to model curvature near a point.
         </p>
       </li>
       <li>
         <p>
-          
+          Estimate function values and analyze local behavior using Taylor expansions.
         </p>
       </li>
     </ol>

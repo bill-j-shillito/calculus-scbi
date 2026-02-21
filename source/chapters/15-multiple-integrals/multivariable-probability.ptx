@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Compute probabilities and expectations for jointly distributed variables using double integrals.
         </p>
       </li>
       <li>
         <p>
-          
+          Obtain marginal densities by integrating out one variable from the joint distribution.
         </p>
       </li>
       <li>
         <p>
-          
+          Approximate probabilities numerically with Monte Carlo methods when regions or densities are complex.
         </p>
       </li>
     </ol>
