@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Find volume by accumulating the areas of thin cross sections through a solid.
         </p>
       </li>
       <li>
         <p>
-          
+          Select slices perpendicular to the <m>x</m>- or <m>y</m>-axis based on the geometry.
         </p>
       </li>
       <li>
         <p>
-          
+          Model solids of revolution using disk and washer cross sections.
         </p>
       </li>
     </ol>

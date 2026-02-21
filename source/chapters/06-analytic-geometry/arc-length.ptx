@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Measure the length of a curve by accumulating tiny distance increments along its path.
         </p>
       </li>
       <li>
         <p>
-          
+          Relate arc length to how quickly the coordinates change along the curve.
         </p>
       </li>
       <li>
         <p>
-          
+          Interpret arc length as the total distance traveled by a moving particle.
         </p>
       </li>
     </ol>

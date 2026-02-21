@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Match algebraic expressions to trigonometric identities to simplify integrals.
         </p>
       </li>
       <li>
         <p>
-          
+          Choose substitutions that transform square-root expressions into trig forms.
         </p>
       </li>
       <li>
         <p>
-          
+          Understand how symmetry can make certain definite integrals easier.
         </p>
       </li>
     </ol>
@@ -33,6 +33,12 @@
     <li>
       <p>
         Application: Hydrostatic pressure on a circular drum
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Emphasize that we're introducing a more complicated function to simplify the integrand, which is the opposite of the first kind of substitution we did. The rationale is that we're doing it based on recognizing the format of Pythagorean identities.
       </p>
     </li>
 
@@ -87,13 +93,24 @@
 
       <li>
         <p>
-          From this we can get some basic derivatives of inverse trigonometric functions:
+          Look at examples where symmetry can be used to simplify the limits of integration, such as
+          <me>
+            \int_{-a}^{a} \sqrt{a^{2}-x^{2}}\dd{x}
+          </me>
         </p>
-        <md>
-          <mrow>\dv{x}\Sin\inv(x) \amp = \frac{1}{\sqrt{1-x^{2}}} </mrow>
-          <mrow>\dv{x}\Tan\inv(x) \amp = \frac{1}{1+x^{2}} </mrow>
-          <mrow>\dv{x}\Sec\inv(x) \amp = \frac{1}{|x|\sqrt{x^2-1}} </mrow>
-        </md>
+      </li>
+
+      <li>
+        <p>
+          If <m>f(x)</m> is an even function, then
+          <me>
+            \int_{-a}^{a} f(x)\dd{x}=2\int_{0}^{a} f(x)\dd{x}
+          </me>.
+          If <m>f(x)</m> is an odd function, then
+          <me>
+            \int_{-a}^{a} f(x)\dd{x}=0
+          </me>.
+        </p>
       </li>
     </ul>
 </section>

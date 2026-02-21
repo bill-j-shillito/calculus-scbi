@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Compute volume by adding the contributions of thin cylindrical shells.
         </p>
       </li>
       <li>
         <p>
-          
+          Use shell height and radius to quantify each shell's contribution.
         </p>
       </li>
       <li>
         <p>
-          
+          Choose shells or washers based on which method aligns with the region's geometry.
         </p>
       </li>
     </ol>

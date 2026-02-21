@@ -11,7 +11,8 @@
 
     <xi:include href="./integration-by-substitution.ptx" />
     <xi:include href="./integration-by-parts.ptx" />
-    <xi:include href="./trigonometric-integrals.ptx" />
+    <!-- <xi:include href="./trigonometric-integrals.ptx" /> -->
     <xi:include href="./trigonometric-substitution.ptx" />
     <xi:include href="./partial-fractions.ptx" />
+    <xi:include href="./advanced-integration-strategy.ptx" />
 </chapter>

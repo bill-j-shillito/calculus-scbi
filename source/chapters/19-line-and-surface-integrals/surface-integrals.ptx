@@ -75,9 +75,9 @@
       <p>
         Surface area element:
         <me>
-          \dd{\cl{S}}=\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
+          \dd{S}=\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
         </me>
-        Here, <m>\dd{\cl{A}}=\dd{u}\dd{v}</m>.
+        Here, <m>\dd{A}=\dd{u}\dd{v}</m>.
       </p>
     </li>
 
@@ -85,7 +85,7 @@
       <p>
         Surface area:
         <me>
-          S=\iint_{\cl{S}}\dd{S}=\iint_{D}\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
+          S=\iint_{S}\dd{S}=\iint_{D}\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
         </me>
       </p>
     </li>
@@ -94,7 +94,7 @@
       <p>
         Similarly to with line integrals, we can extend this to make the surface integral of a function over that surface:
         <me>
-          S=\iint_{\cl{S}}f\dd{S}=\iint_{D}f(\bv r(u,v))\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
+          S=\iint_{S}f\dd{S}=\iint_{D}f(\bv r(u,v))\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
         </me>
         Notice this is just the next level up of what we already do with line integrals.
       </p>

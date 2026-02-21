@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-advanced-integration-strategy">
+  <title>Advanced integration strategy</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Decide which integration technique is most promising based on the structure of an integrand.
+        </p>
+      </li>
+      <li>
+        <p>
+          Combine multiple techniques (substitution, parts, trig substitution, partial fractions) in a single problem.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use reduction formulas to simplify or reorganize difficult integrals.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+        <p>
+            How do you know what to try? Recognizing structural signals: composition (substitution), products (parts), radicals of quadratics (trig substitution), rational functions (partial fractions), and algebraic simplification before applying any method.
+        </p>
+    </li>
+    <li>
+        <p>
+            Choosing what powers to set apart in trigonometric integrals: handling odd and even powers of sine and cosine; strategies for powers of tangent and secant; rewriting with identities before integrating.
+        </p>
+        <ul>
+            <li>
+                <p>
+                    For <m>\int \sin^{m} x\cos^{n} x\dd{x}</m>:
+                    <ul>
+                    <li>
+                        <p>
+                        If either <m>m</m> or <m>n</m> is odd, save one factor and convert the rest using the identity <m>\sin^{2} x+\cos^{2} x=1</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                        If both <m>m</m> and <m>n</m> are even, use the power reduction identities
+                        <me>
+                            \sin^{2} x=\tfrac12-\tfrac12\cos 2x,\qquad \cos^{2} x=\tfrac12+\tfrac12\cos 2x\text{.}
+                        </me>
+                        </p>
+                    </li>
+                    </ul>
+                </p>
+                </li>
+
+                <li>
+                <p>
+                    For <m>\int \tan^{m} x\sec^{n} x\dd{x}</m>:
+                    <ul>
+                    <li>
+                        <p>
+                        If <m>m</m> is even, save a factor of <m>\sec^{2} x</m> and use <m>\sec^{2} x=1+\tan x</m> to rewrite the integral.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                        If <m>n</m> is odd, save a factor of <m>\sec x\tan x</m> and use <m>\tan^{2} x=\sec^{2} x-1</m> to rewrite the integral.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                        If <m>m</m> is odd and <m>n</m> is even, use substitution and integration by parts as necessary.
+                        The integral of <m>\sec x</m> comes up in analyzing the Mercator projection!
+                        </p>
+                    </li>
+                    </ul>
+                </p>
+                </li>
+        </ul>
+    </li>
+    <li>
+        <p>
+            Combining multiple techniques in one problem: substitution followed by parts, long division before partial fractions, completing the square before trig substitution, and back-substitution.
+        </p>
+    </li>
+    <li>
+        <p>
+            Integration cycles and solving for the integral: applying integration by parts twice and rearranging algebraically. Example: <m>\DS\int \ee^{x}\cos x\dd{x}</m>
+        </p>
+    </li>
+    <li>
+        <p>
+            Reduction formulas: defining integrals like <m>I_n = \int \sin^n x\dd{x}</m> or <m>I_n = \int x^n e^x \dd{x}</m> and expressing them recursively in terms of lower powers.
+        </p>
+        <md>
+            <mrow> \int x^n \ee^{ax} \dd{x} \amp = \frac1a\qty(x^n \ee^{ax} - n\int x^{n-1} \ee^{ax} \dd{x}) </mrow>
+            <mrow> \int \cos^n x\dd{x} \amp = \frac1n\cos^{n-1}x\sin x+\frac{n-1}{n}\int\cos^{n-2}x\dd{x} </mrow>
+            <mrow> \int \sin^n x\dd{x} \amp = -\frac1n\sin^{n-1}x\cos x+\frac{n-1}{n}\int\sin^{n-2}x\dd{x} </mrow>
+            <mrow> \int \tan^n x\dd{x} \amp = \frac{1}{n-1}\tan^{n-1}x-\int\tan^{n-2}x\dd{x} </mrow>
+            <mrow> \int \cot^n x\dd{x} \amp = -\frac{1}{n-1}\cot^{n-1}x-\int\cot^{n-2}x\dd{x} </mrow>
+            <mrow> \int \sec^n x\dd{x} \amp = \frac{1}{n-1}\sec^{n-1}x\sin x+\frac{n-2}{n-1}\int\sec^{n-2}x\dd{x} </mrow>
+            <mrow> \int \csc^n x\dd{x} \amp = -\frac{1}{n-1}\csc^{n-1}x\cos x+\frac{n-2}{n-1}\int\csc^{n-2}x\dd{x} </mrow>
+        </md>
+    </li>
+    <li>
+        <p>
+            Looking at an integral table
+        </p>
+    </li>
+  </ul>
+</section>

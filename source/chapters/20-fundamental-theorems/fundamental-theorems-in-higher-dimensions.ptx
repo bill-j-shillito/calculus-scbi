@@ -41,11 +41,11 @@
         <title>Gauss's divergence theorem</title>
         <statement>
           <p>
-            Let <m>E</m> be a simple solid region and let <m>\bv{\cl{S}}</m> be the boundary surface of <m>E</m>, given with positive (outward) orientation.
+            Let <m>E</m> be a simple solid region and let <m>\bv{S}</m> be the boundary surface of <m>E</m>, given with positive (outward) orientation.
             Let <m>\bv F</m> be a vector field whose component functions have continuous partial derivatives on an open region containing <m>E</m>.
             Then:
             <me>
-              \iint_{\bv{\cl{S}}}\bv{F}\cdot\dd{\bv{\cl{S}}}=\iiint_{E}\Div\bv{F}\dd{V}
+              \iint_{\bv{S}}\bv{F}\cdot\dd{\bv{S}}=\iiint_{E}\Div\bv{F}\dd{V}
             </me>
           </p>
         </statement>
@@ -57,11 +57,11 @@
         <title>Stokes's curl theorem</title>
         <statement>
           <p>
-            Let <m>\bv{\cl{S}}</m> be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve <m>C</m> with positive orientation.
-            Let <m>\bv F</m> be a vector field whose component functions have continuous partial derivatives on an open region containing <m>\bv{\cl{S}}</m>.
+            Let <m>\bv{S}</m> be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve <m>C</m> with positive orientation.
+            Let <m>\bv F</m> be a vector field whose component functions have continuous partial derivatives on an open region containing <m>\bv{S}</m>.
             Then:
             <me>
-              \oint_{C} \bv{F}\cdot\dd{\bv{r}}=\iint_{\bv{\cl{S}}}(\Curl\bv{F})\cdot\dd{\bv{\cl{S}}}
+              \oint_{C} \bv{F}\cdot\dd{\bv{r}}=\iint_{\bv{S}}(\Curl\bv{F})\cdot\dd{\bv{S}}
             </me>
           </p>
         </statement>

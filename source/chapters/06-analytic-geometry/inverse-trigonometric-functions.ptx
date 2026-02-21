@@ -5,19 +5,20 @@
 
   <objectives>
     <ol>
+      
       <li>
         <p>
-          
+          Understand the geometric meaning of inverse trigonometric functions in terms of arc length.
         </p>
       </li>
       <li>
         <p>
-          
+          Compute the derivatives of inverse trigonometric functions using implicit differentiation.
         </p>
       </li>
       <li>
         <p>
-          
+          Decide on appropriate domains and ranges for the inverse trigonometric functions.
         </p>
       </li>
     </ol>
