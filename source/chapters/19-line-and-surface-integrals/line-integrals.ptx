@@ -29,5 +29,63 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        If <m>C</m> is a curve, then the line integral of <m>f</m> along <m>C</m> is:
+        <me>
+          \int_{C} f\dd{s}=\int_{a}^{b}f(x(t),y(t))\sqrt{\qty(\dv{x}{t})^{2}+\qty(\dv{y}{t})^{2}}\dd{s}
+        </me>
+        Similar works for 3D.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Let <m>\bv r(t)</m> be a parametrization of <m>C</m>; then we can write
+        <me>
+          \int_{C} f\dd{s}=\int_{a}^{b}f(\bv r(t))\norm{\bv r'(t)}\dd{t}
+        </me>
+        Similar works for 3D.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Integrating <m>f(x,y)=1</m> just returns the arc length, so the arc length was really a line integral all along!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If we integrate a density, we get the mass, as usual.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Always independent of parametrization!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For piecewise parametrizations, add the individual integrals.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Consider the Jacobian of our transformation <m>\bv r</m> from <m>t</m> to <m>(x,y)</m>:
+        <me>
+          \bv J=\begin{bmatrix}\DS\pdv{x}{t}\\[2 ex] \DS\pdv{y}{t}\end{bmatrix}
+        </me>
+        This matrix is not square so it doesn’t have a determinant; however we can calculate a related quantity (called the metric tensor, I think?):
+        <me>
+          \sqrt{\abs{\det\bv{J}^T\bv{J}}}=\sqrt{\qty(\dv{x}{t})^{2}+\qty(\dv{y}{t})^{2}}
+        </me>
+        This is precisely the <sq>fudge factor</sq> that shows up when we convert our variables of integration from <m>(x,y)</m> to <m>t</m>.
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,47 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        For a surface to be oriented it has to have two sides.
+        We take the tangent plane at each point and notice there are two unit normal vectors <m>\uv n</m> and <m>-\uv n</m>.
+        As we move around the surface, these two normal vary smoothly.
+        The surface is oriented if it is impossible to move around the surface following <m>\uv n</m> and end up with it overlapping <m>-\uv n</m>.
+        Alternatively, we can make sure that a counterclockwise loop can’t be moved around the surface and end up with it going clockwise.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        An example of a non-orientable surface is a Möbius strip.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\bv{\cal{S}}</m> is an oriented surface, then the surface integral of <m>\bv F</m> over <m>\bv{\cal{S}}</m> is
+        <me>
+          \iint_{\bv{\cal{S}}}\bv F\cdot\dd{\bv{\cal{S}}}=\iint_{D} \bv F\cdot\qty(\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v})\dd{A}
+        </me>.
+        This can also be written as
+        <me>
+          \iint_{D} \qty(\bv F\cdot\frac{\bv r'_{u}\times\bv r'_{v}}{\norm{\bv r'_u\times\bv r'_v}}\norm{\bv r'_u\times\bv r'_v})\dd{A}=\iint_{\cl S}\bv F\cdot\uv n\,\dd{\bv{\cal{S}}}
+        </me>.
+        That is, this surface integral represents the flux of <m>\cl F</m> through the surface.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For closed surfaces, positive orientation means the normals point out of the surface.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Can do examples with electric flux, heat flux, etc.
+      </p>
+    </li>
+  </ul>
 </section>

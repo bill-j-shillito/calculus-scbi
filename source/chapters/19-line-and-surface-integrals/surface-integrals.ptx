@@ -29,5 +29,91 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Just as curves can be written as functions of a parameter <m>t</m>, surfaces can be written as functions of two parameters, often called <m>u</m> and <m>v</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A few examples:
+        <ul>
+          <li>
+            <p>
+              Sphere of radius <m>\rho</m>:
+              <me>
+                \bv r(\theta,\phi)=(x,y,z)=(\rho\sin\phi\cos\theta,\rho\sin\phi\sin\theta,\rho\cos\phi)
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Helicoid:
+              <me>
+                \bv r(u,v)=(x,y,z)=(v\cos u,v\sin u,au)
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Surface of revolution about <m>x</m>-axis:
+              <me>
+                \bv r(u,v)=(x,y,z)=(u,f(u)\cos v,f(u)\sin v)
+              </me>
+            </p>
+          </li>
+        </ul>
+        For all of these, <m>(u,v)</m> are points of some domain <m>D</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Surface area element:
+        <me>
+          \dd{\cl{S}}=\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
+        </me>
+        Here, <m>\dd{\cl{A}}=\dd{u}\dd{v}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Surface area:
+        <me>
+          S=\iint_{\cl{S}}\dd{S}=\iint_{D}\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Similarly to with line integrals, we can extend this to make the surface integral of a function over that surface:
+        <me>
+          S=\iint_{\cl{S}}f\dd{S}=\iint_{D}f(\bv r(u,v))\norm{\pdv{\bv{r}}{u}\times\pdv{\bv{r}}{v}}\dd{A}
+        </me>
+        Notice this is just the next level up of what we already do with line integrals.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f</m> is density, then we can compute mass, center of mass, moment of inertia, etc.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Again, if <m>\bv r(u,v)=(x,y,z)</m>, and the Jacobian is
+        <me>
+          \bv J=\begin{bmatrix}\DS\pdv{x}{u} \amp \DS\pdv{x}{v}\\[2 ex] \DS\pdv{y}{u} \amp \DS\pdv{y}{v}\\[2 ex] \DS\pdv{z}{u} \amp \DS\pdv{z}{v}\end{bmatrix}\text{,}
+        </me>
+        then we end up with <m>\sqrt{\abs{\det(\bv J^T\bv J)}}=\norm{\DS\pdv{\bv{r}}{u}\times\dv{\bv{r}}{v}}</m>.
+      </p>
+    </li>
+  </ul>
 </section>

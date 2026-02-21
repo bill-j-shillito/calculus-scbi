@@ -2,4 +2,160 @@
 
 <section xml:id="sec-exterior-calculus">
   <title>CAPSTONE: Differential forms and exterior calculus</title>
+
+  <ul>
+    <li>
+      <p>
+        Would like to go over cells, chains, cycles, and boundaries, with <m>\partial(\partial C)=\emptyset</m>.
+        Need to figure out at what level to do this.
+        But it's all about talking about what you're integrating <em>over</em>.
+        <aside>
+          <p>
+            Great resource: <url href="https://josephmellor.xyz/articles/">https://josephmellor.xyz/articles/</url>
+          </p>
+        </aside>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The wedge product combines vectors to create bivectors and trivectors, each of which has an orientation:
+        <me>
+          \bv u\wedge\bv v\qquad\bv u\wedge\bv v\wedge\bv w
+        </me>
+        It's anticommutative.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A covector measures how far a vector points in a given direction.
+        Uses superscripts for some reason but I want to avoid that if possible.
+        <me>
+          \uv{e}^{i}=\dd{x}^{i}=\langle x^{i}|
+        </me>
+        I'll use the idea that <m>\dd{x},\dd{y},\dd{z}</m> are covectors — they measure how much a vector points in those directions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Convert from vectors to covectors with the sharp operator (<m>^{\sharp}</m>) and from covectors to vectors with the flat operator (<m>^{\flat}</m>).
+        These are the musical isomorphisms.
+      </p>
+
+      <p>
+        These convert between vectors and differential forms.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Wedge product of covectors measures areas and volumes.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Hodge star is what we'd have to wedge by to get the basis <m>k</m>-vector in <m>k</m> dimensions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Hodge star can turn dot products into wedge products:
+        <me>
+          \bv v\wedge\star\bv w=(\bv v\cdot \bv w){\star}1
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Wedge and cross products are Hodge duals:
+        <me>
+          \bv v\wedge\bv w=\star(\bv v\times\bv w)\qquad\bv v\times\bv w=\star(\bv v\wedge\bv w)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Exterior derivative:
+        <ul>
+          <li>
+            <p>
+              Applied to a <m>0</m>-form:
+              <me>
+                \xd f=f'(x)\dd{x}
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Linearity properties:
+            </p>
+            <md>
+              <mrow>\xd(\alpha+\beta) \amp = \xd\alpha+\xd\beta</mrow>
+              <mrow>\xd(c\alpha) \amp = c\,\xd\alpha</mrow>
+            </md>
+          </li>
+
+          <li>
+            <p>
+              Product rule:
+              <me>
+                \xd(\alpha\wedge\beta)=\alpha\wedge\xd\beta+(-1)^{k}\xd\alpha\wedge\beta
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Zero property:
+              <me>
+                \xd(\xd\alpha)=0
+              </me>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Previous derivatives are all manifestations of the exterior derivative:
+      </p>
+      <md>
+        <mrow>\Grad f \amp = (\xd f)^{\sharp}</mrow>
+        <mrow>\Div\bv F \amp = \star\xd{\star}(\bv F^{\flat})</mrow>
+        <mrow>\Curl\bv F \amp = \qty(\star\xd(\bv F^\flat))^{\sharp}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Fundamental Theorem of Exterior Calculus:Possible reference for calculus in four dimensions: <url href="https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf">https://people.math.harvard.edu/~knill/teaching/summer2020/handouts/lecture25.pdf</url>
+        <me>
+          \int_{C}\xd\omega=\int_{\partial C}\omega
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For residue theorem, the requirement that <m>f</m> is holomorphic is the same as saying that <m>\xd(f\dd{z})=0</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Exterior derivative of complex <m>f</m>:
+        <me>
+          \xd f=\pdv{f}{z}\dd{z}+\pdv{f}{\overline{z}}\dd{\overline{z}}=\pdv{f}{z}\dd{z}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

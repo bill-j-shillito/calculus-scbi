@@ -29,5 +29,71 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A contour integral is just a line integral over a curve <m>C</m> in the complex plane:
+        <me>
+          \int_{C} f(z)\dd{z}
+        </me>
+        We evaluate it by parametrizing <m>C</m>:
+        <me>
+          \int_{a}^{b} f(z(t))z'(t)\dd{t}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Great example to go through: if <m>C</m> is the unit circle parametrized counterclockwise, and <m>n\neq-1</m> is an integer, then
+        <me>
+          \int_{C} z^{n}\dd{z}=0\text{.}
+        </me>
+        However, as an exception,
+        <me>
+          \int_{C} \frac{1}{z}\dd{z}=2\uppi\ii\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>ML Inequality</title>
+          <statement>
+            <p>
+              If <m>f</m> is continuous on a smooth curve <m>C</m>, and if <m>|f(z)|\le M</m> for all <m>z</m> on <m>C</m>, then
+              <me>
+                \abs{\int_C f(z)\dd{z}}\le ML
+              </me>,
+              where <m>L</m> is the length of <m>C</m>.
+            </p>
+          </statement>
+        </theorem>
+        
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Suppose that <m>\bv F(x,y)=(P(x,y),Q(x,y))</m> is the Pólya vector field of the function <m>f(z)=P(x,y)-\ii Q(x,y)</m>.
+        Then:
+      </p>
+      <md>
+        <mrow>\oint_C f(z)\dd{z} \amp = \oint_C (P-\ii Q)(\dd{x}+\ii\dd{y})</mrow>
+        <mrow>\amp = \qty(\oint_C P\dd{x}+Q\dd{y})+\ii\qty(\oint_C P\dd{y}-Q\dd{x})</mrow>
+        <mrow>\amp = \qty(\oint_C\bv F\cdot\uv{t}\dd{s})+\ii\qty(\oint_C\bv F\cdot\uv{n}\dd{s})</mrow>
+      </md>
+
+      <p>
+        Thus the contour integral computes BOTH the circulation AND the flux at the same time!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Winding number?
+      </p>
+    </li>
+  </ul>
 </section>

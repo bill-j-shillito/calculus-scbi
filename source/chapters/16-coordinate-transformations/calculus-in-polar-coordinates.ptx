@@ -29,5 +29,41 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Derivative:
+        <me>
+          \dv{y}{x} =\frac{\dd(r\sin\theta)}{\dd(r\cos\theta)}=\frac{r\cos\theta\dd{\theta}+\sin\theta\dd{r}}{-r\sin\theta\dd{\theta}+\cos\theta\dd{r}}=\frac{r\cos\theta+r'\sin\theta}{-r\sin\theta+r'\cos\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Arc length:
+        <me>
+          s=\int_{\alpha}^{\beta} \sqrt{r^{2}+\qty(\dv{r}{\theta})^{2}}\dd{\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Polar area bounded by one curve:
+        <me>
+          A=\frac{1}{2}\int_{\alpha}^{\beta} r^{2}\dd{\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Polar area bounded by two curves:
+        <me>
+          A=\frac{1}{2}\int_{\alpha}^{\beta} (r\tsub{outer}^{2}-r\tsub{inner}^{2})\dd{\theta}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

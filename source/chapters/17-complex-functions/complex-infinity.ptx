@@ -29,5 +29,57 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Focus on <m>f(z)=\frac{1}{z}</m>.
+        <ul>
+          <li>
+            <p>
+              Domain coloring: Swaps light and dark, and colors cycle the other way.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Transformations: Flips points inside and outside the unit circle, along with a conjugtion.
+              That is,
+              <me>
+                \frac{1}{r\ee^{\ii\theta}}=\frac{1}{r}\ee^{-\ii\theta}
+              </me>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Division by zero and the Riemann sphere
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Define a pole of a function as a zero of its reciprocal.
+        But need to find a slightly different way to say this, as it’s missing some things.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Möbius tranformation:
+        <me>
+          f(z)=\frac{az+b}{cz+d},\qquad ad-bc\neq 0
+        </me>
+        Can be thought of as a composition of scaling, rotation, and inversion + conjugation.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <url href="https://www.youtube.com/watch?v=0z1fIsUNhO4">https://www.youtube.com/watch?v=0z1fIsUNhO4</url>
+      </p>
+    </li>
+  </ul>
 </section>

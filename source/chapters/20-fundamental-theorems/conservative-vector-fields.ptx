@@ -29,5 +29,64 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A vector field is called conservative if its line integral is path independent; that is, the choice of path does not change the value of the line integral.
+        Under what conditions is a vector field conservative?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Gradient thoerem</title>
+          <statement>
+            <p>
+              Suppose <m>C</m> is a smooth curve parametrized by the vector function <m>\bv r(t)</m> with <m>a\le t\le b</m>, and let <m>f</m> be a differentiable function whose gradient <m>\nabla f</m> is continuous.
+              Then
+              <me>
+                \int_{C}\nabla f\cdot\dd{\bv{r}}=f(\bv{r}(b))-f(\bv{r}(a))
+              </me>
+            </p>
+          </statement>
+        </theorem>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\bv F</m> is a gradient field, it must be conservative.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        As for the converse, if <m>\bv F</m> is conservative and is continuous on an open connected region <m>D</m>, then <m>\bv F</m> is a gradient field on <m>D</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A vector field is conservative if and only if every closed path integral is zero.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The fact that the curl of a gradient is zero gives another test for whether a field is conservative.
+        Suppose <m>\bv{F}=(P,Q)</m> is defined on an open simply connected region <m>D</m> and has continuous first order partial derivatives.
+      </p>
+
+      <p>
+        If <m>\DS\pdv{P}{y}=\DS\pdv{Q}{x}</m> throughout <m>D</m>, then <m>\bv{F}</m> is conservative.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Make sure to do an example using energy to show the conservation law actually happening!
+      </p>
+    </li>
+  </ul>
 </section>

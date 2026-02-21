@@ -29,5 +29,76 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Show how <m>(u,v)</m> spaces gets turned into <m>(x,y)</m> space through an arrow diagram with what happens to a grid
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The Jacobian matrix of the transformation <m>\bv f</m> given by <m>x=g(u,v)</m> and <m>y=h(u,v)</m> is
+        <me>
+          \bv J_{\bv f}=\pdv{(x,y)}{(u,v)}=\begin{bmatrix}\DS\pdv{x}{u} \amp \DS\pdv{x}{v}\\[2 ex] \DS\pdv{y}{u} \amp \DS\pdv{y}{v}\end{bmatrix}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The Jacobian is a generalization of all the derivatives we’ve seen so far:
+        <ul>
+          <li>
+            <p>
+              <m>\bb R\to\bb R</m>: The Jacobian is just the derivative.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\bb R\to\bb R^{n}</m>: The Jacobian is the vector derivative.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\bb R^{m}\to\bb R</m>: The Jacobian is the transpose of the gradient.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\bb R^{m}\to\bb R^{n}</m>: This is the most general case.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Determinant of a matrix being a scale factor / orientation change factor; demonstrate with 2D area of a parallelogram
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The determinant is
+        <me>
+          \det \bv{J}_{\bv{f}}=\begin{vmatrix}\DS\pdv{x}{u} \amp \DS\pdv{x}{v}\\[2 ex] \DS\pdv{y}{u} \amp \DS\pdv{y}{v}\end{vmatrix}=\pdv{x}{u}\pdv{y}{v}-\pdv{x}{v}\pdv{y}{u}
+        </me>
+        This is a scale factor of how small areas will change shape and orientation locally.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Polar Jacobian:
+        <me>
+          \abs{\pdv{(x,y)}{(r,\theta)}}=r
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

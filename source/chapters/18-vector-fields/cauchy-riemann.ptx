@@ -29,5 +29,102 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Derivative of complex function:
+        <me>
+          f'(z)=\limit{h\to 0}\frac{f(z+h)-f(z)}{h}
+        </me>
+        Note that <m>h</m> is complex here! Alternatively:
+        <me>
+          f'(z_{0})=\limit{z\to z_0}\frac{f(z)-f(z_{0})}{z-z_{0}}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Limits are defined exactly as you think they are based on multivariable calculus:
+        <me>
+          \limit{z\to z_0}f(z)=L
+        </me>
+        means that <m>f(z)</m> approaches <m>L</m> as closely as desired when <m>z</m> approaches <m>z_{0}</m> along <em>any</em> path.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Some functions aren’t differentiable. Great example is <m>f(z)=\overline{z}</m>:
+        <aside>
+          <p>
+            Another fun one is <m>f(z)=|z|^{2}</m>, which is differentiable everywhere for real functions but is differentiable only at <m>z=0</m> as a complex function!
+          </p>
+        </aside>
+        <me>
+          \limit{h\to 0}\frac{\overline{z+h}-\overline{z}}{h}=\limit{h\to 0}\frac{\ \ \overline{h}\ \ }{h}
+        </me>
+        If <m>h\to 0</m> along the real line, this quotient approaches <m>1</m>, but if it approaches over the imaginary line, the quotient approaches <m>-1</m>.
+        Therefore the limit does not exist, and hence the complex conjugate is not differentiable....
+        <em>anywhere!</em>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a function <m>f</m> is differentiable at <m>z_{0}</m> and at every point in some neighborhood of <m>z_{0}</m>, we say <m>f</m> is holomorphic at <m>z_{0}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a function <m>f(z)=u(x,y)+\ii v(x,y)</m> is differentiable at a point, it must satisfy the Cauchy-Riemann equations:
+        <me>
+          \pdv{u}{x}=\pdv{v}{x}\qquad \pdv{u}{y}=-\pdv{v}{y}
+        </me>
+        Furthermore, if <m>u</m> and <m>v</m> are continuous and have continuous first partial derivatives in a domain <m>D</m>, then satisfying the Cauchy-Riemann equations at all points of <m>D</m> implies that <m>f</m> is holomorphic in <m>D</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric.
+        (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f</m> is holomorphic in a domain <m>D</m>, then <m>f</m> is constant if <m>|f|</m> is constant or if <m>f'=0</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A function that is holomorphic at every point in the complex plane is called entire.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Linear approximation:
+        <me>
+          f(z)=f(z_{0})+f'(z_{0})(z-z_{0})
+        </me>
+        Should be able to relate this to being holomorphic.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        L’Hôpital’s rule works!
+      </p>
+    </li>
+  </ul>
 </section>

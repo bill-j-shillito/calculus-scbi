@@ -29,5 +29,31 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Change of variables in an integral:
+        <me>
+          \iint_{R} f(x,y)\dd{x}\dd{y}=\iint_{S} f(x(u,v),y(u,v))\abs{\pdv{(x,y)}{(u,v)}}\dd{u}\dd{v}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Moment of inertia:
+      </p>
+      <md>
+        <mrow>I_{x=0} \amp = \iint_{D} x^{2}\rho(x,y)\dd{A}</mrow>
+        <mrow>I_{y=0} \amp = \iint_{D} y^{2}\rho(x,y)\dd{A}</mrow>
+        <mrow>I_{z=0} \amp = \iint_{D} (x^{2}+y^{2})\rho(x,y)\dd{A}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Do the Gaussian integral using the polar trick
+      </p>
+    </li>
+  </ul>
 </section>

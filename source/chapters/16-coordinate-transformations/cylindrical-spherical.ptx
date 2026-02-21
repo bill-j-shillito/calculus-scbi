@@ -29,5 +29,51 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        3D Jacobians are set up the same way, but might need to show how determinant works (expansion by minors or maybe Rule of Sarrus would be enough)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Cylindrical coordinates:
+      </p>
+      <md>
+        <mrow>x \amp = r\cos\theta</mrow>
+        <mrow>y \amp = r\sin\theta</mrow>
+        <mrow>z \amp = z</mrow>
+      </md>
+
+      <p>
+        Jacobian: <m>\DS\abs{\pdv{(x,y,z)}{(r,\theta,z)}}=r</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Spherical coordinates:
+      </p>
+      <md>
+        <mrow>x \amp = \rho\sin\phi\cos\theta</mrow>
+        <mrow>y \amp = \rho\sin\phi\sin\theta</mrow>
+        <mrow>z \amp = \rho\cos\phi</mrow>
+      </md>
+
+      <p>
+        Jacobian: <m>\DS\abs{\pdv{(x,y,z)}{(\rho,\theta,\phi)}}=\rho^{2}\sin\phi</m>
+      </p>
+
+      <p>
+        This is assuming <m>\rho</m> is spherical radius, <m>\theta</m> is longitude (azimuthal angle), <m>\phi</m> is co-latitude (polar angle).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Show how to use them to convert triple integrals, applied problems (most likely center of mass, moment of inertia)
+      </p>
+    </li>
+  </ul>
 </section>

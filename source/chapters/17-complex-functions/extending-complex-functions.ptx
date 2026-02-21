@@ -29,5 +29,117 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Mostly focuses on what happens if you plug a complex number into well-known functions.
+        For all of these, view their domain coloring, and some important mappings of planar regions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Exponential functions:
+        <aside>
+          <p>
+            The exponential function is used to define pretty much all the other functions!
+          </p>
+        </aside>
+      </p>
+      <md>
+        <mrow>\ee^z \amp = \ee^{x+\ii y}</mrow>
+        <mrow>\amp = \ee^{x}\ee^{\ii y}</mrow>
+        <mrow>\amp = \ee^{x}\cos y + \ii\ee^{x}\sin y</mrow>
+      </md>
+
+      <p>
+        Is now <m>2\uppi\ii</m> periodic in the imaginary direction!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Trigonometric functions:
+      </p>
+      <md>
+        <mrow>\sin z \amp = \frac{\ee^{\ii z}-\ee^{-\ii z}}{2\ii} = \sin x \cosh y + \ii\cos x\sinh y</mrow>
+        <mrow>\cos z \amp = \frac{\ee^{\ii z}+\ee^{-\ii z}}{2} = \cos x \cosh y - \ii\sin x\sinh y</mrow>
+      </md>
+
+      <p>
+        All other trigonometric functions are defined based on these.
+        Also, we can actually find solutions to equations like <m>\sin z=5</m> now!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Hyperbolic functions:
+      </p>
+      <md>
+        <mrow>\sinh z \amp = \frac{\ee^{z}-\ee^{-z}}{2} = \sinh x \cos y + \ii\cosh x\sin y</mrow>
+        <mrow>\cosh z \amp = \frac{\ee^{z}+\ee^{-z}}{2} = \cosh x \cos y + \ii\sinh x\sin y</mrow>
+      </md>
+
+      <p>
+        Relationships between trigonometirc and hyperbolic functions:
+      </p>
+      <md>
+        <mrow>\sin \ii z \amp = \ii \sinh z \amp \cos \ii z \amp = \cosh z</mrow>
+        <mrow>\sinh \ii z \amp = \ii \sin z \amp \cosh \ii z \amp = \cos z</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Logarithmic function:
+        <me>
+          \ln z=\ln|z|+\ii\arg z
+        </me>
+        Because the exponential function is periodic, its inverse must be multivalued.
+        We can restrict it to arrive at the principal value
+        <me>
+          \Ln z=\ln|z|+\ii\Arg z
+        </me>
+        Here, we use the principal argument with <m>-\uppi&#x3C;\Arg z\le\uppi</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Complex powers:
+        <aside>
+          <p>
+            Some exponent and root laws don’t carry over to complex numbers because of this!
+          </p>
+        </aside>
+        <me>
+          z^{\alpha}=\ee^{\alpha\ln z}
+        </me>
+        The principal value is <m>z^{\alpha}=\ee^{\alpha\Ln z}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Inverse trigonometric functions etc.
+        can also be arrived at in terms of exponentials.
+        For example:
+      </p>
+      <md>
+        <mrow>\sin\inv z \amp = -\ii\ln\qty(\ii z+(1-z^2)^{1/2})</mrow>
+        <mrow>\cos\inv z \amp = -\ii\ln\qty(z+\ii (1-z^2)^{1/2})</mrow>
+        <mrow>\tan\inv z \amp = \frac{\ii}{2}\ln\qty(\frac{\ii+z}{\ii-z})</mrow>
+        <mrow>\sinh\inv z \amp = \ln\qty(z+(z^2+1)^{1/2})</mrow>
+        <mrow>\cosh\inv z \amp = \ln\qty(z+(z^2-1)^{1/2})</mrow>
+        <mrow>\tanh\inv z \amp = \frac{1}{2}\ln\qty(\frac{1+z}{1-z})</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Brief look at Riemann surfaces <mdash/> just enough to show where the “rest” of the function is for the functions with branch cuts.
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,116 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Divergence of a vector field:
+      </p>
+      <md>
+        <mrow>\Div(P,Q) \amp = \pdv{P}{x}+\pdv{Q}{y}</mrow>
+        <mrow>\Div(P,Q,R) \amp = \pdv{P}{x}+\pdv{Q}{y}+\pdv{R}{z}</mrow>
+      </md>
+
+      <p>
+        This measures how much a vector field is “flowing outward”.
+        If the divergence in a region is positive, it’s acting like a source, while if it’s negative, it’s acting like a sink.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Curl of a vector field:
+      </p>
+      <md>
+        <mrow>\Curl(P,Q) \amp = \pdv{Q}{x}-\pdv{P}{y}</mrow>
+        <mrow>\Curl(P,Q,R) \amp = \qty(\pdv{R}{y}-\pdv{Q}{z},\pdv{P}{z}-\pdv{R}{x},\pdv{Q}{x}-\pdv{P}{y})</mrow>
+      </md>
+
+      <p>
+        This measures how much a vector field is “rotating”.
+      </p>
+
+      <p>
+        A vector field with zero divergence is called incompressible or solenoidal.
+        <ul>
+          <li>
+            <p>
+              In the 2D case, the curl is a scalar.
+              If curl is positive, the field is rotating counterclockwise, while if negative, it’s rotating clockwise.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In the 3D case, the curl is a vector, which points along the direction of the right-hand rule, so that the field is flowing counterclockwise around that vector as an axis.
+              The magnitude is the strength of rotation.
+            </p>
+          </li>
+        </ul>
+        A vector field with zero curl is called irrotational.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In fluid dynamics, an ideal fluid is incompressible and irrotational.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Some useful properties:
+        <me>
+          \Curl(\Grad f)=\bv 0\qquad\Div(\Curl\bv F)=0
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The del operator <m>\nabla</m> is a vector operator.
+      </p>
+
+      <p>
+        In 2D:
+        <me>
+          \nabla=\qty(\pdv{x},\pdv{y})
+        </me>
+        In 3D:
+        <me>
+          \nabla=\qty(\pdv{x},\pdv{y},\pdv{z})
+        </me>
+        With this operator, we have:
+        <md>
+          <mrow>\Grad f \amp = \nabla f</mrow>
+          <mrow>\Div\bv{F} \amp = \nabla\cdot\bv{F}</mrow>
+          <mrow>\Curl\bv{F} \amp = \nabla\times\bv{F}</mrow>
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Divergence and curl act like derivatives in that they distribute over sums and satisfy a product rule in many cases:
+      </p>
+      <md>
+        <mrow>\Div(\bv{F}+\bv{G}) \amp = \Div\bv{F}+\Div\bv{G}</mrow>
+        <mrow>\Curl(\bv{F}+\bv{G}) \amp = \Curl\bv{F}+\Curl\bv{G}</mrow>
+        <mrow>\Div(f\bv{F}) \amp = f\Div\bv{F}+\nabla f\cdot \bv{F}</mrow>
+        <mrow>\Curl(f\bv{F}) \amp = f\Curl\bv{F}+\nabla f\times\bv{F}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        <url href="https://mathintuitions.com/2025/05/27/divergence-curl-and-the-taylor-series-approximation/">https://mathintuitions.com/2025/05/27/divergence-curl-and-the-taylor-series-approximation/</url>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Include polar versions as an exercise
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,123 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A function is analytic on <m>D</m> if its power series converges to the function.
+        Cauchy's integral theorems imply that a function is holmorphic if and only if it is analytic and thus we can use the terms interchangeably.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a function <m>f</m> is not holomorphic at <m>z=z_{0}</m>, we say <m>f</m> has a singularity at <m>z_{0}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f</m> has a singularity at <m>z=z_{0}</m>, we can represent it with a Laurent series, in which we allow negative powers of <m>(z-z_{0})</m>:
+        <me>
+          f(z)=\sum_{k=-\infty}^{\infty}a_{k}(z-z_{0})^{k}=\sum_{k=1}^{\infty}a_{-k}(z-z_{0})^{-k}+\sum_{k=0}^{\infty}a_{k}(z-z_{0})^{k}
+        </me>
+        The part with the negative powers is called the principal part and the part with the nonnegative powers is called the analytic part.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f</m> is holomorphic within the annular domain <m>D</m> defined by <m>r&#x3C;|z-z_{0}|&#x3C;R</m>, then <m>f</m> has a valid Laurent series representation, with the coefficeints given by
+        <me>
+          a_{k}=\frac{1}{2\uppi\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{k+1}}\dd{z}
+        </me>,
+        where <m>C</m> is a simple closed curve that lies entirely within <m>D</m> and has <m>z_{0}</m> in its interior.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Annular domains don't have to be ring-shaped...
+        they could be circles, complements of circles, or the entire complex plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Manipulations of power series by writing things in terms of <m>z-z_{0}</m> for some given <m>z_{0}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Types of singularities:
+        <ul>
+          <li>
+            <p>
+              If the principal part has no terms, the singularity is a removable singularity.
+              In this case we can always redefine a single point and make it holomorphic.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If the principal part has <m>n>0</m> terms, the singularity is a pole of order <m>n</m>.
+              A pole of order <m>1</m> is a simple pole.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If the principal part has infinitely many terms, the singularity is an essential singularity.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Zeros and poles:
+        <ul>
+          <li>
+            <p>
+              A function <m>f</m> that is holomorphic in some disk <m>|z-z_{0}|&#x3C;R</m> has a zero of order <m>n</m> if and only if <m>f</m> can be written
+              <me>
+                f(z)=(z-z_{0})^{n}\phi(z)
+              </me>
+              where <m>\phi</m> is holomorphic at <m>z=z_{0}</m> and <m>\phi(z_{0})\neq 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              A function <m>f</m> that is holomorphic in a punctured disk <m>0&#x3C;|z-z_{0}|&#x3C;R</m> has a pole of order <m>n</m> if and only if <m>f</m> can be written
+              <me>
+                f(z)=\frac{\phi(z)}{(z-z_{0})^{n}}
+              </me>
+              where <m>\phi</m> is holomorphic at <m>z=z_{0}</m> and <m>\phi(z_{0})\neq 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>g</m> and <m>h</m> are analytic at <m>z=z_{0}</m>, and <m>h</m> has a zero of order <m>n</m> at <m>z=z_{0}</m> and <m>g(z_{0})\neq 0</m>, then <m>f(z)=g(z)/h(z)</m> has a pole of order <m>n</m> at <m>z=z_{0}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              A function is meromorphic if it is analytic except at some set of isolated poles.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Would this be the right place to talk about limits at infinity?
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,89 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Frame this in terms of choosing a change of variables that makes it easier to represent a problem.
+        It's all about finding the right frame of reference.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Linear change of variables:
+      </p>
+      <md>
+        <mrow>x \amp = au+bv</mrow>
+        <mrow>y \amp = cu+dv</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Rotated coordinates:
+        <me>
+          \begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}\cos\phi \amp -\sin\phi\\ \sin\phi \amp \cos\phi\end{bmatrix} \begin{bmatrix}u\\v\end{bmatrix}
+        </me>
+        Show how this turns <m>xy=1</m> into a hyperbola in <m>u,v</m> coordinates.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A very useful <em>non-linear</em> change of coordinates is polar coordinates.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Converting from polar to rectangular:
+      </p>
+      <md>
+        <mrow>x \amp = r\cos\theta</mrow>
+        <mrow>y \amp = r\sin\theta</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Converting from rectangular to polar:
+      </p>
+      <md>
+        <mrow>r^2 \amp = x^2+y^2</mrow>
+        <mrow>\tan\theta \amp = \frac{y}{x}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Some graphs:
+        <ul>
+          <li>
+            <p>
+              Rose curves: <m>r=a\sin n\theta</m>, <m>r=a\cos n\theta</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Lima con: <m>r=a+b\sin\theta</m>, <m>r=a+b\cos\theta</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Circle: <m>r=a</m>, <m>r=a\sin\theta</m>, <m>r=a\cos\theta</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Lemniscate: <m>r^{2}=a^{2}\sin 2\theta</m>, <m>r^{2}=a^{2}\cos 2\theta</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

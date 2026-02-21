@@ -29,5 +29,95 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        The coefficient of <m>(z-z_{0})\inv</m> in the Laurent series of <m>f</m> is called the residue of <m>f</m> at <m>z=z_{0}</m>, and is denoted
+        <me>
+          \resid{z=z_0}f(z)\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Simple pole:
+        <me>
+          \resid{z=z_0}f(z)=\limit{z\to z_0}(z-z_{0})f(z)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Pole of order <m>n</m>:
+        <me>
+          \resid{z=z_0}f(z)=\frac{1}{(n-1)!}\limit{z\to z_0}\dv[n-1]{z}\big((z-z_{0})f(z)\big)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f(z)=g(z)/h(z)</m> and <m>f</m> has a simple pole at <m>z=z_{0}</m>, then
+        <me>
+          \resid{z=z_0}f(z)=\dfrac{g(z_0)}{h'(z_0)}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <theorem>
+        <title>Cauchy's residue theorem</title>
+        <statement>
+          <p>
+            Let <m>D</m> be a simply connected domain and <m>C</m> a simple closed contour lying entirely within <m>D</m>.
+            If <m>f</m> is meromorphic on and within <m>C</m> with isolated singularities <m>\seq z1n</m> within <m>C</m>, then
+            <me>
+              \oint_{C} f(z)\dd{z}=2\uppi\ii\sum_{k=1}^{n}\resid{z=z_0}f(z)\text{.}
+            </me>
+          </p>
+        </statement>
+      </theorem>
+    </li>
+
+    <li>
+      <p>
+        Some examples of real integrals evaluated using residues
+      </p>
+    </li>
+
+    <li>
+      <theorem>
+        <title>Argument principle</title>
+        <statement>
+          <p>
+            Let <m>C</m> be a simple closed contour lying entirely within a domain <m>D</m>.
+            Suppose <m>f</m> is meromorphic in <m>D</m> and <m>f(z)\neq 0</m> on <m>C</m>.
+            Then
+            <me>
+              \frac{1}{2\uppi\ii}\oint_{C}\frac{f'(z)}{f(z)}\dd{z}=N_{0}-N_{p}
+            </me>
+            where <m>N_{0}</m> is the total number of zeros of <m>f</m> (up to multiplicity) inside <m>C</m> and <m>N_{p}</m> is the number of poles of <m>f</m> (up to multiplicity) inside <m>C</m>.
+          </p>
+        </statement>
+      </theorem>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Rouché's theorem</title>
+          <statement>
+            <p>
+              Let <m>C</m> be a simple closed contour lying entirely within a domain <m>D</m>.
+              Suppose <m>f</m> and <m>g</m> are analytic in <m>D</m>.
+              If the strict inequality <m>|f(z)-g(z)|&#x3C;|f(z)|</m> holds for all <m>z</m> on <m>C</m>, then <m>f</m> and <m>g</m> have the same number of zeros (counted according to their order or multiplicities) inside <m>C</m>.
+            </p>
+          </statement>
+        </theorem>
+        This can be used to prove the Fundamental theorem of algebra! THAT would be a great cherry on top!
+      </p>
+    </li>
+  </ul>
 </section>

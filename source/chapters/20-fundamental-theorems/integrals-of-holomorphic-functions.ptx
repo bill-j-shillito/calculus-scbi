@@ -29,5 +29,156 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier.
+        The proofs essentially boil down to using the things we already used in the other sections, e.g.
+        path independence if and only if closed paths give zero integral .
+      </p>
+    </li>
+
+    <li>
+      <theorem>
+        <title>Cauchy's integral theorem</title>
+        <statement>
+          <p>
+            Suppose <m>f</m> is holomorphic in a simply connected domain <m>D</m> and that <m>f'</m> is continuous in <m>D</m>.
+            Then for every simple closed contour <m>C</m> in <m>D</m>,
+            <me>
+              \oint_{C} f(z)\dd{z}=0\text{.}
+            </me>
+          </p>
+        </statement>
+        <proof>
+          <p>
+            Let <m>\bv{F}=(u,-v)</m> be the Pólya vector field of <m>f</m>.
+          </p>
+          <md>
+            <mrow>\oint_C f(z)\dd{z} \amp = \oint_C (u+\ii v)(\dd{x}+\ii\dd{y})</mrow>
+            <mrow>\amp = \oint_C (u\dd{x}-v\dd{y}) + \ii\oint_C (v\dd{x}+u\dd{y})</mrow>
+            <mrow>\amp = \oint_C \bv{F}\cdot\uv{t}\dd{s} + \ii\oint_C \bv{F}\cdot\uv{n}\dd{s}</mrow>
+            <mrow>\amp = \iint_D \Curl\bv{F}\dd{A} + \ii\iint_D \Div\bv{F}\dd{A}</mrow>
+            <mrow>\amp = \iint_D \qty(\pdv{u}{y}+\pdv{v}{x})\dd{A} + \ii\iint_D \qty(\pdv{u}{x}-\pdv{v}{y})\dd{A}</mrow>
+          </md>
+          
+          <p>
+            Since <m>f</m> is holomorphic, it satisfies the Cauchy-Riemann equation, so <m>\bv F</m> is irrational and incompressible.
+            Hence
+            <me>
+              \int_{C} f(z)\dd{z}=0
+            </me>.
+          </p>
+        </proof>
+      </theorem>
+
+      
+    </li>
+
+    <li>
+      <p>
+      <theorem>
+        <title>Cauchy-Goursat theorem</title>
+        <statement>
+          Suppose <m>f</m> is holomorphic in a simply connected domain <m>D</m>.
+          Then for every simple closed contour <m>C</m> in <m>D</m>,
+          <me>
+            \oint_{C} f(z)\dd{z}=0
+          </me>.
+        </statement>
+      </theorem>
+        Much harder to prove! Does it based on triangular contours, then polygonal, then any.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Multiply connected domains lead to deformation of contours!
+      </p>
+      <md>
+        <mrow>\oint_{C\tsub{outside}} \bv{F}\cdot\dd{\bv{r}} - \oint_{C\tsub{inside}} \bv{F}\cdot\dd{\bv{r}} \amp = 0</mrow>
+        <mrow>\oint_{C\tsub{outside}} \bv{F}\cdot\dd{\bv{r}} \amp = \oint_{C\tsub{inside}} \bv{F}\cdot\dd{\bv{r}}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Cauchy-Goursat for simply connected domains</title>
+          <statement>
+            <p>
+              Suppose <m>C, C_{1}, \cdots, C_{n}</m> are simple closed curves with positive orientation such that <m>C_{1},C_{2},\cdots,C_{n}</m> are interior to <m>C</m> but the regions interior to each <m>C_{k}</m>, <m>k=1,2,\cdots,n</m>, have no points in common.
+          If <m>f</m> is holomorphic on each contour and at each point interior to <m>C</m> but exterior to all the <m>C_{k}</m>, <m>k=1,2,\cdots,n</m>, then
+          <me>
+            \int_{C} f(z)\dd{z}=\sum_{k=1}^{n}\oint_{C_k}f(z)\dd{z}\text{.}
+          </me>
+            </p>
+          </statement>
+        </theorem>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Can also be shown to work for non-simply-connected contours.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts.
+        If <m>F</m> is an antiderivative of a continuous function <m>f</m>, then
+        <me>
+          \int_{C} f(z)\dd{z}=F(b)-F(a)
+        </me>
+        Furthermore path independence of continuous <m>f</m> implies the existence of an antiderivative.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f</m> is holomorphic in a simply connected domain <m>D</m>, then it has an antiderivative.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Cauchy's integral formula</title>
+          <statement>
+            <p>
+              Suppose that <m>f</m> is holomorphic in a simply connected domain <m>D</m> and <m>C</m> is any simple closed contour lying entirely within <m>D</m>.
+              Then for any point <m>z_{0}</m> within <m>C</m>,
+              <me>
+                f(z_{0})=\frac{1}{2\uppi\ii}\oint_{C}\frac{f(z)}{z-z_{0}}\dd{z}\text{.}
+              </me>
+            </p>
+          </statement>
+        </theorem>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Cauchy's integral formula for derivatives</title>
+          <statement>
+            <p>
+              Suppose that <m>f</m> is holomorphic in a simply connected domain <m>D</m> and <m>C</m> is any simple closed contour lying entirely within <m>D</m>.
+              Then for any point <m>z_{0}</m> within <m>C</m>,
+              <me>
+                f^{(n)}(z_{0})=\frac{n!}{2\uppi\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{n+1}}\dd{z}\text{.}
+              </me>
+            </p>
+          </statement>
+        </theorem>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.
+      </p>
+    </li>
+  </ul>
 </section>

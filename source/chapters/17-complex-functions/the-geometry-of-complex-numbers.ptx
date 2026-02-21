@@ -29,5 +29,98 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Visualize complex numbers as vectors and inherit addition and scaling properties from them.
+        But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match...
+        though it's strangely close! If <m>z=a+b\ii</m> and <m>w=c+d\ii</m>, then
+        <me>
+          zw=(a+b\ii)(c+d\ii)=(ac-bd)+(ad+bc)\ii
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can take any complex number <m>z=a+b\ii</m> and write it as:
+        <me>
+          z=r\cos\theta+\ii\sin\theta
+        </me>
+        Here, <m>r</m> is the modulus, denoted <m>|z|</m>, and <m>\theta</m> is the argument, denoted <m>\arg z</m>.
+        <aside>
+          <p>
+            The principal argument is defined as
+          <me>
+            -\uppi\lt\Arg z\le\uppi
+          </me>.
+          There's nothing special about this, it's just convenient.
+          Also <m>\arg 0</m> is undefined.
+          </p>
+        </aside>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        By Euler's formula we also have:
+        <me>
+          \ee^{\ii\theta}=\cos\theta+\ii\sin\theta
+        </me>
+        This gives us exponential form of a complex number:
+        <aside>
+          <p>
+            Engineers also write
+          <me>
+            z=r\Cis\theta
+          </me>.
+          </p>
+        </aside>
+        <me>
+          z=r\ee^{\ii\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Now we can multiply and divide <m>z=r\ee^{\ii\theta}</m> and <m>w=s\ee^{\ii\phi}</m> as follows:
+      </p>
+      <md>
+        <mrow>zw \amp = rs\ee^{\ii(\theta+\phi)}</mrow>
+        <mrow>\frac{z}{w} \amp = \frac{r}{s}\ee^{\ii(\theta-\phi)}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Define the complex conjugate <m>\overline{z}=a-b\ii</m>.
+        Then we have the following:
+      </p>
+      <md>
+        <mrow>\overline{z}w \amp = (a-b\ii)(c+d\ii)</mrow>
+        <mrow>\amp = (ac+bd)+(ad-bc)\ii</mrow>
+      </md>
+
+      <p>
+        This form <em>does</em> match the dot and cross product!
+        <aside>
+          Honestly I wish it were <m>z\overline{w}</m> instead.
+          There's something going on with how we do complex inner products.
+          But I need to find it.
+        </aside>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Powers using De Moivre's formula:
+        <me>
+          (r\ee^{\ii\theta})^{n}=r^{n}\ee^{n\ii\theta}
+        </me>
+        This works with roots as well, but we'll get <m>n</m> roots evenly spaced apart along the unit circle.
+        Also mention <m>\sqrt[n]{z}</m> as principal value of <m>z^{1/n}</m>.
+      </p>
+    </li>
+  </ul>
 </section>

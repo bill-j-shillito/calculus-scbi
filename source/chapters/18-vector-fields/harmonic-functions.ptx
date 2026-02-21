@@ -29,5 +29,117 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        The Laplacian operator:
+        <me>
+          \nabla^{2} f = \nabla\cdot\nabla f = \pdv[2]{f}{x}+\pdv[2]{f}{y}+\pdv[2]{f}{z}
+        </me>
+        In other words, Laplace’s equation (from PDE) is just <m>\nabla^{2} f=0</m>.
+        Real-valued functions that satisfy this requirement are called harmonic functions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Laplacian for vector functions:
+        <me>
+          \nabla^{2} \bv F =\qty(\nabla^2 P,\nabla^2 Q,\nabla^2 R)
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f=u+\ii v</m> is analytic, then <m>u</m> and <m>v</m> are holomorphic, and we say that <m>v</m> is the harmonic conjugate of <m>u</m>.
+        Furthermore, <m>-u</m> is the harmonic conjugate of <m>v</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The level curves of <m>u</m> and <m>v</m> will be orthogonal families, that is, the tangent lines at all points of intersection will always be perpendicular.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\phi</m> is a scalar function and <m>\nabla\phi=\bv F</m>, we say that <m>\phi</m> is a potential function (or just a potential) of <m>\bv F</m>, and we call <m>\bv F</m> a gradient field.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\phi</m> is harmonic, it has a harmonic conjugate <m>\phi</m>, and we say that
+        <me>
+          \bv{\Omega}(z)=\phi(x,y)+\ii\psi(x,y)
+        </me>
+        is the complex potential of <m>\bv F</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\bv F(x,y)=(u(x,y),v(x,y))</m> is the velocity field of an ideal fluid (that is, incompressible and irrotational), then <m>f(x,y)=u(x,y)-\ii v(x,y)</m> is holomorphic (it satisfies the Cauchy Riemann equations), and furthermore <m>\bv{\Omega}(z)</m> as defined above is its potential function, which is also holomorphic.
+      </p>
+
+      <p>
+        We say that <m>\bv F</m> is the Pólya vector field of the complex function <m>f</m>.
+      </p>
+
+      <p>
+        Notice that this shows a connection between the equations for curl and divergence and the Cauchy-Riemann equations, but they’re each off by a minus sign.
+        The reason for this sign change will become clear when we do contour integrals later.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Applications:
+      </p>
+
+      <p>
+        <tabular>
+          <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" />
+          <row>
+            <cell>Application</cell>
+            <cell>Level curves of <m>\phi</m> </cell>
+            <cell>Level curves of <m>\psi</m> </cell>
+          </row>
+
+          <row />
+            <row>
+              <cell>electrostatics</cell>
+              <cell>equipotential curves</cell>
+              <cell>lines of force</cell>
+            </row>
+
+            <row>
+              <cell>gravitation</cell>
+              <cell>equipotential curves</cell>
+              <cell>lines of force</cell>
+            </row>
+
+            <row>
+              <cell>fluid flow</cell>
+              <cell>equipotential curves</cell>
+              <cell>streamlines of flow</cell>
+            </row>
+
+            <row>
+              <cell>heat flow</cell>
+              <cell>isotherms</cell>
+              <cell>lines of heat flux</cell>
+            </row>
+          </tabular>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Should get into why we care about solutions to Laplace’s equation.
+        </p>
+      </li>
+    </ul>
 </section>

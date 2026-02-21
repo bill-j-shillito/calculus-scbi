@@ -29,5 +29,71 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Motivation: What’s the relationship between circulation, flux, curl, and divergence?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Green's theorems</title>
+          <statement>
+            <p>
+              Let <m>C</m> be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let <m>D</m> be the region bounded by <m>C</m>.
+              Furthermore, let <m>\bv F=(P,Q)</m> be a vector field such that <m>P</m> and <m>Q</m> have continuous partial derivatives on an open region that contains <m>D</m>.
+              Then:
+              <ul>
+                <li>
+                  <p>
+                    Green’s curl theorem:
+                  </p>
+                  <md>
+                    <mrow>\oint_C \bv{F}\cdot\dd{\bv{r}} = \int_C \bv{F}\cdot\uv{t}\dd{s} \amp = \iint_D \Curl\bv{F}\dd{A}</mrow>
+                    <mrow>\oint_C P\dd{x} + Q\dd{y} \amp = \iint_D \qty(\pdv{Q}{x} - \pdv{P}{y})\dd{A}</mrow>
+                  </md>
+                </li>
+
+                <li>
+                  <p>
+                    Green’s divergence theorem:
+                  </p>
+                  <md>
+                    <mrow>\int_C \bv{F}\cdot\uv{n}\dd{s} = \iint_D \Div\bv{F}\dd{A}</mrow>
+                    <mrow>\oint_C P\dd{y} - Q\dd{x} \amp = \iint_D \qty(\pdv{P}{x} + \pdv{Q}{y})\dd{A}</mrow>
+                  </md>
+                </li>
+              </ul>
+            </p>
+          </statement>
+        </theorem>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Area of <m>D</m>:
+        <me>
+          A=\oint_{C} x\dd{y}=-\oint_{C} y\dd{x}=\frac{1}{2}\oint_{C} x\dd{y}-y\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Multiply connected domain:
+      </p>
+      <me>
+        \iint_D \Curl\bv{F}\dd{A} = \oint_{C\tsub{outside}}\bv{F}\cdot\dd{\bv{r}} - \oint_{C\tsub{inside}}\bv{F}\cdot\dd{\bv{r}}
+      </me>
+    </li>
+
+    <li>
+      <p>
+        Can think of divergence as flux per unit infinitesimal area and curl as circulation per unit infinitesimal area.
+      </p>
+    </li>
+  </ul>
 </section>

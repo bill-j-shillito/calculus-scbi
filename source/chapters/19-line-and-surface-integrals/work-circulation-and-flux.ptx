@@ -29,5 +29,83 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        If <m>\bv F</m> is a force field that acts on an object moving along a path <m>C</m> parametrized by <m>\bv r(t)</m>, <m>a\le t\le b</m>, then the line integral of <m>\bv F</m> along <m>C</m> is
+        <me>
+          \int_{C}\bv F\cdot\dd{\bv{r}}=\int_{a}^{b}\bv F(\bv r(t))\cdot\bv r'(t)\dd{t}\text{.}
+        </me>
+        This is the work done by <m>\bv F</m> on the object as it moves along <m>C</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can rewrite this as
+        <me>
+          \int_{a}^{b}\qty(\bv F(\bv r(t))\cdot\frac{\bv r'(t)}{\norm{\bv r'(t)}})\norm{\bv r'(t)}\dd{t}=\int_{a}^{b}\bv F\cdot\uv{t}\dd{s}
+        </me>
+        That is, we’re really integrating the <em>component</em> of <m>\bv F</m> in the tangent direction of the curve.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\bv F(x,y)=(P(x,y),Q(x,y))</m>, we have:
+      </p>
+      <md>
+        <mrow>\bv{F}(x,y)\cdot\dd{\bv{r}} \amp = \int_a^b \qty(P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t))\dd{t}</mrow>
+        <mrow>\amp = \int_a^b P(x(t),y(t),z(t))\dd{t}+\int_a^b Q(x(t),y(t),z(t))\dd{t}</mrow>
+        <mrow>\amp = \int_C P(x,y)\dd{x}+\int_C Q(x,y)\dd{y}</mrow>
+      </md>
+
+      <p>
+        This is often abbreviated as <m>\int_{C} P(x,y)\dd{x}+Q(x,y)\dd{y}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Suppose <m>C</m> is a closed curve.
+        <ul>
+          <li>
+            <p>
+              If we compute
+              <me>
+                \oint_{C}\bv F\cdot\uv{n}\dd{s}
+              </me>,
+              where <m>\uv n</m> is the outward-pointing unit normal, we call this the flux of <m>\bv F</m> through <m>C</m>.
+              The notation means we’re computing an integral of a closed curve.
+              We can think of this as the amount of fluid that passes through the curve per unit time.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If we compute
+              <me>
+                \oint_{C}\bv F\cdot\uv{t}\dd{s}
+              </me>,
+              we call this the circulation of <m>\bv F</m> along <m>C</m>.
+              We can think of this as the tendency of the fluid to flow along <m>C</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>C</m> is parametrized counterclockwise, we say it positively oriented.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Work and circulation can be extended to 3D.
+        Flux will have to wait.
+      </p>
+    </li>
+  </ul>
 </section>

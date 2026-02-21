@@ -29,5 +29,57 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        2D vector fields:
+      </p>
+      <md>
+        <mrow>\bv{F}(x,y) \amp = (P(x,y),Q(x,y))</mrow>
+        <mrow> \amp = P(x,y)\,\uv{x}+Q(x,y)\,\uv{y}</mrow>
+      </md>
+
+      <p>
+        Good examples are <m>(x,y)</m> and <m>(-y,x)</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        3D vector fields:
+      </p>
+      <md>
+        <mrow>\bv{F}(x,y,z) \amp = (P(x,y,z),Q(x,y,z),R(x,y,z))</mrow>
+        <mrow> \amp = P(x,y,z)\,\uv{x}+Q(x,y,z)\,\uv{y}+R(x,y,z)\,\uv{z}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Inverse square fields
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Interpreting as a force field vs a velocity field
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Dynamical system (in 2D):
+        <me>
+         \qty(\dv{x}{t},\dv{y}{t})=(P(x,y),Q(x,y))
+        </me>
+        Streamlines are the paths taken by integrating this over time; can have students experiment with these!
+      </p>
+    </li>
+  </ul>
 </section>

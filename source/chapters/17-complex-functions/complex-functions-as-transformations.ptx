@@ -29,5 +29,100 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Regions in the complex plane:
+        <ul>
+          <li>
+            <p>
+              Circle: <m>|z-z_{0}|=r</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Disk: <m>|z-z_{0}|&#x3C;r</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Half planes: <m>\Real z>a</m>, <m>\Imag z\le b</m>, etc
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Annulus: <m>r_{1}\le |z-z_{0}|\le r_{2}</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can visualize complex functions by considering what they do to particular regions of the complex plane.
+        This is just like what we did with the Jacobian section!
+      </p>
+
+      <p>
+        Example: What does <m>f(z)=z^{2}</m> do? We can expand it out and get:
+        <me>
+          f(z)=(x+\ii y)^{2}=(x^{2}-y^{2})+\ii(2xy)
+        </me>
+        So we can view this as the transformation
+        <me>
+          (x,y)\mapsto(x^{2}-y^{2},2xy)\text{.}
+        </me>
+        The Jacobian determinant of this matrix is
+        <me>
+          \bv J=\begin{bmatrix}2x&#x26;-2y\\ 2y&#x26;2x\end{bmatrix}
+        </me>
+        and the determinant is <m>4(x^{2}+y^{2})</m>.
+        This shows how the lengths of small boxes will be scaled.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Parametric curves in the complex plane
+        <ul>
+          <li>
+            <p>
+              Line (segment, ray): <m>z(t)=z_{0}(1-t)+z_{1}t</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Circle: <m>z(t)=z_{0}+r(\cos t+\ii\sin t)=z_{0}+r\ee^{\ii t}</m>
+            </p>
+          </li>
+        </ul>
+        Image of curve: If <m>w=f(z)</m>, then <m>w(t)=f(z(t))</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.
+        <ul>
+          <li>
+            <p>
+              Lightness = modulus (black = <m>0</m>, full color = <m>1</m>, white = <m>\infty</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Hue = argument (red = <m>0</m>, lime = <m>\uppi/2</m>, cyan = <m>\uppi</m>, purple = <m>3\uppi/2</m>
+            </p>
+          </li>
+        </ul>
+        Based on this, we can tell where the zeros are because (1) the colors approach black, and (2) the colors will cycle around the points.
+      </p>
+    </li>
+  </ul>
 </section>
