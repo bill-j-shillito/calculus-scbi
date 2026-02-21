@@ -29,5 +29,34 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Taylor’s theorem: For any other <m>x_{0}\in I</m> there exists some <m>\alpha_{n}</m> between <m>x_{0}</m> and <m>c</m> (which depends on <m>x_{0}</m> and <m>c</m> and <m>n</m>) such that
+        <me>
+          f(x_{0})=\qty(\sum_{k=0}^{n-1}\frac{f\psup k(c)}{k!}(x_0-c)^k)+\frac{f\psup n(\alpha_{n})}{n!}(x_{0}-c)^{n}\text{.}
+        </me>
+        That is, <m>R_{n-1}(x_{0})=\dfrac{f\psup n(\alpha_{n})}{n!}(x_{0}-c)^{n}</m>, for some <m>\alpha_{n}</m> between <m>x_{0}</m> and <m>c</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Integral form of remainder function:
+        <me>
+          R_{n}(x)=\frac{1}{n!}\int_{c}^{x}(x-t)^{n}f\psup{n+1}(t)\dd{t}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Lagrange error bound: If <m>|f\psup{n+1}(x)|\le M</m> for <m>|x-a|\le d</m>, then
+        <me>
+          |R_{n}(x)|\le\frac{M}{(n+1)!}|x-a|^{n+1}
+        </me>
+        for <m>|x-a|\le d</m>.
+      </p>
+    </li>
+  </ul>
 </section>

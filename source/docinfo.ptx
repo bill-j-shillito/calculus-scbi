@@ -40,6 +40,10 @@
     \DeclareMathOperator{\Imag}{Im}
     \newcommand{\xd}{\mathbf{d}}
     \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
+    \newcommand{\psup}[1]{^{(#1)}}
+    \newcommand{\hypext}{{}^*}
+    \DeclareMathOperator{\st}{st}
+    \newcommand{\set}[1]{\left\{#1\right\}}
 
     <!-- Capitalized principal values -->
     \DeclareMathOperator{\Sin}{Sin}

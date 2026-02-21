@@ -29,5 +29,52 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      Rolle's theorem Let <m>f:[a,b]\to\bb R</m> be continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>.
+      If <m>f(a)=f(b)</m>, then there exists <m>c\in(a,b)</m> where <m>f'(c)=0</m>.
+      (This can be used to prove the MVT.)
+      <ul>
+        <li>
+          <p>
+            If a function has zero derivative on an interval, it must be constant.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If two functions have the same derivative on an interval, they must differ by a constant.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A function is monotone increasing if and only if its derivative is nonnegative on an interval.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Cauchy's mean value theorem: If <m>f</m> and <m>g</m> are continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>, then there is a number <m>c\in (a,b)</m> such that
+      <me>
+        [f(b)-f(a)]\cdot g'(c)=[g(b)-g(a)]\cdot f'(c)\text{.}
+      </me>
+      Another way to visualize it is to have a parametric curve <m>(f(t),g(t))</m> for <m>a\le t\le b</m> and point out that there exists <m>c\in(a,b)</m> such that
+      <me>
+        \frac{f(b)-f(a)}{g(b)-g(a)}=\dfrac{f'(c)}{g'(c)}
+      </me>
+      (assuming that the denominators aren't zero).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Cauchy's MVT can be used to prove L'Hôpital's rule.
+    </p>
+  </li>
+</ul>
 </section>

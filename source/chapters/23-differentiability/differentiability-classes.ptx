@@ -29,5 +29,77 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Every differentiable function is continuous.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A function is continuously differentiable if it is differentiable and its derivative is continuous.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A function is of differentiability class <m>C^{k}</m> if the derivatives <m>f',f'',\cdots,f^{(k)}</m> exist and are continuous.
+        <ul>
+          <li>
+            <p>
+              <m>C^{0}</m>: continuous functions
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>C^{1}</m>: continuously differentiable functions
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>C^{\infty}</m>: smooth functions
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>C^{\omega}</m>: analytic functions. (May not put this here in the end.)
+            </p>
+
+            <p>
+              An example of a function that is smooth but not analytic is the bump function
+              <me>
+                f(x)=\begin{cases}\ee^{-\frac{1}{1-x^2}}&#x26;\text{if $|x|&#x3C;1$}\\ 0&#x26;\text{otherwise}\end{cases}
+              </me>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Often interesting example:
+        <me>
+          g_{n}(x)=\begin{cases}x^{n}\sin(1/x)&#x26;\text{if $x\neq 0$}\\ 0&#x26;\text{if $x= 0$}\end{cases}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Remind about Intermediate Value Theorem, which can now be proven using known tools
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Darboux’s theorem: Suppose <m>f:[a,b]\to\bb R</m> is differentiable.
+        If <m>\alpha</m> is between <m>f'(a)</m> and <m>f'(b)</m>, there exists <m>c\in(a,b)</m> such that <m>f'(c)=\alpha</m>.
+      </p>
+    </li>
+  </ul>
 </section>

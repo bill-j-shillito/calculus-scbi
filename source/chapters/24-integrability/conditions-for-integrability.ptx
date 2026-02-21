@@ -29,5 +29,49 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Let <m>f:[a,b]\to\bb R</m> be bounded.
+        Then <m>f</m> is integrable if and only if for all <m>\eps>0</m> there exists a partition <m>P_{\eps}</m> of <m>[a,b]</m> such that
+        <me>
+          U(f,P_{\eps})-L(f,P_{\eps})&#x3C;\eps\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f:[a,b]\to\bb R</m> is integrable, then there exists a sequence of partitions of <m>[a,b]</m> for which
+        <me>
+          \limit{n\to\infty}[U(f,P_{n})-L(f,P_{n})]=0\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Continuous functions are integrable.
+        The proof relies on uniform continuity, which is why compactness and uniform continuity were covered in this chapter.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Linearity properties
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Inequality properties
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>\abs{\int f}\le\int |f|</m>
+      </p>
+    </li>
+  </ul>
 </section>

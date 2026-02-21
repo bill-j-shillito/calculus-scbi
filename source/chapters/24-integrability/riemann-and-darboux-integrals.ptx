@@ -29,5 +29,89 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A partition of <m>[a,b]</m> is a finite set
+        <me>
+          P=\set{x_0,x_1,x_2,\cdots,x_n}
+        </me>
+        such that <m>a=x_{0}</m>, <m>b=x_{n}</m>, and <m>x_{0}&#x3C;x_{1}&#x3C;x_{2}&#x3C;\cdots&#x3C;x_{n}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Given a partition <m>\set{\seq x0n}</m> of <m>[a,b]</m>, for each subinterval <m>[x_{i-1},x_{i}]</m>, we denote:
+      </p>
+      <md>
+        <mrow>m_i \amp = \inf\set{f(x):x\in[x_{i-1},x_i]}</mrow>
+        <mrow>M_i \amp = \sup\set{f(x):x\in[x_{i-1},x_i]}</mrow>
+      </md>
+
+      <p>
+        Now we can define the upper sum as
+        <me>
+          U(f,P)=\sum_{i=1}^{n} M_{i}\cdot(x_{i}-x_{i-1})
+        </me>
+        and the lower sum as
+        <me>
+          L(f,P)=\sum_{i=1}^{n} m_{i}\cdot(x_{i}-x_{i-1})\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A partition <m>Q</m> of <m>[a,b]</m> is a refinement of <m>P</m> if <m>P\subseteq Q</m>.
+      </p>
+
+      <p>
+        If so, then
+        <me>
+          U(f,P)\ge U(f,Q)\quad\text{and}\quad L(f,P)\le L(f,Q)\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>P</m> is a partition of <m>[a,b]</m>, then <m>L(f,P)\le U(f,P)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>P_{1}</m> and <m>P_{2}</m> are any partitions of <m>[a,b]</m>, then
+        <me>
+          L(f,P_{1})\le U(f,P_{2})\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Let <m>f:[a,b]\to\bb R</m> be a bounded function and let <m>\cl P</m> be the collection of <em>all</em> partition of <m>[a,b]</m>.
+        The upper integral of <m>f</m> is defined to be
+        <me>
+          U(f)=\inf_{P\in\cl P}U(f,P)
+        </me>
+        and the lower integral is
+        <me>
+          L(f)=\sup_{P\in\cl P}L(f,P)
+        </me>
+        If <m>L(f)=U(f)</m>, we say that <m>f</m> is Darboux integrable.
+        This is equivalent to being Riemann integrable.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>m=\inf\limits_{a\le x\le b}f(x)</m> and <m>M=\sup\limits_{a\le x\le b}f(x)</m>, then
+        <me>
+          m(b-a)\le L(f)\le U(f)\le M(b-a)\text{.}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

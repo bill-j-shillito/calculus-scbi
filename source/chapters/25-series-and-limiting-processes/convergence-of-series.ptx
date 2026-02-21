@@ -29,5 +29,80 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        The infinite series <m>\DS\sum_{k=1}^{\infty} a_{k}</m> is defined as the limit of the sequence of partial sums (if it exists):
+        <me>
+          \sum_{k=1}^{\infty} a_{k}=\limit{n\to\infty}\sum_{k=1}^{n} a_{k}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Series limit laws
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Divergence test: If <m>a_{k}\not\to 0</m>, then <m>\DS\sum a_{k}</m> diverges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a series has all nonnegative terms, then either it converges or it diverges to infinity.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Comparison test: Assume <m>0\le a_{k}\le b_{k}</m> for all <m>k</m>.
+        <ul>
+          <li>
+            <p>
+              If <m>\DS\sum b_{k}</m> converges, then <m>\DS\sum a_{k}</m> converges.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>\DS\sum a_{k}</m> diverges, then <m>\DS\sum b_{k}</m> diverges.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The harmonic series diverges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Integral test: If <m>a_{n}=f(n)</m>, then <m>\DS\sum a_{n}</m> converges if and only if <m>\DS\int_{1}^{\infty} f(x)\dd{x}</m> converges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>p</m>-series test: <m>\DS\sum \frac{1}{k^{p}}</m> converges if and only if <m>p>1</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Limit comparison test: Assume <m>0\le a_{k}\le b_{k}</m> for all <m>k</m>.
+        If
+        <me>
+          \limit{k\to\infty}\dfrac{a_{k}}{b_{k}}
+        </me>
+        where <m>0&#x3C;c&#x3C;\infty</m>, then <m>\DS\sum a_{k}</m> converges if and only if <m>\DS\sum b_{k}</m> converges.
+      </p>
+    </li>
+  </ul>
 </section>

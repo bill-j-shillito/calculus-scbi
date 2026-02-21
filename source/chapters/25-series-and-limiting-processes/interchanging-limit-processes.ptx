@@ -29,5 +29,26 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Uniform convergence preserves uniform continuity, boundedness, and integrability.
+        Additionally, if the derivatives converge uniformly, then uniform convergence preserves differentiability.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The sequence <m>(f_{k})</m> is equicontinuous if for all <m>\eps>0</m>, there exists a single <m>\delta>0</m> such that <m>|x-y|&#x3C;\delta</m> implies <m>|f_{k}(x)-f_{k}(y)|&#x3C;\eps</m> for all <m>x,y\in A</m> and for all <m>k\in\bb N</m>.
+        (It’s like the sequence of functions version of uniform continuity, in a way?)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Arzelà-Ascoli theorem: If <m>(f_{k})</m> is uniformly bounded and equicontinuous on <m>A</m>, then <m>(f_{k})</m> contains a uniformly convergent subsequence.
+        (This is like functions version of Bolzano-Weierstrass.)
+      </p>
+    </li>
+  </ul>
 </section>

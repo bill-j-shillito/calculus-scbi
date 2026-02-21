@@ -29,5 +29,53 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      A sequence of real numbers is a function <m>a:\bb N\to\bb R</m>.
+      We write <m>a_{n}</m> instead of <m>a(n)</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      A sequence is bounded if there exists <m>L</m> and <m>U</m> such that <m>L\le a_{n}\le U</m> for all <m>n</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      A sequence converges to <m>a\in\bb R</m> if for all <m>\eps>0</m> there exists some <m>N\in\bb N</m> such that <m>|a_{n}-a|&#x3C;\eps</m> for all <m>n>N</m>.
+      We say <m>a</m> is the limit of <m>(a_{n})</m>, and we write <m>\limit{n\to\infty}a_{n}=a</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      If a sequence does not converge, it diverges.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      We say <m>\limit{n\to\infty}a_{n}=\infty</m> if for all <m>M>0</m> there exists some <m>N\in\bb N</m> such that <m>a_{n}>M</m> for all <m>n>N</m>.
+      Similarly, <m>\limit{n\to\infty}a_{n}=\infty</m> if for all <m>M&#x3C;0</m> there exists some <m>N\in\bb N</m> such that <m>a_{n}&#x3C;M</m> for all <m>n>N</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      A point <m>x</m> is a limit point of a set <m>A</m> if there is a sequence of points <m>a_{1},a_{2},a_{3},\cdots</m> from <m>A\setminus\set{x}</m> such that <m>a_{n}\to x</m>.
+      (This seems off...
+      not that general.
+      Look up again.)
+    </p>
+  </li>
+
+  <li>
+    <p>
+      A set is closed if and only if it contains all its limit points.
+    </p>
+  </li>
+</ul>
 </section>

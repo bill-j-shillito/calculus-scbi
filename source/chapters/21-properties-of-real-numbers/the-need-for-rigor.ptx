@@ -29,5 +29,47 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      Recall the basic square wave with amplitude <m>1</m> and period <m>2\uppi</m>:
+      <me>
+        S(x)=\frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
+      </me>
+      Every term in this series is a continuous function — it’s just a sinusoid — but the resulting function is discontinuous!
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The Gibbs phenomenon is the overshooting and undershooting that occurs around the points of discontinuity for any finite sum.
+      It never goes away even with more and more times, because the series is not uniformly convergent.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      From Wikipedia: “It is impossible for a discontinuous function to have absolutely convergent Fourier coefficients, since the function would thus be the uniform limit of continuous functions and therefore be continuous, a contradiction.”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      If you integrate and then differentiate the infinite series, you get points where the derivative is undefined.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Derivative of the square wave term by term goes nuts!!
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Fourier’s series caused a lot of mathematicians to slam on the brakes and try to figure out what was really going on.
+      The result was real analysis.
+    </p>
+  </li>
+</ul>
 </section>

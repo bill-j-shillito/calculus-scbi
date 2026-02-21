@@ -2,4 +2,252 @@
 
 <section xml:id="sec-non-standard-analysis">
   <title>CAPSTONE: Non-standard analysis</title>
+
+  <ul>
+    <li>
+      <p>
+        The hyperreal numbers, denoted <m>\hypext\bb R</m>, are a number system where the real numbers have been extended by infinite and infinitesimal elements.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The whole idea was to make Newton and (especially?) Leibniz’s ideas of infinitesimals rigorous.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        It’s actually pretty easy to algebraically extend the real numbers by adding an infinitesimal element.
+        The difficult comes in extending things like transcendental functions to work with these new numbers.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Developed by Abraham Robinson in the 1960s
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extension principle:
+        <ul>
+          <li>
+            <p>
+              The real numbers form a subset of the hyperreal numbers, and the order relation <m>x&#x3C;y</m> for the real numbers is a subset of the order relation for the hyperreal numbers.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There is a hyperreal number that is greater than zero but less than every positive real number.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For every real function <m>f</m> of one or more variables, there exists a corresponding hyperreal function <m>\hypext\!f</m> of the same number of variables, called the natural extension of <m>f</m>.
+              For any <m>x\in\bb R</m>, we have <m>\hypext\!f(x)=f(x)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Transfer principle:
+        <blockquote>
+          Every real statement that holds for one or more particular real functions holds for the hyperreal natural extensions of those functions.
+        </blockquote>
+        Essentially, algebraic formulas are true in the real numbers if and only if they’re true in the hyperreal numbers.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Basic laws of arithmetic: if <m>h</m> is infinitesimal, <m>f</m> is limited (finite but not infinitesimal), and <m>H</m> is infinite:
+        <ul>
+          <li>
+            <p>
+              <m>h^{2}</m> is infinitesimal
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>H^{2}</m> is infinite
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1/h</m> is infinite
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1/H</m> is infinitesimal
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h\cdot f</m> is infinitesimal
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>H\cdot f</m> is infinite
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>H\cdot h</m> may be infinite, infinitesimal, or limited
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Define the following symbols:
+      </p>
+      <md>
+        <mrow>a \amp \ll b \amp \text{$a$ is infinitesimal with respect to $b$}</mrow>
+        <mrow>a \amp \approx b \amp \text{$a-b$ is infinitesimal}</mrow>
+      </md>
+
+      <p>
+        Then we have the following:
+        <ul>
+          <li>
+            <p>
+              <m>h\ll f\ll H</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f+h\approx f</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The standard part of a hyperreal number <m>h</m>, denoted <m>\st h</m>, is the unique real number <m>r</m> such that <m>r\approx h</m>.
+        This function is external.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Continuity: A function <m>f</m> is continuous at <m>x\in\bb R</m> if <m>\hypext\!f(x+h)\approx\hypext\!f(x)</m> whenever <m>h</m> is infinitesimal.
+        (This is called microcontinuity.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Uniform continuity: A function <m>f</m> is uniformly continuous if whenever <m>x\in\hypext\bb R</m> and <m>h</m> is infinitesimal, <m>\hypext\!f(x+h)\approx \hypext\!f(x)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Derivative: If <m>h</m> is infinitesimal, then
+        <me>
+          f'(x)=\st\frac{\hypext\!f(x+h)-\hypext\!f(x)}{h}\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extended subsets: <m>\hypext\bb N,\hypext\bb Z,\hypext\bb Q</m> (hypernatural, hyperinteger, hyperrational)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Integral:
+        <me>
+          \int_{a}^{b} f(x)\dd{x}=\st\sum_{k=1}^{N}\hypext\!f(x_{k})\Delta x_{k}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Construction:
+        <ul>
+          <li>
+            <p>
+              Start with the collection of all sequences in <m>\bb R</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Define addition and multiplication pointwise
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Constant sequences are associated with real numbers
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Comparisons are based on individual comparisons on a “large” number of terms:
+              <ul>
+                <li>
+                  <p>
+                    For any set <m>S</m>, either <m>S</m> is large or its complement is large.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    No finite sets are large / all cofinite sets are large.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Large sets are closed under intersections.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Large sets are upward closed; that is, if <m>A</m> is large and <m>A\subseteq B</m>, then <m>B</m> is large.
+                  </p>
+                </li>
+              </ul>
+              A specification of these “large” sets is called a nonprincipal ultrafilter on <m>\bb N</m>.
+              A nonprincipal ultrafilter exists if you assume Zorn’s lemma, and it’s unique up to isomorphism if you assume the Continuum Hypothesis.
+              (May need to include countability somewhere in the RA section as a result if I want to say this.)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              From here, <m>\omega=(1,2,3,\cdots)</m> is infinite, and <m>1/\omega=(1,\tfrac12,\tfrac13,\cdots)</m> is infinitesimal.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>

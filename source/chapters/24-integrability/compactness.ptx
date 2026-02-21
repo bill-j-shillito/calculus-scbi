@@ -29,5 +29,106 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        An open cover of <m>A</m> is a collection <m>\set{U_\alpha}_{\alpha\subseteq S}</m> such that
+        <me>
+          A\subseteq\bigcup_{\alpha\in S}U_{\alpha}\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>\set{U_\alpha}_{\alpha\subseteq S}</m> has a finite subset <m>\set{U_\alpha}_{\alpha\subseteq F}</m> (with <m>F\subseteq S</m>) which is still a cover of <m>A</m>, then <m>\set{U_\alpha}_{\alpha\subseteq F}</m> is called a finite subcover of <m>A</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A set <m>A</m> is compact if every open cover of <m>A</m> admits a finite subcover of <m>A</m>.Great note I saw online: “A has B” suggests that B is part of the nature of A.
+        For example, every Cauchy sequence (in <m>\bb R</m>) has a limit.
+        “A admits B” suggests that it is possible to find B, but this existence is not inherent to A, and we may not be able to find B explicitly.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Heine-Borel theorem: A set <m>S\subseteq\bb R^{n}</m> is compact if and only if <m>S</m> is closed and bounded.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A continuous function on a compact set is bounded.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extreme value theorem: A continuous function on a compact set attains its supremum and infimum.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A sequence <m>(a_{n})</m> is monotone increasing if <m>a_{n}\le a_{n+1}</m> for all <m>n</m>.
+        Similarly, <m>(a_{n})</m> is monotone decreasing if <m>a_{n}\ge a_{n+1}</m> for all <m>n</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Monotone convergence theorem: A monotone sequence converges if and only if it is bounded.
+        Moreover, if <m>(a_{n})</m> is increasing, then <m>\limit{n\to\infty}a_{n}=\sup\set{a_n:n\in\bb N}</m>, and if <m>(a_{n})</m> is decreasing, then <m>\limit{n\to\infty}a_{n}~=\inf\set{a_n:n\in\bb N}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Bounded sets contain bounded sequences.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>n_{1}&#x3C;n_{2}&#x3C;n_{3}&#x3C;\cdots</m>, then
+        <me>
+          a_{n_1},a_{n_2},a_{n_3},\cdots
+        </me>
+        is called a subsequence of <m>(a_{n})</m> and is denoted <m>(a_{n_k})</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A sequence converges to <m>a</m> if and only if every subsequence converges to <m>a</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>(a_{n})</m> has two subsequences that converge to different limits, then <m>(a_{n})</m> diverges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>(a_{n})</m> is monotone and has a subsequence converging to <m>a</m>, then <m>(a_{n})</m> also converges to <m>a</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Bolzano-Weierstrass theorem: Every bounded sequence has a convergent subsequence.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A space is sequentially compact if every sequence has a convergent subsequence.
+      </p>
+    </li>
+  </ul>
 </section>

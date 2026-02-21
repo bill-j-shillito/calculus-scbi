@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-inverse-and-implicit-functions">
-  <title>Inverse and implicit functions</title>
+  <title>The inverse and implicit function theorems</title>
 
   <objectives>
     <ol>
@@ -29,5 +29,62 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        The preimage of a set <m>B\subseteq Y</m> under a function <m>f:X\to Y</m> is the set
+        <me>
+          f\inv(B)=\set{x\in X:f(x)\in B}\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A function is continuous if the preimage of every open set is open.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Inverse function theorem: A continuous function of a single variable <m>f:A\to\bb R</m> is invertible on its image if and only if it is strictly monotonic.
+        If <m>f</m> is continuously differentiable on an interval <m>I</m> and <m>f'(x)\neq 0</m> for each <m>x\in I</m>, then <m>f\inv</m> is continuously differentiable on <m>f(I)</m> and
+        <me>
+          (f\inv)'(y)=\dfrac{1}{f'(x)}\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In multiple dimensions, the Jacobian needs to be nonzero, and it guarantees the existence of a unique solution.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If we drop the assumption that <m>f'</m> is continuous, <m>f</m> may not be invertible.
+        Great example is
+        <me>
+          f(x)=x+2x^{2}\sin\tfrac1x
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>f'</m> is invertible, it maps open sets to open sets (it’s an open map).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Implicit function theorem: If <m>f(x,y)</m> is a function that is continuously differentiable in a neighborhood of <m>(x_{0},y_{0})</m>, and <m>\pdv{f}{y}(x_{0},y_{0})\neq 0</m>, then there exists a unique differentiable function <m>\phi</m> such that <m>y_{0}=\phi(x_{0})</m> and <m>f(x,\phi(x))=0</m> in a neighborhood of <m>x_{0}</m>.
+        We have:
+        <me>
+          \dv{y}{x}=\phi'(x)=-\frac{\partial f/\partial x}{\partial f/\partial y}
+        </me>
+      </p>
+    </li>
+  </ul>
 </section>

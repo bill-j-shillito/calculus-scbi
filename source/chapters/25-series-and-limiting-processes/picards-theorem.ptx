@@ -29,5 +29,43 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Sequential definition of continuity in 2D: Let <m>U\subseteq\bb R^{2}</m> be a set, <m>F:U\to\bb R</m> be a function, and <m>(x,y)\in U</m> be a point.
+        The function <m>F</m> is continuous at <m>(x,y)</m> if for every sequence <m>((x_{n},y_{n}))_{n=1}^{\infty}</m> of points in <m>U</m> such that <m>\limit{n\to\infty}x_{n}=x</m> and <m>\limit{n\to\infty}y_{n}=y</m>, we have
+        <me>
+          \limit{n\to\infty}F(x_{n},y_{n})=F(x,y)\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <theorem>
+          <title>Picard-Lindelöf theorem</title>
+          <statement>
+            <p>
+              Let <m>I,J\subseteq\bb R</m> be compact intervals, let <m>I^{\circ}</m> and <m>J^{\circ}</m> be their interiors, and let <m>(x_{0},y_{0})\in I^{\circ}\times J^{\circ}</m>.
+              Suppose <m>F:I\times J\top\bb R</m> is continuous and Lipschitz in the second variable, that is, there exists an <m>L\in\bb R</m> such that
+              <me>
+                \abs{F(x,y)-F(x,z)}\le L\abs{y-z}\qquad\text{for all }y,z\in J, x\in I\text{.}
+              </me>
+              Then there exists an <m>h>0</m> such that <m>[x_{0}-h,x_{0}+h]\subseteq I</m> and a unique differentiable function <m>f:[x_{0}-h,x_{0}+h]\to J\subseteq R</m> such that
+              <me>
+                f'(x)=F(x,f(x))\qquad\text{and}\qquad f(x_{0})=y_{0}\text{.}
+              </me>
+            </p>
+          </statement>
+        </theorem>
+        In other words, initial value problems have unique solutions under suitable conditions.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Proof relies on the idea of Picard iteration, the FTC, and uniform convergence of a sequence of functions, as well as the uniform norm.
+      </p>
+    </li>
+  </ul>
 </section>

@@ -29,5 +29,81 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Motivation: We need to start somewhere.
+        Discuss the role of axioms in building a logical system.
+        Alternatively: what the heck <em>are</em> numbers?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Field axioms:
+        <ul>
+          <li>
+            <p>
+              Commutativity of addition and multiplication
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Distributivity of multiplication over addition
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Associativity of addition and multiplication
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Existence of additive and multiplicative identities
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Existence of additive and multiplicative inverses
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Order axiom:
+      </p>
+
+      <p>
+        There is a nonempty subset <m>P\subseteq F</m>, called the positive numbers, such that:
+        <ul>
+          <li>
+            <p>
+              If <m>a,b\in P</m>, then <m>a+b\in P</m> and <m>a\cdot b\in P</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>a\in F</m> and <m>a\neq 0</m>, then <m>a\in P</m> or <m>-a\in P</m>, but not both.
+            </p>
+          </li>
+        </ul>
+        A field that satisfies this axiom is called an ordered field.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Real numbers are ordered.
+        Complex numbers are not.
+      </p>
+    </li>
+  </ul>
 </section>

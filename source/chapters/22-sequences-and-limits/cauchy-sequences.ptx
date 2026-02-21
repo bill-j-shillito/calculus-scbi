@@ -29,5 +29,50 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A sequence is a Cauchy sequence if for all <m>\eps>0</m> there exists some <m>N\in\bb N</m> such that <m>|a_{m}-a_{n}|&#x3C;\eps</m> for all <m>m,n>N</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a sequence is Cauchy, then it is bounded.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a sequence converges, then it is Cauchy.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If a sequence <em>in a complete space</em> is Cauchy, then it converges.
+        This property is called Cauchy completeness.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>\eps/2</m> trick
+      </p>
+    </li>
+
+    <li>
+      <p>
+        “Ratio test”: If <m>(a_{n})</m> is positive and <m>\limit{n\to\infty}\dfrac{a_{n+1}}{a_{n}}</m>, then <m>\limit{n\to\infty}a_{n}=0</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Monotone convergence theorem: A monotone sequence of real numbers converges if and only if it is bounded.
+        Furthermore, the limit is the supremum or infimum.
+        (Could apply to definition of <m>\ee</m>.)
+      </p>
+    </li>
+  </ul>
 </section>

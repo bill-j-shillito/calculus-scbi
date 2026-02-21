@@ -29,5 +29,46 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        We say <m>f:A\to\bb R</m> is uniformly continuous if for all <m>\eps>0</m> there exists some <m>\delta>0</m> such that for all <m>x,y\in A</m>, <m>|x-y|&#x3C;\delta</m> implies <m>|f(x)-f(y)|&#x3C;\eps</m>.
+        Notable, the same <m>\delta</m> works everywhere.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A continuous function on a compact set is uniformly continuous.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A uniformly continuous function has a uniformly continuous extension to the closure of that set.
+        This helps eventually show that <m>2^{\uppi}</m> exists, by extending <m>2^{x}</m> from a function on <m>\bb Q</m> to a function on <m>\bb R</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A function is Lipschitz continuous if there is a positive real constant <m>K</m> such that, for all real <m>x_{1}</m> and <m>x_{2}</m>,
+        <me>
+          \abs{f(x_1)-f(x_2)}\le K\abs{x_1-x_2}
+        </me>
+        or put another way
+        <me>
+          \abs{\frac{f(x_{1})-f(x_{2})}{x_{1}-x_{2}}}\le K\text{.}
+        </me>
+        The value of <m>K</m> is called the Lipschitz constant or the modulus of (uniform) continuity.
+        Lipschitz functions are “almost differentiable.”
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Continuously differentiable <m>\to</m> Lipschitz continuous <m>\to</m> uniformly continuous <m>\to</m> continuous.
+      </p>
+    </li>
+  </ul>
 </section>

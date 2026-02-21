@@ -29,5 +29,35 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        The length of an interval <m>[a,b]</m> is <m>b-a</m> and is denoted <m>\cl L[a,b]</m>.
+        This is also the length of <m>(a,b)</m>, <m>(a,b]</m>, and <m>[a,b)</m>.
+        Intervals that involve <m>\pm\infty</m> are said to have length <m>\infty</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A set <m>A</m> has measure zero if for all <m>\eps>0</m> there exists a countable collection <m>I_{1},I_{2},I_{3},\cdots</m> of intervals such that
+        <me>
+          A\subseteq\bigcup_{k=1}^{\infty} I_{k}\quad\text{and}\quad\sum_{k=1}^{\infty}\cl L(I_{k})&#x3C;\eps\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Lebesgue’s theorem: Assume <m>f:[a,b]\to\bb R</m> is a bounded function and let <m>\cl D</m> be the set of points at which <m>f</m> is discontinuous.
+        Then <m>f</m> is integrable if and only if <m>\cl D</m> has measure zero.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Go into the Lebesgue integral
+      </p>
+    </li>
+  </ul>
 </section>

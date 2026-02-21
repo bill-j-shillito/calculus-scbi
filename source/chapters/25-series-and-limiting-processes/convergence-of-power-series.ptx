@@ -29,5 +29,119 @@
     </p>
   </introduction>
 
-  
+  <ul>
+  <li>
+    <p>
+      For a power series <m>\DS\sum_{k=0}^{\infty} c_{k}(x-a)^{k}</m>, there are only three possibilities:
+      <ul>
+        <li>
+          <p>
+            The series converges only when <m>x=a</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The series converges for all <m>x</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            There is a positive number <m>R</m> called the radius of convergence such that the series converges if <m>|x-a|&#x3C;R</m> and diverges if <m>|x-a|>R</m>.
+          </p>
+
+          <p>
+            In this case, the interval of convergence can be open, closed, or half-open.
+            The power series converges absolutely, since we use the Ratio Test to find it.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      A series of functions converges pointwise/uniformly if its sequence of partial sums converges pointwise/uniformly.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Cauchy criterion for series of functions: Let <m>f_{k}:A\to\bb R</m>.
+      The series <m>\DS\sum f_{k}</m> converges uniformly on <m>A</m> if and only if for every <m>\eps>0</m> there exists some <m>N\in\bb N</m> such that
+      <me>
+        \abs{\sum_{k=m}^n f_k(x)}&#x3C;\eps
+      </me>
+      for all <m>n\ge m\ge N</m> and all <m>x\in A</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Weierstrass <m>M</m>-test: Let <m>f_{k}:A\to\bb R</m> and suppose that, for each <m>k\in\bb N</m>, there exists <m>M_{k}\in\bb R</m> such that <m>|f_{k}(x)|\le M_{k}</m> for all <m>x\in A</m>.
+      If <m>\DS\sum M_{k}</m> converges, then <m>\DS\sum f_{k}</m> converges uniformly on <m>A</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Power series converge uniformly on closed intervals.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      If a power series converges absolutely at <m>x=c</m> it converges uniformly on the closed interval <m>[-|c|,|c|]</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Power series can be differentiated and integrated term-by-term.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Let <m>E_{n}(x)=f(x)-T_{x=c}^{n}(f)</m> be the error term of a finite Taylor approximation.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Assume <m>f</m> is smooth in an interval <m>I</m> and <m>c\in I</m>.
+      Then for <m>x\in I</m>,
+      <me>
+        f(x)=\sum_{k=0}^{\infty}\frac{f\psup k(c)}{k!}(x-c)^{k}
+      </me>
+      if and only if <m>E_{n}(x)\to 0</m> pointwise.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      A Fourier series converges uniformly if any of these hold:
+      <ul>
+        <li>
+          <p>
+            <m>f</m> satisfies a Hölder condition such as Lipschitz continuity
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f</m> is continuous with bounded variation
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f</m> is continuous and its Fourier coefficients are absolutely summable
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+</ul>
 </section>

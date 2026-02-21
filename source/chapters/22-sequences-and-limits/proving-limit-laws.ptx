@@ -29,5 +29,29 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Limits are unique.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Convergent sequences must be bounded.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sequence limits respect addition, subtraction, scalar multiplication, multiplication, nonzero division, and inequalities.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sequence squeeze theorem
+      </p>
+    </li>
+  </ul>
 </section>

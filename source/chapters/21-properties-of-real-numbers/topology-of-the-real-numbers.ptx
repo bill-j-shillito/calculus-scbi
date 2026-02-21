@@ -29,5 +29,92 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A metric on a set <m>X</m> is a function <m>d:X\times X\to\bb R</m> that satisfies the following properties:
+        <ol>
+          <li>
+            <p>
+              Positive definite: <m>d(x,y)\ge 0</m> for all <m>x,y\in X</m>, and <m>d(x,y)=0</m> if and only if <m>x=y</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Symmetric: <m>d(x,y)=d(y,x)</m> for all <m>x,y\in X</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Triangle inequality: <m>d(x,y)+d(y,z)\ge d(x,z)</m> for all <m>x,y,z\in X</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The absolute value can be used as a distance function: <m>d(x,y)=|x-y|</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Other corollaries of the triangle inequality:
+        <ul>
+          <li>
+            <p>
+              <m>|x+y|\le |x|+|y|</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\big||x|-|y|\big|\le|x-y|</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Extended: <m>\big||x|-|y|\big|\le|x\pm y|\le |x|+|y|</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A set <m>U\subseteq\bb R</m> is open if, for every <m>x\in U</m>, there exists <m>\delta >0</m> such that <m>(x-\delta,x+\delta)\subseteq U</m>.
+        We call <m>(x-\delta,x+\delta)</m> the <m>\delta</m>-neighborhood of <m>x</m> and denote it <m>V_{\delta}(x)</m>, so <m>V_{\delta}(x)\subseteq U</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Open sets are closed under arbitrary units and finite intersections.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Every open set is a countable union of disjoint open intervals.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A set is closed if its complement is open.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        De Morgan’s laws for open and closed sets
+      </p>
+    </li>
+  </ul>
 </section>

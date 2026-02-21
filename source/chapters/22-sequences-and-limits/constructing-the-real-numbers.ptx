@@ -29,5 +29,33 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Axiomatic construction is nice, but it would be even nicer if we could exhibit an object that exhibits all those axioms, what would be called a model of the real numbers.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Could construct it as the equivalence classes of Cauchy sequences, where two sequences are equivalent if and only if their difference tends to zero.
+        This generalizes to the completion of any metric space.
+        Operations are defined termwise.
+        This seems to be the easiest, and infinite decimals work well here.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Could construct it using Dedekind cuts, which are partitions <m>(A,B)</m> of <m>\bb Q</m> such that neither <m>A</m> nor <m>B</m> is empty, <m>a&#x3C;b</m> for all <m>a\in A</m> and <m>b\in B</m>, and <m>A</m> has no greatest element.
+        Operations are defined elementwise, though multiplication is difficult.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Could construct it using nested intervals.
+      </p>
+    </li>
+  </ul>
 </section>

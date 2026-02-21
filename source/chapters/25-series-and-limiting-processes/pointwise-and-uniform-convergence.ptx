@@ -29,5 +29,37 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        If, for each <m>k\in\bb N</m>, we have a function <m>f_{k}:A\to\bb R</m>, then
+        <me>
+          f_{1},f_{2},f_{3},f_{4},\cdots
+        </me>
+        is a sequence of functions and is denoted <m>(f_{k})</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Suppose <m>(f_{k})</m> is a sequence of functions, each defined on <m>A\subseteq\bb R</m>.
+        The sequence <m>(f_{k})</m> of functions converges pointwise to a function <m>f:A\to\bb R</m> if, for each <m>a\in A</m>,
+        <me>
+          \limit{k\to\infty}f_{k}(a)=f(a)\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We say <m>(f_{k})</m> converges uniformly to <m>A</m> to a function <m>f</m> if, for every <m>\eps>0</m>, there exists an <m>N\in\bb N</m> such that <m>|f_{k}(x)-f(x)|&#x3C;\eps</m> for all <m>k\ge N</m> and for all <m>x\in A</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If each <m>f_{k}</m> is continuous at some <m>c</m>, and <m>(f_{k})</m> converges uniformly to <m>f</m>, then <m>f</m> is continuous at <m>c</m>.
+      </p>
+    </li>
+  </ul>
 </section>

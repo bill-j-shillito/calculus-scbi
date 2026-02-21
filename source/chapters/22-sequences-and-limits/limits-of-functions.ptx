@@ -29,5 +29,31 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Let <m>f:A\to\bb R</m> and let <m>c</m> be a limit point of <m>A</m>.
+        Then we say that
+        <me>
+          \limit{x\to c}f(x)=L
+        </me>
+        if for all <m>\eps>0</m> there exists <m>\delta >0</m> such that for every <m>x\in A</m> for which <m>0&#x3C;|x-c|&#x3C;\delta</m>, we have
+        <me>
+          |f(x)-L|&#x3C;\eps\text{.}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sequential limits: <m>\limit{x\to c}f(x)=L</m> if and only if, for every sequence <m>a_{n}</m> from <m>A</m> for which each <m>a_{n}\neq c</m> and <m>a_{n}\to c</m>, we have <m>f(a_{n})\to L</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Relate to continuity using <m>\eps</m>-<m>\delta</m> definition
+      </p>
+    </li>
+  </ul>
 </section>

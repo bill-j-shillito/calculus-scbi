@@ -29,5 +29,78 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        A set <m>S</m> is bounded above if there is some <m>b\in\bb R</m> such that <m>s&#x3C;b</m> for all <m>s\in S</m>.
+      </p>
+
+      <p>
+        Simiilarly, <m>S</m> is bounded below if there is some <m>b\in\bb R</m> such that <m>b&#x3C;s</m> for all <m>s\in S</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The supremum of a set <m>S</m>, denoted <m>\sup S</m>, is the least upper bound of that set.
+        That is, <m>\sup S</m> is an upper bound of <m>S</m>, and if <m>b</m> is any upper bound of <m>S</m>, then <m>b\ge\sup S</m>.
+      </p>
+
+      <p>
+        The infimum of <m>S</m>, denoted <m>\inf S</m>, is the greatest lower bound.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A set <m>X</m> has the supremum property if any subset <m>S\subseteq X</m> which is bounded above has a least upper bound in <m>S</m>.
+        Such a set <m>S</m> is called complete.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The real numbers are complete.
+        The rationals are not.
+        (Neither are the hyperreals.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can say that <m>\bb R</m> is the completion of <m>\bb Q</m>, we we have added just enough numbers to make it complete.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>b=\sup S</m>, then for any <m>b-\eps</m>, there is somet <m>s\in S</m> such that <m>s>b</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        An ordered field is Archimedean if for any <m>a,b</m> with <m>a>0</m>, there exists some <m>n\in\bb N</m> such that <m>nx>y</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In essence this says that there is no pair <m>(a,b)</m> such that <m>a</m> is infinitesimal with respect to <m>b</m>, or <m>b</m> is infinitesimal with respect to <m>a</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The real numbers are Archimedean.
+        The hyperreals are not.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Can be used to show that <m>\bb Q</m> is dense in <m>\bb R</m>, that is, for any <m>x,y\in\bb R</m>, there exists <m>q\in\bb Q</m> such that <m>x&#x3C;q&#x3C;y</m>.
+      </p>
+    </li>
+  </ul>
 </section>

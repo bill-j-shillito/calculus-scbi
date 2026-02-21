@@ -29,5 +29,90 @@
     </p>
   </introduction>
 
-  
+  <ul>
+    <li>
+      <p>
+        Alternating series test: If the alternating series
+        <me>
+          \sum_{k=1}^{\infty} (-1)^{k-1}b_{k}=b_{1}-b_{2}+b_{3}-b_{4}+\cdots\quad(b_{k}>0)
+        </me>
+        satisfies the conditions <m>b_{k+1}\le b_{k}</m> and <m>b_{n}\to 0</m>, then the series converges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>|R_{n}|=|s-s_{n}|\le b_{n+1}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A series <m>\DS\sum a_{k}</m> is called absolutely convergent if the series <m>\DS\sum |a_{k}|</m> converges.
+        (Absolute convergence implies convergence.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A series <m>\DS\sum a_{k}</m> is called conditionally convergent if <m>\DS\sum a_{k}</m> converges but <m>\DS\sum |a_{k}|</m> diverges.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Riemann rearrangement theorem: If <m>\DS\sum a_{k}</m> is a conditionally convergent series and <m>r</m> is any real number (or <m>\infty</m> or <m>-\infty</m>), then there is a rearrangement of <m>\DS\sum a_{k}</m> that has a sum equal to <m>r</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Ratio test: Let <m>L=\limit{k\to\infty}\abs{\dfrac{a_{k+1}}{a_{k}}}\text{.}</m>
+        <ul>
+          <li>
+            <p>
+              If <m>L&#x3C;1</m>, then <m>\DS\sum a_{k}</m> converges absolutely.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>L>1</m>, then <m>\DS\sum a_{k}</m> diverges.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>L=1</m>, the test is inconclusive.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Root test: Let <m>L=\limit{k\to\infty}\sqrt[k]{\abs{a_k}}\text{.}</m>
+        <ul>
+          <li>
+            <p>
+              If <m>L&#x3C;1</m>, then <m>\DS\sum a_{k}</m> converges absolutely.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>L>1</m>, then <m>\DS\sum a_{k}</m> diverges.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>L=1</m>, the test is inconclusive.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 </section>
