@@ -183,6 +183,20 @@
           <p>
             (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)
           </p>
+          <answer>
+            <p>
+              <m>24</m>-sided polygon: perimeter <m>\approx 6.265</m>
+            </p>
+            <p>
+              <m>48</m>-sided polygon: perimeter <m>\approx 6.278</m>
+            </p>
+            <p>
+              <m>96</m>-sided polygon: perimeter <m>\approx 6.282</m>
+            </p> 
+            <p>
+              These perimeters are getting closer and closer to the circumference of the circle, which is <m>2\pi \approx 6.28318</m>.
+            </p>
+          </answer>
         </li>
         <li>
           <p>
