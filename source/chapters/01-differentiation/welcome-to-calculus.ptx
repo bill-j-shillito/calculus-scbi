@@ -96,8 +96,105 @@
     </exercise>
     <exercise>
       <p>
-        Consider a circle with a radius of <m>1</m>. Inscribe an <m>n</m>-sided polygon inside it. (The point of this activity is to inscribe AND circumscribe in a polygon, and let the number of sides go to infinity.)
+        In this exercise, we will look at a method for approximating <m>\pi</m>. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
       </p>
+      
+      <ol>
+        <li>
+          <p>
+            Start with a regular hexagon inscribed in a circle of radius <m>1</m>. What is the perimeter of this hexagon?
+          </p>
+          <image width="50%">
+            <prefigure label="circle-inscribed-hexagon" xmlns="https://prefigure.org">
+              <diagram dimensions="(200,200)" margins="5">
+                <coordinates bbox="(-1,-1,1,1)">
+                  <line p1="cos(0),sin(0)" p2="cos(pi),sin(pi)" stroke="gray" thickness="1"/>
+                  <line p1="cos(pi/3),sin(pi/3)" p2="cos(4*pi/3),sin(4*pi/3)" stroke="gray" thickness="1"/>
+                  <line p1="cos(2*pi/3),sin(2*pi/3)" p2="cos(5*pi/3),sin(5*pi/3)" stroke="gray" thickness="1"/>
+                  <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))"
+                  parameter="k=0..5" closed="yes"
+                  stroke="blue" thickness="2"/>
+                  <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
+        </li>
+        <li>
+          <p>
+            Suppose we bisect each of the six arcs of the circle to get a regular <m>12</m>-sided polygon (a dodecagon) inscribed in the circle, as shown below.
+            <image width="50%">
+              <prefigure label="circle-inscribed-dodecagon" xmlns="https://prefigure.org">
+                <diagram dimensions="(200,200)" margins="5">
+                  <coordinates bbox="(-1,-1,1,1)">
+                    <line p1="cos(0),sin(0)" p2="cos(pi),sin(pi)" stroke="gray" thickness="1"/>
+                    <line p1="cos(pi/6),sin(pi/6)" p2="cos(7*pi/6),sin(7*pi/6)" stroke="gray" thickness="1"/>
+                    <line p1="cos(pi/3),sin(pi/3)" p2="cos(4*pi/3),sin(4*pi/3)" stroke="gray" thickness="1"/>
+                    <line p1="cos(3*pi/6),sin(3*pi/6)" p2="cos(9*pi/6),sin(9*pi/6)" stroke="gray" thickness="1"/>
+                    <line p1="cos(2*pi/3),sin(2*pi/3)" p2="cos(5*pi/3),sin(5*pi/3)" stroke="gray" thickness="1"/>
+                    <line p1="cos(5*pi/6),sin(5*pi/6)" p2="cos(11*pi/6),sin(11*pi/6)" stroke="gray" thickness="1"/>
+                    <polygon points="(0,0)+1*(cos(k*pi/6),sin(k*pi/6))"
+                    parameter="k=0..11" closed="yes"
+                    stroke="red" thickness="2"/>
+                    <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))"
+                    parameter="k=0..5" closed="yes"
+                    stroke="blue" thickness="1"/>
+                    <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            Let's zoom in on the topmost arc of the circle.
+            <image width="50%">
+              <prefigure label="circle-inscribed-dodecagon-part" xmlns="https://prefigure.org">
+                <diagram dimensions="(200,200)" margins="5">
+                  <coordinates bbox="(-0.7,-0.2,0.7,1.2)">
+                    <line p1="cos(pi/3),sin(pi/3)" p2="(0,0)" stroke="black" thickness="1" />
+                    <line p1="cos(2*pi/3),sin(2*pi/3)" p2="(0,0)" stroke="black" thickness="1" />
+                    <line p1="cos(pi/2),sin(pi/2)" p2="(0,0)" stroke="gray" thickness="1" />
+                    <polygon points="(0,0)+1*(cos(k*pi/6),sin(k*pi/6))"
+                    parameter="k=0..11" closed="yes"
+                    stroke="red" thickness="2"/>
+                    <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))"
+                    parameter="k=0..5" closed="yes"
+                    stroke="blue" thickness="1"/>
+                    <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+                    <!-- <label anchor="0.5*(cos(pi/3),sin(pi/3))" alignment="southeast"><m>1</m></label>
+                    <label anchor="(0.25,sin(pi/3))" alignment="south"><m>\tfrac{1}{2}</m></label>
+                    <label anchor="(0,sin(pi/3)/2)" alignment="west"><m>a</m></label>
+                    <label anchor="(0,1/2+sin(pi/3)/2)" alignment="west"><m>b</m></label> -->
+                    <point p="(0,0)" size="2" alignment="south"> <m>O</m> </point>
+                    <point p="(cos(pi/3),sin(pi/3))" size="2" alignment="northeast"> <m>A</m> </point>
+                    <point p="(0,sin(pi/3))" size="2" alignment="southwest"> <m>B</m> </point>
+                    <point p="(0,1)" size="2" alignment="north"> <m>C</m> </point>
+                    <angle-marker points="((0,0),(0,sin(pi/3)),(cos(pi/3),sin(pi/3)))" thickness="1"/>
+                      clear-background="yes"/>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            Find the lengths of segments <m>OA</m>, <m>AB</m>, <m>OB</m>, <m>BC</m>, and <m>AC</m>. Then find the perimeter of the dodecagon.
+          </p>
+        </li>
+        <li>
+          <p>
+            Continue this process of bisecting arcs to get a regular <m>24</m>-sided polygon, then a regular <m>48</m>-sided polygon, and finally a <m>96</m>-sided polygon. What do you notice about the perimeters of these polygons?
+          </p>
+          <p>
+            (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Show how your observations can be used to approximate the value of <m>\pi</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?
+          </p>
+        </li>
+      </ol>
     </exercise>
   </exercises>
 </section>
