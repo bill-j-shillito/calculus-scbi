@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-welcome-to-calculus">
-  <title>Welcome to calculus!</title>
+<section xml:id="sec-approximating-the-circle">
+  <title>Approximating the circle</title>
 
   <objectives>
     <!-- Put the below in a list instead -->
@@ -31,70 +31,61 @@
     </p>
   </introduction>
 
-  <subsection>
-    <title>Things to include</title>
-    <p>
-      Calculus lets you do all the stuff you used to do with simple shapes and do them with complex shapes.
-    </p>
-    <ul>
-      <li>
-        <p>
-          Before calculus, you could find the slope of a line; using calculus, you can find the slope of a curve.
-        </p>
-      </li>
-      <li>
-        <p>
-          Before calculus, you could find the length of a line segment; using calculus, you can find the length of a curve.
-        </p>
-      </li>
-      <li>
-        <p>
-          Before calculus, you could find the area of a rectangle; using calculus, you can find the area under a curve.
-        </p>
-      </li>
-      <li>
-        <p>
-          Before calculus, you could find the average rate of change between two points; using calculus, you can find the instantaneous rate of change at a single point.
-        </p>
-      </li>
-      <li>
-        <p>
-          Before calculus, you could sum a finite number of terms in a sequence; using calculus, you can add infinitely many tiny pieces.
-        </p>
-      </li>
-    </ul>
-    <p>
-      Example: Area of a circle by making thin <q>pizza slices</q> and rearranging them to make a parallelogram.
-    </p>
-  </subsection>
+  <ul>
+    <li>
+      <p>
+        Opening question: How do we know what <m>\pi</m> is? Circles are clearly very important to us and have been for a long time, from designing temples in ancient times to engineering modern-day machines. But how do we know the exact value of <m>\pi</m>? And in particular how have we known it since ancient times, long before the advent of computers?
+      </p>
+    </li>
+    <li>
+      <p>
+        Approximating the circle with polygons (inscribed and circumscribed)... In particular, the circumscribed polygons involve tangent lines, which is a nice segue into differentiation next lesson
+      </p>
+    </li>
+    <li>
+      <p>
+        Finding the area of a circle by slicing it into thin wedges and rearranging them into a shape that resembles a parallelogram
+      </p>
+    </li>
+    <li>
+      <p>
+        At some point, point out that calculus lets you do all the stuff you used to do with simple shapes and do them with complex shapes.
+      </p>
+      <ul>
+        <li>
+          <p>
+            Before calculus, you could find the slope of a line; using calculus, you can find the slope of a curve.
+          </p>
+        </li>
+        <li>
+          <p>
+            Before calculus, you could find the length of a line segment; using calculus, you can find the length of a curve.
+          </p>
+        </li>
+        <li>
+          <p>
+            Before calculus, you could find the area of a rectangle; using calculus, you can find the area under a curve.
+          </p>
+        </li>
+        <li>
+          <p>
+            Before calculus, you could find the average rate of change between two points; using calculus, you can find the instantaneous rate of change at a single point.
+          </p>
+        </li>
+        <li>
+          <p>
+            Before calculus, you could sum a finite number of terms in a sequence; using calculus, you can add infinitely many tiny pieces.
+          </p>
+        </li>
+      </ul>
+    </li>
+  </ul>
 
   <exercises>
     <exercise>
-      <p>Consider the part of the parabola <m>y=x^2</m> bounded between <m>x=-1</m> and <m>x=1</m>.</p>
-      <ol>
-        <li>
-          <p>
-            Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.
-          </p>
-        </li>
-        <li>
-          <p>
-            Refine your estimate by breaking it into four equal-width segments.
-          </p>
-        </li>
-        <li>
-          <p>
-            Refine your estimate by breaking it into eight equal-width segments.
-          </p>
-        </li>
-        <li>
-          <p>
-            Conjecture the true length of the curve.
-          </p>
-        </li>
-      </ol>
-    </exercise>
-    <exercise>
+      <p>
+        (Probably can designate this one as an in-class activity)
+      </p>
       <p>
         In this exercise, we will look at a method for approximating <m>\pi</m>. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
       </p>
@@ -209,6 +200,47 @@
           </p>
         </li>
       </ol>
+    </exercise>
+
+    <exercise>
+      <p>
+        Approximating from the outside with circumscribed hexagons, dodecagons, etc.
+      </p>
+    </exercise>
+
+    <exercise>
+      <p>
+        Doing the same thing starting with squares and moving to octagons, etc.
+      </p>
+    </exercise>
+    
+    <exercise>
+      <p>Consider the part of the parabola <m>y=x^2</m> bounded between <m>x=-1</m> and <m>x=1</m>.</p>
+      <ol>
+        <li>
+          <p>
+            Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.
+          </p>
+        </li>
+        <li>
+          <p>
+            Refine your estimate by breaking it into four equal-width segments.
+          </p>
+        </li>
+        <li>
+          <p>
+            Refine your estimate by breaking it into eight equal-width segments.
+          </p>
+        </li>
+        <li>
+          <p>
+            Conjecture the true length of the curve.
+          </p>
+        </li>
+      </ol>
+      <p>
+        (Can probably have a few different versions of this exercise with different curves... might even do a semicircle to show there may be different ways to slice up the same shape)
+      </p>
     </exercise>
   </exercises>
 </section>
