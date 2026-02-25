@@ -54,23 +54,27 @@
       </md>
 
       <p>
-        This is the directional derivative of <m>f</m> in the direction of <m>\uv{u}</m>, written <m>D_{\uv{u}}f</m>.
+        This is the directional derivative of <m>f</m> in the direction of <m>\uv{u}</m>, written <m>\DS\pdv{f}{\uv{u}}</m>.
       </p>
     </li>
 
     <li>
       <p>
-        Notice this looks a lot like a dot product! Define the gradient vector as:
+        Notice the directional derivative looks a lot like a dot product! Define the gradient vector as:
         <me>
           \Grad f=\qty(\pdv{f}{x},\pdv{f}{y})
         </me>
+        <aside>
+          <p>
+            Going to <em>avoid</em> the notation <m>\nabla f</m> so that it can be saved for Part IV.
+          </p>
+        </aside>
       </p>
     </li>
 
     <li>
       <p>
-        Going to <em>avoid</em> the notation <m>\nabla f</m> so that it can be saved for Part IV.
-        Then the directional derivative can be written <m>D_{\uv{u}}f=\Grad f\cdot\uv{u}</m>.
+        Then the directional derivative can be written <m>\DS\pdv{f}{\uv{u}}=\Grad f\cdot\uv{u}</m>.
       </p>
     </li>
 
@@ -79,8 +83,8 @@
         If we use basis vectors, we recover partial derivatives by projection:
       </p>
       <md>
-        <mrow>D_{\uv{x}} f\amp = \Grad f\cdot(1,0)=\pdv{f}{x}</mrow>
-        <mrow>D_{\uv{y}} f\amp = \Grad f\cdot(0,1)=\pdv{f}{y}</mrow>
+        <mrow>\pdv{f}{\uv{x}}\amp = \Grad f\cdot(1,0)=\pdv{f}{x}</mrow>
+        <mrow>\pdv{f}{\uv{y}}\amp = \Grad f\cdot(0,1)=\pdv{f}{y}</mrow>
       </md>
     </li>
 
@@ -131,6 +135,20 @@
     <li>
       <p>
         Can we include something about why the normal to a surface is important? Maybe something about lighting?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Limit form of the directional derivative:
+        <me>
+          \pdv{f}{\uv{u}} = \limit{h\to 0} \frac{f(a+h\cos\theta,b+h\sin\theta)-f(a,b)}{h}
+        </me>
+        If we think of a function of multiple variables <m>f(x,y)</m> as a function with a vector input <m>f(\bv{r})</m> with <m>\bv{r}=(x,y)</m>, we can also write this as:
+        <me>
+          \pdv{f}{\uv{u}} = \limit{h\to 0} \frac{f(\bv{r}+h\uv{u})-f(\bv{r})}{h}
+        </me>
+        This last notation also lets us extend the directional derivative to three or more dimensions.
       </p>
     </li>
   </ul>
