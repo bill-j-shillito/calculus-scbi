@@ -522,24 +522,26 @@ y \amp = b + t\sin\theta
 \amp = \pdv{f}{x}\cos\theta + \pdv{f}{y}\sin\theta
 \end{align*}
 </div>
-<div class="para" id="sec-directional-derivatives-and-the-gradient-4-2-5">This is the directional derivative of <span class="process-math">\(f\)</span> in the direction of <span class="process-math">\(\uv{u}\text{,}\)</span> written <span class="process-math">\(D_{\uv{u}}f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-directional-derivatives-and-the-gradient-4-2-5">This is the directional derivative of <span class="process-math">\(f\)</span> in the direction of <span class="process-math">\(\uv{u}\text{,}\)</span> written <span class="process-math">\(\DS\pdv{f}{\uv{u}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-directional-derivatives-and-the-gradient-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-directional-derivatives-and-the-gradient-4-3">
 <div class="para logical" id="sec-directional-derivatives-and-the-gradient-4-3-1">
-<div class="para">Notice this looks a lot like a dot product! Define the gradient vector as:</div>
+<div class="para">Notice the directional derivative looks a lot like a dot product! Define the gradient vector as:</div>
 <div class="displaymath process-math" id="sec-directional-derivatives-and-the-gradient-4-3-1-1">
 \begin{equation*}
 \Grad f=\qty(\pdv{f}{x},\pdv{f}{y})
 \end{equation*}
 </div>
+<div class="para"><details id="sec-directional-derivatives-and-the-gradient-4-3-1-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-directional-derivatives-and-the-gradient-4-3-1-2-1">Going to <em class="emphasis">avoid</em> the notation <span class="process-math">\(\nabla f\)</span> so that it can be saved for Part IV.<div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details></div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-directional-derivatives-and-the-gradient-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-directional-derivatives-and-the-gradient-4-4">
-<div class="para" id="sec-directional-derivatives-and-the-gradient-4-4-1">Going to <em class="emphasis">avoid</em> the notation <span class="process-math">\(\nabla f\)</span> so that it can be saved for Part IV. Then the directional derivative can be written <span class="process-math">\(D_{\uv{u}}f=\Grad f\cdot\uv{u}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-directional-derivatives-and-the-gradient-4-4-1">Then the directional derivative can be written <span class="process-math">\(\DS\pdv{f}{\uv{u}}=\Grad f\cdot\uv{u}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-directional-derivatives-and-the-gradient-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -548,8 +550,8 @@ y \amp = b + t\sin\theta
 </div>
 <div class="displaymath process-math" id="sec-directional-derivatives-and-the-gradient-4-5-2">
 \begin{align*}
-D_{\uv{x}} f\amp = \Grad f\cdot(1,0)=\pdv{f}{x}\\
-D_{\uv{y}} f\amp = \Grad f\cdot(0,1)=\pdv{f}{y}
+\pdv{f}{\uv{x}}\amp = \Grad f\cdot(1,0)=\pdv{f}{x}\\
+\pdv{f}{\uv{y}}\amp = \Grad f\cdot(0,1)=\pdv{f}{y}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-directional-derivatives-and-the-gradient-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
@@ -606,6 +608,25 @@ z=f(\bv{r}_{0})+\Grad f\cdot (\bv{r}-\bv{r}_{0})
 <div class="para" id="sec-directional-derivatives-and-the-gradient-4-11-1">Can we include something about why the normal to a surface is important? Maybe something about lighting?<div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-directional-derivatives-and-the-gradient-4-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-directional-derivatives-and-the-gradient-4-12">
+<div class="para logical" id="sec-directional-derivatives-and-the-gradient-4-12-1">
+<div class="para">Limit form of the directional derivative:</div>
+<div class="displaymath process-math" id="sec-directional-derivatives-and-the-gradient-4-12-1-1">
+\begin{equation*}
+\pdv{f}{\uv{u}} = \limit{h\to 0} \frac{f(a+h\cos\theta,b+h\sin\theta)-f(a,b)}{h}
+\end{equation*}
+</div>
+<div class="para">If we think of a function of multiple variables <span class="process-math">\(f(x,y)\)</span> as a function with a vector input <span class="process-math">\(f(\bv{r})\)</span> with <span class="process-math">\(\bv{r}=(x,y)\text{,}\)</span> we can also write this as:</div>
+<div class="displaymath process-math" id="sec-directional-derivatives-and-the-gradient-4-12-1-5">
+\begin{equation*}
+\pdv{f}{\uv{u}} = \limit{h\to 0} \frac{f(\bv{r}+h\uv{u})-f(\bv{r})}{h}
+\end{equation*}
+</div>
+<div class="para">This last notation also lets us extend the directional derivative to three or more dimensions.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-directional-derivatives-and-the-gradient-4-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-directional-derivatives-and-the-gradient-4-12" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="autopermalink" data-description="Section 14.3: Directional derivatives and the gradient"><a href="#sec-directional-derivatives-and-the-gradient" title="Copy heading and permalink for Section 14.3: Directional derivatives and the gradient" aria-label="Copy heading and permalink for Section 14.3: Directional derivatives and the gradient">🔗</a></div></section></div>
