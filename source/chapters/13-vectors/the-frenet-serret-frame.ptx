@@ -74,7 +74,7 @@
       <p>
         In 3D, we also get the binormal:
         <me>
-          \bv B=\bv{t}\times\bv{n}
+          \bv{b}=\bv{t}\times\bv{n}
         </me>
       </p>
     </li>

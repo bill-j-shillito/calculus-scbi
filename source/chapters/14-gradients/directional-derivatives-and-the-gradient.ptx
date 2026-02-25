@@ -60,6 +60,18 @@
 
     <li>
       <p>
+        A natural question is, in which direction does the function increase the fastest, that is, have the greatest directional derivative
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Maximize with respect to <m>\theta</m> to find out, and use THIS to define the gradient.
+      </p>
+    </li>
+
+    <li>
+      <p>
         Notice the directional derivative looks a lot like a dot product! Define the gradient vector as:
         <me>
           \Grad f=\qty(\pdv{f}{x},\pdv{f}{y})
