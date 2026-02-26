@@ -7,17 +7,17 @@
     <ol>
       <li>
         <p>
-          
+          Define the directional derivative of <m>f</m> in the direction of a unit vector <m>\uv u</m>.
         </p>
       </li>
       <li>
         <p>
-          
+          Compute <m>\pdv{f}{\uv u}</m> using partial derivatives and the Chain Rule.
         </p>
       </li>
       <li>
         <p>
-          
+          Relate directional derivatives to the rate of change of <m>f</m> along a parametrized curve.
         </p>
       </li>
     </ol>
@@ -86,6 +86,12 @@
         <p>
             How can we relate the directional derivative of <m>f</m> to motion along any parametrized curve <m>\bv{r}(t)=(x(t),y(t))</m>?
         </p>
+        <p>
+            If <m>\uv{t}(t)</m> is the unit tangent, then we have:
+        </p>
+        <me>
+          \dv{f}{t}=\pdv{f}{\uv{t}}\norm{r'(t)}
+        </me>
     </li>
   </ul>
 </section>
