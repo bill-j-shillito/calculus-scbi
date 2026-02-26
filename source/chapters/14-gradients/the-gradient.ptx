@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-directional-derivatives-and-the-gradient">
-  <title>Directional derivatives and the gradient</title>
+<section xml:id="sec-the-gradient">
+  <title>The gradient</title>
 
   <objectives>
     <ol>
       <li>
         <p>
-          Measure how a function changes in any direction using directional derivatives.
+          
         </p>
       </li>
       <li>
         <p>
-          Use the gradient vector to express directional changes as dot products.
+          
         </p>
       </li>
       <li>
         <p>
-          Interpret the gradient as pointing perpendicular to level sets and toward the direction of greatest increase.
+          
         </p>
       </li>
     </ol>
@@ -30,48 +30,6 @@
   </introduction>
 
   <ul>
-    <li>
-      <p>
-        Suppose we're at the point <m>(a,b)</m> and we want to find the rate of change as we move in the direction of the unit vector <m>\uv u=(\cos\theta,\sin\theta)</m>. This is called the directional derivative of <m>f</m> in the direction of <m>\uv u</m>, and is written <m>\DS\pdv{f}{\uv u}</m>.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Limit form of the directional derivative:
-        <me>
-          \pdv{f}{\uv{u}} = \limit{h\to 0} \frac{f(a+h\cos\theta,b+h\sin\theta)-f(a,b)}{h}
-        </me>
-        If we think of a function of multiple variables <m>f(x,y)</m> as a function with a vector input <m>f(\bv{r})</m> with <m>\bv{r}=(x,y)</m>, we can also write this as:
-        <me>
-          \pdv{f}{\uv{u}} = \limit{h\to 0} \frac{f(\bv{r}+h\uv{u})-f(\bv{r})}{h}
-        </me>
-        This last notation also lets us extend the directional derivative to three or more dimensions.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Parametrize the line in the <m>xy</m>-plane:
-      </p>
-      <md>
-        <mrow>x \amp = a + t\cos\theta</mrow>
-        <mrow>y \amp = b + t\sin\theta</mrow>
-      </md>
-
-      <p>
-        Differentiate <m>f</m> with respect to <m>t</m> using the Chain Rule:
-      </p>
-      <md>
-        <mrow>\pdv{f}{t} \amp = \pdv{f}{x}\cdot\pdv{x}{t}+\pdv{f}{y}\cdot\pdv{y}{t}</mrow>
-        <mrow> \amp = \pdv{f}{x}\cos\theta + \pdv{f}{y}\sin\theta</mrow>
-      </md>
-
-      <p>
-        This is indeed <m>\DS\pdv{f}{\uv{u}}</m>.
-      </p>
-    </li>
-
     <li>
       <p>
         A natural question is, in which direction does the function increase the fastest, that is, have the greatest directional derivative?
@@ -104,16 +62,6 @@
       <p>
         Notice the directional derivative is then the dot product of the gradient and the unit vector! Thus the directional derivative can be written <m>\DS\pdv{f}{\uv{u}}=\Grad f\cdot\uv{u}</m>.
       </p>
-    </li>
-
-    <li>
-      <p>
-        If we find the directional derivative in the directions of the basis vectors, we recover partial derivatives by projection:
-      </p>
-      <md>
-        <mrow>\pdv{f}{\uv{x}}\amp = \Grad f\cdot(1,0)=\pdv{f}{x}</mrow>
-        <mrow>\pdv{f}{\uv{y}}\amp = \Grad f\cdot(0,1)=\pdv{f}{y}</mrow>
-      </md>
     </li>
 
     <li>
@@ -169,6 +117,12 @@
     <li>
       <p>
         Should probably say something about the gradient of a function of three variables. This is useful for finding the normal to a level surface, and also for finding the tangent plane to a surface defined implicitly by an equation like <m>F(x,y,z)=0</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Relationship between gradient and level curves could go here, actually
       </p>
     </li>
   </ul>
