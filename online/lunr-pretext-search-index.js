@@ -1243,47 +1243,29 @@ var ptx_lunr_docs = [
   "body": "   Track how a multivariable function changes along curves or surfaces using the Chain Rule.    Rewrite total differentials in terms of partial derivatives to relate dependent quantities.    Analyze implicit relationships and contexts where variables are not independent.    "
 },
 {
-  "id": "sec-directional-derivatives",
+  "id": "sec-directional-derivatives-and-the-gradient",
   "level": "1",
-  "url": "sec-directional-derivatives.html",
+  "url": "sec-directional-derivatives-and-the-gradient.html",
   "type": "Section",
   "number": "14.2",
-  "title": "Directional derivatives",
-  "body": " Directional derivatives     Define the directional derivative of in the direction of a unit vector .    Compute using partial derivatives and the Chain Rule.    Relate directional derivatives to the rate of change of along a parametrized curve.      Introduction goes here.     Suppose we're at the point and we want to find the rate of change as we move in the direction of the unit vector . This is called the directional derivative of in the direction of , and is written .    Limit form of the directional derivative: If we think of a function of multiple variables as a function with a vector input with , we can also write this as: This last notation also lets us extend the directional derivative to three or more dimensions.    Parametrize the line in the -plane:   Differentiate with respect to using the Chain Rule:   This is indeed .    If we find the directional derivative in the directions of the basis vectors, we recover partial derivatives:     How can we relate the directional derivative of to motion along any parametrized curve ?  If is the unit tangent, then we have:     "
+  "title": "Directional derivatives and the gradient",
+  "body": " Directional derivatives and the gradient     Measure how a function changes in any direction using directional derivatives.    Use the gradient vector to express directional changes as dot products.    Interpret the gradient as pointing perpendicular to level sets and toward the direction of greatest increase.      Introduction goes here.     Suppose we're at the point and we want to find the rate of change as we move in the direction of the unit vector . This is called the directional derivative of in the direction of , and is written .    Limit form of the directional derivative: If we think of a function of multiple variables as a function with a vector input with , we can also write this as: This last notation also lets us extend the directional derivative to three or more dimensions.    Parametrize the line in the -plane:   Differentiate with respect to using the Chain Rule:   This is indeed .    A natural question is, in which direction does the function increase the fastest, that is, have the greatest directional derivative?  Maximize with respect to to find out, and use THIS to define the gradient.  Let . Then . Setting this equal to zero gives . Any vector for which this holds is parallel to the vector . If points such that points in the same direction as , then the directional derivative is maximized.  Define the gradient vector as the one whose direction points toward the direction of greatest increase and whose magnitude is the value of the directional derivative in that direction. In Cartesian coordinates we then have:   Going to avoid the notation so that it can be saved for Part IV.      Notice the directional derivative is then the dot product of the gradient and the unit vector! Thus the directional derivative can be written .    If we find the directional derivative in the directions of the basis vectors, we recover partial derivatives by projection:     Since the directional derivative is a dot product, we can also reason that it's maximized when points in the same direction as the gradient, and minimized when points in the opposite direction as the gradient. This leads to the gradient ascent\/descent algorithm.    Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero. This means that the gradient is perpendicular to the level curves of a surface.    Chain Rule can now be rewritten as:     Tangent plane can also be written in vector form: This much more closely resembles our linearization from Chapter 2, and generalizes to higher dimensions.    Rearrange slightly: Again this looks like a dot product! We're saying that is parallel to . Since the latter vector represents an arbitary motion in the plane, this vector must be normal to the plane.    Can we include something about why the normal to a surface is important? Maybe something about lighting?    Should probably say something about the gradient of a function of three variables. This is useful for finding the normal to a level surface, and also for finding the tangent plane to a surface defined implicitly by an equation like .    "
 },
 {
-  "id": "sec-directional-derivatives-2",
+  "id": "sec-directional-derivatives-and-the-gradient-2",
   "level": "2",
-  "url": "sec-directional-derivatives.html#sec-directional-derivatives-2",
+  "url": "sec-directional-derivatives-and-the-gradient.html#sec-directional-derivatives-and-the-gradient-2",
   "type": "Objectives",
   "number": "14.2",
   "title": "",
-  "body": "   Define the directional derivative of in the direction of a unit vector .    Compute using partial derivatives and the Chain Rule.    Relate directional derivatives to the rate of change of along a parametrized curve.    "
-},
-{
-  "id": "sec-the-gradient",
-  "level": "1",
-  "url": "sec-the-gradient.html",
-  "type": "Section",
-  "number": "14.3",
-  "title": "The gradient",
-  "body": " The gradient     Define the gradient vector and relate it to the direction of greatest increase.    Express directional derivatives as dot products with the gradient.    Interpret the gradient geometrically as perpendicular to level curves and normal to tangent planes.      Introduction goes here.     A natural question is, in which direction does the function increase the fastest, that is, have the greatest directional derivative?  Maximize with respect to to find out, and use THIS to define the gradient.  Let . Then . Setting this equal to zero gives . Any vector for which this holds is parallel to the vector . If points such that points in the same direction as , then the directional derivative is maximized.  Define the gradient vector as the one whose direction points toward the direction of greatest increase and whose magnitude is the value of the directional derivative in that direction. In Cartesian coordinates we then have:   Going to avoid the notation so that it can be saved for Part IV.      Notice the directional derivative is then the dot product of the gradient and the unit vector! Thus the directional derivative can be written .    Since the directional derivative is a dot product, we can also reason that it's maximized when points in the same direction as the gradient, and minimized when points in the opposite direction as the gradient. This leads to the gradient ascent\/descent algorithm.    Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero. This means that the gradient is perpendicular to the level curves of a surface.    Chain Rule can now be rewritten as:     Tangent plane can also be written in vector form: This much more closely resembles our linearization from Chapter 2, and generalizes to higher dimensions.    Rearrange slightly: Again this looks like a dot product! We're saying that is parallel to . Since the latter vector represents an arbitary motion in the plane, this vector must be normal to the plane.    Can we include something about why the normal to a surface is important? Maybe something about lighting?    Should probably say something about the gradient of a function of three variables. This is useful for finding the normal to a level surface, and also for finding the tangent plane to a surface defined implicitly by an equation like .    Relationship between gradient and level curves could go here, actually    "
-},
-{
-  "id": "sec-the-gradient-2",
-  "level": "2",
-  "url": "sec-the-gradient.html#sec-the-gradient-2",
-  "type": "Objectives",
-  "number": "14.3",
-  "title": "",
-  "body": "   Define the gradient vector and relate it to the direction of greatest increase.    Express directional derivatives as dot products with the gradient.    Interpret the gradient geometrically as perpendicular to level curves and normal to tangent planes.    "
+  "body": "   Measure how a function changes in any direction using directional derivatives.    Use the gradient vector to express directional changes as dot products.    Interpret the gradient as pointing perpendicular to level sets and toward the direction of greatest increase.    "
 },
 {
   "id": "sec-absolute-extrema-in-higher-dimensions",
   "level": "1",
   "url": "sec-absolute-extrema-in-higher-dimensions.html",
   "type": "Section",
-  "number": "14.4",
+  "number": "14.3",
   "title": "Absolute extrema in higher dimensions",
   "body": " Absolute extrema in higher dimensions     Find absolute extrema by checking interior critical points and boundary behavior.    Reduce boundary analysis to single-variable calculus by substitution or parametrization.    Compare all candidates to determine global maxima and minima.      Introduction goes here.     In single-variable calculus, to find absolute extrema, we had to look at critical points and boundary points. In multivariable calculus, that boundary is now an entire shape, so we can’t just check a few points.    To check the boundary of a shape, we can often substitute the boundary curve equation into the thing we want to optimize in order to reduce the number of variables, and then use single-variable calculus.    We also may be able to parameterize the boundary curve to get things in terms of a single variable. This uses the Chain Rule.    At that point, we just check all the candidates and take the highest and lowest one.    So the big theme here is, reduce a higher dimensional problem to a lower dimensional problem.    "
 },
@@ -1292,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-absolute-extrema-in-higher-dimensions.html#sec-absolute-extrema-in-higher-dimensions-2",
   "type": "Objectives",
-  "number": "14.4",
+  "number": "14.3",
   "title": "",
   "body": "   Find absolute extrema by checking interior critical points and boundary behavior.    Reduce boundary analysis to single-variable calculus by substitution or parametrization.    Compare all candidates to determine global maxima and minima.    "
 },
@@ -1301,18 +1283,36 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-lagrange-multipliers.html",
   "type": "Section",
-  "number": "14.5",
+  "number": "14.4",
   "title": "Lagrange multipliers",
-  "body": " Lagrange multipliers     Recognize when substitution fails and a constraint must be handled through gradients instead.    Use the Lagrange multiplier equation to locate candidate points for constrained extrema.    Interpret constrained optimization geometrically through level curves and tangent directions.      Introduction goes here.     Need to justify this using an example where substitution goes wrong.  Smith and Minton has an example: Find the points on the hyperbolic cylinder that are closest to the origin.    Let be a constraint curve that lies along the surface , and suppose has a local extreme value at along .  Parametrize the curve as so that .  Now consider the function . Then has an extreme value at , so . By the Chain Rule, we have:   Hence is perpendicular to the tangent vector . Since is a level curve of , we know that is also perpendicular to , and hence and are parallel. Hence, if , there exists some real number such that . This value is called the Lagrange multiplier.    Perhaps would be good to do the “milkmaid” problem... its solution visually goes with the reflection property of an ellipse. And it can be explained without needing a specific curve, but then made precise using a specific curve.     http:\/\/www.slimy.com\/~steuard\/teaching\/tutorials\/Lagrange.html     Here's another way we can “zoom out” and see the Lagrange multiplier method as part of a bigger story.    Suppose we want to maximize subject to the constraint . Define the Lagrangian function:  Then the solution to our maximization problem is the point where :   Note that we're assuming that is a constant for now.    Note that , which means that represents the sensitivity of the Lagrangian function to changes in our constraint amount. It can also be shown (will have to look at how!) that ; apparently this uses the “envelope theorem.”    Let be the solution to the constrained optimization problem. This depends on the given value of , so we'll write them as , and we'll write the optimum value of here as . If we differentiate with respect to , we get: Additionally, the constraint satisfies the equation . Differentiate both sides with respect to using the Chain Rule: By the Lagrange multiplier property we know that: Taking dot products with : Since we have: This would probably work best as an extension problem. But I could give the result as the meaning of the Lagrange multiplier right off the bat, so that students are able to use the result without getting lost in the abstraction.    Might actually be able to tie this to holding certain variables constant in , à la thermodynamics notation.    "
+  "body": " Lagrange multipliers     Recognize when substitution fails and a constraint must be handled through gradients instead.    Use the Lagrange multiplier equation to locate candidate points for constrained extrema.    Interpret constrained optimization geometrically through level curves and tangent directions.      Introduction goes here.     Need to justify this using an example where substitution goes wrong.  Smith and Minton has an example: Find the points on the hyperbolic cylinder that are closest to the origin.    Let be a constraint curve that lies along the surface , and suppose has a local extreme value at along .  Parametrize the curve as so that .  Now consider the function . Then has an extreme value at , so . By the Chain Rule, we have:   Hence is perpendicular to the tangent vector . Since is a level curve of , we know that is also perpendicular to , and hence and are parallel. Hence, if , there exists some real number such that . This value is called the Lagrange multiplier.    Perhaps would be good to do the “milkmaid” problem... its solution visually goes with the reflection property of an ellipse. And it can be explained without needing a specific curve, but then made precise using a specific curve.    "
 },
 {
   "id": "sec-lagrange-multipliers-2",
   "level": "2",
   "url": "sec-lagrange-multipliers.html#sec-lagrange-multipliers-2",
   "type": "Objectives",
-  "number": "14.5",
+  "number": "14.4",
   "title": "",
   "body": "   Recognize when substitution fails and a constraint must be handled through gradients instead.    Use the Lagrange multiplier equation to locate candidate points for constrained extrema.    Interpret constrained optimization geometrically through level curves and tangent directions.    "
+},
+{
+  "id": "sec-the-lagrangian-functions",
+  "level": "1",
+  "url": "sec-the-lagrangian-functions.html",
+  "type": "Section",
+  "number": "14.5",
+  "title": "The Lagrangian function",
+  "body": " The Lagrangian function     Formulate constrained optimization problems by introducing the Lagrangian .    Locate solutions by setting all partial derivatives of the Lagrangian equal to zero.    Interpret the multiplier as measuring how the optimal value responds to changes in the constraint.      Introduction goes here.      http:\/\/www.slimy.com\/~steuard\/teaching\/tutorials\/Lagrange.html     Here's another way we can “zoom out” and see the Lagrange multiplier method as part of a bigger story.    Suppose we want to maximize subject to the constraint . Define the Lagrangian function:  Then the solution to our maximization problem is the point where :   Note that we're assuming that is a constant for now.    Note that , which means that represents the sensitivity of the Lagrangian function to changes in our constraint amount. It can also be shown (will have to look at how!) that ; apparently this uses the “envelope theorem.”    Let be the solution to the constrained optimization problem. This depends on the given value of , so we'll write them as , and we'll write the optimum value of here as . If we differentiate with respect to , we get: Additionally, the constraint satisfies the equation . Differentiate both sides with respect to using the Chain Rule: By the Lagrange multiplier property we know that: Taking dot products with : Since we have:     Might actually be able to tie this to holding certain variables constant in , à la thermodynamics notation.    "
+},
+{
+  "id": "sec-the-lagrangian-functions-2",
+  "level": "2",
+  "url": "sec-the-lagrangian-functions.html#sec-the-lagrangian-functions-2",
+  "type": "Objectives",
+  "number": "14.5",
+  "title": "",
+  "body": "   Formulate constrained optimization problems by introducing the Lagrangian .    Locate solutions by setting all partial derivatives of the Lagrangian equal to zero.    Interpret the multiplier as measuring how the optimal value responds to changes in the constraint.    "
 },
 {
   "id": "sec-double-integrals-and-iterated-integrals",
