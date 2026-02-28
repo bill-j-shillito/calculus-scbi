@@ -63,7 +63,7 @@
           </md>
           
           <p>
-            Since <m>f</m> is holomorphic, it satisfies the Cauchy-Riemann equation, so <m>\bv F</m> is irrational and incompressible.
+            Since <m>f</m> is holomorphic, it satisfies the Cauchy-Riemann equation, so <m>\bv F</m> is irrotational and incompressible.
             Hence
             <me>
               \int_{C} f(z)\dd{z}=0
