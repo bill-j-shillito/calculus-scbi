@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-geometry-of-the-gradient">
+  <title>Geometry of the gradient</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Interpret the gradient as perpendicular to level curves and level surfaces.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use the gradient to describe tangent planes and normal vectors.
+        </p>
+      </li>
+      <li>
+        <p>
+          Connect geometric properties of the gradient to constrained motion along curves and surfaces.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction will go here.
+    </p>
+  </introduction>
+
+  <ul>
+
+    <li>
+      <p>
+        Recall that the directional derivative can be written as
+        <me>
+          \pdv{f}{\uv{u}} = \Grad f \cdot \uv{u}.
+        </me>
+        If this directional derivative is zero, then <m>\uv{u}</m> must be perpendicular to <m>\Grad f</m>.
+      </p>
+      <p>
+        Thus any direction in which the function does not change must be orthogonal to the gradient.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A level curve of <m>f</m> is defined by
+        <me>
+          f(x,y)=k.
+        </me>
+        If a point moves along this curve, the value of <m>f</m> does not change.
+      </p>
+      <p>
+        Let <m>\bv{r}(t)</m> parametrize the curve. Then
+        <me>
+          f(\bv{r}(t))=k.
+        </me>
+        Differentiating with respect to <m>t</m>:
+        <me>
+          \dv{f}{t} = \Grad f(\bv{r}(t)) \cdot \bv{r}'(t) = 0.
+        </me>
+      </p>
+      <p>
+        Since <m>\bv{r}'(t)</m> is tangent to the level curve, we conclude that <m>\Grad f</m> is perpendicular to the level curve.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In three dimensions, a level surface is given by
+        <me>
+          f(x,y,z)=k.
+        </me>
+        The same reasoning shows that
+        <me>
+          \Grad f
+        </me>
+        is perpendicular to the surface.
+      </p>
+      <p>
+        Thus the gradient provides a natural normal vector to any level surface.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        This allows us to write the equation of the tangent plane to the surface <m>z=f(x,y)</m> at the point <m>(x_0,y_0)</m> in vector form:
+        <me>
+          z = f(\bv{r}_0) + \Grad f(\bv{r}_0)\cdot(\bv{r}-\bv{r}_0).
+        </me>
+      </p>
+      <p>
+        Rearranging,
+        <me>
+          \pdv{f}{x}(x-x_0)+\pdv{f}{y}(y-y_0)-1(z-z_0)=0.
+        </me>
+        The vector
+        <me>
+          \qty(\pdv{f}{x},\pdv{f}{y},-1)
+        </me>
+        is normal to the tangent plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        More generally, if a surface is defined implicitly by
+        <me>
+          F(x,y,z)=0,
+        </me>
+        then <m>\Grad F</m> is normal to the surface.
+        This gives us the tangent plane equation:
+        <me>
+          \Grad F(x_0,y_0,z_0)\cdot\qty(x-x_0,y-y_0,z-z_0)=0.
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Why does the normal direction matter?
+        In physics and computer graphics, surface normals determine how light reflects.
+        In optimization, they determine how motion is restricted along a constraint surface.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Suppose a point moves along a constraint surface <m>g(x,y)=c</m>.
+        Its velocity vector must be tangent to the surface, and therefore perpendicular to <m>\Grad g</m>.
+      </p>
+      <p>
+        If we want to maximize <m>f</m> along this surface, the direction of greatest increase that remains tangent must lie in the tangent plane.
+        This geometric tension between <m>\Grad f</m> and <m>\Grad g</m> will lead directly to the method of Lagrange multipliers.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In summary:
+      </p>
+      <ul>
+        <li>
+          <p>
+            The gradient points in the direction of steepest increase.
+          </p>
+        </li>
+        <li>
+          <p>
+            The gradient is perpendicular to level sets.
+          </p>
+        </li>
+        <li>
+          <p>
+            The gradient provides a natural normal vector to curves and surfaces.
+          </p>
+        </li>
+        <li>
+          <p>
+            Constrained motion occurs in directions perpendicular to the constraint’s gradient.
+          </p>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</section>

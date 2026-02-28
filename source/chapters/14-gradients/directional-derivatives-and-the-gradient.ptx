@@ -119,56 +119,12 @@
     <li>
       <p>
         Since the directional derivative is a dot product, we can also reason that it's maximized when <m>\uv{u}</m> points in the same direction as the gradient, and minimized when <m>\uv{u}</m> points in the opposite direction as the gradient.
-        This leads to the gradient ascent/descent algorithm.
       </p>
     </li>
 
     <li>
       <p>
-        Furthermore, when the directional derivative is perpendicular to the gradient, it will be zero.
-        This means that the gradient is perpendicular to the level curves of a surface.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Chain Rule can now be rewritten as:
-        <me>
-          \dv{f}{t}=\Grad f(\bv{r})\cdot \bv{r}'(t)
-        </me>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Tangent plane can also be written in vector form:
-        <me>
-          z=f(\bv{r}_{0})+\Grad f\cdot (\bv{r}-\bv{r}_{0})
-        </me>
-        This much more closely resembles our linearization from Chapter 2, and generalizes to higher dimensions.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Rearrange slightly:
-        <me>
-          \pdv{f}{x}(x-x_{0})+\pdv{f}{y}(y-y_{0})-1(z-z_{0})=0
-        </me>
-        Again this looks like a dot product! We're saying that <m>\DS\qty(\pdv{f}{x},\pdv{f}{y},-1)</m> is parallel to <m>(x-x_{0},y-y_{0},z-z_{0})</m>.
-        Since the latter vector represents an arbitary motion in the plane, this vector <m>\DS\qty(\pdv{f}{x},\pdv{f}{y},-1)</m> must be normal to the plane.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Can we include something about why the normal to a surface is important? Maybe something about lighting?
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Should probably say something about the gradient of a function of three variables. This is useful for finding the normal to a level surface, and also for finding the tangent plane to a surface defined implicitly by an equation like <m>F(x,y,z)=0</m>.
+        Differentiability in multiple dimensions: making sure the relative error between the function and its tangent plane goes to zero.
       </p>
     </li>
   </ul>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-gradient-descent">
+  <title>Gradient descent</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Describe gradient descent as an iterative method based on moving in the direction of <m>-\Grad f</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Extend gradient descent to constrained problems using the Lagrangian <m>\cl{L}=f+\lambda(c-g)</m> and a descent-ascent update rule.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret the multiplier <m>\lambda</m> as measuring how the optimal value responds to changes in the constraint.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction will go here.
+    </p>
+  </introduction>
+
+  <ul>
+
+    <li>
+      <p>
+        If <m>f(x,y)</m> is a differentiable function, the direction of steepest decrease at a point is <m>-\,\Grad f</m>.
+        This suggests the iterative scheme
+        <me>
+          \bv{x}_{k+1} = \bv{x}_k - \alpha \Grad f(\bv{x}_k),
+        </me>
+        where <m>\alpha &gt; 0</m> is a step size.
+      </p>
+      <p>
+        For suitable choices of <m>\alpha</m>, this process moves downhill and can converge to a local minimum.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Now suppose we want to optimize <m>f(x,y)</m> subject to the constraint <m>g(x,y)=c</m>.
+        Previously, we saw that a constrained extremum satisfies
+        <me>
+          \Grad f = \lambda \Grad g.
+        </me>
+        Rather than solving this system algebraically, we introduce the Lagrangian:
+        <me>
+          \cl{L}(x,y,\lambda)=f(x,y)+\lambda(c-g(x,y)).
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The stationary conditions <m>\Grad_{x,y,\lambda}\cl{L}=0</m> reproduce the Lagrange multiplier equations:
+      </p>
+      <md>
+        <mrow>\pdv{f}{x} - \lambda\pdv{g}{x} \amp = 0</mrow>
+        <mrow>\pdv{f}{y} - \lambda\pdv{g}{y} \amp = 0</mrow>
+        <mrow>c - g(x,y) \amp = 0</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        However, instead of minimizing <m>\cl{L}</m> in all variables (which would fail, since the critical point is always a saddle point), 
+        we use a combined descent-ascent strategy:
+      </p>
+      <me>
+        \bv{x}_{k+1} = \bv{x}_k - \alpha \Grad_{x,y}\cl{L},
+      </me>
+      <me>
+        \lambda_{k+1} = \lambda_k + \beta \pdv{\cl{L}}{\lambda}.
+      </me>
+      <p>
+        The variables <m>(x,y)</m> move in the direction that decreases <m>f</m>, while <m>\lambda</m> adjusts to enforce the constraint.
+        When this system settles, we recover the constrained optimum.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        What does <m>\lambda</m> represent?
+        Since
+        <me>
+          \pdv{\cl{L}}{c} = \lambda,
+        </me>
+        the multiplier measures how the Lagrangian changes when the constraint level <m>c</m> changes.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Let <m>(x^{*}(c),y^{*}(c))</m> denote the constrained optimizer and consider the optimal value
+        <me>
+          f(x^{*}(c),y^{*}(c)).
+        </me>
+        Differentiating with respect to <m>c</m> and using the chain rule together with 
+        <me>
+          \Grad f = \lambda \Grad g,
+        </me>
+        one finds
+        <me>
+          \dv{f}{c} = \lambda.
+        </me>
+      </p>
+      <p>
+        Thus the Lagrange multiplier measures the sensitivity of the optimal value to changes in the constraint.
+      </p>
+    </li>
+
+  </ul>
+</section>
