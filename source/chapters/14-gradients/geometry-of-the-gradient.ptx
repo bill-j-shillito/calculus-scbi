@@ -122,48 +122,7 @@
       <p>
         Why does the normal direction matter?
         In physics and computer graphics, surface normals determine how light reflects.
-        In optimization, they determine how motion is restricted along a constraint surface.
       </p>
     </li>
-
-    <li>
-      <p>
-        Suppose a point moves along a constraint surface <m>g(x,y)=c</m>.
-        Its velocity vector must be tangent to the surface, and therefore perpendicular to <m>\Grad g</m>.
-      </p>
-      <p>
-        If we want to maximize <m>f</m> along this surface, the direction of greatest increase that remains tangent must lie in the tangent plane.
-        This geometric tension between <m>\Grad f</m> and <m>\Grad g</m> will lead directly to the method of Lagrange multipliers.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        In summary:
-      </p>
-      <ul>
-        <li>
-          <p>
-            The gradient points in the direction of steepest increase.
-          </p>
-        </li>
-        <li>
-          <p>
-            The gradient is perpendicular to level sets.
-          </p>
-        </li>
-        <li>
-          <p>
-            The gradient provides a natural normal vector to curves and surfaces.
-          </p>
-        </li>
-        <li>
-          <p>
-            Constrained motion occurs in directions perpendicular to the constraint’s gradient.
-          </p>
-        </li>
-      </ul>
-    </li>
-
   </ul>
 </section>
