@@ -65,7 +65,17 @@
     <li>
       <p>
         Talk about tangent lines.
-        Probably not normal lines; save that until the Analytic Geometry chapter in Part II.
+        DON'T include normal lines; save that until the Analytic Geometry chapter in Part II.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Inverse functions:
+        <me>
+          \dd(f\inv(x))=\dfrac{1}{f'(f\inv(x))}
+        </me>
+        Show this by setting <m>y=f\inv(x)</m>, writing as <m>x=f(y)</m>, and using implicit differentiation.
       </p>
     </li>
   </ul>

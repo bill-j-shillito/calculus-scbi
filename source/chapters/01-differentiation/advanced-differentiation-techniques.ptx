@@ -45,6 +45,9 @@
         </me>
         Show this by computing <m>\dd(x^{n}x^{-n})</m> in two ways.
       </p>
+      <p>
+        (Can probably show for <m>\dd(x^{-1})</m> and let the students do <m>\dd(x^{-n})</m> as an exercise.)
+      </p>
     </li>
 
     <li>
@@ -54,6 +57,9 @@
           \dd(x^{1/n})=\tfrac1n x^{\tfrac1n-1}
         </me>
         Show this by computing <m>\dd(\underbrace{x^{1/n}\cdot\,\ldots\,\cdot x^{1/n}}_{n\text{ copies}})</m> in two different ways.
+      </p>
+      <p>
+        (Can probably show for <m>\dd(x^{1/2})</m> and let the students do <m>\dd(x^{1/n})</m> as an exercise.)
       </p>
     </li>
 
@@ -93,6 +99,11 @@
         </me>
         Show this by computing <m>\dd((x^{m})^{1/n})</m> with the Chain Rule.
       </p>
+      <p>
+        (Can probably just assert this and leave it as an exercise.)
+      </p>
     </li>
+
+    
   </ul>
 </section>

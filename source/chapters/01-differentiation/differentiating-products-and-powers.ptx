@@ -33,6 +33,24 @@
   <ul>
     <li>
       <p>
+        We <sq>should believe</sq> that if <m>y=mx+b</m>, then
+        <md>
+          <mrow>\dv{y}{x} \amp = m</mrow>
+          <mrow>\dd{y}\amp = m\dd{x} </mrow>
+        </md>
+      </p>
+    </li>
+    <li>
+      <p>
+        If <m>f</m> changes by a small amount <m>\dd{f}</m> and <m>g</m> changes by a small amount <m>\dd{g}</m>, we should expect the linearity properties to hold:
+      </p>
+      <md>
+        <mrow>\dd(u+v) \amp = \dd{u}+\dd{v}</mrow>
+        <mrow>\dd(cu) \amp = c\dd{u}</mrow>
+      </md>
+    </li>
+    <li>
+      <p>
         Visual proof of Product Rule:
       </p>
 
@@ -48,6 +66,9 @@
           \dv{x}(f(x)g(x))=f'(x) g(x)+f(x) g'(x)
         </me>
       </p>
+      <p>
+        Can leave the disappearance of <m>\dd{f}\dd{g}</m> somewhat unresolved, giving a deliberately handwavy explanation of the fact that dividing by <m>\dd{x}</m> will still leave an infinitesimal quantity in the numerator, so we'll ignore it. This mystery will get cleaned up in Chapter 5 when we do limits.
+      </p>
     </li>
 
     <li>
@@ -62,9 +83,11 @@
     <li>
       <p>
         Extend to three variables:
-        <me>
-          \dd(u\cdot v\cdot w)=\dd{u}\cdot v\cdot w+u\cdot \dd{v}\cdot w+u\cdot v\cdot \dd{w}
-        </me>
+        <md>
+          <mrow>\dd(u\cdot v\cdot w) \amp = \dd((u\cdot v)\cdot w) </mrow>
+          <mrow> \amp = \dd(u\cdot v)\cdot w + u\cdot v\cdot \dd{w}</mrow>
+          <mrow> \amp = \dd{u}\cdot v\cdot w+u\cdot \dd{v}\cdot w+u\cdot v\cdot \dd{w} </mrow>
+        </md>
       </p>
     </li>
 
@@ -86,19 +109,6 @@
         (Only works when <m>n</m> is a natural number right now)
       </p>
     </li>
-
-    <li>
-      <p>
-        Linearity properties:
-      </p>
-      <p>
-        <md>
-          <mrow>\dd(u+v) \amp = \dd{u}+\dd{v}</mrow>
-          <mrow>\dd(cu) \amp = c\dd{u}</mrow>
-        </md>
-      </p>
-    </li>
-
     <li>
       <p>
         Derivative of a polynomial term by term
