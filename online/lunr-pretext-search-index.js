@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Differentiating products and powers",
-  "body": " Differentiating products and powers     Differentiate products by examining how each factor varies.    Justify and apply the Power Rule for natural-number exponents using differentials.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     Visual proof of Product Rule:          Apply to :     Extend to three variables:     Apply to :     Power Rule: (Only works when is a natural number right now)    Linearity properties:       Derivative of a polynomial term by term    "
+  "body": " Differentiating products and powers     Differentiate products by examining how each factor varies.    Justify and apply the Power Rule for natural-number exponents using differentials.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Visual proof of Product Rule:        Can leave the disappearance of somewhat unresolved, giving a deliberately handwavy explanation of the fact that dividing by will still leave an infinitesimal quantity in the numerator, so we'll ignore it. This mystery will get cleaned up in Chapter 5 when we do limits.    Apply to :     Extend to three variables:     Apply to :     Power Rule: (Only works when is a natural number right now)    Derivative of a polynomial term by term    "
 },
 {
   "id": "sec-differentiating-products-and-powers-2",
@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Advanced differentiation techniques",
-  "body": " Advanced differentiation techniques     Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.      Introduction goes here.     Find a few example functions that involve fractions and roots that we can use to justify wanting to do this chapter    Extend Power Rule to negative integers: Show this by computing in two ways.    Extend Power Rule to roots: Show this by computing in two different ways.    Chain Rule for differentials:     Chain Rule for derivatives:     Quotient Rule: Show this by computing .    Extend Power Rule to rational exponents: Show this by computing with the Chain Rule.    "
+  "body": " Advanced differentiation techniques     Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.      Introduction goes here.     Find a few example functions that involve fractions and roots that we can use to justify wanting to do this chapter    Extend Power Rule to negative integers: Show this by computing in two ways.  (Can probably show for and let the students do as an exercise.)    Extend Power Rule to roots: Show this by computing in two different ways.  (Can probably show for and let the students do as an exercise.)    Chain Rule for differentials:     Chain Rule for derivatives:     Quotient Rule: Show this by computing .    Extend Power Rule to rational exponents: Show this by computing with the Chain Rule.  (Can probably just assert this and leave it as an exercise.)    "
 },
 {
   "id": "sec-advanced-differentiation-techniques-2",
@@ -131,16 +131,16 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-implicit-differentiation.html",
   "type": "Section",
-  "number": "1.5",
+  "number": "2.1",
   "title": "Implicit differentiation",
-  "body": " Implicit differentiation     Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.      Introduction goes here.     Use Bitcoin elliptic curve example?    Use differentials: take differential of both sides, then divide both sides by .  Example:     You can shortcut the differentials by taking derivatives and remembering to multiply by whenever you take a derivative of something involving .    Talk about tangent lines. Probably not normal lines; save that until the Analytic Geometry chapter in Part II.    "
+  "body": " Implicit differentiation     Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.      Introduction goes here.     Use Bitcoin elliptic curve example?    Use differentials: take differential of both sides, then divide both sides by .  Example:     You can shortcut the differentials by taking derivatives and remembering to multiply by whenever you take a derivative of something involving .    Talk about tangent lines. DON'T include normal lines; save that until the Analytic Geometry chapter in Part II.    Inverse functions: Show this by setting , writing as , and using implicit differentiation.    "
 },
 {
   "id": "sec-implicit-differentiation-2",
   "level": "2",
   "url": "sec-implicit-differentiation.html#sec-implicit-differentiation-2",
   "type": "Objectives",
-  "number": "1.5",
+  "number": "2.1",
   "title": "",
   "body": "   Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.    "
 },
@@ -149,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-related-rates.html",
   "type": "Section",
-  "number": "2.1",
+  "number": "2.2",
   "title": "Related rates",
   "body": " Related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems    "
 },
@@ -158,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-related-rates.html#sec-related-rates-2",
   "type": "Objectives",
-  "number": "2.1",
+  "number": "2.2",
   "title": "",
   "body": "   Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.    "
 },
@@ -167,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-optimization.html",
   "type": "Section",
-  "number": "2.2",
+  "number": "2.3",
   "title": "Optimization",
   "body": " Optimization     Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.      Introduction goes here.     Soda can example    Same modeling steps as in related rates    Don’t necessarily need to eliminate variables — using differentials also works!    Focus on absolute maxima and minima and candidates using Fermat's theorem: if has a local maximum at , then     Put First Derivative Test here?    "
 },
@@ -176,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-optimization.html#sec-optimization-2",
   "type": "Objectives",
-  "number": "2.2",
+  "number": "2.3",
   "title": "",
   "body": "   Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.    "
 },
@@ -185,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-higher-order-derivatives.html",
   "type": "Section",
-  "number": "2.3",
+  "number": "2.4",
   "title": "Higher order derivatives",
   "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
 },
@@ -194,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-derivatives.html#sec-higher-order-derivatives-2",
   "type": "Objectives",
-  "number": "2.3",
+  "number": "2.4",
   "title": "",
   "body": "   Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.    "
 },
@@ -203,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-linear-approximation.html",
   "type": "Section",
-  "number": "2.4",
+  "number": "2.5",
   "title": "Linear approximation",
   "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Approximation using differentials    Linearization of a function at :     Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Absolute error:     Relative error:     These can eventually get tied in with limits in Chapter 5.    "
 },
@@ -212,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-approximation.html#sec-linear-approximation-2",
   "type": "Objectives",
-  "number": "2.4",
+  "number": "2.5",
   "title": "",
   "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
 },
