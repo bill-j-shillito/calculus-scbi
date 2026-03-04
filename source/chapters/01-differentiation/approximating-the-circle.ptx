@@ -4,21 +4,20 @@
   <title>Approximating the circle</title>
 
   <objectives>
-    <!-- Put the below in a list instead -->
     <ol>
       <li>
         <p>
-          Understand how curves locally resemble straight lines when viewed up close.
+          Approximate the length or area of a curved shape using polygons or wedges.
         </p>
       </li>
       <li>
         <p>
-          Approximate lengths or areas by decomposing shapes into small pieces.
+          Improve that approximation by refining the decomposition into smaller pieces.
         </p>
       </li>
       <li>
         <p>
-          Relate familiar geometric ideas to their calculus counterparts.
+          Visualize a curved shape as being composed of infinitely many infinitesimal pieces.
         </p>
       </li>
     </ol>
@@ -38,20 +37,200 @@
     Put yourself in the place of one of those ancient mathematicians. How might you go about solving this problem?
   </p>
   <p>
-    A natural idea might be to see what pieces you <em>can</em> break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram. If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.
+    A natural idea might be to see what pieces you <em>can</em> break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram.
   </p>
+  <image width="100%">
+    <prefigure label="4-wedges" xmlns="https://prefigure.org">
+      <diagram dimensions="(600,200)" margins="5">
+        <coordinates bbox="(-1,-1,5,1)">
+          <definition>numwedges=4</definition>
+          <definition>n=numwedges//2</definition>
+          <definition>theta=pi/2/n</definition>
+          <definition>start=1.5+sqrt(2)/2</definition>
+          <repeat parameter="k=0..(n-1)">
+            <line p1="cos(2*k*theta),sin(2*k*theta)" p2="-cos(2*k*theta),-sin(2*k*theta)" stroke="gray" thickness="1"/>
+          </repeat>
+          <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+          <repeat parameter="k=0..n">
+            <definition>A=(start+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(-sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <definition>B=(start+sin(theta)+2*k*sin(theta),0.5*cos(theta))</definition>
+            <arc center="A" radius="1" range="(pi/2-theta,pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="B" radius="1" range="(3*pi/2-theta,3*pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+          </repeat>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
   <p>
-    (Insert figure)
+    If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.
   </p>
+  <image width="100%">
+    <prefigure label="4-wedges-vertical" xmlns="https://prefigure.org">
+      <diagram dimensions="(600,200)" margins="5">
+        <coordinates bbox="(-1,-1,5,1)">
+          <definition>numwedges=4</definition>
+          <definition>n=numwedges//2</definition>
+          <definition>theta=pi/2/n</definition>
+          <definition>start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)</definition>
+          <line p1="start-0.5*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <line p1="start-0.5*sin(theta)+n*2*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta)+n*2*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <repeat parameter="k=0..(n-1)">
+            <line p1="cos(2*k*theta),sin(2*k*theta)" p2="-cos(2*k*theta),-sin(2*k*theta)" stroke="gray" thickness="1"/>
+          </repeat>
+          <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+          <repeat parameter="k=1..n">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(-sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <definition>B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))</definition>
+            <arc center="A" radius="1" range="(pi/2-theta,pi/2)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="A+(2*sin(theta),0)" radius="1" range="(pi/2,pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="B" radius="1" range="(3*pi/2-theta,3*pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+          </repeat>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
   <p>
-    What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom. If we start with sixteen wedges, the bumps are smaller still <mdash/> each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.
+    What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom:
   </p>
+  <image width="100%">
+    <prefigure label="8-wedges-vertical" xmlns="https://prefigure.org">
+      <diagram dimensions="(600,200)" margins="5">
+        <coordinates bbox="(-1,-1,5,1)">
+          <definition>numwedges=8</definition>
+          <definition>n=numwedges//2</definition>
+          <definition>theta=pi/2/n</definition>
+          <definition>start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)</definition>
+          <line p1="start-0.5*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <line p1="start-0.5*sin(theta)+n*2*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta)+n*2*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <repeat parameter="k=0..(n-1)">
+            <line p1="cos(2*k*theta),sin(2*k*theta)" p2="-cos(2*k*theta),-sin(2*k*theta)" stroke="gray" thickness="1"/>
+          </repeat>
+          <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+          <repeat parameter="k=1..n">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(-sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <definition>B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))</definition>
+            <arc center="A" radius="1" range="(pi/2-theta,pi/2)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="A+(2*sin(theta),0)" radius="1" range="(pi/2,pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="B" radius="1" range="(3*pi/2-theta,3*pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+          </repeat>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
   <p>
-    (Insert figure)
+    If we start with sixteen wedges, the bumps are smaller still:
+  </p>
+  <image width="100%">
+    <prefigure label="16-wedges-vertical" xmlns="https://prefigure.org">
+      <diagram dimensions="(600,200)" margins="5">
+        <coordinates bbox="(-1,-1,5,1)">
+          <definition>numwedges=16</definition>
+          <definition>n=numwedges//2</definition>
+          <definition>theta=pi/2/n</definition>
+          <definition>start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)</definition>
+          <line p1="start-0.5*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <line p1="start-0.5*sin(theta)+n*2*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta)+n*2*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <repeat parameter="k=0..(n-1)">
+            <line p1="cos(2*k*theta),sin(2*k*theta)" p2="-cos(2*k*theta),-sin(2*k*theta)" stroke="gray" thickness="1"/>
+          </repeat>
+          <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+          <repeat parameter="k=1..n">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(-sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(sin(theta),cos(theta))" stroke="gray" thickness="1"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <definition>B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))</definition>
+            <arc center="A" radius="1" range="(pi/2-theta,pi/2)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="A+(2*sin(theta),0)" radius="1" range="(pi/2,pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="B" radius="1" range="(3*pi/2-theta,3*pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+          </repeat>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
+  <p>
+    Each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.
   </p>
   <p>
     So here's the key insight: what if we used <em>infinitely many</em> wedges?
   </p>
+  <image width="100%">
+    <prefigure label="infinitely-many-wedges-vertical" xmlns="https://prefigure.org">
+      <diagram dimensions="(600,200)" margins="5">
+        <coordinates bbox="(-1,-1,5,1)">
+          <definition>numwedges=128</definition>
+          <definition>n=numwedges//2</definition>
+          <definition>theta=pi/2/n</definition>
+          <definition>thickness=0.25</definition>
+          <definition>start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)</definition>
+          <line p1="start-0.5*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <line p1="start-0.5*sin(theta)+n*2*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta)+n*2*sin(theta),1-0.5*cos(theta)"  stroke="gray" thickness="1"/>
+          <repeat parameter="k=0..(n-1)">
+            <line p1="cos(2*k*theta),sin(2*k*theta)" p2="-cos(2*k*theta),-sin(2*k*theta)" stroke="gray" thickness="thickness"/>
+          </repeat>
+          <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+          <repeat parameter="k=1..n">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(-sin(theta),cos(theta))" stroke="gray" thickness="thickness"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(sin(theta),cos(theta))" stroke="gray" thickness="thickness"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <definition>B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))</definition>
+            <arc center="A" radius="1" range="(pi/2-theta,pi/2)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="A+(2*sin(theta),0)" radius="1" range="(pi/2,pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+            <arc center="B" radius="1" range="(3*pi/2-theta,3*pi/2+theta)" degrees="no"
+              stroke="black" thickness="2"/>
+          </repeat>
+        </coordinates>
+      </diagram>
+    </prefigure>
+  </image>
   <p>
     In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.
   </p>
@@ -83,13 +262,14 @@
             <prefigure label="circle-inscribed-hexagon" xmlns="https://prefigure.org">
               <diagram dimensions="(200,200)" margins="5">
                 <coordinates bbox="(-1,-1,1,1)">
-                  <line p1="cos(0),sin(0)" p2="cos(pi),sin(pi)" stroke="gray" thickness="1"/>
-                  <line p1="cos(pi/3),sin(pi/3)" p2="cos(4*pi/3),sin(4*pi/3)" stroke="gray" thickness="1"/>
-                  <line p1="cos(2*pi/3),sin(2*pi/3)" p2="cos(5*pi/3),sin(5*pi/3)" stroke="gray" thickness="1"/>
+                  <repeat parameter="k=0..2">
+                    <line p1="cos(k*pi/3),sin(k*pi/3)" p2="cos((k+3)*pi/3),sin((k+3)*pi/3)" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none" />
                   <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))"
-                  parameter="k=0..5" closed="yes"
-                  stroke="blue" thickness="2"/>
-                  <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+                    parameter="k=0..5" closed="yes"
+                    stroke="blue" thickness="2"/>
+                  
                 </coordinates>
               </diagram>
             </prefigure>
@@ -102,19 +282,16 @@
               <prefigure label="circle-inscribed-dodecagon" xmlns="https://prefigure.org">
                 <diagram dimensions="(200,200)" margins="5">
                   <coordinates bbox="(-1,-1,1,1)">
-                    <line p1="cos(0),sin(0)" p2="cos(pi),sin(pi)" stroke="gray" thickness="1"/>
-                    <line p1="cos(pi/6),sin(pi/6)" p2="cos(7*pi/6),sin(7*pi/6)" stroke="gray" thickness="1"/>
-                    <line p1="cos(pi/3),sin(pi/3)" p2="cos(4*pi/3),sin(4*pi/3)" stroke="gray" thickness="1"/>
-                    <line p1="cos(3*pi/6),sin(3*pi/6)" p2="cos(9*pi/6),sin(9*pi/6)" stroke="gray" thickness="1"/>
-                    <line p1="cos(2*pi/3),sin(2*pi/3)" p2="cos(5*pi/3),sin(5*pi/3)" stroke="gray" thickness="1"/>
-                    <line p1="cos(5*pi/6),sin(5*pi/6)" p2="cos(11*pi/6),sin(11*pi/6)" stroke="gray" thickness="1"/>
+                    <repeat parameter="k=0..5">
+                      <line p1="cos(k*pi/6),sin(k*pi/6)" p2="cos((k+6)*pi/6),sin((k+6)*pi/6)" stroke="gray" thickness="1"/>
+                    </repeat>
+                    <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none" />
                     <polygon points="(0,0)+1*(cos(k*pi/6),sin(k*pi/6))"
-                    parameter="k=0..11" closed="yes"
-                    stroke="red" thickness="2"/>
+                      parameter="k=0..11" closed="yes"
+                      stroke="red" thickness="2"/>
                     <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))"
-                    parameter="k=0..5" closed="yes"
-                    stroke="blue" thickness="1"/>
-                    <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
+                      parameter="k=0..5" closed="yes"
+                      stroke="blue" thickness="1"/>
                   </coordinates>
                 </diagram>
               </prefigure>
@@ -124,20 +301,16 @@
               <prefigure label="circle-inscribed-dodecagon-part" xmlns="https://prefigure.org">
                 <diagram dimensions="(200,200)" margins="5">
                   <coordinates bbox="(-0.7,-0.2,0.7,1.2)">
-                    <line p1="cos(pi/3),sin(pi/3)" p2="(0,0)" stroke="black" thickness="1" />
-                    <line p1="cos(2*pi/3),sin(2*pi/3)" p2="(0,0)" stroke="black" thickness="1" />
-                    <line p1="cos(pi/2),sin(pi/2)" p2="(0,0)" stroke="gray" thickness="1" />
+                    <repeat parameter="k=2..4">
+                      <line p1="(0,0)" p2="cos(k*pi/6),sin(k*pi/6)" stroke="gray" thickness="1"/>
+                    </repeat>
+                    <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none" />
                     <polygon points="(0,0)+1*(cos(k*pi/6),sin(k*pi/6))"
-                    parameter="k=0..11" closed="yes"
-                    stroke="red" thickness="2"/>
+                      parameter="k=0..11" closed="yes"
+                      stroke="red" thickness="2"/>
                     <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))"
-                    parameter="k=0..5" closed="yes"
-                    stroke="blue" thickness="1"/>
-                    <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none" />
-                    <!-- <label anchor="0.5*(cos(pi/3),sin(pi/3))" alignment="southeast"><m>1</m></label>
-                    <label anchor="(0.25,sin(pi/3))" alignment="south"><m>\tfrac{1}{2}</m></label>
-                    <label anchor="(0,sin(pi/3)/2)" alignment="west"><m>a</m></label>
-                    <label anchor="(0,1/2+sin(pi/3)/2)" alignment="west"><m>b</m></label> -->
+                      parameter="k=0..5" closed="yes"
+                      stroke="blue" thickness="1"/>
                     <point p="(0,0)" size="2" alignment="south"> <m>O</m> </point>
                     <point p="(cos(pi/3),sin(pi/3))" size="2" alignment="northeast"> <m>A</m> </point>
                     <point p="(0,sin(pi/3))" size="2" alignment="southwest"> <m>B</m> </point>
@@ -202,32 +375,113 @@
 
     <exercise>
       <p>
-        We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are <term>tangent</term> to the circle, meaning they barely touch the circle at a single point.
+        We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are <term>tangent</term> to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.
       </p>
       <ol>
         <li>
           <p>
             Start by circumscribing a regular hexagon around a circle of radius <m>1</m>. What is the perimeter of this hexagon?
           </p>
-          <p>
-            (Insert figure)
-          </p>
+          <image width="50%">
+            <prefigure label="circle-circumscribed-hexagon" xmlns="https://prefigure.org">
+              <diagram dimensions="(200,200)" margins="5">
+                <coordinates bbox="2/sqrt(3)*(-1,-1,1,1)">
+                  <repeat parameter="k=0..2">
+                    <line p1="2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))" p2="2/sqrt(3)*(cos((k+3)*pi/3),sin((k+3)*pi/3))" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <repeat parameter="k=0..2">
+                    <line p1="(cos(k*pi/3+pi/6),sin(k*pi/3+pi/6))" p2="(cos((k+3)*pi/3+pi/6),sin((k+3)*pi/3+pi/6))" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none" />
+                  <polygon points="(0,0)+2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))"
+                    parameter="k=0..5" closed="yes"
+                    stroke="blue" thickness="2"/>
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
         </li>
         <li>
           <p>
             Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.
           </p>
-          <p>
-            (Insert figure)
-          </p>
+          <image width="50%">
+            <prefigure label="circle-circumscribed-dodecagon" xmlns="https://prefigure.org">
+              <diagram dimensions="(200,200)" margins="5">
+                <coordinates bbox="2/sqrt(3)*(-1,-1,1,1)">
+                  <repeat parameter="k=0..2">
+                    <line p1="2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))" p2="2/sqrt(3)*(cos((k+3)*pi/3),sin((k+3)*pi/3))" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <repeat parameter="k=0..5">
+                    <line p1="2*sqrt(2-sqrt(3))*(cos(k*pi/6+pi/12),sin(k*pi/6+pi/12))" p2="2*sqrt(2-sqrt(3))*(cos((k+6)*pi/6+pi/12),sin((k+6)*pi/6+pi/12))" stroke="gray" thickness="0.5"/>
+                  </repeat>
+                  <repeat parameter="k=0..2">
+                    <line p1="(cos(k*pi/3+pi/6),sin(k*pi/3+pi/6))" p2="(cos((k+3)*pi/3+pi/6),sin((k+3)*pi/3+pi/6))" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none" />
+                  <polygon points="(0,0)+2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))"
+                    parameter="k=0..5" closed="yes"
+                    stroke="blue" thickness="1"/>
+                  <polygon points="(0,0)+2*sqrt(2-sqrt(3))*(cos(k*pi/6+pi/12),sin(k*pi/6+pi/12))"
+                    parameter="k=0..11" closed="yes"
+                    stroke="red" thickness="2"/>
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
           <p>
             Let's zoom in again on the topmost arc.
           </p>
+          <image width="50%">
+            <prefigure label="circle-circumscribed-dodecagon-part" xmlns="https://prefigure.org">
+              <diagram dimensions="(200,200)" margins="5">
+                <coordinates bbox="(-0.7,-0.2,0.7,1.2)">
+                  <repeat parameter="k=1..2">
+                    <line p1="0,0" p2="2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))"
+                    stroke="gray" thickness="1"/>
+                  </repeat>
+
+                  <repeat parameter="k=1..1">
+                    <line p1="0,0" p2="(cos(k*pi/3+pi/6),sin(k*pi/3+pi/6))"
+                    stroke="gray" thickness="1"/>
+                  </repeat>
+                  
+                  <repeat parameter="k=2..3">
+                    <line p1="0,0" p2="2*sqrt(2-sqrt(3))*(cos(k*pi/6+pi/12),sin(k*pi/6+pi/12))"
+                    stroke="gray" thickness="0.5"/>
+                  </repeat>
+                  
+
+                  <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none" />
+                  <polygon points="(0,0)+2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))"
+                    parameter="k=0..5" closed="yes"
+                    stroke="blue" thickness="1"/>
+                  <polygon points="(0,0)+2*sqrt(2-sqrt(3))*(cos(k*pi/6+pi/12),sin(k*pi/6+pi/12))"
+                    parameter="k=0..11" closed="yes"
+                    stroke="red" thickness="2"/>
+                  <definition>O=(0,0)</definition>
+                  <definition>A=(cos(pi/3),sin(pi/3))</definition>
+                  <definition>C=(0,1)</definition>
+                  <definition>D=2/sqrt(3)*(cos(pi/3),sin(pi/3))</definition>
+                  <definition>E=2*sqrt(2-sqrt(3))*(cos(5*pi/12),sin(5*pi/12))</definition>
+                  <point p="O" size="2" alignment="south"> <m>O</m> </point>
+                  <point p="A" size="2" alignment="south"> <m>A</m> </point>
+                  <point p="C" size="2" alignment="north"> <m>C</m> </point>
+                  <point p="D" size="2" alignment="north"> <m>D</m> </point>
+                  <point p="E" size="2" alignment="north"> <m>E</m> </point>
+                  <angle-marker points="(O,C,E)" thickness="1"/>
+                    clear-background="yes"/>
+                  <angle-marker points="(E,A,O)" thickness="1"/>
+                    clear-background="yes"/>
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
           <p>
-            (Insert figure)
+            Find the lengths of segments <m>AD</m> and <m>AE</m>. Then find the perimeter of the circumscribed dodecagon.
           </p>
           <p>
-            Find the lengths of segments <m>AD</m>, <m>AE</m>, and <m>CE</m>. Then find the perimeter of the circumscribed dodecagon.
+            Hint: Triangle <m>OCD</m> is similar to triangle <m>EAD</m>.
           </p>
         </li>
         <li>
@@ -284,6 +538,9 @@
               </row>
             </tabular>
           </table>
+          <p>
+            Then use the distances between the points in the table to estimate the circumference of the circle.
+          </p>
         </li>
         <li>
           <p>
@@ -303,8 +560,24 @@
         <me>
           P_{2n} = 2n\sqrt{2 - \sqrt{2 - \left(\frac{P_n}{2n}\right)^2}}.
         </me>
-        Use this recurrence relation to find the perimeters of the inscribed polygons with <m>6</m>, <m>12</m>, <m>24</m>, <m>48</m>, and <m>96</m> sides, and verify that they match the results you found in the first exercise.
       </p>
+      <ol>
+        <li>
+          <p>
+            Use this recurrence relation to verify the results of Exercise 1.
+          </p>
+        </li>
+        <li>
+          <p>
+            Develop a similar recurrence relation for the perimeters of the circumscribed polygons and use it to verify the results of Exercise 2.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write a computer program to implement these recurrence relations and use it to compute perimeters of inscribed and circumscribed polygons with more and more sides. How do these values compare to <m>\tau</m> as you increase the number of sides?
+          </p>
+        </li>
+      </ol>
     </exercise>
   </exercises>
 </section>
