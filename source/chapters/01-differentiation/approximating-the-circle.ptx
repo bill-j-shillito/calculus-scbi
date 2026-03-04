@@ -25,69 +25,53 @@
   </objectives>
   
 
-  <introduction>
-    <p>
-      Introduction goes here.
-    </p>
-  </introduction>
-
-  <ul>
-    <li>
-      <p>
-        Opening question: How do we know what <m>\pi</m> is? Circles are clearly very important to us and have been for a long time, from designing temples in ancient times to engineering modern-day machines. But how do we know the exact value of <m>\pi</m>? And in particular how have we known it since ancient times, long before the advent of computers?
-      </p>
-    </li>
-    <li>
-      <p>
-        Approximating the circle with polygons (inscribed and circumscribed)... In particular, the circumscribed polygons involve tangent lines, which is a nice segue into differentiation next lesson
-      </p>
-    </li>
-    <li>
-      <p>
-        Finding the area of a circle by slicing it into thin wedges and rearranging them into a shape that resembles a parallelogram
-      </p>
-    </li>
-    <li>
-      <p>
-        At some point, point out that calculus lets you do all the stuff you used to do with simple shapes and do them with complex shapes.
-      </p>
-      <ul>
-        <li>
-          <p>
-            Before calculus, you could find the slope of a line; using calculus, you can find the slope of a curve.
-          </p>
-        </li>
-        <li>
-          <p>
-            Before calculus, you could find the length of a line segment; using calculus, you can find the length of a curve.
-          </p>
-        </li>
-        <li>
-          <p>
-            Before calculus, you could find the area of a rectangle; using calculus, you can find the area under a curve.
-          </p>
-        </li>
-        <li>
-          <p>
-            Before calculus, you could find the average rate of change between two points; using calculus, you can find the instantaneous rate of change at a single point.
-          </p>
-        </li>
-        <li>
-          <p>
-            Before calculus, you could sum a finite number of terms in a sequence; using calculus, you can add infinitely many tiny pieces.
-          </p>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <p>
+    <em>What is the area of a circle?</em>
+  </p>
+  <p>
+    You probably already know a formula from previous math classes. But have you ever stopped to wonder where that formula comes from?
+  </p>
+  <p>
+    In the ancient world, mathematicians needed the answer to this question to design things like temples, storage containers, and astronomical instruments. They of course knew how to calculate areas of simple shapes like rectangles and triangles, as well as polygons that could be broken into these shapes. But a circle has no straight sides, so it doesn't naturally decompose into those familiar pieces.
+  </p>
+  <p>
+    Put yourself in the place of one of those ancient mathematicians. How might you go about solving this problem?
+  </p>
+  <p>
+    A natural idea might be to see what pieces you <em>can</em> break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram. If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.
+  </p>
+  <p>
+    (Insert figure)
+  </p>
+  <p>
+    What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom. If we start with sixteen wedges, the bumps are smaller still <mdash/> each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.
+  </p>
+  <p>
+    (Insert figure)
+  </p>
+  <p>
+    So here's the key insight: what if we used <em>infinitely many</em> wedges?
+  </p>
+  <p>
+    In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.
+  </p>
+  <p>
+    We can identify that the height of the rectangle is the radius of the circle, and the base is half the circumference of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area
+  </p>
+  <me>
+    \text{Area} = \text{Base} \times \text{Height} = \frac{1}{2} C\cdot r
+  </me>.
+  <p>
+    Notice that we've reduced the problem of finding the area of a circle to the problem of finding its circumference. And since the circumference of a circle is proportional to its radius, once we know that constant of proportionality, we can determine the area of a circle from its radius alone. In the exercises below, you'll see how to find this constant by approximating the boundary of the circle with polygons.
+  </p>
+  <p>
+    Now, you might be a bit skeptical of this idea of using <sq>infinitely many</sq> wedges. If so, you're in good company! This idea of using <term>infinitesimal</term> (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book.
+  </p>
 
   <exercises>
     <exercise>
       <p>
-        (Probably can designate this one as an in-class activity)
-      </p>
-      <p>
-        In this exercise, we will look at a method for approximating <m>\pi</m>. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
+        In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
       </p>
       
       <ol>
@@ -191,7 +175,21 @@
         </li>
         <li>
           <p>
-            Show how your observations can be used to approximate the value of <m>\pi</m>.
+            You should have found that the perimeters of the inscribed polygons are approaching the number
+            <me>
+              \tau = 6.283185307179586476925286766559\cdots
+            </me>.
+            Since the circle has a radius of <m>1</m>, this suggests that the circumference of a circle is equal to <m>\tau\cdot r</m> for any radius <m>r</m>
+          </p>
+          <p>
+            For historical reasons, the more commonly studied ratio is that of the circumference to the <em>diameter</em>, which is half of this number, commonly known as
+            <me>
+              \pi = \frac{\tau}{2} = 3.141592653589793238462643383279\cdots
+            </me>.
+            Show that this leads to the area formula for a circle:
+            <me>
+              A = \pi r^2
+            </me>.
           </p>
         </li>
         <li>
@@ -204,42 +202,108 @@
 
     <exercise>
       <p>
-        Approximating from the outside with circumscribed hexagons, dodecagons, etc.
+        We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are <term>tangent</term> to the circle, meaning they barely touch the circle at a single point.
       </p>
+      <ol>
+        <li>
+          <p>
+            Start by circumscribing a regular hexagon around a circle of radius <m>1</m>. What is the perimeter of this hexagon?
+          </p>
+          <p>
+            (Insert figure)
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.
+          </p>
+          <p>
+            (Insert figure)
+          </p>
+          <p>
+            Let's zoom in again on the topmost arc.
+          </p>
+          <p>
+            (Insert figure)
+          </p>
+          <p>
+            Find the lengths of segments <m>AD</m>, <m>AE</m>, and <m>CE</m>. Then find the perimeter of the circumscribed dodecagon.
+          </p>
+        </li>
+        <li>
+          <p>
+            Continue this process of bisecting arcs and constructing tangent lines to get a regular <m>24</m>-sided polygon, then a regular <m>48</m>-sided polygon, and finally a <m>96</m>-sided polygon. What do you notice about the perimeters of these polygons?
+          </p>
+        </li>
+        <li>
+          <p>
+            How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?
+          </p>
+        </li>
+      </ol>
     </exercise>
 
     <exercise>
       <p>
-        Doing the same thing starting with squares and moving to octagons, etc.
+        Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?
       </p>
     </exercise>
     
     <exercise>
-      <p>Consider the part of the parabola <m>y=x^2</m> bounded between <m>x=-1</m> and <m>x=1</m>.</p>
+      <p>Remember that the equation of a circle of radius <m>1</m> in the plane is given by <m>x^2 + y^2 = 1</m>, so the upper semicircle has equation <m>y = \sqrt{1 - x^2}</m>.</p>
       <ol>
         <li>
           <p>
-            Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.
+            Fill in the following table of values for points along the upper semicircle.
+          </p>
+          <table>
+            <tabular halign="center">
+              <row header="yes" bottom="minor">
+                <cell><m>x</m></cell>
+                <cell><m>y</m></cell>
+              </row>
+              <row>
+                <cell><m>-1</m></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>-0.5</m></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>0.5</m></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </table>
+        </li>
+        <li>
+          <p>
+            Refine your estimate by breaking subdividing the interval <m>-1\le x\le 1</m> into eight equal-width segments, then sixteen.
           </p>
         </li>
         <li>
           <p>
-            Refine your estimate by breaking it into four equal-width segments.
-          </p>
-        </li>
-        <li>
-          <p>
-            Refine your estimate by breaking it into eight equal-width segments.
-          </p>
-        </li>
-        <li>
-          <p>
-            Conjecture the true length of the curve.
+            How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?
           </p>
         </li>
       </ol>
+    </exercise>
+    <exercise>
       <p>
-        (Can probably have a few different versions of this exercise with different curves... might even do a semicircle to show there may be different ways to slice up the same shape)
+        The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with <m>n</m> sides is <m>P_n</m>, then the perimeter of the inscribed polygon with <m>2n</m> sides is given by
+        <me>
+          P_{2n} = 2n\sqrt{2 - \sqrt{2 - \left(\frac{P_n}{2n}\right)^2}}.
+        </me>
+        Use this recurrence relation to find the perimeters of the inscribed polygons with <m>6</m>, <m>12</m>, <m>24</m>, <m>48</m>, and <m>96</m> sides, and verify that they match the results you found in the first exercise.
       </p>
     </exercise>
   </exercises>
