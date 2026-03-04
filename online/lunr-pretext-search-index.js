@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Approximating the circle",
-  "body": " Approximating the circle      Understand how curves locally resemble straight lines when viewed up close.    Approximate lengths or areas by decomposing shapes into small pieces.    Relate familiar geometric ideas to their calculus counterparts.      Introduction goes here.     Opening question: How do we know what is? Circles are clearly very important to us and have been for a long time, from designing temples in ancient times to engineering modern-day machines. But how do we know the exact value of ? And in particular how have we known it since ancient times, long before the advent of computers?    Approximating the circle with polygons (inscribed and circumscribed)... In particular, the circumscribed polygons involve tangent lines, which is a nice segue into differentiation next lesson    Finding the area of a circle by slicing it into thin wedges and rearranging them into a shape that resembles a parallelogram    At some point, point out that calculus lets you do all the stuff you used to do with simple shapes and do them with complex shapes.    Before calculus, you could find the slope of a line; using calculus, you can find the slope of a curve.    Before calculus, you could find the length of a line segment; using calculus, you can find the length of a curve.    Before calculus, you could find the area of a rectangle; using calculus, you can find the area under a curve.    Before calculus, you could find the average rate of change between two points; using calculus, you can find the instantaneous rate of change at a single point.    Before calculus, you could sum a finite number of terms in a sequence; using calculus, you can add infinitely many tiny pieces.        (Probably can designate this one as an in-class activity)  In this exercise, we will look at a method for approximating . This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.    Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.                 Let's zoom in on the topmost arc of the circle.             O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.    Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)    -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .     Show how your observations can be used to approximate the value of .    Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?      Approximating from the outside with circumscribed hexagons, dodecagons, etc.    Doing the same thing starting with squares and moving to octagons, etc.    Consider the part of the parabola bounded between and .    Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.    Refine your estimate by breaking it into four equal-width segments.    Refine your estimate by breaking it into eight equal-width segments.    Conjecture the true length of the curve.    (Can probably have a few different versions of this exercise with different curves... might even do a semicircle to show there may be different ways to slice up the same shape)    "
+  "body": " Approximating the circle      Understand how curves locally resemble straight lines when viewed up close.    Approximate lengths or areas by decomposing shapes into small pieces.    Relate familiar geometric ideas to their calculus counterparts.      What is the area of a circle?   You probably already know a formula from previous math classes. But have you ever stopped to wonder where that formula comes from?  In the ancient world, mathematicians needed the answer to this question to design things like temples, storage containers, and astronomical instruments. They of course knew how to calculate areas of simple shapes like rectangles and triangles, as well as polygons that could be broken into these shapes. But a circle has no straight sides, so it doesn't naturally decompose into those familiar pieces.  Put yourself in the place of one of those ancient mathematicians. How might you go about solving this problem?  A natural idea might be to see what pieces you can break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram. If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.  (Insert figure)  What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom. If we start with sixteen wedges, the bumps are smaller still each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.  (Insert figure)  So here's the key insight: what if we used infinitely many wedges?  In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.  We can identify that the height of the rectangle is the radius of the circle, and the base is half the circumference of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area  . Notice that we've reduced the problem of finding the area of a circle to the problem of finding its circumference. And since the circumference of a circle is proportional to its radius, once we know that constant of proportionality, we can determine the area of a circle from its radius alone. In the exercises below, you'll see how to find this constant by approximating the boundary of the circle with polygons.  Now, you might be a bit skeptical of this idea of using infinitely many wedges. If so, you're in good company! This idea of using infinitesimal (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book.    In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.    Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.                 Let's zoom in on the topmost arc of the circle.             O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.    Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)    -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .     You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .    Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?      We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are tangent to the circle, meaning they barely touch the circle at a single point.    Start by circumscribing a regular hexagon around a circle of radius . What is the perimeter of this hexagon?  (Insert figure)    Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.  (Insert figure)  Let's zoom in again on the topmost arc.  (Insert figure)  Find the lengths of segments , , and . Then find the perimeter of the circumscribed dodecagon.    Continue this process of bisecting arcs and constructing tangent lines to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?    How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?      Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?    Remember that the equation of a circle of radius in the plane is given by , so the upper semicircle has equation .    Fill in the following table of values for points along the upper semicircle.                                Refine your estimate by breaking subdividing the interval into eight equal-width segments, then sixteen.    How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?      The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with sides is , then the perimeter of the inscribed polygon with sides is given by Use this recurrence relation to find the perimeters of the inscribed polygons with , , , , and sides, and verify that they match the results you found in the first exercise.    "
 },
 {
   "id": "sec-approximating-the-circle-2",
@@ -37,40 +37,58 @@ var ptx_lunr_docs = [
   "body": "    Understand how curves locally resemble straight lines when viewed up close.    Approximate lengths or areas by decomposing shapes into small pieces.    Relate familiar geometric ideas to their calculus counterparts.    "
 },
 {
-  "id": "sec-approximating-the-circle-5-1",
+  "id": "sec-approximating-the-circle-16",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-5-1",
+  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "infinitesimal "
+},
+{
+  "id": "sec-approximating-the-circle-17-1",
+  "level": "2",
+  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-17-1",
   "type": "Exercise",
   "number": "1.1.1",
   "title": "",
-  "body": " (Probably can designate this one as an in-class activity)  In this exercise, we will look at a method for approximating . This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.    Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.                 Let's zoom in on the topmost arc of the circle.             O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.    Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)    -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .     Show how your observations can be used to approximate the value of .    Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?    "
+  "body": " In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.    Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.                 Let's zoom in on the topmost arc of the circle.             O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.    Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)    -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .     You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .    Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?    "
 },
 {
-  "id": "sec-approximating-the-circle-5-2",
+  "id": "sec-approximating-the-circle-17-2",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-5-2",
+  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-17-2",
   "type": "Exercise",
   "number": "1.1.2",
   "title": "",
-  "body": " Approximating from the outside with circumscribed hexagons, dodecagons, etc.  "
+  "body": " We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are tangent to the circle, meaning they barely touch the circle at a single point.    Start by circumscribing a regular hexagon around a circle of radius . What is the perimeter of this hexagon?  (Insert figure)    Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.  (Insert figure)  Let's zoom in again on the topmost arc.  (Insert figure)  Find the lengths of segments , , and . Then find the perimeter of the circumscribed dodecagon.    Continue this process of bisecting arcs and constructing tangent lines to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?    How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?    "
 },
 {
-  "id": "sec-approximating-the-circle-5-3",
+  "id": "sec-approximating-the-circle-17-3",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-5-3",
+  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-17-3",
   "type": "Exercise",
   "number": "1.1.3",
   "title": "",
-  "body": " Doing the same thing starting with squares and moving to octagons, etc.  "
+  "body": " Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?  "
 },
 {
-  "id": "sec-approximating-the-circle-5-4",
+  "id": "sec-approximating-the-circle-17-4",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-5-4",
+  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-17-4",
   "type": "Exercise",
   "number": "1.1.4",
   "title": "",
-  "body": " Consider the part of the parabola bounded between and .    Estimate the length of this curve by breaking it into two equal-width segments and estimating with straight lines.    Refine your estimate by breaking it into four equal-width segments.    Refine your estimate by breaking it into eight equal-width segments.    Conjecture the true length of the curve.    (Can probably have a few different versions of this exercise with different curves... might even do a semicircle to show there may be different ways to slice up the same shape)  "
+  "body": " Remember that the equation of a circle of radius in the plane is given by , so the upper semicircle has equation .    Fill in the following table of values for points along the upper semicircle.                                Refine your estimate by breaking subdividing the interval into eight equal-width segments, then sixteen.    How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?    "
+},
+{
+  "id": "sec-approximating-the-circle-17-5",
+  "level": "2",
+  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-17-5",
+  "type": "Exercise",
+  "number": "1.1.5",
+  "title": "",
+  "body": " The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with sides is , then the perimeter of the inscribed polygon with sides is given by Use this recurrence relation to find the perimeters of the inscribed polygons with , , , , and sides, and verify that they match the results you found in the first exercise.  "
 },
 {
   "id": "sec-the-derivative",
@@ -491,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-2-1",
   "type": "Theorem",
-  "number": "1",
+  "number": "2",
   "title": "Squeeze Theorem.",
   "body": " Squeeze Theorem   If for all sufficiently close to , and , then .   "
 },
@@ -500,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-3-1",
   "type": "Theorem",
-  "number": "2",
+  "number": "3",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .   "
 },
@@ -509,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-4-1",
   "type": "Theorem",
-  "number": "3",
+  "number": "4",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem   If is continuous on , then there exist such that for all .   "
 },
@@ -518,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-5-1",
   "type": "Theorem",
-  "number": "4",
+  "number": "5",
   "title": "Mean Value Theorem.",
   "body": " Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .   "
 },
@@ -968,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fourier-series.html#sec-fourier-series-4-4-1-1",
   "type": "Theorem",
-  "number": "5",
+  "number": "6",
   "title": "Fourier Convergence Theorem.",
   "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
 },
@@ -1112,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-4-2-1-1",
   "type": "Theorem",
-  "number": "6",
+  "number": "7",
   "title": "Clairaut’s Theorem.",
   "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
 },
@@ -1724,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-contour-integrals.html#sec-contour-integrals-4-3-1-1",
   "type": "Theorem",
-  "number": "7",
+  "number": "8",
   "title": "ML Inequality.",
   "body": " ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .   "
 },
@@ -1787,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-4-2-1-1",
   "type": "Theorem",
-  "number": "8",
+  "number": "9",
   "title": "Gradient thoerem.",
   "body": " Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then    "
 },
@@ -1814,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-greens-theorem.html#sec-greens-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "9",
+  "number": "10",
   "title": "Green’s theorems.",
   "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:       "
 },
@@ -1841,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-2-1",
   "type": "Theorem",
-  "number": "10",
+  "number": "11",
   "title": "Gauss’s divergence theorem.",
   "body": " Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -1850,7 +1868,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-3-1",
   "type": "Theorem",
-  "number": "11",
+  "number": "12",
   "title": "Stokes’s curl theorem.",
   "body": " Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -1877,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-2-1",
   "type": "Theorem",
-  "number": "12",
+  "number": "13",
   "title": "Cauchy’s integral theorem.",
   "body": " Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .   "
 },
@@ -1886,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-3-1-1",
   "type": "Theorem",
-  "number": "13",
+  "number": "14",
   "title": "Cauchy-Goursat theorem.",
   "body": " Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  "
 },
@@ -1895,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-5-1-1",
   "type": "Theorem",
-  "number": "14",
+  "number": "15",
   "title": "Cauchy-Goursat for simply connected domains.",
   "body": " Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then    "
 },
@@ -1904,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-9-1-1",
   "type": "Theorem",
-  "number": "15",
+  "number": "16",
   "title": "Cauchy’s integral formula.",
   "body": " Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -1913,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-10-1-1",
   "type": "Theorem",
-  "number": "16",
+  "number": "17",
   "title": "Cauchy’s integral formula for derivatives.",
   "body": " Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -1958,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-5-1",
   "type": "Theorem",
-  "number": "17",
+  "number": "18",
   "title": "Cauchy’s residue theorem.",
   "body": " Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then    "
 },
@@ -1967,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-7-1",
   "type": "Theorem",
-  "number": "18",
+  "number": "19",
   "title": "Argument principle.",
   "body": " Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .   "
 },
@@ -1976,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-8-1-1",
   "type": "Theorem",
-  "number": "19",
+  "number": "20",
   "title": "Rouché’s theorem.",
   "body": " Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   "
 },
@@ -2426,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-picards-theorem.html#sec-picards-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "20",
+  "number": "21",
   "title": "Picard-Lindelöf theorem.",
   "body": " Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    "
 },
