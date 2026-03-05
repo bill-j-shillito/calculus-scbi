@@ -249,12 +249,13 @@
 
   <exercises>
     <exercise>
-      <p>
-        In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
-      </p>
-      
-      <ol>
-        <li>
+      <introduction>
+        <p>
+          In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
+        </p>
+      </introduction>
+      <task>
+        <statement>
           <p>
             Start with a regular hexagon inscribed in a circle of radius <m>1</m>. What is the perimeter of this hexagon?
           </p>
@@ -274,8 +275,10 @@
               </diagram>
             </prefigure>
           </image>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose we bisect each of the six arcs of the circle to get a regular <m>12</m>-sided polygon (a dodecagon) inscribed in the circle, as shown below.
             <image width="50%">
@@ -323,30 +326,35 @@
             </image>
             Find the lengths of segments <m>OA</m>, <m>AB</m>, <m>OB</m>, <m>BC</m>, and <m>AC</m>. Then find the perimeter of the dodecagon.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Continue this process of bisecting arcs to get a regular <m>24</m>-sided polygon, then a regular <m>48</m>-sided polygon, and finally a <m>96</m>-sided polygon. What do you notice about the perimeters of these polygons?
           </p>
           <p>
             (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)
           </p>
-          <answer>
-            <p>
-              <m>24</m>-sided polygon: perimeter <m>\approx 6.265</m>
-            </p>
-            <p>
-              <m>48</m>-sided polygon: perimeter <m>\approx 6.278</m>
-            </p>
-            <p>
-              <m>96</m>-sided polygon: perimeter <m>\approx 6.282</m>
-            </p> 
-            <p>
-              These perimeters are getting closer and closer to the circumference of the circle, which is <m>2\pi \approx 6.28318</m>.
-            </p>
-          </answer>
-        </li>
-        <li>
+          
+        </statement>
+        <answer>
+          <p>
+            <m>24</m>-sided polygon: perimeter <m>\approx 6.265</m>
+          </p>
+          <p>
+            <m>48</m>-sided polygon: perimeter <m>\approx 6.278</m>
+          </p>
+          <p>
+            <m>96</m>-sided polygon: perimeter <m>\approx 6.282</m>
+          </p> 
+          <p>
+            These perimeters are getting closer and closer to the circumference of the circle, which is <m>2\pi \approx 6.28318</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
           <p>
             You should have found that the perimeters of the inscribed polygons are approaching the number
             <me>
@@ -364,21 +372,25 @@
               A = \pi r^2
             </me>.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?
           </p>
-        </li>
-      </ol>
+        </statement>
+      </task>
     </exercise>
 
     <exercise>
-      <p>
-        We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are <term>tangent</term> to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.
-      </p>
-      <ol>
-        <li>
+      <introduction>
+        <p>
+          We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are <term>tangent</term> to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.
+        </p>
+      </introduction>
+      <task>
+        <statement>
           <p>
             Start by circumscribing a regular hexagon around a circle of radius <m>1</m>. What is the perimeter of this hexagon?
           </p>
@@ -400,8 +412,10 @@
               </diagram>
             </prefigure>
           </image>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.
           </p>
@@ -480,33 +494,45 @@
           <p>
             Find the lengths of segments <m>AD</m> and <m>AE</m>. Then find the perimeter of the circumscribed dodecagon.
           </p>
+        </statement>
+        <hint>
           <p>
-            Hint: Triangle <m>OCD</m> is similar to triangle <m>EAD</m>.
+            Triangle <m>OCD</m> is similar to triangle <m>EAD</m>.
           </p>
-        </li>
-        <li>
+        </hint>
+      </task>
+      <task>
+        <statement>
           <p>
             Continue this process of bisecting arcs and constructing tangent lines to get a regular <m>24</m>-sided polygon, then a regular <m>48</m>-sided polygon, and finally a <m>96</m>-sided polygon. What do you notice about the perimeters of these polygons?
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?
           </p>
-        </li>
-      </ol>
+        </statement>
+      </task>
     </exercise>
 
     <exercise>
-      <p>
-        Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?
-      </p>
+      <statement>
+        <p>
+          Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?
+        </p>
+      </statement>
     </exercise>
     
     <exercise>
-      <p>Remember that the equation of a circle of radius <m>1</m> in the plane is given by <m>x^2 + y^2 = 1</m>, so the upper semicircle has equation <m>y = \sqrt{1 - x^2}</m>.</p>
-      <ol>
-        <li>
+      <introduction>
+        <p>
+          Remember that the equation of a circle of radius <m>1</m> in the plane is given by <m>x^2 + y^2 = 1</m>, so the upper semicircle has equation <m>y = \sqrt{1 - x^2}</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
           <p>
             Fill in the following table of values for points along the upper semicircle.
           </p>
@@ -541,43 +567,54 @@
           <p>
             Then use the distances between the points in the table to estimate the circumference of the circle.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Refine your estimate by breaking subdividing the interval <m>-1\le x\le 1</m> into eight equal-width segments, then sixteen.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?
           </p>
-        </li>
-      </ol>
+        </statement>
+      </task>
     </exercise>
+
     <exercise>
-      <p>
-        The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with <m>n</m> sides is <m>P_n</m>, then the perimeter of the inscribed polygon with <m>2n</m> sides is given by
-        <me>
-          P_{2n} = 2n\sqrt{2 - \sqrt{2 - \left(\frac{P_n}{2n}\right)^2}}.
-        </me>
-      </p>
-      <ol>
-        <li>
+      <introduction>
+        <p>
+          The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with <m>n</m> sides is <m>P_n</m>, then the perimeter of the inscribed polygon with <m>2n</m> sides is given by
+          <me>
+            P_{2n} = 2n\sqrt{2 - \sqrt{2 - \left(\frac{P_n}{2n}\right)^2}}
+          </me>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
           <p>
             Use this recurrence relation to verify the results of Exercise 1.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Develop a similar recurrence relation for the perimeters of the circumscribed polygons and use it to verify the results of Exercise 2.
           </p>
-        </li>
-        <li>
+        </statement>
+      </task>
+      <task>
+        <statement>
           <p>
             Write a computer program to implement these recurrence relations and use it to compute perimeters of inscribed and circumscribed polygons with more and more sides. How do these values compare to <m>\tau</m> as you increase the number of sides?
           </p>
-        </li>
-      </ol>
+        </statement>
+      </task>
     </exercise>
   </exercises>
 </section>
