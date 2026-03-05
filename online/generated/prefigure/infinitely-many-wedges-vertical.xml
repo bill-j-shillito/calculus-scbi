@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<prefigure xmlns="https://prefigure.org" label="infinitely-many-wedges-vertical" authored-label="">
+      <diagram dimensions="(600,200)" margins="5">
+        <!-- Reference to containing ancestor comes from PreTeXt context     -->
+        <!-- Serial number is from document-wide count of PreFigure diagrams -->
+        <caption>Section 1.1 (5)</caption>
+        <coordinates bbox="(-1,-1,5,1)">
+          <definition>numwedges=128</definition>
+          <definition>n=numwedges//2</definition>
+          <definition>theta=pi/2/n</definition>
+          <definition>thickness=0.25</definition>
+          <definition>start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)</definition>
+          <line p1="start-0.5*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta),1-0.5*cos(theta)" stroke="gray" thickness="1"/>
+          <line p1="start-0.5*sin(theta)+n*2*sin(theta),-0.5*cos(theta)" p2="start-0.5*sin(theta)+n*2*sin(theta),1-0.5*cos(theta)" stroke="gray" thickness="1"/>
+          <repeat parameter="k=0..(n-1)">
+            <line p1="cos(2*k*theta),sin(2*k*theta)" p2="-cos(2*k*theta),-sin(2*k*theta)" stroke="gray" thickness="thickness"/>
+          </repeat>
+          <circle center="(0,0)" radius="1" thickness="2" stroke="black" fill-color="none"/>
+          <repeat parameter="k=1..n">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(-sin(theta),cos(theta))" stroke="gray" thickness="thickness"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <line p1="A" p2="A+(sin(theta),cos(theta))" stroke="gray" thickness="thickness"/>
+          </repeat>
+          <repeat parameter="k=0..(n-1)">
+            <definition>A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))</definition>
+            <definition>B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))</definition>
+            <arc center="A" radius="1" range="(pi/2-theta,pi/2)" degrees="no" stroke="black" thickness="2"/>
+            <arc center="A+(2*sin(theta),0)" radius="1" range="(pi/2,pi/2+theta)" degrees="no" stroke="black" thickness="2"/>
+            <arc center="B" radius="1" range="(3*pi/2-theta,3*pi/2+theta)" degrees="no" stroke="black" thickness="2"/>
+          </repeat>
+        </coordinates>
+      </diagram>
+    </prefigure>

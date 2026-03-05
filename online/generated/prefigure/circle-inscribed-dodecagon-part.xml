@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<prefigure xmlns="https://prefigure.org" label="circle-inscribed-dodecagon-part" authored-label="">
+                <diagram dimensions="(200,200)" margins="5">
+                  <!-- Reference to containing ancestor comes from PreTeXt context     -->
+                  <!-- Serial number is from document-wide count of PreFigure diagrams -->
+                  <caption>Task 1.1.1.b (8)</caption>
+                  <coordinates bbox="(-0.7,-0.2,0.7,1.2)">
+                    <repeat parameter="k=2..4">
+                      <line p1="(0,0)" p2="cos(k*pi/6),sin(k*pi/6)" stroke="gray" thickness="1"/>
+                    </repeat>
+                    <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none"/>
+                    <polygon points="(0,0)+1*(cos(k*pi/6),sin(k*pi/6))" parameter="k=0..11" closed="yes" stroke="red" thickness="2"/>
+                    <polygon points="(0,0)+1*(cos(k*pi/3),sin(k*pi/3))" parameter="k=0..5" closed="yes" stroke="blue" thickness="1"/>
+                    <point p="(0,0)" size="2" alignment="south"> <m>O</m> </point>
+                    <point p="(cos(pi/3),sin(pi/3))" size="2" alignment="northeast"> <m>A</m> </point>
+                    <point p="(0,sin(pi/3))" size="2" alignment="southwest"> <m>B</m> </point>
+                    <point p="(0,1)" size="2" alignment="north"> <m>C</m> </point>
+                    <angle-marker points="((0,0),(0,sin(pi/3)),(cos(pi/3),sin(pi/3)))" thickness="1"/>
+                      clear-background="yes"/&gt;
+                  </coordinates>
+                </diagram>
+              </prefigure>

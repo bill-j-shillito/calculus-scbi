@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<prefigure xmlns="https://prefigure.org" label="circle-circumscribed-dodecagon" authored-label="">
+              <diagram dimensions="(200,200)" margins="5">
+                <!-- Reference to containing ancestor comes from PreTeXt context     -->
+                <!-- Serial number is from document-wide count of PreFigure diagrams -->
+                <caption>Task 1.1.2.b (10)</caption>
+                <coordinates bbox="2/sqrt(3)*(-1,-1,1,1)">
+                  <repeat parameter="k=0..2">
+                    <line p1="2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))" p2="2/sqrt(3)*(cos((k+3)*pi/3),sin((k+3)*pi/3))" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <repeat parameter="k=0..5">
+                    <line p1="2*sqrt(2-sqrt(3))*(cos(k*pi/6+pi/12),sin(k*pi/6+pi/12))" p2="2*sqrt(2-sqrt(3))*(cos((k+6)*pi/6+pi/12),sin((k+6)*pi/6+pi/12))" stroke="gray" thickness="0.5"/>
+                  </repeat>
+                  <repeat parameter="k=0..2">
+                    <line p1="(cos(k*pi/3+pi/6),sin(k*pi/3+pi/6))" p2="(cos((k+3)*pi/3+pi/6),sin((k+3)*pi/3+pi/6))" stroke="gray" thickness="1"/>
+                  </repeat>
+                  <circle center="(0,0)" radius="1" thickness="1" stroke="black" fill-color="none"/>
+                  <polygon points="(0,0)+2/sqrt(3)*(cos(k*pi/3),sin(k*pi/3))" parameter="k=0..5" closed="yes" stroke="blue" thickness="1"/>
+                  <polygon points="(0,0)+2*sqrt(2-sqrt(3))*(cos(k*pi/6+pi/12),sin(k*pi/6+pi/12))" parameter="k=0..11" closed="yes" stroke="red" thickness="2"/>
+                </coordinates>
+              </diagram>
+            </prefigure>
