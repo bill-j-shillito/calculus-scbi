@@ -235,7 +235,7 @@
     In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.
   </p>
   <p>
-    We can identify that the height of the rectangle is the radius <m>r</m> of the circle, and the base is half the circumference <m>C</m>of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area
+    We can identify that the height of the rectangle is the radius <m>r</m> of the circle, and the base is half the circumference <m>C</m> of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area
   </p>
   <me>
     \text{Area} = \text{Base} \times \text{Height} = \frac{1}{2} C\cdot r

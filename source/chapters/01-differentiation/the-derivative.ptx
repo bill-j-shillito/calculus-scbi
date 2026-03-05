@@ -24,73 +24,165 @@
 
 	<introduction>
 		<p>
-			Introduction goes here.
+			Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:
+		</p>
+		<ul>
+			<li>
+				<p>
+					The pressure of a gas depends on its temperature and volume.
+				</p>
+			</li>
+			<li>
+				<p>
+					The demand for a product depends on its price.
+				</p>
+			</li>
+			<li>
+				<p>
+					The speed of a car depends on the pressure applied to the gas pedal.
+				</p>
+			</li>
+			<li>
+				<p>
+					The growth of a bacterial population depends on the amount of nutrients available.
+				</p>
+			</li>
+			<li>
+				<p>
+					The amount of traffic congestion depends on the number of cars on the road.
+				</p>
+			</li>
+			<li>
+				<p>
+					The brightness of a lamp depends on the electrical power supplied to it.
+				</p>
+			</li>
+			<li>
+				<p>
+					The time for a computer to sort a list depends on the number of items in the list.
+				</p>
+			</li>
+		</ul>
+		<p>
+			To understand these relationships, we need a way to quantify how <emph>sensitive</emph> one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?
 		</p>
 	</introduction>
 	
+	<subsection xml:id="subsec-estimating-sensitivity">
+		<title>Estimating sensitivity</title>
+		<p>
+			<term>Kleiber's law</term> is an empirical relationship in biology that describes how the calories an organism needs to consume per day depends on its mass. If an organism with mass <m>m</m> consumes an average of <m>C</m> calories per day, then Kleiber's law states that
+			<me>
+				C=km^{3/4}
+			</me>,
+			where <m>k</m> is a constant proportionality that depends on the units and the type of organism. For example, if we measure mass in pounds, then for mammals, <m>k</m> is approximately <m>42</m>, and we have
+			<me>
+				C=42m^{3/4}
+			</me>.
+			To make it explicit that <m>C</m> depends on <m>m</m> (that is, <m>C</m> is a <term>function</term> of <m>m</m>), we can also write
+			<me>
+				C(m)=42m^{3/4}
+			</me>.
+			For example, if a cat weighs <m>9</m> pounds, we have
+			<md>
+				C(9)=42\cdot 9^{3/4}\approx 218.2834
+			</md>,
+			so it needs to consume about <m>218</m> calories per day.
+		</p>
+		<p>
+			Now, how <emph>sensitive</emph> is the cat's caloric intake to changes in its mass? We can answer this by looking at the effect of such a change and computing the <emph>ratio</emph> of the change in calories to the change in mass.
+		</p>
+		<p>
+			For example, suppose our hypothetical cat gains one pound, that is, <m>\Delta m=1</m> pound. Then the change in daily caloric intake would be
+			<md>
+				<mrow>\Delta C \amp = C(10) - C(9)</mrow>
+				<mrow>\amp = 42\cdot 10^{3/4} - 42\cdot 9^{3/4}</mrow>
+				<mrow>\amp \approx 17.94495\text{ calories}</mrow>
+			</md>.
+			Hence the sensitivity of daily caloric intake to changes in mass over this interval is
+			<md>
+				<mrow>\frac{\Delta C}{\Delta m} \amp = \frac{C(10) - C(9)}{10-9}</mrow>
+				<mrow>\amp \approx \frac{17.94495\text{ calories}}{1\text{ pound}}</mrow>
+				<mrow>\amp \approx 17.94495\text{ calories per pound}</mrow>
+			</md>.
+			We can also look at the sensitivity to a smaller change in mass, such as <m>\Delta m=0.1</m> pounds:
+			<md>
+				<mrow>\frac{\Delta C}{\Delta m} \amp = \frac{C(9.1) - C(9)}{9.1-9}</mrow>
+				<mrow>\amp \approx \frac{1.81614\text{ calories}}{0.1\text{ pounds}}</mrow>
+				<mrow>\amp \approx 18.1614\text{ calories per pound}</mrow>
+			</md>.
+			Notice that this number is close to the value of <m>17.94495</m> we previously got for <m>\Delta m=1</m> pound.
+		</p>
+		<exercise>
+			<statement>
+				<p>
+					Estimate the sensitivity of the cat's caloric intake using <m>\Delta m=0.01</m> pounds and <m>\Delta m=0.001</m> pounds, and compare it to the previous estimates.
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+					Estimate the sensitivity of the cat's caloric intake using <m>\Delta m=-0.1</m> pounds and <m>\Delta m=-0.01</m> pounds, and compare it to the previous estimates.
+				</p>
+			</statement>
+		</exercise>
+	</subsection>
 	
-	<ul>
-		<li>
-			<p>
-	Kleiber's law: 
-				<m>C(m)=km^{3/4}</m>
-			</p>
-		</li>
-		<li>
-			<p>
-				Compare <q>sensitivity</q> of caloric intake to changes in mass for two different points, using approximate slopes between closer-and-closer points
-			</p>
-		</li>
-		<li>
-			<p>
-	Small change is called a differential
-	</p>
-			<p>
-	Notation: 
-				<m>\dd{x}</m>, 
-				<m>\dd{y}</m>
-			</p>
-		</li>
-		<li>
-			<p>
-	Ratio of differentials is the derivative
-	</p>
-			<p>
-	Notation: 
-				<m>\DS\dv{y}{x}=f'(x)</m>
-			</p>
-		</li>
-		<li>
-			<p>
-	Separate and you get 
-				<m>\dd{y}=f'(x)\dd{x}</m>; this will often be the cleanest way to derive new derivative rules
-	
-			</p>
-		</li>
-		<li>
-			<p>
-	Sign analysis
-	
-				<ul>
-					<li>
-						<p>
-			If 
-							<m>\DS\dv{y}{x}&gt;0</m> on an interval, then 
-							<m>f</m> is increasing on that interval
+	<subsection>
+		<title>To be added</title>
+		<ul>
+			<li>
+				<p>
+		Small change is called a differential
+		</p>
+				<p>
+		Notation: 
+					<m>\dd{x}</m>, 
+					<m>\dd{y}</m>
+				</p>
+			</li>
+			<li>
+				<p>
+		Ratio of differentials is the derivative
+		</p>
+				<p>
+		Notation: 
+					<m>\DS\dv{y}{x}=f'(x)</m>
+				</p>
+			</li>
+			<li>
+				<p>
+		Separate and you get 
+					<m>\dd{y}=f'(x)\dd{x}</m>; this will often be the cleanest way to derive new derivative rules
 		
-						</p>
-					</li>
-					<li>
-						<p>
-			If 
-							<m>\DS\dv{y}{x}\lt 0</m> on an interval, then 
-							<m>f</m> is decreasing on that interval
+				</p>
+			</li>
+			<li>
+				<p>
+		Sign analysis
 		
-						</p>
-					</li>
-				</ul>
-			</p>
-		</li>
-	</ul>
+					<ul>
+						<li>
+							<p>
+				If 
+								<m>\DS\dv{y}{x}&gt;0</m> on an interval, then 
+								<m>f</m> is increasing on that interval
+			
+							</p>
+						</li>
+						<li>
+							<p>
+				If 
+								<m>\DS\dv{y}{x}\lt 0</m> on an interval, then 
+								<m>f</m> is decreasing on that interval
+			
+							</p>
+						</li>
+					</ul>
+				</p>
+			</li>
+		</ul>
+	</subsection>
 </section>
 
