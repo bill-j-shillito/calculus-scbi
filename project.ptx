@@ -7,7 +7,8 @@
     <target name="online" source="main.ptx" format="html"
             publication="publication.ptx" deploy-dir="online" />
     <target name="print" source="main.ptx" format="pdf"
-            output-filename="Calculus SCBI.pdf" publication="publication.ptx" />
+            output-filename="Calculus SCBI.pdf" publication="publication.ptx" xsl="latex_aata.xsl"/>
+            <!-- Only using this as a holdover for now until I figure out how xsl files work! -->
 
     <!--
     <target name="slides" source="slides/slides.ptx" format="revealjs"
