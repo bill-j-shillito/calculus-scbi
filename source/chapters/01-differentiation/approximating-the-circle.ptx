@@ -28,7 +28,11 @@
     <em>What is the area of a circle?</em>
   </p>
   <p>
-    You probably already know a formula from previous math classes. But have you ever stopped to wonder where that formula comes from?
+    You probably already know the formula from previous math classes:
+    <me>
+      A = \pi r^2
+    </me>
+    But have you ever stopped to wonder where that formula comes from?
   </p>
   <p>
     In the ancient world, mathematicians needed the answer to this question to design things like temples, storage containers, and astronomical instruments. They of course knew how to calculate areas of simple shapes like rectangles and triangles, as well as polygons that could be broken into these shapes. But a circle has no straight sides, so it doesn't naturally decompose into those familiar pieces.
@@ -244,7 +248,27 @@
     Notice that we've reduced the problem of finding the area of a circle to the problem of finding its circumference. And since the circumference of a circle is proportional to its radius, once we know that constant of proportionality, we can determine the area of a circle from its radius alone. In the exercises below, you'll see how to find this constant by approximating the boundary of the circle with polygons.
   </p>
   <p>
-    Now, you might be a bit skeptical of this idea of using <sq>infinitely many</sq> wedges. If so, you're in good company! This idea of using <term>infinitesimal</term> (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to solve problems in a variety of applied contexts.
+    Now, you might be a bit skeptical of this idea of using <sq>infinitely many</sq> wedges. There are a number of questions you might wonder:
+  </p>
+  <ul>
+    <li>
+      <p>
+        If the wedges are infinitely thin, how do they contribute anything to the area?
+      </p>
+    </li>
+    <li>
+      <p>
+        Can we really think of the top and bottom as straight lines if they are made up of infinitely many tiny bumps?
+      </p>
+    </li>
+    <li>
+      <p>
+        Is it even valid to use the idea of infinitely many infinitely small wedges in the first place?
+      </p>
+    </li>
+  </ul>
+  <p>
+    If you had any of these concerns, you're in good company! This idea of using <term>infinitesimal</term> (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to solve problems in a variety of applied contexts.
   </p>
 
   <exercises>
