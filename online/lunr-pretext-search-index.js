@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The derivative: sensitivity to change",
-  "body": " The derivative: sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Introduction goes here.     Kleiber's law:     Compare sensitivity of caloric intake to changes in mass for two different points, using approximate slopes between closer-and-closer points    Small change is called a differential  Notation: ,     Ratio of differentials is the derivative  Notation:     Separate and you get ; this will often be the cleanest way to derive new derivative rules    Sign analysis   If on an interval, then is increasing on that interval    If on an interval, then is decreasing on that interval       "
+  "body": " The derivative: sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Estimating sensitivity   Kleiber's law is an empirical relationship in biology that describes how the calories an organism needs to consume per day depends on its mass. If an organism with mass consumes an average of calories per day, then Kleiber's law states that , where is a constant proportionality that depends on the units and the type of organism. For example, if we measure mass in pounds, then for mammals, is approximately , and we have . To make it explicit that depends on (that is, is a function of ), we can also write . For example, if a cat weighs pounds, we have , so it needs to consume about calories per day.  Now, how sensitive is the cat's caloric intake to changes in its mass? We can answer this by looking at the effect of such a change and computing the ratio of the change in calories to the change in mass.  For example, suppose our hypothetical cat gains one pound, that is, pound. Then the change in daily caloric intake would be . Hence the sensitivity of daily caloric intake to changes in mass over this interval is . We can also look at the sensitivity to a smaller change in mass, such as pounds: . Notice that this number is close to the value of we previously got for pound.    Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.      Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.      To be added    Small change is called a differential  Notation: ,     Ratio of differentials is the derivative  Notation:     Separate and you get ; this will often be the cleanest way to derive new derivative rules    Sign analysis   If on an interval, then is increasing on that interval    If on an interval, then is decreasing on that interval        "
 },
 {
   "id": "sec-the-derivative-2",
@@ -107,6 +107,33 @@ var ptx_lunr_docs = [
   "number": "1.2",
   "title": "",
   "body": "   Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.    "
+},
+{
+  "id": "subsec-estimating-sensitivity-2",
+  "level": "2",
+  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Kleiber's law function "
+},
+{
+  "id": "subsec-estimating-sensitivity-5",
+  "level": "2",
+  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-5",
+  "type": "Checkpoint",
+  "number": "2",
+  "title": "",
+  "body": "  Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.   "
+},
+{
+  "id": "subsec-estimating-sensitivity-6",
+  "level": "2",
+  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-6",
+  "type": "Checkpoint",
+  "number": "3",
+  "title": "",
+  "body": "  Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.   "
 },
 {
   "id": "sec-differentiating-products-and-powers",
@@ -509,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-2-1",
   "type": "Theorem",
-  "number": "2",
+  "number": "4",
   "title": "Squeeze Theorem.",
   "body": " Squeeze Theorem   If for all sufficiently close to , and , then .   "
 },
@@ -518,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-3-1",
   "type": "Theorem",
-  "number": "3",
+  "number": "5",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .   "
 },
@@ -527,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-4-1",
   "type": "Theorem",
-  "number": "4",
+  "number": "6",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem   If is continuous on , then there exist such that for all .   "
 },
@@ -536,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-5-1",
   "type": "Theorem",
-  "number": "5",
+  "number": "7",
   "title": "Mean Value Theorem.",
   "body": " Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .   "
 },
@@ -986,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fourier-series.html#sec-fourier-series-4-4-1-1",
   "type": "Theorem",
-  "number": "6",
+  "number": "8",
   "title": "Fourier Convergence Theorem.",
   "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
 },
@@ -1130,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-4-2-1-1",
   "type": "Theorem",
-  "number": "7",
+  "number": "9",
   "title": "Clairaut’s Theorem.",
   "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
 },
@@ -1742,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-contour-integrals.html#sec-contour-integrals-4-3-1-1",
   "type": "Theorem",
-  "number": "8",
+  "number": "10",
   "title": "ML Inequality.",
   "body": " ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .   "
 },
@@ -1805,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-4-2-1-1",
   "type": "Theorem",
-  "number": "9",
+  "number": "11",
   "title": "Gradient thoerem.",
   "body": " Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then    "
 },
@@ -1832,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-greens-theorem.html#sec-greens-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "10",
+  "number": "12",
   "title": "Green’s theorems.",
   "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:       "
 },
@@ -1859,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-2-1",
   "type": "Theorem",
-  "number": "11",
+  "number": "13",
   "title": "Gauss’s divergence theorem.",
   "body": " Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -1868,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-3-1",
   "type": "Theorem",
-  "number": "12",
+  "number": "14",
   "title": "Stokes’s curl theorem.",
   "body": " Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -1895,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-2-1",
   "type": "Theorem",
-  "number": "13",
+  "number": "15",
   "title": "Cauchy’s integral theorem.",
   "body": " Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .   "
 },
@@ -1904,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-3-1-1",
   "type": "Theorem",
-  "number": "14",
+  "number": "16",
   "title": "Cauchy-Goursat theorem.",
   "body": " Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  "
 },
@@ -1913,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-5-1-1",
   "type": "Theorem",
-  "number": "15",
+  "number": "17",
   "title": "Cauchy-Goursat for simply connected domains.",
   "body": " Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then    "
 },
@@ -1922,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-9-1-1",
   "type": "Theorem",
-  "number": "16",
+  "number": "18",
   "title": "Cauchy’s integral formula.",
   "body": " Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -1931,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-10-1-1",
   "type": "Theorem",
-  "number": "17",
+  "number": "19",
   "title": "Cauchy’s integral formula for derivatives.",
   "body": " Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -1976,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-5-1",
   "type": "Theorem",
-  "number": "18",
+  "number": "20",
   "title": "Cauchy’s residue theorem.",
   "body": " Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then    "
 },
@@ -1985,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-7-1",
   "type": "Theorem",
-  "number": "19",
+  "number": "21",
   "title": "Argument principle.",
   "body": " Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .   "
 },
@@ -1994,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-8-1-1",
   "type": "Theorem",
-  "number": "20",
+  "number": "22",
   "title": "Rouché’s theorem.",
   "body": " Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   "
 },
@@ -2444,7 +2471,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-picards-theorem.html#sec-picards-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "21",
+  "number": "23",
   "title": "Picard-Lindelöf theorem.",
   "body": " Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    "
 },
