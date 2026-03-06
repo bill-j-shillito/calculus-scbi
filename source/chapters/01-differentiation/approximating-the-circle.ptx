@@ -115,7 +115,7 @@
     </prefigure>
   </image>
   <p>
-    What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom:
+    What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gentle bumps along the top and the bottom:
   </p>
   <image width="100%">
     <prefigure label="8-wedges-vertical" xmlns="https://prefigure.org">
