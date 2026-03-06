@@ -39,6 +39,11 @@
 			</li>
 			<li>
 				<p>
+					The daily calories needed by an organism depends on its mass.
+				</p>
+			</li>
+			<li>
+				<p>
 					The speed of a car depends on the pressure applied to the gas pedal.
 				</p>
 			</li>
@@ -70,94 +75,177 @@
 	
 	<subsection xml:id="subsec-estimating-sensitivity">
 		<title>Estimating sensitivity</title>
+		<aside>
+			<p>
+				Based on data from <url href="https://arachnoid.com/braking_physics/index.html">The Physics Behind Stopping a Car</url> by P. Lutus.
+			</p>
+		</aside>
 		<p>
-			<term>Kleiber's law</term> is an empirical relationship in biology that describes how the calories an organism needs to consume per day depends on its mass. If an organism with mass <m>m</m> consumes an average of <m>C</m> calories per day, then Kleiber's law states that
+			When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance <m>L</m> (measured in car lengths, assuming an average car length of <m>14.7</m> feet) to the speed <m>v</m> (measured in miles per hour) by the formula
 			<me>
-				C=km^{3/4}
-			</me>,
-			where <m>k</m> is a constant proportionality that depends on the units and the type of organism. For example, if we measure mass in pounds, then for mammals, <m>k</m> is approximately <m>42</m>, and we have
-			<me>
-				C=42m^{3/4}
+				L = 0.0034v^2 + 0.15v
 			</me>.
-			To make it explicit that <m>C</m> depends on <m>m</m> (that is, <m>C</m> is a <term>function</term> of <m>m</m>), we can also write
+			To make it explicit that <m>L</m> depends on <m>v</m> (that is, <m>L</m> is a <term>function</term> of <m>v</m>), we can also write
 			<me>
-				C(m)=42m^{3/4}
+				L(v) = 0.0034v^2 + 0.15v
 			</me>.
-			For example, if a cat weighs <m>9</m> pounds, we have
+			For example, if a car is traveling at <m>50</m> miles per hour, we have
 			<md>
-				C(9)=42\cdot 9^{3/4}\approx 218.2834
+				<mrow>L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50</mrow>
+				<mrow> \amp = 16 \text{ car lengths}</mrow>
 			</md>,
-			so it needs to consume about <m>218</m> calories per day.
+			so the model predicts a stopping distance of <m>16</m> car lengths (or approximately <m>235.2</m> feet).
 		</p>
 		<p>
-			Now, how <emph>sensitive</emph> is the cat's caloric intake to changes in its mass? We can answer this by looking at the effect of such a change and computing the <emph>ratio</emph> of the change in calories to the change in mass.
+			Now, how <emph>sensitive</emph> is the stopping distance to changes in speed? We can answer this by looking at the effect of such a change and computing the <emph>ratio</emph> of the change in stopping distance to the change in speed.
 		</p>
 		<p>
-			For example, suppose our hypothetical cat gains one pound, that is, <m>\Delta m=1</m> pound. Then the change in daily caloric intake would be
+			For example, suppose the speed increases by five miles per hour, that is,
 			<md>
-				<mrow>\Delta C \amp = C(10) - C(9)</mrow>
-				<mrow>\amp = 42\cdot 10^{3/4} - 42\cdot 9^{3/4}</mrow>
-				<mrow>\amp \approx 17.94495\text{ calories}</mrow>
+				<mrow>\Delta v \amp = v\tsub{final} - v\tsub{init}</mrow>
+				<mrow>\amp = 55 - 50</mrow>
+				<mrow>\amp = 5</mrow>
 			</md>.
-			Hence the sensitivity of daily caloric intake to changes in mass over this interval is
+			
+			Then the change in stopping distance would be
 			<md>
-				<mrow>\frac{\Delta C}{\Delta m} \amp = \frac{C(10) - C(9)}{10-9}</mrow>
-				<mrow>\amp \approx \frac{17.94495\text{ calories}}{1\text{ pound}}</mrow>
-				<mrow>\amp \approx 17.94495\text{ calories per pound}</mrow>
+				<mrow>\Delta L \amp = L\tsub{final} - L\tsub{init}</mrow>
+				<mrow>\amp = L(55) - L(50)</mrow>
+				<mrow>\amp = (0.0034\cdot 55^2 + 0.15\cdot 55) - (0.0034\cdot 50^2 + 0.15\cdot 50)</mrow>
+				<mrow>\amp = 2.535\text{ car lengths}</mrow>
 			</md>.
-			We can also look at the sensitivity to a smaller change in mass, such as <m>\Delta m=0.1</m> pounds:
+			Hence the sensitivity of stopping distance to changes in speed over this interval is
 			<md>
-				<mrow>\frac{\Delta C}{\Delta m} \amp = \frac{C(9.1) - C(9)}{9.1-9}</mrow>
-				<mrow>\amp \approx \frac{1.81614\text{ calories}}{0.1\text{ pounds}}</mrow>
-				<mrow>\amp \approx 18.1614\text{ calories per pound}</mrow>
+				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(55) - L(50)}{55-50}</mrow>
+				<mrow>\amp = \frac{2.535\text{ car lengths}}{5\text{ mph}}</mrow>
+				<mrow>\amp = 0.507\text{ car lengths per mph}</mrow>
 			</md>.
-			Notice that this number is close to the value of <m>17.94495</m> we previously got for <m>\Delta m=1</m> pound.
+			That is, each extra mile per hour of speed means it takes another half of a car length to stop.
 		</p>
-		<exercise>
-			<statement>
+		<p>
+			We can visualize this computation by plotting the stopping distance function <m>L(v)</m>:
+		</p>
+		<aside>
+			<p>
+				Will figure out how to make this graph better.
+			</p>
+		</aside>
+		<image width="75%">
+			<prefigure label="stopping-distance" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<line p1="(a,f(a))" p2="(b,f(a))"/>
+					<line p1="(b,f(a))" p2="(b,f(b))"/>
+					<point p="(a,f(a))" alignment="ne"/>
+					<point p="(b,f(b))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
+		<p>
+			Notice that the sensitivity we've calculated is the <emph>slope</emph> of the line connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
+		</p>
+	</subsection>
+
+	<subsection xml:id="subsec-differentials-and-derivatives">
+		<title>Differentials and derivatives</title>
+		<p>
+			Our calculation of the sensitivity above was rather coarse, since over an increase of five miles per hour, the graph gets slightly steeper as we go. What we'd really like is a more precise measure of sensitivity <emph>at</emph> a particular speed <mdash/> the slope of the graph <emph>at</emph> the point <m>(50,16)</m>. We can visualize this slope as the slope of the <term>tangent</term> line to the graph at that point, since at that point, if we zoom in close enough, the tangent line is indistinguishable from the graph itself.
+		</p>
+		<image width="75%">
+			<prefigure label="stopping-distance-with-tangent" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<tangent-line at="tangent" function="f" point="a"/>
+					<point p="(a,f(a))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
+		<p>
+			Since slope requires two points, we can't just use the slope formula. However, we can get a good approximation by simply looking at a small change in speed, such as <m>\Delta v=0.1</m> mph:
+			<md>
+				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(50.1) - L(50)}{50.1-50}</mrow>
+				<mrow>\amp = \frac{0.049034\text{ car lengths}}{0.1\text{ mph}}</mrow>
+				<mrow>\amp = 0.49034\text{ car lengths per mph}</mrow>
+			</md>.
+		</p>
+		<activity>
+			<introduction>
 				<p>
-					Estimate the sensitivity of the cat's caloric intake using <m>\Delta m=0.01</m> pounds and <m>\Delta m=0.001</m> pounds, and compare it to the previous estimates.
+					Estimate the sensitivity of the stopping distance using the following values of <m>\Delta v</m> (comparing with a speed of <m>v\tsub{init}=50</m> mph). What do you notice about the values you get?
 				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<statement>
-				<p>
-					Estimate the sensitivity of the cat's caloric intake using <m>\Delta m=-0.1</m> pounds and <m>\Delta m=-0.01</m> pounds, and compare it to the previous estimates.
-				</p>
-			</statement>
-		</exercise>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=0.01</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=0.001</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=-0.1</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=-0.01</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=-0.001</m> mph
+					</p>
+				</statement>
+			</task>
+		</activity>
+		<p>
+			You should have noticed in the previous activity that as the change in speed gets smaller, the sensitivity approaches a particular value, which seems to be around <m>0.49</m> car lengths per mph. This is similar to what you saw in the previous section, when the circumference of the circle approached <m>2\pi</m> more and more closely as we made better and better approximations.
+		</p>
+		
+		<p>
+			Unfortunately, these are still approximations of the sensitivity. However, if we imagine zooming in <sq>infinitely close</sq> to the point <m>(50,16)</m>, we could imagine that the graph of <m>L(b)</m> would perfectly match the tangent line at that point. So we might imagine that if we choose two points that are <sq>infinitely close</sq> to each other, then the slope of the line between these two points would be the same as the slope of the tangent line.
+		</p>
+		<p>
+			(Insert figure)
+		</p>
+		<p>
+			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>.
+			This ratio is called the <term>derivative</term> of <m>L</m> with respect to <m>v</m>, and it gives us a precise measure of the sensitivity of stopping distance to changes in speed at any particular point. We'll soon show that this derivative is indeed exactly <m>0.49</m> car lengths per mph at <m>v=50</m> mph. Another way to write this is
+			<me>
+				\dd{L}=0.49\dd{v}
+			</me>; that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is <m>0.49</m> times as large.
+		</p>
+		<p>
+			Over the next couple of sections, we'll be developing a number of techniques to compute differentials and derivatives exactly without having to rely on approximations. We'll also see how these concepts can be used to solve a number of real-world problems.
+		</p>
 	</subsection>
 	
 	<subsection>
 		<title>To be added</title>
 		<ul>
-			<li>
-				<p>
-		Small change is called a differential
-		</p>
-				<p>
-		Notation: 
-					<m>\dd{x}</m>, 
-					<m>\dd{y}</m>
-				</p>
-			</li>
-			<li>
-				<p>
-		Ratio of differentials is the derivative
-		</p>
-				<p>
-		Notation: 
-					<m>\DS\dv{y}{x}=f'(x)</m>
-				</p>
-			</li>
-			<li>
-				<p>
-		Separate and you get 
-					<m>\dd{y}=f'(x)\dd{x}</m>; this will often be the cleanest way to derive new derivative rules
-		
-				</p>
-			</li>
 			<li>
 				<p>
 		Sign analysis

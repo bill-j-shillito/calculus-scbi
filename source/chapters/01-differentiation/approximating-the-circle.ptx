@@ -275,8 +275,13 @@
     <exercise>
       <introduction>
         <p>
-          In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.
+          In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD. It doesn't require any trigonometry <mdash/> just the Pythagorean theorem and some algebra.
         </p>
+        <aside>
+          <p>
+            In China, the Pythagorean theorem is often called the <q>Gougu theorem</q>, after the two legs of a right triangle, which are called <q>gou</q> and <q>gu</q>.
+          </p>
+        </aside>
       </introduction>
       <task>
         <statement>
@@ -300,6 +305,11 @@
             </prefigure>
           </image>
         </statement>
+        <hint>
+          <p>
+            Remember that a <term>regular</term> hexagon has six equal sides and six equal angles. If you split it into six triangles as shown, what kind of triangle do you get?
+          </p>
+        </hint>
       </task>
       <task>
         <statement>
