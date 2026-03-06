@@ -69,7 +69,7 @@
 			</li>
 		</ul>
 		<p>
-			To understand these relationships, we need a way to quantify how <emph>sensitive</emph> one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?
+			To understand these relationships, we need a way to quantify how <em>sensitive</em> one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?
 		</p>
 	</introduction>
 	
@@ -97,7 +97,7 @@
 			so the model predicts a stopping distance of <m>16</m> car lengths (or approximately <m>235.2</m> feet).
 		</p>
 		<p>
-			Now, how <emph>sensitive</emph> is the stopping distance to changes in speed? We can answer this by looking at the effect of such a change and computing the <emph>ratio</emph> of the change in stopping distance to the change in speed.
+			Now, how <em>sensitive</em> is the stopping distance to changes in speed? We can answer this by looking at the effect of such a change and computing the <em>ratio</em> of the change in stopping distance to the change in speed.
 		</p>
 		<p>
 			For example, suppose the speed increases by five miles per hour, that is,
@@ -148,14 +148,14 @@
 			</prefigure>
 		</image>
 		<p>
-			Notice that the sensitivity we've calculated is the <emph>slope</emph> of the line connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
+			Notice that the sensitivity we've calculated is the <em>slope</em> of the line connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
 		</p>
 	</subsection>
 
 	<subsection xml:id="subsec-differentials-and-derivatives">
 		<title>Differentials and derivatives</title>
 		<p>
-			Our calculation of the sensitivity above was somewhat coarse, since over an increase of five miles per hour, the graph gets gradually steeper as we go. What we'd really like is a more precise measure of sensitivity <emph>at</emph> a particular speed <mdash/> the slope of the graph <emph>at</emph> the point <m>(50,16)</m>. We can visualize this slope as the slope of the <term>tangent</term> line to the graph at that point, since at that point, as we zoom in closer and closer, the tangent line becomes more and more indistinguishable from the graph itself.
+			Our calculation of the sensitivity above was somewhat coarse, since over an increase of five miles per hour, the graph gets gradually steeper as we go. What we'd really like is a more precise measure of sensitivity <em>at</em> a particular speed <mdash/> the slope of the graph <em>at</em> the point <m>(50,16)</m>. We can visualize this slope as the slope of the <term>tangent</term> line to the graph at that point, since at that point, as we zoom in closer and closer, the tangent line becomes more and more indistinguishable from the graph itself.
 		</p>
 		<image width="75%">
 			<prefigure label="stopping-distance-with-tangent" xmlns="https://prefigure.org">
@@ -251,7 +251,7 @@
 		<ul>
 			<li>
 				<p>
-					If <m>\DS\dv{y}{x} \gt 0</m> throughout some interval <m>a\le x\le b</m>, then if we increase the value of <m>x</m>, the value of <m>y</m> will also increase. (Likewise, if we <emph>decrease</emph> the value of <m>x</m>, the value of <m>y</m> will also decrease.) Thus we say that <m>y</m> is an <term>increasing</term> function of <m>x</m> on that interval.
+					If <m>\DS\dv{y}{x} \gt 0</m> throughout some interval <m>a\le x\le b</m>, then if we increase the value of <m>x</m>, the value of <m>y</m> will also increase. (Likewise, if we <em>decrease</em> the value of <m>x</m>, the value of <m>y</m> will also decrease.) Thus we say that <m>y</m> is an <term>increasing</term> function of <m>x</m> on that interval.
 				</p>
 			</li>
 			<li>
@@ -290,7 +290,7 @@
 			Thus, when the independent variable is time, we can interpret the derivative as a <term>rate of change</term>; in this case, <m>\DS\dv{h}{t}</m> tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.
 		</p>
 		<p>
-			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <emph>relationship</emph> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <emph>in response</emph> to a change in the input. This is why we've chosen to use the more careful phrasing <sq><m>y</m> is an increasing function <emph>of</emph> <m>x</m> on the interval <m>a\le x\le b</m></sq> rather than simply saying <sq><m>y</m> is increasing</sq>.
+			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. This is why we've chosen to use the more careful phrasing <sq><m>y</m> is an increasing function <em>of</em> <m>x</m> on the interval <m>a\le x\le b</m></sq> rather than simply saying <sq><m>y</m> is increasing</sq>.
 		</p>
 	</subsection>
 </section>
