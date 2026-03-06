@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Approximating the circle",
-  "body": " Approximating the circle     Approximate the length or area of a curved shape using polygons or wedges.    Improve that approximation by refining the decomposition into smaller pieces.    Visualize a curved shape as being composed of infinitely many infinitesimal pieces.      What is the area of a circle?   You probably already know the formula from previous math classes: But have you ever stopped to wonder where that formula comes from?  In the ancient world, mathematicians needed the answer to this question to design things like temples, storage containers, and astronomical instruments. They of course knew how to calculate areas of simple shapes like rectangles and triangles, as well as polygons that could be broken into these shapes. But a circle has no straight sides, so it doesn't naturally decompose into those familiar pieces.  Put yourself in the place of one of those ancient mathematicians. How might you go about solving this problem?  A natural idea might be to see what pieces you can break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram.      numwedges=4  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+sqrt(2)\/2       A=(start+2*k*sin(theta),-0.5*cos(theta))     A=(start+2*k*sin(theta),-0.5*cos(theta))     A=(start+2*k*sin(theta),-0.5*cos(theta))  B=(start+sin(theta)+2*k*sin(theta),0.5*cos(theta))         If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.      numwedges=4  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom:      numwedges=8  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          If we start with sixteen wedges, the bumps are smaller still:      numwedges=16  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          Each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.  So here's an interesting idea: what if we used infinitely many wedges?      numwedges=128  n=numwedges\/\/2  theta=pi\/2\/n  thickness=0.25  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.  We can identify that the height of the rectangle is the radius of the circle, and the base is half the circumference of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area  . Notice that we've reduced the problem of finding the area of a circle to the problem of finding its circumference. And since the circumference of a circle is proportional to its radius, once we know that constant of proportionality, we can determine the area of a circle from its radius alone. In the exercises below, you'll see how to find this constant by approximating the boundary of the circle with polygons.  Now, you might be a bit skeptical of this idea of using infinitely many wedges. There are a number of questions you might wonder:    If the wedges are infinitely thin, how do they contribute anything to the area?    Can we really think of the top and bottom as straight lines if they are made up of infinitely many tiny bumps?    Is it even valid to use the idea of infinitely many infinitely small wedges in the first place?    If you had any of these concerns, you're in good company! This idea of using infinitesimal (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to solve problems in a variety of applied contexts.     In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.     Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                   Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.              Let's zoom in on the topmost arc of the circle.            O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.      Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)     -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .      You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .      Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?       We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are tangent to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.     Start by circumscribing a regular hexagon around a circle of radius . What is the perimeter of this hexagon?                      Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.                      Let's zoom in again on the topmost arc.                  O=(0,0)  A=(cos(pi\/3),sin(pi\/3))  C=(0,1)  D=2\/sqrt(3)*(cos(pi\/3),sin(pi\/3))  E=2*sqrt(2-sqrt(3))*(cos(5*pi\/12),sin(5*pi\/12))   O    A    C    D    E   clear-background=\"yes\"\/> clear-background=\"yes\"\/>     Find the lengths of segments and . Then find the perimeter of the circumscribed dodecagon.    Triangle is similar to triangle .      Continue this process of bisecting arcs and constructing tangent lines to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?      How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?       Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?      Remember that the equation of a circle of radius in the plane is given by , so the upper semicircle has equation .     Fill in the following table of values for points along the upper semicircle.                              Then use the distances between the points in the table to estimate the circumference of the circle.      Refine your estimate by breaking subdividing the interval into eight equal-width segments, then sixteen.      How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?       The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with sides is , then the perimeter of the inscribed polygon with sides is given by .     Use this recurrence relation to verify the results of Exercise 1.      Develop a similar recurrence relation for the perimeters of the circumscribed polygons and use it to verify the results of Exercise 2.      Write a computer program to implement these recurrence relations and use it to compute perimeters of inscribed and circumscribed polygons with more and more sides. How do these values compare to as you increase the number of sides?      "
+  "body": " Approximating the circle     Approximate the length or area of a curved shape using polygons or wedges.    Improve that approximation by refining the decomposition into smaller pieces.    Visualize a curved shape as being composed of infinitely many infinitesimal pieces.      What is the area of a circle?   You probably already know the formula from previous math classes: But have you ever stopped to wonder where that formula comes from?  In the ancient world, mathematicians needed the answer to this question to design things like temples, storage containers, and astronomical instruments. They of course knew how to calculate areas of simple shapes like rectangles and triangles, as well as polygons that could be broken into these shapes. But a circle has no straight sides, so it doesn't naturally decompose into those familiar pieces.  Put yourself in the place of one of those ancient mathematicians. How might you go about solving this problem?  A natural idea might be to see what pieces you can break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram.      numwedges=4  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+sqrt(2)\/2       A=(start+2*k*sin(theta),-0.5*cos(theta))     A=(start+2*k*sin(theta),-0.5*cos(theta))     A=(start+2*k*sin(theta),-0.5*cos(theta))  B=(start+sin(theta)+2*k*sin(theta),0.5*cos(theta))         If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.      numwedges=4  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gently bumps along the top and the bottom:      numwedges=8  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          If we start with sixteen wedges, the bumps are smaller still:      numwedges=16  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          Each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.  So here's an interesting idea: what if we used infinitely many wedges?      numwedges=128  n=numwedges\/\/2  theta=pi\/2\/n  thickness=0.25  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.  We can identify that the height of the rectangle is the radius of the circle, and the base is half the circumference of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area  . Notice that we've reduced the problem of finding the area of a circle to the problem of finding its circumference. And since the circumference of a circle is proportional to its radius, once we know that constant of proportionality, we can determine the area of a circle from its radius alone. In the exercises below, you'll see how to find this constant by approximating the boundary of the circle with polygons.  Now, you might be a bit skeptical of this idea of using infinitely many wedges. There are a number of questions you might wonder:    If the wedges are infinitely thin, how do they contribute anything to the area?    Can we really think of the top and bottom as straight lines if they are made up of infinitely many tiny bumps?    Is it even valid to use the idea of infinitely many infinitely small wedges in the first place?    If you had any of these concerns, you're in good company! This idea of using infinitesimal (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to solve problems in a variety of applied contexts.     In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD. It doesn't require any trigonometry just the Pythagorean theorem and some algebra.   In China, the Pythagorean theorem is often called the Gougu theorem , after the two legs of a right triangle, which are called gou and gu .      Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Remember that a regular hexagon has six equal sides and six equal angles. If you split it into six triangles as shown, what kind of triangle do you get?      Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.              Let's zoom in on the topmost arc of the circle.            O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.      Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)     -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .      You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .      Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?       We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are tangent to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.     Start by circumscribing a regular hexagon around a circle of radius . What is the perimeter of this hexagon?                      Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.                      Let's zoom in again on the topmost arc.                  O=(0,0)  A=(cos(pi\/3),sin(pi\/3))  C=(0,1)  D=2\/sqrt(3)*(cos(pi\/3),sin(pi\/3))  E=2*sqrt(2-sqrt(3))*(cos(5*pi\/12),sin(5*pi\/12))   O    A    C    D    E   clear-background=\"yes\"\/> clear-background=\"yes\"\/>     Find the lengths of segments and . Then find the perimeter of the circumscribed dodecagon.    Triangle is similar to triangle .      Continue this process of bisecting arcs and constructing tangent lines to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?      How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?       Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?      Remember that the equation of a circle of radius in the plane is given by , so the upper semicircle has equation .     Fill in the following table of values for points along the upper semicircle.                              Then use the distances between the points in the table to estimate the circumference of the circle.      Refine your estimate by breaking subdividing the interval into eight equal-width segments, then sixteen.      How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?       The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with sides is , then the perimeter of the inscribed polygon with sides is given by .     Use this recurrence relation to verify the results of Exercise 1.      Develop a similar recurrence relation for the perimeters of the circumscribed polygons and use it to verify the results of Exercise 2.      Write a computer program to implement these recurrence relations and use it to compute perimeters of inscribed and circumscribed polygons with more and more sides. How do these values compare to as you increase the number of sides?      "
 },
 {
   "id": "sec-approximating-the-circle-2",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.1.1",
   "title": "",
-  "body": "  In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD.     Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                   Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.              Let's zoom in on the topmost arc of the circle.            O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.      Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)     -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .      You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .      Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?    "
+  "body": "  In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD. It doesn't require any trigonometry just the Pythagorean theorem and some algebra.   In China, the Pythagorean theorem is often called the Gougu theorem , after the two legs of a right triangle, which are called gou and gu .      Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Remember that a regular hexagon has six equal sides and six equal angles. If you split it into six triangles as shown, what kind of triangle do you get?      Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.              Let's zoom in on the topmost arc of the circle.            O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.      Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)     -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .      You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .      Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?    "
 },
 {
   "id": "sec-approximating-the-circle-25-2",
@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The derivative: sensitivity to change",
-  "body": " The derivative: sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Estimating sensitivity   Kleiber's law is an empirical relationship in biology that describes how the calories an organism needs to consume per day depends on its mass. If an organism with mass consumes an average of calories per day, then Kleiber's law states that , where is a constant proportionality that depends on the units and the type of organism. For example, if we measure mass in pounds, then for mammals, is approximately , and we have . To make it explicit that depends on (that is, is a function of ), we can also write . For example, if a cat weighs pounds, we have , so it needs to consume about calories per day.  Now, how sensitive is the cat's caloric intake to changes in its mass? We can answer this by looking at the effect of such a change and computing the ratio of the change in calories to the change in mass.  For example, suppose our hypothetical cat gains one pound, that is, pound. Then the change in daily caloric intake would be . Hence the sensitivity of daily caloric intake to changes in mass over this interval is . We can also look at the sensitivity to a smaller change in mass, such as pounds: . Notice that this number is close to the value of we previously got for pound.    Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.      Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.      To be added    Small change is called a differential  Notation: ,     Ratio of differentials is the derivative  Notation:     Separate and you get ; this will often be the cleanest way to derive new derivative rules    Sign analysis   If on an interval, then is increasing on that interval    If on an interval, then is decreasing on that interval        "
+  "body": " The derivative: sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The daily calories needed by an organism depends on its mass.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Estimating sensitivity   Based on data from The Physics Behind Stopping a Car by P. Lutus.   When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance (measured in car lengths, assuming an average car length of feet) to the speed (measured in miles per hour) by the formula . To make it explicit that depends on (that is, is a function of ), we can also write . For example, if a car is traveling at miles per hour, we have , so the model predicts a stopping distance of car lengths (or approximately feet).  Now, how sensitive is the stopping distance to changes in speed? We can answer this by looking at the effect of such a change and computing the ratio of the change in stopping distance to the change in speed.  For example, suppose the speed increases by five miles per hour, that is, . Then the change in stopping distance would be . Hence the sensitivity of stopping distance to changes in speed over this interval is . That is, each extra mile per hour of speed means it takes another half of a car length to stop.  We can visualize this computation by plotting the stopping distance function :   Will figure out how to make this graph better.      f(x)=0.0034*x^2+0.15*x  a = 50  b = 55             Notice that the sensitivity we've calculated is the slope of the line connecting the points and .    Differentials and derivatives  Our calculation of the sensitivity above was rather coarse, since over an increase of five miles per hour, the graph gets slightly steeper as we go. What we'd really like is a more precise measure of sensitivity at a particular speed the slope of the graph at the point . We can visualize this slope as the slope of the tangent line to the graph at that point, since at that point, if we zoom in close enough, the tangent line is indistinguishable from the graph itself.     f(x)=0.0034*x^2+0.15*x  a = 50           Since slope requires two points, we can't just use the slope formula. However, we can get a good approximation by simply looking at a small change in speed, such as mph: .    Estimate the sensitivity of the stopping distance using the following values of (comparing with a speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph     You should have noticed in the previous activity that as the change in speed gets smaller, the sensitivity approaches a particular value, which seems to be around car lengths per mph. This is similar to what you saw in the previous section, when the circumference of the circle approached more and more closely as we made better and better approximations.  Unfortunately, these are still approximations of the sensitivity. However, if we imagine zooming in infinitely close to the point , we could imagine that the graph of would perfectly match the tangent line at that point. So we might imagine that if we choose two points that are infinitely close to each other, then the slope of the line between these two points would be the same as the slope of the tangent line.  (Insert figure)  We call these infinitely small changes differentials , and we represent them with a lowercase : in this case, we would write to denote an infinitesimal change in speed, and to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written . This ratio is called the derivative of with respect to , and it gives us a precise measure of the sensitivity of stopping distance to changes in speed at any particular point. We'll soon show that this derivative is indeed exactly car lengths per mph at mph. Another way to write this is ; that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is times as large.  Over the next couple of sections, we'll be developing a number of techniques to compute differentials and derivatives exactly without having to rely on approximations. We'll also see how these concepts can be used to solve a number of real-world problems.    To be added    Sign analysis   If on an interval, then is increasing on that interval    If on an interval, then is decreasing on that interval        "
 },
 {
   "id": "sec-the-derivative-2",
@@ -109,31 +109,40 @@ var ptx_lunr_docs = [
   "body": "   Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.    "
 },
 {
-  "id": "subsec-estimating-sensitivity-2",
+  "id": "subsec-estimating-sensitivity-3",
   "level": "2",
-  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-2",
+  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Kleiber's law function "
+  "body": "function "
 },
 {
-  "id": "subsec-estimating-sensitivity-5",
+  "id": "subsec-differentials-and-derivatives-2",
   "level": "2",
-  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-5",
-  "type": "Checkpoint",
-  "number": "2",
+  "url": "sec-the-derivative.html#subsec-differentials-and-derivatives-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
   "title": "",
-  "body": "  Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.   "
+  "body": "tangent "
 },
 {
-  "id": "subsec-estimating-sensitivity-6",
+  "id": "subsec-differentials-and-derivatives-5",
   "level": "2",
-  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-6",
-  "type": "Checkpoint",
-  "number": "3",
+  "url": "sec-the-derivative.html#subsec-differentials-and-derivatives-5",
+  "type": "Activity",
+  "number": "1",
   "title": "",
-  "body": "  Estimate the sensitivity of the cat's caloric intake using pounds and pounds, and compare it to the previous estimates.   "
+  "body": "  Estimate the sensitivity of the stopping distance using the following values of (comparing with a speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph    "
+},
+{
+  "id": "subsec-differentials-and-derivatives-9",
+  "level": "2",
+  "url": "sec-the-derivative.html#subsec-differentials-and-derivatives-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "differentials derivative "
 },
 {
   "id": "sec-differentiating-products-and-powers",
@@ -536,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-2-1",
   "type": "Theorem",
-  "number": "4",
+  "number": "2",
   "title": "Squeeze Theorem.",
   "body": " Squeeze Theorem   If for all sufficiently close to , and , then .   "
 },
@@ -545,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-3-1",
   "type": "Theorem",
-  "number": "5",
+  "number": "3",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .   "
 },
@@ -554,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-4-1",
   "type": "Theorem",
-  "number": "6",
+  "number": "4",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem   If is continuous on , then there exist such that for all .   "
 },
@@ -563,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-5-1",
   "type": "Theorem",
-  "number": "7",
+  "number": "5",
   "title": "Mean Value Theorem.",
   "body": " Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .   "
 },
@@ -1013,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fourier-series.html#sec-fourier-series-4-4-1-1",
   "type": "Theorem",
-  "number": "8",
+  "number": "6",
   "title": "Fourier Convergence Theorem.",
   "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
 },
@@ -1157,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-4-2-1-1",
   "type": "Theorem",
-  "number": "9",
+  "number": "7",
   "title": "Clairaut’s Theorem.",
   "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
 },
@@ -1769,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-contour-integrals.html#sec-contour-integrals-4-3-1-1",
   "type": "Theorem",
-  "number": "10",
+  "number": "8",
   "title": "ML Inequality.",
   "body": " ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .   "
 },
@@ -1832,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-4-2-1-1",
   "type": "Theorem",
-  "number": "11",
+  "number": "9",
   "title": "Gradient thoerem.",
   "body": " Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then    "
 },
@@ -1859,7 +1868,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-greens-theorem.html#sec-greens-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "12",
+  "number": "10",
   "title": "Green’s theorems.",
   "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:       "
 },
@@ -1886,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-2-1",
   "type": "Theorem",
-  "number": "13",
+  "number": "11",
   "title": "Gauss’s divergence theorem.",
   "body": " Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -1895,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-3-1",
   "type": "Theorem",
-  "number": "14",
+  "number": "12",
   "title": "Stokes’s curl theorem.",
   "body": " Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -1922,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-2-1",
   "type": "Theorem",
-  "number": "15",
+  "number": "13",
   "title": "Cauchy’s integral theorem.",
   "body": " Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .   "
 },
@@ -1931,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-3-1-1",
   "type": "Theorem",
-  "number": "16",
+  "number": "14",
   "title": "Cauchy-Goursat theorem.",
   "body": " Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  "
 },
@@ -1940,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-5-1-1",
   "type": "Theorem",
-  "number": "17",
+  "number": "15",
   "title": "Cauchy-Goursat for simply connected domains.",
   "body": " Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then    "
 },
@@ -1949,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-9-1-1",
   "type": "Theorem",
-  "number": "18",
+  "number": "16",
   "title": "Cauchy’s integral formula.",
   "body": " Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -1958,7 +1967,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-10-1-1",
   "type": "Theorem",
-  "number": "19",
+  "number": "17",
   "title": "Cauchy’s integral formula for derivatives.",
   "body": " Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -2003,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-5-1",
   "type": "Theorem",
-  "number": "20",
+  "number": "18",
   "title": "Cauchy’s residue theorem.",
   "body": " Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then    "
 },
@@ -2012,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-7-1",
   "type": "Theorem",
-  "number": "21",
+  "number": "19",
   "title": "Argument principle.",
   "body": " Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .   "
 },
@@ -2021,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-8-1-1",
   "type": "Theorem",
-  "number": "22",
+  "number": "20",
   "title": "Rouché’s theorem.",
   "body": " Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   "
 },
@@ -2471,7 +2480,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-picards-theorem.html#sec-picards-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "23",
+  "number": "21",
   "title": "Picard-Lindelöf theorem.",
   "body": " Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    "
 },
