@@ -272,7 +272,7 @@
 		<ul>
 			<li>
 				<p>
-					At the beginning, the slope <m>\DS\dv{h}{t}</m> is positive, which means the ball is rising. It can be shown that when <m>t=0</m>, the slope is <m>16</m> feet per second, which is the initial velocity with which the ball was thrown.
+					At the beginning, the slope <m>\DS\dv{h}{t}</m> is positive, which means the ball is rising.
 				</p>
 			</li>
 			<li>
@@ -282,7 +282,7 @@
 			</li>
 			<li>
 				<p>
-					After that, the slope <m>\DS\dv{h}{t}</m> is negative, which means the ball is falling. It can be shown that when <m>t=2</m> seconds, the slope is <m>-16</m> feet per second, which is the velocity with which the ball hits the ground.
+					After that, the slope <m>\DS\dv{h}{t}</m> is negative, which means the ball is falling.
 				</p>
 			</li>
 		</ul>
