@@ -48,34 +48,61 @@
 
     <li>
       <p>
-        We find that the solution curves are always exponential curves
+        We find that the solution curves are always exponential curves. When <m>k=1</m>, we have <m>\DS\dv{y}{t}=y</m>, so we'll call the solution for which <m>y(0)=1</m> the <term>exponential function</term> and label it <m>y=\exp(t)</m>.
       </p>
     </li>
 
     <li>
       <p>
-        When <m>k=1</m>, the solution for which <m>y(0)=1</m> gives <m>y(1)=\ee</m>, so the solution must be the exponential function <m>\ee^{x}</m>.
-        That is, we have:
+        By properties of derivatives, we know that the solution of <m>\DS\dv{y}{t}=y</m> with <m>y(0)=c</m> must be <m>y=c\exp(t)</m>. In particular, the solution of <m>\DS\dv{y}{t}=y</m> with <m>y(0)=\exp(a)</m> must be <m>y=\exp(a)\exp(t)</m>.
+      </p>
+      <p>
+        However, using the Chain Rule, we can also show that <m>y=\exp(a+t)</m> is a solution of <m>\DS\dv{y}{t}=y</m> with <m>y(0)=\exp(a)</m>, since
+        <me>
+          \dv{t}\exp(a+t) = \exp(a+t)\cdot\dv{t}(a+t) = \exp(a+t)\cdot 1 = \exp(a+t)
+        </me>.
+        Since the solution to a linear differential equation is unique, we must have <m>\exp(a+t)=\exp(a)\exp(t)</m>. This is exactly the behavior we expect from exponents, since <m>b^{x+y}=b^xb^y</m> for any base <m>b\gt 0</m>.
+      </p>
+      <p>
+        It can be shown numerically that
+        <me>
+          \exp(1)=2.718281828459045235\cdots=\ee
+        </me>,
+        so instead of <m>\exp(t)</m>, we can write <m>\ee^t</m>, and hence we have
+        <me>
+          \ee^{a+t}=\ee^a\ee^t
+        </me>
+        as expected.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can write this as an integral as well:
       </p>
       <md>
-        <mrow>\dv{x}\ee^x \amp = \ee^x</mrow>
         <mrow>\int \ee^x\dd{x} \amp = \ee^x+C</mrow>
       </md>
     </li>
 
     <li>
       <p>
-        When <m>k\lt 0</m>, we get exponential decay.
+        Overall, the solution to the original differential equation <m>\DS\dv{y}{t}=ky</m> is
+        <me>
+          y=y_{0}\ee^{kt}
+        </me>.
       </p>
     </li>
 
     <li>
       <p>
-        Overall, the solution to the original differential equation is
-        <me>
-          y=y_{0}\ee^{kt}
-        </me>
+        When <m>k\gt 0</m>, we get exponential growth.
+      </p>
+      <p>
+        When <m>k\lt 0</m>, we get exponential decay.
       </p>
     </li>
+
+    
   </ul>
 </section>
