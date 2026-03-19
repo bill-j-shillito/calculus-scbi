@@ -475,9 +475,17 @@
 					<p>
 						Where is <m>g</m> an increasing function of <m>x</m>? Explain.
 					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
 					<p>
 						Where is <m>g</m> a decreasing function of <m>x</m>? Explain.
 					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
 					<p>
 						Suppose we know that <m>g(5)=10</m>. What can you say about the value of <m>g(5.5)</m>? What about the value of <m>g(4.5)</m>? Explain your reasoning.
 					</p>
