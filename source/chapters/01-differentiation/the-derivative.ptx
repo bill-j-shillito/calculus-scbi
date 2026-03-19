@@ -316,7 +316,7 @@
 			Thus, when the independent variable is time, we can interpret the derivative as a <term>rate of change</term>; in this case, <m>\DS\dv{h}{t}</m> tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.
 		</p>
 		<p>
-			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. This is why we've chosen to use the more careful phrasing <sq><m>y</m> is an increasing function <em>of</em> <m>x</m> on the interval</sq> rather than simply saying <sq><m>y</m> is increasing</sq>.
+			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. You'll often hear the phrase <sq><m>y</m> is increasing</sq>, but it would be more careful to say <sq><m>y</m> is an increasing function of <m>x</m></sq>, since the increase in <m>y</m> is tied to an increase in <m>x</m>.
 		</p>
 	</subsection>
 
@@ -451,7 +451,6 @@
 				</statement>
 			</task>
 		</exercise>
-		
 		<exercise>
 			<statement>
 				<p>
@@ -461,6 +460,29 @@
 					(Insert figure)
 				</p>
 			</statement>
+		</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					Let <m>g</m> be a function whose derivative <m>g'</m> is given by the graph below.
+				</p>
+				<p>
+					(Insert figure)
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						Where is <m>g</m> an increasing function of <m>x</m>? Explain.
+					</p>
+					<p>
+						Where is <m>g</m> a decreasing function of <m>x</m>? Explain.
+					</p>
+					<p>
+						Suppose we know that <m>g(5)=10</m>. What can you say about the value of <m>g(5.5)</m>? What about the value of <m>g(4.5)</m>? Explain your reasoning.
+					</p>
+				</statement>
+			</task>
 		</exercise>
 	</exercises>
 </section>
