@@ -242,11 +242,37 @@
 			Over the next couple of sections, we'll be developing a number of techniques to compute differentials and derivatives exactly without having to rely on approximations. We'll also see how these concepts can be used to solve a number of real-world problems.
 		</p>
 	</subsection>
+	<subsection xml:id="subsec-notation-for-derivatives">
+		<title>Notation for derivatives</title>
+		<p>
+			Since <m>L</m> is a function of <m>v</m>, we can also write the derivative as <m>L'(v)</m>, read out loud as <m>L</m> prime of <m>v</m>. This notation emphasizes that the derivative is itself a function of <m>v</m>, since the sensitivity of stopping distance to changes in speed will be different at different speeds.
+		</p>
+		<p>
+			In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in <m>y</m> depending on <m>x</m> and writing <m>y = y(x)</m>, or we can give the function a separate name and write <m>y = f(x)</m>.
+		</p>
+		<p>
+			Because these describe the same situation, the derivative can be written in several equivalent ways:
+			<me>
+				\dv{y}{x} = \dv{f}{x} = f'(x).
+			</me>
+			Each version highlights a slightly different perspective: <m>\DS\dv{y}{x}</m> and <m>\DS\dv{f}{x}</m> emphasize the ratio between small changes, while <m>f'(x)</m> emphasizes that the derivative is itself a new function.
+		</p>
+		<p>
+			We can also do some algebra and express this relationship using differentials:
+			<me>
+				\dd{y} = f'(x)\dd{x}
+				\qquad \text{or} \qquad
+				\dd{f} = f'(x)\dd{x}
+			</me>.
+			This shows how a small change in the output is tied to a small change in the input, with <m>f'(x)</m> acting as a scale factor between them.
+		</p>
+		
+	</subsection>
 
 	<subsection xml:id="subsec-the-sign-of-the-derivative">
 		<title>The sign of the derivative</title>
 		<p>
-			We can gain important information by looking at the sign of the derivative. Suppose <m>y</m> is a function of <m>x</m>.
+			We can gain important information by looking at the sign of the derivative. Suppose throughout that <m>y</m> is a function of <m>x</m>.
 		</p>
 		<ul>
 			<li>
@@ -290,8 +316,152 @@
 			Thus, when the independent variable is time, we can interpret the derivative as a <term>rate of change</term>; in this case, <m>\DS\dv{h}{t}</m> tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.
 		</p>
 		<p>
-			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. This is why we've chosen to use the more careful phrasing <sq><m>y</m> is an increasing function <em>of</em> <m>x</m> on the interval <m>a\le x\le b</m></sq> rather than simply saying <sq><m>y</m> is increasing</sq>.
+			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. This is why we've chosen to use the more careful phrasing <sq><m>y</m> is an increasing function <em>of</em> <m>x</m> on the interval</sq> rather than simply saying <sq><m>y</m> is increasing</sq>.
 		</p>
 	</subsection>
+
+	<exercises>
+		<exercise>
+			<introduction>
+				<p>
+					Estimate <m>\DS\dv{y}{x}</m> for each of the following graphs at the given points by computing the ratios of small changes in the input and output. What do you notice about your estimates as you make smaller and smaller changes?
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						<m>y=x^2</m> at <m>x=1</m>
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>y=x^3</m> at <m>x=-2</m>
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>y=\sqrt{x}</m> at <m>x=9</m>
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>y=3x-2</m> at <m>x=5</m>
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					In this exercise, you'll interpret the sign of the derivative for various real-world contexts. For each one, determine whether the derivative should be positive, negative, or zero, and explain your answer. Also give the units for the derivative.
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{B}{P}</m>, where <m>B=</m> the brightness of a lamp (measured in lumens) and <m>P=</m> the electrical power supplied to the lamp (measured in watts)
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{q}{p}</m>, where <m>q=</m> the number of packages of gourmet coffee beans demanded by consumers and <m>p=</m> the price (in dollars per package) of the coffee beans
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the time elapsed in minutes since the potato was placed in the oven
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the amount of time it takes to bake a potato and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{C}{h}</m>, where <m>C=</m> the number of calories in a candy bar and <m>h=</m> the elevation (in feet) of the candy bar above sea level
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<!-- An exercise where the student has to use the "solved-for" differential to estimate the actual change given the derivative, but using a real-world situation we haven't used yet-->
+			<introduction>
+				<p>
+					Suppose the temperature in the Pacific Ocean can be described by the function <m>T(\ell)</m>, where <m>T</m> is the temperature in degrees Celsius and <m>\ell</m> is the latitude in degrees.
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						Suppose that <m>T(60)=10</m>. Explain what this means in context, including correct units.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Suppose that <m>T'(60)=-0.5</m>. Explain what this means in context, including correct units.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Use the information above to estimate <m>T(61)</m> and <m>T(58)</m>. Explain your reasoning.
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					The following table shows the concentration <m>C</m> of a certain drug in a patient's bloodstream as a function of time <m>t</m>. Here <m>t</m> is measured in hours and <m>C</m> is measured in milligrams per liter.
+				</p>
+				<p>
+					(Insert table)
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						Estimate <m>C'(3)</m> and explain its meaning in context, including correct units.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						At what time <m>t</m> do you expect <m>C'(t)</m> to be zero? What is the real-world significance of this time?
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		
+		<exercise>
+			<statement>
+				<p>
+					The figure below shows the graphs of both a function <m>f(x)</m> and its derivative <m>f'(x)</m>. Which curve is which? Explain how you can tell.
+				</p>
+				<p>
+					(Insert figure)
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
 </section>
 
