@@ -528,37 +528,70 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-exponential-functions-4-3">
-<div class="para" id="sec-exponential-functions-4-3-1">We find that the solution curves are always exponential curves<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-exponential-functions-4-3-1">We find that the solution curves are always exponential curves. When <span class="process-math">\(k=1\text{,}\)</span> we have <span class="process-math">\(\DS\dv{y}{t}=y\text{,}\)</span> so we’ll call the solution for which <span class="process-math">\(y(0)=1\)</span> the <dfn class="terminology">exponential function</dfn> and label it <span class="process-math">\(y=\exp(t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-exponential-functions-4-4">
-<div class="para" id="sec-exponential-functions-4-4-1">When <span class="process-math">\(k=1\text{,}\)</span> the solution for which <span class="process-math">\(y(0)=1\)</span> gives <span class="process-math">\(y(1)=\ee\text{,}\)</span> so the solution must be the exponential function <span class="process-math">\(\ee^{x}\text{.}\)</span> That is, we have:<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-exponential-functions-4-4-1">By properties of derivatives, we know that the solution of <span class="process-math">\(\DS\dv{y}{t}=y\)</span> with <span class="process-math">\(y(0)=c\)</span> must be <span class="process-math">\(y=c\exp(t)\text{.}\)</span> In particular, the solution of <span class="process-math">\(\DS\dv{y}{t}=y\)</span> with <span class="process-math">\(y(0)=\exp(a)\)</span> must be <span class="process-math">\(y=\exp(a)\exp(t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec-exponential-functions-4-4-2">
-\begin{align*}
-\dv{x}\ee^x \amp = \ee^x\\
-\int \ee^x\dd{x} \amp = \ee^x+C
-\end{align*}
+<div class="para logical" id="sec-exponential-functions-4-4-2">
+<div class="para">However, using the Chain Rule, we can also show that <span class="process-math">\(y=\exp(a+t)\)</span> is a solution of <span class="process-math">\(\DS\dv{y}{t}=y\)</span> with <span class="process-math">\(y(0)=\exp(a)\text{,}\)</span> since</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-4-2-4">
+\begin{equation*}
+\dv{t}\exp(a+t) = \exp(a+t)\cdot\dv{t}(a+t) = \exp(a+t)\cdot 1 = \exp(a+t)\text{.}
+\end{equation*}
+</div>
+<div class="para">Since the solution to a linear differential equation is unique, we must have <span class="process-math">\(\exp(a+t)=\exp(a)\exp(t)\text{.}\)</span> This is exactly the behavior we expect from exponents, since <span class="process-math">\(b^{x+y}=b^xb^y\)</span> for any base <span class="process-math">\(b\gt 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-exponential-functions-4-4-3">
+<div class="para">It can be shown numerically that</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-4-3-1">
+\begin{equation*}
+\exp(1)=2.718281828459045235\cdots=\ee\text{,}
+\end{equation*}
+</div>
+<div class="para">so instead of <span class="process-math">\(\exp(t)\text{,}\)</span> we can write <span class="process-math">\(\ee^t\text{,}\)</span> and hence we have</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-4-3-4">
+\begin{equation*}
+\ee^{a+t}=\ee^a\ee^t
+\end{equation*}
+</div>
+<div class="para">as expected.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-exponential-functions-4-5">
-<div class="para" id="sec-exponential-functions-4-5-1">When <span class="process-math">\(k\lt 0\text{,}\)</span> we get exponential decay.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-exponential-functions-4-5-1">We can write this as an integral as well:<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-5-2">
+\begin{align*}
+\int \ee^x\dd{x} \amp = \ee^x+C
+\end{align*}
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-exponential-functions-4-6">
 <div class="para logical" id="sec-exponential-functions-4-6-1">
-<div class="para">Overall, the solution to the original differential equation is</div>
-<div class="displaymath process-math" id="sec-exponential-functions-4-6-1-1">
+<div class="para">Overall, the solution to the original differential equation <span class="process-math">\(\DS\dv{y}{t}=ky\)</span> is</div>
+<div class="displaymath process-math" id="sec-exponential-functions-4-6-1-2">
 \begin{equation*}
-y=y_{0}\ee^{kt}
+y=y_{0}\ee^{kt}\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-exponential-functions-4-7">
+<div class="para" id="sec-exponential-functions-4-7-1">When <span class="process-math">\(k\gt 0\text{,}\)</span> we get exponential growth.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-exponential-functions-4-7-2">When <span class="process-math">\(k\lt 0\text{,}\)</span> we get exponential decay.<div class="autopermalink" data-description="Paragraph"><a href="#sec-exponential-functions-4-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-exponential-functions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="autopermalink" data-description="Section 4.2: Exponential functions"><a href="#sec-exponential-functions" title="Copy heading and permalink for Section 4.2: Exponential functions" aria-label="Copy heading and permalink for Section 4.2: Exponential functions">🔗</a></div></section></div>

@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Exponential functions",
-  "body": " Exponential functions     Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.      Introduction goes here.     Population growth: How can we figure out which function satisfies this relationship?    Introduce slope fields and Euler's method    We find that the solution curves are always exponential curves    When , the solution for which gives , so the solution must be the exponential function . That is, we have:     When , we get exponential decay.    Overall, the solution to the original differential equation is     "
+  "body": " Exponential functions     Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.      Introduction goes here.     Population growth: How can we figure out which function satisfies this relationship?    Introduce slope fields and Euler's method    We find that the solution curves are always exponential curves. When , we have , so we'll call the solution for which the exponential function and label it .    By properties of derivatives, we know that the solution of with must be . In particular, the solution of with must be .  However, using the Chain Rule, we can also show that is a solution of with , since . Since the solution to a linear differential equation is unique, we must have . This is exactly the behavior we expect from exponents, since for any base .  It can be shown numerically that , so instead of , we can write , and hence we have as expected.    We can write this as an integral as well:     Overall, the solution to the original differential equation is .    When , we get exponential growth.  When , we get exponential decay.    "
 },
 {
   "id": "sec-exponential-functions-2",
@@ -458,6 +458,15 @@ var ptx_lunr_docs = [
   "number": "4.2",
   "title": "",
   "body": "   Use slope fields and numerical steps to explore solution behavior.    Model growth and decay using proportional rates of change.    Recognize exponential curves as natural solutions to proportional-rate equations.    "
+},
+{
+  "id": "sec-exponential-functions-4-3-1",
+  "level": "2",
+  "url": "sec-exponential-functions.html#sec-exponential-functions-4-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "exponential function "
 },
 {
   "id": "sec-trigonometric-functions",
