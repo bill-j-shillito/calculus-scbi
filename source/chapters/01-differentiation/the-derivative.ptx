@@ -379,14 +379,14 @@
 			<task>
 				<statement>
 					<p>
-						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the time elapsed in minutes since the potato was placed in the oven
+						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the number of minutes elapsed since the potato was placed in the oven
 					</p>
 				</statement>
 			</task>
 			<task>
 				<statement>
 					<p>
-						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the amount of time it takes to bake a potato and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
+						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the number of minutes it takes to bake a potato and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
 					</p>
 				</statement>
 			</task>
