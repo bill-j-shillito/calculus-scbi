@@ -95,5 +95,21 @@
         Winding number?
       </p>
     </li>
+
+    <li>
+      <p>
+        Blasius's theorem: The force experienced by a two-dimensional fixed body in a steady irrotational flow is given by
+        <me>
+          L-\ii D=\frac{\ii\rho}{2}\oint_C \qty(\dv{w}{z})^2\dd{z}\text{,}
+        </me>
+        where <m>w(z)=\phi(x,y)+\ii\,\psi(x,y)</m> is the complex potential of the flow, <m>C</m> is a contour enclosing the body, and <m>\rho</m> is the fluid density. Here, <m>L</m> is the lift and <m>D</m> is the drag. (Note the conjugate.)
+      </p>
+      <p>
+        Furthermore, the moment about the origin is given by
+        <me>
+          M=\Re\qty{-\frac{\rho}{2}\oint_C z\qty(\dv{w}{z})^2\dd{z}}\text{.}
+        </me>
+      </p>
+    </li>
   </ul>
 </section>
