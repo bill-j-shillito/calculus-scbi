@@ -7,58 +7,7 @@
 
   <math-package latex-name="physics" mathjax-name="physics" />
 
-  <!-- macros for defining latex math shortcuts. It is good practice -->
-  <!-- to define these semantically, so that the macro relates to what-->
-  <!-- it defines. -->
-  <macros>
-    \everymath{\displaystyle}
-    \newcommand{\N}{\mathbb N}
-    \newcommand{\Z}{\mathbb Z}
-    \newcommand{\Q}{\mathbb Q}
-    \newcommand{\R}{\mathbb R}
-    \newcommand{\inv}{^{-1}}
-    \newcommand{\DS}{\displaystyle}
-    \newcommand{\eps}{\varepsilon}
-    \newcommand{\tsub}[1]{_{\mathrm{#1}}}
-    \newcommand{\ee}{\mathrm{e}}
-    \newcommand{\ii}{\mathrm{i}}
-    \newcommand{\limit}[1]{\lim\limits_{#1}}
-    \newcommand{\resid}[1]{\underset{#1}{\Res}}
-    \DeclareMathOperator{\sinc}{sinc}
-    \DeclareMathOperator{\sgn}{sgn}
-    <!-- \newcommand{\uppi}{\symup{\pi}} -->
-    \newcommand{\uppi}{\pi}
-    \DeclareMathOperator{\Prob}{P}
-    \DeclareMathOperator{\EV}{E}
-    \DeclareMathOperator{\Var}{Var}
-    \newcommand{\bv}[1]{\boldsymbol{#1}}
-    \newcommand{\uv}[1]{\hat{\bv{#1}}}
-    \newcommand{\cl}[1]{\mathcal{#1}}
-    \newcommand{\bb}[1]{\mathbb{#1}}
-    \DeclareMathOperator{\Cis}{cis}
-    \DeclareMathOperator{\Real}{Re}
-    \DeclareMathOperator{\Imag}{Im}
-    \newcommand{\xd}{\mathbf{d}}
-    \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
-    \newcommand{\psup}[1]{^{(#1)}}
-    \newcommand{\hypext}{{}^*}
-    \DeclareMathOperator{\st}{st}
-    \newcommand{\set}[1]{\left\{#1\right\}}
-
-    <!-- Capitalized principal values -->
-    \DeclareMathOperator{\Sin}{Sin}
-    \DeclareMathOperator{\Cos}{Cos}
-    \DeclareMathOperator{\Tan}{Tan}
-    \DeclareMathOperator{\Sec}{Sec}
-    \DeclareMathOperator{\Csc}{Csc}
-    \DeclareMathOperator{\Cot}{Cot}
-    \DeclareMathOperator{\Log}{Log}
-    \DeclareMathOperator{\Arg}{Arg}
-    \DeclareMathOperator{\Ln}{Ln}
-    \DeclareMathOperator{\Grad}{grad}
-    \DeclareMathOperator{\Div}{div}
-    \DeclareMathOperator{\Curl}{curl}
-  </macros>
+  <xi:include href="macros.ptx" />
 
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->
