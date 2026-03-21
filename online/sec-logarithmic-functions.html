@@ -514,7 +514,19 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Objectives 4.4"><a href="#sec-logarithmic-functions-2" title="Copy heading and permalink for Objectives 4.4" aria-label="Copy heading and permalink for Objectives 4.4">🔗</a></div></article><section class="introduction" id="sec-logarithmic-functions-3"><div class="para" id="sec-logarithmic-functions-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><ul class="disc" id="sec-logarithmic-functions-4">
 <li id="sec-logarithmic-functions-4-1">
-<div class="para" id="sec-logarithmic-functions-4-1-1">Since <span class="process-math">\(\ln x\)</span> and <span class="process-math">\(\ee^{x}\)</span> are inverses, we can evaluate <span class="process-math">\(\DS\dv{x} \ee^{\ln x}\)</span> two ways to find that <span class="process-math">\(\DS\dv{x}\ln x=\frac{1}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sec-logarithmic-functions-4-1-1">
+<div class="para">Differentiating <span class="process-math">\(\ln x\text{,}\)</span> the inverse of the exponential function:</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-1-1-2">
+\begin{align*}
+y \amp = \ln x \\
+\ee^y \amp = x \\
+\dd(\ee^y) \amp = \dd{x} \\
+\ee^y \dd{y} \amp = \dd{x} \\
+\dd{y} \amp = \frac{1}{\ee^y} \dd{x} \\
+\dv{y}{x} \amp = \frac{1}{x} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -522,9 +534,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="sec-logarithmic-functions-4-2-1">
 <div class="para">In general, derivatives of inverse functions:</div>
 <div class="displaymath process-math" id="sec-logarithmic-functions-4-2-1-1">
-\begin{equation*}
-\dv{x} f\inv(x)=\dfrac1{f'(f\inv(x))}
-\end{equation*}
+\begin{align*}
+y \amp = f\inv(x)\\
+f(y) \amp = x\\
+\dd(f(y)) \amp = \dd{x}\\
+f'(y)\dd{y} \amp = \dd{x}\\
+\dd{y} \amp = \frac{1}{f'(y)}\dd{x}\\
+\dv{x} f\inv(x) \amp = \frac{1}{f'(f\inv(x))} 
+\end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
