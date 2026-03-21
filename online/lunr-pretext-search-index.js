@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Limits and differentiation",
-  "body": " Limits and differentiation     Connect derivatives to limits by interpreting slope as a limiting ratio of changes.    Use limit reasoning to justify core differentiation rules and identify indeterminate forms.    Identify situations where a function fails to be differentiable.      Introduction goes here.     Limit definition of a derivative:     Prove Power Rule, Product Rule     as an indeterminate form    Ways in which a function can fail to be differentiable, using as the example:     Role of differentials as changes along the tangent line    "
+  "body": " Limits and differentiation     Connect derivatives to limits by interpreting slope as a limiting ratio of changes.    Use limit reasoning to justify core differentiation rules and identify indeterminate forms.    Identify situations where a function fails to be differentiable.      Introduction goes here.     Limit definition of a derivative:     Work some examples of limits to show they still work out to the known derivatives    Prove Product Rule and Chain Rule     as an indeterminate form    Ways in which a function can fail to be differentiable, using as the example:     Role of differentials as changes along the tangent line    "
 },
 {
   "id": "sec-limits-and-differentiation-2",
