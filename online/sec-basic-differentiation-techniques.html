@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Back Matter</title>
+<title>Basic differentiation techniques</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-non-standard-analysis.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="refs-bibliography.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-the-derivative.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-differentiation.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-product-and-chain-rule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -198,12 +198,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">About this project</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-part">
+<li class="toc-item toc-part contains-active">
 <div class="toc-title-box"><a href="part-describing-change.html" class="internal"><span class="codenumber">I</span> <span class="title">Describing Change</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-chapter">
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-differentiation.html" class="internal"><span class="codenumber">1</span> <span class="title">Differentiation</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-approximating-the-circle.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Approximating the circle</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-approximating-the-circle.html#sec-approximating-the-circle-25" class="internal"><span class="codenumber">1.1</span> <span class="title">Exercises</span></a></div></li></ul>
@@ -218,7 +218,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-derivative.html#sec-the-derivative-8" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-differentiation-techniques.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Basic differentiation techniques</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-basic-differentiation-techniques.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Basic differentiation techniques</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-product-and-chain-rule.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The Product Rule and the Chain Rule</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-implicit-differentiation.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Implicit differentiation</span></a></div></li>
 </ul>
@@ -485,14 +485,111 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter contains-active">
+<li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-bibliography.html" class="internal"><span class="title">Bibliography</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-bibliography.html" class="internal"><span class="title">Bibliography</span></a></div></li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="backmatter" id="backmatter"><nav class="summary-links"><ul><li><a href="refs-bibliography.html" class="internal"><span class="title">Bibliography</span></a></li></ul></nav><div class="autopermalink" data-description="Back Matter"><a href="#backmatter" title="Copy heading and permalink for Back Matter" aria-label="Copy heading and permalink for Back Matter">🔗</a></div></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-basic-differentiation-techniques"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic differentiation techniques</span>
+</h2>
+<article class="objectives goal-like" id="sec-basic-differentiation-techniques-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ol class="decimal" id="sec-basic-differentiation-techniques-2-1">
+<li id="sec-basic-differentiation-techniques-2-1-1">
+<div class="para" id="sec-basic-differentiation-techniques-2-1-1-1">Understand and apply linearity properties of the derivative.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 1.3.1"><a href="#sec-basic-differentiation-techniques-2-1-1" title="Copy heading and permalink for Objective 1.3.1" aria-label="Copy heading and permalink for Objective 1.3.1">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-2-1-2">
+<div class="para" id="sec-basic-differentiation-techniques-2-1-2-1">Differentiate constant, linear, and power functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 1.3.2"><a href="#sec-basic-differentiation-techniques-2-1-2" title="Copy heading and permalink for Objective 1.3.2" aria-label="Copy heading and permalink for Objective 1.3.2">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-2-1-3">
+<div class="para" id="sec-basic-differentiation-techniques-2-1-3-1">Combine linearity with product rules to differentiate polynomials.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 1.3.3"><a href="#sec-basic-differentiation-techniques-2-1-3" title="Copy heading and permalink for Objective 1.3.3" aria-label="Copy heading and permalink for Objective 1.3.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 1.3"><a href="#sec-basic-differentiation-techniques-2" title="Copy heading and permalink for Objectives 1.3" aria-label="Copy heading and permalink for Objectives 1.3">🔗</a></div></article><section class="introduction" id="sec-basic-differentiation-techniques-3"><div class="para" id="sec-basic-differentiation-techniques-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><ul class="disc" id="sec-basic-differentiation-techniques-4">
+<li id="sec-basic-differentiation-techniques-4-1">
+<div class="para logical" id="sec-basic-differentiation-techniques-4-1-1">
+<div class="para">We ‘should believe’ that if <span class="process-math">\(y=mx+b\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec-basic-differentiation-techniques-4-1-1-3">
+\begin{align*}
+\dv{y}{x} \amp = m\\
+\dd{y}\amp = m\dd{x} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basic-differentiation-techniques-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-4-2">
+<div class="para" id="sec-basic-differentiation-techniques-4-2-1">If <span class="process-math">\(f\)</span> changes by a small amount <span class="process-math">\(\dd{f}\)</span> and <span class="process-math">\(g\)</span> changes by a small amount <span class="process-math">\(\dd{g}\text{,}\)</span> we should expect the linearity properties to hold:<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-basic-differentiation-techniques-4-2-2">
+\begin{align*}
+\dd(u+v) \amp = \dd{u}+\dd{v}\\
+\dd(cu) \amp = c\dd{u}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basic-differentiation-techniques-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-4-3">
+<div class="para" id="sec-basic-differentiation-techniques-4-3-1">Derivative of <span class="process-math">\(x^2\)</span> can be done by visualizing a square of side length <span class="process-math">\(x\)</span> and seeing how the area changes as <span class="process-math">\(x\)</span> changes. You get two rectangles of area <span class="process-math">\(x\dd{x}\)</span> and a small square of area <span class="process-math">\((\dd{x})^2\text{,}\)</span> which is ‘negligible’, so the total change in area is approximately <span class="process-math">\(2x\dd{x}\text{,}\)</span> and we imagine that if the change were infinitesimal, the change in area would be exactly <span class="process-math">\(2x\dd{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-basic-differentiation-techniques-4-3-2">
+<div class="para">We can temporarily justify this sense of being ‘negligible’ by looking at the <em class="emphasis">ratios</em> of changes:</div>
+<div class="displaymath process-math" id="sec-basic-differentiation-techniques-4-3-2-3">
+\begin{equation*}
+\dfrac{\Delta(x^2)}{\Delta x} = 2x + \Delta x
+\end{equation*}
+</div>
+<div class="para">If we imagine that <span class="process-math">\(\Delta x\)</span> becomes infinitesimal, the second term drops out, so we say that <span class="process-math">\(\DS\dv{(x^2)}{x} = 2x\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-basic-differentiation-techniques-4-3-3">We’ll make this sense of ‘negligibility’ much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if <span class="process-math">\(\dd{x}\)</span> is very small, then <span class="process-math">\((\dd{x})^2\)</span> is even smaller and can be ignored.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basic-differentiation-techniques-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-4-4">
+<div class="para" id="sec-basic-differentiation-techniques-4-4-1">Same thing can be done with <span class="process-math">\(x^3\text{,}\)</span> by visualizing a cube of side length <span class="process-math">\(x\)</span> and seeing how the volume changes as <span class="process-math">\(x\)</span> changes. You get three rectangular boxes of volume <span class="process-math">\(x^2\dd{x}\)</span> and three rectangular boxes of volume <span class="process-math">\(x(\dd{x})^2\)</span> and a small cube of volume <span class="process-math">\((\dd{x})^3\text{.}\)</span> The higher powers of <span class="process-math">\(\dd{x}\)</span> are ‘negligible’, so the total change in volume is approximately <span class="process-math">\(3x^2\dd{x}\text{,}\)</span> and we imagine that if the change were infinitesimal, the change in volume would be exactly <span class="process-math">\(3x^2\dd{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basic-differentiation-techniques-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-4-5">
+<div class="para logical" id="sec-basic-differentiation-techniques-4-5-1">
+<div class="para">Power Rule (as a conjecture right now):</div>
+<div class="displaymath process-math" id="sec-basic-differentiation-techniques-4-5-1-1">
+\begin{equation*}
+\dd(x^{n})=nx^{n-1}\dd{x}
+\end{equation*}
+</div>
+<div class="para">(Only works when <span class="process-math">\(n\)</span> is a natural number so far)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basic-differentiation-techniques-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-basic-differentiation-techniques-4-6">
+<div class="para logical" id="sec-basic-differentiation-techniques-4-6-1">
+<div class="para">Derivative of a polynomial term by term... can verify the derivative done last section! If <span class="process-math">\(L(v)=0.0034v^2 + 0.15v\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec-basic-differentiation-techniques-4-6-1-2">
+\begin{equation*}
+\dv{L}{v}=0.0068v+0.15\text{,}
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(L'(50)=0.0068\cdot 50 + 0.15=0.49\text{,}\)</span> which is the same as the slope of the tangent line we found last section. But it’s much more direct and efficient.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-basic-differentiation-techniques-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basic-differentiation-techniques-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section 1.3: Basic differentiation techniques"><a href="#sec-basic-differentiation-techniques" title="Copy heading and permalink for Section 1.3: Basic differentiation techniques" aria-label="Copy heading and permalink for Section 1.3: Basic differentiation techniques">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-non-standard-analysis.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="refs-bibliography.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-the-derivative.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-product-and-chain-rule.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

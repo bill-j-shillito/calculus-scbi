@@ -226,65 +226,65 @@ var ptx_lunr_docs = [
   "body": "  Let be a function whose derivative is given by the graph below.  (Insert figure)     Where is an increasing function of ? Explain.      Where is a decreasing function of ? Explain.      Suppose we know that . What can you say about the value of ? What about the value of ? Explain your reasoning.    "
 },
 {
-  "id": "sec-differentiating-products-and-powers",
+  "id": "sec-basic-differentiation-techniques",
   "level": "1",
-  "url": "sec-differentiating-products-and-powers.html",
+  "url": "sec-basic-differentiation-techniques.html",
   "type": "Section",
   "number": "1.3",
-  "title": "Differentiating products and powers",
-  "body": " Differentiating products and powers     Differentiate products by examining how each factor varies.    Justify and apply the Power Rule for natural-number exponents using differentials.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Visual proof of Product Rule:        Can leave the disappearance of somewhat unresolved, giving a deliberately handwavy explanation of the fact that dividing by will still leave an infinitesimal quantity in the numerator, so we'll ignore it. This mystery will get cleaned up in Chapter 5 when we do limits.    Apply to :     Extend to three variables:     Apply to :     Power Rule: (Only works when is a natural number right now)    Derivative of a polynomial term by term    "
+  "title": "Basic differentiation techniques",
+  "body": " Basic differentiation techniques     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
 },
 {
-  "id": "sec-differentiating-products-and-powers-2",
+  "id": "sec-basic-differentiation-techniques-2",
   "level": "2",
-  "url": "sec-differentiating-products-and-powers.html#sec-differentiating-products-and-powers-2",
+  "url": "sec-basic-differentiation-techniques.html#sec-basic-differentiation-techniques-2",
   "type": "Objectives",
   "number": "1.3",
   "title": "",
-  "body": "   Differentiate products by examining how each factor varies.    Justify and apply the Power Rule for natural-number exponents using differentials.    Combine linearity with product rules to differentiate polynomials.    "
+  "body": "   Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.    "
 },
 {
-  "id": "sec-advanced-differentiation-techniques",
+  "id": "sec-product-and-chain-rule",
   "level": "1",
-  "url": "sec-advanced-differentiation-techniques.html",
+  "url": "sec-product-and-chain-rule.html",
   "type": "Section",
   "number": "1.4",
-  "title": "Advanced differentiation techniques",
-  "body": " Advanced differentiation techniques     Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.      Introduction goes here.     Find a few example functions that involve fractions and roots that we can use to justify wanting to do this chapter    Extend Power Rule to negative integers: Show this by computing in two ways.  (Can probably show for and let the students do as an exercise.)    Extend Power Rule to roots: Show this by computing in two different ways.  (Can probably show for and let the students do as an exercise.)    Chain Rule for differentials:     Chain Rule for derivatives:     Quotient Rule: Show this by computing .    Extend Power Rule to rational exponents: Show this by computing with the Chain Rule.  (Can probably just assert this and leave it as an exercise.)    "
+  "title": "The Product Rule and the Chain Rule",
+  "body": " The Product Rule and the Chain Rule     Differentiate products by examining how each factor varies.    Differentiate composite functions by multiplying sensitivities.    Select appropriate differentiation rules for a given function.      Introduction goes here.     Is the derivative of a product just the product of the derivatives? Can check with units (say price times quantity) and see that it won't work, and also show that it doesn't work with . So we need something new.    Visual proof of Product Rule:        Can leave the disappearance of somewhat unresolved, giving a deliberately handwavy explanation of the fact that dividing by will still leave an infinitesimal quantity in the numerator, so we'll ignore it. This mystery will get cleaned up in Chapter 5 when we do limits.    Check by applying to :     Extend to three variables:     Check by applying to :     Power Rule: Only works when is a natural number right now, but we can prove it (essentially using induction) by breaking into and applying the Product Rule.    Justify the Chain Rule by multiplying rates of change and watching the units cancel out. Think of dimensional analysis in high school chemistry.    Chain Rule for differentials:     Chain Rule for derivatives:     "
 },
 {
-  "id": "sec-advanced-differentiation-techniques-2",
+  "id": "sec-product-and-chain-rule-2",
   "level": "2",
-  "url": "sec-advanced-differentiation-techniques.html#sec-advanced-differentiation-techniques-2",
+  "url": "sec-product-and-chain-rule.html#sec-product-and-chain-rule-2",
   "type": "Objectives",
   "number": "1.4",
   "title": "",
-  "body": "   Extend the Power Rule to negative and fractional exponents.    Apply the Chain Rule and Quotient Rule to differentiate composite expressions.    Select appropriate differentiation rules for a given function.    "
+  "body": "   Differentiate products by examining how each factor varies.    Differentiate composite functions by multiplying sensitivities.    Select appropriate differentiation rules for a given function.    "
 },
 {
   "id": "sec-implicit-differentiation",
   "level": "1",
   "url": "sec-implicit-differentiation.html",
   "type": "Section",
-  "number": "2.1",
+  "number": "1.5",
   "title": "Implicit differentiation",
-  "body": " Implicit differentiation     Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.      Introduction goes here.     Use Bitcoin elliptic curve example?    Use differentials: take differential of both sides, then divide both sides by .  Example:     You can shortcut the differentials by taking derivatives and remembering to multiply by whenever you take a derivative of something involving .    Talk about tangent lines. DON'T include normal lines; save that until the Analytic Geometry chapter in Part II.    Inverse functions: Show this by setting , writing as , and using implicit differentiation.    "
+  "body": " Implicit differentiation     Differentiate relations without solving for by working with differentials.    Use implicit derivatives to determine tangent lines to implicitly defined curves.    Develop the Quotient Rule and extend the Power Rule to negative and fractional exponents.      Introduction goes here.     Use Bitcoin elliptic curve example?    Use differentials: take differential of both sides, then divide both sides by .  Example:     You can shortcut the differentials by taking derivatives and remembering to multiply by whenever you take a derivative of something involving .    Talk about tangent lines. DON'T include normal lines; save that until the Analytic Geometry chapter in Part II.    Differentiating : Can leave differentiating as an exercise, but state the result that the Power Rule now works for all negative exponents.    Develop Quotient Rule:     Differentiating : Can leave differentiating as an exercise, but state the result that the Power Rule now works for all fractional exponents.    "
 },
 {
   "id": "sec-implicit-differentiation-2",
   "level": "2",
   "url": "sec-implicit-differentiation.html#sec-implicit-differentiation-2",
   "type": "Objectives",
-  "number": "2.1",
+  "number": "1.5",
   "title": "",
-  "body": "   Differentiate relations without solving for by working with differentials.    Relate and to compute .    Use implicit derivatives to determine tangent lines to implicitly defined curves.    "
+  "body": "   Differentiate relations without solving for by working with differentials.    Use implicit derivatives to determine tangent lines to implicitly defined curves.    Develop the Quotient Rule and extend the Power Rule to negative and fractional exponents.    "
 },
 {
   "id": "sec-related-rates",
   "level": "1",
   "url": "sec-related-rates.html",
   "type": "Section",
-  "number": "2.2",
+  "number": "2.1",
   "title": "Related rates",
   "body": " Related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems    "
 },
@@ -293,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-related-rates.html#sec-related-rates-2",
   "type": "Objectives",
-  "number": "2.2",
+  "number": "2.1",
   "title": "",
   "body": "   Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.    "
 },
@@ -302,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-optimization.html",
   "type": "Section",
-  "number": "2.3",
+  "number": "2.2",
   "title": "Optimization",
   "body": " Optimization     Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.      Introduction goes here.     Soda can example    Same modeling steps as in related rates    Don’t necessarily need to eliminate variables — using differentials also works!    Focus on absolute maxima and minima and candidates using Fermat's theorem: if has a local maximum at , then     Put First Derivative Test here?    "
 },
@@ -311,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-optimization.html#sec-optimization-2",
   "type": "Objectives",
-  "number": "2.3",
+  "number": "2.2",
   "title": "",
   "body": "   Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.    "
 },
@@ -320,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-higher-order-derivatives.html",
   "type": "Section",
-  "number": "2.4",
+  "number": "2.3",
   "title": "Higher order derivatives",
   "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
 },
@@ -329,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-derivatives.html#sec-higher-order-derivatives-2",
   "type": "Objectives",
-  "number": "2.4",
+  "number": "2.3",
   "title": "",
   "body": "   Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.    "
 },
@@ -338,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-linear-approximation.html",
   "type": "Section",
-  "number": "2.5",
+  "number": "2.4",
   "title": "Linear approximation",
   "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Approximation using differentials    Linearization of a function at :     Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Absolute error:     Relative error:     These can eventually get tied in with limits in Chapter 5.    "
 },
@@ -347,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-linear-approximation.html#sec-linear-approximation-2",
   "type": "Objectives",
-  "number": "2.5",
+  "number": "2.4",
   "title": "",
   "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
 },
