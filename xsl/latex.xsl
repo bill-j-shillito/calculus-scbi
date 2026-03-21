@@ -7,8 +7,14 @@
 
 <xsl:param name="latex.preamble.early">
     <xsl:text>%% Load fonts&#xa;</xsl:text>
-    <xsl:text>\usepackage{kpfonts-otf}&#xa;</xsl:text>
-    <xsl:text>\setmainfont{Alegreya Sans}&#xa;</xsl:text>
+    <!-- <xsl:text>\usepackage{kpfonts-otf}&#xa;</xsl:text> -->
+    <!-- <xsl:text>\setmainfont{Alegreya Sans}&#xa;</xsl:text> -->
+    <xsl:text>\usepackage[T1]{fontenc}&#xa;</xsl:text>
+    <xsl:text>\usepackage{amsmath,amssymb}%load before newpxmath&#xa;</xsl:text>
+    <xsl:text>\usepackage[varg,cmintegrals,bigdelims,varbb]{newpxmath}&#xa;</xsl:text>
+    <xsl:text>\usepackage[no-math]{fontspec}&#xa;</xsl:text>
+    <xsl:text>\setmainfont{Libertinus Sans}&#xa;</xsl:text>
+    <!-- <xsl:text>\setmainfont{Carlito}&#xa;</xsl:text> -->
 </xsl:param>
 
 </xsl:stylesheet>
