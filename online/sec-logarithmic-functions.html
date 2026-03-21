@@ -532,48 +532,99 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li id="sec-logarithmic-functions-4-3">
 <div class="para logical" id="sec-logarithmic-functions-4-3-1">
-<div class="para">For any base <span class="process-math">\(b\text{,}\)</span> we can use the fact that <span class="process-math">\(\ee^{\ln b}=b\)</span> and the Chain Rule to get</div>
-<div class="displaymath process-math" id="sec-logarithmic-functions-4-3-1-3">
+<div class="para">Logarithmic differentiation:</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-3-1-1">
 \begin{equation*}
-\dv{x} b^{x}=\dv{x}(\ee^{\ln b})^{x}=\dv{x}(\ee^{x})^{\ln b}=\ln(b)(\ee^{x})^{\ln(b)-1}\cdot \ee^{x}=b^{x}\ln b
+\dd(\ln y) = \frac{\dd{y}}{y}
 \end{equation*}
 </div>
+<div class="para">Good for complicated derivatives or derivatives involving exponents.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-logarithmic-functions-4-4">
-<div class="para" id="sec-logarithmic-functions-4-4-1">We can also rewrite <span class="process-math">\(x^{a}\)</span> for any real <span class="process-math">\(a\)</span> as <span class="process-math">\(e^{a \ln x}\)</span> to show that the Power Rule works for any real exponent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sec-logarithmic-functions-4-4-1">
+<div class="para">Reminder of logarithm rules as opposites of exponent rules:</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-4-1-1">
+\begin{align*}
+\ln(uv) \amp = \ln u + \ln v\\
+\ln\left(\frac{u}{v}\right) \amp = \ln u - \ln v\\
+\ln(u^r) \amp = r \ln u
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-logarithmic-functions-4-5">
 <div class="para logical" id="sec-logarithmic-functions-4-5-1">
-<div class="para">Logarithmic differentiation:</div>
-<div class="displaymath process-math" id="sec-logarithmic-functions-4-5-1-1">
-\begin{equation*}
-\dv{x}\ln y=\frac{y'}{y}
-\end{equation*}
+<div class="para">Differentiating <span class="process-math">\(x^r\)</span> for any real exponent <span class="process-math">\(r\text{:}\)</span>
 </div>
-<div class="para">Good for complicated derivatives or derivatives involving <span class="process-math">\(x\)</span> in both base and power.</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-5-1-3">
+\begin{align*}
+y \amp = x^r \\
+\ln y \amp = r \ln x \\
+\dd(\ln y) \amp = \dd(r \ln x) \\
+\frac{1}{y}\dd{y} \amp = r \frac{1}{x} \dd{x} \\
+\dd{y} \amp = r x^{r-1} \dd{x} \\
+\dv{y}{x} \amp = r x^{r-1} 
+\end{align*}
+</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-logarithmic-functions-4-6">
 <div class="para logical" id="sec-logarithmic-functions-4-6-1">
-<div class="para">Elasticity of a function: <details id="sec-logarithmic-functions-4-6-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-logarithmic-functions-4-6-1-1-1">The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Differentiating <span class="process-math">\(b^x\)</span> for any base <span class="process-math">\(b&gt;0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-6-1-3">
+\begin{align*}
+y \amp = b^x \\
+\ln y \amp = x \ln b \\
+\dd(\ln y) \amp = \dd(x \ln b) \\
+\frac{1}{y}\dd{y} \amp = \ln b \dd{x} \\
+\dd{y} \amp = y \ln b \dd{x} \\
+\dv{y}{x} \amp = b^x \ln b 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-logarithmic-functions-4-7">
+<div class="para logical" id="sec-logarithmic-functions-4-7-1">
+<div class="para">Differentiating <span class="process-math">\(\log_b{x}\)</span> for any base <span class="process-math">\(b&gt;0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-7-1-3">
+\begin{align*}
+y \amp = \log_b{x} \\
+b^y \amp = x \\
+\dd(b^y) \amp = \dd{x} \\
+b^y \ln b \dd{y} \amp = \dd{x} \\
+\dd{y} \amp = \frac{1}{x \ln b} \dd{x} \\
+\dv{y}{x} \amp = \frac{1}{x \ln b} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-logarithmic-functions-4-8">
+<div class="para logical" id="sec-logarithmic-functions-4-8-1">
+<div class="para">Elasticity of a function: <details id="sec-logarithmic-functions-4-8-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-logarithmic-functions-4-8-1-1-1">The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></aside></details>
 </div>
-<div class="displaymath process-math" id="sec-logarithmic-functions-4-6-1-2">
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-8-1-2">
 \begin{equation*}
 E=\dv{(\ln y)}{(\ln x)}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
 \end{equation*}
 </div>
 <div class="para">This is a relative rate of change, which is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="autopermalink" data-description="Section 4.4: Logarithmic functions"><a href="#sec-logarithmic-functions" title="Copy heading and permalink for Section 4.4: Logarithmic functions" aria-label="Copy heading and permalink for Section 4.4: Logarithmic functions">🔗</a></div></section></div>
