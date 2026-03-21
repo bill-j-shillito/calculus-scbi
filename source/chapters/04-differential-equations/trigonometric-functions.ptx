@@ -47,9 +47,19 @@
 
     <li>
       <p>
-        When <m>y(0)=0</m> and <m>y'(0)=1</m>, we get a solution of <m>y=\sin x</m>.
-        Furthermore, observing the slopes shows that <m>\DS\dv{x} \sin x=\cos x</m>, and we can show that <m>\cos x</m> also satisfies the differential equation.
-        (There may be a cleaner way to show all this.)
+        Define <m>\sin x</m> as the solution to <m>y''=-y</m> with <m>y(0)=0</m> and <m>y'(0)=1</m>, and define <m>\cos x</m> as the solution to the same differential equation with <m>y(0)=1</m> and <m>y'(0)=0</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Can show that <m>\DS\dv{x} \sin x=\cos x</m> by letting <m>C(x)=\DS\dv{x} \sin x</m> and noticing that <m>C</m> also satisfies the same differential equation and has the same initial conditions as <m>\cos x</m>. Similarly, can show that <m>\DS\dv{x} \cos x=-\sin x</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Other properties such as the sum/difference identities and the fact that <m>\sin^2 x + \cos^2 x = 1</m> can also be shown by using the differential equation and initial conditions.
       </p>
     </li>
 
