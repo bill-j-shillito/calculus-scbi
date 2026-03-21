@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-differentiating-products-and-powers">
-  <title>Differentiating products and powers</title>
+<section xml:id="sec-product-and-chain-rule">
+  <title>The Product Rule and the Chain Rule</title>
 
   <objectives>
     <ol>
@@ -12,12 +12,12 @@
       </li>
       <li>
         <p>
-          Justify and apply the Power Rule for natural-number exponents using differentials.
+          Differentiate composite functions by multiplying sensitivities.
         </p>
       </li>
       <li>
         <p>
-          Combine linearity with product rules to differentiate polynomials.
+          Select appropriate differentiation rules for a given function.
         </p>
       </li>
     </ol>
@@ -32,22 +32,9 @@
 
   <ul>
     <li>
-      <p>
-        We <sq>should believe</sq> that if <m>y=mx+b</m>, then
-        <md>
-          <mrow>\dv{y}{x} \amp = m</mrow>
-          <mrow>\dd{y}\amp = m\dd{x} </mrow>
-        </md>
-      </p>
-    </li>
-    <li>
-      <p>
-        If <m>f</m> changes by a small amount <m>\dd{f}</m> and <m>g</m> changes by a small amount <m>\dd{g}</m>, we should expect the linearity properties to hold:
-      </p>
-      <md>
-        <mrow>\dd(u+v) \amp = \dd{u}+\dd{v}</mrow>
-        <mrow>\dd(cu) \amp = c\dd{u}</mrow>
-      </md>
+        <p>
+            Is the derivative of a product just the product of the derivatives? Can check with units (say price times quantity) and see that it won't work, and also show that it doesn't work with <m>y=x^2</m>. So we need something new.
+        </p>
     </li>
     <li>
       <p>
@@ -73,7 +60,7 @@
 
     <li>
       <p>
-        Apply to <m>x^{2}</m>:
+        Check by applying to <m>x^{2}</m>:
         <me>
           \dd(x^{2})=x\dd{x} + x\dd{x} = 2x\dd{x}
         </me>
@@ -93,7 +80,7 @@
 
     <li>
       <p>
-        Apply to <m>x^{3}</m>:
+        Check by applying to <m>x^{3}</m>:
         <me>
           \dd(x^{3})=\dd(x\cdot x\cdot x)=3x^{2}\dd{x}
         </me>
@@ -106,12 +93,31 @@
         <me>
           \dd(x^{n})=nx^{n-1}\dd{x}
         </me>
-        (Only works when <m>n</m> is a natural number right now)
+        Only works when <m>n</m> is a natural number right now, but we can prove it (essentially using induction) by breaking <m>x^n</m> into <m>x^{n-1}\cdot x</m> and applying the Product Rule.
       </p>
     </li>
+
+    <li>
+        <p>
+            Justify the Chain Rule by multiplying rates of change and watching the units cancel out. Think of dimensional analysis in high school chemistry.
+        </p>
+    </li>
+
     <li>
       <p>
-        Derivative of a polynomial term by term
+        Chain Rule for differentials:
+        <me>
+          \dd(f(g))=f'(g)\dd{g}=f'(g(x))g'(x)\dd{x}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Chain Rule for derivatives:
+        <me>
+          \dv{x} f(g(x))=f'(g(x))g'(x)
+        </me>
       </p>
     </li>
   </ul>

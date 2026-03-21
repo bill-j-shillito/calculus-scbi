@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-implicit-differentiation">
+  <title>Implicit differentiation</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Differentiate relations without solving for <m>y</m> by working with differentials.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use implicit derivatives to determine tangent lines to implicitly defined curves.
+        </p>
+      </li>
+      <li>
+        <p>
+          Develop the Quotient Rule and extend the Power Rule to negative and fractional exponents.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Use Bitcoin elliptic curve example?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use differentials: take differential of both sides, then divide both sides by <m>\dd{x}</m>.
+      </p>
+
+      <p>
+        Example:
+      </p>
+
+      <md>
+        <mrow> x^2 + y^2 \amp = 1 </mrow>
+        <mrow> \dd(x^2 + y^2) \amp = \dd(1) </mrow>
+        <mrow> 2x\dd{x} + 2y\dd{y} \amp = 0 </mrow>
+        <mrow> 2x\dv{x}{x} + 2y\dv{y}{x} \amp = 0 </mrow>
+        <mrow> 2x + 2y\dv{y}{x} \amp = 0 </mrow>
+        <mrow> 2y\dv{y}{x} \amp = -2x </mrow>
+        <mrow> \dv{y}{x} \amp = -\frac{x}{y} </mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        You can shortcut the differentials by taking derivatives and remembering to multiply by <m>\DS\dv{y}{x}</m> whenever you take a derivative of something involving <m>y</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Talk about tangent lines.
+        DON'T include normal lines; save that until the Analytic Geometry chapter in Part II.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiating <m>\dfrac{1}{x}</m>:
+        <md>
+          <mrow>y \amp = \frac{1}{x} </mrow>
+          <mrow>xy \amp = 1 </mrow>
+          <mrow>\dd(xy) \amp = \dd(1) </mrow>
+          <mrow>x\dd{y} + y\dd{x} \amp = 0 </mrow>
+          <mrow>x\dd{y} \amp = -y\dd{x} </mrow>
+          <mrow>\dd{y} \amp = -\frac{y}{x}\dd{x} </mrow>
+          <mrow>\dd{y} \amp = -\frac{1}{x^2}\dd{x} </mrow>
+          <mrow>\dd(x^{-1}) \amp = -1x^{-2}\dd{x} </mrow>
+        </md>
+        Can leave differentiating <m>\dfrac{1}{x^n}</m> as an exercise, but state the result that the Power Rule now works for all negative exponents.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Develop Quotient Rule:
+      </p>
+      <md>
+        <mrow>h \amp = \frac fg</mrow>
+        <mrow>gh \amp = f </mrow>
+        <mrow> \dd(gh) \amp = \dd{f} </mrow>
+        <mrow> g\dd{h} + h\dd{g} \amp = \dd{f} </mrow>
+        <mrow> g\dd{h} \amp = \dd{f} - h\dd{g} </mrow>
+        <mrow> \dd{h} \amp = \frac{\dd{f} - h\dd{g}}{g} </mrow>
+        <mrow> \dd{h} \amp = \frac{\dd{f} - \frac{f}{g}\dd{g}}{g}\cdot \frac{g}{g} </mrow>
+        <mrow> \dd(\frac fg) \amp = \frac{g\dd{f} - f\dd{g}}{g^2} </mrow>
+      </md>
+      
+    </li>
+
+    <li>
+      <p>
+        Differentiating <m>\sqrt{x}</m>:
+        <md>
+          <mrow>y \amp = \sqrt{x} </mrow>
+          <mrow>y^2 \amp = x </mrow>
+          <mrow> \dd(y^2) \amp = \dd{x} </mrow>
+          <mrow> 2y\dd{y} \amp = \dd{x} </mrow>
+          <mrow> \dd{y} \amp = \frac{1}{2\sqrt{x}}\dd{x} </mrow>
+          <mrow> \dd(x^{1/2}) \amp = \frac{1}{2}x^{-1/2}\dd{x} </mrow>
+        </md>
+        Can leave differentiating <m>\sqrt[b]{x^a}</m> as an exercise, but state the result that the Power Rule now works for all fractional exponents.
+      </p>
+    </li>
+  </ul>
+</section>

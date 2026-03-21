@@ -9,7 +9,6 @@
         </p>
     </introduction>
     
-    <xi:include href="./implicit-differentiation.ptx" />
     <xi:include href="./related-rates.ptx" />
     <xi:include href="./optimization.ptx" />
     <xi:include href="./higher-order-derivatives.ptx" />
