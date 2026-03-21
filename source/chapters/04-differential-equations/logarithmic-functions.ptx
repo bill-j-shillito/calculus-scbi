@@ -32,16 +32,29 @@
   <ul>
     <li>
       <p>
-        Since <m>\ln x</m> and <m>\ee^{x}</m> are inverses, we can evaluate <m>\DS\dv{x} \ee^{\ln x}</m> two ways to find that <m>\DS\dv{x}\ln x=\frac{1}{x}</m>
+        Differentiating <m>\ln x</m>, the inverse of the exponential function:
+        <md>
+          <mrow>y \amp = \ln x </mrow>
+          <mrow>\ee^y \amp = x </mrow>
+          <mrow>\dd(\ee^y) \amp = \dd{x} </mrow>
+          <mrow>\ee^y \dd{y} \amp = \dd{x} </mrow>
+          <mrow>\dd{y} \amp = \frac{1}{\ee^y} \dd{x} </mrow>
+          <mrow>\dv{y}{x} \amp = \frac{1}{x} </mrow>
+        </md>
       </p>
     </li>
 
     <li>
       <p>
         In general, derivatives of inverse functions:
-        <me>
-          \dv{x} f\inv(x)=\dfrac1{f'(f\inv(x))}
-        </me>
+        <md>
+          <mrow> y \amp = f\inv(x)</mrow>
+          <mrow> f(y) \amp = x</mrow>
+          <mrow> \dd(f(y)) \amp = \dd{x}</mrow>
+          <mrow> f'(y)\dd{y} \amp = \dd{x}</mrow>
+          <mrow> \dd{y} \amp = \frac{1}{f'(y)}\dd{x}</mrow>
+          <mrow> \dv{x} f\inv(x) \amp = \frac{1}{f'(f\inv(x))} </mrow>
+        </md>
       </p>
     </li>
 
