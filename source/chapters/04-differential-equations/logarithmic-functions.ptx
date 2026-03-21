@@ -47,26 +47,64 @@
 
     <li>
       <p>
-        For any base <m>b</m>, we can use the fact that <m>\ee^{\ln b}=b</m> and the Chain Rule to get
-        <me>
-          \dv{x} b^{x}=\dv{x}(\ee^{\ln b})^{x}=\dv{x}(\ee^{x})^{\ln b}=\ln(b)(\ee^{x})^{\ln(b)-1}\cdot \ee^{x}=b^{x}\ln b
-        </me>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        We can also rewrite <m>x^{a}</m> for any real <m>a</m> as <m>e^{a \ln x}</m> to show that the Power Rule works for any real exponent.
-      </p>
-    </li>
-
-    <li>
-      <p>
         Logarithmic differentiation:
         <me>
-          \dv{x}\ln y=\frac{y'}{y}
+          \dd(\ln y) = \frac{\dd{y}}{y}
         </me>
-        Good for complicated derivatives or derivatives involving <m>x</m> in both base and power.
+        Good for complicated derivatives or derivatives involving exponents.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Reminder of logarithm rules as opposites of exponent rules:
+        <md>
+          <mrow>\ln(uv) \amp = \ln u + \ln v</mrow>
+          <mrow>\ln\left(\frac{u}{v}\right) \amp = \ln u - \ln v</mrow>
+          <mrow>\ln(u^r) \amp = r \ln u</mrow>
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiating <m>x^r</m> for any real exponent <m>r</m>:
+        <md>
+          <mrow>y \amp = x^r </mrow>
+          <mrow>\ln y \amp = r \ln x </mrow>
+          <mrow>\dd(\ln y) \amp = \dd(r \ln x) </mrow>
+          <mrow>\frac{1}{y}\dd{y} \amp = r \frac{1}{x} \dd{x} </mrow>
+          <mrow>\dd{y} \amp = r x^{r-1} \dd{x} </mrow>
+          <mrow>\dv{y}{x} \amp = r x^{r-1} </mrow>
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiating <m>b^x</m> for any base <m>b>0</m>:
+        <md>
+          <mrow>y \amp = b^x </mrow>
+          <mrow>\ln y \amp = x \ln b </mrow>
+          <mrow>\dd(\ln y) \amp = \dd(x \ln b) </mrow>
+          <mrow>\frac{1}{y}\dd{y} \amp = \ln b \dd{x} </mrow>
+          <mrow>\dd{y} \amp = y \ln b \dd{x} </mrow>
+          <mrow>\dv{y}{x} \amp = b^x \ln b </mrow>
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiating <m>\log_b{x}</m> for any base <m>b>0</m>:
+        <md>
+          <mrow>y \amp = \log_b{x} </mrow>
+          <mrow>b^y \amp = x </mrow>
+          <mrow>\dd(b^y) \amp = \dd{x} </mrow>
+          <mrow>b^y \ln b \dd{y} \amp = \dd{x} </mrow>
+          <mrow>\dd{y} \amp = \frac{1}{x \ln b} \dd{x} </mrow>
+          <mrow>\dv{y}{x} \amp = \frac{1}{x \ln b} </mrow>
+        </md>
       </p>
     </li>
 
