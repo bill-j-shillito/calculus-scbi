@@ -50,6 +50,24 @@
 
     <li>
       <p>
+        Polar area bounded by one curve:
+        <me>
+          A=\frac{1}{2}\int_{\alpha}^{\beta} r^{2}\dd{\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Polar area bounded by two curves:
+        <me>
+          A=\frac{1}{2}\int_{\alpha}^{\beta} (r\tsub{outer}^{2}-r\tsub{inner}^{2})\dd{\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
         If the demand curve <m>p=D(q)</m> and the supply curve <m>p=S(q)</m> meet at the equilibrium point <m>(\bar{q},\bar{p})</m>, then the consumer surplus is
         <me>
           CS=\int_{0}^{\bar{q}}(D(q)-\bar p)\dd{q}

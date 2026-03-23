@@ -9,8 +9,7 @@
         </p>
     </introduction>
 
-    <xi:include href="./changes-of-coordinates.ptx" />
-    <xi:include href="./calculus-in-polar-coordinates.ptx" />
+    <xi:include href="./coordinate-transformations.ptx" />
     <xi:include href="./the-jacobian.ptx" />
     <xi:include href="./polar-double-integrals.ptx" />
     <xi:include href="./cylindrical-spherical.ptx" />

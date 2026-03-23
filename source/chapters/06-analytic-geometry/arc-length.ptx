@@ -69,6 +69,86 @@
         If <m>(x,y)</m> is considered as the position of a particle, then the arc length is the distance traveled.
       </p>
     </li>
+
+    <li>
+      <p>
+        Polar arc length:
+        <me>
+          s=\int_{\alpha}^{\beta} \sqrt{r^{2}+\qty(\dv{r}{\theta})^{2}}\dd{\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
+        <p>
+            Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the <q>arc</q> refers to the arc length of the unit circle corresponding to that angle.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Fix <m>r=1</m>, so <m>x=\cos\theta</m>, <m>y=\sin\theta</m>, and <m>m=\tan\theta</m>. Then we can express the inverse trigonometric functions in terms of these variables:
+            <me>
+                \theta = \arcsin y = \arccos x = \arctan m
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if <m>\theta=\arcsin y</m>, then we have <m>\sin \theta = y</m>. Differentiating both sides with respect to <m>x</m> gives:
+            <me>
+                \cos \theta \cdot \dv{\theta}{y} = 1
+            </me>
+            Solving for <m>\DS\dv{\theta}{y}</m> yields:
+            <me>
+                \dv{\theta}{y} = \frac{1}{\cos \theta} = \frac{1}{\sqrt{1-y^2}}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Similarly, for <m>\theta=\arccos x</m>, we have <m>\cos \theta = x</m>. Differentiating both sides gives:
+            <me>
+                -\sin \theta \cdot \dv{\theta}{x} = 1
+            </me>
+            Solving for <m>\DS\dv{\theta}{x}</m> yields:
+            <me>
+                \dv{\theta}{x} = -\frac{1}{\sin \theta} = -\frac{1}{\sqrt{1-x^2}}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            For <m>\theta=\arctan m</m>, we have <m>\tan \theta = m</m>. Differentiating both sides gives:
+            <me>
+                \sec^2 \theta \cdot \dv{\theta}{m} = 1
+            </me>
+            Solving for <m>\DS\dv{\theta}{m}</m> yields:
+            <me>
+                \dv{\theta}{m} = \frac{1}{\sec^2 \theta} = \frac{1}{1+m^2}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Put another way, the derivatives of <m>\arcsin</m>, <m>\arccos</m>, and <m>\arctan</m> can be thought of as <m>\DS\dv{\theta}{y}</m>, <m>\DS\dv{\theta}{x}</m>, and <m>\DS\dv{\theta}{m}</m> respectively, where <m>\theta</m> is the angle corresponding to the given trigonometric value.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Using <m>x</m> as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of <m>x</m>:
+            <md>
+                <mrow>\dv{x}\arcsin x \amp = \frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow>\dv{x}\arccos x \amp = -\frac{1}{\sqrt{1-x^2}}</mrow>
+                <mrow>\dv{x}\arctan x \amp = \frac{1}{1+x^2}</mrow>
+            </md>
+        </p>
+    </li>
   </ul>
   
 </section>

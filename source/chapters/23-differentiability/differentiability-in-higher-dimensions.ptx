@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-differentiability-in-higher-dimensions">
+  <title>Differentiability in higher dimensions</title>
+
+  <objectives> 
+    <ol>
+      <li>
+        <p>
+          Understand the concept of differentiability in higher dimensions and how it differs from single-variable differentiability.
+        </p>
+      </li>
+      <li>
+        <p>
+          Apply the definition of differentiability to compute derivatives of multivariable functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use the Jacobian matrix to analyze the behavior of multivariable functions and their derivatives.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        A function <m>f:\bb R^n\to\bb R^m</m> is differentiable at a point <m>a\in\bb R^n</m> if there exists a linear transformation <m>L:\bb R^n\to\bb R^m</m> such that
+        <me>
+          \lim_{h\to 0}\frac{\norm{f(a+h)-f(a)-L(h)}}{\norm{h}}=0\text{.}
+        </me>
+        In this case, <m>L</m> is called the derivative of <m>f</m> at <m>a</m>, denoted by <m>D f(a)</m>.
+      </p>
+    </li>
+
+    <li>
+        <p>
+            The existence of partial derivatives does not guarantee differentiability. For example, the function
+            <me>
+                f(x,y) = \begin{cases}
+                \dfrac{y^3}{x^2+y^2} \amp (x,y)\neq(0,0) \\
+                0 \amp (x,y)=(0,0)
+                \end{cases}
+            </me>
+            is continuous and has partial derivatives at the origin, but it is not differentiable there.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            If <m>f:\bb R^n\to\bb R^m</m> is differentiable at <m>a\in\bb R^n</m>, then the derivative <m>D f(a)</m> can be represented as a matrix, which just ends up being the Jacobian matrix.
+        </p>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-coordinate-transformations">
+  <title>Coordinate transformations</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Interpret functions of multiple variables as transformations of space.
+        </p>
+      </li>
+      <li>
+        <p>
+          Describe how coordinate systems change under linear and nonlinear mappings.
+        </p>
+      </li>
+      <li>
+        <p>
+          Visualize how regions and grids are reshaped by transformations.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        A transformation takes points <m>(u,v)</m> in one coordinate system and maps them to points <m>(x,y)</m> in another:
+      </p>
+      <md>
+        <mrow>x \amp = g(u,v)</mrow>
+        <mrow>y \amp = h(u,v)</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Linear transformations:
+      </p>
+      <md>
+        <mrow>x \amp = au+bv</mrow>
+        <mrow>y \amp = cu+dv</mrow>
+      </md>
+      <p>
+        These transformations send grids to parallelogram grids.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Rotation of coordinates:
+        <me>
+          \begin{bmatrix}x \\ y\end{bmatrix} =
+          \begin{bmatrix}\cos\phi \amp -\sin\phi\\ \sin\phi \amp \cos\phi\end{bmatrix}
+          \begin{bmatrix}u\\v\end{bmatrix}
+        </me>
+      </p>
+      <p>
+        Even simple transformations can dramatically change how curves appear.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Nonlinear transformations can bend and distort regions in more complicated ways.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        A useful way to visualize transformations is to track what happens to a grid in the <m>(u,v)</m>-plane as it is mapped into the <m>(x,y)</m>-plane.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Transformations also act on curves. If a curve is described parametrically by <m>(u(t),v(t))</m>, then its image under the transformation is
+        <me>
+          (x(t),y(t)) = (g(u(t),v(t)),\,h(u(t),v(t))\bigr).
+        </me>
+      </p>
+      <p>
+        In other words, we can understand how a transformation affects a curve by applying it point-by-point.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        For example, a straight line in one coordinate system may become a curved path after a nonlinear transformation.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Transformations also act on entire regions. A region in the <m>(u,v)</m>-plane is mapped to a new region in the <m>(x,y)</m>-plane, often with significant distortion.
+      </p>
+      <p>
+        Understanding how regions change shape will be essential later when we compute integrals using new coordinate systems.
+      </p>
+    </li>
+  </ul>
+</section>

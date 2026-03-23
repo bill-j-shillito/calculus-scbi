@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-multivalued-function-behavior">
+  <title>Multivalued function behavior</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Understand multivalued functions using principal branches and Riemann surfaces.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Logarithmic function:
+        <me>
+          \ln z=\ln|z|+\ii\arg z
+        </me>
+        Because the exponential function is periodic, its inverse must be multivalued.
+        We can restrict it to arrive at the principal value
+        <me>
+          \Ln z=\ln|z|+\ii\Arg z
+        </me>
+        Here, we use the principal argument with <m>-\uppi&#x3C;\Arg z\le\uppi</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Complex powers:
+        <aside>
+          <p>
+            Some exponent and root laws don’t carry over to complex numbers because of this!
+          </p>
+        </aside>
+        <me>
+          z^{\alpha}=\ee^{\alpha\ln z}
+        </me>
+        The principal value is <m>z^{\alpha}=\ee^{\alpha\Ln z}</m>.
+      </p>
+      <p>
+        For roots, we write the principal value of <m>z^{1/n}</m> as <m>\sqrt[n]{z}</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Inverse trigonometric functions etc.
+        can also be arrived at in terms of exponentials.
+        For example:
+      </p>
+      <md>
+        <mrow>\sin\inv z \amp = -\ii\ln\qty(\ii z+(1-z^2)^{1/2})</mrow>
+        <mrow>\cos\inv z \amp = -\ii\ln\qty(z+\ii (1-z^2)^{1/2})</mrow>
+        <mrow>\tan\inv z \amp = \frac{\ii}{2}\ln\qty(\frac{\ii+z}{\ii-z})</mrow>
+        <mrow>\sinh\inv z \amp = \ln\qty(z+(z^2+1)^{1/2})</mrow>
+        <mrow>\cosh\inv z \amp = \ln\qty(z+(z^2-1)^{1/2})</mrow>
+        <mrow>\tanh\inv z \amp = \frac{1}{2}\ln\qty(\frac{1+z}{1-z})</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Brief look at Riemann surfaces <mdash/> just enough to show where the “rest” of the function is for the functions with branch cuts.
+      </p>
+    </li>
+  </ul>
+</section>

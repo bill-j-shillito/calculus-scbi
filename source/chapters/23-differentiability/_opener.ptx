@@ -11,6 +11,6 @@
 
     <xi:include href="./differentiability-classes.ptx" />
     <xi:include href="./the-mean-value-theorem.ptx" />
-    <xi:include href="./taylors-theorem.ptx" />
+    <xi:include href="./differentiability-in-higher-dimensions.ptx" />
     <xi:include href="./inverse-and-implicit-functions.ptx" />
 </chapter>

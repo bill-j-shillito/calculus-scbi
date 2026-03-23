@@ -46,9 +46,9 @@
     <part xml:id="part-transforming-perspectives">
       <title>Transforming Perspectives</title>
       
-      <xi:include href="./chapters/16-coordinate-transformations/_opener.ptx" />
-      <xi:include href="./chapters/17-complex-functions/_opener.ptx" />
-      <xi:include href="./chapters/18-vector-fields/_opener.ptx" />
+      <xi:include href="./chapters/16-complex-functions/_opener.ptx" />
+      <xi:include href="./chapters/17-vector-fields/_opener.ptx" />
+      <xi:include href="./chapters/18-coordinate-transformations/_opener.ptx" />
       <xi:include href="./chapters/19-line-and-surface-integrals/_opener.ptx" />
       <xi:include href="./chapters/20-fundamental-theorems/_opener.ptx" />
     </part>

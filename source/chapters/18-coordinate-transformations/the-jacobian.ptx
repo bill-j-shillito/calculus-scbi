@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-the-jacobian">
+  <title>The Jacobian matrix and its determinant</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Interpret the Jacobian matrix as the best linear approximation to a transformation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret the determinant of the Jacobian as a local scaling and orientation factor.
+        </p>
+      </li>
+      <li>
+        <p>
+          Recognize special transformations that preserve angles (conformal maps).
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+
+    <li>
+      <p>
+        The Jacobian matrix of a transformation <m>\bv f</m> given by <m>x=g(u,v)</m>, <m>y=h(u,v)</m> is
+        <me>
+          \bv J_{\bv f}=\pdv{(x,y)}{(u,v)}=
+          \begin{bmatrix}
+            \DS\pdv{x}{u} \amp \DS\pdv{x}{v}\\[1 ex]
+            \DS\pdv{y}{u} \amp \DS\pdv{y}{v}
+          \end{bmatrix}.
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The Jacobian generalizes earlier notions of derivatives:
+      </p>
+      <ul>
+        <li><p><m>\bb R \to \bb R</m>: derivative</p></li>
+        <li><p><m>\bb R \to \bb R^n</m>: vector derivative</p></li>
+        <li><p><m>\bb R^m \to \bb R</m>: gradient (transpose)</p></li>
+        <li><p><m>\bb R^m \to \bb R^n</m>: full Jacobian</p></li>
+      </ul>
+    </li>
+
+    <li>
+      <p>
+        The determinant
+        <me>
+          \det \bv J_{\bv f}
+          =
+          \pdv{x}{u}\pdv{y}{v}
+          -
+          \pdv{x}{v}\pdv{y}{u}
+        </me>
+        measures how small regions are scaled and whether orientation is preserved.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In two dimensions, this corresponds to the area of a transformed parallelogram.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Example (polar coordinates):
+        <me>
+          \abs{\pdv{(x,y)}{(r,\theta)}} = r
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Some transformations do more than scale—they preserve angles.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Example: <m>f(z)=z^2</m> corresponds to the transformation
+        <me>
+          (x,y) \mapsto (x^2 - y^2, 2xy).
+        </me>
+      </p>
+
+      <p>
+        Its Jacobian matrix is
+        <me>
+          \begin{bmatrix}
+            2x \amp -2y\\
+            2y \amp 2x
+          \end{bmatrix},
+        </me>
+        whose determinant is <m>4(x^2 + y^2)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The structure of this matrix shows that the transformation locally acts like a rotation combined with scaling.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        In general, non-constant holomorphic functions produce transformations that preserve angles. These are called <term>conformal mappings</term>.
+      </p>
+    </li>
+
+  </ul>
+</section>

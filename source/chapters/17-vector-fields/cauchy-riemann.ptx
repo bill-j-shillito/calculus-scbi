@@ -88,7 +88,7 @@
 
     <li>
       <p>
-        All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric.
+        All the “nice” functions are holomorphic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric.
         (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!
       </p>
     </li>
@@ -102,12 +102,6 @@
     <li>
       <p>
         A function that is holomorphic at every point in the complex plane is called entire.
-      </p>
-    </li>
-
-    <li>
-      <p>
-        The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.
       </p>
     </li>
 

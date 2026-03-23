@@ -10,7 +10,8 @@
     </introduction>
 
     <xi:include href="./vector-fields.ptx" />
+    <xi:include href="./dynamical-systems.ptx" />
     <xi:include href="./new-derivatives-and-del.ptx" />
     <xi:include href="./cauchy-riemann.ptx" />
-    <xi:include href="./harmonic-functions.ptx" />
+    <xi:include href="./potential-functions.ptx" />
 </chapter>

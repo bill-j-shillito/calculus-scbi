@@ -63,10 +63,18 @@
 
     <li>
       <p>
-        By Euler's formula we also have:
+        Substitute <m>x=\ii\theta</m> into the Maclaurin series for <m>\ee^{x}</m> to arrive at Euler's formula:
         <me>
           \ee^{\ii\theta}=\cos\theta+\ii\sin\theta
         </me>
+        <aside>
+          <p>
+            Avoid the <sq>numerology</sq> of <m>\ee^{\ii\uppi}+1=0</m>.
+          </p>
+        </aside>
+      </p>
+      
+      <p>
         This gives us exponential form of a complex number:
         <aside>
           <p>
@@ -118,8 +126,6 @@
         <me>
           (r\ee^{\ii\theta})^{n}=r^{n}\ee^{n\ii\theta}
         </me>
-        This works with roots as well, but we'll get <m>n</m> roots evenly spaced apart along the unit circle.
-        Also mention <m>\sqrt[n]{z}</m> as principal value of <m>z^{1/n}</m>.
       </p>
     </li>
   </ul>

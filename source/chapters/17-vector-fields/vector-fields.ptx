@@ -74,11 +74,11 @@
 
     <li>
       <p>
-        Dynamical system (in 2D):
+        The Pólya vector field of a complex function <m>f(z)=u(x,y)+\ii v(x,y)</m> is given by:
         <me>
-         \qty(\dv{x}{t},\dv{y}{t})=(P(x,y),Q(x,y))
-        </me>
-        Streamlines are the paths taken by integrating this over time; can have students experiment with these!
+          \bv{F}(x,y) = u(x,y)\,\uv{x} - v(x,y)\,\uv{y}
+        </me>.
+        Note the minus sign in the second component. We'll see that minus sign throughout, and it'll become clear why it's useful.
       </p>
     </li>
   </ul>

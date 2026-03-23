@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-generating-functions">
+  <title>Generating functions</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Understand the concept of generating functions and how they can be used to encode sequences.
+        </p>
+      </li>
+      <li>
+        <p>
+          Manipulate generating functions to find closed-form expressions for sequences.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use generating functions to solve counting problems.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        A generating function is a formal power series in which the coefficients correspond to terms in a sequence. For a sequence <m>{a_n}</m>, the generating function is
+        <me>
+          G(x) = \sum_{n=0}^{\infty} a_n x^n.
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Generating functions can be manipulated algebraically to find closed-form expressions for sequences. For example, if we have a sequence defined by a recurrence relation, we can express it as a generating function and solve for it.
+      </p>
+    </li>
+
+    <li>
+        <p>
+            Binomial series:
+            <me>
+                (1+x)^r = \sum_{n=0}^{\infty} \binom{r}{n} x^n
+            </me>
+            where <m>\DS\binom{r}{n} = \frac{r(r-1)(r-2)\cdots(r-n+1)}{n!}</m>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Example combinatorics problem: counting the number of ways to distribute <m>n</m> identical balls into <m>k</m> distinct boxes. The generating function for this problem is
+            <me>
+                G(x) = \left( \frac{1}{1-x} \right)^k = \sum_{n=0}^{\infty} \binom{n+k-1}{k-1} x^n.
+            </me>
+        </p>
+    </li>
+  </ul>
+</section>

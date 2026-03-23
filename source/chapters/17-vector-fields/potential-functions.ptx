@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-potential-functions">
+  <title>Potential functions</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Recognize when a vector field arises from a scalar potential.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret gradient fields geometrically and physically.
+        </p>
+      </li>
+      <li>
+        <p>
+          Understand complex potentials as a special case of this structure.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        If <m>\phi</m> is a scalar function and <m>\nabla\phi=\bv F</m>, we say that <m>\phi</m> is a <term>potential function</term> of <m>\bv F</m>, and that <m>\bv F</m> is a <emph>gradient field</emph>.
+      </p>
+      <p>
+        In this case, the vector field is completely determined by a single function.
+      </p>
+    </li>
+    <li>
+      <p>
+        The gradient <m>\nabla \phi</m> points in the direction of greatest increase of <m>\phi</m>. As a result, the vectors of <m>\bv F</m> are always perpendicular to the level curves (or surfaces) of <m>\phi</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        The Laplacian operator is defined by
+        <me>
+          \nabla^{2} \phi = \nabla\cdot\nabla \phi = \pdv[2]{\phi}{x}+\pdv[2]{\phi}{y}+\pdv[2]{\phi}{z}.
+        </me>
+        Functions satisfying <m>\nabla^2 \phi = 0</m> are called <term>harmonic functions</term>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Harmonic functions arise naturally in systems at equilibrium, such as steady-state heat flow, electrostatics, and incompressible fluid flow.
+      </p>
+    </li>
+    <li>
+      <p>
+        In two dimensions, a harmonic function <m>\phi</m> often admits a companion function <m>\psi</m>, called its <term>harmonic conjugate</term>, such that their level curves form orthogonal families.
+      </p>
+    </li>
+    <li>
+      <p>
+        When <m>\phi</m> and <m>\psi</m> are related in this way, we can combine them into a complex function
+        <me>
+          \Omega(z) = \phi(x,y) + \ii \psi(x,y),
+        </me>
+        called a <term>complex potential</term>.
+      </p>
+      <p>
+        If this function is holomorphic, then the corresponding vector field has a highly constrained structure, satisfying the Cauchy–Riemann equations.
+      </p>
+    </li>
+    <li>
+      <p>
+        If <m>\bv F(x,y) = (u(x,y), v(x,y))</m> represents the velocity field of an ideal fluid (incompressible and irrotational), then the associated complex function encodes both the potential and the flow of the system.
+      </p>
+    </li>
+    <li>
+      <p>
+        Applications:
+      </p>
+
+      <p>
+        <tabular>
+          <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" />
+          <row>
+            <cell>Application</cell>
+            <cell>Level curves of <m>\phi</m></cell>
+            <cell>Level curves of <m>\psi</m></cell>
+          </row>
+
+          <row />
+          <row>
+            <cell>electrostatics</cell>
+            <cell>equipotential curves</cell>
+            <cell>lines of force</cell>
+          </row>
+
+          <row>
+            <cell>gravitation</cell>
+            <cell>equipotential curves</cell>
+            <cell>lines of force</cell>
+          </row>
+
+          <row>
+            <cell>fluid flow</cell>
+            <cell>equipotential curves</cell>
+            <cell>streamlines of flow</cell>
+          </row>
+
+          <row>
+            <cell>heat flow</cell>
+            <cell>isotherms</cell>
+            <cell>lines of heat flux</cell>
+          </row>
+        </tabular>
+      </p>
+    </li>
+
+  </ul>
+</section>

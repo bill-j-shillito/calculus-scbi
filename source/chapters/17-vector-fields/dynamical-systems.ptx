@@ -1,0 +1,84 @@
+<section xml:id="sec-dynamical-systems">
+  <title>Dynamical systems</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Interpret a vector field as defining a dynamical system.
+        </p>
+      </li>
+      <li>
+        <p>
+          Understand solutions as paths (trajectories) through the field.
+        </p>
+      </li>
+      <li>
+        <p>
+          Visualize and analyze streamlines of a vector field.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        A dynamical system in two dimensions is given by:
+      </p>
+      <me>
+        \qty(\dv{x}{t},\dv{y}{t})=(P(x,y),Q(x,y))
+      </me>
+    </li>
+
+    <li>
+      <p>
+        Solutions to this system describe how a point moves over time.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The resulting paths are called <emph>trajectories</emph> or <emph>streamlines</emph>.
+      </p>
+      <p>
+        Different initial points can lead to very different behavior, even within the same field.
+      </p>
+      <p>
+        These ideas connect directly to earlier work with differential equations and will later help us interpret line integrals and flow.
+      </p>
+    </li>
+
+    <li>
+        <p>
+            Predator-prey dynamics (Lotka-Volterra model):
+        </p>
+        <md>
+            <mrow>\dv{x}{t} \amp = ax - bxy </mrow>
+            <mrow>\dv{y}{t} \amp = -cy + dxy </mrow>
+        </md>
+        <p>
+            Here, <m>x</m> represents the prey population and <m>y</m> the predator population. The vector field describes how both populations change in response to each other.
+        </p>
+    </li>
+    <li>
+        <p>
+            Disease spread (SIR model):
+        </p>
+        <md>
+            <mrow>\dv{S}{t} \amp = -\dfrac{\beta}{n} SI </mrow>
+            <mrow>\dv{I}{t} \amp = \dfrac{\beta}{n} SI - \gamma I </mrow>
+            <mrow>\dv{R}{t} \amp = \gamma I </mrow>
+        </md>
+        <p>
+            This system tracks how individuals move between susceptible, infected, and recovered groups. The vector field determines how an outbreak evolves over time.
+        </p>
+    </li>
+  </ul>
+</section>
