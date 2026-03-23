@@ -105,5 +105,40 @@
         Understanding how regions change shape will be essential later when we compute integrals using new coordinate systems.
       </p>
     </li>
+
+    <li>
+      <p>
+        Complex transformations:
+      </p>
+      <ul>
+        <li>
+          <p>
+            Translation: <m>f(z) = z + c</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Rotation: <m>f(z) = \ee^{\ii\theta}z</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Inversion: <m>f(z) = 1/\overline{z}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Möbius tranformation:
+            <me>
+              f(z)=\frac{az+b}{cz+d},\qquad ad-bc\neq 0
+            </me>
+            Can be thought of as a composition of scaling, rotation, and inversion + conjugation.
+          </p>
+          <p>
+            <url href="https://www.youtube.com/watch?v=0z1fIsUNhO4">https://www.youtube.com/watch?v=0z1fIsUNhO4</url>
+          </p>
+        </li>
+      </ul>
+    </li>
   </ul>
 </section>

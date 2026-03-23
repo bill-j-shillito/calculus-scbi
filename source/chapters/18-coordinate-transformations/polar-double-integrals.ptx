@@ -41,6 +41,15 @@
 
     <li>
       <p>
+        Polar Jacobian:
+        <me>
+          \abs{\pdv{(x,y)}{(r,\theta)}} = r
+        </me>.
+      </p>
+    </li>
+
+    <li>
+      <p>
         Moment of inertia:
       </p>
       <md>

@@ -90,6 +90,26 @@
       </p>
     </li>
 
+    
+    <li>
+      <p>
+        Apply to second-order linear differential equation:
+        <me>
+          y''+my'+by=0
+        </me>
+        This shows why complex numbers are perfect for applications involving quantities that oscillate.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Exponential form of Fourier series (good to put in exercises):
+        <me>
+          \sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+        </me>
+      </p>
+    </li>
+
     <li>
       <p>
         Now we can multiply and divide <m>z=r\ee^{\ii\theta}</m> and <m>w=s\ee^{\ii\phi}</m> as follows:

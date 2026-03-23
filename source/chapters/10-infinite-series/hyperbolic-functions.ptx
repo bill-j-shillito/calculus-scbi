@@ -58,7 +58,7 @@
 
     <li>
       <p>
-        Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as <m>\sinh^{2} x</m> or <m>\tanh a\tanh b</m>).
+        Osborn's rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as <m>\sinh^{2} x</m> or <m>\tanh a\tanh b</m>).
       </p>
     </li>
 
@@ -72,6 +72,37 @@
       <p>
         Catenary as the shape of a hanging chain...
         try to derive this using just what we know from this course (for reference, see Kline 16.4)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Hyperbolic substitutions for integrals:
+      </p>
+      <p>
+        <tabular>
+          <col halign="center" right="minor" /> <col halign="center" />
+          <row>
+            <cell>When you see...</cell>
+            <cell>Substitute...</cell>
+          </row>
+
+          <row />
+          <row>
+            <cell> <m>a^{2}-x^{2}</m> </cell>
+            <cell> <m>x=a\tanh u</m> </cell>
+          </row>
+
+          <row>
+            <cell> <m>x^{2}+a^{2}</m> </cell>
+            <cell> <m>x=a\sinh u</m> </cell>
+          </row>
+
+          <row>
+            <cell> <m>x^{2}-a^{2}</m> </cell>
+            <cell> <m>x=a\cosh u</m> </cell>
+          </row>
+        </tabular>
       </p>
     </li>
   </ul>

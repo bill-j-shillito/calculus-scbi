@@ -78,15 +78,6 @@
 
     <li>
       <p>
-        Example (polar coordinates):
-        <me>
-          \abs{\pdv{(x,y)}{(r,\theta)}} = r
-        </me>.
-      </p>
-    </li>
-
-    <li>
-      <p>
         Some transformations do more than scale—they preserve angles.
       </p>
     </li>

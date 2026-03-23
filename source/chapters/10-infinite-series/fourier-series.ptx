@@ -94,15 +94,6 @@
 
   <li>
     <p>
-      Exponential form:
-      <me>
-        \sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
-      </me>
-    </p>
-  </li>
-
-  <li>
-    <p>
       Square wave:
       <me>
         \frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
