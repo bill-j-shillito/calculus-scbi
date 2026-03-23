@@ -1054,29 +1054,11 @@ var ptx_lunr_docs = [
   "body": "   Combine and rescale power series by addition and constant multiplication.    Use substitution to construct new series from familiar ones.    Differentiate and integrate power series term by term.    "
 },
 {
-  "id": "sec-hyperbolic-functions",
-  "level": "1",
-  "url": "sec-hyperbolic-functions.html",
-  "type": "Section",
-  "number": "10.4",
-  "title": "Hyperbolic functions",
-  "body": " Hyperbolic functions     Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.      Introduction goes here.     The similarity between the power series for , , and suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:     Define hyperbolic tangent etc. analogously    Derivative properties:     Osborn’s rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as or ).    By eliminating the parameter, we get that traces out one branch of the hyperbola , hence the name.    Catenary as the shape of a hanging chain... try to derive this using just what we know from this course (for reference, see Kline 16.4)    "
-},
-{
-  "id": "sec-hyperbolic-functions-2",
-  "level": "2",
-  "url": "sec-hyperbolic-functions.html#sec-hyperbolic-functions-2",
-  "type": "Objectives",
-  "number": "10.4",
-  "title": "",
-  "body": "   Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.    "
-},
-{
   "id": "sec-geometric-series",
   "level": "1",
   "url": "sec-geometric-series.html",
   "type": "Section",
-  "number": "10.5",
+  "number": "10.4",
   "title": "Geometric series",
   "body": " Geometric series     Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.      Introduction goes here.     A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.    A geometric series is the infinite sum.    Sum of a geometric series: shift and subtract    Graph the function... it only converges when . Verify that this makes sense with the numerical behavior. Takeaway: we have to watch out for where any given power series converges.    Include Maclaurin series for , , ,     Madhava series for     "
 },
@@ -1085,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-geometric-series.html#sec-geometric-series-2",
   "type": "Objectives",
-  "number": "10.5",
+  "number": "10.4",
   "title": "",
   "body": "   Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.    "
 },
@@ -1094,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-generating-functions.html",
   "type": "Section",
-  "number": "10.6",
+  "number": "10.5",
   "title": "Generating functions",
   "body": " Generating functions     Understand the concept of generating functions and how they can be used to encode sequences.    Manipulate generating functions to find closed-form expressions for sequences.    Use generating functions to solve counting problems.      Introduction goes here.     A generating function is a formal power series in which the coefficients correspond to terms in a sequence. For a sequence , the generating function is     Generating functions can be manipulated algebraically to find closed-form expressions for sequences. For example, if we have a sequence defined by a recurrence relation, we can express it as a generating function and solve for it.    Binomial series: where .    Example combinatorics problem: counting the number of ways to distribute identical balls into distinct boxes. The generating function for this problem is     "
 },
@@ -1103,9 +1085,27 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-generating-functions.html#sec-generating-functions-2",
   "type": "Objectives",
-  "number": "10.6",
+  "number": "10.5",
   "title": "",
   "body": "   Understand the concept of generating functions and how they can be used to encode sequences.    Manipulate generating functions to find closed-form expressions for sequences.    Use generating functions to solve counting problems.    "
+},
+{
+  "id": "sec-hyperbolic-functions",
+  "level": "1",
+  "url": "sec-hyperbolic-functions.html",
+  "type": "Section",
+  "number": "10.6",
+  "title": "Hyperbolic functions",
+  "body": " Hyperbolic functions     Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.      Introduction goes here.     The similarity between the power series for , , and suggests defining two new functions resembling the sine and cosine but without alternating signs in the power series:     Define hyperbolic tangent etc. analogously    Derivative properties:     Osborn's rule: Any trigonometric identity can be ‘translated’ into an equally valid identity for hyperbolic functions by changing all trigonometric functions to their hyperbolic counterparts and swapping the sign for any term containing a product of two hyperbolic sines (or implying such a product, such as or ).    By eliminating the parameter, we get that traces out one branch of the hyperbola , hence the name.    Catenary as the shape of a hanging chain... try to derive this using just what we know from this course (for reference, see Kline 16.4)    Hyperbolic substitutions for integrals:       When you see...  Substitute...                                "
+},
+{
+  "id": "sec-hyperbolic-functions-2",
+  "level": "2",
+  "url": "sec-hyperbolic-functions.html#sec-hyperbolic-functions-2",
+  "type": "Objectives",
+  "number": "10.6",
+  "title": "",
+  "body": "   Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.    "
 },
 {
   "id": "sec-fourier-series",
@@ -1114,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.7",
   "title": "CAPSTONE: Fourier series",
-  "body": " CAPSTONE: Fourier series     Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.      Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Exponential form:     Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
+  "body": " CAPSTONE: Fourier series     Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.      Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
 },
 {
   "id": "sec-fourier-series-2",
@@ -1591,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.1",
   "title": "The geometry of complex numbers",
-  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      Substitute into the Maclaurin series for to arrive at Euler's formula:   Avoid the numerology of .    This gives us exponential form of a complex number:  Engineers also write .       Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula:     "
+  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      Substitute into the Maclaurin series for to arrive at Euler's formula:   Avoid the numerology of .    This gives us exponential form of a complex number:  Engineers also write .       Apply to second-order linear differential equation: This shows why complex numbers are perfect for applications involving quantities that oscillate.    Exponential form of Fourier series (good to put in exercises):     Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula:     "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers-2",
@@ -1627,7 +1627,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.3",
   "title": "Extending functions to complex inputs",
-  "body": " Extending functions to complex inputs     Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.      Introduction goes here.     Extending exponential function to complex inputs:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Apply to second-order linear differential equation: Analyze different cases, including complex case.    Hyperbolic functions:   Relationships between trigonometric and hyperbolic functions:     "
+  "body": " Extending functions to complex inputs     Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.      Introduction goes here.     Extending exponential function to complex inputs:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometric and hyperbolic functions:     "
 },
 {
   "id": "sec-extending-functions-to-complex-inputs-2",
@@ -1645,7 +1645,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.4",
   "title": "Multivalued function behavior",
-  "body": " Multivalued function behavior     Understand multivalued functions using principal branches and Riemann surfaces.      Introduction goes here.     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don’t carry over to complex numbers because of this!   The principal value is .  For roots, we write the principal value of as .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
+  "body": " Multivalued function behavior     Understand multivalued functions using principal branches and Riemann surfaces.      Introduction goes here.     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don't carry over to complex numbers because of this!   The principal value is .  For roots, we write the principal value of as .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
 },
 {
   "id": "sec-multivalued-function-behavior-2",
@@ -1789,7 +1789,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.1",
   "title": "Coordinate transformations",
-  "body": " Coordinate transformations     Interpret functions of multiple variables as transformations of space.    Describe how coordinate systems change under linear and nonlinear mappings.    Visualize how regions and grids are reshaped by transformations.      Introduction goes here.     A transformation takes points in one coordinate system and maps them to points in another:     Linear transformations:   These transformations send grids to parallelogram grids.    Rotation of coordinates:   Even simple transformations can dramatically change how curves appear.    Nonlinear transformations can bend and distort regions in more complicated ways.    A useful way to visualize transformations is to track what happens to a grid in the -plane as it is mapped into the -plane.    Transformations also act on curves. If a curve is described parametrically by , then its image under the transformation is   In other words, we can understand how a transformation affects a curve by applying it point-by-point.    For example, a straight line in one coordinate system may become a curved path after a nonlinear transformation.    Transformations also act on entire regions. A region in the -plane is mapped to a new region in the -plane, often with significant distortion.  Understanding how regions change shape will be essential later when we compute integrals using new coordinate systems.    "
+  "body": " Coordinate transformations     Interpret functions of multiple variables as transformations of space.    Describe how coordinate systems change under linear and nonlinear mappings.    Visualize how regions and grids are reshaped by transformations.      Introduction goes here.     A transformation takes points in one coordinate system and maps them to points in another:     Linear transformations:   These transformations send grids to parallelogram grids.    Rotation of coordinates:   Even simple transformations can dramatically change how curves appear.    Nonlinear transformations can bend and distort regions in more complicated ways.    A useful way to visualize transformations is to track what happens to a grid in the -plane as it is mapped into the -plane.    Transformations also act on curves. If a curve is described parametrically by , then its image under the transformation is   In other words, we can understand how a transformation affects a curve by applying it point-by-point.    For example, a straight line in one coordinate system may become a curved path after a nonlinear transformation.    Transformations also act on entire regions. A region in the -plane is mapped to a new region in the -plane, often with significant distortion.  Understanding how regions change shape will be essential later when we compute integrals using new coordinate systems.    Complex transformations:    Translation:     Rotation:     Inversion:     Möbius tranformation: Can be thought of as a composition of scaling, rotation, and inversion + conjugation.   https:\/\/www.youtube.com\/watch?v=0z1fIsUNhO4       "
 },
 {
   "id": "sec-coordinate-transformations-2",
@@ -1807,7 +1807,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.2",
   "title": "The Jacobian matrix and its determinant",
-  "body": " The Jacobian matrix and its determinant     Interpret the Jacobian matrix as the best linear approximation to a transformation.    Interpret the determinant of the Jacobian as a local scaling and orientation factor.    Recognize special transformations that preserve angles (conformal maps).      Introduction goes here.     The Jacobian matrix of a transformation given by , is     The Jacobian generalizes earlier notions of derivatives:   : derivative  : vector derivative  : gradient (transpose)  : full Jacobian     The determinant measures how small regions are scaled and whether orientation is preserved.    In two dimensions, this corresponds to the area of a transformed parallelogram.    Example (polar coordinates): .    Some transformations do more than scale—they preserve angles.    Example: corresponds to the transformation   Its Jacobian matrix is whose determinant is .    The structure of this matrix shows that the transformation locally acts like a rotation combined with scaling.    In general, non-constant holomorphic functions produce transformations that preserve angles. These are called conformal mappings .    "
+  "body": " The Jacobian matrix and its determinant     Interpret the Jacobian matrix as the best linear approximation to a transformation.    Interpret the determinant of the Jacobian as a local scaling and orientation factor.    Recognize special transformations that preserve angles (conformal maps).      Introduction goes here.     The Jacobian matrix of a transformation given by , is     The Jacobian generalizes earlier notions of derivatives:   : derivative  : vector derivative  : gradient (transpose)  : full Jacobian     The determinant measures how small regions are scaled and whether orientation is preserved.    In two dimensions, this corresponds to the area of a transformed parallelogram.    Some transformations do more than scale—they preserve angles.    Example: corresponds to the transformation   Its Jacobian matrix is whose determinant is .    The structure of this matrix shows that the transformation locally acts like a rotation combined with scaling.    In general, non-constant holomorphic functions produce transformations that preserve angles. These are called conformal mappings .    "
 },
 {
   "id": "sec-the-jacobian-2",
@@ -1819,9 +1819,9 @@ var ptx_lunr_docs = [
   "body": "   Interpret the Jacobian matrix as the best linear approximation to a transformation.    Interpret the determinant of the Jacobian as a local scaling and orientation factor.    Recognize special transformations that preserve angles (conformal maps).    "
 },
 {
-  "id": "sec-the-jacobian-4-9-1",
+  "id": "sec-the-jacobian-4-8-1",
   "level": "2",
-  "url": "sec-the-jacobian.html#sec-the-jacobian-4-9-1",
+  "url": "sec-the-jacobian.html#sec-the-jacobian-4-8-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1834,7 +1834,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.3",
   "title": "Double integrals over polar regions",
-  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Moment of inertia:     Do the Gaussian integral using the polar trick    "
+  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Polar Jacobian: .    Moment of inertia:     Do the Gaussian integral using the polar trick    "
 },
 {
   "id": "sec-polar-double-integrals-2",

@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-generating-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-infinite-series.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="part-new-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-hyperbolic-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-infinite-series.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="part-new-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -312,9 +312,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylor-approximations-and-series.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Taylor approximations and series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-error-in-taylor-series.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Error in Taylor series</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-manipulating-power-series.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Manipulating power series</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyperbolic-functions.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Hyperbolic functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-geometric-series.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Geometric series</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-generating-functions.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Generating functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-geometric-series.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Geometric series</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-generating-functions.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Generating functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyperbolic-functions.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Hyperbolic functions</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-fourier-series.html" class="internal"><span class="codenumber">10.7</span> <span class="title">CAPSTONE: Fourier series</span></a></div></li>
 </ul>
 </li>
@@ -578,10 +578,10 @@ b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x}
 </li>
 <li id="sec-fourier-series-4-5">
 <div class="para logical" id="sec-fourier-series-4-5-1">
-<div class="para">Exponential form:</div>
+<div class="para">Square wave:</div>
 <div class="displaymath process-math" id="sec-fourier-series-4-5-1-1">
 \begin{equation*}
-\sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+\frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -590,10 +590,10 @@ b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x}
 </li>
 <li id="sec-fourier-series-4-6">
 <div class="para logical" id="sec-fourier-series-4-6-1">
-<div class="para">Square wave:</div>
+<div class="para">Sawtooth wave</div>
 <div class="displaymath process-math" id="sec-fourier-series-4-6-1-1">
 \begin{equation*}
-\frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
+\frac{2}{\uppi}\qty(\sin x-\frac{1}{2}\sin 2x+\frac{1}{3}\sin 3x-\frac{1}{4}\sin 4x+\cdots)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -602,10 +602,10 @@ b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x}
 </li>
 <li id="sec-fourier-series-4-7">
 <div class="para logical" id="sec-fourier-series-4-7-1">
-<div class="para">Sawtooth wave</div>
+<div class="para">Triangle wave</div>
 <div class="displaymath process-math" id="sec-fourier-series-4-7-1-1">
 \begin{equation*}
-\frac{2}{\uppi}\qty(\sin x-\frac{1}{2}\sin 2x+\frac{1}{3}\sin 3x-\frac{1}{4}\sin 4x+\cdots)
+\frac{4}{\uppi}\qty(\sin x-\frac{1}{9}\sin 3x+\frac{1}{25}\sin 5x-\frac{1}{49}\sin 7x+\cdots)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -614,10 +614,10 @@ b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x}
 </li>
 <li id="sec-fourier-series-4-8">
 <div class="para logical" id="sec-fourier-series-4-8-1">
-<div class="para">Triangle wave</div>
+<div class="para">Up-down:</div>
 <div class="displaymath process-math" id="sec-fourier-series-4-8-1-1">
 \begin{equation*}
-\frac{4}{\uppi}\qty(\sin x-\frac{1}{9}\sin 3x+\frac{1}{25}\sin 5x-\frac{1}{49}\sin 7x+\cdots)
+\frac{4}{\uppi}\qty(\cos x+\cos 3x+\cos 5x+\cos 7x+\cdots)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -626,10 +626,10 @@ b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x}
 </li>
 <li id="sec-fourier-series-4-9">
 <div class="para logical" id="sec-fourier-series-4-9-1">
-<div class="para">Up-down:</div>
+<div class="para">Ramp:</div>
 <div class="displaymath process-math" id="sec-fourier-series-4-9-1-1">
 \begin{equation*}
-\frac{4}{\uppi}\qty(\cos x+\cos 3x+\cos 5x+\cos 7x+\cdots)
+\frac{\uppi}{2}-\frac{\uppi}{4}\qty(\cos x+\frac{1}{9}\cos 3x+\frac{1}{25}\cos 5x+\frac{1}{49}\cos 7x+\cdots)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -638,32 +638,20 @@ b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x}
 </li>
 <li id="sec-fourier-series-4-10">
 <div class="para logical" id="sec-fourier-series-4-10-1">
-<div class="para">Ramp:</div>
+<div class="para">Square pulse:</div>
 <div class="displaymath process-math" id="sec-fourier-series-4-10-1-1">
 \begin{equation*}
-\frac{\uppi}{2}-\frac{\uppi}{4}\qty(\cos x+\frac{1}{9}\cos 3x+\frac{1}{25}\cos 5x+\frac{1}{49}\cos 7x+\cdots)
+\frac{h}{2\uppi}+\sum_{k=1}^{\infty}\frac{\sin kh}{\uppi k}+\sum_{k=1}^{\infty}\frac{1-\cos kh}{\uppi k}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-fourier-series-4-11">
-<div class="para logical" id="sec-fourier-series-4-11-1">
-<div class="para">Square pulse:</div>
-<div class="displaymath process-math" id="sec-fourier-series-4-11-1-1">
-\begin{equation*}
-\frac{h}{2\uppi}+\sum_{k=1}^{\infty}\frac{\sin kh}{\uppi k}+\sum_{k=1}^{\infty}\frac{1-\cos kh}{\uppi k}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-fourier-series-4-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-fourier-series-4-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
 </ul>
 <div class="autopermalink" data-description="Section 10.7: CAPSTONE: Fourier series"><a href="#sec-fourier-series" title="Copy heading and permalink for Section 10.7: CAPSTONE: Fourier series" aria-label="Copy heading and permalink for Section 10.7: CAPSTONE: Fourier series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-generating-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-new-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-hyperbolic-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-new-dimensions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
