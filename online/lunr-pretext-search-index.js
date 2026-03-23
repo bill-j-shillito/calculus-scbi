@@ -712,40 +712,40 @@ var ptx_lunr_docs = [
   "body": "   Describe curves by giving each coordinate as a separate function of a parameter.    Relate motion along a curve to its slope by comparing how $x$ and $y$ change with the parameter.    Generate familiar shapes such as lines, ellipses, and hyperbolas.    "
 },
 {
+  "id": "sec-polar-coordinates",
+  "level": "1",
+  "url": "sec-polar-coordinates.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Polar coordinates",
+  "body": " Polar coordinates     Understand the geometric meaning of inverse trigonometric functions in terms of arc length.    Compute the derivatives of inverse trigonometric functions using implicit differentiation.    Decide on appropriate domains and ranges for the inverse trigonometric functions.      Introduction goes here.     Some curves are better understood in polar coordinates.    Converting from polar to rectangular:     Converting from rectangular to polar:     Some graphs:   Rose curves: ,     Limaçon: ,     Circle: , ,     Lemniscate: ,        Derivative:     "
+},
+{
+  "id": "sec-polar-coordinates-2",
+  "level": "2",
+  "url": "sec-polar-coordinates.html#sec-polar-coordinates-2",
+  "type": "Objectives",
+  "number": "6.3",
+  "title": "",
+  "body": "   Understand the geometric meaning of inverse trigonometric functions in terms of arc length.    Compute the derivatives of inverse trigonometric functions using implicit differentiation.    Decide on appropriate domains and ranges for the inverse trigonometric functions.    "
+},
+{
   "id": "sec-arc-length",
   "level": "1",
   "url": "sec-arc-length.html",
   "type": "Section",
-  "number": "6.3",
+  "number": "6.4",
   "title": "Arc length",
-  "body": " Arc length     Measure the length of a curve by accumulating tiny distance increments along its path.    Relate arc length to how quickly the coordinates change along the curve.    Interpret arc length as the total distance traveled by a moving particle.      Introduction goes here.     Differential of arc length: (Show right triangle diagram)    Arc length:     If the curve is a function , the formula simplifies:     Easy to find arc length of a circle, but not doable for an ellipse! More on that later.    If is considered as the position of a particle, then the arc length is the distance traveled.    "
+  "body": " Arc length     Measure the length of a curve by accumulating tiny distance increments along its path.    Relate arc length to how quickly the coordinates change along the curve.    Interpret arc length as the total distance traveled by a moving particle.      Introduction goes here.     Differential of arc length: (Show right triangle diagram)    Arc length:     If the curve is a function , the formula simplifies:     Easy to find arc length of a circle, but not doable for an ellipse! More on that later.    If is considered as the position of a particle, then the arc length is the distance traveled.    Polar arc length:     Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the arc refers to the arc length of the unit circle corresponding to that angle.    Fix , so , , and . Then we can express the inverse trigonometric functions in terms of these variables:     The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if , then we have . Differentiating both sides with respect to gives: Solving for yields:     Similarly, for , we have . Differentiating both sides gives: Solving for yields:     For , we have . Differentiating both sides gives: Solving for yields:     Put another way, the derivatives of , , and can be thought of as , , and respectively, where is the angle corresponding to the given trigonometric value.    Using as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of :     "
 },
 {
   "id": "sec-arc-length-2",
   "level": "2",
   "url": "sec-arc-length.html#sec-arc-length-2",
   "type": "Objectives",
-  "number": "6.3",
+  "number": "6.4",
   "title": "",
   "body": "   Measure the length of a curve by accumulating tiny distance increments along its path.    Relate arc length to how quickly the coordinates change along the curve.    Interpret arc length as the total distance traveled by a moving particle.    "
-},
-{
-  "id": "sec-inverse-trigonometric-functions",
-  "level": "1",
-  "url": "sec-inverse-trigonometric-functions.html",
-  "type": "Section",
-  "number": "6.4",
-  "title": "Inverse trigonometric functions",
-  "body": " Inverse trigonometric functions     Understand the geometric meaning of inverse trigonometric functions in terms of arc length.    Compute the derivatives of inverse trigonometric functions using implicit differentiation.    Decide on appropriate domains and ranges for the inverse trigonometric functions.      Introduction goes here.     Why is the inverse of the sine function called the ARCsine function? Because it gives the angle whose sine is a given number, and the arc refers to the arc length of the unit circle corresponding to that angle.    Let , , and . Then we can express the inverse trigonometric functions in terms of these variables:     The derivatives of the inverse trigonometric functions can be found using implicit differentiation. For example, if , then we have . Differentiating both sides with respect to gives: Solving for yields:     Similarly, for , we have . Differentiating both sides gives: Solving for yields:     For , we have . Differentiating both sides gives: Solving for yields:     Put another way, the derivatives of , , and can be thought of as , , and respectively, where is the angle corresponding to the given trigonometric value.    Using as a generic independent variable, we can express the derivatives of the inverse trigonometric functions in terms of :     "
-},
-{
-  "id": "sec-inverse-trigonometric-functions-2",
-  "level": "2",
-  "url": "sec-inverse-trigonometric-functions.html#sec-inverse-trigonometric-functions-2",
-  "type": "Objectives",
-  "number": "6.4",
-  "title": "",
-  "body": "   Understand the geometric meaning of inverse trigonometric functions in terms of arc length.    Compute the derivatives of inverse trigonometric functions using implicit differentiation.    Decide on appropriate domains and ranges for the inverse trigonometric functions.    "
 },
 {
   "id": "sec-curvature",
@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Area between curves",
-  "body": " Area between curves     Compute area by comparing one curve to another across an interval.    Switch perspectives by integrating with respect to or when appropriate.    Apply area comparisons to economic quantities such as surplus and measures of inequality.      Introduction goes here.     Area bounded by over :     Area bounded by over :     If the demand curve and the supply curve meet at the equilibrium point , then the consumer surplus is , and the producer surplus is .    A Lorenz curve is a function , where , that describes how wealth is distributed among the members of a population. Given any Lorenz curve , the Gini coefficient is defined as . This can be used as a quantitative measure of income inequality.    "
+  "body": " Area between curves     Compute area by comparing one curve to another across an interval.    Switch perspectives by integrating with respect to or when appropriate.    Apply area comparisons to economic quantities such as surplus and measures of inequality.      Introduction goes here.     Area bounded by over :     Area bounded by over :     Polar area bounded by one curve:     Polar area bounded by two curves:     If the demand curve and the supply curve meet at the equilibrium point , then the consumer surplus is , and the producer surplus is .    A Lorenz curve is a function , where , that describes how wealth is distributed among the members of a population. Given any Lorenz curve , the Gini coefficient is defined as . This can be used as a quantitative measure of income inequality.    "
 },
 {
   "id": "sec-area-between-curves-2",
@@ -1018,11 +1018,29 @@ var ptx_lunr_docs = [
   "body": "   Approximate functions near a point by matching derivatives with a chosen polynomial.    Improve accuracy by adding terms and extending the idea to infinite series.    Derive Maclaurin series for , , and .    "
 },
 {
+  "id": "sec-error-in-taylor-series",
+  "level": "1",
+  "url": "sec-error-in-taylor-series.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Error in Taylor series",
+  "body": " Error in Taylor series     Use Taylor's theorem with remainder to approximate functions near a point.    Interpret remainder terms in both Lagrange and integral forms.    Estimate approximation error using Lagrange's bound.      Introduction goes here.     Taylor’s theorem: For any other there exists some between and (which depends on and and ) such that That is, , for some between and .    Integral form of remainder function:     Lagrange error bound: If for , then for .    "
+},
+{
+  "id": "sec-error-in-taylor-series-2",
+  "level": "2",
+  "url": "sec-error-in-taylor-series.html#sec-error-in-taylor-series-2",
+  "type": "Objectives",
+  "number": "10.2",
+  "title": "",
+  "body": "   Use Taylor's theorem with remainder to approximate functions near a point.    Interpret remainder terms in both Lagrange and integral forms.    Estimate approximation error using Lagrange's bound.    "
+},
+{
   "id": "sec-manipulating-power-series",
   "level": "1",
   "url": "sec-manipulating-power-series.html",
   "type": "Section",
-  "number": "10.2",
+  "number": "10.3",
   "title": "Manipulating power series",
   "body": " Manipulating power series     Combine and rescale power series by addition and constant multiplication.    Use substitution to construct new series from familiar ones.    Differentiate and integrate power series term by term.      Introduction goes here.     Adding power series    Multiplying through by a factor    Differentiating and integrating term by term    Products of power series? Using a grid? Only if we're going to include Mertens' theorem in Part V.    "
 },
@@ -1031,27 +1049,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-manipulating-power-series.html#sec-manipulating-power-series-2",
   "type": "Objectives",
-  "number": "10.2",
+  "number": "10.3",
   "title": "",
   "body": "   Combine and rescale power series by addition and constant multiplication.    Use substitution to construct new series from familiar ones.    Differentiate and integrate power series term by term.    "
-},
-{
-  "id": "sec-geometric-series",
-  "level": "1",
-  "url": "sec-geometric-series.html",
-  "type": "Section",
-  "number": "10.3",
-  "title": "Geometric series",
-  "body": " Geometric series     Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.      Introduction goes here.     A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.    A geometric series is the infinite sum.    Sum of a geometric series: shift and subtract    Graph the function... it only converges when . Verify that this makes sense with the numerical behavior. Takeaway: we have to watch out for where any given power series converges.    Include Maclaurin series for , , ,     Madhava series for     "
-},
-{
-  "id": "sec-geometric-series-2",
-  "level": "2",
-  "url": "sec-geometric-series.html#sec-geometric-series-2",
-  "type": "Objectives",
-  "number": "10.3",
-  "title": "",
-  "body": "   Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.    "
 },
 {
   "id": "sec-hyperbolic-functions",
@@ -1072,38 +1072,56 @@ var ptx_lunr_docs = [
   "body": "   Define hyperbolic functions using patterns in their power series and exponential forms.    Use derivative relationships to compare hyperbolic and trigonometric behavior.    Connect hyperbolic functions to geometric shapes and physical models such as hanging chains.    "
 },
 {
-  "id": "sec-eulers-formula",
+  "id": "sec-geometric-series",
   "level": "1",
-  "url": "sec-eulers-formula.html",
+  "url": "sec-geometric-series.html",
   "type": "Section",
   "number": "10.5",
-  "title": "Euler’s formula",
-  "body": " Euler's formula     Interpret complex numbers geometrically, including the role of as a rotation.    Derive Euler's formula by extending the exponential series to imaginary inputs.    Analyze solutions of second-order linear differential equations using complex exponents.      Introduction goes here.     Review complex numbers, introduce the idea of rotating by a quarter-turn counterclockwise    Substitute into the Maclaurin series for to arrive at Euler's formula:     Apply to second-order linear differential equation: Analyze different cases, including complex case.    Avoid the numerology of .    "
+  "title": "Geometric series",
+  "body": " Geometric series     Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.      Introduction goes here.     A geometric sequence is a sequence in which the terms are in a constant common ratio from one to the next.    A geometric series is the infinite sum.    Sum of a geometric series: shift and subtract    Graph the function... it only converges when . Verify that this makes sense with the numerical behavior. Takeaway: we have to watch out for where any given power series converges.    Include Maclaurin series for , , ,     Madhava series for     "
 },
 {
-  "id": "sec-eulers-formula-2",
+  "id": "sec-geometric-series-2",
   "level": "2",
-  "url": "sec-eulers-formula.html#sec-eulers-formula-2",
+  "url": "sec-geometric-series.html#sec-geometric-series-2",
   "type": "Objectives",
   "number": "10.5",
   "title": "",
-  "body": "   Interpret complex numbers geometrically, including the role of as a rotation.    Derive Euler's formula by extending the exponential series to imaginary inputs.    Analyze solutions of second-order linear differential equations using complex exponents.    "
+  "body": "   Interpret geometric sequences and series as repeated multiplication leading to an infinite sum.    Derive the geometric series formula and determine its interval of convergence.    Generate further Maclaurin expansions from geometric series.    "
+},
+{
+  "id": "sec-generating-functions",
+  "level": "1",
+  "url": "sec-generating-functions.html",
+  "type": "Section",
+  "number": "10.6",
+  "title": "Generating functions",
+  "body": " Generating functions     Understand the concept of generating functions and how they can be used to encode sequences.    Manipulate generating functions to find closed-form expressions for sequences.    Use generating functions to solve counting problems.      Introduction goes here.     A generating function is a formal power series in which the coefficients correspond to terms in a sequence. For a sequence , the generating function is     Generating functions can be manipulated algebraically to find closed-form expressions for sequences. For example, if we have a sequence defined by a recurrence relation, we can express it as a generating function and solve for it.    Binomial series: where .    Example combinatorics problem: counting the number of ways to distribute identical balls into distinct boxes. The generating function for this problem is     "
+},
+{
+  "id": "sec-generating-functions-2",
+  "level": "2",
+  "url": "sec-generating-functions.html#sec-generating-functions-2",
+  "type": "Objectives",
+  "number": "10.6",
+  "title": "",
+  "body": "   Understand the concept of generating functions and how they can be used to encode sequences.    Manipulate generating functions to find closed-form expressions for sequences.    Use generating functions to solve counting problems.    "
 },
 {
   "id": "sec-fourier-series",
   "level": "1",
   "url": "sec-fourier-series.html",
   "type": "Section",
-  "number": "10.6",
-  "title": "Fourier series",
-  "body": " Fourier series     Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.      Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Exponential form:     Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
+  "number": "10.7",
+  "title": "CAPSTONE: Fourier series",
+  "body": " CAPSTONE: Fourier series     Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.      Introduction goes here.     Motivation: Instead of an infinite sum of power functions, represent a periodic function as an infinite sum of sinusoidal functions (music\/sound connection)    Formula for a general Fourier series: Euler-Fourier formulas for coefficients:     This all works because:   Can use trig integrals to show this!    Fourier Convergence Theorem (wording from Smith\/Minton):  Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   If we introduce my notation from the improper integrals chapter, we can rewrite this last expression as .    Exponential form:     Square wave:     Sawtooth wave     Triangle wave     Up-down:     Ramp:     Square pulse:     "
 },
 {
   "id": "sec-fourier-series-2",
   "level": "2",
   "url": "sec-fourier-series.html#sec-fourier-series-2",
   "type": "Objectives",
-  "number": "10.6",
+  "number": "10.7",
   "title": "",
   "body": "   Represent periodic functions as infinite sums of sines and cosines.    Compute Fourier coefficients using orthogonality to isolate each frequency.    Approximate common waveforms with Fourier series.    "
 },
@@ -1115,15 +1133,6 @@ var ptx_lunr_docs = [
   "number": "6",
   "title": "Fourier Convergence Theorem.",
   "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
-},
-{
-  "id": "sec-the-riemann-zeta-function",
-  "level": "1",
-  "url": "sec-the-riemann-zeta-function.html",
-  "type": "Section",
-  "number": "10.7",
-  "title": "CAPSTONE: The Riemann zeta function",
-  "body": " CAPSTONE: The Riemann zeta function    Harmonic series: Can show pretty easily that it diverges, e.g. by pointing out that the associated improper integral diverges.    Basel problem: We can show it converges. But what does it converge to?    Euler wrote as an infinite product:   Set this equal to Taylor series and divide through by : Collect terms: Rearranging, we find that     What about for other powers? Preliminary definition: Factoring as an infinite product using geometric series:     Easy to extend to complex powers if real part is at least     Analytic continuation is where we pretend that the series converges even where it doesn't (for example with geometric series)    Alternating zeta function: Note that: This works for positive real, except when , but we can just use limits for all of those except .    Reflection formula: Can show that when is negative and even, and . This now works for all complex numbers except .    Riemann Hypothesis: All nontrivial zeros of have real part .    Prime counting function: is the number of prime numbers less than or equal to . Was shown to be asymptotic first to and then to . This is the Prime Number Theorem.    Briefly mention Fourier transform: You give it a function , it gives you a back a new function with spikes at the underlying frequencies of . It's like un-baking a cake. It's awesome.    When you take the Fourier transform of the error term of the Prime Number Theorem, the spikes happen right at the nontrivial zeros of the zeta function!    Why this capstone? It uses almost everything we've been talking about with integrals and series!    "
 },
 {
   "id": "sec-what-are-dimensions-really",
@@ -1576,191 +1585,119 @@ var ptx_lunr_docs = [
   "body": " CAPSTONE: Calculus of variations    In ordinary optimization, we search for a number that minimizes a function .  In multivariable optimization, we search for a point that minimizes a function .  In the calculus of variations, we search for an entire function that minimizes a quantity of the form .  Such a map is called a functional, because it assigns a number to a function.    Suppose is a candidate minimizer. Consider a small perturbation where so that the endpoints remain fixed.  Define   If minimizes , then .  Thus the problem reduces to differentiating with respect to the ordinary variable .    Differentiating under the integral sign gives .  Integrating the second term by parts,   Because , the boundary term vanishes. Hence .  Since this must hold for every admissible , we obtain the Euler-Lagrange equation: .    The length of a curve from to is .  Here .  Since , the Euler-Lagrange equation reduces to .  Therefore which implies .  The shortest path between two points is a straight line.    If describes a surface over a region , its surface area is .  Minimizing this functional leads to , the minimal surface equation.  Unlike the one-dimensional case, this condition is now a partial differential equation.    For a curve, curvature measures how sharply the curve bends.  For a surface, there are two distinguished directions of bending. The corresponding curvatures are the principal curvatures and .  Two natural measurements arise: .  Here is the mean curvature and is the Gaussian curvature.  In coordinates , Gaussian curvature can be expressed as . This is in fact the quantity we used when doing the Second Derivative Test.  Mean curvature can be expressed as .  Expanding the minimal surface equation shows that it is exactly the condition .  Thus minimal surfaces are characterized by zero average bending, not by zero Gaussian curvature.       In multivariable optimization, we solve .    In calculus of variations, we set the functional derivative equal to zero.     Both express stationarity, but now the object being optimized is a shape.    "
 },
 {
-  "id": "sec-changes-of-coordinates",
-  "level": "1",
-  "url": "sec-changes-of-coordinates.html",
-  "type": "Section",
-  "number": "16.1",
-  "title": "Changes of coordinates",
-  "body": " Changes of coordinates     Use coordinate changes to recast a problem in a more convenient frame of reference.    Express relationships between variables in new coordinates and observe how familiar equations transform.    Work with polar coordinates to describe curves and regions that are difficult to express in rectangular form.      Introduction goes here.     Frame this in terms of choosing a change of variables that makes it easier to represent a problem. It's all about finding the right frame of reference.    Linear change of variables:     Rotated coordinates: Show how this turns into a hyperbola in coordinates.    A very useful non-linear change of coordinates is polar coordinates.    Converting from polar to rectangular:     Converting from rectangular to polar:     Some graphs:   Rose curves: ,     Limaçon: ,     Circle: , ,     Lemniscate: ,        "
-},
-{
-  "id": "sec-changes-of-coordinates-2",
-  "level": "2",
-  "url": "sec-changes-of-coordinates.html#sec-changes-of-coordinates-2",
-  "type": "Objectives",
-  "number": "16.1",
-  "title": "",
-  "body": "   Use coordinate changes to recast a problem in a more convenient frame of reference.    Express relationships between variables in new coordinates and observe how familiar equations transform.    Work with polar coordinates to describe curves and regions that are difficult to express in rectangular form.    "
-},
-{
-  "id": "sec-calculus-in-polar-coordinates",
-  "level": "1",
-  "url": "sec-calculus-in-polar-coordinates.html",
-  "type": "Section",
-  "number": "16.2",
-  "title": "Calculus in polar coordinates",
-  "body": " Calculus in polar coordinates     Find slopes of tangent lines to curves given in polar form.    Compute arc lengths using the polar arc length formula.    Determine areas of regions bounded by one or more polar curves.      Introduction goes here.     Derivative:     Arc length:     Polar area bounded by one curve:     Polar area bounded by two curves:     "
-},
-{
-  "id": "sec-calculus-in-polar-coordinates-2",
-  "level": "2",
-  "url": "sec-calculus-in-polar-coordinates.html#sec-calculus-in-polar-coordinates-2",
-  "type": "Objectives",
-  "number": "16.2",
-  "title": "",
-  "body": "   Find slopes of tangent lines to curves given in polar form.    Compute arc lengths using the polar arc length formula.    Determine areas of regions bounded by one or more polar curves.    "
-},
-{
-  "id": "sec-the-jacobian",
-  "level": "1",
-  "url": "sec-the-jacobian.html",
-  "type": "Section",
-  "number": "16.3",
-  "title": "The Jacobian matrix and its determinant",
-  "body": " The Jacobian matrix and its determinant     Describe how a coordinate transformation reshapes regions using its Jacobian matrix.    Interpret the determinant of the Jacobian as the local area-scaling and orientation factor.    View the Jacobian as a unifying framework that generalizes earlier derivative concepts.      Introduction goes here.     Show how spaces gets turned into space through an arrow diagram with what happens to a grid    The Jacobian matrix of the transformation given by and is     The Jacobian is a generalization of all the derivatives we’ve seen so far:    : The Jacobian is just the derivative.     : The Jacobian is the vector derivative.     : The Jacobian is the transpose of the gradient.     : This is the most general case.       Determinant of a matrix being a scale factor \/ orientation change factor; demonstrate with 2D area of a parallelogram    The determinant is This is a scale factor of how small areas will change shape and orientation locally.    Polar Jacobian:     "
-},
-{
-  "id": "sec-the-jacobian-2",
-  "level": "2",
-  "url": "sec-the-jacobian.html#sec-the-jacobian-2",
-  "type": "Objectives",
-  "number": "16.3",
-  "title": "",
-  "body": "   Describe how a coordinate transformation reshapes regions using its Jacobian matrix.    Interpret the determinant of the Jacobian as the local area-scaling and orientation factor.    View the Jacobian as a unifying framework that generalizes earlier derivative concepts.    "
-},
-{
-  "id": "sec-polar-double-integrals",
-  "level": "1",
-  "url": "sec-polar-double-integrals.html",
-  "type": "Section",
-  "number": "16.4",
-  "title": "Double integrals over polar regions",
-  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Moment of inertia:     Do the Gaussian integral using the polar trick    "
-},
-{
-  "id": "sec-polar-double-integrals-2",
-  "level": "2",
-  "url": "sec-polar-double-integrals.html#sec-polar-double-integrals-2",
-  "type": "Objectives",
-  "number": "16.4",
-  "title": "",
-  "body": "   Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.    "
-},
-{
-  "id": "sec-cylindrical-spherical",
-  "level": "1",
-  "url": "sec-cylindrical-spherical.html",
-  "type": "Section",
-  "number": "16.5",
-  "title": "Cylindrical and spherical coordinates",
-  "body": " Cylindrical and spherical coordinates     Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.    Compute the associated Jacobians that describe how volume elements transform.    Rewrite triple integrals in these coordinates when symmetry simplifies computation.      Introduction goes here.     3D Jacobians are set up the same way, but might need to show how determinant works (expansion by minors or maybe Rule of Sarrus would be enough)    Cylindrical coordinates:   Jacobian:     Spherical coordinates:   Jacobian:   This is assuming is spherical radius, is longitude (azimuthal angle), is co-latitude (polar angle).    Show how to use them to convert triple integrals, applied problems (most likely center of mass, moment of inertia)    "
-},
-{
-  "id": "sec-cylindrical-spherical-2",
-  "level": "2",
-  "url": "sec-cylindrical-spherical.html#sec-cylindrical-spherical-2",
-  "type": "Objectives",
-  "number": "16.5",
-  "title": "",
-  "body": "   Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.    Compute the associated Jacobians that describe how volume elements transform.    Rewrite triple integrals in these coordinates when symmetry simplifies computation.    "
-},
-{
   "id": "sec-the-geometry-of-complex-numbers",
   "level": "1",
   "url": "sec-the-geometry-of-complex-numbers.html",
   "type": "Section",
-  "number": "17.1",
+  "number": "16.1",
   "title": "The geometry of complex numbers",
-  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      By Euler's formula we also have: This gives us exponential form of a complex number:  Engineers also write .       Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula: This works with roots as well, but we'll get roots evenly spaced apart along the unit circle. Also mention as principal value of .    "
+  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      Substitute into the Maclaurin series for to arrive at Euler's formula:   Avoid the numerology of .    This gives us exponential form of a complex number:  Engineers also write .       Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula:     "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers-2",
   "level": "2",
   "url": "sec-the-geometry-of-complex-numbers.html#sec-the-geometry-of-complex-numbers-2",
   "type": "Objectives",
-  "number": "17.1",
+  "number": "16.1",
   "title": "",
   "body": "   Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.    "
 },
 {
-  "id": "sec-complex-functions-as-transformations",
+  "id": "sec-visualizing-complex-functions",
   "level": "1",
-  "url": "sec-complex-functions-as-transformations.html",
+  "url": "sec-visualizing-complex-functions.html",
   "type": "Section",
-  "number": "17.2",
-  "title": "Complex functions as transformations",
-  "body": " Complex functions as transformations     Describe curves and regions in the complex plane.    Interpret complex functions by studying how they transform curves and regions.    Visualize complex mappings using domain coloring to encode magnitude and argument.      Introduction goes here.     Regions in the complex plane:   Circle:     Disk:     Half planes: , , etc    Annulus:        We can visualize complex functions by considering what they do to particular regions of the complex plane. This is just like what we did with the Jacobian section!  Example: What does do? We can expand it out and get: So we can view this as the transformation The Jacobian determinant of this matrix is and the determinant is . This shows how the lengths of small boxes will be scaled.    Parametric curves in the complex plane   Line (segment, ray):     Circle:    Image of curve: If , then .    Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =    Based on this, we can tell where the zeros are because (1) the colors approach black, and (2) the colors will cycle around the points.    "
+  "number": "16.2",
+  "title": "Visualizing complex functions",
+  "body": " Visualizing complex functions     Visualize complex mappings using domain coloring to encode magnitude and argument.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Break down complex functions into their real and imaginary parts.      Introduction goes here.     Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =        Roots of unity: has roots at for .  We can see this in the domain coloring of , where the colors cycle around the unit circle and approach black (zero) at the roots of unity.    Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.       Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    "
 },
 {
-  "id": "sec-complex-functions-as-transformations-2",
+  "id": "sec-visualizing-complex-functions-2",
   "level": "2",
-  "url": "sec-complex-functions-as-transformations.html#sec-complex-functions-as-transformations-2",
+  "url": "sec-visualizing-complex-functions.html#sec-visualizing-complex-functions-2",
   "type": "Objectives",
-  "number": "17.2",
+  "number": "16.2",
   "title": "",
-  "body": "   Describe curves and regions in the complex plane.    Interpret complex functions by studying how they transform curves and regions.    Visualize complex mappings using domain coloring to encode magnitude and argument.    "
+  "body": "   Visualize complex mappings using domain coloring to encode magnitude and argument.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Break down complex functions into their real and imaginary parts.    "
 },
 {
-  "id": "sec-extending-complex-functions",
+  "id": "sec-extending-functions-to-complex-inputs",
   "level": "1",
-  "url": "sec-extending-complex-functions.html",
+  "url": "sec-extending-functions-to-complex-inputs.html",
   "type": "Section",
-  "number": "17.3",
-  "title": "Extending functions to the complex plane",
-  "body": " Extending functions to the complex plane     Extend familiar real functions to complex inputs and analyze their behavior.    Interpret complex outputs through domain coloring and mappings of planar regions.    Understand multivalued functions using principal branches and Riemann surfaces.      Introduction goes here.     Mostly focuses on what happens if you plug a complex number into well-known functions. For all of these, view their domain coloring, and some important mappings of planar regions.    Exponential functions:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometirc and hyperbolic functions:     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don’t carry over to complex numbers because of this!   The principal value is .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
+  "number": "16.3",
+  "title": "Extending functions to complex inputs",
+  "body": " Extending functions to complex inputs     Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.      Introduction goes here.     Extending exponential function to complex inputs:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Apply to second-order linear differential equation: Analyze different cases, including complex case.    Hyperbolic functions:   Relationships between trigonometric and hyperbolic functions:     "
 },
 {
-  "id": "sec-extending-complex-functions-2",
+  "id": "sec-extending-functions-to-complex-inputs-2",
   "level": "2",
-  "url": "sec-extending-complex-functions.html#sec-extending-complex-functions-2",
+  "url": "sec-extending-functions-to-complex-inputs.html#sec-extending-functions-to-complex-inputs-2",
   "type": "Objectives",
-  "number": "17.3",
+  "number": "16.3",
   "title": "",
-  "body": "   Extend familiar real functions to complex inputs and analyze their behavior.    Interpret complex outputs through domain coloring and mappings of planar regions.    Understand multivalued functions using principal branches and Riemann surfaces.    "
+  "body": "   Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.    "
 },
 {
-  "id": "sec-complex-infinity",
+  "id": "sec-multivalued-function-behavior",
   "level": "1",
-  "url": "sec-complex-infinity.html",
+  "url": "sec-multivalued-function-behavior.html",
   "type": "Section",
-  "number": "17.4",
-  "title": "Complex infinity and the Riemann sphere",
-  "body": " Complex infinity and the Riemann sphere     Examine how inversion transforms magnitudes, angles, and regions in the complex plane.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Study Möbius transformations as compositions of basic geometric actions.      Introduction goes here.     Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.    Transformations: Flips points inside and outside the unit circle, along with a conjugtion. That is,        Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    Möbius tranformation: Can be thought of as a composition of scaling, rotation, and inversion + conjugation.     https:\/\/www.youtube.com\/watch?v=0z1fIsUNhO4     "
+  "number": "16.4",
+  "title": "Multivalued function behavior",
+  "body": " Multivalued function behavior     Understand multivalued functions using principal branches and Riemann surfaces.      Introduction goes here.     Logarithmic function: Because the exponential function is periodic, its inverse must be multivalued. We can restrict it to arrive at the principal value Here, we use the principal argument with .    Complex powers:  Some exponent and root laws don’t carry over to complex numbers because of this!   The principal value is .  For roots, we write the principal value of as .    Inverse trigonometric functions etc. can also be arrived at in terms of exponentials. For example:     Brief look at Riemann surfaces just enough to show where the “rest” of the function is for the functions with branch cuts.    "
 },
 {
-  "id": "sec-complex-infinity-2",
+  "id": "sec-multivalued-function-behavior-2",
   "level": "2",
-  "url": "sec-complex-infinity.html#sec-complex-infinity-2",
+  "url": "sec-multivalued-function-behavior.html#sec-multivalued-function-behavior-2",
   "type": "Objectives",
-  "number": "17.4",
+  "number": "16.4",
   "title": "",
-  "body": "   Examine how inversion transforms magnitudes, angles, and regions in the complex plane.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Study Möbius transformations as compositions of basic geometric actions.    "
+  "body": "   Understand multivalued functions using principal branches and Riemann surfaces.    "
 },
 {
   "id": "sec-vector-fields",
   "level": "1",
   "url": "sec-vector-fields.html",
   "type": "Section",
-  "number": "18.1",
+  "number": "17.1",
   "title": "Vector fields",
-  "body": " Vector fields     Interpret vector fields as functions assigning a vector to each point.    Examine key examples such as radial, rotational, and inverse-square fields in 2D and 3D.    View vector fields as dynamical systems and study their streamlines.      Introduction goes here.     This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.    2D vector fields:   Good examples are and     3D vector fields:     Inverse square fields    Interpreting as a force field vs a velocity field    Dynamical system (in 2D): Streamlines are the paths taken by integrating this over time; can have students experiment with these!    "
+  "body": " Vector fields     Interpret vector fields as functions assigning a vector to each point.    Examine key examples such as radial, rotational, and inverse-square fields in 2D and 3D.    View vector fields as dynamical systems and study their streamlines.      Introduction goes here.     This is another way to visualize a multivariable function of multiple variables — vector input gives vector output.    2D vector fields:   Good examples are and     3D vector fields:     Inverse square fields    Interpreting as a force field vs a velocity field    The Pólya vector field of a complex function is given by: . Note the minus sign in the second component. We'll see that minus sign throughout, and it'll become clear why it's useful.    "
 },
 {
   "id": "sec-vector-fields-2",
   "level": "2",
   "url": "sec-vector-fields.html#sec-vector-fields-2",
   "type": "Objectives",
-  "number": "18.1",
+  "number": "17.1",
   "title": "",
   "body": "   Interpret vector fields as functions assigning a vector to each point.    Examine key examples such as radial, rotational, and inverse-square fields in 2D and 3D.    View vector fields as dynamical systems and study their streamlines.    "
+},
+{
+  "id": "sec-dynamical-systems",
+  "level": "1",
+  "url": "sec-dynamical-systems.html",
+  "type": "Section",
+  "number": "17.2",
+  "title": "Dynamical systems",
+  "body": " Dynamical systems     Interpret a vector field as defining a dynamical system.    Understand solutions as paths (trajectories) through the field.    Visualize and analyze streamlines of a vector field.      Introduction goes here.     A dynamical system in two dimensions is given by:     Solutions to this system describe how a point moves over time.    The resulting paths are called trajectories or streamlines .  Different initial points can lead to very different behavior, even within the same field.  These ideas connect directly to earlier work with differential equations and will later help us interpret line integrals and flow.    Predator-prey dynamics (Lotka-Volterra model):   Here, represents the prey population and the predator population. The vector field describes how both populations change in response to each other.    Disease spread (SIR model):   This system tracks how individuals move between susceptible, infected, and recovered groups. The vector field determines how an outbreak evolves over time.    "
+},
+{
+  "id": "sec-dynamical-systems-2",
+  "level": "2",
+  "url": "sec-dynamical-systems.html#sec-dynamical-systems-2",
+  "type": "Objectives",
+  "number": "17.2",
+  "title": "",
+  "body": "   Interpret a vector field as defining a dynamical system.    Understand solutions as paths (trajectories) through the field.    Visualize and analyze streamlines of a vector field.    "
 },
 {
   "id": "sec-new-derivatives-and-del",
   "level": "1",
   "url": "sec-new-derivatives-and-del.html",
   "type": "Section",
-  "number": "18.2",
+  "number": "17.3",
   "title": "New derivatives and the del operator",
   "body": " New derivatives and the del operator     Define divergence and curl as measures of outward flow and rotational behavior.    Interpret incompressible and irrotational vector fields as ideal fluid flows.    Use the del operator to express gradient, divergence, and curl in unified notation.      Introduction goes here.     Divergence of a vector field:   This measures how much a vector field is flowing outward . If the divergence in a region is positive, it's acting like a source, while if it's negative, it's acting like a sink.    Curl of a vector field:   This measures how much a vector field is rotating .  A vector field with zero divergence is called incompressible or solenoidal.   In the 2D case, the curl is a scalar. If curl is positive, the field is rotating counterclockwise, while if negative, it's rotating clockwise.    In the 3D case, the curl is a vector, which points along the direction of the right-hand rule, so that the field is flowing counterclockwise around that vector as an axis. The magnitude is the strength of rotation.   A vector field with zero curl is called irrotational.    In fluid dynamics, an ideal fluid is incompressible and irrotational.    Some useful properties:     The del operator is a vector operator.  In 2D: In 3D: With this operator, we have:     Divergence and curl act like derivatives in that they distribute over sums and satisfy a product rule in many cases:      https:\/\/mathintuitions.com\/2025\/05\/27\/divergence-curl-and-the-taylor-series-approximation\/     Include polar versions as an exercise    "
 },
@@ -1769,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-new-derivatives-and-del.html#sec-new-derivatives-and-del-2",
   "type": "Objectives",
-  "number": "18.2",
+  "number": "17.3",
   "title": "",
   "body": "   Define divergence and curl as measures of outward flow and rotational behavior.    Interpret incompressible and irrotational vector fields as ideal fluid flows.    Use the del operator to express gradient, divergence, and curl in unified notation.    "
 },
@@ -1778,36 +1715,153 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-cauchy-riemann.html",
   "type": "Section",
-  "number": "18.3",
+  "number": "17.4",
   "title": "The Cauchy-Riemann equations",
-  "body": " The Cauchy-Riemann equations     Determine continuity and differentiability of complex functions.    Use the Cauchy-Riemann equations to characterize when a complex function is holomorphic.    Interpret holomorphic functions as conformal mappings.      Introduction goes here.     Derivative of complex function: Note that is complex here! Alternatively:     Limits are defined exactly as you think they are based on multivariable calculus: means that approaches as closely as desired when approaches along any path.    Some functions aren’t differentiable. Great example is :  Another fun one is , which is differentiable everywhere for real functions but is differentiable only at as a complex function!   If along the real line, this quotient approaches , but if it approaches over the imaginary line, the quotient approaches . Therefore the limit does not exist, and hence the complex conjugate is not differentiable.... anywhere!     If a function is differentiable at and at every point in some neighborhood of , we say is holomorphic at .    If a function is differentiable at a point, it must satisfy the Cauchy-Riemann equations: Furthermore, if and are continuous and have continuous first partial derivatives in a domain , then satisfying the Cauchy-Riemann equations at all points of implies that is holomorphic in .    All the “nice” functions are analytic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric. (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!    If is holomorphic in a domain , then is constant if is constant or if .    A function that is holomorphic at every point in the complex plane is called entire.    The Jacobian of a non-constant holomorphic function shows that its associated transformation is conformal, that is, it preserves angles.    Linear approximation: Should be able to relate this to being holomorphic.    L’Hôpital’s rule works!    "
+  "body": " The Cauchy-Riemann equations     Determine continuity and differentiability of complex functions.    Use the Cauchy-Riemann equations to characterize when a complex function is holomorphic.    Interpret holomorphic functions as conformal mappings.      Introduction goes here.     Derivative of complex function: Note that is complex here! Alternatively:     Limits are defined exactly as you think they are based on multivariable calculus: means that approaches as closely as desired when approaches along any path.    Some functions aren’t differentiable. Great example is :  Another fun one is , which is differentiable everywhere for real functions but is differentiable only at as a complex function!   If along the real line, this quotient approaches , but if it approaches over the imaginary line, the quotient approaches . Therefore the limit does not exist, and hence the complex conjugate is not differentiable.... anywhere!     If a function is differentiable at and at every point in some neighborhood of , we say is holomorphic at .    If a function is differentiable at a point, it must satisfy the Cauchy-Riemann equations: Furthermore, if and are continuous and have continuous first partial derivatives in a domain , then satisfying the Cauchy-Riemann equations at all points of implies that is holomorphic in .    All the “nice” functions are holomorphic in their domains: polynomial, rational, exponential, trigonometric, logarithmic, inverse trigonometric. (Excluding branch cuts.) This in fact means that all our original derivative formulas from calculus apply!    If is holomorphic in a domain , then is constant if is constant or if .    A function that is holomorphic at every point in the complex plane is called entire.    Linear approximation: Should be able to relate this to being holomorphic.    L’Hôpital’s rule works!    "
 },
 {
   "id": "sec-cauchy-riemann-2",
   "level": "2",
   "url": "sec-cauchy-riemann.html#sec-cauchy-riemann-2",
   "type": "Objectives",
-  "number": "18.3",
+  "number": "17.4",
   "title": "",
   "body": "   Determine continuity and differentiability of complex functions.    Use the Cauchy-Riemann equations to characterize when a complex function is holomorphic.    Interpret holomorphic functions as conformal mappings.    "
 },
 {
-  "id": "sec-harmonic-functions",
+  "id": "sec-potential-functions",
   "level": "1",
-  "url": "sec-harmonic-functions.html",
+  "url": "sec-potential-functions.html",
   "type": "Section",
-  "number": "18.4",
-  "title": "Harmonic functions and complex potentials",
-  "body": " Harmonic functions and complex potentials     Define harmonic functions as solutions to Laplace's equation.    Relate harmonic conjugates to orthogonal level curves.    Connect ideal fluid flow and other physical systems to holomorphic complex potentials.      Introduction goes here.     The Laplacian operator: In other words, Laplace’s equation (from PDE) is just . Real-valued functions that satisfy this requirement are called harmonic functions.    Laplacian for vector functions:     If is analytic, then and are holomorphic, and we say that is the harmonic conjugate of . Furthermore, is the harmonic conjugate of .    The level curves of and will be orthogonal families, that is, the tangent lines at all points of intersection will always be perpendicular.    If is a scalar function and , we say that is a potential function (or just a potential) of , and we call a gradient field.    If is harmonic, it has a harmonic conjugate , and we say that is the complex potential of .    If is the velocity field of an ideal fluid (that is, incompressible and irrotational), then is holomorphic (it satisfies the Cauchy Riemann equations), and furthermore as defined above is its potential function, which is also holomorphic.  We say that is the Pólya vector field of the complex function .  Notice that this shows a connection between the equations for curl and divergence and the Cauchy-Riemann equations, but they’re each off by a minus sign. The reason for this sign change will become clear when we do contour integrals later.    Applications:        Application  Level curves of   Level curves of      electrostatics  equipotential curves  lines of force    gravitation  equipotential curves  lines of force    fluid flow  equipotential curves  streamlines of flow    heat flow  isotherms  lines of heat flux       Should get into why we care about solutions to Laplace’s equation.    "
+  "number": "17.5",
+  "title": "Potential functions",
+  "body": " Potential functions     Recognize when a vector field arises from a scalar potential.    Interpret gradient fields geometrically and physically.    Understand complex potentials as a special case of this structure.      Introduction goes here.     If is a scalar function and , we say that is a potential function of , and that is a gradient field .  In this case, the vector field is completely determined by a single function.    The gradient points in the direction of greatest increase of . As a result, the vectors of are always perpendicular to the level curves (or surfaces) of .    The Laplacian operator is defined by Functions satisfying are called harmonic functions .    Harmonic functions arise naturally in systems at equilibrium, such as steady-state heat flow, electrostatics, and incompressible fluid flow.    In two dimensions, a harmonic function often admits a companion function , called its harmonic conjugate , such that their level curves form orthogonal families.    When and are related in this way, we can combine them into a complex function called a complex potential .  If this function is holomorphic, then the corresponding vector field has a highly constrained structure, satisfying the Cauchy–Riemann equations.    If represents the velocity field of an ideal fluid (incompressible and irrotational), then the associated complex function encodes both the potential and the flow of the system.    Applications:        Application  Level curves of  Level curves of     electrostatics  equipotential curves  lines of force    gravitation  equipotential curves  lines of force    fluid flow  equipotential curves  streamlines of flow    heat flow  isotherms  lines of heat flux       "
 },
 {
-  "id": "sec-harmonic-functions-2",
+  "id": "sec-potential-functions-2",
   "level": "2",
-  "url": "sec-harmonic-functions.html#sec-harmonic-functions-2",
+  "url": "sec-potential-functions.html#sec-potential-functions-2",
+  "type": "Objectives",
+  "number": "17.5",
+  "title": "",
+  "body": "   Recognize when a vector field arises from a scalar potential.    Interpret gradient fields geometrically and physically.    Understand complex potentials as a special case of this structure.    "
+},
+{
+  "id": "sec-potential-functions-4-1-1",
+  "level": "2",
+  "url": "sec-potential-functions.html#sec-potential-functions-4-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "potential function "
+},
+{
+  "id": "sec-potential-functions-4-3-1",
+  "level": "2",
+  "url": "sec-potential-functions.html#sec-potential-functions-4-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "harmonic functions "
+},
+{
+  "id": "sec-potential-functions-4-5-1",
+  "level": "2",
+  "url": "sec-potential-functions.html#sec-potential-functions-4-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "harmonic conjugate "
+},
+{
+  "id": "sec-potential-functions-4-6-1",
+  "level": "2",
+  "url": "sec-potential-functions.html#sec-potential-functions-4-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "complex potential "
+},
+{
+  "id": "sec-coordinate-transformations",
+  "level": "1",
+  "url": "sec-coordinate-transformations.html",
+  "type": "Section",
+  "number": "18.1",
+  "title": "Coordinate transformations",
+  "body": " Coordinate transformations     Interpret functions of multiple variables as transformations of space.    Describe how coordinate systems change under linear and nonlinear mappings.    Visualize how regions and grids are reshaped by transformations.      Introduction goes here.     A transformation takes points in one coordinate system and maps them to points in another:     Linear transformations:   These transformations send grids to parallelogram grids.    Rotation of coordinates:   Even simple transformations can dramatically change how curves appear.    Nonlinear transformations can bend and distort regions in more complicated ways.    A useful way to visualize transformations is to track what happens to a grid in the -plane as it is mapped into the -plane.    Transformations also act on curves. If a curve is described parametrically by , then its image under the transformation is   In other words, we can understand how a transformation affects a curve by applying it point-by-point.    For example, a straight line in one coordinate system may become a curved path after a nonlinear transformation.    Transformations also act on entire regions. A region in the -plane is mapped to a new region in the -plane, often with significant distortion.  Understanding how regions change shape will be essential later when we compute integrals using new coordinate systems.    "
+},
+{
+  "id": "sec-coordinate-transformations-2",
+  "level": "2",
+  "url": "sec-coordinate-transformations.html#sec-coordinate-transformations-2",
+  "type": "Objectives",
+  "number": "18.1",
+  "title": "",
+  "body": "   Interpret functions of multiple variables as transformations of space.    Describe how coordinate systems change under linear and nonlinear mappings.    Visualize how regions and grids are reshaped by transformations.    "
+},
+{
+  "id": "sec-the-jacobian",
+  "level": "1",
+  "url": "sec-the-jacobian.html",
+  "type": "Section",
+  "number": "18.2",
+  "title": "The Jacobian matrix and its determinant",
+  "body": " The Jacobian matrix and its determinant     Interpret the Jacobian matrix as the best linear approximation to a transformation.    Interpret the determinant of the Jacobian as a local scaling and orientation factor.    Recognize special transformations that preserve angles (conformal maps).      Introduction goes here.     The Jacobian matrix of a transformation given by , is     The Jacobian generalizes earlier notions of derivatives:   : derivative  : vector derivative  : gradient (transpose)  : full Jacobian     The determinant measures how small regions are scaled and whether orientation is preserved.    In two dimensions, this corresponds to the area of a transformed parallelogram.    Example (polar coordinates): .    Some transformations do more than scale—they preserve angles.    Example: corresponds to the transformation   Its Jacobian matrix is whose determinant is .    The structure of this matrix shows that the transformation locally acts like a rotation combined with scaling.    In general, non-constant holomorphic functions produce transformations that preserve angles. These are called conformal mappings .    "
+},
+{
+  "id": "sec-the-jacobian-2",
+  "level": "2",
+  "url": "sec-the-jacobian.html#sec-the-jacobian-2",
+  "type": "Objectives",
+  "number": "18.2",
+  "title": "",
+  "body": "   Interpret the Jacobian matrix as the best linear approximation to a transformation.    Interpret the determinant of the Jacobian as a local scaling and orientation factor.    Recognize special transformations that preserve angles (conformal maps).    "
+},
+{
+  "id": "sec-the-jacobian-4-9-1",
+  "level": "2",
+  "url": "sec-the-jacobian.html#sec-the-jacobian-4-9-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "conformal mappings "
+},
+{
+  "id": "sec-polar-double-integrals",
+  "level": "1",
+  "url": "sec-polar-double-integrals.html",
+  "type": "Section",
+  "number": "18.3",
+  "title": "Double integrals over polar regions",
+  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Moment of inertia:     Do the Gaussian integral using the polar trick    "
+},
+{
+  "id": "sec-polar-double-integrals-2",
+  "level": "2",
+  "url": "sec-polar-double-integrals.html#sec-polar-double-integrals-2",
+  "type": "Objectives",
+  "number": "18.3",
+  "title": "",
+  "body": "   Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.    "
+},
+{
+  "id": "sec-cylindrical-spherical",
+  "level": "1",
+  "url": "sec-cylindrical-spherical.html",
+  "type": "Section",
+  "number": "18.4",
+  "title": "Cylindrical and spherical coordinates",
+  "body": " Cylindrical and spherical coordinates     Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.    Compute the associated Jacobians that describe how volume elements transform.    Rewrite triple integrals in these coordinates when symmetry simplifies computation.      Introduction goes here.     3D Jacobians are set up the same way, but might need to show how determinant works (expansion by minors or maybe Rule of Sarrus would be enough)    Cylindrical coordinates:   Jacobian:     Spherical coordinates:   Jacobian:   This is assuming is spherical radius, is longitude (azimuthal angle), is co-latitude (polar angle).    Show how to use them to convert triple integrals, applied problems (most likely center of mass, moment of inertia)    "
+},
+{
+  "id": "sec-cylindrical-spherical-2",
+  "level": "2",
+  "url": "sec-cylindrical-spherical.html#sec-cylindrical-spherical-2",
   "type": "Objectives",
   "number": "18.4",
   "title": "",
-  "body": "   Define harmonic functions as solutions to Laplace's equation.    Relate harmonic conjugates to orthogonal level curves.    Connect ideal fluid flow and other physical systems to holomorphic complex potentials.    "
+  "body": "   Introduce cylindrical and spherical coordinate systems and relate them to Cartesian coordinates.    Compute the associated Jacobians that describe how volume elements transform.    Rewrite triple integrals in these coordinates when symmetry simplifies computation.    "
 },
 {
   "id": "sec-line-integrals",
@@ -2332,22 +2386,22 @@ var ptx_lunr_docs = [
   "body": "   Use Rolle's theorem to prove the Mean Value Theorem.    Use Cauchy's Mean Value Theorem to compare rates of change of two functions.    Derive and justify L'Hôpital's rule.    "
 },
 {
-  "id": "sec-taylors-theorem",
+  "id": "sec-differentiability-in-higher-dimensions",
   "level": "1",
-  "url": "sec-taylors-theorem.html",
+  "url": "sec-differentiability-in-higher-dimensions.html",
   "type": "Section",
   "number": "23.3",
-  "title": "Taylor’s theorem",
-  "body": " Taylor's theorem     Use Taylor's theorem with remainder to approximate functions near a point.    Interpret remainder terms in both Lagrange and integral forms.    Estimate approximation error using Lagrange's bound.      Introduction goes here.     Taylor’s theorem: For any other there exists some between and (which depends on and and ) such that That is, , for some between and .    Integral form of remainder function:     Lagrange error bound: If for , then for .    "
+  "title": "Differentiability in higher dimensions",
+  "body": " Differentiability in higher dimensions     Understand the concept of differentiability in higher dimensions and how it differs from single-variable differentiability.    Apply the definition of differentiability to compute derivatives of multivariable functions.    Use the Jacobian matrix to analyze the behavior of multivariable functions and their derivatives.      Introduction goes here.     A function is differentiable at a point if there exists a linear transformation such that In this case, is called the derivative of at , denoted by .    The existence of partial derivatives does not guarantee differentiability. For example, the function is continuous and has partial derivatives at the origin, but it is not differentiable there.    If is differentiable at , then the derivative can be represented as a matrix, which just ends up being the Jacobian matrix.    "
 },
 {
-  "id": "sec-taylors-theorem-2",
+  "id": "sec-differentiability-in-higher-dimensions-2",
   "level": "2",
-  "url": "sec-taylors-theorem.html#sec-taylors-theorem-2",
+  "url": "sec-differentiability-in-higher-dimensions.html#sec-differentiability-in-higher-dimensions-2",
   "type": "Objectives",
   "number": "23.3",
   "title": "",
-  "body": "   Use Taylor's theorem with remainder to approximate functions near a point.    Interpret remainder terms in both Lagrange and integral forms.    Estimate approximation error using Lagrange's bound.    "
+  "body": "   Understand the concept of differentiability in higher dimensions and how it differs from single-variable differentiability.    Apply the definition of differentiability to compute derivatives of multivariable functions.    Use the Jacobian matrix to analyze the behavior of multivariable functions and their derivatives.    "
 },
 {
   "id": "sec-inverse-and-implicit-functions",
