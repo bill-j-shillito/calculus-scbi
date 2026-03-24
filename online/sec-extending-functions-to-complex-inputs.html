@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-visualizing-complex-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-complex-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-multivalued-function-behavior.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-complex-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-visualizing-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -161,8 +161,8 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\cl}[1]{\mathcal{#1}}
 \newcommand{\bb}[1]{\mathbb{#1}}
 \DeclareMathOperator{\Cis}{cis}
-\DeclareMathOperator{\Real}{Re}
-\DeclareMathOperator{\Imag}{Im}
+\DeclareMathOperator{\RE}{Re}
+\DeclareMathOperator{\IM}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 \newcommand{\psup}[1]{^{(#1)}}
@@ -382,8 +382,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-complex-functions.html" class="internal"><span class="codenumber">16</span> <span class="title">Complex functions</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-geometry-of-complex-numbers.html" class="internal"><span class="codenumber">16.1</span> <span class="title">The geometry of complex numbers</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-visualizing-complex-functions.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Visualizing complex functions</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-extending-functions-to-complex-inputs.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Extending functions to complex inputs</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-extending-functions-to-complex-inputs.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Extending functions to complex inputs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-visualizing-complex-functions.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Visualizing complex functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-multivalued-function-behavior.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Multivalued function behavior</span></a></div></li>
 </ul>
 </li>
@@ -491,79 +491,146 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-extending-functions-to-complex-inputs"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extending functions to complex inputs</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extending functions to complex inputs</span>
 </h2>
 <article class="objectives goal-like" id="sec-extending-functions-to-complex-inputs-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ol class="decimal" id="sec-extending-functions-to-complex-inputs-2-1">
 <li id="sec-extending-functions-to-complex-inputs-2-1-1">
 <div class="para" id="sec-extending-functions-to-complex-inputs-2-1-1-1">Extend exponential and trigonometric functions to complex inputs and analyze their properties.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective 16.3.1"><a href="#sec-extending-functions-to-complex-inputs-2-1-1" title="Copy heading and permalink for Objective 16.3.1" aria-label="Copy heading and permalink for Objective 16.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Objective 16.2.1"><a href="#sec-extending-functions-to-complex-inputs-2-1-1" title="Copy heading and permalink for Objective 16.2.1" aria-label="Copy heading and permalink for Objective 16.2.1">🔗</a></div>
 </li>
 <li id="sec-extending-functions-to-complex-inputs-2-1-2">
 <div class="para" id="sec-extending-functions-to-complex-inputs-2-1-2-1">Explore the relationships between trigonometric and hyperbolic functions in the complex domain.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective 16.3.2"><a href="#sec-extending-functions-to-complex-inputs-2-1-2" title="Copy heading and permalink for Objective 16.3.2" aria-label="Copy heading and permalink for Objective 16.3.2">🔗</a></div>
+<div class="autopermalink" data-description="Objective 16.2.2"><a href="#sec-extending-functions-to-complex-inputs-2-1-2" title="Copy heading and permalink for Objective 16.2.2" aria-label="Copy heading and permalink for Objective 16.2.2">🔗</a></div>
 </li>
 <li id="sec-extending-functions-to-complex-inputs-2-1-3">
 <div class="para" id="sec-extending-functions-to-complex-inputs-2-1-3-1">Apply complex functions to solve differential equations and other problems.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective 16.3.3"><a href="#sec-extending-functions-to-complex-inputs-2-1-3" title="Copy heading and permalink for Objective 16.3.3" aria-label="Copy heading and permalink for Objective 16.3.3">🔗</a></div>
+<div class="autopermalink" data-description="Objective 16.2.3"><a href="#sec-extending-functions-to-complex-inputs-2-1-3" title="Copy heading and permalink for Objective 16.2.3" aria-label="Copy heading and permalink for Objective 16.2.3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Objectives 16.3"><a href="#sec-extending-functions-to-complex-inputs-2" title="Copy heading and permalink for Objectives 16.3" aria-label="Copy heading and permalink for Objectives 16.3">🔗</a></div></article><section class="introduction" id="sec-extending-functions-to-complex-inputs-3"><div class="para" id="sec-extending-functions-to-complex-inputs-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Objectives 16.2"><a href="#sec-extending-functions-to-complex-inputs-2" title="Copy heading and permalink for Objectives 16.2" aria-label="Copy heading and permalink for Objectives 16.2">🔗</a></div></article><section class="introduction" id="sec-extending-functions-to-complex-inputs-3"><div class="para" id="sec-extending-functions-to-complex-inputs-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><ul class="disc" id="sec-extending-functions-to-complex-inputs-4">
 <li id="sec-extending-functions-to-complex-inputs-4-1">
-<div class="para" id="sec-extending-functions-to-complex-inputs-4-1-1">Extending exponential function to complex inputs: <details id="sec-extending-functions-to-complex-inputs-4-1-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-extending-functions-to-complex-inputs-4-1-1-1-1">The exponential function is used to define pretty much all the other functions!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details><div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-1-1">Reconsider the differential equation <span class="process-math">\(f''(t) = -f(t)\text{.}\)</span> Thinking of <span class="process-math">\(f\)</span> as a vector-valued function, we’ve seen this behavior before when considering circular motion, where the velocity vector is always perpendicular to the position vector, and the acceleration vector is always opposite to the position vector. This suggests that we can express the solution in terms of sine and cosine functions, which are known to describe circular motion.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-1-2">
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-1-2">However, knowing that multiplying by <span class="process-math">\(\ii\)</span> corresponds to such a rotation, we need a function whose derivative is equal to itself multiplied by <span class="process-math">\(\ii\text{.}\)</span> The exponential function is a natural candidate for this, as it has the property that its derivative is equal to itself. By substituting <span class="process-math">\(f(t) = \ee^{\ii t}\)</span> into the differential equation, we can verify that it satisfies the equation, confirming that it is indeed a solution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-1-3">Since the solution to <span class="process-math">\(\bv{r}''(t) = -\bv{r}(t)\)</span> is <span class="process-math">\((\cos t, \sin t)\text{,}\)</span> we can express this in terms of the exponential function as <span class="process-math">\(\ee^{\ii t} = \cos t + \ii \sin t\text{.}\)</span> This relationship is known as Euler’s formula.<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-functions-to-complex-inputs-4-2">
+<div class="para logical" id="sec-extending-functions-to-complex-inputs-4-2-1">
+<div class="para">Can also substitute <span class="process-math">\(x=\ii\theta\)</span> into the Maclaurin series for <span class="process-math">\(\ee^{x}\)</span> and rearrange to arrive at Euler’s formula:</div>
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-2-1-3">
+\begin{equation*}
+\ee^{\ii\theta}=\cos\theta+\ii\sin\theta
+\end{equation*}
+</div>
+<div class="para"><details id="sec-extending-functions-to-complex-inputs-4-2-1-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-extending-functions-to-complex-inputs-4-2-1-4-1">Avoid the ‘numerology’ of <span class="process-math">\(\ee^{\ii\uppi}+1=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-extending-functions-to-complex-inputs-4-2-2">
+<div class="para">This gives us exponential form of a complex number:</div>
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-2-2-1">
+\begin{equation*}
+z=r\ee^{\ii\theta}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-functions-to-complex-inputs-4-3">
+<div class="para logical" id="sec-extending-functions-to-complex-inputs-4-3-1">
+<div class="para">Apply to more general second-order linear differential equation:</div>
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-3-1-1">
+\begin{equation*}
+y''+my'+by=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-functions-to-complex-inputs-4-4">
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-4-1">Now we can multiply and divide <span class="process-math">\(z=r\ee^{\ii\theta}\)</span> and <span class="process-math">\(w=s\ee^{\ii\phi}\)</span> as follows:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-4-2">
+\begin{align*}
+zw \amp = rs\ee^{\ii(\theta+\phi)}\\
+\frac{z}{w} \amp = \frac{r}{s}\ee^{\ii(\theta-\phi)}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-functions-to-complex-inputs-4-5">
+<div class="para logical" id="sec-extending-functions-to-complex-inputs-4-5-1">
+<div class="para">Exponential form of Fourier series (good to put in exercises):</div>
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-5-1-1">
+\begin{equation*}
+\sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-extending-functions-to-complex-inputs-4-6">
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-6-1">Extending exponential function to complex inputs: <details id="sec-extending-functions-to-complex-inputs-4-6-1-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-extending-functions-to-complex-inputs-4-6-1-1-1">The exponential function is used to define pretty much all the other functions!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-6-2">
 \begin{align*}
 \ee^z \amp = \ee^{x+\ii y}\\
 \amp = \ee^{x}\ee^{\ii y}\\
 \amp = \ee^{x}\cos y + \ii\ee^{x}\sin y
 \end{align*}
 </div>
-<div class="para" id="sec-extending-functions-to-complex-inputs-4-1-3">Is now <span class="process-math">\(2\uppi\ii\)</span> periodic in the imaginary direction!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-6-3">Is now <span class="process-math">\(2\uppi\ii\)</span> periodic in the imaginary direction!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-extending-functions-to-complex-inputs-4-2">
-<div class="para" id="sec-extending-functions-to-complex-inputs-4-2-1">Trigonometric functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-extending-functions-to-complex-inputs-4-7">
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-7-1">Trigonometric functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-2-2">
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-7-2">
 \begin{align*}
 \sin z \amp = \frac{\ee^{\ii z}-\ee^{-\ii z}}{2\ii} = \sin x \cosh y + \ii\cos x\sinh y\\
 \cos z \amp = \frac{\ee^{\ii z}+\ee^{-\ii z}}{2} = \cos x \cosh y - \ii\sin x\sinh y
 \end{align*}
 </div>
-<div class="para" id="sec-extending-functions-to-complex-inputs-4-2-3">All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like <span class="process-math">\(\sin z=5\)</span> now!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-7-3">All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like <span class="process-math">\(\sin z=5\)</span> now!<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-extending-functions-to-complex-inputs-4-3">
-<div class="para" id="sec-extending-functions-to-complex-inputs-4-3-1">Hyperbolic functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-extending-functions-to-complex-inputs-4-8">
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-8-1">Hyperbolic functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-3-2">
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-8-2">
 \begin{align*}
 \sinh z \amp = \frac{\ee^{z}-\ee^{-z}}{2} = \sinh x \cos y + \ii\cosh x\sin y\\
 \cosh z \amp = \frac{\ee^{z}+\ee^{-z}}{2} = \cosh x \cos y + \ii\sinh x\sin y
 \end{align*}
 </div>
-<div class="para" id="sec-extending-functions-to-complex-inputs-4-3-3">Relationships between trigonometric and hyperbolic functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-extending-functions-to-complex-inputs-4-8-3">Relationships between trigonometric and hyperbolic functions:<div class="autopermalink" data-description="Paragraph"><a href="#sec-extending-functions-to-complex-inputs-4-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-3-4">
+<div class="displaymath process-math" id="sec-extending-functions-to-complex-inputs-4-8-4">
 \begin{align*}
 \sin \ii z \amp = \ii \sinh z \amp \cos \ii z \amp = \cosh z\\
 \sinh \ii z \amp = \ii \sin z \amp \cosh \ii z \amp = \cos z
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-extending-functions-to-complex-inputs-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Section 16.3: Extending functions to complex inputs"><a href="#sec-extending-functions-to-complex-inputs" title="Copy heading and permalink for Section 16.3: Extending functions to complex inputs" aria-label="Copy heading and permalink for Section 16.3: Extending functions to complex inputs">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Section 16.2: Extending functions to complex inputs"><a href="#sec-extending-functions-to-complex-inputs" title="Copy heading and permalink for Section 16.2: Extending functions to complex inputs" aria-label="Copy heading and permalink for Section 16.2: Extending functions to complex inputs">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-visualizing-complex-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-multivalued-function-behavior.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-the-geometry-of-complex-numbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-visualizing-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

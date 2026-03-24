@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-complex-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-complex-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-visualizing-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-complex-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-complex-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-eulers-formula.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -161,8 +161,8 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\cl}[1]{\mathcal{#1}}
 \newcommand{\bb}[1]{\mathbb{#1}}
 \DeclareMathOperator{\Cis}{cis}
-\DeclareMathOperator{\Real}{Re}
-\DeclareMathOperator{\Imag}{Im}
+\DeclareMathOperator{\RE}{Re}
+\DeclareMathOperator{\IM}{Im}
 \newcommand{\xd}{\mathbf{d}}
 \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
 \newcommand{\psup}[1]{^{(#1)}}
@@ -382,8 +382,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-complex-functions.html" class="internal"><span class="codenumber">16</span> <span class="title">Complex functions</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-the-geometry-of-complex-numbers.html" class="internal"><span class="codenumber">16.1</span> <span class="title">The geometry of complex numbers</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-visualizing-complex-functions.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Visualizing complex functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-extending-functions-to-complex-inputs.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Extending functions to complex inputs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-eulers-formula.html" class="internal"><span class="codenumber">16.2</span> <span class="title">Euler’s formula and its consequences</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-visualizing-complex-functions.html" class="internal"><span class="codenumber">16.3</span> <span class="title">Visualizing complex functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-multivalued-function-behavior.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Multivalued function behavior</span></a></div></li>
 </ul>
 </li>
@@ -514,105 +514,83 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Objectives 16.1"><a href="#sec-the-geometry-of-complex-numbers-2" title="Copy heading and permalink for Objectives 16.1" aria-label="Copy heading and permalink for Objectives 16.1">🔗</a></div></article><section class="introduction" id="sec-the-geometry-of-complex-numbers-3"><div class="para" id="sec-the-geometry-of-complex-numbers-3-1">Introduction goes here.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><ul class="disc" id="sec-the-geometry-of-complex-numbers-4">
 <li id="sec-the-geometry-of-complex-numbers-4-1">
-<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-1-1">
-<div class="para">Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it’s strangely close! If <span class="process-math">\(z=a+b\ii\)</span> and <span class="process-math">\(w=c+d\ii\text{,}\)</span> then</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-1-1-3">
-\begin{equation*}
-zw=(a+b\ii)(c+d\ii)=(ac-bd)+(ad+bc)\ii
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-1-1">Square roots of negative numbers started as a mathematical curiosity, dismissed by the likes of Cardano and Descartes as ‘imaginary’ quantities. But they soon ended up being necessary to systematically solve cubic equations that had real solutions. The geometric interpretation of complex numbers as points in the plane was developed by Wessel, Argand, and Gauss, providing an intuitive and powerful way to understand their properties and operations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-the-geometry-of-complex-numbers-4-2">
-<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-2-1">
-<div class="para">We can take any complex number <span class="process-math">\(z=a+b\ii\)</span> and write it as:</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-2-1-2">
-\begin{equation*}
-z=r\cos\theta+\ii\sin\theta
-\end{equation*}
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-2-1">Define the imaginary unit <span class="process-math">\(\ii\)</span> as a solution to <span class="process-math">\(z^2=-1\text{.}\)</span> Then we can write any complex number as <span class="process-math">\(z=a+b\ii\text{,}\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are real numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">Here, <span class="process-math">\(r\)</span> is the modulus, denoted <span class="process-math">\(|z|\text{,}\)</span> and <span class="process-math">\(\theta\)</span> is the argument, denoted <span class="process-math">\(\arg z\text{.}\)</span> <details id="sec-the-geometry-of-complex-numbers-4-2-1-7" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para logical" id="sec-the-geometry-of-complex-numbers-4-2-1-7-1">
-<div class="para">The principal argument is defined as</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-2-1-7-1-1">
-\begin{equation*}
--\uppi\lt\Arg z\le\uppi\text{.}
-\end{equation*}
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-2-2">Here ‘complex’ doesn’t mean ‘complicated’, it just means ‘composed of two parts’ (think of an apartment complex).<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">There’s nothing special about this, it’s just convenient. Also <span class="process-math">\(\arg 0\)</span> is undefined.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-2-3">We can graph these numbers on the complex plane, where the horizontal axis represents the real part and the vertical axis represents the imaginary part.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-the-geometry-of-complex-numbers-4-3">
 <div class="para logical" id="sec-the-geometry-of-complex-numbers-4-3-1">
-<div class="para">Substitute <span class="process-math">\(x=\ii\theta\)</span> into the Maclaurin series for <span class="process-math">\(\ee^{x}\)</span> to arrive at Euler’s formula:</div>
+<div class="para">Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it’s strangely close! If <span class="process-math">\(z=a+b\ii\)</span> and <span class="process-math">\(w=c+d\ii\text{,}\)</span> then</div>
 <div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-3-1-3">
 \begin{equation*}
-\ee^{\ii\theta}=\cos\theta+\ii\sin\theta
+zw=(a+b\ii)(c+d\ii)=(ac-bd)+(ad+bc)\ii
 \end{equation*}
 </div>
-<div class="para"><details id="sec-the-geometry-of-complex-numbers-4-3-1-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="sec-the-geometry-of-complex-numbers-4-3-1-4-1">Avoid the ‘numerology’ of <span class="process-math">\(\ee^{\ii\uppi}+1=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details></div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-3-2">
-<div class="para">This gives us exponential form of a complex number: <details id="sec-the-geometry-of-complex-numbers-4-3-2-1" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para logical" id="sec-the-geometry-of-complex-numbers-4-3-2-1-1">
-<div class="para">Engineers also write</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-3-2-1-1-1">
-\begin{equation*}
-z=r\Cis\theta\text{.}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details>
-</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-3-2-2">
-\begin{equation*}
-z=r\ee^{\ii\theta}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-the-geometry-of-complex-numbers-4-4">
 <div class="para logical" id="sec-the-geometry-of-complex-numbers-4-4-1">
-<div class="para">Apply to second-order linear differential equation:</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-4-1-1">
-\begin{equation*}
-y''+my'+by=0
-\end{equation*}
+<div class="para">Notice that the powers of <span class="process-math">\(\ii\)</span> cycle through four values:</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-4-1-2">
+\begin{align*}
+\ii^0 \amp = 1\\
+\ii^1 \amp = \ii\\
+\ii^2 \amp = -1\\
+\ii^3 \amp = -\ii
+\end{align*}
 </div>
-<div class="para">This shows why complex numbers are perfect for applications involving quantities that oscillate.</div>
+<div class="para">Each of these corresponds to a counterclockwise rotation by a right angle. This suggests that complex numbers have something to do with rotations.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-the-geometry-of-complex-numbers-4-5">
 <div class="para logical" id="sec-the-geometry-of-complex-numbers-4-5-1">
-<div class="para">Exponential form of Fourier series (good to put in exercises):</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-5-1-1">
+<div class="para">We can take any complex number <span class="process-math">\(z=a+b\ii\)</span> and write it in polar form as:</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-5-1-2">
 \begin{equation*}
-\sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+z=r\cos\theta+\ii\sin\theta
 \end{equation*}
 </div>
+<div class="para">Here, <span class="process-math">\(r\)</span> is the modulus, denoted <span class="process-math">\(|z|\text{,}\)</span> and <span class="process-math">\(\theta\)</span> is the argument, denoted <span class="process-math">\(\arg z\text{.}\)</span> <details id="sec-the-geometry-of-complex-numbers-4-5-1-7" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para logical" id="sec-the-geometry-of-complex-numbers-4-5-1-7-1">
+<div class="para">The principal argument is defined as</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-5-1-7-1-1">
+\begin{equation*}
+-\uppi\lt\Arg z\le\uppi\text{.}
+\end{equation*}
+</div>
+<div class="para">There’s nothing special about this, it’s just convenient. Also <span class="process-math">\(\arg 0\)</span> is undefined.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-5-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details>
+</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-5-2">Engineers often abbreviate this as <span class="process-math">\(z=r\Cis\theta\text{,}\)</span> where <span class="process-math">\(\Cis\theta\)</span> stands for <span class="process-math">\(\cos\theta+\ii\sin\theta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-the-geometry-of-complex-numbers-4-6">
-<div class="para" id="sec-the-geometry-of-complex-numbers-4-6-1">Now we can multiply and divide <span class="process-math">\(z=r\ee^{\ii\theta}\)</span> and <span class="process-math">\(w=s\ee^{\ii\phi}\)</span> as follows:<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-6-2">
+<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-6-1">
+<div class="para">If <span class="process-math">\(z=r\Cis\theta\)</span> and <span class="process-math">\(w=s\Cis\phi\text{,}\)</span> then we can multiply and divide them as follows:</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-6-1-3">
 \begin{align*}
-zw \amp = rs\ee^{\ii(\theta+\phi)}\\
-\frac{z}{w} \amp = \frac{r}{s}\ee^{\ii(\theta-\phi)}
+zw \amp = rs\Cis(\theta+\phi)\\
+\frac{z}{w} \amp = \frac{r}{s}\Cis(\theta-\phi)
 \end{align*}
+</div>
+<div class="para">This is a much more satisfying geometric interpretation of multiplication and division!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -630,21 +608,51 @@ zw \amp = rs\ee^{\ii(\theta+\phi)}\\
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-the-geometry-of-complex-numbers-4-8">
-<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-8-1">
-<div class="para">Powers using De Moivre’s formula:</div>
-<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-8-1-1">
-\begin{equation*}
-(r\ee^{\ii\theta})^{n}=r^{n}\ee^{n\ii\theta}
-\end{equation*}
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-8-1">Some other things we can do with conjugates:<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-8-2">
+\begin{align*}
+z\overline{z} \amp = (a+b\ii)(a-b\ii)\\
+\amp = a^2+b^2 = |z|^2\\
+\RE z \amp = \frac{z+\overline{z}}{2}  = a\\
+\IM z \amp = \frac{z-\overline{z}}{2\ii}  = b
+\end{align*}
 </div>
 <div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-geometry-of-complex-numbers-4-9">
+<div class="para" id="sec-the-geometry-of-complex-numbers-4-9-1">Might add some things about how this view of complex numbers can be helpful for solving geometry problems in the plane! A few examples follow.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-9-2">
+<div class="para">The points <span class="process-math">\(z_1\text{,}\)</span> <span class="process-math">\(z_2\text{,}\)</span> and <span class="process-math">\(z_3\)</span> are collinear if and only if</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-9-2-4">
+\begin{equation*}
+\frac{z_2-z_1}{z_3-z_1}\in\mathbb{R}\text{,}
+\end{equation*}
+</div>
+<div class="para">or equivalently, if and only if</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-9-2-5">
+\begin{equation*}
+\frac{z_1-z_2}{\overline{z_1-z_2}}=\frac{z_1-z_3}{\overline{z_1-z_3}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-the-geometry-of-complex-numbers-4-9-3">
+<div class="para">If a triangle has vertices at <span class="process-math">\(z_1\text{,}\)</span> <span class="process-math">\(z_2\text{,}\)</span> and <span class="process-math">\(z_3\text{,}\)</span> then the area of the triangle is given by</div>
+<div class="displaymath process-math" id="sec-the-geometry-of-complex-numbers-4-9-3-4">
+\begin{equation*}
+\frac{1}{2}\left|\IM\left((z_2-z_1)\overline{(z_3-z_1)}\right)\right|
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-geometry-of-complex-numbers-4-9-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-geometry-of-complex-numbers-4-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="autopermalink" data-description="Section 16.1: The geometry of complex numbers"><a href="#sec-the-geometry-of-complex-numbers" title="Copy heading and permalink for Section 16.1: The geometry of complex numbers" aria-label="Copy heading and permalink for Section 16.1: The geometry of complex numbers">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="ch-complex-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-visualizing-complex-functions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-complex-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-eulers-formula.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

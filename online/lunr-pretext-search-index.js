@@ -1591,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "16.1",
   "title": "The geometry of complex numbers",
-  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     We can take any complex number and write it as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.      Substitute into the Maclaurin series for to arrive at Euler's formula:   Avoid the numerology of .    This gives us exponential form of a complex number:  Engineers also write .       Apply to second-order linear differential equation: This shows why complex numbers are perfect for applications involving quantities that oscillate.    Exponential form of Fourier series (good to put in exercises):     Now we can multiply and divide and as follows:     Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Powers using De Moivre's formula:     "
+  "body": " The geometry of complex numbers     Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.      Introduction goes here.     Square roots of negative numbers started as a mathematical curiosity, dismissed by the likes of Cardano and Descartes as imaginary quantities. But they soon ended up being necessary to systematically solve cubic equations that had real solutions. The geometric interpretation of complex numbers as points in the plane was developed by Wessel, Argand, and Gauss, providing an intuitive and powerful way to understand their properties and operations.    Define the imaginary unit as a solution to . Then we can write any complex number as , where and are real numbers.  Here complex doesn't mean complicated , it just means composed of two parts (think of an apartment complex).  We can graph these numbers on the complex plane, where the horizontal axis represents the real part and the vertical axis represents the imaginary part.    Visualize complex numbers as vectors and inherit addition and scaling properties from them. But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match... though it's strangely close! If and , then     Notice that the powers of cycle through four values: Each of these corresponds to a counterclockwise rotation by a right angle. This suggests that complex numbers have something to do with rotations.    We can take any complex number and write it in polar form as: Here, is the modulus, denoted , and is the argument, denoted .  The principal argument is defined as . There's nothing special about this, it's just convenient. Also is undefined.    Engineers often abbreviate this as , where stands for .    If and , then we can multiply and divide them as follows: This is a much more satisfying geometric interpretation of multiplication and division!    Define the complex conjugate . Then we have the following:   This form does match the dot and cross product! Honestly I wish it were instead. There's something going on with how we do complex inner products. But I need to find it.     Some other things we can do with conjugates:     Might add some things about how this view of complex numbers can be helpful for solving geometry problems in the plane! A few examples follow.  The points , , and are collinear if and only if , or equivalently, if and only if   If a triangle has vertices at , , and , then the area of the triangle is given by     "
 },
 {
   "id": "sec-the-geometry-of-complex-numbers-2",
@@ -1603,40 +1603,40 @@ var ptx_lunr_docs = [
   "body": "   Interpret complex numbers geometrically by viewing them as vectors.    Express complex numbers in polar and exponential form using Euler's formula.    Compute products, quotients, powers, and roots of complex numbers.    "
 },
 {
+  "id": "sec-eulers-formula",
+  "level": "1",
+  "url": "sec-eulers-formula.html",
+  "type": "Section",
+  "number": "16.2",
+  "title": "Euler’s formula and its consequences",
+  "body": " Euler's formula and its consequences     Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.      Introduction goes here.     Reconsider the differential equation . Thinking of as a vector-valued function, we've seen this behavior before when considering circular motion, where the velocity vector is always perpendicular to the position vector, and the acceleration vector is always opposite to the position vector. This suggests that we can express the solution in terms of sine and cosine functions, which are known to describe circular motion.  However, knowing that multiplying by corresponds to such a rotation, we need a function whose derivative is equal to itself multiplied by . The exponential function is a natural candidate for this, as it has the property that its derivative is equal to itself. By substituting into the differential equation, we can verify that it satisfies the equation, confirming that it is indeed a solution.  Since the solution to is , we can express this in terms of the exponential function as . This relationship is known as Euler's formula.    Can also substitute into the Maclaurin series for and rearrange to arrive at Euler's formula:   Avoid the numerology of .    This gives us exponential form of a complex number:     Apply to more general second-order linear differential equation:     Now we can multiply and divide and as follows:     Exponential form of Fourier series (good to put in exercises):     Extending exponential function to complex inputs:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometric and hyperbolic functions:     "
+},
+{
+  "id": "sec-eulers-formula-2",
+  "level": "2",
+  "url": "sec-eulers-formula.html#sec-eulers-formula-2",
+  "type": "Objectives",
+  "number": "16.2",
+  "title": "",
+  "body": "   Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.    "
+},
+{
   "id": "sec-visualizing-complex-functions",
   "level": "1",
   "url": "sec-visualizing-complex-functions.html",
   "type": "Section",
-  "number": "16.2",
+  "number": "16.3",
   "title": "Visualizing complex functions",
-  "body": " Visualizing complex functions     Visualize complex mappings using domain coloring to encode magnitude and argument.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Break down complex functions into their real and imaginary parts.      Introduction goes here.     Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =        Roots of unity: has roots at for .  We can see this in the domain coloring of , where the colors cycle around the unit circle and approach black (zero) at the roots of unity.    Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.       Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    "
+  "body": " Visualizing complex functions     Visualize complex mappings using domain coloring to encode magnitude and argument.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Break down complex functions into their real and imaginary parts.      Introduction goes here.     Domain coloring: Let the input be the point on the complex plane, and let the output be how we color it.   Lightness = modulus (black = , full color = , white = )    Hue = argument (red = , lime = , cyan = , purple =        Powers using De Moivre's formula:     Roots of unity: has roots at for .  We can see this in the domain coloring of , where the colors cycle around the unit circle and approach black (zero) at the roots of unity.    Focus on .   Domain coloring: Swaps light and dark, and colors cycle the other way.       Division by zero and the Riemann sphere    Define a pole of a function as a zero of its reciprocal. But need to find a slightly different way to say this, as it’s missing some things.    Look at domain coloring plots of other complex functions, focusing on zeros and poles, perhaps as well as other stranger singularities (such as ).    "
 },
 {
   "id": "sec-visualizing-complex-functions-2",
   "level": "2",
   "url": "sec-visualizing-complex-functions.html#sec-visualizing-complex-functions-2",
   "type": "Objectives",
-  "number": "16.2",
+  "number": "16.3",
   "title": "",
   "body": "   Visualize complex mappings using domain coloring to encode magnitude and argument.    Extend the complex plane to the Riemann sphere by adding a point at infinity.    Break down complex functions into their real and imaginary parts.    "
-},
-{
-  "id": "sec-extending-functions-to-complex-inputs",
-  "level": "1",
-  "url": "sec-extending-functions-to-complex-inputs.html",
-  "type": "Section",
-  "number": "16.3",
-  "title": "Extending functions to complex inputs",
-  "body": " Extending functions to complex inputs     Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.      Introduction goes here.     Extending exponential function to complex inputs:  The exponential function is used to define pretty much all the other functions!     Is now periodic in the imaginary direction!    Trigonometric functions:   All other trigonometric functions are defined based on these. Also, we can actually find solutions to equations like now!    Hyperbolic functions:   Relationships between trigonometric and hyperbolic functions:     "
-},
-{
-  "id": "sec-extending-functions-to-complex-inputs-2",
-  "level": "2",
-  "url": "sec-extending-functions-to-complex-inputs.html#sec-extending-functions-to-complex-inputs-2",
-  "type": "Objectives",
-  "number": "16.3",
-  "title": "",
-  "body": "   Extend exponential and trigonometric functions to complex inputs and analyze their properties.    Explore the relationships between trigonometric and hyperbolic functions in the complex domain.    Apply complex functions to solve differential equations and other problems.    "
 },
 {
   "id": "sec-multivalued-function-behavior",
@@ -1681,7 +1681,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "17.2",
   "title": "Dynamical systems",
-  "body": " Dynamical systems     Interpret a vector field as defining a dynamical system.    Understand solutions as paths (trajectories) through the field.    Visualize and analyze streamlines of a vector field.      Introduction goes here.     A dynamical system in two dimensions is given by:     Solutions to this system describe how a point moves over time.    The resulting paths are called trajectories or streamlines .  Different initial points can lead to very different behavior, even within the same field.  These ideas connect directly to earlier work with differential equations and will later help us interpret line integrals and flow.    Predator-prey dynamics (Lotka-Volterra model):   Here, represents the prey population and the predator population. The vector field describes how both populations change in response to each other.    Disease spread (SIR model):   This system tracks how individuals move between susceptible, infected, and recovered groups. The vector field determines how an outbreak evolves over time.    "
+  "body": " Dynamical systems     Interpret a vector field as defining a dynamical system.    Understand solutions as paths (trajectories) through the field.    Visualize and analyze streamlines of a vector field.      Introduction goes here.     A dynamical system in two dimensions is given by:     Solutions to this system describe how a point moves over time.    The resulting paths are called trajectories or streamlines .  Different initial points can lead to very different behavior, even within the same field.  These ideas connect directly to earlier work with differential equations and will later help us interpret line integrals and flow.    Predator-prey dynamics (Lotka-Volterra model):   Here, represents the prey population and the predator population. The vector field describes how both populations change in response to each other.    Disease spread (SIR model):   This system tracks how individuals move between susceptible, infected, and recovered groups. The vector field determines how an outbreak evolves over time.    Streamplots    "
 },
 {
   "id": "sec-dynamical-systems-2",
