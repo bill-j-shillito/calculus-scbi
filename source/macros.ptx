@@ -29,8 +29,8 @@
     \newcommand{\cl}[1]{\mathcal{#1}}
     \newcommand{\bb}[1]{\mathbb{#1}}
     \DeclareMathOperator{\Cis}{cis}
-    \DeclareMathOperator{\Real}{Re}
-    \DeclareMathOperator{\Imag}{Im}
+    \DeclareMathOperator{\RE}{Re}
+    \DeclareMathOperator{\IM}{Im}
     \newcommand{\xd}{\mathbf{d}}
     \newcommand{\seq}[3]{{#1}_{#2},\cdots,{#1}_{#3}}
     \newcommand{\psup}[1]{^{(#1)}}

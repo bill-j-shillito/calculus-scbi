@@ -32,6 +32,25 @@
   <ul>
     <li>
       <p>
+        Square roots of negative numbers started as a mathematical curiosity, dismissed by the likes of Cardano and Descartes as <sq>imaginary</sq> quantities. But they soon ended up being necessary to systematically solve cubic equations that had real solutions. The geometric interpretation of complex numbers as points in the plane was developed by Wessel, Argand, and Gauss, providing an intuitive and powerful way to understand their properties and operations.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Define the imaginary unit <m>\ii</m> as a solution to <m>z^2=-1</m>.
+        Then we can write any complex number as <m>z=a+b\ii</m>, where <m>a</m> and <m>b</m> are real numbers.
+      </p>
+      <p>
+        Here <sq>complex</sq> doesn't mean <sq>complicated</sq>, it just means <sq>composed of two parts</sq> (think of an apartment complex).
+      </p>
+      <p>
+        We can graph these numbers on the complex plane, where the horizontal axis represents the real part and the vertical axis represents the imaginary part.
+      </p>
+    </li>
+
+    <li>
+      <p>
         Visualize complex numbers as vectors and inherit addition and scaling properties from them.
         But how can we geometrically multiply them? Neither the dot product nor the cross product seems to match...
         though it's strangely close! If <m>z=a+b\ii</m> and <m>w=c+d\ii</m>, then
@@ -43,7 +62,20 @@
 
     <li>
       <p>
-        We can take any complex number <m>z=a+b\ii</m> and write it as:
+        Notice that the powers of <m>\ii</m> cycle through four values:
+        <md>
+          <mrow>\ii^0 \amp = 1</mrow>
+          <mrow>\ii^1 \amp = \ii</mrow>
+          <mrow>\ii^2 \amp = -1</mrow>
+          <mrow>\ii^3 \amp = -\ii</mrow>
+        </md>
+        Each of these corresponds to a counterclockwise rotation by a right angle. This suggests that complex numbers have something to do with rotations.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        We can take any complex number <m>z=a+b\ii</m> and write it in polar form as:
         <me>
           z=r\cos\theta+\ii\sin\theta
         </me>
@@ -59,65 +91,20 @@
           </p>
         </aside>
       </p>
-    </li>
-
-    <li>
       <p>
-        Substitute <m>x=\ii\theta</m> into the Maclaurin series for <m>\ee^{x}</m> to arrive at Euler's formula:
-        <me>
-          \ee^{\ii\theta}=\cos\theta+\ii\sin\theta
-        </me>
-        <aside>
-          <p>
-            Avoid the <sq>numerology</sq> of <m>\ee^{\ii\uppi}+1=0</m>.
-          </p>
-        </aside>
-      </p>
-      
-      <p>
-        This gives us exponential form of a complex number:
-        <aside>
-          <p>
-            Engineers also write
-          <me>
-            z=r\Cis\theta
-          </me>.
-          </p>
-        </aside>
-        <me>
-          z=r\ee^{\ii\theta}
-        </me>
-      </p>
-    </li>
-
-    
-    <li>
-      <p>
-        Apply to second-order linear differential equation:
-        <me>
-          y''+my'+by=0
-        </me>
-        This shows why complex numbers are perfect for applications involving quantities that oscillate.
+          Engineers often abbreviate this as <m>z=r\Cis\theta</m>, where <m>\Cis\theta</m> stands for <m>\cos\theta+\ii\sin\theta</m>.
       </p>
     </li>
 
     <li>
       <p>
-        Exponential form of Fourier series (good to put in exercises):
-        <me>
-          \sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
-        </me>
+        If <m>z=r\Cis\theta</m> and <m>w=s\Cis\phi</m>, then we can multiply and divide them as follows:
+        <md>
+          <mrow>zw \amp = rs\Cis(\theta+\phi)</mrow>
+          <mrow>\frac{z}{w} \amp = \frac{r}{s}\Cis(\theta-\phi)</mrow>
+        </md>
+        This is a much more satisfying geometric interpretation of multiplication and division!
       </p>
-    </li>
-
-    <li>
-      <p>
-        Now we can multiply and divide <m>z=r\ee^{\ii\theta}</m> and <m>w=s\ee^{\ii\phi}</m> as follows:
-      </p>
-      <md>
-        <mrow>zw \amp = rs\ee^{\ii(\theta+\phi)}</mrow>
-        <mrow>\frac{z}{w} \amp = \frac{r}{s}\ee^{\ii(\theta-\phi)}</mrow>
-      </md>
     </li>
 
     <li>
@@ -142,9 +129,34 @@
 
     <li>
       <p>
-        Powers using De Moivre's formula:
+        Some other things we can do with conjugates:
+      </p>
+      <md>
+        <mrow>z\overline{z} \amp = (a+b\ii)(a-b\ii)</mrow>
+        <mrow>\amp = a^2+b^2 = |z|^2</mrow>
+        <mrow>\RE z \amp = \frac{z+\overline{z}}{2}  = a</mrow>
+        <mrow>\IM z \amp = \frac{z-\overline{z}}{2\ii}  = b</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Might add some things about how this view of complex numbers can be helpful for solving geometry problems in the plane! A few examples follow.
+      </p>
+      <p>
+        The points <m>z_1</m>, <m>z_2</m>, and <m>z_3</m> are collinear if and only if
         <me>
-          (r\ee^{\ii\theta})^{n}=r^{n}\ee^{n\ii\theta}
+          \frac{z_2-z_1}{z_3-z_1}\in\mathbb{R}
+        </me>,
+        or equivalently, if and only if
+        <me>
+          \frac{z_1-z_2}{\overline{z_1-z_2}}=\frac{z_1-z_3}{\overline{z_1-z_3}}
+        </me>
+      </p>
+      <p>
+        If a triangle has vertices at <m>z_1</m>, <m>z_2</m>, and <m>z_3</m>, then the area of the triangle is given by
+        <me>
+          \frac{1}{2}\left|\IM\left((z_2-z_1)\overline{(z_3-z_1)}\right)\right|
         </me>
       </p>
     </li>

@@ -10,8 +10,8 @@
     </introduction>
 
     <xi:include href="./the-geometry-of-complex-numbers.ptx" />
+    <xi:include href="./eulers-formula.ptx" />
     <xi:include href="./visualizing-complex-functions.ptx" />
-    <xi:include href="./extending-functions-to-complex-inputs.ptx" />
     <!-- <xi:include href="./complex-functions-as-transformations.ptx" /> -->
     <xi:include href="./multivalued-function-behavior.ptx" />
     <!-- <xi:include href="./complex-infinity.ptx" /> -->

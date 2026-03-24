@@ -80,5 +80,11 @@
             This system tracks how individuals move between susceptible, infected, and recovered groups. The vector field determines how an outbreak evolves over time.
         </p>
     </li>
+
+    <li>
+      <p>
+        Streamplots
+      </p>
+    </li>
   </ul>
 </section>

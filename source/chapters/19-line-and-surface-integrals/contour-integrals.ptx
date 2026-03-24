@@ -107,7 +107,7 @@
       <p>
         Furthermore, the moment about the origin is given by
         <me>
-          M=\Re\qty{-\frac{\rho}{2}\oint_C z\qty(\dv{w}{z})^2\dd{z}}\text{.}
+          M=\RE\qty{-\frac{\rho}{2}\oint_C z\qty(\dv{w}{z})^2\dd{z}}\text{.}
         </me>
       </p>
     </li>

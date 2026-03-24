@@ -50,6 +50,15 @@
     </li>
 
     <li>
+      <p>
+        Powers using De Moivre's formula:
+        <me>
+          (r\ee^{\ii\theta})^{n}=r^{n}\ee^{n\ii\theta}
+        </me>
+      </p>
+    </li>
+
+    <li>
         <p>
             Roots of unity: <m>z^n=1</m> has roots at <m>\ee^{2\uppi\ii k/n}</m> for <m>k=0,1,\ldots,n-1</m>.
         </p>
@@ -81,6 +90,12 @@
       <p>
         Define a pole of a function as a zero of its reciprocal.
         But need to find a slightly different way to say this, as it’s missing some things.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Look at domain coloring plots of other complex functions, focusing on zeros and poles, perhaps as well as other stranger singularities (such as <m>\ee^{-1/z}</m>).
       </p>
     </li>
   </ul>

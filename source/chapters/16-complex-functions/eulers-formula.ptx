@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-eulers-formula">
+  <title>Euler's formula and its consequences</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Extend exponential and trigonometric functions to complex inputs and analyze their properties.
+        </p>
+      </li>
+      <li>
+        <p>
+          Explore the relationships between trigonometric and hyperbolic functions in the complex domain.
+        </p>
+      </li>
+      <li>
+        <p>
+          Apply complex functions to solve differential equations and other problems.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Reconsider the differential equation <m>f''(t) = -f(t)</m>. Thinking of <m>f</m> as a vector-valued function, we've seen this behavior before when considering circular motion, where the velocity vector is always perpendicular to the position vector, and the acceleration vector is always opposite to the position vector. This suggests that we can express the solution in terms of sine and cosine functions, which are known to describe circular motion.
+      </p>
+      <p>
+        However, knowing that multiplying by <m>\ii</m> corresponds to such a rotation, we need a function whose derivative is equal to itself multiplied by <m>\ii</m>. The exponential function is a natural candidate for this, as it has the property that its derivative is equal to itself. By substituting <m>f(t) = \ee^{\ii t}</m> into the differential equation, we can verify that it satisfies the equation, confirming that it is indeed a solution.
+      </p>
+      <p>
+        Since the solution to <m>\bv{r}''(t) = -\bv{r}(t)</m> is <m>(\cos t, \sin t)</m>, we can express this in terms of the exponential function as <m>\ee^{\ii t} = \cos t + \ii \sin t</m>. This relationship is known as Euler's formula.
+      </p>
+    </li>
+    <li>
+      <p>
+        Can also substitute <m>x=\ii\theta</m> into the Maclaurin series for <m>\ee^{x}</m> and rearrange to arrive at Euler's formula:
+        <me>
+          \ee^{\ii\theta}=\cos\theta+\ii\sin\theta
+        </me>
+        <aside>
+          <p>
+            Avoid the <sq>numerology</sq> of <m>\ee^{\ii\uppi}+1=0</m>.
+          </p>
+        </aside>
+      </p>
+      <p>
+        This gives us exponential form of a complex number:
+        <me>
+          z=r\ee^{\ii\theta}
+        </me>
+      </p>
+    </li>
+
+    
+    <li>
+      <p>
+        Apply to more general second-order linear differential equation:
+        <me>
+          y''+my'+by=0
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Now we can multiply and divide <m>z=r\ee^{\ii\theta}</m> and <m>w=s\ee^{\ii\phi}</m> as follows:
+      </p>
+      <md>
+        <mrow>zw \amp = rs\ee^{\ii(\theta+\phi)}</mrow>
+        <mrow>\frac{z}{w} \amp = \frac{r}{s}\ee^{\ii(\theta-\phi)}</mrow>
+      </md>
+    </li>
+
+    <li>
+      <p>
+        Exponential form of Fourier series (good to put in exercises):
+        <me>
+          \sum_{k=-\infty}^{\infty}c_{n}\ee^{\ii kx}
+        </me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Extending exponential function to complex inputs:
+        <aside>
+          <p>
+            The exponential function is used to define pretty much all the other functions!
+          </p>
+        </aside>
+      </p>
+      <md>
+        <mrow>\ee^z \amp = \ee^{x+\ii y}</mrow>
+        <mrow>\amp = \ee^{x}\ee^{\ii y}</mrow>
+        <mrow>\amp = \ee^{x}\cos y + \ii\ee^{x}\sin y</mrow>
+      </md>
+
+      <p>
+        Is now <m>2\uppi\ii</m> periodic in the imaginary direction!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Trigonometric functions:
+      </p>
+      <md>
+        <mrow>\sin z \amp = \frac{\ee^{\ii z}-\ee^{-\ii z}}{2\ii} = \sin x \cosh y + \ii\cos x\sinh y</mrow>
+        <mrow>\cos z \amp = \frac{\ee^{\ii z}+\ee^{-\ii z}}{2} = \cos x \cosh y - \ii\sin x\sinh y</mrow>
+      </md>
+
+      <p>
+        All other trigonometric functions are defined based on these.
+        Also, we can actually find solutions to equations like <m>\sin z=5</m> now!
+      </p>
+    </li>
+
+
+    <li>
+      <p>
+        Hyperbolic functions:
+      </p>
+      <md>
+        <mrow>\sinh z \amp = \frac{\ee^{z}-\ee^{-z}}{2} = \sinh x \cos y + \ii\cosh x\sin y</mrow>
+        <mrow>\cosh z \amp = \frac{\ee^{z}+\ee^{-z}}{2} = \cosh x \cos y + \ii\sinh x\sin y</mrow>
+      </md>
+
+      <p>
+        Relationships between trigonometric and hyperbolic functions:
+      </p>
+      <md>
+        <mrow>\sin \ii z \amp = \ii \sinh z \amp \cos \ii z \amp = \cosh z</mrow>
+        <mrow>\sinh \ii z \amp = \ii \sin z \amp \cosh \ii z \amp = \cos z</mrow>
+      </md>
+    </li>
+  </ul>
+</section>
