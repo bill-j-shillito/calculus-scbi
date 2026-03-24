@@ -50,6 +50,12 @@
       <p>
         <interactive xml:id="test-graph" iframe="https://www.desmos.com/3d/tthtce0hvb" aspect="15:10"/>
       </p>
+      <image xml:id="sageplot-domain-coloring">
+          <sageplot>
+            f(z) = (z^2 + 4)/(z^2 - 4)
+            complex_plot(f, (-3, 3), (-3, 3))
+          </sageplot>
+      </image>
     </li>
 
     <li>
