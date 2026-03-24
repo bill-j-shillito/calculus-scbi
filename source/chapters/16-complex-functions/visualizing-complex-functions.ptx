@@ -47,6 +47,9 @@
           </li>
         </ul>
       </p>
+      <p>
+        <interactive xml:id="test-graph" iframe="https://www.desmos.com/3d/tthtce0hvb" aspect="15:10"/>
+      </p>
     </li>
 
     <li>
