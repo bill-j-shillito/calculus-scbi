@@ -84,5 +84,21 @@
         Start with density along a rod first?
       </p>
     </li>
+
+    
+
+    <li>
+      <p>
+        Moment of inertia:
+      </p>
+      <md>
+        <mrow>I_{x=0} \amp = \iint_{D} x^{2}\rho(x,y)\dd{A}</mrow>
+        <mrow>I_{y=0} \amp = \iint_{D} y^{2}\rho(x,y)\dd{A}</mrow>
+        <mrow>I_{z=0} \amp = \iint_{D} (x^{2}+y^{2})\rho(x,y)\dd{A}</mrow>
+      </md>
+      <p>
+        These will be done WITHOUT polar coordinates; I believe they can instead be done with symmetry arguments and trigonometric substitutions. (Never a bad idea to revisit those techniques!)
+      </p>
+    </li>
   </ul>
 </section>
