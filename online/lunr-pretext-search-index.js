@@ -1546,7 +1546,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.5",
   "title": "Center of mass",
-  "body": " Center of mass     Compute mass and moments of planar or spatial regions using double and triple integrals.    Find centers of mass by normalizing moments with total mass.    Interpret centroids as centers of mass of shapes with uniform density.      Introduction goes here.     Mass in 2D (where is density): Moments in 2D:   Center of mass:     Mass in 3D (where is density): Moments in 3D:   Center of mass:     If we assume uniform density, we get the centroid of the region.    Start with density along a rod first?    "
+  "body": " Center of mass     Compute mass and moments of planar or spatial regions using double and triple integrals.    Find centers of mass by normalizing moments with total mass.    Interpret centroids as centers of mass of shapes with uniform density.      Introduction goes here.     Mass in 2D (where is density): Moments in 2D:   Center of mass:     Mass in 3D (where is density): Moments in 3D:   Center of mass:     If we assume uniform density, we get the centroid of the region.    Start with density along a rod first?    Moment of inertia:   These will be done WITHOUT polar coordinates; I believe they can instead be done with symmetry arguments and trigonometric substitutions. (Never a bad idea to revisit those techniques!)    "
 },
 {
   "id": "sec-center-of-mass-2",
@@ -1834,7 +1834,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "18.3",
   "title": "Double integrals over polar regions",
-  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Polar Jacobian: .    Moment of inertia:     Do the Gaussian integral using the polar trick    "
+  "body": " Double integrals over polar regions     Use the change-of-variables formula to rewrite double integrals in new coordinates.    Apply polar coordinates to compute quantities such as moments of inertia.    Derive the area under the Gaussian curve using polar methods.      Introduction goes here.     Change of variables in an integral:     Polar Jacobian: .    Simplified moments of inertia for anything involving circular symmetry    Do the Gaussian integral using the polar trick    "
 },
 {
   "id": "sec-polar-double-integrals-2",
