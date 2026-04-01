@@ -3,6 +3,14 @@
 <!-- macros for defining latex math shortcuts. It is good practice -->
 <!-- to define these semantically, so that the macro relates to what-->
 <!-- it defines. -->
+<!-- <macros component="upgreek">
+    \newcommand{\pii}{\uppi}
+</macros>
+
+<macros component="no-upgreek">
+    \newcommand{\pii}{\pi}
+</macros> -->
+
 <macros>
     \everymath{\displaystyle}
     \newcommand{\N}{\mathbb N}
@@ -19,8 +27,9 @@
     \newcommand{\resid}[1]{\underset{#1}{\Res}}
     \DeclareMathOperator{\sinc}{sinc}
     \DeclareMathOperator{\sgn}{sgn}
-    <!-- \newcommand{\uppi}{\symup{\pi}} -->
-    \newcommand{\uppi}{\pi}
+    <!-- \newcommand{\pii}{\pi} -->
+    \newcommand{\pii}{\uppi}
+    <!-- \newcommand{\pii}{\symup{\pi}} -->
     \DeclareMathOperator{\Prob}{P}
     \DeclareMathOperator{\EV}{E}
     \DeclareMathOperator{\Var}{Var}

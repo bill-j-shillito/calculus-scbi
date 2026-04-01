@@ -31,7 +31,7 @@
         <me>
           \Ln z=\ln|z|+\ii\Arg z
         </me>
-        Here, we use the principal argument with <m>-\uppi&#x3C;\Arg z\le\uppi</m>.
+        Here, we use the principal argument with <m>-\pii&#x3C;\Arg z\le\pii</m>.
       </p>
     </li>
 

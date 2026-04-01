@@ -77,16 +77,18 @@
 
     <li>
       <p>
-      <theorem>
-        <title>Cauchy-Goursat theorem</title>
-        <statement>
-          Suppose <m>f</m> is holomorphic in a simply connected domain <m>D</m>.
-          Then for every simple closed contour <m>C</m> in <m>D</m>,
-          <me>
-            \oint_{C} f(z)\dd{z}=0
-          </me>.
-        </statement>
-      </theorem>
+        <theorem>
+          <title>Cauchy-Goursat theorem</title>
+          <statement>
+            <p>
+              Suppose <m>f</m> is holomorphic in a simply connected domain <m>D</m>.
+              Then for every simple closed contour <m>C</m> in <m>D</m>,
+              <me>
+                \oint_{C} f(z)\dd{z}=0
+              </me>.
+            </p>
+          </statement>
+        </theorem>
         Much harder to prove! Does it based on triangular contours, then polygonal, then any.
       </p>
     </li>
@@ -150,7 +152,7 @@
               Suppose that <m>f</m> is holomorphic in a simply connected domain <m>D</m> and <m>C</m> is any simple closed contour lying entirely within <m>D</m>.
               Then for any point <m>z_{0}</m> within <m>C</m>,
               <me>
-                f(z_{0})=\frac{1}{2\uppi\ii}\oint_{C}\frac{f(z)}{z-z_{0}}\dd{z}\text{.}
+                f(z_{0})=\frac{1}{2\pii\ii}\oint_{C}\frac{f(z)}{z-z_{0}}\dd{z}\text{.}
               </me>
             </p>
           </statement>
@@ -167,7 +169,7 @@
               Suppose that <m>f</m> is holomorphic in a simply connected domain <m>D</m> and <m>C</m> is any simple closed contour lying entirely within <m>D</m>.
               Then for any point <m>z_{0}</m> within <m>C</m>,
               <me>
-                f^{(n)}(z_{0})=\frac{n!}{2\uppi\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{n+1}}\dd{z}\text{.}
+                f^{(n)}(z_{0})=\frac{n!}{2\pii\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{n+1}}\dd{z}\text{.}
               </me>
             </p>
           </statement>

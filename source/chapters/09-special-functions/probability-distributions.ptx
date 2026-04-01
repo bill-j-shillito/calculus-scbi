@@ -75,11 +75,11 @@
       <p>
         Gaussian integral:
         <me>
-          \int_{-\infty}^{\infty}\ee^{-x^2}\dd{x}=\sqrt{\uppi}
+          \int_{-\infty}^{\infty}\ee^{-x^2}\dd{x}=\sqrt{\pii}
         </me>
         Error function:
         <me>
-          \erf(x)=\frac{2}{\sqrt{\uppi}}\int_{0}^{x}\ee^{-x^2}\dd{x}
+          \erf(x)=\frac{2}{\sqrt{\pii}}\int_{0}^{x}\ee^{-x^2}\dd{x}
         </me>
       </p>
     </li>

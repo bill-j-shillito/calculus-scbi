@@ -6,6 +6,7 @@
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <math-package latex-name="physics" mathjax-name="physics" />
+  <math-package latex-name="upgreek" mathjax-name="upgreek" />
 
   <xi:include href="macros.ptx" />
 

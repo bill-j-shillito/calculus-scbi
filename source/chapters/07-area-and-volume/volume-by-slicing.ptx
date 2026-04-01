@@ -47,7 +47,7 @@
     <p>
       Disk Method for solids of revolution (about horizontal axis):
       <me>
-        V=\int_{a}^{b} \uppi R(x)^{2}\dd{x}
+        V=\int_{a}^{b} \pii R(x)^{2}\dd{x}
       </me>
     </p>
   </li>
@@ -56,7 +56,7 @@
     <p>
       Washer Method (about horizontal axis):
       <me>
-        V=\int_{a}^{b} \uppi (R\tsub{outer}(x)^{2}-R\tsub{inner}(x)^{2})\dd{x}
+        V=\int_{a}^{b} \pii (R\tsub{outer}(x)^{2}-R\tsub{inner}(x)^{2})\dd{x}
       </me>
     </p>
   </li>

@@ -31,22 +31,22 @@
         Euler wrote <m>\sin x</m> as an infinite product:
       </p>
       <md>
-        <mrow>\sin x \amp = x\left(1-\dfrac{x}{\uppi}\right)\left(1+\dfrac{x}{\uppi}\right)\left(1-\dfrac{x}{2\uppi}\right)\left(1+\dfrac{x}{2\uppi}\right)\cdots</mrow>
-        <mrow>\amp = x\left(1-\dfrac{x^{2}}{\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{4\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{9\uppi^{2}}\right)\cdots</mrow>
+        <mrow>\sin x \amp = x\left(1-\dfrac{x}{\pii}\right)\left(1+\dfrac{x}{\pii}\right)\left(1-\dfrac{x}{2\pii}\right)\left(1+\dfrac{x}{2\pii}\right)\cdots</mrow>
+        <mrow>\amp = x\left(1-\dfrac{x^{2}}{\pii^{2}}\right)\left(1-\dfrac{x^{2}}{4\pii^{2}}\right)\left(1-\dfrac{x^{2}}{9\pii^{2}}\right)\cdots</mrow>
       </md>
 
       <p>
         Set this equal to Taylor series and divide through by <m>x</m>:
         <me>
-          1-\dfrac{x^{2}}{3!}+\dfrac{x^{4}}{5!}-\dfrac{x^{6}}{7!}+\cdots=x\left(1-\dfrac{x^{2}}{\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{4\uppi^{2}}\right)\left(1-\dfrac{x^{2}}{9\uppi^{2}}\right)\cdots
+          1-\dfrac{x^{2}}{3!}+\dfrac{x^{4}}{5!}-\dfrac{x^{6}}{7!}+\cdots=x\left(1-\dfrac{x^{2}}{\pii^{2}}\right)\left(1-\dfrac{x^{2}}{4\pii^{2}}\right)\left(1-\dfrac{x^{2}}{9\pii^{2}}\right)\cdots
         </me>
         Collect <m>x^{2}</m> terms:
         <me>
-          -\dfrac{x^{2}}{3!}=-x^{2}\left(\dfrac{1}{\uppi^{2}}+\dfrac{1}{4\uppi^{2}}+\dfrac{1}{9\uppi^{2}}+\cdots\right)
+          -\dfrac{x^{2}}{3!}=-x^{2}\left(\dfrac{1}{\pii^{2}}+\dfrac{1}{4\pii^{2}}+\dfrac{1}{9\pii^{2}}+\cdots\right)
         </me>
         Rearranging, we find that
         <me>
-          \dfrac{1}{1^{2}}+\dfrac{1}{2^{2}}+\dfrac{1}{3^{2}}+\dfrac{1}{4^{2}}+\cdots=\dfrac{\uppi^{2}}{6}
+          \dfrac{1}{1^{2}}+\dfrac{1}{2^{2}}+\dfrac{1}{3^{2}}+\dfrac{1}{4^{2}}+\cdots=\dfrac{\pii^{2}}{6}
         </me>
       </p>
     </li>
@@ -86,7 +86,7 @@
         <me>
           \zeta^{*}(s)=\zeta(s)-\dfrac{2}{2^{s}}\zeta(s)\quad\Rightarrow\quad\zeta(s)=\dfrac{\zeta^{*}(s)}{1-2^{1-s}}
         </me>
-        This works for positive real, except when <m>s=1+\dfrac{2\uppi\ii n}{\ln 2}</m>, but we can just use limits for all of those except <m>s=1</m>.
+        This works for positive real, except when <m>s=1+\dfrac{2\pii\ii n}{\ln 2}</m>, but we can just use limits for all of those except <m>s=1</m>.
       </p>
     </li>
 
@@ -94,7 +94,7 @@
       <p>
         Reflection formula:
         <me>
-          \zeta(s)=\left(2^{s}\uppi^{s-1}\sin\left(\dfrac{\uppi s}{2}\Gamma(1-s)\right)\right)\cdot\zeta(1-s)
+          \zeta(s)=\left(2^{s}\pii^{s-1}\sin\left(\dfrac{\pii s}{2}\Gamma(1-s)\right)\right)\cdot\zeta(1-s)
         </me>
         Can show that <m>\zeta(n)=0</m> when <m>n</m> is negative and even, and <m>\zeta(-1)=-1/12</m>.
         This now works for all complex numbers except <m>s=1</m>.
@@ -109,7 +109,7 @@
 
     <li>
       <p>
-        Prime counting function: <m>\uppi(x)</m> is the number of prime numbers less than or equal to <m>x</m>.
+        Prime counting function: <m>\pii(x)</m> is the number of prime numbers less than or equal to <m>x</m>.
         Was shown to be asymptotic first to <m>\dfrac{x}{\ln x}</m> and then to <m>\DS\int_{2}^{x}\dfrac{1}{\ln t}\dd{t}</m>.
         This is the Prime Number Theorem.
       </p>
@@ -119,7 +119,7 @@
       <p>
         Briefly mention Fourier transform:
         <me>
-          \hat{f}(\xi)=\int_{-\infty}^{\infty} f(x)\ee^{-2\uppi\ii x\xi}\dd{x}
+          \hat{f}(\xi)=\int_{-\infty}^{\infty} f(x)\ee^{-2\pii\ii x\xi}\dd{x}
         </me>
         You give it a function <m>f</m>, it gives you a back a new function <m>\hat{f}</m> with spikes at the underlying frequencies of <m>f</m>.
         It's like un-baking a cake.

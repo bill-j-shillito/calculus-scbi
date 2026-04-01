@@ -84,7 +84,7 @@
           <p>
             The principal argument is defined as
           <me>
-            -\uppi\lt\Arg z\le\uppi
+            -\pii\lt\Arg z\le\pii
           </me>.
           There's nothing special about this, it's just convenient.
           Also <m>\arg 0</m> is undefined.

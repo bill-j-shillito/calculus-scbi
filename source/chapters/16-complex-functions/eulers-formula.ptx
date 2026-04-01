@@ -49,7 +49,7 @@
         </me>
         <aside>
           <p>
-            Avoid the <sq>numerology</sq> of <m>\ee^{\ii\uppi}+1=0</m>.
+            Avoid the <sq>numerology</sq> of <m>\ee^{\ii\pii}+1=0</m>.
           </p>
         </aside>
       </p>
@@ -106,7 +106,7 @@
       </md>
 
       <p>
-        Is now <m>2\uppi\ii</m> periodic in the imaginary direction!
+        Is now <m>2\pii\ii</m> periodic in the imaginary direction!
       </p>
     </li>
 

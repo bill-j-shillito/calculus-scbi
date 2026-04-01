@@ -42,7 +42,7 @@
 
           <li>
             <p>
-              Hue = argument (red = <m>0</m>, lime = <m>\uppi/2</m>, cyan = <m>\uppi</m>, purple = <m>3\uppi/2</m>
+              Hue = argument (red = <m>0</m>, lime = <m>\pii/2</m>, cyan = <m>\pii</m>, purple = <m>3\pii/2</m>
             </p>
           </li>
         </ul>
@@ -69,7 +69,7 @@
 
     <li>
         <p>
-            Roots of unity: <m>z^n=1</m> has roots at <m>\ee^{2\uppi\ii k/n}</m> for <m>k=0,1,\ldots,n-1</m>.
+            Roots of unity: <m>z^n=1</m> has roots at <m>\ee^{2\pii\ii k/n}</m> for <m>k=0,1,\ldots,n-1</m>.
         </p>
         <p>
             We can see this in the domain coloring of <m>z^n-1</m>, where the colors cycle around the unit circle and approach black (zero) at the roots of unity.

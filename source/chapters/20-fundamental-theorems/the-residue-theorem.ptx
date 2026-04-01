@@ -74,7 +74,7 @@
             Let <m>D</m> be a simply connected domain and <m>C</m> a simple closed contour lying entirely within <m>D</m>.
             If <m>f</m> is meromorphic on and within <m>C</m> with isolated singularities <m>\seq z1n</m> within <m>C</m>, then
             <me>
-              \oint_{C} f(z)\dd{z}=2\uppi\ii\sum_{k=1}^{n}\resid{z=z_0}f(z)\text{.}
+              \oint_{C} f(z)\dd{z}=2\pii\ii\sum_{k=1}^{n}\resid{z=z_0}f(z)\text{.}
             </me>
           </p>
         </statement>
@@ -96,7 +96,7 @@
             Suppose <m>f</m> is meromorphic in <m>D</m> and <m>f(z)\neq 0</m> on <m>C</m>.
             Then
             <me>
-              \frac{1}{2\uppi\ii}\oint_{C}\frac{f'(z)}{f(z)}\dd{z}=N_{0}-N_{p}
+              \frac{1}{2\pii\ii}\oint_{C}\frac{f'(z)}{f(z)}\dd{z}=N_{0}-N_{p}
             </me>
             where <m>N_{0}</m> is the total number of zeros of <m>f</m> (up to multiplicity) inside <m>C</m> and <m>N_{p}</m> is the number of poles of <m>f</m> (up to multiplicity) inside <m>C</m>.
           </p>

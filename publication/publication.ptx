@@ -10,6 +10,22 @@
 <!-- make from the default values.                                        -->
 
 <publication>
+  <!-- Set where external assets and generated assets will be   -->
+  <!-- stored or created.  Directories are relative to the main -->
+  <!-- source PreTeXt file                                      -->
+  <source>
+    <!-- Paths to folders containing external assets and generated assets -->
+    <!-- relative to your main source file.                               -->
+    <directories external="../assets" generated="../generated-assets" />
+
+    <!-- Set which marked elements are included in this version: -->
+    <!-- See
+    https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
+    <!-- In this example, we include the w1s components from the sample activity to show solutions. -->
+    <!-- <version include="no-upgreek"/> -->
+
+  </source>
+
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
       <chunking level="3" />
@@ -39,23 +55,6 @@
     <!-- QR code image: set path to an image to put in center of QR codes -->
       <!-- <qrcode image="image.png" /> -->
   </common>
-
-
-  <!-- Set where external assets and generated assets will be   -->
-  <!-- stored or created.  Directories are relative to the main -->
-  <!-- source PreTeXt file                                      -->
-  <source>
-    <!-- Paths to folders containing external assets and generated assets -->
-    <!-- relative to your main source file.                               -->
-    <directories external="../assets" generated="../generated-assets" />
-
-    <!-- Set which marked elements are included in this version: -->
-    <!-- See
-    https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
-    <!-- In this example, we include the w1s components from the sample activity to show solutions. -->
-      <version include="w1s"/>
-
-  </source>
 
   <numbering>
     <!-- the divisions element describes the numbering of divisions.  -->

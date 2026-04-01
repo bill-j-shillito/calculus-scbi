@@ -46,7 +46,7 @@
     <li>
       <p>
         A uniformly continuous function has a uniformly continuous extension to the closure of that set.
-        This helps eventually show that <m>2^{\uppi}</m> exists, by extending <m>2^{x}</m> from a function on <m>\bb Q</m> to a function on <m>\bb R</m>.
+        This helps eventually show that <m>2^{\pii}</m> exists, by extending <m>2^{x}</m> from a function on <m>\bb Q</m> to a function on <m>\bb R</m>.
       </p>
     </li>
 

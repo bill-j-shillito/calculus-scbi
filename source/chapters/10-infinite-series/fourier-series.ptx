@@ -45,9 +45,9 @@
       Euler-Fourier formulas for coefficients:
     </p>
     <md>
-      <mrow>a_0 \amp = \frac{1}{2\uppi}\int_{-\uppi}^{\uppi}f(x)\dd{x} </mrow>
-      <mrow>a_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\cos(kx)\dd{x} </mrow>
-      <mrow>b_k \amp = \frac{1}{\uppi} \int_{-\uppi}^{\uppi}f(x)\sin(kx)\dd{x} </mrow>
+      <mrow>a_0 \amp = \frac{1}{2\pii}\int_{-\pii}^{\pii}f(x)\dd{x} </mrow>
+      <mrow>a_k \amp = \frac{1}{\pii} \int_{-\pii}^{\pii}f(x)\cos(kx)\dd{x} </mrow>
+      <mrow>b_k \amp = \frac{1}{\pii} \int_{-\pii}^{\pii}f(x)\sin(kx)\dd{x} </mrow>
     </md>
   </li>
 
@@ -56,8 +56,8 @@
       This all works because:
     </p>
     <md>
-      <mrow> \int_{-\uppi}^{\uppi}\sin(kx)\cos(nx)\dd{x} \amp = 0 \quad \text{for all }n,k </mrow>
-      <mrow> \int_{-\uppi}^{\uppi}\cos(kx)\cos(nx)\dd{x} \amp = \uppi\delta_{nk} </mrow>
+      <mrow> \int_{-\pii}^{\pii}\sin(kx)\cos(nx)\dd{x} \amp = 0 \quad \text{for all }n,k </mrow>
+      <mrow> \int_{-\pii}^{\pii}\cos(kx)\cos(nx)\dd{x} \amp = \pii\delta_{nk} </mrow>
     </md>
 
     <p>
@@ -96,7 +96,7 @@
     <p>
       Square wave:
       <me>
-        \frac{4}{\uppi}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
+        \frac{4}{\pii}\qty(\sin x+\frac{1}{3}\sin 3x+\frac{1}{5}\sin 5x+\frac{1}{7}\sin 7x+\cdots)
       </me>
     </p>
   </li>
@@ -105,7 +105,7 @@
     <p>
       Sawtooth wave
       <me>
-        \frac{2}{\uppi}\qty(\sin x-\frac{1}{2}\sin 2x+\frac{1}{3}\sin 3x-\frac{1}{4}\sin 4x+\cdots)
+        \frac{2}{\pii}\qty(\sin x-\frac{1}{2}\sin 2x+\frac{1}{3}\sin 3x-\frac{1}{4}\sin 4x+\cdots)
       </me>
     </p>
   </li>
@@ -114,7 +114,7 @@
     <p>
       Triangle wave
       <me>
-        \frac{4}{\uppi}\qty(\sin x-\frac{1}{9}\sin 3x+\frac{1}{25}\sin 5x-\frac{1}{49}\sin 7x+\cdots)
+        \frac{4}{\pii}\qty(\sin x-\frac{1}{9}\sin 3x+\frac{1}{25}\sin 5x-\frac{1}{49}\sin 7x+\cdots)
       </me>
     </p>
   </li>
@@ -123,7 +123,7 @@
     <p>
       Up-down:
       <me>
-        \frac{4}{\uppi}\qty(\cos x+\cos 3x+\cos 5x+\cos 7x+\cdots)
+        \frac{4}{\pii}\qty(\cos x+\cos 3x+\cos 5x+\cos 7x+\cdots)
       </me>
     </p>
   </li>
@@ -132,7 +132,7 @@
     <p>
       Ramp:
       <me>
-        \frac{\uppi}{2}-\frac{\uppi}{4}\qty(\cos x+\frac{1}{9}\cos 3x+\frac{1}{25}\cos 5x+\frac{1}{49}\cos 7x+\cdots)
+        \frac{\pii}{2}-\frac{\pii}{4}\qty(\cos x+\frac{1}{9}\cos 3x+\frac{1}{25}\cos 5x+\frac{1}{49}\cos 7x+\cdots)
       </me>
     </p>
   </li>
@@ -141,7 +141,7 @@
     <p>
       Square pulse:
       <me>
-        \frac{h}{2\uppi}+\sum_{k=1}^{\infty}\frac{\sin kh}{\uppi k}+\sum_{k=1}^{\infty}\frac{1-\cos kh}{\uppi k}
+        \frac{h}{2\pii}+\sum_{k=1}^{\infty}\frac{\sin kh}{\pii k}+\sum_{k=1}^{\infty}\frac{1-\cos kh}{\pii k}
       </me>
     </p>
   </li>

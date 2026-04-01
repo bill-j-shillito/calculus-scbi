@@ -51,7 +51,7 @@
         </me>
         However, as an exception,
         <me>
-          \int_{C} \frac{1}{z}\dd{z}=2\uppi\ii\text{.}
+          \int_{C} \frac{1}{z}\dd{z}=2\pii\ii\text{.}
         </me>
       </p>
     </li>

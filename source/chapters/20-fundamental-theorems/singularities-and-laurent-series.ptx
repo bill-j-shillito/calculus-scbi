@@ -57,7 +57,7 @@
       <p>
         If <m>f</m> is holomorphic within the annular domain <m>D</m> defined by <m>r&#x3C;|z-z_{0}|&#x3C;R</m>, then <m>f</m> has a valid Laurent series representation, with the coefficeints given by
         <me>
-          a_{k}=\frac{1}{2\uppi\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{k+1}}\dd{z}
+          a_{k}=\frac{1}{2\pii\ii}\oint_{C}\frac{f(z)}{(z-z_{0})^{k+1}}\dd{z}
         </me>,
         where <m>C</m> is a simple closed curve that lies entirely within <m>D</m> and has <m>z_{0}</m> in its interior.
       </p>
