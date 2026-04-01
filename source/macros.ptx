@@ -27,8 +27,8 @@
     \newcommand{\resid}[1]{\underset{#1}{\Res}}
     \DeclareMathOperator{\sinc}{sinc}
     \DeclareMathOperator{\sgn}{sgn}
-    <!-- \newcommand{\pii}{\pi} -->
-    \newcommand{\pii}{\uppi}
+    \newcommand{\pii}{\pi}
+    <!-- \newcommand{\pii}{\uppi} -->
     <!-- \newcommand{\pii}{\symup{\pi}} -->
     \DeclareMathOperator{\Prob}{P}
     \DeclareMathOperator{\EV}{E}
