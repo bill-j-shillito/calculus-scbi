@@ -101,14 +101,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.19';
+eBookConfig.runestone_version = '7.13.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.d2d4c56cb9826035.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.5a05244a9cd615a2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-properties-of-integrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-integration.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-average-value-and-average-rates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\everymath{\displaystyle}
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{physics}\require{upgreek}\everymath{\displaystyle}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -151,8 +151,9 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\resid}[1]{\underset{#1}{\Res}}
 \DeclareMathOperator{\sinc}{sinc}
 \DeclareMathOperator{\sgn}{sgn}
+\newcommand{\pii}{\pi}
 
-\newcommand{\uppi}{\pi}
+
 \DeclareMathOperator{\Prob}{P}
 \DeclareMathOperator{\EV}{E}
 \DeclareMathOperator{\Var}{Var}
@@ -205,20 +206,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-differentiation.html" class="internal"><span class="codenumber">1</span> <span class="title">Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-approximating-the-circle.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Approximating the circle</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-approximating-the-circle.html#sec-approximating-the-circle-25" class="internal"><span class="codenumber">1.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-the-derivative.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The derivative: sensitivity to change</span></a></div>
+<div class="toc-title-box"><a href="sec-sensitivity.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Sensitivity to change</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-derivative.html#subsec-estimating-sensitivity" class="internal"><span class="title">Estimating sensitivity</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-derivative.html#subsec-differentials-and-derivatives" class="internal"><span class="title">Differentials and derivatives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-derivative.html#subsec-notation-for-derivatives" class="internal"><span class="title">Notation for derivatives</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-derivative.html#subsec-the-sign-of-the-derivative" class="internal"><span class="title">The sign of the derivative</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-derivative.html#sec-the-derivative-8" class="internal"><span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-sensitivity-on-an-interval" class="internal"><span class="title">Sensitivity on an interval</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-sensitivity-at-a-point" class="internal"><span class="title">Sensitivity at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-the-sign-of-the-sensitivity" class="internal"><span class="title">The sign of the sensitivity</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-sensitivity.html#sec-sensitivity-7" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-differentiation-techniques.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Basic differentiation techniques</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-derivative.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The derivative</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-linear-approximation.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Linear approximation</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-product-and-chain-rule.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The Product Rule and the Chain Rule</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-implicit-differentiation.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Implicit differentiation</span></a></div></li>
 </ul>
@@ -227,9 +224,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-applications-of-derivatives.html" class="internal"><span class="codenumber">2</span> <span class="title">Applications of derivatives</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-related-rates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Related rates</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-optimization.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Optimization</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-higher-order-derivatives.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Higher order derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-linear-approximation.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Linear approximation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-higher-order-derivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Higher order derivatives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-optimization.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Optimization</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-relative-change-and-elasticity.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Relative change and elasticity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">

@@ -19,76 +19,157 @@ var ptx_lunr_docs = [
   "body": " About this project  This project has grown out of my experiences teaching calculus at multiple levels, starting with AP Calculus in high school and most recently getting to take a cohort through the full Calculus I-IV sequence at Oglethorpe. Over time, I've become less satisfied with covering topics in the traditional order and more interested in the intellectual experience students were actually having. Calculus is a sequence of ideas that developed historically in response to real problems, but when students encounter these ideas for the first time, they often have uneven preparation and varying expectations.  Rather than presenting Topic A before Topic B simply because A is logically required to prove B, I'd rather ask a different question: where are we in the story? My aim here is to structure each course so that concepts appear when they are needed. I try to introduce tools just in time , when students feel the intellectual need for them. Applications are placed front and center whenever possible so that the necessary calculus techniques arise as responses to concrete questions.  The book is divided into five parts, each of which has five chapters and is designed to be covered in a semester. The first three parts are aligned with Oglethorpe's Calculus I-III sequence, while the fourth part expands the usual vector calculus course by interleaving complex variables, and the fifth part focuses on real analysis to provide a foundation for the earlier material. Each part ends with a capstone designed to synthesize the material or push it further. At this stage, the project exists primarily as a detailed outline, with some sections more fully written than others; the goal has been to clarify the overall story arc before filling in every detail and writing up the prose, the practice questions, and so on.  This project remains a work in progress the structure is established, and I'm always refining individual sections. Feedback is always welcome!   Part I: Describing Change  The first part corresponds to Calculus I and, most notably, begins with differentiation rather than limits. Students work with derivatives immediately, appealing to differentials as infinitesimal changes, much as the early developers of calculus did. To reduce cognitive overload at first, the initial functions are restricted to power functions with rational coefficients, so that students can internalize the structural rules instead of immediately being presented with a large catalog of derivatives. Applications such as related rates and optimization appear shortly after, along with higher-order derivatives so that concavity can be used naturally toward those applications. Integration is then introduced as accumulation of change, followed by the Fundamental Theorem of Calculus and an explicit connection between average value and average rates of change. In the chapter on differential equations, exponential and trigonometric functions first emerge as solutions to physical models, and logarithms are introduced shortly thereafter. Only after all of these tools are in place are limits introduced formally as a way to clarify and justify earlier reasoning, so that students better see what purpose they serve. The capstone uses the full development of the course to prove the Fundamental Theorem of Calculus in a deliberate and comprehensive way.    Part II: Harnessing Infinity  The second part, corresponding to Calculus II, begins with analytic geometry and motion in the plane, providing continuity with earlier material while expanding students' visual intuition, especially about conic sections. A subsequent chapter on area and volume emphasizes slicing and accumulation, moving students away from the narrow view that integrals simply are about area alone. Integration techniques are introduced with deliberate attention to structure substitution and integration by parts are presented as reversals of differentiation rules, and more advanced strategy appears later in a section devoted to reasoning about the form of an integrand. A separate chapter addresses situations in which closed-form antiderivatives do not exist and numerical methods become necessary, including applications such as to probability. The series chapter departs most sharply from tradition rather than beginning with sequences and convergence tests, it begins immediately with Taylor series as practical tools for approximation and integration, and questions of convergence arise naturally when needed to explain unexpected behavior. This approach creates space for hyperbolic functions and even generating functions, and it culminates in a capstone on Fourier analysis.    Part III: New Dimensions  The third part, corresponding to Calculus III, expands calculus into higher dimensions. It begins by examining what the idea of dimension means and how familiar ideas extend into unfamiliar settings. After functions of multiple variables and their continuity have been discussed, partial derivatives are introduced through a number of applications, and multivariable Taylor approximations and foundational optimization techniques are included. The chapter on vectors moves past thinking them as lists of numbers or functions and toward treating them as mathematical objects in their own right. These assist with introducing gradients and directional derivatives to show how multivariable functions change in different ways. Constrained optimization and Lagrange multipliers are more carefully developed, and the Lagrangian function is interpreted in terms of sensitivity, giving meaning to Lagrange multipliers instead of throwing them out as is often done in standard calculus texts. Multiple integrals are developed exclusively in Cartesian coordinates to reinforce the idea of reducing complex regions to iterated problems, with applications such as center of mass and probability. The capstone introduces calculus of variations, where optimization occurs over infinite-dimensional spaces of functions.    Part IV: Transforming Perspectives  The fourth part expands the usual treatment of vector calculus by interleaving complex variables at natural points. It begins with complex functions, focusing on building intuition through both algebraic manipulations and domain coloring. The next chapter introduces vector fields and dynamical systems, where divergence and curl are introduced as new kinds of derivatives, and complex differentiability is linked to physical interpretations such as incompressible and irrotational flow. Coordinate transformations revisit complex functions as conformal mappings of the plane, using the Jacobian matrix as a unifying concept that describes how curves and regions are reshaped, which also leads naturally into changes of variables in integration. Line and surface integrals are developed carefully, with scalar and vector cases each given their own space, and contour integrals incorporated into the same framework. Finally, the fundamental theorems of Green, Gauss, and Stokes are explored side by side, and Cauchy's integral theorem leads to the powerful calculus of residues. The capstone introduces differential forms and exterior calculus as a unified language for all of these results.    Part V: Firm Foundations  The final part of this book turns to real analysis. Students have already worked extensively with derivatives, integrals, and series, so here, the aim is to revisit those tools with careful attention to foundations. The opening chapter motivates mathematical rigor through counterintuitive examples from Fourier analysis and begins to develop structural properties of the real numbers. Subsequent chapters treat sequences and limits, differentiability, and conditions for integrability. Compactness, uniform continuity, and Lebesgue measure appear where they are needed to clarify earlier ideas. The final chapter studies series and the interchange of limiting processes, addressing the foundational issues that originally prompted the development of analysis. The capstone introduces non-standard analysis as an alternate framework for justifying calculus, showing that the infinitesimal language from the beginning of the project can be made precise in a modern setting, while also pointing out the sophistication of the machinery needed to establish these results.   "
 },
 {
-  "id": "sec-approximating-the-circle",
+  "id": "sec-sensitivity",
   "level": "1",
-  "url": "sec-approximating-the-circle.html",
+  "url": "sec-sensitivity.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Approximating the circle",
-  "body": " Approximating the circle     Approximate the length or area of a curved shape using polygons or wedges.    Improve that approximation by refining the decomposition into smaller pieces.    Visualize a curved shape as being composed of infinitely many infinitesimal pieces.      What is the area of a circle?   You probably already know the formula from previous math classes: But have you ever stopped to wonder where that formula comes from?  In the ancient world, mathematicians needed the answer to this question to design things like temples, storage containers, and astronomical instruments. They of course knew how to calculate areas of simple shapes like rectangles and triangles, as well as polygons that could be broken into these shapes. But a circle has no straight sides, so it doesn't naturally decompose into those familiar pieces.  Put yourself in the place of one of those ancient mathematicians. How might you go about solving this problem?  A natural idea might be to see what pieces you can break a circle into. You might start by slicing it into four equal wedges, as in the figure below. If we rearrange those pieces, alternating between pointing them up and down, we get a shape that resembles a parallelogram.      numwedges=4  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+sqrt(2)\/2       A=(start+2*k*sin(theta),-0.5*cos(theta))     A=(start+2*k*sin(theta),-0.5*cos(theta))     A=(start+2*k*sin(theta),-0.5*cos(theta))  B=(start+sin(theta)+2*k*sin(theta),0.5*cos(theta))         If we then slice one of those pieces down the middle and move it to the other side, we have a shape with two vertical sides and a bumpy top and bottom.      numwedges=4  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          What if we slice the circle into eight wedges instead of four? If we follow the same process as earlier, the shape we get has smaller, more gentle bumps along the top and the bottom:      numwedges=8  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          If we start with sixteen wedges, the bumps are smaller still:      numwedges=16  n=numwedges\/\/2  theta=pi\/2\/n  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          Each time we increase the number of wedges, the rearranged figure starts to look more and more like a rectangle, with the curved boundary of the original circle being distributed across many tiny pieces.  So here's an interesting idea: what if we used infinitely many wedges?      numwedges=128  n=numwedges\/\/2  theta=pi\/2\/n  thickness=0.25  start=1.5+1.25*sqrt(2)-(n-0.5)*sin(theta)         A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))     A=(start-0.5*sin(theta)+2*k*sin(theta),-0.5*cos(theta))  B=(start-0.5*sin(theta)+sin(theta)+2*k*sin(theta),0.5*cos(theta))          In that case, you might imagine that the top and bottom wouldn't look bumpy at all. You wouldn't be able to tell the difference between the rearranged figure and a rectangle, no matter how closely you zoomed in. And since area doesn't change when we just rearrange the pieces, the area of this rectangle should be the same as the area of the original circle.  We can identify that the height of the rectangle is the radius of the circle, and the base is half the circumference of the circle, since the circle's boundary has been distributed across the top and bottom of the rectangle. So the rectangle has area  . Notice that we've reduced the problem of finding the area of a circle to the problem of finding its circumference. And since the circumference of a circle is proportional to its radius, once we know that constant of proportionality, we can determine the area of a circle from its radius alone. In the exercises below, you'll see how to find this constant by approximating the boundary of the circle with polygons.  Now, you might be a bit skeptical of this idea of using infinitely many wedges. There are a number of questions you might wonder:    If the wedges are infinitely thin, how do they contribute anything to the area?    Can we really think of the top and bottom as straight lines if they are made up of infinitely many tiny bumps?    Is it even valid to use the idea of infinitely many infinitely small wedges in the first place?    If you had any of these concerns, you're in good company! This idea of using infinitesimal (infinitely small) pieces has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on; on the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. Out of centuries of wrestling with these ideas came the field that today we call calculus, and that is what we'll be studying throughout this book. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to solve problems in a variety of applied contexts.     In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD. It doesn't require any trigonometry just the Pythagorean theorem and some algebra.   In China, the Pythagorean theorem is often called the Gougu theorem , after the two legs of a right triangle, which are called gou and gu .      Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Remember that a regular hexagon has six equal sides and six equal angles. If you split it into six triangles as shown, what kind of triangle do you get?      Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.              Let's zoom in on the topmost arc of the circle.            O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.      Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)     -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .      You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .      Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?       We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are tangent to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.     Start by circumscribing a regular hexagon around a circle of radius . What is the perimeter of this hexagon?                      Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.                      Let's zoom in again on the topmost arc.                  O=(0,0)  A=(cos(pi\/3),sin(pi\/3))  C=(0,1)  D=2\/sqrt(3)*(cos(pi\/3),sin(pi\/3))  E=2*sqrt(2-sqrt(3))*(cos(5*pi\/12),sin(5*pi\/12))   O    A    C    D    E   clear-background=\"yes\"\/> clear-background=\"yes\"\/>     Find the lengths of segments and . Then find the perimeter of the circumscribed dodecagon.    Triangle is similar to triangle .      Continue this process of bisecting arcs and constructing tangent lines to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?      How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?       Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?      Remember that the equation of a circle of radius in the plane is given by , so the upper semicircle has equation .     Fill in the following table of values for points along the upper semicircle.                              Then use the distances between the points in the table to estimate the circumference of the circle.      Refine your estimate by breaking subdividing the interval into eight equal-width segments, then sixteen.      How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?       The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with sides is , then the perimeter of the inscribed polygon with sides is given by .     Use this recurrence relation to verify the results of Exercise 1.      Develop a similar recurrence relation for the perimeters of the circumscribed polygons and use it to verify the results of Exercise 2.      Write a computer program to implement these recurrence relations and use it to compute perimeters of inscribed and circumscribed polygons with more and more sides. How do these values compare to as you increase the number of sides?      "
+  "title": "Sensitivity to change",
+  "body": " Sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The daily calories needed by an organism depends on its mass.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Sensitivity on an interval   Based on data from The Physics Behind Stopping a Car by P. Lutus.   When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance (measured in car lengths, assuming an average car length of feet) to the speed (measured in miles per hour) by the formula . To make it explicit that depends on (that is, is a function of ), we can also write . We call the independent variable and or the dependent variable , since the value of depends on the value of .   In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in depending on and writing , or we can give the function a separate name and write .   For example, if a car is traveling at miles per hour, we have , so the model predicts a stopping distance of car lengths (or approximately feet).  Now, we might wonder, if we were to change the speed, how much would the stopping distance change? For example, suppose the speed increases by five miles per hour, that is, . Then the change in stopping distance would be . We can then find the ratio of the change in stopping distance to the change in speed: . That is, each extra mile per hour of speed means it takes another half of a car length to stop. We can call this the sensitivity of the stopping distance to changes in speed.   Sensitivity on an interval   If , then the sensitivity of on the interval is defined as . That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as the sensitivity of to changes in .   We will also use the notation .    We can also visualize what we've just done by plotting the stopping distance function :   Will figure out how to make this graph better.      f(x)=0.0034*x^2+0.15*x  a = 50  b = 55             Notice that the sensitivity we've calculated is the slope of the line connecting the points and .    Sensitivity at a point  Our calculation of the sensitivity above was somewhat coarse. Over an increase of five miles per hour, the graph is not perfectly straight but gets gradually steeper as we go, so the sensitivity was gradually changing. In other words, our calculation mixes together several sensitivities rather than capturing the sensitivity at  miles per hour.  If we want a more precise measurement, a natural idea is to look at smaller changes in speed. Over smaller and smaller changes, the graph looks more and more like a straight line, so the slope between the two points gives a better estimate of the sensitivity at that speed. Here's what happens if we use a change in speed of mph: .    Estimate the sensitivity of the stopping distance using the following values of (comparing with a speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph     You should have noticed in the previous activity that as the change in speed gets smaller, our estimated sensitivity approaches a particular value, which seems to be around car lengths per mph. This is similar to what you saw in the previous section, when the circumference of the circle approached more and more closely as we made better and better approximations.  Unfortunately, these are still approximations of the sensitivity. However, if we imagine zooming in infinitely close to the point , we might imagine that the graph of would be perfectly straight at that point. So if we could somehow choose two points that are infinitely close to each other, then the slope of the line between these two points would be exact sensitivity.  (Insert figure)  We call these infinitely small changes differentials , and we represent them with a lowercase : in this case, we would write to denote an infinitesimal change in speed, and to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written . We will call this the sensitivity at the single point where miles per hour.   Sensitivity at a point   If , the sensitivity of at the point is (for the time being) defined as where is infinitely close to . This definition is currently somewhat vague, as we have not defined what it means to be infinitely close. We'll make this definition more precise later.  We will also use the notation for this sensitivity.  When we want to emphasize that the sensitivity is being evaluated at a particular point , we will write or .    We'll soon be able to show that when mph, the actual sensitivity is exactly car lengths per mph.Another way to write this is ; that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is times as large.  Now, you might be a bit skeptical of this idea of using infinitely small changes. If so, you're in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on just how small is infinitely small anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.    Use this same process to estimate and . How does the sensitivity of stopping distance to changes in speed compare at these different speeds?      The sign of the sensitivity  We can gain important information by looking at the sign of the sensitivity. Suppose throughout that is a function of .    If throughout some interval , then if we increase the value of , the value of will also increase. (Likewise, if we decrease the value of , the value of will also decrease.) Thus we say that is an increasing function of on that interval.    If throughout some interval , then if we increase the value of , the value of will decrease, and vice versa. Thus we say that is a decreasing function of on that interval.    This interpretation is especially useful when the independent variable is time, since it allows us to determine whether a particular quantity is increasing or decreasing as time passes. For example, suppose the following graph shows , the height (in feet) of a ball thrown into the air, as a function of , the time elapsed in seconds:  (Insert figure showing a quadratic position function)  As we move from left to right on the graph, the slope of the graph changes:    At first, is positive, which means the ball is rising.    At the top of the curve, is zero, which means the ball is momentarily stationary at the highest point of its arc.    After that, is negative, which means the ball is falling.    Thus, when the independent variable is time, we can interpret the sensitivity as a rate of change ; in this case, tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.  Notice that the terms increasing and decreasing describe a relationship between two variables. They do not mean that the output (the dependent variable) is literally going up or going down on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases in response to a change in the input. You'll often hear the phrase is increasing , but it would be more careful to say is an increasing function of , since the increase in is tied to an increase in .      Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?      , at and        , at and        , at and        , at and        , at and        , at and        at and        In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the number of packages of gourmet coffee beans that are ordered by consumers and the price (in dollars per package) of the coffee beans       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes elapsed since the potato was placed in the oven       , where the number of minutes it takes to bake a potato and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level        Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that . Explain what this means in context, including correct units.       The graph below shows , the profit (in thousands of dollars) earned by a company as a function of , the number of units produced (in hundreds of units).  (Insert graph: a curve that rises, flattens at a maximum, then decreases)     What are the units of ?      At which values of does appear to be positive? Explain how you can tell from the graph. What does this mean practically for the company?      At which values of does appear to be negative? Explain how you can tell from the graph. What does this mean practically?      Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is at that point?       The following table shows the concentration of a certain drug in a patient's bloodstream as a function of time . Here is measured in hours and is measured in milligrams per liter.  (Insert table)     Estimate and explain its meaning in context, including correct units.      At what time do you expect to be zero? What is the real-world significance of this time?       "
 },
 {
-  "id": "sec-approximating-the-circle-2",
+  "id": "sec-sensitivity-2",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-2",
+  "url": "sec-sensitivity.html#sec-sensitivity-2",
   "type": "Objectives",
   "number": "1.1",
   "title": "",
-  "body": "   Approximate the length or area of a curved shape using polygons or wedges.    Improve that approximation by refining the decomposition into smaller pieces.    Visualize a curved shape as being composed of infinitely many infinitesimal pieces.    "
+  "body": "   Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.    "
 },
 {
-  "id": "sec-approximating-the-circle-24",
+  "id": "subsec-sensitivity-on-an-interval-3",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-24",
+  "url": "sec-sensitivity.html#subsec-sensitivity-on-an-interval-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "infinitesimal "
+  "body": "function independent variable dependent variable "
 },
 {
-  "id": "sec-approximating-the-circle-25-1",
+  "id": "subsec-sensitivity-on-an-interval-6",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-25-1",
-  "type": "Exercise",
-  "number": "1.1.1",
+  "url": "sec-sensitivity.html#subsec-sensitivity-on-an-interval-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
   "title": "",
-  "body": "  In this exercise, we will approximate the circumference of a unit circle by inscribing polygons with an increasing number of sides. This method is due to Liu Hui, a Chinese mathematician who lived in the third century AD. It doesn't require any trigonometry just the Pythagorean theorem and some algebra.   In China, the Pythagorean theorem is often called the Gougu theorem , after the two legs of a right triangle, which are called gou and gu .      Start with a regular hexagon inscribed in a circle of radius . What is the perimeter of this hexagon?                 Remember that a regular hexagon has six equal sides and six equal angles. If you split it into six triangles as shown, what kind of triangle do you get?      Suppose we bisect each of the six arcs of the circle to get a regular -sided polygon (a dodecagon) inscribed in the circle, as shown below.              Let's zoom in on the topmost arc of the circle.            O    A    B    C   clear-background=\"yes\"\/>    Find the lengths of segments , , , , and . Then find the perimeter of the dodecagon.      Continue this process of bisecting arcs to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?  (Hint: You probably won't be able to actually draw these polygons. Instead, use the lengths from each step to find the lengths needed for the next step.)     -sided polygon: perimeter    -sided polygon: perimeter    -sided polygon: perimeter   These perimeters are getting closer and closer to the circumference of the circle, which is .      You should have found that the perimeters of the inscribed polygons are approaching the number . Since the circle has a radius of , this suggests that the circumference of a circle is equal to for any radius   For historical reasons, the more commonly studied ratio is that of the circumference to the diameter , which is half of this number, commonly known as . Show that this leads to the area formula for a circle: .      Will the perimeters of the inscribed polygons ever equal the circumference of the circle? Why or why not?    "
+  "body": "sensitivity "
 },
 {
-  "id": "sec-approximating-the-circle-25-2",
+  "id": "subsec-sensitivity-on-an-interval-7",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-25-2",
-  "type": "Exercise",
-  "number": "1.1.2",
-  "title": "",
-  "body": "  We can also approximate the circumference of a unit circle by circumscribing polygons with an increasing number of sides. These sides are tangent to the circle, meaning they barely touch the circle at a single point. Notice that each tangent line makes a right angle with the radius of the circle where it touches.     Start by circumscribing a regular hexagon around a circle of radius . What is the perimeter of this hexagon?                      Suppose we bisect each of the six arcs of the circle and construct a tangent line to the circle at each of these points, giving a regular dodecagon circumscribed around the circle, as shown below.                      Let's zoom in again on the topmost arc.                  O=(0,0)  A=(cos(pi\/3),sin(pi\/3))  C=(0,1)  D=2\/sqrt(3)*(cos(pi\/3),sin(pi\/3))  E=2*sqrt(2-sqrt(3))*(cos(5*pi\/12),sin(5*pi\/12))   O    A    C    D    E   clear-background=\"yes\"\/> clear-background=\"yes\"\/>     Find the lengths of segments and . Then find the perimeter of the circumscribed dodecagon.    Triangle is similar to triangle .      Continue this process of bisecting arcs and constructing tangent lines to get a regular -sided polygon, then a regular -sided polygon, and finally a -sided polygon. What do you notice about the perimeters of these polygons?      How does this method of approximating the circumference compare to the method of inscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?    "
+  "url": "sec-sensitivity.html#subsec-sensitivity-on-an-interval-7",
+  "type": "Definition",
+  "number": "1",
+  "title": "Sensitivity on an interval.",
+  "body": " Sensitivity on an interval   If , then the sensitivity of on the interval is defined as . That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as the sensitivity of to changes in .   We will also use the notation .   "
 },
 {
-  "id": "sec-approximating-the-circle-25-3",
+  "id": "subsec-sensitivity-at-a-point-4",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-25-3",
-  "type": "Exercise",
-  "number": "1.1.3",
+  "url": "sec-sensitivity.html#subsec-sensitivity-at-a-point-4",
+  "type": "Activity",
+  "number": "1",
   "title": "",
-  "body": "  Repeat the above exercises, but this time start with an inscribed square and a circumscribed square instead of a hexagon. How do the results compare to the previous exercises?   "
+  "body": "  Estimate the sensitivity of the stopping distance using the following values of (comparing with a speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph    "
 },
 {
-  "id": "sec-approximating-the-circle-25-4",
+  "id": "subsec-sensitivity-at-a-point-8",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-25-4",
-  "type": "Exercise",
-  "number": "1.1.4",
+  "url": "sec-sensitivity.html#subsec-sensitivity-at-a-point-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
   "title": "",
-  "body": "  Remember that the equation of a circle of radius in the plane is given by , so the upper semicircle has equation .     Fill in the following table of values for points along the upper semicircle.                              Then use the distances between the points in the table to estimate the circumference of the circle.      Refine your estimate by breaking subdividing the interval into eight equal-width segments, then sixteen.      How does this method compare to the method of inscribed or circumscribed polygons? Do you think they're guaranteed to give the same result? Why or why not?    "
+  "body": "differentials sensitivity "
 },
 {
-  "id": "sec-approximating-the-circle-25-5",
+  "id": "def-sensitivity-at-a-point",
   "level": "2",
-  "url": "sec-approximating-the-circle.html#sec-approximating-the-circle-25-5",
-  "type": "Exercise",
-  "number": "1.1.5",
+  "url": "sec-sensitivity.html#def-sensitivity-at-a-point",
+  "type": "Definition",
+  "number": "2",
+  "title": "Sensitivity at a point.",
+  "body": " Sensitivity at a point   If , the sensitivity of at the point is (for the time being) defined as where is infinitely close to . This definition is currently somewhat vague, as we have not defined what it means to be infinitely close. We'll make this definition more precise later.  We will also use the notation for this sensitivity.  When we want to emphasize that the sensitivity is being evaluated at a particular point , we will write or .   "
+},
+{
+  "id": "subsec-sensitivity-at-a-point-12",
+  "level": "2",
+  "url": "sec-sensitivity.html#subsec-sensitivity-at-a-point-12",
+  "type": "Activity",
+  "number": "2",
   "title": "",
-  "body": "  The process in the first exercise can be expressed using a recurrence relation as follows: If the perimeter of the inscribed polygon with sides is , then the perimeter of the inscribed polygon with sides is given by .     Use this recurrence relation to verify the results of Exercise 1.      Develop a similar recurrence relation for the perimeters of the circumscribed polygons and use it to verify the results of Exercise 2.      Write a computer program to implement these recurrence relations and use it to compute perimeters of inscribed and circumscribed polygons with more and more sides. How do these values compare to as you increase the number of sides?    "
+  "body": "  Use this same process to estimate and . How does the sensitivity of stopping distance to changes in speed compare at these different speeds?   "
+},
+{
+  "id": "subsec-the-sign-of-the-sensitivity-3-1-1",
+  "level": "2",
+  "url": "sec-sensitivity.html#subsec-the-sign-of-the-sensitivity-3-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "increasing "
+},
+{
+  "id": "subsec-the-sign-of-the-sensitivity-3-2-1",
+  "level": "2",
+  "url": "sec-sensitivity.html#subsec-the-sign-of-the-sensitivity-3-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "decreasing "
+},
+{
+  "id": "subsec-the-sign-of-the-sensitivity-8",
+  "level": "2",
+  "url": "sec-sensitivity.html#subsec-the-sign-of-the-sensitivity-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rate of change "
+},
+{
+  "id": "sec-sensitivity-7-1",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-7-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?      , at and        , at and        , at and        , at and        , at and        , at and        at and     "
+},
+{
+  "id": "sec-sensitivity-7-2",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-7-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the number of packages of gourmet coffee beans that are ordered by consumers and the price (in dollars per package) of the coffee beans       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes elapsed since the potato was placed in the oven       , where the number of minutes it takes to bake a potato and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level    "
+},
+{
+  "id": "sec-sensitivity-7-3",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-7-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "   Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that . Explain what this means in context, including correct units.    "
+},
+{
+  "id": "sec-sensitivity-7-4",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-7-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  The graph below shows , the profit (in thousands of dollars) earned by a company as a function of , the number of units produced (in hundreds of units).  (Insert graph: a curve that rises, flattens at a maximum, then decreases)     What are the units of ?      At which values of does appear to be positive? Explain how you can tell from the graph. What does this mean practically for the company?      At which values of does appear to be negative? Explain how you can tell from the graph. What does this mean practically?      Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is at that point?    "
+},
+{
+  "id": "sec-sensitivity-7-5",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-7-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  The following table shows the concentration of a certain drug in a patient's bloodstream as a function of time . Here is measured in hours and is measured in milligrams per liter.  (Insert table)     Estimate and explain its meaning in context, including correct units.      At what time do you expect to be zero? What is the real-world significance of this time?    "
 },
 {
   "id": "sec-the-derivative",
@@ -96,8 +177,8 @@ var ptx_lunr_docs = [
   "url": "sec-the-derivative.html",
   "type": "Section",
   "number": "1.2",
-  "title": "The derivative: sensitivity to change",
-  "body": " The derivative: sensitivity to change     Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The daily calories needed by an organism depends on its mass.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Estimating sensitivity   Based on data from The Physics Behind Stopping a Car by P. Lutus.   When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance (measured in car lengths, assuming an average car length of feet) to the speed (measured in miles per hour) by the formula . To make it explicit that depends on (that is, is a function of ), we can also write . For example, if a car is traveling at miles per hour, we have , so the model predicts a stopping distance of car lengths (or approximately feet).  Now, how sensitive is the stopping distance to changes in speed? We can answer this by looking at the effect of such a change and computing the ratio of the change in stopping distance to the change in speed.  For example, suppose the speed increases by five miles per hour, that is, . Then the change in stopping distance would be . Hence the sensitivity of stopping distance to changes in speed over this interval is . That is, each extra mile per hour of speed means it takes another half of a car length to stop.  We can visualize this computation by plotting the stopping distance function :   Will figure out how to make this graph better.      f(x)=0.0034*x^2+0.15*x  a = 50  b = 55             Notice that the sensitivity we've calculated is the slope of the line connecting the points and .    Differentials and derivatives  Our calculation of the sensitivity above was somewhat coarse, since over an increase of five miles per hour, the graph gets gradually steeper as we go. What we'd really like is a more precise measure of sensitivity at a particular speed the slope of the graph at the point . We can visualize this slope as the slope of the tangent line to the graph at that point, since at that point, as we zoom in closer and closer, the tangent line becomes more and more indistinguishable from the graph itself.     f(x)=0.0034*x^2+0.15*x  a = 50           Since slope requires two points, we can't just use the slope formula. However, we can get a good approximation by simply looking at a small change in speed, such as mph: .    Estimate the sensitivity of the stopping distance using the following values of (comparing with a speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph     You should have noticed in the previous activity that as the change in speed gets smaller, the sensitivity approaches a particular value, which seems to be around car lengths per mph. This is similar to what you saw in the previous section, when the circumference of the circle approached more and more closely as we made better and better approximations.  Unfortunately, these are still approximations of the sensitivity. However, if we imagine zooming in infinitely close to the point , we could imagine that the graph of would perfectly match the tangent line at that point. So we might imagine that if we choose two points that are infinitely close to each other, then the slope of the line between these two points would be the same as the slope of the tangent line.  (Insert figure)  We call these infinitely small changes differentials , and we represent them with a lowercase : in this case, we would write to denote an infinitesimal change in speed, and to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written . This ratio is called the derivative of with respect to , and it gives us a precise measure of the sensitivity of stopping distance to changes in speed at any particular point. We'll soon show that this derivative is indeed exactly car lengths per mph at mph. Another way to write this is ; that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is times as large.  Over the next couple of sections, we'll be developing a number of techniques to compute differentials and derivatives exactly without having to rely on approximations. We'll also see how these concepts can be used to solve a number of real-world problems.    Notation for derivatives  Since is a function of , we can also write the derivative as , read out loud as prime of . This notation emphasizes that the derivative is itself a function of , since the sensitivity of stopping distance to changes in speed will be different at different speeds.  In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in depending on and writing , or we can give the function a separate name and write .  Because these describe the same situation, the derivative can be written in several equivalent ways: Each version highlights a slightly different perspective: and emphasize the ratio between small changes, while emphasizes that the derivative is itself a new function.  We can also do some algebra and express this relationship using differentials: . This shows how a small change in the output is tied to a small change in the input, with acting as a scale factor between them.    The sign of the derivative  We can gain important information by looking at the sign of the derivative. Suppose throughout that is a function of .    If throughout some interval , then if we increase the value of , the value of will also increase. (Likewise, if we decrease the value of , the value of will also decrease.) Thus we say that is an increasing function of on that interval.    If throughout some interval , then if we increase the value of , the value of will decrease, and vice versa. Thus we say that is a decreasing function of on that interval.    This interpretation is especially useful when the independent variable is time, since it allows us to determine whether a particular quantity is increasing or decreasing as time passes. For example, suppose the following graph shows , the height (in feet) of a ball thrown into the air, as a function of , the time elapsed in seconds:  (Insert figure showing a quadratic position function)  As we move from left to right on the graph, the slope of the tangent line changes:    At the beginning, the slope is positive, which means the ball is rising.    At the top of the curve, the slope is zero, which means the ball is momentarily stationary at the highest point of its arc.    After that, the slope is negative, which means the ball is falling.    Thus, when the independent variable is time, we can interpret the derivative as a rate of change ; in this case, tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.  Notice that the terms increasing and decreasing describe a relationship between two variables. They do not mean that the output (the dependent variable) is literally going up or going down on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases in response to a change in the input. You'll often hear the phrase is increasing , but it would be more careful to say is an increasing function of , since the increase in is tied to an increase in .      Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. What do you notice about your estimates as you make smaller and smaller changes?      at        at        at        at        In this exercise, you'll interpret the sign of the derivative for various real-world contexts. For each one, determine whether the derivative should be positive, negative, or zero, and explain your answer. Also give the units for the derivative.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the number of packages of gourmet coffee beans demanded by consumers and the price (in dollars per package) of the coffee beans       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes elapsed since the potato was placed in the oven       , where the number of minutes it takes to bake a potato and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level        Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that . Explain what this means in context, including correct units.      Use the information above to estimate and . Explain your reasoning.       The following table shows the concentration of a certain drug in a patient's bloodstream as a function of time . Here is measured in hours and is measured in milligrams per liter.  (Insert table)     Estimate and explain its meaning in context, including correct units.      At what time do you expect to be zero? What is the real-world significance of this time?       The figure below shows the graphs of both a function and its derivative . Which curve is which? Explain how you can tell.  (Insert figure)      Let be a function whose derivative is given by the graph below.  (Insert figure)     Where is an increasing function of ? Explain.      Where is a decreasing function of ? Explain.      Suppose we know that . What can you say about the value of ? What about the value of ? Explain your reasoning.      "
+  "title": "The derivative",
+  "body": " The derivative     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     Given a function , we now know how to find its sensitivity at any point. We can use this to derive a new function such that gives the sensitivity of at any point . This new function is called the derivative of .    In differential form:     We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
 },
 {
   "id": "sec-the-derivative-2",
@@ -106,142 +187,34 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "1.2",
   "title": "",
-  "body": "   Measure a function's responsiveness to small changes using differentials.    Interpret the derivative as a ratio of differentials to analyze behavior.    Use the sign of a derivative to identify increasing and decreasing intervals.    "
+  "body": "   Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.    "
 },
 {
-  "id": "subsec-estimating-sensitivity-3",
+  "id": "sec-the-derivative-4-1-1",
   "level": "2",
-  "url": "sec-the-derivative.html#subsec-estimating-sensitivity-3",
+  "url": "sec-the-derivative.html#sec-the-derivative-4-1-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "function "
+  "body": "derivative "
 },
 {
-  "id": "subsec-differentials-and-derivatives-2",
-  "level": "2",
-  "url": "sec-the-derivative.html#subsec-differentials-and-derivatives-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "tangent "
-},
-{
-  "id": "subsec-differentials-and-derivatives-5",
-  "level": "2",
-  "url": "sec-the-derivative.html#subsec-differentials-and-derivatives-5",
-  "type": "Activity",
-  "number": "1",
-  "title": "",
-  "body": "  Estimate the sensitivity of the stopping distance using the following values of (comparing with a speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph    "
-},
-{
-  "id": "subsec-differentials-and-derivatives-9",
-  "level": "2",
-  "url": "sec-the-derivative.html#subsec-differentials-and-derivatives-9",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "differentials derivative "
-},
-{
-  "id": "subsec-the-sign-of-the-derivative-3-1-1",
-  "level": "2",
-  "url": "sec-the-derivative.html#subsec-the-sign-of-the-derivative-3-1-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "increasing "
-},
-{
-  "id": "subsec-the-sign-of-the-derivative-3-2-1",
-  "level": "2",
-  "url": "sec-the-derivative.html#subsec-the-sign-of-the-derivative-3-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "decreasing "
-},
-{
-  "id": "subsec-the-sign-of-the-derivative-8",
-  "level": "2",
-  "url": "sec-the-derivative.html#subsec-the-sign-of-the-derivative-8",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "rate of change "
-},
-{
-  "id": "sec-the-derivative-8-1",
-  "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-8-1",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. What do you notice about your estimates as you make smaller and smaller changes?      at        at        at        at     "
-},
-{
-  "id": "sec-the-derivative-8-2",
-  "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-8-2",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  In this exercise, you'll interpret the sign of the derivative for various real-world contexts. For each one, determine whether the derivative should be positive, negative, or zero, and explain your answer. Also give the units for the derivative.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the number of packages of gourmet coffee beans demanded by consumers and the price (in dollars per package) of the coffee beans       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes elapsed since the potato was placed in the oven       , where the number of minutes it takes to bake a potato and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level    "
-},
-{
-  "id": "sec-the-derivative-8-3",
-  "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-8-3",
-  "type": "Exercise",
-  "number": "3",
-  "title": "",
-  "body": "   Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that . Explain what this means in context, including correct units.      Use the information above to estimate and . Explain your reasoning.    "
-},
-{
-  "id": "sec-the-derivative-8-4",
-  "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-8-4",
-  "type": "Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  The following table shows the concentration of a certain drug in a patient's bloodstream as a function of time . Here is measured in hours and is measured in milligrams per liter.  (Insert table)     Estimate and explain its meaning in context, including correct units.      At what time do you expect to be zero? What is the real-world significance of this time?    "
-},
-{
-  "id": "sec-the-derivative-8-5",
-  "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-8-5",
-  "type": "Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  The figure below shows the graphs of both a function and its derivative . Which curve is which? Explain how you can tell.  (Insert figure)   "
-},
-{
-  "id": "sec-the-derivative-8-6",
-  "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-8-6",
-  "type": "Exercise",
-  "number": "6",
-  "title": "",
-  "body": "  Let be a function whose derivative is given by the graph below.  (Insert figure)     Where is an increasing function of ? Explain.      Where is a decreasing function of ? Explain.      Suppose we know that . What can you say about the value of ? What about the value of ? Explain your reasoning.    "
-},
-{
-  "id": "sec-basic-differentiation-techniques",
+  "id": "sec-linear-approximation",
   "level": "1",
-  "url": "sec-basic-differentiation-techniques.html",
+  "url": "sec-linear-approximation.html",
   "type": "Section",
   "number": "1.3",
-  "title": "Basic differentiation techniques",
-  "body": " Basic differentiation techniques     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
+  "title": "Linear approximation",
+  "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Thinking of the derivative as the best linear approximation to a function at a point    Introduce the tangent line    Approximation using differentials    Linearization of a function at :     Using this idea when you only have data rather than a symbolic formula for the function    "
 },
 {
-  "id": "sec-basic-differentiation-techniques-2",
+  "id": "sec-linear-approximation-2",
   "level": "2",
-  "url": "sec-basic-differentiation-techniques.html#sec-basic-differentiation-techniques-2",
+  "url": "sec-linear-approximation.html#sec-linear-approximation-2",
   "type": "Objectives",
   "number": "1.3",
   "title": "",
-  "body": "   Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.    "
+  "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
 },
 {
   "id": "sec-product-and-chain-rule",
@@ -286,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Related rates",
-  "body": " Related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems    "
+  "body": " Related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems... perhaps make modeling the focus of this section?    "
 },
 {
   "id": "sec-related-rates-2",
@@ -298,54 +271,54 @@ var ptx_lunr_docs = [
   "body": "   Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.    "
 },
 {
-  "id": "sec-optimization",
-  "level": "1",
-  "url": "sec-optimization.html",
-  "type": "Section",
-  "number": "2.2",
-  "title": "Optimization",
-  "body": " Optimization     Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.      Introduction goes here.     Soda can example    Same modeling steps as in related rates    Don’t necessarily need to eliminate variables — using differentials also works!    Focus on absolute maxima and minima and candidates using Fermat's theorem: if has a local maximum at , then     Put First Derivative Test here?    "
-},
-{
-  "id": "sec-optimization-2",
-  "level": "2",
-  "url": "sec-optimization.html#sec-optimization-2",
-  "type": "Objectives",
-  "number": "2.2",
-  "title": "",
-  "body": "   Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.    "
-},
-{
   "id": "sec-higher-order-derivatives",
   "level": "1",
   "url": "sec-higher-order-derivatives.html",
   "type": "Section",
-  "number": "2.3",
+  "number": "2.2",
   "title": "Higher order derivatives",
-  "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Second Derivative Test for optimization    Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
+  "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
 },
 {
   "id": "sec-higher-order-derivatives-2",
   "level": "2",
   "url": "sec-higher-order-derivatives.html#sec-higher-order-derivatives-2",
   "type": "Objectives",
-  "number": "2.3",
+  "number": "2.2",
   "title": "",
   "body": "   Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.    "
 },
 {
-  "id": "sec-linear-approximation",
+  "id": "sec-optimization",
   "level": "1",
-  "url": "sec-linear-approximation.html",
+  "url": "sec-optimization.html",
   "type": "Section",
-  "number": "2.4",
-  "title": "Linear approximation",
-  "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Approximation using differentials    Linearization of a function at :     Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Absolute error:     Relative error:     These can eventually get tied in with limits in Chapter 5.    "
+  "number": "2.3",
+  "title": "Optimization",
+  "body": " Optimization     Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.      Introduction goes here.     Soda can example    Same modeling steps as in related rates    Don’t necessarily need to eliminate variables — using differentials also works!    Focus on absolute maxima and minima and candidates using Fermat's theorem: if has a local maximum at , then     First and second derivative tests for optimization    "
 },
 {
-  "id": "sec-linear-approximation-2",
+  "id": "sec-optimization-2",
   "level": "2",
-  "url": "sec-linear-approximation.html#sec-linear-approximation-2",
+  "url": "sec-optimization.html#sec-optimization-2",
+  "type": "Objectives",
+  "number": "2.3",
+  "title": "",
+  "body": "   Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.    "
+},
+{
+  "id": "sec-relative-change-and-elasticity",
+  "level": "1",
+  "url": "sec-relative-change-and-elasticity.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Relative change and elasticity",
+  "body": " Relative change and elasticity     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Absolute error:     Relative error:     Percent error:     Relative derivative:     Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is a relative rate of change, which is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application?    "
+},
+{
+  "id": "sec-relative-change-and-elasticity-2",
+  "level": "2",
+  "url": "sec-relative-change-and-elasticity.html#sec-relative-change-and-elasticity-2",
   "type": "Objectives",
   "number": "2.4",
   "title": "",
@@ -493,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Logarithmic functions",
-  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Differentiating , the inverse of the exponential function:     In general, derivatives of inverse functions:     Logarithmic differentiation: Good for complicated derivatives or derivatives involving exponents.    Reminder of logarithm rules as opposites of exponent rules:     Differentiating for any real exponent :     Differentiating for any base :     Differentiating for any base :     Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is a relative rate of change, which is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application?    "
+  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Differentiating , the inverse of the exponential function:     In general, derivatives of inverse functions:     Logarithmic differentiation: Good for complicated derivatives or derivatives involving exponents.    Reminder of logarithm rules as opposites of exponent rules:     Differentiating for any real exponent :     Differentiating for any base :     Differentiating for any base :     "
 },
 {
   "id": "sec-logarithmic-functions-2",
@@ -635,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-2-1",
   "type": "Theorem",
-  "number": "2",
+  "number": "3",
   "title": "Squeeze Theorem.",
   "body": " Squeeze Theorem   If for all sufficiently close to , and , then .   "
 },
@@ -644,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-3-1",
   "type": "Theorem",
-  "number": "3",
+  "number": "4",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .   "
 },
@@ -653,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-4-1",
   "type": "Theorem",
-  "number": "4",
+  "number": "5",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem   If is continuous on , then there exist such that for all .   "
 },
@@ -662,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-5-1",
   "type": "Theorem",
-  "number": "5",
+  "number": "6",
   "title": "Mean Value Theorem.",
   "body": " Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .   "
 },
@@ -1130,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fourier-series.html#sec-fourier-series-4-4-1-1",
   "type": "Theorem",
-  "number": "6",
+  "number": "7",
   "title": "Fourier Convergence Theorem.",
   "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
 },
@@ -1265,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-4-2-1-1",
   "type": "Theorem",
-  "number": "7",
+  "number": "8",
   "title": "Clairaut’s Theorem.",
   "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
 },
@@ -1922,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-contour-integrals.html#sec-contour-integrals-4-3-1-1",
   "type": "Theorem",
-  "number": "8",
+  "number": "9",
   "title": "ML Inequality.",
   "body": " ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .   "
 },
@@ -1985,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-4-2-1-1",
   "type": "Theorem",
-  "number": "9",
+  "number": "10",
   "title": "Gradient thoerem.",
   "body": " Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then    "
 },
@@ -2012,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-greens-theorem.html#sec-greens-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "10",
+  "number": "11",
   "title": "Green’s theorems.",
   "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:       "
 },
@@ -2039,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-2-1",
   "type": "Theorem",
-  "number": "11",
+  "number": "12",
   "title": "Gauss’s divergence theorem.",
   "body": " Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -2048,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-3-1",
   "type": "Theorem",
-  "number": "12",
+  "number": "13",
   "title": "Stokes’s curl theorem.",
   "body": " Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -2059,7 +2032,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20.4",
   "title": "Integrals of holomorphic functions",
-  "body": " Integrals of holomorphic functions     Explain why contour integrals of holomorphic functions vanish on closed curves.    Use Cauchy's integral formulas to evaluate values and derivatives of holomorphic functions.    Recognize when antiderivatives exist and apply path independence.      Introduction goes here.     LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier. The proofs essentially boil down to using the things we already used in the other sections, e.g. path independence if and only if closed paths give zero integral .     Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .        Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  Much harder to prove! Does it based on triangular contours, then polygonal, then any.    Multiply connected domains lead to deformation of contours!       Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then        Can also be shown to work for non-simply-connected contours.    Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts. If is an antiderivative of a continuous function , then Furthermore path independence of continuous implies the existence of an antiderivative.    If is holomorphic in a simply connected domain , then it has an antiderivative.      Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,          Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,        These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.    "
+  "body": " Integrals of holomorphic functions     Explain why contour integrals of holomorphic functions vanish on closed curves.    Use Cauchy's integral formulas to evaluate values and derivatives of holomorphic functions.    Recognize when antiderivatives exist and apply path independence.      Introduction goes here.     LOTS of results in this chapter, but a lot of them could be proved as exercises, and the focus could be on how they make computations easier. The proofs essentially boil down to using the things we already used in the other sections, e.g. path independence if and only if closed paths give zero integral .     Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .        Cauchy-Goursat theorem   Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .   Much harder to prove! Does it based on triangular contours, then polygonal, then any.    Multiply connected domains lead to deformation of contours!       Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then        Can also be shown to work for non-simply-connected contours.    Cauchy-Goursat implies that holomorphic functions also have path independence, and we can use antiderivatives!All the usual rules work too, like integration by parts. If is an antiderivative of a continuous function , then Furthermore path independence of continuous implies the existence of an antiderivative.    If is holomorphic in a simply connected domain , then it has an antiderivative.      Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,          Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,        These formulas imply that the derivative of a holomorphic function is holomorphic, that is, all holomorphic functions are infinitely differentiable.    "
 },
 {
   "id": "sec-integrals-of-holomorphic-functions-2",
@@ -2075,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-2-1",
   "type": "Theorem",
-  "number": "13",
+  "number": "14",
   "title": "Cauchy’s integral theorem.",
   "body": " Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .   "
 },
@@ -2084,16 +2057,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-3-1-1",
   "type": "Theorem",
-  "number": "14",
+  "number": "15",
   "title": "Cauchy-Goursat theorem.",
-  "body": " Cauchy-Goursat theorem  Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .  "
+  "body": " Cauchy-Goursat theorem   Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .   "
 },
 {
   "id": "sec-integrals-of-holomorphic-functions-4-5-1-1",
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-5-1-1",
   "type": "Theorem",
-  "number": "15",
+  "number": "16",
   "title": "Cauchy-Goursat for simply connected domains.",
   "body": " Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then    "
 },
@@ -2102,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-9-1-1",
   "type": "Theorem",
-  "number": "16",
+  "number": "17",
   "title": "Cauchy’s integral formula.",
   "body": " Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -2111,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-10-1-1",
   "type": "Theorem",
-  "number": "17",
+  "number": "18",
   "title": "Cauchy’s integral formula for derivatives.",
   "body": " Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -2156,7 +2129,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-5-1",
   "type": "Theorem",
-  "number": "18",
+  "number": "19",
   "title": "Cauchy’s residue theorem.",
   "body": " Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then    "
 },
@@ -2165,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-7-1",
   "type": "Theorem",
-  "number": "19",
+  "number": "20",
   "title": "Argument principle.",
   "body": " Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .   "
 },
@@ -2174,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-8-1-1",
   "type": "Theorem",
-  "number": "20",
+  "number": "21",
   "title": "Rouché’s theorem.",
   "body": " Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   "
 },
@@ -2624,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-picards-theorem.html#sec-picards-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "21",
+  "number": "22",
   "title": "Picard-Lindelöf theorem.",
   "body": " Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    "
 },
