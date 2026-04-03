@@ -121,22 +121,6 @@
       </p>
     </li>
 
-    <li>
-      <p>
-        Elasticity of a function:
-        <aside>
-          <p>
-            The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree.
-            This can in some sense be used to define the degree of non-power functions.
-          </p>
-        </aside>
-        <me>
-          E=\dv{(\ln y)}{(\ln x)}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
-        </me>
-        This is a relative rate of change, which is useful in economics (e.g.
-        price elasticity of demand).
-        Maybe use this as the guiding application?
-      </p>
-    </li>
+    
   </ul>
 </section>

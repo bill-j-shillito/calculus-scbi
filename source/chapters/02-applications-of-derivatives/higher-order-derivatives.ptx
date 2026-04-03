@@ -51,9 +51,24 @@
 
     <li>
       <p>
-        Second Derivative Test for optimization
+        Use second derivative for over/underestimate analysis
+        <ul>
+          <li>
+            <p>
+              If <m>f''(a)>0</m>, then <m>f</m> is concave up around <m>a</m>, so <m>L(x)\lt L(a)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>f''(a)\lt 0</m>, then <m>f</m> is concave down around <m>a</m>, so <m>L(x)>L(a)</m>.
+            </p>
+          </li>
+        </ul>
       </p>
     </li>
+
+    
 
     <li>
       <p>

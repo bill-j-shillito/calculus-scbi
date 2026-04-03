@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-relative-change-and-elasticity">
+  <title>Relative change and elasticity</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Use differentials to construct linear approximations near a point.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret a function's linearization as its best local straight-line model.
+        </p>
+      </li>
+      <li>
+        <p>
+          Evaluate accuracy using concavity and basic error estimates.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Absolute error: <m>\eps=|y-y\tsub{approx}|</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Relative error: <m>\eta=\dfrac{\eps}{|y|}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Percent error: <m>\eta\tsub{percent}=\eta\times 100\%</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Relative derivative: <m>\dfrac{\dd{y}/\dd{x}}{y}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Elasticity of a function:
+        <aside>
+          <p>
+            The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree.
+            This can in some sense be used to define the degree of non-power functions.
+          </p>
+        </aside>
+        <me>
+          E=\dv{(\ln y)}{(\ln x)}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
+        </me>
+        This is a relative rate of change, which is useful in economics (e.g.
+        price elasticity of demand).
+        Maybe use this as the guiding application?
+      </p>
+    </li>
+  </ul>
+</section>

@@ -1,497 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <section xml:id="sec-the-derivative">
-	<title>The derivative: sensitivity to change</title>
+  <title>The derivative</title>
 
-	<objectives>
-		<ol>
-			<li>
-				<p>
-					Measure a function's responsiveness to small changes using differentials.
-				</p>
-			</li>
-			<li>
-				<p>
-					Interpret the derivative as a ratio of differentials to analyze behavior.
-				</p>
-			</li>
-			<li>
-				<p>
-					Use the sign of a derivative to identify increasing and decreasing intervals.
-				</p>
-			</li>
-		</ol>
-	</objectives>
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Understand and apply linearity properties of the derivative.
+        </p>
+      </li>
+      <li>
+        <p>
+          Differentiate constant, linear, and power functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          Combine linearity with product rules to differentiate polynomials.
+        </p>
+      </li>
+    </ol>
+  </objectives>
 
-	<introduction>
-		<p>
-			Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:
-		</p>
-		<ul>
-			<li>
-				<p>
-					The pressure of a gas depends on its temperature and volume.
-				</p>
-			</li>
-			<li>
-				<p>
-					The demand for a product depends on its price.
-				</p>
-			</li>
-			<li>
-				<p>
-					The daily calories needed by an organism depends on its mass.
-				</p>
-			</li>
-			<li>
-				<p>
-					The speed of a car depends on the pressure applied to the gas pedal.
-				</p>
-			</li>
-			<li>
-				<p>
-					The growth of a bacterial population depends on the amount of nutrients available.
-				</p>
-			</li>
-			<li>
-				<p>
-					The amount of traffic congestion depends on the number of cars on the road.
-				</p>
-			</li>
-			<li>
-				<p>
-					The brightness of a lamp depends on the electrical power supplied to it.
-				</p>
-			</li>
-			<li>
-				<p>
-					The time for a computer to sort a list depends on the number of items in the list.
-				</p>
-			</li>
-		</ul>
-		<p>
-			To understand these relationships, we need a way to quantify how <em>sensitive</em> one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?
-		</p>
-	</introduction>
-	
-	<subsection xml:id="subsec-estimating-sensitivity">
-		<title>Estimating sensitivity</title>
-		<aside>
-			<p>
-				Based on data from <url href="https://arachnoid.com/braking_physics/index.html">The Physics Behind Stopping a Car</url> by P. Lutus.
-			</p>
-		</aside>
-		<p>
-			When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance <m>L</m> (measured in car lengths, assuming an average car length of <m>14.7</m> feet) to the speed <m>v</m> (measured in miles per hour) by the formula
-			<me>
-				L = 0.0034v^2 + 0.15v
-			</me>.
-			To make it explicit that <m>L</m> depends on <m>v</m> (that is, <m>L</m> is a <term>function</term> of <m>v</m>), we can also write
-			<me>
-				L(v) = 0.0034v^2 + 0.15v
-			</me>.
-			For example, if a car is traveling at <m>50</m> miles per hour, we have
-			<md>
-				<mrow>L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50</mrow>
-				<mrow> \amp = 16 \text{ car lengths}</mrow>
-			</md>,
-			so the model predicts a stopping distance of <m>16</m> car lengths (or approximately <m>235.2</m> feet).
-		</p>
-		<p>
-			Now, how <em>sensitive</em> is the stopping distance to changes in speed? We can answer this by looking at the effect of such a change and computing the <em>ratio</em> of the change in stopping distance to the change in speed.
-		</p>
-		<p>
-			For example, suppose the speed increases by five miles per hour, that is,
-			<md>
-				<mrow>\Delta v \amp = v\tsub{final} - v\tsub{init}</mrow>
-				<mrow>\amp = 55 - 50</mrow>
-				<mrow>\amp = 5</mrow>
-			</md>.
-			
-			Then the change in stopping distance would be
-			<md>
-				<mrow>\Delta L \amp = L\tsub{final} - L\tsub{init}</mrow>
-				<mrow>\amp = L(55) - L(50)</mrow>
-				<mrow>\amp = (0.0034\cdot 55^2 + 0.15\cdot 55) - (0.0034\cdot 50^2 + 0.15\cdot 50)</mrow>
-				<mrow>\amp = 2.535\text{ car lengths}</mrow>
-			</md>.
-			Hence the sensitivity of stopping distance to changes in speed over this interval is
-			<md>
-				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(55) - L(50)}{55-50}</mrow>
-				<mrow>\amp = \frac{2.535\text{ car lengths}}{5\text{ mph}}</mrow>
-				<mrow>\amp = 0.507\text{ car lengths per mph}</mrow>
-			</md>.
-			That is, each extra mile per hour of speed means it takes another half of a car length to stop.
-		</p>
-		<p>
-			We can visualize this computation by plotting the stopping distance function <m>L(v)</m>:
-		</p>
-		<aside>
-			<p>
-				Will figure out how to make this graph better.
-			</p>
-		</aside>
-		<image width="75%">
-			<prefigure label="stopping-distance" xmlns="https://prefigure.org">
-				<diagram dimensions="(300,300)" margins="5">
-				<definition>f(x)=0.0034*x^2+0.15*x</definition>
-				<definition>a = 50</definition>
-				<definition>b = 55</definition>
-				<coordinates bbox="(-10,-10,70,70)">
-					<grid-axes xlabel="v" ylabel="L(v)"/>
-					<graph at="graph" function="f" domain="(0,75)"/>
-					<line p1="(a,f(a))" p2="(b,f(a))"/>
-					<line p1="(b,f(a))" p2="(b,f(b))"/>
-					<point p="(a,f(a))" alignment="ne"/>
-					<point p="(b,f(b))" alignment="ne"/>
-				</coordinates>
-				</diagram>
-			</prefigure>
-		</image>
-		<p>
-			Notice that the sensitivity we've calculated is the <em>slope</em> of the line connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
-		</p>
-	</subsection>
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+  
 
-	<subsection xml:id="subsec-differentials-and-derivatives">
-		<title>Differentials and derivatives</title>
-		<p>
-			Our calculation of the sensitivity above was somewhat coarse. Over an increase of five miles per hour, the graph is not perfectly straight but gets gradually steeper as we go, so the sensitivity was gradually changing. In other words, our calculation mixes together several sensitivities rather than capturing the sensitivity <em>at</em> <m>50</m> miles per hour.
-		</p>
-		<p>
-			If we want a more precise measurement, a natural idea is to look at smaller changes in speed. Over smaller and smaller changes, the graph looks more and more like a straight line, so the slope between the two points gives a better estimate of the sensitivity at that speed. Here's what happens if we use a change in speed of <m>\Delta v=0.1</m> mph:
-			<md>
-				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(50.1) - L(50)}{50.1-50}</mrow>
-				<mrow>\amp = \frac{0.049034\text{ car lengths}}{0.1\text{ mph}}</mrow>
-				<mrow>\amp = 0.49034\text{ car lengths per mph}</mrow>
-			</md>.
-		</p>
-		<activity>
-			<introduction>
-				<p>
-					Estimate the sensitivity of the stopping distance using the following values of <m>\Delta v</m> (comparing with a speed of <m>v\tsub{init}=50</m> mph). What do you notice about the values you get?
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta v=0.01</m> mph
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta v=0.001</m> mph
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta v=-0.1</m> mph
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta v=-0.01</m> mph
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta v=-0.001</m> mph
-					</p>
-				</statement>
-			</task>
-		</activity>
-		<p>
-			You should have noticed in the previous activity that as the change in speed gets smaller, our estimated sensitivity approaches a particular value, which seems to be around <m>0.49</m> car lengths per mph. This is similar to what you saw in the previous section, when the circumference of the circle approached <m>2\pi</m> more and more closely as we made better and better approximations.
-		</p>
-		
-		<p>
-			Unfortunately, these are still approximations of the sensitivity. However, if we imagine zooming in <sq>infinitely close</sq> to the point <m>(50,16)</m>, we might imagine that the graph of <m>L(b)</m> would be perfectly straight at that point. So if we could somehow choose two points that are <sq>infinitely close</sq> to each other, then the slope of the line between these two points would be exact sensitivity.
-		</p>
-		<p>
-			(Insert figure)
-		</p>
-		<p>
-			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>.
-			This ratio is called the <term>derivative</term> of <m>L</m> with respect to <m>v</m>, and it gives us a precise measure of the sensitivity of stopping distance to changes in speed at any particular point. We'll soon show that this derivative is indeed exactly <m>0.49</m> car lengths per mph at <m>v=50</m> mph. Another way to write this is
-			<me>
-				\dd{L}=0.49\dd{v}
-			</me>; that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is <m>0.49</m> times as large.
-		</p>
-		<p>
-			Over the next couple of sections, we'll be developing a number of techniques to compute differentials and derivatives exactly without having to rely on approximations. We'll also see how these concepts can be used to solve a number of real-world problems.
-		</p>
-	</subsection>
-	<subsection xml:id="subsec-notation-for-derivatives">
-		<title>Notation for derivatives</title>
-		<p>
-			Since <m>L</m> is a function of <m>v</m>, we can also write the derivative as <m>L'(v)</m>, read out loud as <m>L</m> prime of <m>v</m>. This notation emphasizes that the derivative is itself a function of <m>v</m>, since the sensitivity of stopping distance to changes in speed will be different at different speeds.
-		</p>
-		<p>
-			In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in <m>y</m> depending on <m>x</m> and writing <m>y = y(x)</m>, or we can give the function a separate name and write <m>y = f(x)</m>.
-		</p>
-		<p>
-			Because these describe the same situation, the derivative can be written in several equivalent ways:
-			<me>
-				\dv{y}{x} = \dv{f}{x} = f'(x).
-			</me>
-			Each version highlights a slightly different perspective: <m>\DS\dv{y}{x}</m> and <m>\DS\dv{f}{x}</m> emphasize the ratio between small changes, while <m>f'(x)</m> emphasizes that the derivative is itself a new function.
-		</p>
-		<p>
-			We can also do some algebra and express this relationship using differentials:
-			<me>
-				\dd{y} = f'(x)\dd{x}
-				\qquad \text{or} \qquad
-				\dd{f} = f'(x)\dd{x}
-			</me>.
-			This shows how a small change in the output is tied to a small change in the input, with <m>f'(x)</m> acting as a scale factor between them.
-		</p>
-		
-	</subsection>
-
-	<subsection xml:id="subsec-the-sign-of-the-derivative">
-		<title>The sign of the derivative</title>
-		<p>
-			We can gain important information by looking at the sign of the derivative. Suppose throughout that <m>y</m> is a function of <m>x</m>.
-		</p>
-		<ul>
-			<li>
-				<p>
-					If <m>\DS\dv{y}{x} \gt 0</m> throughout some interval <m>a\le x\le b</m>, then if we increase the value of <m>x</m>, the value of <m>y</m> will also increase. (Likewise, if we <em>decrease</em> the value of <m>x</m>, the value of <m>y</m> will also decrease.) Thus we say that <m>y</m> is an <term>increasing</term> function of <m>x</m> on that interval.
-				</p>
-			</li>
-			<li>
-				<p>
-					If <m>\DS\dv{y}{x} \lt 0</m> throughout some interval <m>a\le x\le b</m>, then if we increase the value of <m>x</m>, the value of <m>y</m> will decrease, and vice versa. Thus we say that <m>y</m> is a <term>decreasing</term> function of <m>x</m> on that interval.
-				</p>
-			</li>
-		</ul>
-		<p>
-			This interpretation is especially useful when the independent variable is time, since it allows us to determine whether a particular quantity is increasing or decreasing as time passes. For example, suppose the following graph shows <m>h</m>, the height (in feet) of a ball thrown into the air, as a function of <m>t</m>, the time elapsed in seconds:
-		</p>
-		<p>
-			(Insert figure showing a quadratic position function)
-		</p>
-		<p>
-			As we move from left to right on the graph, the slope of the graph changes:
-		</p>
-		<ul>
-			<li>
-				<p>
-					At the beginning, the slope <m>\DS\dv{h}{t}</m> is positive, which means the ball is rising.
-				</p>
-			</li>
-			<li>
-				<p>
-					At the top of the curve, the slope <m>\DS\dv{h}{t}</m> is zero, which means the ball is momentarily stationary at the highest point of its arc.
-				</p>
-			</li>
-			<li>
-				<p>
-					After that, the slope <m>\DS\dv{h}{t}</m> is negative, which means the ball is falling.
-				</p>
-			</li>
-		</ul>
-		<p>
-			Thus, when the independent variable is time, we can interpret the derivative as a <term>rate of change</term>; in this case, <m>\DS\dv{h}{t}</m> tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.
-		</p>
-		<p>
-			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. You'll often hear the phrase <sq><m>y</m> is increasing</sq>, but it would be more careful to say <sq><m>y</m> is an increasing function of <m>x</m></sq>, since the increase in <m>y</m> is tied to an increase in <m>x</m>.
-		</p>
-	</subsection>
-
-	<exercises>
-		<exercise>
-			<introduction>
-				<p>
-					Estimate <m>\DS\dv{y}{x}</m> for each of the following graphs at the given points by computing the ratios of small changes in the input and output. What do you notice about your estimates as you make smaller and smaller changes?
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						<m>y=x^2</m>, at <m>x=1</m> and <m>x=2</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=x^3</m>, at <m>x=-2</m> and <m>x=2</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=\sqrt{x}</m>, at <m>x=9</m> and <m>x=12</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=\dfrac{1}{x}</m>, at <m>x=3</m> and <m>x=7</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=3x-2</m>, at <m>x=5</m> and <m>x=10</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=5</m>, at <m>x=-6</m> and <m>x=1</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=x^2-5x+4</m> at <m>x=-3</m> and <m>x=0</m>
-					</p>
-				</statement>
-			</task>
-		</exercise>
-		<exercise>
-			<introduction>
-				<p>
-					In this exercise, you'll interpret the sign of the derivative for various real-world contexts. For each one, determine whether the derivative should be positive, negative, or zero, and explain your answer. Also give the units for the derivative.
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{B}{P}</m>, where <m>B=</m> the brightness of a lamp (measured in lumens) and <m>P=</m> the electrical power supplied to the lamp (measured in watts)
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{q}{p}</m>, where <m>q=</m> the number of packages of gourmet coffee beans demanded by consumers and <m>p=</m> the price (in dollars per package) of the coffee beans
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the number of minutes elapsed since the potato was placed in the oven
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the number of minutes it takes to bake a potato and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{C}{h}</m>, where <m>C=</m> the number of calories in a candy bar and <m>h=</m> the elevation (in feet) of the candy bar above sea level
-					</p>
-				</statement>
-			</task>
-		</exercise>
-		<exercise>
-			<!-- An exercise where the student has to use the "solved-for" differential to estimate the actual change given the derivative, but using a real-world situation we haven't used yet-->
-			<introduction>
-				<p>
-					Suppose the temperature in the Pacific Ocean can be described by the function <m>T(\ell)</m>, where <m>T</m> is the temperature in degrees Celsius and <m>\ell</m> is the latitude in degrees.
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						Suppose that <m>T(60)=10</m>. Explain what this means in context, including correct units.
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						Suppose that <m>T'(60)=-0.5</m>. Explain what this means in context, including correct units.
-					</p>
-				</statement>
-			</task>
-		</exercise>
-		<exercise>
-			<introduction>
-				<p>
-					The following table shows the concentration <m>C</m> of a certain drug in a patient's bloodstream as a function of time <m>t</m>. Here <m>t</m> is measured in hours and <m>C</m> is measured in milligrams per liter.
-				</p>
-				<p>
-					(Insert table)
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						Estimate <m>C'(3)</m> and explain its meaning in context, including correct units.
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						At what time <m>t</m> do you expect <m>C'(t)</m> to be zero? What is the real-world significance of this time?
-					</p>
-				</statement>
-			</task>
-		</exercise>
-		<exercise>
-			<statement>
-				<p>
-					The figure below shows the graphs of both a function <m>f(x)</m> and its derivative <m>f'(x)</m>. Which curve is which? Explain how you can tell.
-				</p>
-				<p>
-					(Insert figure)
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<introduction>
-				<p>
-					Let <m>g</m> be a function whose derivative <m>g'</m> is given by the graph below.
-				</p>
-				<p>
-					(Insert figure)
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						Where is <m>g</m> an increasing function of <m>x</m>? Explain.
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						Where is <m>g</m> a decreasing function of <m>x</m>? Explain.
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						Suppose we know that <m>g(5)=10</m>. What can you say about the value of <m>g(5.5)</m>? What about the value of <m>g(4.5)</m>? Explain your reasoning.
-					</p>
-				</statement>
-			</task>
-		</exercise>
-	</exercises>
+  <ul>
+    <li>
+      <p>
+        Given a function <m>f</m>, we now know how to find its sensitivity at any point. We can use this to derive a new function <m>f'(x)</m> such that <m>f'(a)</m> gives the sensitivity of <m>f</m> at any point <m>x=a</m>. This new function is called the <term>derivative</term> of <m>f</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        In differential form:
+        <md>
+          <mrow>\dv{y}{x} \amp = f'(x)</mrow>
+          <mrow>\dd{y} \amp = f'(x)\dd{x}</mrow>
+        </md>
+      </p>
+    </li>
+    <li>
+      <p>
+        We <sq>should believe</sq> that if <m>y=mx+b</m>, then
+        <md>
+          <mrow>\dv{y}{x} \amp = m</mrow>
+        </md>
+      </p>
+    </li>
+    <li>
+      <p>
+        If <m>f</m> changes by a small amount <m>\dd{f}</m> and <m>g</m> changes by a small amount <m>\dd{g}</m>, we should expect the linearity properties to hold:
+      </p>
+      <md>
+        <mrow>\dd(u+v) \amp = \dd{u}+\dd{v}</mrow>
+        <mrow>\dd(cu) \amp = c\dd{u}</mrow>
+      </md>
+    </li>
+    <li>
+        <p>
+            Derivative of <m>x^2</m> can be done by visualizing a square of side length <m>x</m> and seeing how the area changes as <m>x</m> changes. You get two rectangles of area <m>x\dd{x}</m> and a small square of area <m>(\dd{x})^2</m>, which is <sq>negligible</sq>, so the total change in area is approximately <m>2x\dd{x}</m>, and we imagine that if the change were infinitesimal, the change in area would be exactly <m>2x\dd{x}</m>.
+        </p>
+        <p>
+            We can temporarily justify this sense of being <sq>negligible</sq> by looking at the <em>ratios</em> of changes:
+            <me>
+                \dfrac{\Delta(x^2)}{\Delta x} = 2x + \Delta x
+            </me>
+            If we imagine that <m>\Delta x</m> becomes infinitesimal, the second term drops out, so we say that <m>\DS\dv{(x^2)}{x} = 2x</m>.
+        </p>
+        <p>
+            We'll make this sense of <sq>negligibility</sq> much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if <m>\dd{x}</m> is very small, then <m>(\dd{x})^2</m> is even smaller and can be ignored.
+        </p>
+    </li>
+    <li>
+        <p>
+            Same thing can be done with <m>x^3</m>, by visualizing a cube of side length <m>x</m> and seeing how the volume changes as <m>x</m> changes. You get three rectangular boxes of volume <m>x^2\dd{x}</m> and three rectangular boxes of volume <m>x(\dd{x})^2</m> and a small cube of volume <m>(\dd{x})^3</m>. The higher powers of <m>\dd{x}</m> are <sq>negligible</sq>, so the total change in volume is approximately <m>3x^2\dd{x}</m>, and we imagine that if the change were infinitesimal, the change in volume would be exactly <m>3x^2\dd{x}</m>.
+        </p>
+    </li>
+    <li>
+      <p>
+        Power Rule (as a conjecture right now):
+        <me>
+          \dd(x^{n})=nx^{n-1}\dd{x}
+        </me>
+        (Only works when <m>n</m> is a natural number so far)
+      </p>
+    </li>
+    <li>
+      <p>
+        Derivative of a polynomial term by term... can verify the derivative done last section! If <m>L(v)=0.0034v^2 + 0.15v</m>, then
+        <me>
+            \dv{L}{v}=0.0068v+0.15
+        </me>,
+        so <m>L'(50)=0.0068\cdot 50 + 0.15=0.49</m>, which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.
+      </p>
+    </li>
+  </ul>
 </section>
 

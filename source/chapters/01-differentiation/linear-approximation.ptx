@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-linear-approximation">
+  <title>Linear approximation</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Use differentials to construct linear approximations near a point.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret a function's linearization as its best local straight-line model.
+        </p>
+      </li>
+      <li>
+        <p>
+          Evaluate accuracy using concavity and basic error estimates.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Thinking of the derivative as the <sq>best linear approximation</sq> to a function at a point
+      </p>
+    </li>
+
+    <li>
+        <p>
+            Introduce the tangent line
+        </p>
+    </li>
+
+    <li>
+      <p>
+        Approximation using differentials
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Linearization of a function at <m>x=a</m>:
+        <me>
+          L(x)=f(a)+f'(a)(x-a)
+        </me>
+      </p>
+    </li>
+
+    <li>
+        <p>
+            Using this idea when you only have data rather than a symbolic formula for the function
+        </p>
+    </li>
+  </ul>
+</section>

@@ -10,7 +10,7 @@
     </introduction>
     
     <xi:include href="./related-rates.ptx" />
-    <xi:include href="./optimization.ptx" />
     <xi:include href="./higher-order-derivatives.ptx" />
-    <xi:include href="./linear-approximation.ptx" />
+    <xi:include href="./optimization.ptx" />
+    <xi:include href="./relative-change-and-elasticity.ptx" />
 </chapter>
