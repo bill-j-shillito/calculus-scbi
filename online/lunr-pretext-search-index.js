@@ -178,7 +178,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The derivative",
-  "body": " The derivative     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     Given a function , we now know how to find its sensitivity at any point. We can use this to derive a new function such that gives the sensitivity of at any point . This new function is called the derivative of .    In differential form:     We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
+  "body": " The derivative     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     Given a function , we now know how to find its sensitivity at any point. We can use this to derive a new function , pronounced prime , such that gives the sensitivity of at any point . This new function is called the derivative of .    In differential form:     We will sometimes separate the notation into and read the symbol as the derivative with respect to . The with respect to just reminds us that is the independent variable.    We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
 },
 {
   "id": "sec-the-derivative-2",
@@ -199,29 +199,11 @@ var ptx_lunr_docs = [
   "body": "derivative "
 },
 {
-  "id": "sec-linear-approximation",
-  "level": "1",
-  "url": "sec-linear-approximation.html",
-  "type": "Section",
-  "number": "1.3",
-  "title": "Linear approximation",
-  "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Thinking of the derivative as the best linear approximation to a function at a point    Introduce the tangent line    Approximation using differentials    Linearization of a function at :     Using this idea when you only have data rather than a symbolic formula for the function    "
-},
-{
-  "id": "sec-linear-approximation-2",
-  "level": "2",
-  "url": "sec-linear-approximation.html#sec-linear-approximation-2",
-  "type": "Objectives",
-  "number": "1.3",
-  "title": "",
-  "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
-},
-{
   "id": "sec-product-and-chain-rule",
   "level": "1",
   "url": "sec-product-and-chain-rule.html",
   "type": "Section",
-  "number": "1.4",
+  "number": "1.3",
   "title": "The Product Rule and the Chain Rule",
   "body": " The Product Rule and the Chain Rule     Differentiate products by examining how each factor varies.    Differentiate composite functions by multiplying sensitivities.    Select appropriate differentiation rules for a given function.      Introduction goes here.     Is the derivative of a product just the product of the derivatives? Can check with units (say price times quantity) and see that it won't work, and also show that it doesn't work with . So we need something new.    Visual proof of Product Rule:        Can leave the disappearance of somewhat unresolved, giving a deliberately handwavy explanation of the fact that dividing by will still leave an infinitesimal quantity in the numerator, so we'll ignore it. This mystery will get cleaned up in Chapter 5 when we do limits.    Check by applying to :     Extend to three variables:     Check by applying to :     Power Rule: Only works when is a natural number right now, but we can prove it (essentially using induction) by breaking into and applying the Product Rule.    Justify the Chain Rule by multiplying rates of change and watching the units cancel out. Think of dimensional analysis in high school chemistry.    Chain Rule for differentials:     Chain Rule for derivatives:     "
 },
@@ -230,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-product-and-chain-rule.html#sec-product-and-chain-rule-2",
   "type": "Objectives",
-  "number": "1.4",
+  "number": "1.3",
   "title": "",
   "body": "   Differentiate products by examining how each factor varies.    Differentiate composite functions by multiplying sensitivities.    Select appropriate differentiation rules for a given function.    "
 },
@@ -239,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-implicit-differentiation.html",
   "type": "Section",
-  "number": "1.5",
+  "number": "1.4",
   "title": "Implicit differentiation",
   "body": " Implicit differentiation     Differentiate relations without solving for by working with differentials.    Use implicit derivatives to determine tangent lines to implicitly defined curves.    Develop the Quotient Rule and extend the Power Rule to negative and fractional exponents.      Introduction goes here.     Use Bitcoin elliptic curve example?    Use differentials: take differential of both sides, then divide both sides by .  Example:     You can shortcut the differentials by taking derivatives and remembering to multiply by whenever you take a derivative of something involving .    Talk about tangent lines. DON'T include normal lines; save that until the Analytic Geometry chapter in Part II.    Differentiating : Can leave differentiating as an exercise, but state the result that the Power Rule now works for all negative exponents.    Develop Quotient Rule:     Differentiating : Can leave differentiating as an exercise, but state the result that the Power Rule now works for all fractional exponents.    "
 },
@@ -248,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-implicit-differentiation.html#sec-implicit-differentiation-2",
   "type": "Objectives",
-  "number": "1.5",
+  "number": "1.4",
   "title": "",
   "body": "   Differentiate relations without solving for by working with differentials.    Use implicit derivatives to determine tangent lines to implicitly defined curves.    Develop the Quotient Rule and extend the Power Rule to negative and fractional exponents.    "
 },
@@ -258,8 +240,8 @@ var ptx_lunr_docs = [
   "url": "sec-related-rates.html",
   "type": "Section",
   "number": "2.1",
-  "title": "Related rates",
-  "body": " Related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems... perhaps make modeling the focus of this section?    "
+  "title": "Modeling and related rates",
+  "body": " Modeling and related rates     Relate changing quantities by differentiating with respect to time.    Translate verbal descriptions of scenarios into equations and geometric diagrams.    Interpret solutions equations with correct units to check consistency and meaning.      Introduction goes here.     Same as implicit differentiation, except instead of dividing by we divide by     Do a few different examples of canonical types of problems    Lay out a step by step process of tackling modeling problems... perhaps make modeling the focus of this section?    "
 },
 {
   "id": "sec-related-rates-2",
@@ -277,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Higher order derivatives",
-  "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
+  "body": " Higher order derivatives     Interpret the second derivative to understand concavity and curvature.    Use the Second Derivative Test to classify critical points when possible.    Extend derivative ideas to third and higher orders to study patterns in a function's behavior.      Introduction goes here.     Introduce second derivative and its relationship to concavity   If , then is concave up    If , then is concave down       Get into the Leibniz notation ...and maybe why it’s NOT very good! The proper notation really should be . But the notation is still pretty standard and hence we should learn it.    Third and higher order derivatives    "
 },
 {
   "id": "sec-higher-order-derivatives-2",
@@ -313,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Relative change and elasticity",
-  "body": " Relative change and elasticity     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Absolute error:     Relative error:     Percent error:     Relative derivative:     Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is a relative rate of change, which is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application?    "
+  "body": " Relative change and elasticity     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Relative change:   Can be interpreted as percent change:     Relative derivative aka semi-elasticity:     Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application? Also apparently useful in chemistry when talking about reactions.    A function has constant elasticity if and only if it is a power function. That is, the elasticity of is .    A function is elastic if , inelastic if , and unit elastic if .    To find where revenue is maximized, we can find where the elasticity of demand is unit elastic. (Prove this by showing that the elasticity of is .)    I feel like elasticity needs a notation. Some software uses \"ey\/ex\" ... maybe we can formalize it as ?    "
 },
 {
   "id": "sec-relative-change-and-elasticity-2",
@@ -321,6 +303,24 @@ var ptx_lunr_docs = [
   "url": "sec-relative-change-and-elasticity.html#sec-relative-change-and-elasticity-2",
   "type": "Objectives",
   "number": "2.4",
+  "title": "",
+  "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
+},
+{
+  "id": "sec-linear-approximation",
+  "level": "1",
+  "url": "sec-linear-approximation.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Linear approximation",
+  "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Thinking of the derivative as the best linear approximation to a function at a point    Introduce the tangent line    Approximation using differentials    Linearization of a function at :     Using this idea when you only have data rather than a symbolic formula for the function    Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Absolute error:     Relative error:     Percent error:     "
+},
+{
+  "id": "sec-linear-approximation-2",
+  "level": "2",
+  "url": "sec-linear-approximation.html#sec-linear-approximation-2",
+  "type": "Objectives",
+  "number": "2.5",
   "title": "",
   "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
 },
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Logarithmic functions",
-  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Differentiating , the inverse of the exponential function:     In general, derivatives of inverse functions:     Logarithmic differentiation: Good for complicated derivatives or derivatives involving exponents.    Reminder of logarithm rules as opposites of exponent rules:     Differentiating for any real exponent :     Differentiating for any base :     Differentiating for any base :     "
+  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Differentiating , the inverse of the exponential function:     In general, derivatives of inverse functions:     Logarithmic differentiation: Good for complicated derivatives or derivatives involving exponents.    Reminder of logarithm rules as opposites of exponent rules:     Differentiating for any real exponent :     Differentiating for any base :     Differentiating for any base :     New way of looking at elasticity is as .  This for example shows that the elasticity of is the sum of the elasticities of and .    "
 },
 {
   "id": "sec-logarithmic-functions-2",
