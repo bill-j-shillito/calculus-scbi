@@ -33,16 +33,21 @@
   <ul>
     <li>
       <p>
-        Given a function <m>f</m>, we now know how to find its sensitivity at any point. We can use this to derive a new function <m>f'(x)</m> such that <m>f'(a)</m> gives the sensitivity of <m>f</m> at any point <m>x=a</m>. This new function is called the <term>derivative</term> of <m>f</m>.
+        Given a function <m>f</m>, we now know how to find its sensitivity at any point. We can use this to derive a new function <m>f'</m>, pronounced <sq><m>f</m> prime</sq>, such that <m>f'(a)</m> gives the sensitivity of <m>f</m> at any point <m>x=a</m>. This new function is called the <term>derivative</term> of <m>f</m>.
       </p>
     </li>
     <li>
       <p>
         In differential form:
         <md>
-          <mrow>\dv{y}{x} \amp = f'(x)</mrow>
-          <mrow>\dd{y} \amp = f'(x)\dd{x}</mrow>
+          <mrow>\dv{y}{x} \amp = \dv{f}{x} = f'(x)</mrow>
+          <mrow>\dd{y} \amp = \dd{f} = f'(x)\dd{x}</mrow>
         </md>
+      </p>
+    </li>
+    <li>
+      <p>
+        We will sometimes separate the notation <m>\DS\dv{f}{x}</m> into <m>\DS\dv{x} f</m> and read the symbol <m>\DS\dv{x}</m> as <sq>the derivative with respect to <m>x</m>.</sq> The <sq>with respect to</sq> just reminds us that <m>x</m> is the independent variable. 
       </p>
     </li>
     <li>
@@ -55,11 +60,11 @@
     </li>
     <li>
       <p>
-        If <m>f</m> changes by a small amount <m>\dd{f}</m> and <m>g</m> changes by a small amount <m>\dd{g}</m>, we should expect the linearity properties to hold:
+        If <m>u</m> changes by a small amount <m>\dd{u}</m> and <m>v</m> changes by a small amount <m>\dd{v}</m>, we should expect the linearity properties to hold:
       </p>
       <md>
-        <mrow>\dd(u+v) \amp = \dd{u}+\dd{v}</mrow>
-        <mrow>\dd(cu) \amp = c\dd{u}</mrow>
+        <mrow>\dv{x}(u+v) \amp = \dv{u}{x}+\dv{v}{x}</mrow>
+        <mrow>\dv{x}(cu) \amp = c\dv{u}{x}</mrow>
       </md>
     </li>
     <li>
@@ -86,7 +91,7 @@
       <p>
         Power Rule (as a conjecture right now):
         <me>
-          \dd(x^{n})=nx^{n-1}\dd{x}
+          \dv{x}(x^{n})=nx^{n-1}
         </me>
         (Only works when <m>n</m> is a natural number so far)
       </p>
@@ -95,7 +100,7 @@
       <p>
         Derivative of a polynomial term by term... can verify the derivative done last section! If <m>L(v)=0.0034v^2 + 0.15v</m>, then
         <me>
-            \dv{L}{v}=0.0068v+0.15
+            L'(v)=0.0068v+0.15
         </me>,
         so <m>L'(50)=0.0068\cdot 50 + 0.15=0.49</m>, which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.
       </p>

@@ -121,6 +121,13 @@
       </p>
     </li>
 
-    
+    <li>
+      <p>
+        New way of looking at elasticity is as <m>\dv{\ln y}{\ln x}</m>.
+      </p>
+      <p>
+        This for example shows that the elasticity of <m>uv</m> is the sum of the elasticities of <m>u</m> and <m>v</m>.
+      </p>
+    </li>
   </ul>
 </section>

@@ -13,4 +13,5 @@
     <xi:include href="./higher-order-derivatives.ptx" />
     <xi:include href="./optimization.ptx" />
     <xi:include href="./relative-change-and-elasticity.ptx" />
+    <xi:include href="./linear-approximation.ptx" />
 </chapter>

@@ -32,25 +32,16 @@
   <ul>
     <li>
       <p>
-        Absolute error: <m>\eps=|y-y\tsub{approx}|</m>
+        Relative change: <m>\dfrac{\dd{y}}{y}</m>
+      </p>
+      <p>
+        Can be interpreted as percent change: <m>\dfrac{\dd{y}}{y}\cdot 100\%</m>
       </p>
     </li>
 
     <li>
       <p>
-        Relative error: <m>\eta=\dfrac{\eps}{|y|}</m>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Percent error: <m>\eta\tsub{percent}=\eta\times 100\%</m>
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Relative derivative: <m>\dfrac{\dd{y}/\dd{x}}{y}</m>
+        Relative derivative aka semi-elasticity: <m>\dfrac{\dd{y}/\dd{x}}{y}</m>
       </p>
     </li>
 
@@ -64,11 +55,30 @@
           </p>
         </aside>
         <me>
-          E=\dv{(\ln y)}{(\ln x)}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
+          E=\frac{\dd{y}/y}{\dd{x}/x}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
         </me>
-        This is a relative rate of change, which is useful in economics (e.g.
-        price elasticity of demand).
-        Maybe use this as the guiding application?
+        This is useful in economics (e.g. price elasticity of demand).
+        Maybe use this as the guiding application? Also apparently useful in chemistry when talking about reactions.
+      </p>
+    </li>
+    <li>
+      <p>
+        A function has constant elasticity if and only if it is a power function. That is, the elasticity of <m>x^a</m> is <m>E=a</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        A function is elastic if <m>|E|\gt 1</m>, inelastic if <m>|E|\lt 1</m>, and unit elastic if <m>|E|=1</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        To find where revenue is maximized, we can find where the elasticity of demand is unit elastic. (Prove this by showing that the elasticity of <m>R(x)=xD(x)</m> is <m>E_R=1+E_D</m>.)
+      </p>
+    </li>
+    <li>
+      <p>
+        I feel like elasticity needs a notation. Some software uses "ey/ex" ... maybe we can formalize it as <m>\dfrac{\epsilon y}{\epsilon x}</m>?
       </p>
     </li>
   </ul>

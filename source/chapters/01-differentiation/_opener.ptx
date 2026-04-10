@@ -12,7 +12,6 @@
     <!-- <xi:include href="./approximating-the-circle.ptx" /> -->
     <xi:include href="./sensitivity.ptx" />
     <xi:include href="./the-derivative.ptx" />
-    <xi:include href="./linear-approximation.ptx" />
     <xi:include href="./product-and-chain-rule.ptx" />
     <xi:include href="./implicit-differentiation.ptx" />
     

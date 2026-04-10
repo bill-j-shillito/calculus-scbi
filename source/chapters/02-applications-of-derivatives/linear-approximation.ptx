@@ -62,5 +62,42 @@
             Using this idea when you only have data rather than a symbolic formula for the function
         </p>
     </li>
+
+    <li>
+      <p>
+        Use second derivative for over/underestimate analysis
+        <ul>
+          <li>
+            <p>
+              If <m>f''(a)>0</m>, then <m>f</m> is concave up around <m>a</m>, so <m>L(x)\lt L(a)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>f''(a)\lt 0</m>, then <m>f</m> is concave down around <m>a</m>, so <m>L(x)>L(a)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Absolute error: <m>\eps=|y-y\tsub{approx}|</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Relative error: <m>\eta=\dfrac{\eps}{|y|}</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Percent error: <m>\eta\tsub{percent}=\eta\times 100\%</m>
+      </p>
+    </li>
   </ul>
 </section>
