@@ -32,16 +32,16 @@
   <ul>
     <li>
       <p>
-        Relative change: <m>\dfrac{\dd{y}}{y}</m>
+        Relative differential: <m>\rd{y}=\dfrac{\dd{y}}{y}</m>
       </p>
       <p>
-        Can be interpreted as percent change: <m>\dfrac{\dd{y}}{y}\cdot 100\%</m>
+        Can be interpreted in terms of percent change: <m>\dfrac{\dd{y}}{y}\cdot 100\%</m>
       </p>
     </li>
 
     <li>
       <p>
-        Relative derivative aka semi-elasticity: <m>\dfrac{\dd{y}/\dd{x}}{y}</m>
+        Relative derivative aka semi-elasticity: <m>\dfrac{\rd{y}}{x}=\dfrac{\dd{y}/\dd{x}}{y}</m>
       </p>
     </li>
 
@@ -55,7 +55,7 @@
           </p>
         </aside>
         <me>
-          E=\frac{\dd{y}/y}{\dd{x}/x}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
+          E=\rdv{y}{x}=\frac{\dd{y}/y}{\dd{x}/x}=\frac{x}{y}\dv{y}{x}=\frac{\dd{y}/\dd{x}}{y/x}
         </me>
         This is useful in economics (e.g. price elasticity of demand).
         Maybe use this as the guiding application? Also apparently useful in chemistry when talking about reactions.
@@ -74,11 +74,6 @@
     <li>
       <p>
         To find where revenue is maximized, we can find where the elasticity of demand is unit elastic. (Prove this by showing that the elasticity of <m>R(x)=xD(x)</m> is <m>E_R=1+E_D</m>.)
-      </p>
-    </li>
-    <li>
-      <p>
-        I feel like elasticity needs a notation. Some software uses "ey/ex" ... maybe we can formalize it as <m>\dfrac{\epsilon y}{\epsilon x}</m>?
       </p>
     </li>
   </ul>

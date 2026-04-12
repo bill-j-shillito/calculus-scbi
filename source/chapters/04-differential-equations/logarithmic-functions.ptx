@@ -123,7 +123,7 @@
 
     <li>
       <p>
-        New way of looking at elasticity is as <m>\DS\dv{(\ln y)}{(\ln x)}</m>.
+        New way of looking at elasticity:<me>\DS\rdv{y}{x}=\dv{(\ln y)}{(\ln x)}</me>.
       </p>
       <p>
         This for example shows that the elasticity of <m>uv</m> is the sum of the elasticities of <m>u</m> and <m>v</m>.

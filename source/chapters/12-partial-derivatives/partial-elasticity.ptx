@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-partial-elasticity">
+  <title>Partial elasticity</title>
+
+  <objectives>
+    <ol>
+      <li>
+        <p>
+          Measure how a multivariable function changes when only one input varies.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret partial derivatives visually using traces with one variable held constant.
+        </p>
+      </li>
+      <li>
+        <p>
+          Compute partial derivatives by treating other variables as fixed and applying single-variable rules.
+        </p>
+      </li>
+    </ol>
+  </objectives>
+  
+  <introduction>
+    <p>
+      Introduction goes here.
+    </p>
+  </introduction>
+
+  <ul>
+    <li>
+      <p>
+        Recall single-variable elasticity: <m>\rdv{y}{x} = \dfrac{\dd{y}/y}{\dd{x}/x} = \DS\dv{y}{x}\cdot\frac{x}{y}</m>
+      </p>
+    </li>
+
+    <li>
+        <p>
+            Define partial elasticity of <m>z=f(x,y)</m> with respect to <m>x</m> as
+            <me>
+                \rpdv{z}{x} = \frac{\rd_x z}{\rd x} = \frac{\mathrm{d}_x{z}/z}{\dd{x}/x} = \pdv{z}{x}\cdot\frac{x}{z}
+            </me>
+            and with respect to <m>y</m> as
+            <me>
+                \rpdv{z}{y} = \frac{\rd_y z}{\rd y} = \frac{\mathrm{d}_y{z}/z}{\dd{y}/y} = \pdv{z}{y}\cdot\frac{y}{z}
+            </me>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            A rate law for a chemical reaction might be <m>r = k [A]^{\alpha} [B]^{\beta}</m>, where <m>[A]</m> and <m>[B]</m> are concentrations of reactants.
+            Then the partial elasticity of the rate with respect to <m>[A]</m> is
+            <me>
+                \rpdv{r}{[A]} = \alpha
+            </me>
+            and the partial elasticity of the rate with respect to <m>[B]</m> is
+            <me>
+                \rpdv{r}{[B]} = \beta
+            </me>.
+        </p>
+        <p>
+            For example, if <m>r = k [A]^{2} [B]^{3}</m>, then the partial elasticity with respect to <m>[A]</m> is 2 and the partial elasticity with respect to <m>[B]</m> is 3. This means that a 1% increase in <m>[A]</m> will lead to a 2% increase in the reaction rate, while a 1% increase in <m>[B]</m> will lead to a 3% increase in the reaction rate.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Utility function in economics: <m>z = U(x,y)</m>, where <m>x</m> and <m>y</m> are quantities of two goods.
+            Then the partial elasticity of utility with respect to good 1 is
+            <me>
+                \rpdv{U}{x} = \pdv{U}{x}\cdot\frac{x}{U}
+            </me>
+            and the partial elasticity of utility with respect to good 2 is
+            <me>
+                \rpdv{U}{y} = \pdv{U}{y}\cdot\frac{y}{U}
+            </me>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Cobb-Douglas production function: <m>z = A K^{\alpha} L^{\beta}</m>
+        </p>
+        <p>
+            Here, <m>K</m> and <m>L</m> are inputs (capital and labor), and <m>A</m> is total factor productivity.
+        </p>
+        <p>
+            Partial elasticities: <m>\DS\rpdv{z}{K} = \alpha</m> and <m>\DS\rpdv{z}{L} = \beta</m>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Suppose two goods have quantities demanded given by <m>q_1=f(p_1,p_2)</m> and <m>q_2=g(p_1,p_2)</m>, where <m>p_1</m> and <m>p_2</m> are their prices.
+            Then the cross-price elasticity of demand for good 1 with respect to the price of good 2 is
+            <me>
+                \rpdv{q_1}{p_2} = \pdv{q_1}{p_2}\cdot\frac{p_2}{q_1}
+            </me>
+            and the own-price elasticity of demand for good 1 is
+            <me>
+                \rpdv{q_1}{p_1} = \pdv{q_1}{p_1}\cdot\frac{p_1}{q_1}
+            </me>.
+        </p>
+    </li>
+  </ul>
+</section>

@@ -11,7 +11,7 @@
 
     <xi:include href="./partial-derivatives.ptx" />
     <xi:include href="./tangent-plane-approximations.ptx" />
+    <xi:include href="./partial-elasticity.ptx" />
     <xi:include href="./higher-order-partial-derivatives.ptx" />
-    <xi:include href="./taylor-approximations-in-higher-dimensions.ptx" />
     <xi:include href="./multivariable-optimization.ptx" />
 </chapter>

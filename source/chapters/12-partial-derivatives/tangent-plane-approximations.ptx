@@ -45,9 +45,9 @@
 
     <li>
       <p>
-        If <m>\Delta x=x-x_{0}</m> etc, we get:
+        If <m>\Delta x=x-x_0</m> etc, we get:
         <me>
-          z-z_{0}=\pdv{f}{x}(x-x_{0})+\pdv{f}{y}(y-y_{0})
+          z-z_0=\pdv{f}{x} \qty(x-x_0)+\pdv{f}{y} \qty(y-y_0)
         </me>
         This is an equation of the tangent plane to <m>z=f(x,y)</m> at the point <m>(x_{0},y_{0},z_{0})</m>.
       </p>
