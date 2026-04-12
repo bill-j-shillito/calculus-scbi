@@ -289,29 +289,11 @@ var ptx_lunr_docs = [
   "body": "   Model objectives and constraints to set up optimization problems.    Identify interior and boundary candidates using derivatives and Fermat's theorem.    Use the First Derivative Test to classify critical points as local maxima, local minima, or neither.    "
 },
 {
-  "id": "sec-relative-change-and-elasticity",
-  "level": "1",
-  "url": "sec-relative-change-and-elasticity.html",
-  "type": "Section",
-  "number": "2.4",
-  "title": "Relative change and elasticity",
-  "body": " Relative change and elasticity     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Relative change:   Can be interpreted as percent change:     Relative derivative aka semi-elasticity:     Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application? Also apparently useful in chemistry when talking about reactions.    A function has constant elasticity if and only if it is a power function. That is, the elasticity of is .    A function is elastic if , inelastic if , and unit elastic if .    To find where revenue is maximized, we can find where the elasticity of demand is unit elastic. (Prove this by showing that the elasticity of is .)    I feel like elasticity needs a notation. Some software uses \"ey\/ex\" ... maybe we can formalize it as ?    "
-},
-{
-  "id": "sec-relative-change-and-elasticity-2",
-  "level": "2",
-  "url": "sec-relative-change-and-elasticity.html#sec-relative-change-and-elasticity-2",
-  "type": "Objectives",
-  "number": "2.4",
-  "title": "",
-  "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
-},
-{
   "id": "sec-linear-approximation",
   "level": "1",
   "url": "sec-linear-approximation.html",
   "type": "Section",
-  "number": "2.5",
+  "number": "2.4",
   "title": "Linear approximation",
   "body": " Linear approximation     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Thinking of the derivative as the best linear approximation to a function at a point    Introduce the tangent line    Approximation using differentials    Linearization of a function at :     Using this idea when you only have data rather than a symbolic formula for the function    Use second derivative for over\/underestimate analysis   If , then is concave up around , so .    If , then is concave down around , so .       Absolute error:     Relative error:     Percent error:     "
 },
@@ -319,6 +301,24 @@ var ptx_lunr_docs = [
   "id": "sec-linear-approximation-2",
   "level": "2",
   "url": "sec-linear-approximation.html#sec-linear-approximation-2",
+  "type": "Objectives",
+  "number": "2.4",
+  "title": "",
+  "body": "   Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.    "
+},
+{
+  "id": "sec-relative-change-and-elasticity",
+  "level": "1",
+  "url": "sec-relative-change-and-elasticity.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Relative change and elasticity",
+  "body": " Relative change and elasticity     Use differentials to construct linear approximations near a point.    Interpret a function's linearization as its best local straight-line model.    Evaluate accuracy using concavity and basic error estimates.      Introduction goes here.     Relative differential:   Can be interpreted in terms of percent change:     Relative derivative aka semi-elasticity:     Elasticity of a function:  The elasticity of a power function is its degree, and in the limit, the elasticity of a polynomial is its degree. This can in some sense be used to define the degree of non-power functions.   This is useful in economics (e.g. price elasticity of demand). Maybe use this as the guiding application? Also apparently useful in chemistry when talking about reactions.    A function has constant elasticity if and only if it is a power function. That is, the elasticity of is .    A function is elastic if , inelastic if , and unit elastic if .    To find where revenue is maximized, we can find where the elasticity of demand is unit elastic. (Prove this by showing that the elasticity of is .)    "
+},
+{
+  "id": "sec-relative-change-and-elasticity-2",
+  "level": "2",
+  "url": "sec-relative-change-and-elasticity.html#sec-relative-change-and-elasticity-2",
   "type": "Objectives",
   "number": "2.5",
   "title": "",
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Logarithmic functions",
-  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Differentiating , the inverse of the exponential function:     In general, derivatives of inverse functions:     Logarithmic differentiation: Good for complicated derivatives or derivatives involving exponents.    Reminder of logarithm rules as opposites of exponent rules:     Differentiating for any real exponent :     Differentiating for any base :     Differentiating for any base :     New way of looking at elasticity is as .  This for example shows that the elasticity of is the sum of the elasticities of and .    "
+  "body": " Logarithmic functions     Use inverse relationships to understand how logarithms and exponentials change.    Differentiate expressions involving real exponents, other bases, and logarithmic combinations.    Apply logarithmic differentiation and relative rates to analyze more complex models.      Introduction goes here.     Differentiating , the inverse of the exponential function:     In general, derivatives of inverse functions:     Logarithmic differentiation: Good for complicated derivatives or derivatives involving exponents.    Reminder of logarithm rules as opposites of exponent rules:     Differentiating for any real exponent :     Differentiating for any base :     Differentiating for any base :     New way of looking at elasticity: .  This for example shows that the elasticity of is the sum of the elasticities of and .    "
 },
 {
   "id": "sec-logarithmic-functions-2",
@@ -1216,20 +1216,38 @@ var ptx_lunr_docs = [
   "body": "   Interpret the tangent plane as the best linear approximation to a surface near a point.    Derive equations of tangent planes using partial derivatives and total differentials.    Use tangent plane approximations to estimate nearby function values.    "
 },
 {
+  "id": "sec-partial-elasticity",
+  "level": "1",
+  "url": "sec-partial-elasticity.html",
+  "type": "Section",
+  "number": "12.3",
+  "title": "Partial elasticity",
+  "body": " Partial elasticity     Measure how a multivariable function changes when only one input varies.    Interpret partial derivatives visually using traces with one variable held constant.    Compute partial derivatives by treating other variables as fixed and applying single-variable rules.      Introduction goes here.     Recall single-variable elasticity:     Define partial elasticity of with respect to as and with respect to as     A rate law for a chemical reaction might be , where and are concentrations of reactants. Then the partial elasticity of the rate with respect to is and the partial elasticity of the rate with respect to is .  For example, if , then the partial elasticity with respect to is 2 and the partial elasticity with respect to is 3. This means that a 1% increase in will lead to a 2% increase in the reaction rate, while a 1% increase in will lead to a 3% increase in the reaction rate.    Utility function in economics: , where and are quantities of two goods. Then the partial elasticity of utility with respect to good 1 is and the partial elasticity of utility with respect to good 2 is .    Cobb-Douglas production function:   Here, and are inputs (capital and labor), and is total factor productivity.  Partial elasticities: and     Suppose two goods have quantities demanded given by and , where and are their prices. Then the cross-price elasticity of demand for good 1 with respect to the price of good 2 is and the own-price elasticity of demand for good 1 is .    "
+},
+{
+  "id": "sec-partial-elasticity-2",
+  "level": "2",
+  "url": "sec-partial-elasticity.html#sec-partial-elasticity-2",
+  "type": "Objectives",
+  "number": "12.3",
+  "title": "",
+  "body": "   Measure how a multivariable function changes when only one input varies.    Interpret partial derivatives visually using traces with one variable held constant.    Compute partial derivatives by treating other variables as fixed and applying single-variable rules.    "
+},
+{
   "id": "sec-higher-order-partial-derivatives",
   "level": "1",
   "url": "sec-higher-order-partial-derivatives.html",
   "type": "Section",
-  "number": "12.3",
+  "number": "12.4",
   "title": "Higher order partial derivatives",
-  "body": " Higher order partial derivatives     Differentiate partial derivatives again to study second-order behavior.    Use Clairaut's theorem to identify when mixed partials agree.    Recognize how higher-order partials appear in fundamental equations of physics.      Introduction goes here.     Second-order partial derivatives of :   Yes, the mixed partial notation is confusing. In differential notation, the operators are applied inside-out, while in function notation, the operators are applied left to right.      Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .       Some partial differential equations:   Wave equation:     Heat equation:     Laplace's equation:        "
+  "body": " Higher order partial derivatives     Differentiate partial derivatives again to study second-order behavior.    Use Clairaut's theorem to identify when mixed partials agree.    Recognize how higher-order partials appear in fundamental equations of physics.      Introduction goes here.     Second-order partial derivatives of :   Yes, the mixed partial notation is confusing. In differential notation, the operators are applied inside-out, while in function notation, the operators are applied left to right.      Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .       Some partial differential equations:   Wave equation:     Heat equation:     Laplace's equation:        Begin by recalling the single-variable Taylor expansion: .  The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.    Connect to the previous section: The tangent plane is the first-order Taylor polynomial for .    Introduce second-order terms using higher partial derivatives:      Interpret each term:   First-order terms describe tilt.    Pure second derivatives describe curvature in coordinate directions.    Mixed partials describe interaction between variables.       Emphasize symmetry of mixed partials when conditions allow (Clairaut's theorem).    Provide a worked example:   Compute first and second partial derivatives at a point.    Write the quadratic Taylor approximation.    Use it to estimate a nearby value.    Compare to the actual value.       Geometric meaning:   First-order: tangent plane.    Second-order: quadratic surface approximating curvature.    The quadratic form determines local shape.       General multivariable Taylor expansion: where each term involves partial derivatives of total order evaluated at .  Each degree term consists of all products with , multiplied by the corresponding partial derivative   The approximation improves as higher-order terms are included.    "
 },
 {
   "id": "sec-higher-order-partial-derivatives-2",
   "level": "2",
   "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-2",
   "type": "Objectives",
-  "number": "12.3",
+  "number": "12.4",
   "title": "",
   "body": "   Differentiate partial derivatives again to study second-order behavior.    Use Clairaut's theorem to identify when mixed partials agree.    Recognize how higher-order partials appear in fundamental equations of physics.    "
 },
@@ -1241,24 +1259,6 @@ var ptx_lunr_docs = [
   "number": "8",
   "title": "Clairaut’s Theorem.",
   "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
-},
-{
-  "id": "sec-taylor-approximations-in-higher-dimensions",
-  "level": "1",
-  "url": "sec-taylor-approximations-in-higher-dimensions.html",
-  "type": "Section",
-  "number": "12.4",
-  "title": "Taylor approximations in higher dimensions",
-  "body": " Taylor approximations in higher dimensions     Construct second- and higher-order Taylor polynomials for functions of several variables.    Use quadratic approximations to model curvature near a point.    Estimate function values and analyze local behavior using Taylor expansions.      Introduction goes here.     Begin by recalling the single-variable Taylor expansion: .  The tangent line is just the first-order approximation, and adding higher-order terms improves accuracy.    Connect to the previous section: The tangent plane is the first-order Taylor polynomial for .    Introduce second-order terms using higher partial derivatives:      Interpret each term:   First-order terms describe tilt.    Pure second derivatives describe curvature in coordinate directions.    Mixed partials describe interaction between variables.       Emphasize symmetry of mixed partials when conditions allow (Clairaut's theorem).    Provide a worked example:   Compute first and second partial derivatives at a point.    Write the quadratic Taylor approximation.    Use it to estimate a nearby value.    Compare to the actual value.       Geometric meaning:   First-order: tangent plane.    Second-order: quadratic surface approximating curvature.    The quadratic form determines local shape.       General multivariable Taylor expansion: where each term involves partial derivatives of total order evaluated at .  Each degree term consists of all products with , multiplied by the corresponding partial derivative   The approximation improves as higher-order terms are included.    "
-},
-{
-  "id": "sec-taylor-approximations-in-higher-dimensions-2",
-  "level": "2",
-  "url": "sec-taylor-approximations-in-higher-dimensions.html#sec-taylor-approximations-in-higher-dimensions-2",
-  "type": "Objectives",
-  "number": "12.4",
-  "title": "",
-  "body": "   Construct second- and higher-order Taylor polynomials for functions of several variables.    Use quadratic approximations to model curvature near a point.    Estimate function values and analyze local behavior using Taylor expansions.    "
 },
 {
   "id": "sec-multivariable-optimization",

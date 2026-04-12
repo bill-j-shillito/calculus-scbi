@@ -184,6 +184,21 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Grad}{grad}
 \DeclareMathOperator{\Div}{div}
 \DeclareMathOperator{\Curl}{curl}
+
+
+
+\newcommand{\rd}{\textstyle\mathop{}\!\mathrm{d}^{\!\!\!-}\hspace{-0.0555 em}} 
+
+
+
+
+\newcommand{\rpd}{\textstyle\mathop{}\!\partial^{\hspace{-0.5 em}-}\hspace{-0.1666 em}}
+
+
+
+
+\newcommand{\rdv}[2]{\frac{\rd{#1}}{\rd{#2}}}
+\newcommand{\rpdv}[2]{\frac{\rpd{#1}}{\rpd{#2}}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -225,8 +240,8 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-related-rates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Modeling and related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-higher-order-derivatives.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Higher order derivatives</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-optimization.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Optimization</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-relative-change-and-elasticity.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Relative change and elasticity</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-linear-approximation.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Linear approximation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-linear-approximation.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Linear approximation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-relative-change-and-elasticity.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Relative change and elasticity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -334,8 +349,8 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-partial-derivatives.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Partial derivatives</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tangent-plane-approximations.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Tangent plane approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-higher-order-partial-derivatives.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Higher order partial derivatives</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-taylor-approximations-in-higher-dimensions.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Taylor approximations in higher dimensions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-partial-elasticity.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Partial elasticity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-higher-order-partial-derivatives.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Higher order partial derivatives</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-multivariable-optimization.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Multivariable optimization</span></a></div></li>
 </ul>
 </li>
@@ -626,7 +641,14 @@ b^y \ln b \dd{y} \amp = \dd{x} \\
 <div class="autopermalink" data-description="Item"><a href="#sec-logarithmic-functions-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-logarithmic-functions-4-8">
-<div class="para" id="sec-logarithmic-functions-4-8-1">New way of looking at elasticity is as <span class="process-math">\(\DS\dv{(\ln y)}{(\ln x)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sec-logarithmic-functions-4-8-1">
+<div class="para">New way of looking at elasticity:</div>
+<div class="displaymath process-math" id="sec-logarithmic-functions-4-8-1-1">
+\begin{equation*}
+\DS\rdv{y}{x}=\dv{(\ln y)}{(\ln x)}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-logarithmic-functions-4-8-2">This for example shows that the elasticity of <span class="process-math">\(uv\)</span> is the sum of the elasticities of <span class="process-math">\(u\)</span> and <span class="process-math">\(v\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-logarithmic-functions-4-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
