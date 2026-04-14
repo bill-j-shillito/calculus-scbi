@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -101,7 +101,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.3';
+eBookConfig.runestone_version = '7.13.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -223,10 +223,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-sensitivity.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Sensitivity to change</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-sensitivity-on-an-interval" class="internal"><span class="title">Sensitivity on an interval</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-sensitivity-between-two-points" class="internal"><span class="title">Sensitivity between two points</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-sensitivity-at-a-point" class="internal"><span class="title">Sensitivity at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-estimating-changes" class="internal"><span class="title">Estimating changes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sensitivity.html#subsec-the-sign-of-the-sensitivity" class="internal"><span class="title">The sign of the sensitivity</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-sensitivity.html#sec-sensitivity-7" class="internal"><span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-sensitivity.html#sec-sensitivity-8" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-the-derivative.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The derivative</span></a></div></li>
@@ -568,42 +569,42 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 <div class="para" id="sec-sensitivity-3-3">To understand these relationships, we need a way to quantify how <em class="emphasis">sensitive</em> one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="subsec-sensitivity-on-an-interval"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity on an interval</span>
+</div></section><section class="subsection" id="subsec-sensitivity-between-two-points"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity between two points</span>
 </h3>
-<details id="subsec-sensitivity-on-an-interval-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-on-an-interval-2-1">Based on data from <a class="external" href="https://arachnoid.com/braking_physics/index.html" target="_blank">The Physics Behind Stopping a Car</a> by P. Lutus.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details><div class="para logical" id="subsec-sensitivity-on-an-interval-3">
+<details id="subsec-sensitivity-between-two-points-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-between-two-points-2-1">Based on data from <a class="external" href="https://arachnoid.com/braking_physics/index.html" target="_blank">The Physics Behind Stopping a Car</a> by P. Lutus.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="para logical" id="subsec-sensitivity-between-two-points-3">
 <div class="para">When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance <span class="process-math">\(L\)</span> (measured in car lengths, assuming an average car length of <span class="process-math">\(14.7\)</span> feet) to the speed <span class="process-math">\(v\)</span> (measured in miles per hour) by the formula</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-3-4">
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-3-4">
 \begin{equation*}
 L = 0.0034v^2 + 0.15v\text{.}
 \end{equation*}
 </div>
 <div class="para">To make it explicit that <span class="process-math">\(L\)</span> depends on <span class="process-math">\(v\)</span> (that is, <span class="process-math">\(L\)</span> is a <dfn class="terminology">function</dfn> of <span class="process-math">\(v\)</span>), we can also write</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-3-10">
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-3-10">
 \begin{equation*}
 L(v) = 0.0034v^2 + 0.15v\text{.}
 \end{equation*}
 </div>
 <div class="para">We call <span class="process-math">\(v\)</span> the <dfn class="terminology">independent variable</dfn> and <span class="process-math">\(L\)</span> or <span class="process-math">\(L(v)\)</span> the <dfn class="terminology">dependent variable</dfn>, since the value of <span class="process-math">\(L\)</span> depends on the value of <span class="process-math">\(v\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-sensitivity-on-an-interval-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-on-an-interval-4-1">In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in <span class="process-math">\(y\)</span> depending on <span class="process-math">\(x\)</span> and writing <span class="process-math">\(y = y(x)\text{,}\)</span> or we can give the function a separate name and write <span class="process-math">\(y = f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details><div class="para logical" id="subsec-sensitivity-on-an-interval-5">
+<details id="subsec-sensitivity-between-two-points-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-between-two-points-4-1">In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in <span class="process-math">\(y\)</span> depending on <span class="process-math">\(x\)</span> and writing <span class="process-math">\(y = y(x)\text{,}\)</span> or we can give the function a separate name and write <span class="process-math">\(y = f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="para logical" id="subsec-sensitivity-between-two-points-5">
 <div class="para">For example, if a car is traveling at <span class="process-math">\(50\)</span> miles per hour, we have</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-5-2">
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-5-2">
 \begin{align*}
 L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 \amp = 16 \text{ car lengths}\text{,}
 \end{align*}
 </div>
 <div class="para">so the model predicts a stopping distance of <span class="process-math">\(16\)</span> car lengths (or approximately <span class="process-math">\(235.2\)</span> feet).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-sensitivity-on-an-interval-6">
+<div class="para logical" id="subsec-sensitivity-between-two-points-6">
 <div class="para">Now, we might wonder, if we were to change the speed, how much would the stopping distance change? For example, suppose the speed increases by five miles per hour, that is,</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-6-1">
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-6-1">
 \begin{align*}
 \Delta v \amp = v\tsub{final} - v\tsub{init}\\
 \amp = 55 - 50\\
@@ -611,7 +612,7 @@ L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 \end{align*}
 </div>
 <div class="para">Then the change in stopping distance would be</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-6-2">
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-6-2">
 \begin{align*}
 \Delta L \amp = L\tsub{final} - L\tsub{init}\\
 \amp = L(55) - L(50)\\
@@ -620,7 +621,7 @@ L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 \end{align*}
 </div>
 <div class="para">We can then find the <em class="emphasis">ratio</em> of the change in stopping distance to the change in speed:</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-6-4">
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-6-4">
 \begin{align*}
 \frac{\Delta L}{\Delta v} \amp = \frac{L(55) - L(50)}{55-50}\\
 \amp = \frac{2.535\text{ car lengths}}{5\text{ mph}}\\
@@ -628,29 +629,29 @@ L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 \end{align*}
 </div>
 <div class="para">That is, each extra mile per hour of speed means it takes another half of a car length to stop. We can call this the <dfn class="terminology">sensitivity</dfn> of the stopping distance to changes in speed.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="subsec-sensitivity-on-an-interval-7"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity on an interval.</span>
+<article class="definition definition-like" id="subsec-sensitivity-between-two-points-7"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity between two points.</span>
 </h4>
-<div class="para logical" id="subsec-sensitivity-on-an-interval-7-2-1">
-<div class="para">If <span class="process-math">\(y=f(x)\text{,}\)</span> then the <dfn class="terminology">sensitivity</dfn> of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\(a\le x\le b\)</span> is defined as</div>
-<div class="displaymath process-math" id="subsec-sensitivity-on-an-interval-7-2-1-5">
+<div class="para logical" id="subsec-sensitivity-between-two-points-7-2-1">
+<div class="para">If <span class="process-math">\(y=f(x)\text{,}\)</span> then the <dfn class="terminology">sensitivity</dfn> of <span class="process-math">\(f\)</span> between the points <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> is defined as</div>
+<div class="displaymath process-math" id="subsec-sensitivity-between-two-points-7-2-1-6">
 \begin{equation*}
 \frac{\Delta y}{\Delta x} = \frac{f(b) - f(a)}{b - a}\text{.}
 \end{equation*}
 </div>
 <div class="para">That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as ‘the sensitivity of <span class="process-math">\(y\)</span> to changes in <span class="process-math">\(x\text{.}\)</span>’</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="subsec-sensitivity-on-an-interval-7-2-2">We will also use the notation <span class="process-math">\(\dfrac{\Delta f}{\Delta x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsec-sensitivity-between-two-points-7-2-2">We will also use the notation <span class="process-math">\(\dfrac{\Delta f}{\Delta x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1: Sensitivity on an interval"><a href="#subsec-sensitivity-on-an-interval-7" title="Copy heading and permalink for Definition 1: Sensitivity on an interval" aria-label="Copy heading and permalink for Definition 1: Sensitivity on an interval">🔗</a></div></article><div class="para" id="subsec-sensitivity-on-an-interval-8">We can also visualize what we’ve just done by plotting the stopping distance function <span class="process-math">\(L(v)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 1: Sensitivity between two points"><a href="#subsec-sensitivity-between-two-points-7" title="Copy heading and permalink for Definition 1: Sensitivity between two points" aria-label="Copy heading and permalink for Definition 1: Sensitivity between two points">🔗</a></div></article><div class="para" id="subsec-sensitivity-between-two-points-8">We can also visualize what we’ve just done by plotting the stopping distance function <span class="process-math">\(L(v)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-sensitivity-on-an-interval-9" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-on-an-interval-9-1">Will figure out how to make this graph better.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<details id="subsec-sensitivity-between-two-points-9" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-between-two-points-9-1">Will figure out how to make this graph better.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></aside></details><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/prefigure/stopping-distance.svg" role="img" class="contained"></div>
-<div class="para" id="subsec-sensitivity-on-an-interval-11">Notice that the sensitivity we’ve calculated is the <em class="emphasis">slope</em> of the line connecting the points <span class="process-math">\((v\tsub{init},L\tsub{init})\)</span> and <span class="process-math">\((v\tsub{final},L\tsub{final})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-on-an-interval-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-sensitivity-between-two-points-11">Notice that the sensitivity we’ve calculated is the <em class="emphasis">slope</em> of the line connecting the points <span class="process-math">\((v\tsub{init},L\tsub{init})\)</span> and <span class="process-math">\((v\tsub{final},L\tsub{final})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-between-two-points-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Sensitivity on an interval"><a href="#subsec-sensitivity-on-an-interval" title="Copy heading and permalink for Subsection: Sensitivity on an interval" aria-label="Copy heading and permalink for Subsection: Sensitivity on an interval">🔗</a></div></section><section class="subsection" id="subsec-sensitivity-at-a-point"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Sensitivity between two points"><a href="#subsec-sensitivity-between-two-points" title="Copy heading and permalink for Subsection: Sensitivity between two points" aria-label="Copy heading and permalink for Subsection: Sensitivity between two points">🔗</a></div></section><section class="subsection" id="subsec-sensitivity-at-a-point"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity at a point</span>
 </h3>
 <div class="para" id="subsec-sensitivity-at-a-point-2">Our calculation of the sensitivity above was somewhat coarse. Over an increase of five miles per hour, the graph is not perfectly straight but gets gradually steeper as we go, so the sensitivity was gradually changing. In other words, our calculation mixes together several sensitivities rather than capturing the sensitivity <em class="emphasis">at</em> <span class="process-math">\(50\)</span> miles per hour.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -704,7 +705,7 @@ L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 \dv{L}{v}\text{.}
 \end{equation*}
 </div>
-<div class="para">We will call this the <dfn class="terminology">sensitivity</dfn> at the single point where <span class="process-math">\(v=50\)</span> miles per hour.</div>
+<div class="para">We will call this the <dfn class="terminology">sensitivity</dfn> at the single point where <span class="process-math">\(v=50\)</span> miles per hour. We’ll soon be able to show that when <span class="process-math">\(v=50\)</span> mph, the actual sensitivity is exactly <span class="process-math">\(0.49\)</span> car lengths per mph.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-sensitivity-at-a-point"><h4 class="heading">
@@ -722,24 +723,53 @@ L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 </div> <div class="para" id="def-sensitivity-at-a-point-2-2">We will also use the notation <span class="process-math">\(\DS\dv{f}{x}\)</span> for this sensitivity.<div class="autopermalink" data-description="Paragraph"><a href="#def-sensitivity-at-a-point-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="def-sensitivity-at-a-point-2-3">When we want to emphasize that the sensitivity is being evaluated at a particular point <span class="process-math">\(x=a\text{,}\)</span> we will write <span class="process-math">\(\eval{\DS\dv{y}{x}}_{x=a}\)</span> or <span class="process-math">\(\eval{\DS\dv{f}{x}}_{x=a}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-sensitivity-at-a-point-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 2: Sensitivity at a point"><a href="#def-sensitivity-at-a-point" title="Copy heading and permalink for Definition 2: Sensitivity at a point" aria-label="Copy heading and permalink for Definition 2: Sensitivity at a point">🔗</a></div></article><div class="para logical" id="subsec-sensitivity-at-a-point-10">
-<div class="para">We’ll soon be able to show that when <span class="process-math">\(v=50\)</span> mph, the actual sensitivity is exactly <span class="process-math">\(0.49\)</span> car lengths per mph.Another way to write this is</div>
-<div class="displaymath process-math" id="subsec-sensitivity-at-a-point-10-3">
-\begin{equation*}
-\dd{L}=0.49\dd{v}\text{;}
-\end{equation*}
+<div class="autopermalink" data-description="Definition 2: Sensitivity at a point"><a href="#def-sensitivity-at-a-point" title="Copy heading and permalink for Definition 2: Sensitivity at a point" aria-label="Copy heading and permalink for Definition 2: Sensitivity at a point">🔗</a></div></article><div class="para" id="subsec-sensitivity-at-a-point-10">Now, you might be a bit skeptical of this idea of using ‘infinitely small’ changes. If so, you’re in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on — just how small is ‘infinitely small’ anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we’ll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is <span class="process-math">\(0.49\)</span> times as large.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="subsec-sensitivity-at-a-point-11">Now, you might be a bit skeptical of this idea of using ‘infinitely small’ changes. If so, you’re in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on — just how small is ‘infinitely small’ anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we’ll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="activity project-like" id="subsec-sensitivity-at-a-point-12"><h4 class="heading">
+<article class="activity project-like" id="subsec-sensitivity-at-a-point-11"><h4 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="subsec-sensitivity-at-a-point-12-1-1">Use this same process to estimate <span class="process-math">\(\eval{\DS\dv{L}{v}}_{v=30}\)</span> and <span class="process-math">\(\eval{\DS\dv{L}{v}}_{v=70}\text{.}\)</span> How does the sensitivity of stopping distance to changes in speed compare at these different speeds?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-sensitivity-at-a-point-11-1-1">Use this same process to estimate <span class="process-math">\(\eval{\DS\dv{L}{v}}_{v=30}\)</span> and <span class="process-math">\(\eval{\DS\dv{L}{v}}_{v=70}\text{.}\)</span> How does the sensitivity of stopping distance to changes in speed compare at these different speeds?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 2"><a href="#subsec-sensitivity-at-a-point-12" title="Copy heading and permalink for Activity 2" aria-label="Copy heading and permalink for Activity 2">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Sensitivity at a point"><a href="#subsec-sensitivity-at-a-point" title="Copy heading and permalink for Subsection: Sensitivity at a point" aria-label="Copy heading and permalink for Subsection: Sensitivity at a point">🔗</a></div></section><section class="subsection" id="subsec-the-sign-of-the-sensitivity"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Activity 2"><a href="#subsec-sensitivity-at-a-point-11" title="Copy heading and permalink for Activity 2" aria-label="Copy heading and permalink for Activity 2">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Sensitivity at a point"><a href="#subsec-sensitivity-at-a-point" title="Copy heading and permalink for Subsection: Sensitivity at a point" aria-label="Copy heading and permalink for Subsection: Sensitivity at a point">🔗</a></div></section><section class="subsection" id="subsec-estimating-changes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Estimating changes</span>
+</h3>
+<div class="para logical" id="subsec-estimating-changes-2">
+<div class="para">Once we have the sensitivity at a point, we can use it to estimate how much the output will change in response to a small change in the input. For example, let’s assume we know that <span class="process-math">\(\eval{\DS\dv{L}{v}}_{v=50}=0.49\)</span> car lengths per mph, and suppose we want to estimate how the stopping distance will respond to a change in speed of <span class="process-math">\(\Delta v=0.5\)</span> mph. Since the sensitivity <span class="process-math">\(\DS\dv{L}{v}\)</span> is supposed to be the ratio of ‘infinitely small’ changes, we can write:</div>
+<div class="displaymath process-math" id="subsec-estimating-changes-2-5">
+\begin{equation*}
+\dfrac{\Delta L}{\Delta v} \approx \DS\dv{L}{v}
+\end{equation*}
+</div>
+<div class="para">Then we can rearrange the terms to get</div>
+<div class="displaymath process-math" id="subsec-estimating-changes-2-6">
+\begin{equation*}
+\Delta L \approx \DS\dv{L}{v}\cdot \Delta v\text{.}
+\end{equation*}
+</div>
+<div class="para">Substituting what we know, we have</div>
+<div class="displaymath process-math" id="subsec-estimating-changes-2-7">
+\begin{align*}
+\Delta L \amp \approx 0.49\cdot 0.5\\
+\amp = 0.245\text{ car lengths}
+\end{align*}
+</div>
+<div class="para">Hence if we increase the speed from <span class="process-math">\(50\)</span> mph to <span class="process-math">\(50.5\)</span> mph, we can estimate that the stopping distance will increase by approximately <span class="process-math">\(0.245\)</span> car lengths. We can of course check this by computing the actual change in stopping distance:</div>
+<div class="displaymath process-math" id="subsec-estimating-changes-2-11">
+\begin{align*}
+\Delta L \amp=L(50.5) - L(50)\\
+\amp = 16.24585 - 16\\
+\amp = 0.24585\text{ car lengths}
+\end{align*}
+</div>
+<div class="para">Notice that our estimate of <span class="process-math">\(0.245\)</span> car lengths is very close to the actual change of <span class="process-math">\(0.24585\)</span> car lengths. It may seem redundant to estimate the change when we can compute the actual change, but in many cases, we don’t have a formula for the function we’re interested in, such as when we have only collected data. In those cases, understanding how sensitivity lets us estimate change is useful for making predictions in how the output will respond to a change in input.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-estimating-changes-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="subsec-estimating-changes-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-estimating-changes-3-1-1">Suppose that our speed <em class="emphasis">decreases</em> from <span class="process-math">\(50\)</span> mph to <span class="process-math">\(49.2\)</span> mph. How much would we estimate the stopping distance to change? Would it increase or decrease? Use the sensitivity at <span class="process-math">\(v=50\)</span>to make your estimate. Then check your estimate by computing the actual change in stopping distance.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-estimating-changes-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activity 3"><a href="#subsec-estimating-changes-3" title="Copy heading and permalink for Activity 3" aria-label="Copy heading and permalink for Activity 3">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Estimating changes"><a href="#subsec-estimating-changes" title="Copy heading and permalink for Subsection: Estimating changes" aria-label="Copy heading and permalink for Subsection: Estimating changes">🔗</a></div></section><section class="subsection" id="subsec-the-sign-of-the-sensitivity"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The sign of the sensitivity</span>
 </h3>
 <div class="para" id="subsec-the-sign-of-the-sensitivity-2">We can gain important information by looking at the sign of the sensitivity. Suppose throughout that <span class="process-math">\(y\)</span> is a function of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-the-sign-of-the-sensitivity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -783,105 +813,188 @@ L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50\\
 </div>
 <div class="para" id="subsec-the-sign-of-the-sensitivity-9">Notice that the terms ‘increasing’ and ‘decreasing’ describe a <em class="emphasis">relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally ‘going up’ or ‘going down’ on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em class="emphasis">in response</em> to a change in the input. You’ll often hear the phrase ‘<span class="process-math">\(y\)</span> is increasing’, but it would be more careful to say ‘<span class="process-math">\(y\)</span> is an increasing function of <span class="process-math">\(x\)</span>’, since the increase in <span class="process-math">\(y\)</span> is tied to an increase in <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-the-sign-of-the-sensitivity-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: The sign of the sensitivity"><a href="#subsec-the-sign-of-the-sensitivity" title="Copy heading and permalink for Subsection: The sign of the sensitivity" aria-label="Copy heading and permalink for Subsection: The sign of the sensitivity">🔗</a></div></section><section class="exercises" id="sec-sensitivity-7"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: The sign of the sensitivity"><a href="#subsec-the-sign-of-the-sensitivity" title="Copy heading and permalink for Subsection: The sign of the sensitivity" aria-label="Copy heading and permalink for Subsection: The sign of the sensitivity">🔗</a></div></section><section class="exercises" id="sec-sensitivity-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="sec-sensitivity-7-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="introduction" id="sec-sensitivity-7-1-1"><div class="para" id="sec-sensitivity-7-1-1-1">Estimate <span class="process-math">\(\DS\dv{y}{x}\)</span> for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="sec-sensitivity-8-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-1-1"><div class="para" id="sec-sensitivity-8-1-1-1">Suppose <span class="process-math">\(y=3x-2\text{,}\)</span> so <span class="process-math">\(y\)</span> is a <dfn class="terminology">linear function</dfn> of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="sec-sensitivity-7-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-2-1-1">
-<span class="process-math">\(y=x^2\text{,}\)</span> at <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-sensitivity-8-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-1-2-1-1">Find the sensitivity of <span class="process-math">\(y\)</span> to various changes in <span class="process-math">\(x\)</span> by completing the following table.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x=a\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x=b\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Delta x\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Delta y\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\dfrac{\Delta y}{\Delta x}\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1.01\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.99\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#sec-sensitivity-8-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-1-3-1-1">What do you notice about the values you get for the sensitivity in each case?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#sec-sensitivity-7-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-3-1-1">
-<span class="process-math">\(y=x^3\text{,}\)</span> at <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#sec-sensitivity-8-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-1-4-1-1">What does <span class="process-math">\(\DS\dv{y}{x}\text{,}\)</span> the sensitivity of <span class="process-math">\(y\text{,}\)</span> seem to be at the point <span class="process-math">\(x=1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#sec-sensitivity-7-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-4-1-1">
-<span class="process-math">\(y=\sqrt{x}\text{,}\)</span> at <span class="process-math">\(x=9\)</span> and <span class="process-math">\(x=12\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#sec-sensitivity-8-1-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-sensitivity-8-1-5-1-1">What would be the sensitivity of <span class="process-math">\(y\)</span> at the point <span class="process-math">\(x=2\text{?}\)</span> Why?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#sec-sensitivity-7-1-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-5-1-1">
-<span class="process-math">\(y=\dfrac{1}{x}\text{,}\)</span> at <span class="process-math">\(x=3\)</span> and <span class="process-math">\(x=7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.d"><a href="#sec-sensitivity-8-1-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="sec-sensitivity-8-1-6-1-1">What can you conclude about the sensitivity of <span class="process-math">\(y=mx+b\)</span> at any point <span class="process-math">\(x=a\text{?}\)</span> Why?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 1.d"><a href="#sec-sensitivity-7-1-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-6-1-1">
-<span class="process-math">\(y=3x-2\text{,}\)</span> at <span class="process-math">\(x=5\)</span> and <span class="process-math">\(x=10\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 1.e"><a href="#sec-sensitivity-7-1-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-7-1-1">
-<span class="process-math">\(y=5\text{,}\)</span> at <span class="process-math">\(x=-6\)</span> and <span class="process-math">\(x=1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 1.f"><a href="#sec-sensitivity-7-1-7" title="Copy heading and permalink for Task 1.f" aria-label="Copy heading and permalink for Task 1.f">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-1-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="sec-sensitivity-7-1-8-1-1">
-<span class="process-math">\(y=x^2-5x+4\)</span> at <span class="process-math">\(x=-3\)</span> and <span class="process-math">\(x=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 1.g"><a href="#sec-sensitivity-7-1-8" title="Copy heading and permalink for Task 1.g" aria-label="Copy heading and permalink for Task 1.g">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#sec-sensitivity-7-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-7-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="introduction" id="sec-sensitivity-7-2-1"><div class="para" id="sec-sensitivity-7-2-1-1">In this exercise, you’ll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.e"><a href="#sec-sensitivity-8-1-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1"><a href="#sec-sensitivity-8-1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-2-1"><div class="para" id="sec-sensitivity-8-2-1-1">Suppose <span class="process-math">\(y=5\text{,}\)</span> so <span class="process-math">\(y\)</span> is a <dfn class="terminology">constant function</dfn> of <span class="process-math">\(x\text{.}\)</span> That is, no matter what the value of <span class="process-math">\(x\)</span> is, the value of <span class="process-math">\(y\)</span> is always <span class="process-math">\(5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="sec-sensitivity-7-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-sensitivity-7-2-2-1-1">
-<span class="process-math">\(\DS\dv{B}{P}\text{,}\)</span> where <span class="process-math">\(B=\)</span> the brightness of a lamp (measured in lumens) and <span class="process-math">\(P=\)</span> the electrical power supplied to the lamp (measured in watts)<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-sensitivity-8-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-2-2-1-1">What will <span class="process-math">\(\DS\dv{y}{x}\)</span> be at any point <span class="process-math">\(x=a\text{?}\)</span> Why?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#sec-sensitivity-7-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-sensitivity-7-2-3-1-1">
-<span class="process-math">\(\DS\dv{q}{p}\text{,}\)</span> where <span class="process-math">\(q=\)</span> the number of packages of gourmet coffee beans that are ordered by consumers and <span class="process-math">\(p=\)</span> the price (in dollars per package) of the coffee beans<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#sec-sensitivity-8-2-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-2-3-1-1">What does the graph of <span class="process-math">\(y=5\)</span> look like? How does this graph help you understand the sensitivity of <span class="process-math">\(y\)</span> to changes in <span class="process-math">\(x\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#sec-sensitivity-7-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-sensitivity-7-2-4-1-1">
-<span class="process-math">\(\DS\dv{T}{t}\text{,}\)</span> where <span class="process-math">\(T=\)</span> the temperature (in degrees Fahrenheit) of a baked potato and <span class="process-math">\(t=\)</span> the number of minutes elapsed since the potato was placed in the oven<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#sec-sensitivity-8-2-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-2-4-1-1">If we rewrite <span class="process-math">\(y\)</span> as <span class="process-math">\(0x+5\text{,}\)</span> how does this help you understand the sensitivity of <span class="process-math">\(y\)</span> to changes in <span class="process-math">\(x\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#sec-sensitivity-7-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-sensitivity-7-2-5-1-1">
-<span class="process-math">\(\DS\dv{t}{T}\text{,}\)</span> where <span class="process-math">\(t=\)</span> the number of minutes it takes to bake a potato and <span class="process-math">\(T=\)</span> the temperature (in degrees Fahrenheit) of the oven<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.c"><a href="#sec-sensitivity-8-2-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-sensitivity-8-2-5-1-1">If <span class="process-math">\(y=k\)</span> is a constant function of <span class="process-math">\(x\text{,}\)</span> where <span class="process-math">\(k\)</span> is any constant, what will the sensitivity of <span class="process-math">\(y\)</span> be at any point <span class="process-math">\(x=a\text{?}\)</span> Why?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#sec-sensitivity-7-2-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-2-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="sec-sensitivity-7-2-6-1-1">
-<span class="process-math">\(\DS\dv{C}{h}\text{,}\)</span> where <span class="process-math">\(C=\)</span> the number of calories in a candy bar and <span class="process-math">\(h=\)</span> the elevation (in feet) of the candy bar above sea level<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 2.e"><a href="#sec-sensitivity-7-2-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#sec-sensitivity-7-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-7-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="introduction" id="sec-sensitivity-7-3-1"><div class="para" id="sec-sensitivity-7-3-1-1">Suppose the temperature in the Pacific Ocean can be described by the function <span class="process-math">\(T(\ell)\text{,}\)</span> where <span class="process-math">\(T\)</span> is the temperature in degrees Celsius and <span class="process-math">\(\ell\)</span> is the latitude in degrees.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.d"><a href="#sec-sensitivity-8-2-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 2"><a href="#sec-sensitivity-8-2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-3-1"><div class="para" id="sec-sensitivity-8-3-1-1">Suppose <span class="process-math">\(y=x^2\text{,}\)</span> so <span class="process-math">\(y\)</span> is a <dfn class="terminology">quadratic function</dfn> of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="sec-sensitivity-7-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-sensitivity-7-3-2-1-1">Suppose that <span class="process-math">\(T(60)=10\text{.}\)</span> Explain what this means in context, including correct units.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-sensitivity-8-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-3-2-1-1">Estimate <span class="process-math">\(\DS\dv{y}{x}\)</span> at the point <span class="process-math">\(x=1\)</span> by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number does the sensitivity seem to be approaching?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.a"><a href="#sec-sensitivity-7-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-sensitivity-7-3-3-1-1">Suppose that <span class="process-math">\(\eval{\DS\dv{T}{\ell}}_{\ell=60}=-0.5\text{.}\)</span> Explain what this means in context, including correct units.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#sec-sensitivity-8-3-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-3-3-1-1">Repeat the above exercise to estimate <span class="process-math">\(\DS\dv{y}{x}\)</span> at the points <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=3\text{.}\)</span> What do you notice about the values you get for the sensitivity at these different points?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 3.b"><a href="#sec-sensitivity-7-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#sec-sensitivity-7-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-7-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="introduction" id="sec-sensitivity-7-4-1">
-<div class="para" id="sec-sensitivity-7-4-1-1">The graph below shows <span class="process-math">\(P(x)\text{,}\)</span> the profit (in thousands of dollars) earned by a company as a function of <span class="process-math">\(x\text{,}\)</span> the number of units produced (in hundreds of units).<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#sec-sensitivity-8-3-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-3-4-1-1">Without doing any calculations, what do you think the sensitivity of <span class="process-math">\(y=x^2\)</span> will be at the point <span class="process-math">\(x=0\text{?}\)</span> Why?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-sensitivity-7-4-1-2">(Insert graph: a curve that rises, flattens at a maximum, then decreases)<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.c"><a href="#sec-sensitivity-8-3-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-sensitivity-8-3-5-1-1">Conjecture a formula for <span class="process-math">\(\DS\dv{y}{x}\)</span> at any point <span class="process-math">\(x=a\text{.}\)</span> Why do you think this formula is correct?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.d"><a href="#sec-sensitivity-8-3-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3"><a href="#sec-sensitivity-8-3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-4"><h4 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extra practice.</span>
+</h4>
+<div class="introduction" id="sec-sensitivity-8-4-2"><div class="para" id="sec-sensitivity-8-4-2-1">Estimate <span class="process-math">\(\DS\dv{y}{x}\)</span> for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="sec-sensitivity-8-4-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-4-3-1-1">
+<span class="process-math">\(y=x^3\text{,}\)</span> at <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=-1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#sec-sensitivity-8-4-3" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-4-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-4-4-1-1">
+<span class="process-math">\(y=\sqrt{x}\text{,}\)</span> at <span class="process-math">\(x=9\)</span> and <span class="process-math">\(x=12\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#sec-sensitivity-8-4-4" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-4-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-4-5-1-1">
+<span class="process-math">\(y=\dfrac{1}{x}\text{,}\)</span> at <span class="process-math">\(x=3\)</span> and <span class="process-math">\(x=7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#sec-sensitivity-8-4-5" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-4-6"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-sensitivity-8-4-6-1-1">
+<span class="process-math">\(y=x^2-5x+4\text{,}\)</span> at <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.d"><a href="#sec-sensitivity-8-4-6" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4: Extra practice"><a href="#sec-sensitivity-8-4" title="Copy heading and permalink for Exercise 4: Extra practice" aria-label="Copy heading and permalink for Exercise 4: Extra practice">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-5-1"><div class="para" id="sec-sensitivity-8-5-1-1">In this exercise, you’ll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="sec-sensitivity-8-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-5-2-1-1">
+<span class="process-math">\(\DS\dv{B}{P}\text{,}\)</span> where <span class="process-math">\(B=\)</span> the brightness of a lamp (measured in lumens) and <span class="process-math">\(P=\)</span> the electrical power supplied to the lamp (measured in watts)<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a"><a href="#sec-sensitivity-8-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-5-3-1-1">
+<span class="process-math">\(\DS\dv{q}{p}\text{,}\)</span> where <span class="process-math">\(q=\)</span> the number of packages of gourmet coffee beans that are ordered by consumers and <span class="process-math">\(p=\)</span> the price (in dollars per package) of the coffee beans<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.b"><a href="#sec-sensitivity-8-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-5-4-1-1">
+<span class="process-math">\(\DS\dv{T}{t}\text{,}\)</span> where <span class="process-math">\(T=\)</span> the temperature (in degrees Fahrenheit) of a baked potato and <span class="process-math">\(t=\)</span> the number of minutes elapsed since the potato was placed in the oven<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c"><a href="#sec-sensitivity-8-5-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-sensitivity-8-5-5-1-1">
+<span class="process-math">\(\DS\dv{t}{T}\text{,}\)</span> where <span class="process-math">\(t=\)</span> the number of minutes it takes to bake a potato and <span class="process-math">\(T=\)</span> the temperature (in degrees Fahrenheit) of the oven<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.d"><a href="#sec-sensitivity-8-5-5" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-5-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="sec-sensitivity-8-5-6-1-1">
+<span class="process-math">\(\DS\dv{C}{h}\text{,}\)</span> where <span class="process-math">\(C=\)</span> the number of calories in a candy bar and <span class="process-math">\(h=\)</span> the elevation (in feet) of the candy bar above sea level<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.e"><a href="#sec-sensitivity-8-5-6" title="Copy heading and permalink for Task 5.e" aria-label="Copy heading and permalink for Task 5.e">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#sec-sensitivity-8-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-6-1"><div class="para" id="sec-sensitivity-8-6-1-1">Suppose the temperature in the Pacific Ocean can be described by the function <span class="process-math">\(T(\ell)\text{,}\)</span> where <span class="process-math">\(T\)</span> is the temperature in degrees Celsius and <span class="process-math">\(\ell\)</span> is the latitude in degrees.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="sec-sensitivity-8-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-6-2-1-1">Suppose that <span class="process-math">\(T(60)=10\text{.}\)</span> Explain what this means in context, including correct units.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.a"><a href="#sec-sensitivity-8-6-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-6-3-1-1">Suppose that we also know that <span class="process-math">\(\eval{\DS\dv{T}{\ell}}_{\ell=60}=-0.5\text{.}\)</span> Explain what this means in context, including correct units.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.b"><a href="#sec-sensitivity-8-6-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-6-4-1-1">Estimate <span class="process-math">\(T(62)\)</span> and <span class="process-math">\(T(59)\)</span> using the sensitivity at <span class="process-math">\(\ell=60\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.c"><a href="#sec-sensitivity-8-6-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 6"><a href="#sec-sensitivity-8-6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-7-1">
+<div class="para" id="sec-sensitivity-8-7-1-1">The graph below shows <span class="process-math">\(P(x)\text{,}\)</span> the profit (in thousands of dollars) earned by a company as a function of <span class="process-math">\(x\text{,}\)</span> the number of units produced (in hundreds of units).<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-sensitivity-8-7-1-2">(Insert graph: a curve that rises, flattens at a maximum, then decreases)<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="sec-sensitivity-7-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-sensitivity-7-4-2-1-1">What are the units of <span class="process-math">\(\DS\dv{P}{x}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-sensitivity-8-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-7-2-1-1">What are the units of <span class="process-math">\(\DS\dv{P}{x}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.a"><a href="#sec-sensitivity-7-4-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-sensitivity-7-4-3-1-1">At which values of <span class="process-math">\(x\)</span> does <span class="process-math">\(\DS\dv{P}{x}\)</span> appear to be positive? Explain how you can tell from the graph. What does this mean practically for the company?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.a"><a href="#sec-sensitivity-8-7-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-7-3-1-1">At which values of <span class="process-math">\(x\)</span> does <span class="process-math">\(\DS\dv{P}{x}\)</span> appear to be positive? Explain how you can tell from the graph. What does this mean practically for the company?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.b"><a href="#sec-sensitivity-7-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-sensitivity-7-4-4-1-1">At which values of <span class="process-math">\(x\)</span> does <span class="process-math">\(\DS\dv{P}{x}\)</span> appear to be negative? Explain how you can tell from the graph. What does this mean practically?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.b"><a href="#sec-sensitivity-8-7-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-7-4-1-1">At which values of <span class="process-math">\(x\)</span> does <span class="process-math">\(\DS\dv{P}{x}\)</span> appear to be negative? Explain how you can tell from the graph. What does this mean practically?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.c"><a href="#sec-sensitivity-7-4-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-4-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-sensitivity-7-4-5-1-1">Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is <span class="process-math">\(\DS\dv{P}{x}\)</span> at that point?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.c"><a href="#sec-sensitivity-8-7-4" title="Copy heading and permalink for Task 7.c" aria-label="Copy heading and permalink for Task 7.c">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-7-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-sensitivity-8-7-5-1-1">Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is <span class="process-math">\(\DS\dv{P}{x}\)</span> at that point?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 4.d"><a href="#sec-sensitivity-7-4-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 4"><a href="#sec-sensitivity-7-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-7-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="introduction" id="sec-sensitivity-7-5-1">
-<div class="para" id="sec-sensitivity-7-5-1-1">The following table shows the concentration <span class="process-math">\(C\)</span> of a certain drug in a patient’s bloodstream as a function of time <span class="process-math">\(t\text{.}\)</span> Here <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(C\)</span> is measured in milligrams per liter.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 7.d"><a href="#sec-sensitivity-8-7-5" title="Copy heading and permalink for Task 7.d" aria-label="Copy heading and permalink for Task 7.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 7"><a href="#sec-sensitivity-8-7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-sensitivity-8-8-1">
+<div class="para" id="sec-sensitivity-8-8-1-1">The following table shows the concentration <span class="process-math">\(C\)</span> of a certain drug in a patient’s bloodstream as a function of time <span class="process-math">\(t\text{.}\)</span> Here <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(C\)</span> is measured in milligrams per liter.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-sensitivity-7-5-1-2">(Insert table)<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-sensitivity-8-8-1-2">(Insert table)<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="sec-sensitivity-7-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-sensitivity-7-5-2-1-1">Estimate <span class="process-math">\(\eval{\DS\dv{C}{t}}_{t=3}\)</span> and explain its meaning in context, including correct units.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-sensitivity-8-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec-sensitivity-8-8-2-1-1">Estimate <span class="process-math">\(\eval{\DS\dv{C}{t}}_{t=3}\)</span> and explain its meaning in context, including correct units.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 5.a"><a href="#sec-sensitivity-7-5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-7-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-sensitivity-7-5-3-1-1">At what time <span class="process-math">\(t\)</span> do you expect <span class="process-math">\(\DS\dv{C}{t}\)</span> to be zero? What is the real-world significance of this time?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-7-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 8.a"><a href="#sec-sensitivity-8-8-2" title="Copy heading and permalink for Task 8.a" aria-label="Copy heading and permalink for Task 8.a">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-sensitivity-8-8-3-1-1">Estimate the concentration of the drug at <span class="process-math">\(t=3.25\)</span> hours.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 5.b"><a href="#sec-sensitivity-7-5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><div class="autopermalink" data-description="Exercise 5"><a href="#sec-sensitivity-7-5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div></article><div class="autopermalink" data-description="Exercises"><a href="#sec-sensitivity-7" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section 1.1: Sensitivity to change"><a href="#sec-sensitivity" title="Copy heading and permalink for Section 1.1: Sensitivity to change" aria-label="Copy heading and permalink for Section 1.1: Sensitivity to change">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Task 8.b"><a href="#sec-sensitivity-8-8-3" title="Copy heading and permalink for Task 8.b" aria-label="Copy heading and permalink for Task 8.b">🔗</a></div></article><article class="task exercise-like" id="sec-sensitivity-8-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-sensitivity-8-8-4-1-1">At what time <span class="process-math">\(t\)</span> do you expect <span class="process-math">\(\DS\dv{C}{t}\)</span> to be zero? What is the real-world significance of this time?<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.c"><a href="#sec-sensitivity-8-8-4" title="Copy heading and permalink for Task 8.c" aria-label="Copy heading and permalink for Task 8.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 8"><a href="#sec-sensitivity-8-8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="sec-sensitivity-8-9"><h4 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="sec-sensitivity-8-9-1-1">How does the sensitivity of <span class="process-math">\(y=f(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> compare to its sensitivity from <span class="process-math">\(x=b\)</span> to <span class="process-math">\(x=a\text{?}\)</span> Explain.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 9"><a href="#sec-sensitivity-8-9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div></article><div class="autopermalink" data-description="Exercises"><a href="#sec-sensitivity-8" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section 1.1: Sensitivity to change"><a href="#sec-sensitivity" title="Copy heading and permalink for Section 1.1: Sensitivity to change" aria-label="Copy heading and permalink for Section 1.1: Sensitivity to change">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-differentiation.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-the-derivative.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
