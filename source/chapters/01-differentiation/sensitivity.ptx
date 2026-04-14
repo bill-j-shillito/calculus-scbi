@@ -73,8 +73,8 @@
 		</p>
 	</introduction>
 	
-	<subsection xml:id="subsec-sensitivity-on-an-interval">
-		<title>Sensitivity on an interval</title>
+	<subsection xml:id="subsec-sensitivity-between-two-points">
+		<title>Sensitivity between two points</title>
 		<aside>
 			<p>
 				Based on data from <url href="https://arachnoid.com/braking_physics/index.html">The Physics Behind Stopping a Car</url> by P. Lutus.
@@ -128,11 +128,11 @@
 			That is, each extra mile per hour of speed means it takes another half of a car length to stop. We can call this the <term>sensitivity</term> of the stopping distance to changes in speed.
 		</p>
 		<definition>
-			<title>Sensitivity on an interval</title>
+			<title>Sensitivity between two points</title>
 
 			<statement>
 				<p>
-					If <m>y=f(x)</m>, then the <term>sensitivity</term> of <m>f</m> on the interval <m>a\le x\le b</m> is defined as
+					If <m>y=f(x)</m>, then the <term>sensitivity</term> of <m>f</m> between the points <m>x=a</m> and <m>x=b</m> is defined as
 					<me>
 						\frac{\Delta y}{\Delta x} = \frac{f(b) - f(a)}{b - a}
 					</me>.
@@ -241,7 +241,7 @@
 			(Insert figure)
 		</p>
 		<p>
-			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>. We will call this the <term>sensitivity</term> at the single point where <m>v=50</m> miles per hour.
+			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>. We will call this the <term>sensitivity</term> at the single point where <m>v=50</m> miles per hour. We'll soon be able to show that when <m>v=50</m> mph, the actual sensitivity is exactly <m>0.49</m> car lengths per mph.
 		</p>
 		<definition xml:id="def-sensitivity-at-a-point">
 			<title>Sensitivity at a point</title>
@@ -262,18 +262,45 @@
 			</statement>
 		</definition>
 		<p>
-			We'll soon be able to show that when <m>v=50</m> mph, the actual sensitivity is exactly <m>0.49</m> car lengths per mph.Another way to write this is
-			<me>
-				\dd{L}=0.49\dd{v}
-			</me>; that is, an infinitesimal change in speed corresponds to an infinitesimal change in stopping distance that is <m>0.49</m> times as large.
-		</p>
-		<p>
 			Now, you might be a bit skeptical of this idea of using <sq>infinitely small</sq> changes. If so, you're in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on <mdash/> just how small is <sq>infinitely small</sq> anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.
 		</p>
 		<activity>
 			<statement>
 				<p>
 					Use this same process to estimate <m>\eval{\DS\dv{L}{v}}_{v=30}</m> and <m>\eval{\DS\dv{L}{v}}_{v=70}</m>. How does the sensitivity of stopping distance to changes in speed compare at these different speeds?
+				</p>
+			</statement>
+		</activity>
+	</subsection>
+
+	<subsection xml:id="subsec-estimating-changes">
+		<title>Estimating changes</title>
+		<p>
+			Once we have the sensitivity at a point, we can use it to estimate how much the output will change in response to a small change in the input. For example, let's assume we know that <m>\eval{\DS\dv{L}{v}}_{v=50}=0.49</m> car lengths per mph, and suppose we want to estimate how the stopping distance will respond to a change in speed of <m>\Delta v=0.5</m> mph. Since the sensitivity <m>\DS\dv{L}{v}</m> is supposed to be the ratio of <sq>infinitely small</sq> changes, we can write:
+			<me>
+				\dfrac{\Delta L}{\Delta v} \approx \DS\dv{L}{v}
+			</me>
+			Then we can rearrange the terms to get
+			<me>
+				\Delta L \approx \DS\dv{L}{v}\cdot \Delta v
+			</me>.
+			Substituting what we know, we have
+			<md>
+				<mrow>\Delta L \amp \approx 0.49\cdot 0.5</mrow>
+				<mrow>\amp = 0.245\text{ car lengths}</mrow>.
+			</md>
+			Hence if we increase the speed from <m>50</m> mph to <m>50.5</m> mph, we can estimate that the stopping distance will increase by approximately <m>0.245</m> car lengths. We can of course check this by computing the actual change in stopping distance:
+			<md>
+				<mrow>\Delta L \amp=L(50.5) - L(50)</mrow>
+				<mrow>\amp = 16.24585 - 16</mrow>
+				<mrow>\amp = 0.24585\text{ car lengths}</mrow>.
+			</md>
+			Notice that our estimate of <m>0.245</m> car lengths is very close to the actual change of <m>0.24585</m> car lengths. It may seem redundant to estimate the change when we can compute the actual change, but in many cases, we don't have a formula for the function we're interested in, such as when we have only collected data. In those cases, understanding how sensitivity lets us estimate change is useful for making predictions in how the output will respond to a change in input.
+		</p>
+		<activity>
+			<statement>
+				<p>
+					Suppose that our speed <em>decreases</em> from <m>50</m> mph to <m>49.2</m> mph. How much would we estimate the stopping distance to change? Would it increase or decrease? Use the sensitivity at <m>v=50</m>to make your estimate. Then check your estimate by computing the actual change in stopping distance.
 				</p>
 			</statement>
 		</activity>
@@ -334,20 +361,163 @@
 		<exercise>
 			<introduction>
 				<p>
-					Estimate <m>\DS\dv{y}{x}</m> for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?
+					Suppose <m>y=3x-2</m>, so <m>y</m> is a <term>linear function</term> of <m>x</m>.
 				</p>
 			</introduction>
 			<task>
 				<statement>
 					<p>
-						<m>y=x^2</m>, at <m>x=1</m> and <m>x=2</m>
+						Find the sensitivity of <m>y</m> to various changes in <m>x</m> by completing the following table.
+					</p>
+					<tabular halign="center">
+					<row header="yes" bottom="minor">
+						<cell><m>x=a</m></cell>
+						<cell><m>x=b</m></cell>
+						<cell><m>\Delta x</m></cell>
+						<cell><m>\Delta y</m></cell>
+						<cell><m>\dfrac{\Delta y}{\Delta x}</m></cell>
+					</row>
+					<row>
+						<cell><m>1</m></cell>
+						<cell><m>2</m></cell>
+						<cell></cell>
+						<cell></cell>
+						<cell></cell>
+					</row>
+					<row>
+						<cell><m>1</m></cell>
+						<cell><m>1.1</m></cell>
+						<cell></cell>
+						<cell></cell>
+						<cell></cell>
+					</row>
+					<row>
+						<cell><m>1</m></cell>
+						<cell><m>1.01</m></cell>
+						<cell></cell>
+						<cell></cell>
+						<cell></cell>
+					</row>
+					<row>
+						<cell><m>1</m></cell>
+						<cell><m>0.99</m></cell>
+						<cell></cell>
+						<cell></cell>
+						<cell></cell>
+					</row>
+					</tabular>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						What do you notice about the values you get for the sensitivity in each case?
 					</p>
 				</statement>
 			</task>
 			<task>
 				<statement>
 					<p>
-						<m>y=x^3</m>, at <m>x=-2</m> and <m>x=2</m>
+						What does <m>\DS\dv{y}{x}</m>, the sensitivity of <m>y</m>, seem to be at the point <m>x=1</m>?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						What would be the sensitivity of <m>y</m> at the point <m>x=2</m>? Why? 
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						What can you conclude about the sensitivity of <m>y=mx+b</m> at any point <m>x=a</m>? Why?
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					Suppose <m>y=5</m>, so <m>y</m> is a <term>constant function</term> of <m>x</m>. That is, no matter what the value of <m>x</m> is, the value of <m>y</m> is always <m>5</m>.
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						What will <m>\DS\dv{y}{x}</m> be at any point <m>x=a</m>? Why?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						What does the graph of <m>y=5</m> look like? How does this graph help you understand the sensitivity of <m>y</m> to changes in <m>x</m>?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						If we rewrite <m>y</m> as <m>0x+5</m>, how does this help you understand the sensitivity of <m>y</m> to changes in <m>x</m>?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						If <m>y=k</m> is a constant function of <m>x</m>, where <m>k</m> is any constant, what will the sensitivity of <m>y</m> be at any point <m>x=a</m>? Why?
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					Suppose <m>y=x^2</m>, so <m>y</m> is a <term>quadratic function</term> of <m>x</m>.
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						Estimate <m>\DS\dv{y}{x}</m> at the point <m>x=1</m> by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number does the sensitivity seem to be approaching?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Repeat the above exercise to estimate <m>\DS\dv{y}{x}</m> at the points <m>x=2</m> and <m>x=3</m>. What do you notice about the values you get for the sensitivity at these different points?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Without doing any calculations, what do you think the sensitivity of <m>y=x^2</m> will be at the point <m>x=0</m>? Why?
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Conjecture a formula for <m>\DS\dv{y}{x}</m> at any point <m>x=a</m>. Why do you think this formula is correct?
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<title>Extra practice</title>
+			<introduction>
+				<p>
+					Estimate <m>\DS\dv{y}{x}</m> for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						<m>y=x^3</m>, at <m>x=-2</m> and <m>x=-1</m>
 					</p>
 				</statement>
 			</task>
@@ -368,21 +538,7 @@
 			<task>
 				<statement>
 					<p>
-						<m>y=3x-2</m>, at <m>x=5</m> and <m>x=10</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=5</m>, at <m>x=-6</m> and <m>x=1</m>
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>y=x^2-5x+4</m> at <m>x=-3</m> and <m>x=0</m>
+						<m>y=x^2-5x+4</m>, at <m>x=1</m> and <m>x=4</m>
 					</p>
 				</statement>
 			</task>
@@ -430,7 +586,6 @@
 			</task>
 		</exercise>
 		<exercise>
-			<!-- An exercise where the student has to use the "solved-for" differential to estimate the actual change given the derivative, but using a real-world situation we haven't used yet-->
 			<introduction>
 				<p>
 					Suppose the temperature in the Pacific Ocean can be described by the function <m>T(\ell)</m>, where <m>T</m> is the temperature in degrees Celsius and <m>\ell</m> is the latitude in degrees.
@@ -446,7 +601,14 @@
 			<task>
 				<statement>
 					<p>
-						Suppose that <m>\eval{\DS\dv{T}{\ell}}_{\ell=60}=-0.5</m>. Explain what this means in context, including correct units.
+						Suppose that we also know that <m>\eval{\DS\dv{T}{\ell}}_{\ell=60}=-0.5</m>. Explain what this means in context, including correct units.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Estimate <m>T(62)</m> and <m>T(59)</m> using the sensitivity at <m>\ell=60</m>.
 					</p>
 				</statement>
 			</task>
@@ -513,52 +675,25 @@
 			<task>
 				<statement>
 					<p>
+						Estimate the concentration of the drug at <m>t=3.25</m> hours.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
 						At what time <m>t</m> do you expect <m>\DS\dv{C}{t}</m> to be zero? What is the real-world significance of this time?
 					</p>
 				</statement>
 			</task>
 		</exercise>
-		<!-- <exercise>
+		<exercise>
 			<statement>
 				<p>
-					The figure below shows the graphs of both a function <m>f(x)</m> and its derivative <m>f'(x)</m>. Which curve is which? Explain how you can tell.
-				</p>
-				<p>
-					(Insert figure)
+					How does the sensitivity of <m>y=f(x)</m> from <m>x=a</m> to <m>x=b</m> compare to its sensitivity from <m>x=b</m> to <m>x=a</m>? Explain.
 				</p>
 			</statement>
 		</exercise>
-		<exercise>
-			<introduction>
-				<p>
-					Let <m>g</m> be a function whose derivative <m>g'</m> is given by the graph below.
-				</p>
-				<p>
-					(Insert figure)
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						Where is <m>g</m> an increasing function of <m>x</m>? Explain.
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						Where is <m>g</m> a decreasing function of <m>x</m>? Explain.
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						Suppose we know that <m>g(5)=10</m>. What can you say about the value of <m>g(5.5)</m>? What about the value of <m>g(4.5)</m>? Explain your reasoning.
-					</p>
-				</statement>
-			</task>
-		</exercise> -->
 	</exercises>
 </section>
 
