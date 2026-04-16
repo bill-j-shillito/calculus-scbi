@@ -6,17 +6,17 @@
 		<ol>
 			<li>
 				<p>
-					Measure a function's responsiveness to small changes using differentials.
+					Measure a function's responsiveness to small changes using ratios.
 				</p>
 			</li>
 			<li>
 				<p>
-					Interpret the derivative as a ratio of differentials to analyze behavior.
+					Visualize the sensitivity of a function as a ratio of differentials.
 				</p>
 			</li>
 			<li>
 				<p>
-					Use the sign of a derivative to identify increasing and decreasing intervals.
+					Use the sign and value of the sensitivity to estimate changes in the dependent variable.
 				</p>
 			</li>
 		</ol>
@@ -81,7 +81,7 @@
 			</p>
 		</aside>
 		<p>
-			When driving a car, the distance required to stop depends on the speed of the vehicle. A simple empirical model relates the stopping distance <m>L</m> (measured in car lengths, assuming an average car length of <m>14.7</m> feet) to the speed <m>v</m> (measured in miles per hour) by the formula
+			When driving a car, the distance required to stop depends on the speed of the vehicle. If <m>L</m> is the stopping distance (measured in car lengths, assuming an average car length of <m>14.7</m> feet), and <m>v</m> is the speed (measured in miles per hour), then the relationship between <m>L</m> and <m>v</m> can be modeled by the formula
 			<me>
 				L = 0.0034v^2 + 0.15v
 			</me>.
@@ -104,12 +104,26 @@
 			</md>,
 			so the model predicts a stopping distance of <m>16</m> car lengths (or approximately <m>235.2</m> feet).
 		</p>
+		<image width="75%">
+			<prefigure label="stopping-distance" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<point p="(a,f(a))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
 		<p>
 			Now, we might wonder, if we were to change the speed, how much would the stopping distance change? For example, suppose the speed increases by five miles per hour, that is,
 			<md>
 				<mrow>\Delta v \amp = v\tsub{final} - v\tsub{init}</mrow>
 				<mrow>\amp = 55 - 50</mrow>
-				<mrow>\amp = 5</mrow>
+				<mrow>\amp = 5 \text{ mph}</mrow>
 			</md>.
 			
 			Then the change in stopping distance would be
@@ -125,7 +139,7 @@
 				<mrow>\amp = \frac{2.535\text{ car lengths}}{5\text{ mph}}</mrow>
 				<mrow>\amp = 0.507\text{ car lengths per mph}</mrow>
 			</md>.
-			That is, each extra mile per hour of speed means it takes another half of a car length to stop. We can call this the <term>sensitivity</term> of the stopping distance to changes in speed.
+			That is, an extra mile per hour of speed means it takes another half of a car length to stop. We can call this the <term>sensitivity</term> of the stopping distance to the given change in speed.
 		</p>
 		<definition>
 			<title>Sensitivity between two points</title>
@@ -154,7 +168,7 @@
 			</p>
 		</aside>
 		<image width="75%">
-			<prefigure label="stopping-distance" xmlns="https://prefigure.org">
+			<prefigure label="stopping-distance-sensitivity-interval" xmlns="https://prefigure.org">
 				<diagram dimensions="(300,300)" margins="5">
 				<definition>f(x)=0.0034*x^2+0.15*x</definition>
 				<definition>a = 50</definition>
@@ -171,17 +185,17 @@
 			</prefigure>
 		</image>
 		<p>
-			Notice that the sensitivity we've calculated is the <em>slope</em> of the line connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
+			Notice that the sensitivity we've calculated is the <em>slope</em> of the line segment connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
 		</p>
 	</subsection>
 
 	<subsection xml:id="subsec-sensitivity-at-a-point">
 		<title>Sensitivity at a point</title>
 		<p>
-			Our calculation of the sensitivity above was somewhat coarse. Over an increase of five miles per hour, the graph is not perfectly straight but gets gradually steeper as we go, so the sensitivity was gradually changing. In other words, our calculation mixes together several sensitivities rather than capturing the sensitivity <em>at</em> <m>50</m> miles per hour.
+			Our calculation of the sensitivity above was somewhat coarse: the graph of <m>L(v)</m> is curved, and over an increase of five miles per hour, the slope gets gradually steeper as we go. In other words, our calculation seems to mix together several sensitivities.
 		</p>
 		<p>
-			If we want a more precise measurement, a natural idea is to look at smaller changes in speed. Over smaller and smaller changes, the graph looks more and more like a straight line, so the slope between the two points gives a better estimate of the sensitivity at that speed. Here's what happens if we use a change in speed of <m>\Delta v=0.1</m> mph:
+			If we want a more fine-grained measurement, a natural idea is to look at smaller changes in speed. Here's what happens if we use a change in speed of <m>\Delta v=0.1</m> mph:
 			<md>
 				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(50.1) - L(50)}{50.1-50}</mrow>
 				<mrow>\amp = \frac{0.049034\text{ car lengths}}{0.1\text{ mph}}</mrow>
@@ -191,7 +205,7 @@
 		<activity>
 			<introduction>
 				<p>
-					Estimate the sensitivity of the stopping distance using the following values of <m>\Delta v</m> (comparing with a speed of <m>v\tsub{init}=50</m> mph). What do you notice about the values you get?
+					Estimate the sensitivity of the stopping distance to the following changes <m>\Delta v</m> (assuming an initial speed of <m>v\tsub{init}=50</m> mph). What do you notice about the values you get?
 				</p>
 			</introduction>
 			<task>
@@ -231,17 +245,30 @@
 			</task>
 		</activity>
 		<p>
-			You should have noticed in the previous activity that as the change in speed gets smaller, our estimated sensitivity approaches a particular value, which seems to be around <m>0.49</m> car lengths per mph. This is similar to what you saw in the previous section, when the circumference of the circle approached <m>2\pi</m> more and more closely as we made better and better approximations.
-		</p>
-		
-		<p>
-			Unfortunately, these are still approximations of the sensitivity. However, if we imagine zooming in <sq>infinitely close</sq> to the point <m>(50,16)</m>, we might imagine that the graph of <m>L(v)</m> would be perfectly straight at that point. So if we could somehow choose two points that are <sq>infinitely close</sq> to each other, then the slope of the line between these two points would be exact sensitivity.
+			Over smaller and smaller changes, the graph looks more and more like a straight line, and the slope between the two points appears to approach a particular value, which seems to be around <m>0.49</m> car lengths per mph. (We'll soon learn how to find this value exactly, without having to do so many calculations.)
 		</p>
 		<p>
-			(Insert figure)
+			Now, let's ask a bold question: what if we could zoom in <sq>infinitely close</sq> to the point <m>(50,16)</m>?
 		</p>
 		<p>
-			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>. We will call this the <term>sensitivity</term> at the single point where <m>v=50</m> miles per hour. We'll soon be able to show that when <m>v=50</m> mph, the actual sensitivity is exactly <m>0.49</m> car lengths per mph.
+			If we could do this, we might imagine that the graph of <m>L(v)</m> would be indistinguishable from a perfectly straight line at that point. So if we could somehow choose two points that are <sq>infinitely close</sq> to each other, then the ratio of the infinitesimal (infinitely small) changes would be the slope of that line:
+		</p>
+		<image width="75%">
+			<prefigure label="stopping-distance-sensitivity-point" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<point p="(a,f(a))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
+		<p>
+			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>. We will call this the <term>sensitivity</term> <em>at the single point</em> where <m>v=50</m> miles per hour.
 		</p>
 		<definition xml:id="def-sensitivity-at-a-point">
 			<title>Sensitivity at a point</title>
@@ -273,88 +300,68 @@
 		</activity>
 	</subsection>
 
-	<subsection xml:id="subsec-estimating-changes">
-		<title>Estimating changes</title>
+	<subsection xml:id="subsec-interpreting-sensitivity">
+		<title>Interpreting sensitivity</title>
 		<p>
-			Once we have the sensitivity at a point, we can use it to estimate how much the output will change in response to a small change in the input. For example, let's assume we know that <m>\eval{\DS\dv{L}{v}}_{v=50}=0.49</m> car lengths per mph, and suppose we want to estimate how the stopping distance will respond to a change in speed of <m>\Delta v=0.5</m> mph. Since the sensitivity <m>\DS\dv{L}{v}</m> is supposed to be the ratio of <sq>infinitely small</sq> changes, we can write:
+			Let's look at another example. Suppose the following graph shows <m>R</m>, the revenue earned (in thousands of dollars) from selling a product, as a function of <m>p</m>, the price charged (in dollars):
+		</p>
+		<image width="75%">
+			<prefigure label="revenue-price" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=x*(16-x)</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-5,-10,21,80)">
+					<grid-axes xlabel="p" ylabel="R(p)"/>
+					<graph at="graph" function="f" domain="(0,16)"/>
+					<point p="(a,f(a))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
+		<p>
+			Even though we don't have an explicit formula for <m>R(p)</m>, we can still determine the sign of the sensitivity <m>\DS\dv{R}{p}</m> by looking at the slope of the graph at each point:
+		</p>
+		<ul>
+			<li>
+				<p>
+					On the left side of the graph (when <m>p \lt 8</m>), the sensitivity <m>\DS\dv{R}{p}</m> is positive. This means that increasing the price would lead to an increase in revenue, and decreasing the price would lead to a decrease in revenue.
+				</p>
+			</li>
+			<li>
+				<p>
+					On the right side of the graph (when <m>p \gt 8</m>), the sensitivity <m>\DS\dv{R}{p}</m> is negative. This means that increasing the price would lead to a <em>decrease</em> in revenue, and decreasing the price would lead to an increase in revenue.
+				</p>
+			</li>
+		</ul>
+
+		<p>
+			So looking at the <em>sign</em> of the sensitivity can tell us the <em>direction</em> in which our function responds to changes. We can also use it to tell <em>how much</em> the revenue will change to a small change in price. For example, suppose that at a price of $10, the sensitivity is <me>\eval{\DS\dv{R}{p}}_{p=10} = -4\text{ thousand dollars earned per dollar charged}</me>.
+			Now suppose we want to raise the price from $10 to $10.50. Since the sensitivity <m>\DS\dv{R}{p}</m> is supposed to be the ratio of <sq>infinitely small</sq> changes, we can write:
 			<me>
-				\dfrac{\Delta L}{\Delta v} \approx \DS\dv{L}{v}
+				\dfrac{\Delta R}{\Delta p} \approx \DS\dv{R}{p}
 			</me>
 			Then we can rearrange the terms to get
 			<me>
-				\Delta L \approx \DS\dv{L}{v}\cdot \Delta v
+				\Delta R \approx \DS\dv{R}{p}\cdot \Delta p
 			</me>.
 			Substituting what we know, we have
 			<md>
-				<mrow>\Delta L \amp \approx 0.49\cdot 0.5</mrow>
-				<mrow>\amp = 0.245\text{ car lengths}</mrow>.
+				<mrow>\Delta R \amp \approx -4\cdot 0.5</mrow>
+				<mrow>\amp = -2\text{ thousand dollars}</mrow>.
 			</md>
-			Hence if we increase the speed from <m>50</m> mph to <m>50.5</m> mph, we can estimate that the stopping distance will increase by approximately <m>0.245</m> car lengths. We can of course check this by computing the actual change in stopping distance:
-			<md>
-				<mrow>\Delta L \amp=L(50.5) - L(50)</mrow>
-				<mrow>\amp = 16.24585 - 16</mrow>
-				<mrow>\amp = 0.24585\text{ car lengths}</mrow>.
-			</md>
-			Notice that our estimate of <m>0.245</m> car lengths is very close to the actual change of <m>0.24585</m> car lengths. It may seem redundant to estimate the change when we can compute the actual change, but in many cases, we don't have a formula for the function we're interested in, such as when we have only collected data. In those cases, understanding how sensitivity lets us estimate change is useful for making predictions in how the output will respond to a change in input.
+			Hence if we increase the price from $10 to $10.50, we can estimate that the revenue will decrease by approximately $2,000.
+		</p>
+		<p>
+			Again, notice that we were able to make this estimation without having an explicit formula for <m>R(p)</m>. In many cases, we don't have a formula for the function we're interested in, such as when our model is based on data. In those cases, understanding how sensitivity lets us estimate change is useful for making predictions in how the output will respond to a change in input.
 		</p>
 		<activity>
 			<statement>
 				<p>
-					Suppose that our speed <em>decreases</em> from <m>50</m> mph to <m>49.2</m> mph. How much would we estimate the stopping distance to change? Would it increase or decrease? Use the sensitivity at <m>v=50</m>to make your estimate. Then check your estimate by computing the actual change in stopping distance.
+					Suppose that we decide to <em>decrease</em> the price from $10 to $9.50. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <m>p=10</m> to justify your answer.
 				</p>
 			</statement>
 		</activity>
-	</subsection>
-
-	<subsection xml:id="subsec-the-sign-of-the-sensitivity">
-		<title>The sign of the sensitivity</title>
-		<p>
-			We can gain important information by looking at the sign of the sensitivity. Suppose throughout that <m>y</m> is a function of <m>x</m>.
-		</p>
-		<ul>
-			<li>
-				<p>
-					If <m>\DS\dv{y}{x} \gt 0</m> throughout some interval <m>a\le x\le b</m>, then if we increase the value of <m>x</m>, the value of <m>y</m> will also increase. (Likewise, if we <em>decrease</em> the value of <m>x</m>, the value of <m>y</m> will also decrease.) Thus we say that <m>y</m> is an <term>increasing</term> function of <m>x</m> on that interval.
-				</p>
-			</li>
-			<li>
-				<p>
-					If <m>\DS\dv{y}{x} \lt 0</m> throughout some interval <m>a\le x\le b</m>, then if we increase the value of <m>x</m>, the value of <m>y</m> will decrease, and vice versa. Thus we say that <m>y</m> is a <term>decreasing</term> function of <m>x</m> on that interval.
-				</p>
-			</li>
-		</ul>
-		<p>
-			This interpretation is especially useful when the independent variable is time, since it allows us to determine whether a particular quantity is increasing or decreasing as time passes. For example, suppose the following graph shows <m>h</m>, the height (in feet) of a ball thrown into the air, as a function of <m>t</m>, the time elapsed in seconds:
-		</p>
-		<p>
-			(Insert figure showing a quadratic position function)
-		</p>
-		<p>
-			As we move from left to right on the graph, the slope <m>\DS\dv{h}{t}</m> of the graph changes:
-		</p>
-		<ul>
-			<li>
-				<p>
-					At first, <m>\DS\dv{h}{t}</m> is positive, which means the ball is rising.
-				</p>
-			</li>
-			<li>
-				<p>
-					At the top of the curve, <m>\DS\dv{h}{t}</m> is zero, which means the ball is momentarily stationary at the highest point of its arc.
-				</p>
-			</li>
-			<li>
-				<p>
-					After that, <m>\DS\dv{h}{t}</m> is negative, which means the ball is falling.
-				</p>
-			</li>
-		</ul>
-		<p>
-			Thus, when the independent variable is time, we can interpret the sensitivity as a <term>rate of change</term>; in this case, <m>\DS\dv{h}{t}</m> tells us the rate, in feet per second, at which the height of the ball is changing at any given moment.
-		</p>
-		<p>
-			Notice that the terms <sq>increasing</sq> and <sq>decreasing</sq> describe a <em>relationship</em> between two variables. They do not mean that the output (the dependent variable) is literally <sq>going up</sq> or <sq>going down</sq> on its own. When the independent variable is time, this interpretation can feel natural, since time always moves forward and the dependent variable may change as time passes. But when the independent variable is something else, such as speed, neither variable may actually be changing at a given moment; rather, the output increases or decreases <em>in response</em> to a change in the input. You'll often hear the phrase <sq><m>y</m> is increasing</sq>, but it would be more careful to say <sq><m>y</m> is an increasing function of <m>x</m></sq>, since the increase in <m>y</m> is tied to an increase in <m>x</m>.
-		</p>
 	</subsection>
 
 	<exercises>
@@ -370,41 +377,41 @@
 						Find the sensitivity of <m>y</m> to various changes in <m>x</m> by completing the following table.
 					</p>
 					<tabular halign="center">
-					<row header="yes" bottom="minor">
-						<cell><m>x=a</m></cell>
-						<cell><m>x=b</m></cell>
-						<cell><m>\Delta x</m></cell>
-						<cell><m>\Delta y</m></cell>
-						<cell><m>\dfrac{\Delta y}{\Delta x}</m></cell>
-					</row>
-					<row>
-						<cell><m>1</m></cell>
-						<cell><m>2</m></cell>
-						<cell></cell>
-						<cell></cell>
-						<cell></cell>
-					</row>
-					<row>
-						<cell><m>1</m></cell>
-						<cell><m>1.1</m></cell>
-						<cell></cell>
-						<cell></cell>
-						<cell></cell>
-					</row>
-					<row>
-						<cell><m>1</m></cell>
-						<cell><m>1.01</m></cell>
-						<cell></cell>
-						<cell></cell>
-						<cell></cell>
-					</row>
-					<row>
-						<cell><m>1</m></cell>
-						<cell><m>0.99</m></cell>
-						<cell></cell>
-						<cell></cell>
-						<cell></cell>
-					</row>
+						<row header="yes" bottom="minor">
+							<cell><m>x=a</m></cell>
+							<cell><m>x=b</m></cell>
+							<cell><m>\Delta x</m></cell>
+							<cell><m>\Delta y</m></cell>
+							<cell><m>\dfrac{\Delta y}{\Delta x}</m></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell><m>2</m></cell>
+							<cell></cell>
+							<cell></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell><m>1.1</m></cell>
+							<cell></cell>
+							<cell></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell><m>1.01</m></cell>
+							<cell></cell>
+							<cell></cell>
+							<cell></cell>
+						</row>
+						<row>
+							<cell><m>1</m></cell>
+							<cell><m>0.99</m></cell>
+							<cell></cell>
+							<cell></cell>
+							<cell></cell>
+						</row>
 					</tabular>
 				</statement>
 			</task>
@@ -566,14 +573,14 @@
 			<task>
 				<statement>
 					<p>
-						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the number of minutes elapsed since the potato was placed in the oven
+						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the number of minutes for which the potato is left to bake in the oven
 					</p>
 				</statement>
 			</task>
 			<task>
 				<statement>
 					<p>
-						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the number of minutes it takes to bake a potato and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
+						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
 					</p>
 				</statement>
 			</task>
@@ -616,13 +623,29 @@
 		<exercise>
 			<introduction>
 				<p>
-				The graph below shows <m>P(x)</m>, the profit (in thousands of dollars) earned by a company as a function of <m>x</m>, the number of units produced (in hundreds of units).
+				The profit earned by a company can be defined as the revenue (the money it brings in) minus the costs (the money it spends). The graph below shows <m>P(x)</m>, the profit (in thousands of dollars) earned by a company as a function of <m>x</m>, the number of units produced (in hundreds of units).
 				</p>
-				<p>
-				(Insert graph: a curve that rises, flattens at a maximum, then decreases)
-				</p>
+				<image width="75%">
+					<prefigure label="profit-units" xmlns="https://prefigure.org">
+						<diagram dimensions="(300,300)" margins="5">
+						<definition>P(x)=-0.5*x^2+15*x-40</definition>
+						<coordinates bbox="(-5,-50,32,120)">
+							<grid-axes xlabel="x" ylabel="P(x)"/>
+							<graph at="graph" function="P" domain="(0,30)"/>
+						</coordinates>
+						</diagram>
+					</prefigure>
+				</image>
 			</introduction>
 
+			<task>
+				<statement>
+				<p>
+					For which values of <m>x</m> does <m>P(x)</m> appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?
+				</p>
+				</statement>
+			</task>
+			
 			<task>
 				<statement>
 					<p>
@@ -634,15 +657,7 @@
 			<task>
 				<statement>
 				<p>
-					At which values of <m>x</m> does <m>\DS\dv{P}{x}</m> appear to be positive? Explain how you can tell from the graph. What does this mean practically for the company?
-				</p>
-				</statement>
-			</task>
-
-			<task>
-				<statement>
-				<p>
-					At which values of <m>x</m> does <m>\DS\dv{P}{x}</m> appear to be negative? Explain how you can tell from the graph. What does this mean practically?
+					For which values of <m>x</m> does <m>\DS\dv{P}{x}</m> appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?
 				</p>
 				</statement>
 			</task>
@@ -659,30 +674,45 @@
 		<exercise>
 			<introduction>
 				<p>
-					The following table shows the concentration <m>C</m> of a certain drug in a patient's bloodstream as a function of time <m>t</m>. Here <m>t</m> is measured in hours and <m>C</m> is measured in milligrams per liter.
+					A car is driven along a fixed 100-mile route. The table below shows the total amount of energy <m>E</m> used for the trip as a function of the car's speed <m>v</m>. Here <m>v</m> is measured in miles per hour and <m>E</m> is measured in kilowatt-hours.
 				</p>
-				<p>
-					(Insert table)
-				</p>
+				<tabular halign="center">
+					<row header="yes" bottom="minor">
+						<cell right="minor"><m>v \text{ (mph)}</m></cell>
+						<cell><m>45</m></cell>
+						<cell><m>50</m></cell>
+						<cell><m>55</m></cell>
+						<cell><m>60</m></cell>
+						<cell><m>65</m></cell>
+					</row>
+					<row>
+						<cell right="minor"><m>E \text{ (kWh)}</m></cell>
+						<cell><m>32.4</m></cell>
+						<cell><m>31.0</m></cell>
+						<cell><m>30.6</m></cell>
+						<cell><m>30.9</m></cell>
+						<cell><m>31.8</m></cell>
+					</row>
+				</tabular>
 			</introduction>
 			<task>
 				<statement>
 					<p>
-						Estimate <m>\eval{\DS\dv{C}{t}}_{t=3}</m> and explain its meaning in context, including correct units.
+						Estimate <m>\eval{\DS\dv{E}{v}}_{v=52}</m> and explain its meaning in context, including correct units.
 					</p>
 				</statement>
 			</task>
 			<task>
 				<statement>
 					<p>
-						Estimate the concentration of the drug at <m>t=3.25</m> hours.
+						Use your estimate of <m>\eval{\DS\dv{E}{v}}_{v=52}</m> to estimate the total energy used at <m>v=56</m> mph.
 					</p>
 				</statement>
 			</task>
 			<task>
 				<statement>
 					<p>
-						At what time <m>t</m> do you expect <m>\DS\dv{C}{t}</m> to be zero? What is the real-world significance of this time?
+						Suppose we know that the energy usage is <em>minimized</em> when <m>v=55</m> mph. What would you expect the value of <m>\DS\dv{E}{v}</m> to be at that speed? Explain.
 					</p>
 				</statement>
 			</task>
