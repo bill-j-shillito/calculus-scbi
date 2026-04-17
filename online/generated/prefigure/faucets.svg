@@ -1,50 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="faucets-figure" width="360" height="460" viewBox="0 0 360 460">
+<svg xmlns="http://www.w3.org/2000/svg" id="faucets-figure" width="360" height="410" viewBox="0 0 360 410">
   <defs>
     <clipPath id="faucets-clipPath-0">
-      <rect x="30.0" y="30.0" width="300.0" height="400.0"/>
+      <rect x="30.0" y="30.0" width="300.0" height="350.0"/>
     </clipPath>
     <clipPath id="faucets-clipPath-1">
-      <rect x="30.0" y="30.0" width="300.0" height="400.0"/>
+      <rect x="30.0" y="30.0" width="300.0" height="350.0"/>
     </clipPath>
   </defs>
   <g id="faucets-grid-axes">
     <g id="faucets-grid" stroke="#ccc" stroke-width="1">
-      <line x1="30.0" y1="430.0" x2="30.0" y2="30.0"/>
-      <line x1="67.5" y1="430.0" x2="67.5" y2="30.0"/>
-      <line x1="105.0" y1="430.0" x2="105.0" y2="30.0"/>
-      <line x1="142.5" y1="430.0" x2="142.5" y2="30.0"/>
-      <line x1="180.0" y1="430.0" x2="180.0" y2="30.0"/>
-      <line x1="217.5" y1="430.0" x2="217.5" y2="30.0"/>
-      <line x1="255.0" y1="430.0" x2="255.0" y2="30.0"/>
-      <line x1="292.5" y1="430.0" x2="292.5" y2="30.0"/>
-      <line x1="330.0" y1="430.0" x2="330.0" y2="30.0"/>
-      <line x1="30.0" y1="430.0" x2="330.0" y2="430.0"/>
-      <line x1="30.0" y1="385.6" x2="330.0" y2="385.6"/>
+      <line x1="30.0" y1="380.0" x2="30.0" y2="30.0"/>
+      <line x1="67.5" y1="380.0" x2="67.5" y2="30.0"/>
+      <line x1="105.0" y1="380.0" x2="105.0" y2="30.0"/>
+      <line x1="142.5" y1="380.0" x2="142.5" y2="30.0"/>
+      <line x1="180.0" y1="380.0" x2="180.0" y2="30.0"/>
+      <line x1="217.5" y1="380.0" x2="217.5" y2="30.0"/>
+      <line x1="255.0" y1="380.0" x2="255.0" y2="30.0"/>
+      <line x1="292.5" y1="380.0" x2="292.5" y2="30.0"/>
+      <line x1="330.0" y1="380.0" x2="330.0" y2="30.0"/>
+      <line x1="30.0" y1="380.0" x2="330.0" y2="380.0"/>
       <line x1="30.0" y1="341.1" x2="330.0" y2="341.1"/>
-      <line x1="30.0" y1="296.7" x2="330.0" y2="296.7"/>
-      <line x1="30.0" y1="252.2" x2="330.0" y2="252.2"/>
-      <line x1="30.0" y1="207.8" x2="330.0" y2="207.8"/>
-      <line x1="30.0" y1="163.3" x2="330.0" y2="163.3"/>
-      <line x1="30.0" y1="118.9" x2="330.0" y2="118.9"/>
-      <line x1="30.0" y1="74.4" x2="330.0" y2="74.4"/>
+      <line x1="30.0" y1="302.2" x2="330.0" y2="302.2"/>
+      <line x1="30.0" y1="263.3" x2="330.0" y2="263.3"/>
+      <line x1="30.0" y1="224.4" x2="330.0" y2="224.4"/>
+      <line x1="30.0" y1="185.6" x2="330.0" y2="185.6"/>
+      <line x1="30.0" y1="146.7" x2="330.0" y2="146.7"/>
+      <line x1="30.0" y1="107.8" x2="330.0" y2="107.8"/>
+      <line x1="30.0" y1="68.9" x2="330.0" y2="68.9"/>
       <line x1="30.0" y1="30.0" x2="330.0" y2="30.0"/>
     </g>
     <g id="faucets-axes" stroke="black" stroke-width="2">
-      <line id="faucets-line-19" x1="30.0" y1="430.0" x2="330.0" y2="430.0" stroke="black" stroke-width="2"/>
+      <line id="faucets-line-19" x1="30.0" y1="380.0" x2="330.0" y2="380.0" stroke="black" stroke-width="2"/>
       <g>
-        <line id="faucets-line-20" x1="105.0" y1="433.0" x2="105.0" y2="427.0"/>
-        <line id="faucets-line-21" x1="180.0" y1="433.0" x2="180.0" y2="427.0"/>
-        <line id="faucets-line-22" x1="255.0" y1="433.0" x2="255.0" y2="427.0"/>
+        <line id="faucets-line-20" x1="105.0" y1="383.0" x2="105.0" y2="377.0"/>
+        <line id="faucets-line-21" x1="180.0" y1="383.0" x2="180.0" y2="377.0"/>
+        <line id="faucets-line-22" x1="255.0" y1="383.0" x2="255.0" y2="377.0"/>
       </g>
-      <line id="faucets-line-23" x1="180.0" y1="430.0" x2="180.0" y2="30.0" stroke="black" stroke-width="2"/>
+      <line id="faucets-line-23" x1="180.0" y1="380.0" x2="180.0" y2="30.0" stroke="black" stroke-width="2"/>
       <g>
-        <line id="faucets-line-24" x1="177.0" y1="341.1" x2="183.0" y2="341.1"/>
-        <line id="faucets-line-25" x1="177.0" y1="252.2" x2="183.0" y2="252.2"/>
-        <line id="faucets-line-26" x1="177.0" y1="163.3" x2="183.0" y2="163.3"/>
-        <line id="faucets-line-27" x1="177.0" y1="74.4" x2="183.0" y2="74.4"/>
+        <line id="faucets-line-24" x1="177.0" y1="302.2" x2="183.0" y2="302.2"/>
+        <line id="faucets-line-25" x1="177.0" y1="224.4" x2="183.0" y2="224.4"/>
+        <line id="faucets-line-26" x1="177.0" y1="146.7" x2="183.0" y2="146.7"/>
+        <line id="faucets-line-27" x1="177.0" y1="68.9" x2="183.0" y2="68.9"/>
       </g>
     </g>
-    <g id="faucets-label-0" transform="translate(326.0,426.0) translate(-10.4,-8.2)">
+    <g id="faucets-label-0" transform="translate(326.0,376.0) translate(-10.4,-8.2)">
       <g id="faucets-g-0">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
           <defs>
@@ -62,57 +62,39 @@
     </g>
     <g id="faucets-label-1" transform="translate(184.0,34.0) translate(0.0,-0.0)">
       <g id="faucets-g-1">
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="37.176px" height="18.096px" role="img" focusable="false" viewBox="0 -750 2054 1000" x="0.0" y="0.0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="12.744px" height="12.256px" role="img" focusable="false" viewBox="0 -677 704 677" x="0.0" y="0.0">
           <defs>
             <path id="faucets-MJX-3-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"/>
-            <path id="faucets-MJX-3-TEX-N-2061" d=""/>
-            <path id="faucets-MJX-3-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
-            <path id="faucets-MJX-3-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
-            <path id="faucets-MJX-3-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
           </defs>
           <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
-            <g data-mml-node="math" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-children="0,4" data-semantic-content="5,0" data-semantic-speech="upper T left parenthesis x right parenthesis">
-              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="6" data-semantic-operator="appl" data-semantic-speech="upper T">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper T">
                 <use data-c="1D447" xlink:href="#faucets-MJX-3-TEX-I-1D447"/>
-              </g>
-              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="5" data-semantic-parent="6" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(704,0)">
-                <use data-c="2061" xlink:href="#faucets-MJX-3-TEX-N-2061"/>
-              </g>
-              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="4" data-semantic-children="2" data-semantic-content="1,3" data-semantic-parent="6" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(704,0)">
-                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="1" data-semantic-parent="4" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
-                  <use data-c="28" xlink:href="#faucets-MJX-3-TEX-N-28"/>
-                </g>
-                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="x" transform="translate(389,0)">
-                  <use data-c="1D465" xlink:href="#faucets-MJX-3-TEX-I-1D465"/>
-                </g>
-                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="3" data-semantic-parent="4" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
-                  <use data-c="29" xlink:href="#faucets-MJX-3-TEX-N-29"/>
-                </g>
               </g>
             </g>
           </g>
         </svg>
       </g>
     </g>
-    <g id="faucets-label-2" transform="translate(105.0,441.0) translate(-7.5,-0.0)">
+    <g id="faucets-label-2" transform="translate(105.0,391.0) translate(-7.5,-0.0)">
       <g id="faucets-g-2">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
           <defs>
             <path id="faucets-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
-            <path id="faucets-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            <path id="faucets-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
           </defs>
           <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
             <g data-mml-node="math">
-              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
                 <use data-c="2D" xlink:href="#faucets-MJX-4-TEX-N-2D"/>
-                <use data-c="32" xlink:href="#faucets-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+                <use data-c="31" xlink:href="#faucets-MJX-4-TEX-N-31" transform="translate(333,0)"/>
               </g>
             </g>
           </g>
         </svg>
       </g>
     </g>
-    <g id="faucets-label-3" transform="translate(180.0,441.0) translate(-4.5,-0.0)">
+    <g id="faucets-label-3" transform="translate(180.0,391.0) translate(-4.5,-0.0)">
       <g id="faucets-g-3">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
           <defs>
@@ -128,23 +110,23 @@
         </svg>
       </g>
     </g>
-    <g id="faucets-label-4" transform="translate(255.0,441.0) translate(-4.5,-0.0)">
+    <g id="faucets-label-4" transform="translate(255.0,391.0) translate(-4.5,-0.0)">
       <g id="faucets-g-4">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
           <defs>
-            <path id="faucets-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+            <path id="faucets-MJX-6-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
           </defs>
           <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
             <g data-mml-node="math">
-              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
-                <use data-c="32" xlink:href="#faucets-MJX-6-TEX-N-32"/>
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#faucets-MJX-6-TEX-N-31"/>
               </g>
             </g>
           </g>
         </svg>
       </g>
     </g>
-    <g id="faucets-label-5" transform="translate(169.0,341.1) translate(-18.1,-6.2)">
+    <g id="faucets-label-5" transform="translate(169.0,302.2) translate(-18.1,-6.2)">
       <g id="faucets-g-5">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
           <defs>
@@ -162,7 +144,7 @@
         </svg>
       </g>
     </g>
-    <g id="faucets-label-6" transform="translate(169.0,252.2) translate(-18.1,-6.3)">
+    <g id="faucets-label-6" transform="translate(169.0,224.4) translate(-18.1,-6.3)">
       <g id="faucets-g-6">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.648px" role="img" focusable="false" viewBox="0 -677 1000 699" x="0.0" y="0.0">
           <defs>
@@ -180,7 +162,7 @@
         </svg>
       </g>
     </g>
-    <g id="faucets-label-7" transform="translate(169.0,163.3) translate(-18.1,-6.2)">
+    <g id="faucets-label-7" transform="translate(169.0,146.7) translate(-18.1,-6.2)">
       <g id="faucets-g-7">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
           <defs>
@@ -198,7 +180,7 @@
         </svg>
       </g>
     </g>
-    <g id="faucets-label-8" transform="translate(169.0,74.4) translate(-18.1,-6.2)">
+    <g id="faucets-label-8" transform="translate(169.0,68.9) translate(-18.1,-6.2)">
       <g id="faucets-g-8">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
           <defs>
@@ -217,10 +199,6 @@
       </g>
     </g>
   </g>
-  <line id="faucets-line-28" x1="67.5" y1="172.2" x2="292.5" y2="65.6" stroke="blue" stroke-width="2" fill="none"/>
-  <line id="faucets-line-29" x1="105.0" y1="190.0" x2="255.0" y2="47.8" stroke="red" stroke-width="2" fill="none"/>
-  <circle id="faucets-circle-0" cx="67.5" cy="172.2" r="4" stroke="black" stroke-width="2" fill="blue"/>
-  <circle id="faucets-circle-1" cx="105.0" cy="190.0" r="4" stroke="black" stroke-width="2" fill="red"/>
-  <circle id="faucets-circle-2" cx="292.5" cy="65.6" r="4" stroke="black" stroke-width="2" fill="blue"/>
-  <circle id="faucets-circle-3" cx="255.0" cy="47.8" r="4" stroke="black" stroke-width="2" fill="red"/>
+  <path id="faucets-graph" stroke="blue" stroke-width="2" fill="none" d="M -120.0 170.0 L -114.0 168.8 L -108.0 167.5 L -102.0 166.3 L -96.0 165.0 L -90.0 163.8 L -84.0 162.5 L -78.0 161.3 L -72.0 160.0 L -66.0 158.8 L -60.0 157.6 L -54.0 156.3 L -48.0 155.1 L -42.0 153.8 L -36.0 152.6 L -30.0 151.3 L -24.0 150.1 L -18.0 148.8 L -12.0 147.6 L -6.0 146.4 L 0.0 145.1 L 6.0 143.9 L 12.0 142.6 L 18.0 141.4 L 24.0 140.1 L 30.0 138.9 L 36.0 137.6 L 42.0 136.4 L 48.0 135.2 L 54.0 133.9 L 60.0 132.7 L 66.0 131.4 L 72.0 130.2 L 78.0 128.9 L 84.0 127.7 L 90.0 126.4 L 96.0 125.2 L 102.0 124.0 L 108.0 122.7 L 114.0 121.5 L 120.0 120.2 L 126.0 119.0 L 132.0 117.7 L 138.0 116.5 L 144.0 115.2 L 150.0 114.0 L 156.0 112.8 L 162.0 111.5 L 168.0 110.3 L 174.0 109.0 L 180.0 107.8 L 186.0 106.5 L 192.0 105.3 L 198.0 104.0 L 204.0 102.8 L 210.0 101.6 L 216.0 100.3 L 222.0 99.1 L 228.0 97.8 L 234.0 96.6 L 240.0 95.3 L 246.0 94.1 L 252.0 92.8 L 258.0 91.6 L 264.0 90.4 L 270.0 89.1 L 276.0 87.9 L 282.0 86.6 L 288.0 85.4 L 294.0 84.1 L 300.0 82.9 L 306.0 81.6 L 312.0 80.4 L 318.0 79.2 L 324.0 77.9 L 330.0 76.7 L 336.0 75.4 L 342.0 74.2 L 348.0 72.9 L 354.0 71.7 L 360.0 70.4 L 366.0 69.2 L 372.0 68.0 L 378.0 66.7 L 384.0 65.5 L 390.0 64.2 L 396.0 63.0 L 402.0 61.7 L 408.0 60.5 L 414.0 59.2 L 420.0 58.0 L 426.0 56.8 L 432.0 55.5 L 438.0 54.3 L 444.0 53.0 L 450.0 51.8 L 456.0 50.5 L 462.0 49.3 L 468.0 48.0 L 474.0 46.8 L 480.0 45.6" clip-path="url(#faucets-clipPath-1)"/>
+  <path id="faucets-graph" stroke="red" stroke-width="2" fill="none" d="M -120.0 251.7 L -114.0 249.2 L -108.0 246.7 L -102.0 244.2 L -96.0 241.7 L -90.0 239.2 L -84.0 236.7 L -78.0 234.2 L -72.0 231.8 L -66.0 229.3 L -60.0 226.8 L -54.0 224.3 L -48.0 221.8 L -42.0 219.3 L -36.0 216.8 L -30.0 214.3 L -24.0 211.8 L -18.0 209.4 L -12.0 206.9 L -6.0 204.4 L 0.0 201.9 L 6.0 199.4 L 12.0 196.9 L 18.0 194.4 L 24.0 191.9 L 30.0 189.4 L 36.0 187.0 L 42.0 184.5 L 48.0 182.0 L 54.0 179.5 L 60.0 177.0 L 66.0 174.5 L 72.0 172.0 L 78.0 169.5 L 84.0 167.0 L 90.0 164.6 L 96.0 162.1 L 102.0 159.6 L 108.0 157.1 L 114.0 154.6 L 120.0 152.1 L 126.0 149.6 L 132.0 147.1 L 138.0 144.6 L 144.0 142.2 L 150.0 139.7 L 156.0 137.2 L 162.0 134.7 L 168.0 132.2 L 174.0 129.7 L 180.0 127.2 L 186.0 124.7 L 192.0 122.2 L 198.0 119.8 L 204.0 117.3 L 210.0 114.8 L 216.0 112.3 L 222.0 109.8 L 228.0 107.3 L 234.0 104.8 L 240.0 102.3 L 246.0 99.8 L 252.0 97.4 L 258.0 94.9 L 264.0 92.4 L 270.0 89.9 L 276.0 87.4 L 282.0 84.9 L 288.0 82.4 L 294.0 79.9 L 300.0 77.4 L 306.0 75.0 L 312.0 72.5 L 318.0 70.0 L 324.0 67.5 L 330.0 65.0 L 336.0 62.5 L 342.0 60.0 L 348.0 57.5 L 354.0 55.0 L 360.0 52.6 L 366.0 50.1 L 372.0 47.6 L 378.0 45.1 L 384.0 42.6 L 390.0 40.1 L 396.0 37.6 L 402.0 35.1 L 408.0 32.6 L 414.0 30.2 L 420.0 27.7 L 426.0 25.2 L 432.0 22.7 L 438.0 20.2 L 444.0 17.7 L 450.0 15.2 L 456.0 12.7 L 462.0 10.2 L 468.0 7.8 L 474.0 5.3 L 480.0 2.8" clip-path="url(#faucets-clipPath-1)"/>
 </svg>
