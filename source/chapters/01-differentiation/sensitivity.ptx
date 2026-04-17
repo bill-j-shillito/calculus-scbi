@@ -181,7 +181,7 @@
             </li>
         </ul>
 		<p>
-			Now, suppose you're currently charging <m>\$3.00</m>, and you decide to raise the price by <m>\$2.00</m> so that your new price is <m>\$5.00</m>; that is,
+			Now, suppose you're currently charging <m>\$3.00</m>, and you decide to raise the price to <m>\$5.00</m>; that is,
 			<md>
 				<mrow>\Delta p \amp = p\tsub{final} - p\tsub{init}</mrow>
 				<mrow>\amp = 5 - 3</mrow>
