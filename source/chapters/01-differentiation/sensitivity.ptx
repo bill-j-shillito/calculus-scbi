@@ -377,7 +377,10 @@
 		</ul>
 
 		<p>
-			So looking at the <em>sign</em> of the sensitivity can tell us the <em>direction</em> in which our function responds to changes. We can also use it to tell <em>how much</em> the revenue will change to a small change in price. For example, suppose that at a price of <m>\$9.00</m>, we know that the sensitivity is <me>\eval{\DS\dv{R}{p}}_{p=9} = -0.5\text{ thousand dollars earned per dollar charged}</me>.
+			So looking at the <em>sign</em> of the sensitivity can tell us the <em>direction</em> in which our function responds to changes.
+		</p>
+		<p>
+			We can also use the sensitivity to estimate <em>how much</em> the revenue will change to a small change in price. For example, suppose that at a price of <m>\$9.00</m>, we know that the sensitivity is <me>\eval{\DS\dv{R}{p}}_{p=9} = -0.5\text{ thousand dollars earned per dollar charged}</me>.
 			Now suppose we want to raise the price from <m>\$9.00</m> to <m>\$9.10</m>. Since the sensitivity <m>\DS\dv{R}{p}</m> is supposed to be the ratio of <sq>infinitely small</sq> changes, we can write:
 			<me>
 				\dfrac{\Delta R}{\Delta p} \approx \DS\dv{R}{p}
