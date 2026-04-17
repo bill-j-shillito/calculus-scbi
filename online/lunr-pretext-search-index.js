@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Sensitivity to change",
-  "body": " Sensitivity to change     Measure a function's responsiveness to small changes using ratios.    Visualize the sensitivity of a function as a ratio of differentials.    Use the sign and value of the sensitivity to estimate changes in the dependent variable.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The daily calories needed by an organism depends on its mass.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Sensitivity between two points   Based on data from The Physics Behind Stopping a Car by P. Lutus.   When driving a car, the distance required to stop depends on the speed of the vehicle. If is the stopping distance (measured in car lengths, assuming an average car length of feet), and is the speed (measured in miles per hour), then the relationship between and can be modeled by the formula . To make it explicit that depends on (that is, is a function of ), we can also write . We call the independent variable and or the dependent variable , since the value of depends on the value of .   In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in depending on and writing , or we can give the function a separate name and write .   For example, if a car is traveling at miles per hour, we have , so the model predicts a stopping distance of car lengths (or approximately feet).     f(x)=0.0034*x^2+0.15*x  a = 50  b = 55          Now, we might wonder, if we were to change the speed, how much would the stopping distance change? For example, suppose the speed increases by five miles per hour, that is, . Then the change in stopping distance would be . We can then find the ratio of the change in stopping distance to the change in speed: . That is, an extra mile per hour of speed means it takes another half of a car length to stop. We can call this the sensitivity of the stopping distance to the given change in speed.   Sensitivity between two points   If , then the sensitivity of between the points and is defined as . That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as the sensitivity of to changes in .   We will also use the notation .    We can also visualize what we've just done by plotting the stopping distance function :   Will figure out how to make this graph better.      f(x)=0.0034*x^2+0.15*x  a = 50  b = 55             Notice that the sensitivity we've calculated is the slope of the line segment connecting the points and .    Sensitivity at a point  Our calculation of the sensitivity above was somewhat coarse: the graph of is curved, and over an increase of five miles per hour, the slope gets gradually steeper as we go. In other words, our calculation seems to mix together several sensitivities.  If we want a more fine-grained measurement, a natural idea is to look at smaller changes in speed. Here's what happens if we use a change in speed of mph: .    Estimate the sensitivity of the stopping distance to the following changes (assuming an initial speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph     Over smaller and smaller changes, the graph looks more and more like a straight line, and the slope between the two points appears to approach a particular value, which seems to be around car lengths per mph. (We'll soon learn how to find this value exactly, without having to do so many calculations.)  Now, let's ask a bold question: what if we could zoom in infinitely close to the point ?  If we could do this, we might imagine that the graph of would be indistinguishable from a perfectly straight line at that point. So if we could somehow choose two points that are infinitely close to each other, then the ratio of the infinitesimal (infinitely small) changes would be the slope of that line:     f(x)=0.0034*x^2+0.15*x  a = 50  b = 55          We call these infinitely small changes differentials , and we represent them with a lowercase : in this case, we would write to denote an infinitesimal change in speed, and to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written . We will call this the sensitivity  at the single point where miles per hour.   Sensitivity at a point   If , the sensitivity of at the point is (for the time being) defined as where is infinitely close to . This definition is currently somewhat vague, as we have not defined what it means to be infinitely close. We'll make this definition more precise later.  We will also use the notation for this sensitivity.  When we want to emphasize that the sensitivity is being evaluated at a particular point , we will write or .    Now, you might be a bit skeptical of this idea of using infinitely small changes. If so, you're in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on just how small is infinitely small anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.    Use this same process to estimate and . How does the sensitivity of stopping distance to changes in speed compare at these different speeds?      Interpreting sensitivity  Let's look at another example. Suppose the following graph shows , the revenue earned (in thousands of dollars) from selling a product, as a function of , the price charged (in dollars):     f(x)=x*(16-x)  a = 50  b = 55          Even though we don't have an explicit formula for , we can still determine the sign of the sensitivity by looking at the slope of the graph at each point:    On the left side of the graph (when ), the sensitivity is positive. This means that increasing the price would lead to an increase in revenue, and decreasing the price would lead to a decrease in revenue.    On the right side of the graph (when ), the sensitivity is negative. This means that increasing the price would lead to a decrease in revenue, and decreasing the price would lead to an increase in revenue.    So looking at the sign of the sensitivity can tell us the direction in which our function responds to changes. We can also use it to tell how much the revenue will change to a small change in price. For example, suppose that at a price of $10, the sensitivity is . Now suppose we want to raise the price from $10 to $10.50. Since the sensitivity is supposed to be the ratio of infinitely small changes, we can write: Then we can rearrange the terms to get . Substituting what we know, we have Hence if we increase the price from $10 to $10.50, we can estimate that the revenue will decrease by approximately $2,000.  Again, notice that we were able to make this estimation without having an explicit formula for . In many cases, we don't have a formula for the function we're interested in, such as when our model is based on data. In those cases, understanding how sensitivity lets us estimate change is useful for making predictions in how the output will respond to a change in input.    Suppose that we decide to decrease the price from $10 to $9.50. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at to justify your answer.        Suppose , so is a linear function of .     Find the sensitivity of to various changes in by completing the following table.                                           What do you notice about the values you get for the sensitivity in each case?      What does , the sensitivity of , seem to be at the point ?      What would be the sensitivity of at the point ? Why?      What can you conclude about the sensitivity of at any point ? Why?       Suppose , so is a constant function of . That is, no matter what the value of is, the value of is always .     What will be at any point ? Why?      What does the graph of look like? How does this graph help you understand the sensitivity of to changes in ?      If we rewrite as , how does this help you understand the sensitivity of to changes in ?      If is a constant function of , where is any constant, what will the sensitivity of be at any point ? Why?       Suppose , so is a quadratic function of .     Estimate at the point by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number does the sensitivity seem to be approaching?      Repeat the above exercise to estimate at the points and . What do you notice about the values you get for the sensitivity at these different points?      Without doing any calculations, what do you think the sensitivity of will be at the point ? Why?      Conjecture a formula for at any point . Why do you think this formula is correct?      Extra practice   Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?      , at and        , at and        , at and        , at and        In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the number of packages of gourmet coffee beans that are ordered by consumers and the price (in dollars per package) of the coffee beans       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes for which the potato is left to bake in the oven       , where the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level       Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that we also know that . Explain what this means in context, including correct units.      Estimate and using the sensitivity at .       The profit earned by a company can be defined as the revenue (the money it brings in) minus the costs (the money it spends). The graph below shows , the profit (in thousands of dollars) earned by a company as a function of , the number of units produced (in hundreds of units).     P(x)=-0.5*x^2+15*x-40            For which values of does appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?      What are the units of ?      For which values of does appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?      Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is at that point?       A car is driven along a fixed 100-mile route. The table below shows the total amount of energy used for the trip as a function of the car's speed . Here is measured in miles per hour and is measured in kilowatt-hours.                       Estimate and explain its meaning in context, including correct units.      Use your estimate of to estimate the total energy used at mph.      Suppose we know that the energy usage is minimized when mph. What would you expect the value of to be at that speed? Explain.       How does the sensitivity of from to compare to its sensitivity from to ? Explain.     "
+  "body": " Sensitivity to change     Measure a function's responsiveness to small changes using ratios.    Visualize the sensitivity of a function as a ratio of differentials.    Use the sign and value of the sensitivity to estimate changes in the dependent variable.      Calculus is often described as the mathematics of change. Many quantities in the world change in tandem with each other:    The pressure of a gas depends on its temperature and volume.    The demand for a product depends on its price.    The daily calories needed by an organism depends on its mass.    The speed of a car depends on the pressure applied to the gas pedal.    The growth of a bacterial population depends on the amount of nutrients available.    The amount of traffic congestion depends on the number of cars on the road.    The brightness of a lamp depends on the electrical power supplied to it.    The time for a computer to sort a list depends on the number of items in the list.    To understand these relationships, we need a way to quantify how sensitive one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?    Introduction to sensitivity  Imagine you have two faucets in your bathroom, one for the sink and one for the shower. The temperature of the water (in degrees Fahrenheit) depends on how many inches you turn the handle to the left or right. Suppose both faucets have a temperature of degrees Fahrenheit when the handle is centered ( ), and the temperature increases as you turn the handle to the right. When you turn the shower handle half an inch to the right, the temperature rises to degrees Fahrenheit. Hence we can calculate the sensitivity of the shower faucet by finding the ratio between the change in temperature ( ) and the change in handle position ( ):   But when you turn the sink faucet half an inch to the right, the temperature instead rises to degrees Fahrenheit. Then the sensitivity of the sink faucet would be:   Hence the temperature of the water from the sink is more sensitive than the temperature of the water from the shower when we make changes in the handle position.  We can get a better understanding of this sensitivity by looking at a graph. Suppose the blue line represents the graph of the shower faucet's temperature, while the red line represents the graph of the sink faucet's temperature.                 Notice that the sensitivity we calculated above is the slope of each line segment. The steeper the graph, the more sensitive the dependent variable is to changes in the independent variable.    Sensitivity of nonlinear functions  In the example above, the temperature of the water from each faucet was a linear function of the position of each handle, which means that the sensitivity was the same no matter which two points we chose to calculate it between. But what if we analyze a situation where the relationship is nonlinear ?  Imagine you're organizing a large concert and selling tickets. The revenue that you earn (in thousands of dollars) is a function of the price that you charge (in dollars), modeled by the function .   In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in depending on and writing , or we can give the function a separate name and write .   The graph of revenue according to price is shown below.     f(x)=0.25*x*(16-x)  a = 3  b = 8     (3,9.75)  (8,16)      For example, since the graph goes through the point , you know that if you charge a price of for your product, your revenue will be , that is, . In function notation, we can write this as .  Notice the nonlinear shape of the graph of the revenue function:    At a price of , you of course earn no revenue, since you're not charging anything for tickets.    As the price begins to increase, your revenue increases as well, reaching a maximum of (that is, ) at a price of .    After the price exceeds , the revenue starts to decrease, until at a price of , consumers are no longer willing to buy tickets, and once again you earn no revenue.    Now, suppose you're currently charging , and you decide to raise the price by so that your new price is ; that is, . Then the resulting change in revenue would be . Hence the sensitivity of the revenue to this change in price is .   Sensitivity between two points   If , then the sensitivity of between the points and is defined as . That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as the sensitivity of to the change in .   We will also use the notation .    However, notice that since our graph is nonlinear, the sensitivity would be different if we had chosen a different pair of points.    Use this same process to find the sensitivity when the ticket price changes:    from to     from to     How do these sensitivites compare to the sensitivity we calculated above when the ticket price changes from to ? What do you notice about the relationship between the sensitivity and the shape of the graph?      Sensitivity at a point  Our calculation of the sensitivity above was somewhat coarse: since the graph of is curved, the slope gets gradually steeper as we go along the curve. In other words, our calculation seems to mix together several sensitivities.  If we want a more fine-grained measurement, a natural idea is to look at smaller changes in price. Here's what happens if we use a change in price of dollars: .    Estimate the sensitivity of the revenue to the following changes (assuming an initial price of dollars). What do you notice about the values you get?      dollars       dollars       dollars       dollars       dollars     Over smaller and smaller changes, the graph looks more and more like a straight line, and the slope between the two points appears to approach a particular value, which seems to be around thousand dollars earned per dollar charged. (We'll soon learn how to find this value exactly, without having to do so many calculations.)  Now, let's ask a bold question: what if we could zoom in infinitely close to the point ?  If we could do this, we might imagine that the graph of would be indistinguishable from a perfectly straight line at that point. So if we could somehow choose two points that are infinitely close to each other, then the ratio of the infinitesimal (infinitely small) changes would be the slope of that line:     f(x)=0.25*x*(16-x)  a = 3  b = 8          We call these infinitely small changes differentials , and we represent them with a lowercase : in this case, we would write to denote an infinitesimal change in price, and to denote the corresponding infinitesimal change in revenue. The ratio of these differentials would then be written . We will call this the sensitivity  at the single point where dollars.   Sensitivity at a point   If , the sensitivity of at the point is (for the time being) defined as where is infinitely close to . This definition is currently somewhat vague, as we have not defined what it means to be infinitely close. We'll make this definition more precise later.  We will also use the notation for this sensitivity.  When we want to emphasize that the sensitivity is being evaluated at a particular point , we will write or .    Now, you might be a bit skeptical of this idea of using infinitely small changes. If so, you're in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on just how small is infinitely small anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.    Use this same process to estimate and . How does the sensitivity of revenue to changes in price compare at these different prices?      Interpreting sensitivity  We can get some useful information about how the revenue changes with respect to the price by looking at the slope of the graph at each point:    On the left side of the graph (when ), the sensitivity is positive. This means that increasing the price would lead to an increase in revenue, and decreasing the price would lead to a decrease in revenue.    On the right side of the graph (when ), the sensitivity is negative. This means that increasing the price would lead to a decrease in revenue, and decreasing the price would lead to an increase in revenue.    So looking at the sign of the sensitivity can tell us the direction in which our function responds to changes. We can also use it to tell how much the revenue will change to a small change in price. For example, suppose that at a price of , we know that the sensitivity is . Now suppose we want to raise the price from to . Since the sensitivity is supposed to be the ratio of infinitely small changes, we can write: Then we can rearrange the terms to get . Substituting what we know, we have Hence if we increase the price from to , we can estimate that the revenue will decrease by approximately .  In this case, we can explicitly calculate the actual change in revenue to see how good our estimate is. We have . So our estimate of a decrease in revenue was pretty close to the actual decrease of about . However, computing the actual decrease required we compute the revenue at two different prices, and for a different change in price, we'd need to compute a new revenue every single time. Using the sensitivity at a point instead lets us make lots of quick estimates of how the revenue will change in response to small changes in price without having to recompute the revenue every time.    Suppose that we decide to decrease the price from to . How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at to justify your answer.        In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the strength of a wireless signal (in bars) and the distance from the signal source (in meters)       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes for which the potato is left to bake in the oven       , where the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level       Suppose , so is a linear function of .     Find the sensitivity of to various changes in by completing the following table.                                           What do you notice about the values you get for the sensitivity in each case?      What does , the sensitivity of , seem to be at the point ?      What would be the sensitivity of at the point ? Why?      What can you conclude about the sensitivity of at any point ? Why?       It can be shown that in the ticket example, the quantity demanded of tickets (the number of tickets that consumers are willing to buy) is a function of the price, given by . The revenue is then given by .  Find the sensitivity of the quantity demanded to changes in price at the point . What does the sign of this sensitivity tell you about how the quantity demanded changes in response to changes in price?      Suppose , so is a constant function of . That is, no matter what the value of is, the value of is always .     What will be at any point ? Why?      What does the graph of look like? How does this graph help you understand the sensitivity of to changes in ?      If we rewrite as , how does this help you understand the sensitivity of to changes in ?      If is a constant function of , where is any constant, what will the sensitivity of be at any point ? Why?       Suppose , so is a quadratic function of .     Estimate at the point by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number does the sensitivity seem to be approaching?      Repeat the above exercise to estimate at the points and . What do you notice about the values you get for the sensitivity at these different points?      Without doing any calculations, what do you think the sensitivity of will be at the point ? Why?      Conjecture a formula for at any point . Why do you think this formula is correct?      Extra practice   Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?      , at and        , at and        , at and        , at and        Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that we also know that . Explain what this means in context, including correct units.      Estimate and using the sensitivity at .       The profit earned by a company can be defined as the revenue (the money it brings in) minus the costs (the money it spends). The graph below shows , the profit (in thousands of dollars) earned by a company as a function of , the number of units produced (in hundreds of units).     P(x)=-0.5*x^2+15*x-40            For which values of does appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?      What are the units of ?      For which values of does appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?      Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is at that point?       A car is driven along a fixed 100-mile route. The table below shows the total amount of energy used for the trip as a function of the car's speed . Here is measured in miles per hour and is measured in kilowatt-hours.                       Estimate and explain its meaning in context, including correct units.      Use your estimate of to estimate the total energy used at mph.      Suppose we know that the energy usage is minimized when mph. What would you expect the value of to be at that speed? Explain.       How does the sensitivity of from to compare to its sensitivity from to ? Explain.     "
 },
 {
   "id": "sec-sensitivity-2",
@@ -37,40 +37,58 @@ var ptx_lunr_docs = [
   "body": "   Measure a function's responsiveness to small changes using ratios.    Visualize the sensitivity of a function as a ratio of differentials.    Use the sign and value of the sensitivity to estimate changes in the dependent variable.    "
 },
 {
-  "id": "subsec-sensitivity-between-two-points-3",
+  "id": "subsec-introduction-to-sensitivity-6",
   "level": "2",
-  "url": "sec-sensitivity.html#subsec-sensitivity-between-two-points-3",
+  "url": "sec-sensitivity.html#subsec-introduction-to-sensitivity-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "function independent variable dependent variable "
+  "body": "sensitive "
 },
 {
-  "id": "subsec-sensitivity-between-two-points-7",
+  "id": "subsec-sensitivity-of-nonlinear-functions-2",
   "level": "2",
-  "url": "sec-sensitivity.html#subsec-sensitivity-between-two-points-7",
+  "url": "sec-sensitivity.html#subsec-sensitivity-of-nonlinear-functions-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear nonlinear "
+},
+{
+  "id": "subsec-sensitivity-of-nonlinear-functions-10",
+  "level": "2",
+  "url": "sec-sensitivity.html#subsec-sensitivity-of-nonlinear-functions-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "sensitivity "
 },
 {
-  "id": "subsec-sensitivity-between-two-points-8",
+  "id": "subsec-sensitivity-of-nonlinear-functions-11",
   "level": "2",
-  "url": "sec-sensitivity.html#subsec-sensitivity-between-two-points-8",
+  "url": "sec-sensitivity.html#subsec-sensitivity-of-nonlinear-functions-11",
   "type": "Definition",
   "number": "1",
   "title": "Sensitivity between two points.",
-  "body": " Sensitivity between two points   If , then the sensitivity of between the points and is defined as . That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as the sensitivity of to changes in .   We will also use the notation .   "
+  "body": " Sensitivity between two points   If , then the sensitivity of between the points and is defined as . That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as the sensitivity of to the change in .   We will also use the notation .   "
+},
+{
+  "id": "subsec-sensitivity-of-nonlinear-functions-13",
+  "level": "2",
+  "url": "sec-sensitivity.html#subsec-sensitivity-of-nonlinear-functions-13",
+  "type": "Activity",
+  "number": "1",
+  "title": "",
+  "body": "  Use this same process to find the sensitivity when the ticket price changes:    from to     from to     How do these sensitivites compare to the sensitivity we calculated above when the ticket price changes from to ? What do you notice about the relationship between the sensitivity and the shape of the graph?   "
 },
 {
   "id": "subsec-sensitivity-at-a-point-4",
   "level": "2",
   "url": "sec-sensitivity.html#subsec-sensitivity-at-a-point-4",
   "type": "Activity",
-  "number": "1",
+  "number": "2",
   "title": "",
-  "body": "  Estimate the sensitivity of the stopping distance to the following changes (assuming an initial speed of mph). What do you notice about the values you get?      mph       mph       mph       mph       mph    "
+  "body": "  Estimate the sensitivity of the revenue to the following changes (assuming an initial price of dollars). What do you notice about the values you get?      dollars       dollars       dollars       dollars       dollars    "
 },
 {
   "id": "subsec-sensitivity-at-a-point-9",
@@ -95,97 +113,106 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sensitivity.html#subsec-sensitivity-at-a-point-12",
   "type": "Activity",
-  "number": "2",
-  "title": "",
-  "body": "  Use this same process to estimate and . How does the sensitivity of stopping distance to changes in speed compare at these different speeds?   "
-},
-{
-  "id": "subsec-interpreting-sensitivity-8",
-  "level": "2",
-  "url": "sec-sensitivity.html#subsec-interpreting-sensitivity-8",
-  "type": "Activity",
   "number": "3",
   "title": "",
-  "body": "  Suppose that we decide to decrease the price from $10 to $9.50. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at to justify your answer.   "
+  "body": "  Use this same process to estimate and . How does the sensitivity of revenue to changes in price compare at these different prices?   "
 },
 {
-  "id": "sec-sensitivity-7-1",
+  "id": "subsec-interpreting-sensitivity-6",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-1",
+  "url": "sec-sensitivity.html#subsec-interpreting-sensitivity-6",
+  "type": "Activity",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose that we decide to decrease the price from to . How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at to justify your answer.   "
+},
+{
+  "id": "sec-sensitivity-8-1",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-1",
   "type": "Exercise",
   "number": "1",
+  "title": "",
+  "body": "  In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the strength of a wireless signal (in bars) and the distance from the signal source (in meters)       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes for which the potato is left to bake in the oven       , where the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level    "
+},
+{
+  "id": "sec-sensitivity-8-2",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-2",
+  "type": "Exercise",
+  "number": "2",
   "title": "",
   "body": "  Suppose , so is a linear function of .     Find the sensitivity of to various changes in by completing the following table.                                           What do you notice about the values you get for the sensitivity in each case?      What does , the sensitivity of , seem to be at the point ?      What would be the sensitivity of at the point ? Why?      What can you conclude about the sensitivity of at any point ? Why?    "
 },
 {
-  "id": "sec-sensitivity-7-2",
+  "id": "sec-sensitivity-8-3",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-2",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-3",
   "type": "Exercise",
-  "number": "2",
+  "number": "3",
+  "title": "",
+  "body": "  It can be shown that in the ticket example, the quantity demanded of tickets (the number of tickets that consumers are willing to buy) is a function of the price, given by . The revenue is then given by .  Find the sensitivity of the quantity demanded to changes in price at the point . What does the sign of this sensitivity tell you about how the quantity demanded changes in response to changes in price?   "
+},
+{
+  "id": "sec-sensitivity-8-4",
+  "level": "2",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-4",
+  "type": "Exercise",
+  "number": "4",
   "title": "",
   "body": "  Suppose , so is a constant function of . That is, no matter what the value of is, the value of is always .     What will be at any point ? Why?      What does the graph of look like? How does this graph help you understand the sensitivity of to changes in ?      If we rewrite as , how does this help you understand the sensitivity of to changes in ?      If is a constant function of , where is any constant, what will the sensitivity of be at any point ? Why?    "
 },
 {
-  "id": "sec-sensitivity-7-3",
+  "id": "sec-sensitivity-8-5",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-3",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-5",
   "type": "Exercise",
-  "number": "3",
+  "number": "5",
   "title": "",
   "body": "  Suppose , so is a quadratic function of .     Estimate at the point by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number does the sensitivity seem to be approaching?      Repeat the above exercise to estimate at the points and . What do you notice about the values you get for the sensitivity at these different points?      Without doing any calculations, what do you think the sensitivity of will be at the point ? Why?      Conjecture a formula for at any point . Why do you think this formula is correct?    "
 },
 {
-  "id": "sec-sensitivity-7-4",
+  "id": "sec-sensitivity-8-6",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-4",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-6",
   "type": "Exercise",
-  "number": "4",
+  "number": "6",
   "title": "Extra practice.",
   "body": " Extra practice   Estimate for each of the following graphs at the given points by computing the ratios of small changes in the input and output. As the intervals get smaller and smaller, what number do the sensitivities seem to be approaching?      , at and        , at and        , at and        , at and     "
 },
 {
-  "id": "sec-sensitivity-7-5",
+  "id": "sec-sensitivity-8-7",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-5",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-7",
   "type": "Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.      , where the brightness of a lamp (measured in lumens) and the electrical power supplied to the lamp (measured in watts)       , where the number of packages of gourmet coffee beans that are ordered by consumers and the price (in dollars per package) of the coffee beans       , where the temperature (in degrees Fahrenheit) of a baked potato and the number of minutes for which the potato is left to bake in the oven       , where the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and the temperature (in degrees Fahrenheit) of the oven       , where the number of calories in a candy bar and the elevation (in feet) of the candy bar above sea level    "
-},
-{
-  "id": "sec-sensitivity-7-6",
-  "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-6",
-  "type": "Exercise",
-  "number": "6",
+  "number": "7",
   "title": "",
   "body": "  Suppose the temperature in the Pacific Ocean can be described by the function , where is the temperature in degrees Celsius and is the latitude in degrees.     Suppose that . Explain what this means in context, including correct units.      Suppose that we also know that . Explain what this means in context, including correct units.      Estimate and using the sensitivity at .    "
 },
 {
-  "id": "sec-sensitivity-7-7",
+  "id": "sec-sensitivity-8-8",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-7",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-8",
   "type": "Exercise",
-  "number": "7",
+  "number": "8",
   "title": "",
   "body": "  The profit earned by a company can be defined as the revenue (the money it brings in) minus the costs (the money it spends). The graph below shows , the profit (in thousands of dollars) earned by a company as a function of , the number of units produced (in hundreds of units).     P(x)=-0.5*x^2+15*x-40            For which values of does appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?      What are the units of ?      For which values of does appear to be positive? What about negative? Explain how you can tell from the graph. What do these values mean practically for the company?      Based on the graph, about how many units should the company produce in order to maximize profit, and what is that maximum profit? What is at that point?    "
 },
 {
-  "id": "sec-sensitivity-7-8",
+  "id": "sec-sensitivity-8-9",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-8",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-9",
   "type": "Exercise",
-  "number": "8",
+  "number": "9",
   "title": "",
   "body": "  A car is driven along a fixed 100-mile route. The table below shows the total amount of energy used for the trip as a function of the car's speed . Here is measured in miles per hour and is measured in kilowatt-hours.                       Estimate and explain its meaning in context, including correct units.      Use your estimate of to estimate the total energy used at mph.      Suppose we know that the energy usage is minimized when mph. What would you expect the value of to be at that speed? Explain.    "
 },
 {
-  "id": "sec-sensitivity-7-9",
+  "id": "sec-sensitivity-8-10",
   "level": "2",
-  "url": "sec-sensitivity.html#sec-sensitivity-7-9",
+  "url": "sec-sensitivity.html#sec-sensitivity-8-10",
   "type": "Exercise",
-  "number": "9",
+  "number": "10",
   "title": "",
   "body": "  How does the sensitivity of from to compare to its sensitivity from to ? Explain.   "
 },
