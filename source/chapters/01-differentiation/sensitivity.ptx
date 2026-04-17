@@ -400,7 +400,7 @@
 				<mrow>\Delta R \amp \approx -0.5\cdot 0.10</mrow>
 				<mrow>\amp = -0.05\text{ thousand dollars}</mrow>.
 			</md>
-			Hence if we increase the price from <m>$9.00</m> to <m>$9.10</m>, we can estimate that the revenue will decrease by approximately <m>\$50.00</m>.
+			Hence if we increase the price from <m>\$9.00</m> to <m>\$9.10</m>, we can estimate that the revenue will decrease by approximately <m>\$50.00</m>.
 		</p>
 		<p>
 			In this case, we can explicitly calculate the actual change in revenue to see how good our estimate is. We have
@@ -414,7 +414,7 @@
 		<activity>
 			<statement>
 				<p>
-					Suppose that we decide to <em>decrease</em> the price from <m>$9.00</m> to <m>$8.95</m>. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <m>p=9</m> to justify your answer.
+					Suppose that we decide to <em>decrease</em> the price from <m>\$9.00</m> to <m>\$8.95</m>. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <m>p=9</m> to justify your answer.
 				</p>
 			</statement>
 		</activity>
