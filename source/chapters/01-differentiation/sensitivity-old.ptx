@@ -72,64 +72,24 @@
 			To understand these relationships, we need a way to quantify how <em>sensitive</em> one quantity is to changes in another: if we change one variable by a small amount, how much does another variable change in response?
 		</p>
 	</introduction>
-
-    <subsection xml:id="subsec-introduction-to-sensitivity">
-        <title>Introduction to sensitivity</title>
-        <p>
-            Imagine you have two faucets in your bathroom, one for the sink and one for the shower. The temperature <m>T</m> of the water (in degrees Fahrenheit) depends on how many inches <m>x</m> you turn the handle to the left or right. Suppose both faucets have a temperature of <m>70</m> degrees Fahrenheit when the handle is centered (<m>x=0</m>), and the temperature increases as you turn the handle to the right. When you turn the shower handle half an inch to the right, the temperature rises to <m>72</m> degrees Fahrenheit. Hence we can calculate the sensitivity of the shower faucet by finding the <em>ratio</em> between the change in temperature (<m>\Delta T</m>) and the change in handle position (<m>\Delta x</m>):
-        </p>
-        <md>
-            <mrow> \dfrac{\Delta T}{\Delta x} \amp = \dfrac{T\tsub{final} - T\tsub{init}}{x\tsub{final} - x\tsub{init}} </mrow>
-            <mrow> \amp = \dfrac{72 - 70}{0.5 - 0} </mrow>
-            <mrow> \amp = \dfrac{2\text{ degrees Fahrenheit}}{0.5\text{ inches}} </mrow>
-            <mrow> \amp = 4\text{ degrees Fahrenheit per inch} </mrow>
-        </md>
-        <p>
-            But when you turn the sink faucet half an inch to the right, the temperature instead rises to <m>74</m> degrees Fahrenheit. Then the sensitivity of the sink faucet would be:
-        </p>
-        <md>
-            <mrow> \dfrac{\Delta T}{\Delta x} \amp = \dfrac{74 - 70}{0.5 - 0} </mrow>
-            <mrow> \amp = \dfrac{4\text{ degrees Fahrenheit}}{0.5\text{ inches}} </mrow>
-            <mrow> \amp = 8\text{ degrees Fahrenheit per inch} </mrow>
-        </md>
-
-        <p>
-            Hence the temperature of the water from the sink is more <term>sensitive</term> than the temperature of the water from the shower when we make changes in the handle position.
-        </p>
-        
-        <p>
-            We can get a better understanding of this sensitivity by looking at a graph. Suppose the blue line represents the graph of the shower faucet's temperature, while the red line represents the graph of the sink faucet's temperature.
-        </p>
-        <image width="75%">
-			<prefigure label="faucets" xmlns="https://prefigure.org">
-				<diagram dimensions="(300,400)" margins="30">
-				<coordinates bbox="(-4,0,4,90)">
-					<grid-axes xlabel="x" ylabel="T(x)" h-frame="bottom" />
-                    <line p1="(-3,58)" p2="(3,82)" stroke="blue"/>
-                    <line p1="(-2,54)" p2="(2,86)" stroke="red"/>
-                    <point p="(-3,58)" fill="blue"/>
-                    <point p="(-2,54)" fill="red"/>
-                    <point p="(3,82)" fill="blue"/>
-                    <point p="(2,86)" fill="red"/>
-				</coordinates>
-				</diagram>
-			</prefigure>
-		</image>
-        <p>
-            Notice that the sensitivity we calculated above is the <em>slope</em> of each line segment. The steeper the graph, the more sensitive the dependent variable is to changes in the independent variable.
-        </p>
-    </subsection>
-
-    <subsection xml:id="subsec-sensitivity-of-nonlinear-functions">
-        <title>Sensitivity of nonlinear functions</title>
-        <p>
-            In the example above, the temperature of the water from each faucet was a <term>linear</term> function of the position of each handle, which means that the sensitivity was the same no matter which two points we chose to calculate it between. But what if we analyze a situation where the relationship is <term>nonlinear</term>?
-        </p>
-        <p>
-			Imagine you're organizing a large concert and selling tickets. The revenue <m>R</m> that you earn (in thousands of dollars) is a function of the price <m>p</m> that you charge (in dollars), modeled by the function
+	
+	<subsection xml:id="subsec-sensitivity-between-two-points">
+		<title>Sensitivity between two points</title>
+		<aside>
+			<p>
+				Based on data from <url href="https://arachnoid.com/braking_physics/index.html">The Physics Behind Stopping a Car</url> by P. Lutus.
+			</p>
+		</aside>
+		<p>
+			When driving a car, the distance required to stop depends on the speed of the vehicle. If <m>L</m> is the stopping distance (measured in car lengths, assuming an average car length of <m>14.7</m> feet), and <m>v</m> is the speed (measured in miles per hour), then the relationship between <m>L</m> and <m>v</m> can be modeled by the formula
 			<me>
-				R(p) = 4p - 0.25p^2
+				L = 0.0034v^2 + 0.15v
 			</me>.
+			To make it explicit that <m>L</m> depends on <m>v</m> (that is, <m>L</m> is a <term>function</term> of <m>v</m>), we can also write
+			<me>
+				L(v) = 0.0034v^2 + 0.15v
+			</me>.
+			We call <m>v</m> the <term>independent variable</term> and <m>L</m> or <m>L(v)</m> the <term>dependent variable</term>, since the value of <m>L</m> depends on the value of <m>v</m>.
 		</p>
 		<aside>
 			<p>
@@ -137,67 +97,49 @@
 			</p>
 		</aside>
 		<p>
-			The graph of revenue according to price is shown below.
+			For example, if a car is traveling at <m>50</m> miles per hour, we have
+			<md>
+				<mrow>L(50) \amp = 0.0034\cdot 50^2 + 0.15\cdot 50</mrow>
+				<mrow> \amp = 16 \text{ car lengths}</mrow>
+			</md>,
+			so the model predicts a stopping distance of <m>16</m> car lengths (or approximately <m>235.2</m> feet).
 		</p>
 		<image width="75%">
-			<prefigure label="revenue-price" xmlns="https://prefigure.org">
-				<diagram dimensions="(300,300)" margins="30">
-				<definition>f(x)=0.25*x*(16-x)</definition>
-				<definition>a = 3</definition>
-				<definition>b = 8</definition>
-				<coordinates bbox="(0,0,20,20)">
-					<grid-axes xlabel="p" ylabel="R(p)" h-frame="bottom" v-frame="left"/>
-					<graph at="graph" function="f" domain="(0,16)"/>
-					<point p="(a,f(a))" alignment="se"><m>(3,9.75)</m></point>
-					<point p="(b,f(b))" alignment="n"><m>(8,16)</m></point>
+			<prefigure label="stopping-distance" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<point p="(a,f(a))" alignment="ne"/>
 				</coordinates>
 				</diagram>
 			</prefigure>
 		</image>
 		<p>
-			For example, since the graph goes through the point <m>(3,9.75)</m>, you know that if you charge a price of <m>\$3.00</m> for your product, your revenue will be <m>R=9.75</m>, that is, <m>\$9,\!750</m>. In function notation, we can write this as <m>R(3)=9.75</m>.
-		</p>
-        <p>
-            Notice the nonlinear shape of the graph of the revenue function:
-        </p>
-        <ul>
-            <li>
-                <p>
-                    At a price of <m>\$0.00</m>, you of course earn no revenue, since you're not charging anything for tickets.
-                </p>
-            </li>
-            <li>
-                <p>
-                    As the price begins to increase, your revenue increases as well, reaching a maximum of <m>R=16</m> (that is, <m>\$16,\!000</m>) at a price of <m>\$8.00</m>.
-                </p>
-            </li>
-            <li>
-                <p>
-                    After the price exceeds <m>\$8.00</m>, the revenue starts to decrease, until at a price of <m>\$16.00</m>, consumers are no longer willing to buy tickets, and once again you earn no revenue.
-                </p>
-            </li>
-        </ul>
-		<p>
-			Now, suppose you're currently charging <m>\$3.00</m>, and you decide to raise the price by <m>\$2.00</m> so that your new price is <m>\$5.00</m>; that is,
+			Now, we might wonder, if we were to change the speed, how much would the stopping distance change? For example, suppose the speed increases by five miles per hour, that is,
 			<md>
-				<mrow>\Delta p \amp = p\tsub{final} - p\tsub{init}</mrow>
-				<mrow>\amp = 5 - 3</mrow>
-				<mrow>\amp = 2 \text{ dollars charged}</mrow>
+				<mrow>\Delta v \amp = v\tsub{final} - v\tsub{init}</mrow>
+				<mrow>\amp = 55 - 50</mrow>
+				<mrow>\amp = 5 \text{ mph}</mrow>
 			</md>.
-			Then the resulting change in revenue would be
+			
+			Then the change in stopping distance would be
 			<md>
-				<mrow>\Delta R \amp = R\tsub{final} - R\tsub{init}</mrow>
-				<mrow>\amp = R(5) - R(3)</mrow>
-				<mrow>\amp = (4\cdot 5 - 0.25\cdot 5^2) - (4\cdot 3 - 0.25\cdot 3^2)</mrow>
-				<mrow>\amp = 13.75 - 9.75</mrow>
-				<mrow>\amp = 4 \text{ thousand dollars earned}</mrow>
+				<mrow>\Delta L \amp = L\tsub{final} - L\tsub{init}</mrow>
+				<mrow>\amp = L(55) - L(50)</mrow>
+				<mrow>\amp = (0.0034\cdot 55^2 + 0.15\cdot 55) - (0.0034\cdot 50^2 + 0.15\cdot 50)</mrow>
+				<mrow>\amp = 2.535\text{ car lengths}</mrow>
 			</md>.
-			Hence the <term>sensitivity</term> of the revenue to this change in price is
+			We can then find the <em>ratio</em> of the change in stopping distance to the change in speed:
 			<md>
-				<mrow>\frac{\Delta R}{\Delta p} \amp = \frac{R(5) - R(3)}{5 - 3}</mrow>
-				<mrow>\amp = \frac{4\text{ thousand dollars earned}}{2\text{ dollars charged}}</mrow>
-				<mrow>\amp = 2\text{ thousand dollars earned per dollar charged}</mrow>
+				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(55) - L(50)}{55-50}</mrow>
+				<mrow>\amp = \frac{2.535\text{ car lengths}}{5\text{ mph}}</mrow>
+				<mrow>\amp = 0.507\text{ car lengths per mph}</mrow>
 			</md>.
+			That is, an extra mile per hour of speed means it takes another half of a car length to stop. We can call this the <term>sensitivity</term> of the stopping distance to the given change in speed.
 		</p>
 		<definition>
 			<title>Sensitivity between two points</title>
@@ -209,120 +151,124 @@
 						\frac{\Delta y}{\Delta x} = \frac{f(b) - f(a)}{b - a}
 					</me>.
 					
-					That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as <sq>the sensitivity of <m>y</m> to the change in <m>x</m>.</sq>
+					That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as <sq>the sensitivity of <m>y</m> to changes in <m>x</m>.</sq>
 				</p>
 				<p>
 					We will also use the notation <m>\dfrac{\Delta f}{\Delta x}</m>.
 				</p>
 			</statement>
 		</definition>
-		<p>
-			However, notice that since our graph is nonlinear, the sensitivity would be different if we had chosen a different pair of points.
-		</p>
-		<activity>
-			<statement>
-				<p>
-					Use this same process to find the sensitivity when the ticket price changes:
-				</p>
-				<ul>
-					<li>
-						<p>
-							from <m>\$3</m> to <m>\$4</m>
-						</p>
-					</li>
-					<li>
-						<p>
-							from <m>\$4</m> to <m>\$5</m>
-						</p>
-					</li>
-				</ul>
-				<p>
-					How do these sensitivites compare to the sensitivity we calculated above when the ticket price changes from <m>\$3</m> to <m>\$5</m>? What do you notice about the relationship between the sensitivity and the shape of the graph?
-				</p>
-			</statement>
-		</activity>
-    </subsection>
 
-	<subsection xml:id="subsec-sensitivity-at-a-point">
-		<title>Sensitivity at a point</title>
 		<p>
-			Our calculation of the sensitivity above was somewhat coarse: since the graph of <m>R(p)</m> is curved, the slope gets gradually steeper as we go along the curve. In other words, our calculation seems to mix together several sensitivities.
+			We can also visualize what we've just done by plotting the stopping distance function <m>L(v)</m>:
 		</p>
-		<p>
-			If we want a more fine-grained measurement, a natural idea is to look at smaller changes in price. Here's what happens if we use a change in price of <m>\Delta p=0.1</m> dollars:
-			<md>
-				<mrow>\frac{\Delta R}{\Delta p} \amp = \frac{R(3.1) - R(3)}{3.1-3}</mrow>
-				<mrow>\amp = \frac{0.2475\text{ thousand dollars earned}}{0.1\text{ dollars charged}}</mrow>
-				<mrow>\amp = 2.475\text{ thousand dollars earned per dollar charged}</mrow>
-			</md>.
-		</p>
-		<activity>
-			<introduction>
-				<p>
-					Estimate the sensitivity of the revenue to the following changes <m>\Delta p</m> (assuming an initial price of <m>p\tsub{init}=3</m> dollars). What do you notice about the values you get?
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta p=0.01</m> dollars
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta p=0.001</m> dollars
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta p=-0.1</m> dollars
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta p=-0.01</m> dollars
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\Delta p=-0.001</m> dollars
-					</p>
-				</statement>
-			</task>
-		</activity>
-		<p>
-			Over smaller and smaller changes, the graph looks more and more like a straight line, and the slope between the two points appears to approach a particular value, which seems to be around <m>2.5</m> thousand dollars earned per dollar charged. (We'll soon learn how to find this value exactly, without having to do so many calculations.)
-		</p>
-		<p>
-			Now, let's ask a bold question: what if we could zoom in <sq>infinitely close</sq> to the point <m>(3,9.75)</m>?
-		</p>
-		<p>
-			If we could do this, we might imagine that the graph of <m>R(p)</m> would be indistinguishable from a perfectly straight line at that point. So if we could somehow choose two points that are <sq>infinitely close</sq> to each other, then the ratio of the infinitesimal (infinitely small) changes would be the slope of that line:
-		</p>
+		<aside>
+			<p>
+				Will figure out how to make this graph better.
+			</p>
+		</aside>
 		<image width="75%">
-			<prefigure label="revenue-price-sensitivity-point" xmlns="https://prefigure.org">
-				<diagram dimensions="(300,300)" margins="30">
-				<definition>f(x)=0.25*x*(16-x)</definition>
-				<definition>a = 3</definition>
-				<definition>b = 8</definition>
-				<coordinates bbox="(0,0,20,20)">
-					<grid-axes xlabel="p" ylabel="R(p)" h-frame="bottom" v-frame="left"/>
-					<graph at="graph" function="f" domain="(0,16)"/>
-					<point p="(a,f(a))"/>
+			<prefigure label="stopping-distance-sensitivity-interval" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<line p1="(a,f(a))" p2="(b,f(a))"/>
+					<line p1="(b,f(a))" p2="(b,f(b))"/>
+					<point p="(a,f(a))" alignment="ne"/>
+					<point p="(b,f(b))" alignment="ne"/>
 				</coordinates>
 				</diagram>
 			</prefigure>
 		</image>
 		<p>
-			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{p}</m> to denote an infinitesimal change in price, and <m>\dd{R}</m> to denote the corresponding infinitesimal change in revenue. The ratio of these differentials would then be written <me>\dv{R}{p}</me>. We will call this the <term>sensitivity</term> <em>at the single point</em> where <m>p=3</m> dollars.
+			Notice that the sensitivity we've calculated is the <em>slope</em> of the line segment connecting the points <m>(v\tsub{init},L\tsub{init})</m> and <m>(v\tsub{final},L\tsub{final})</m>.
+		</p>
+	</subsection>
+
+	<subsection xml:id="subsec-sensitivity-at-a-point">
+		<title>Sensitivity at a point</title>
+		<p>
+			Our calculation of the sensitivity above was somewhat coarse: the graph of <m>L(v)</m> is curved, and over an increase of five miles per hour, the slope gets gradually steeper as we go. In other words, our calculation seems to mix together several sensitivities.
+		</p>
+		<p>
+			If we want a more fine-grained measurement, a natural idea is to look at smaller changes in speed. Here's what happens if we use a change in speed of <m>\Delta v=0.1</m> mph:
+			<md>
+				<mrow>\frac{\Delta L}{\Delta v} \amp = \frac{L(50.1) - L(50)}{50.1-50}</mrow>
+				<mrow>\amp = \frac{0.049034\text{ car lengths}}{0.1\text{ mph}}</mrow>
+				<mrow>\amp = 0.49034\text{ car lengths per mph}</mrow>
+			</md>.
+		</p>
+		<activity>
+			<introduction>
+				<p>
+					Estimate the sensitivity of the stopping distance to the following changes <m>\Delta v</m> (assuming an initial speed of <m>v\tsub{init}=50</m> mph). What do you notice about the values you get?
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=0.01</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=0.001</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=-0.1</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=-0.01</m> mph
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\Delta v=-0.001</m> mph
+					</p>
+				</statement>
+			</task>
+		</activity>
+		<p>
+			Over smaller and smaller changes, the graph looks more and more like a straight line, and the slope between the two points appears to approach a particular value, which seems to be around <m>0.49</m> car lengths per mph. (We'll soon learn how to find this value exactly, without having to do so many calculations.)
+		</p>
+		<p>
+			Now, let's ask a bold question: what if we could zoom in <sq>infinitely close</sq> to the point <m>(50,16)</m>?
+		</p>
+		<p>
+			If we could do this, we might imagine that the graph of <m>L(v)</m> would be indistinguishable from a perfectly straight line at that point. So if we could somehow choose two points that are <sq>infinitely close</sq> to each other, then the ratio of the infinitesimal (infinitely small) changes would be the slope of that line:
+		</p>
+		<image width="75%">
+			<prefigure label="stopping-distance-sensitivity-point" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=0.0034*x^2+0.15*x</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-10,-10,70,70)">
+					<grid-axes xlabel="v" ylabel="L(v)"/>
+					<graph at="graph" function="f" domain="(0,75)"/>
+					<point p="(a,f(a))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
+		<p>
+			We call these infinitely small changes <term>differentials</term>, and we represent them with a lowercase <m>\mathrm{d}</m>: in this case, we would write <m>\dd{v}</m> to denote an infinitesimal change in speed, and <m>\dd{L}</m> to denote the corresponding infinitesimal change in stopping distance. The ratio of these differentials would then be written <me>\dv{L}{v}</me>. We will call this the <term>sensitivity</term> <em>at the single point</em> where <m>v=50</m> miles per hour.
 		</p>
 		<definition xml:id="def-sensitivity-at-a-point">
 			<title>Sensitivity at a point</title>
@@ -348,7 +294,7 @@
 		<activity>
 			<statement>
 				<p>
-					Use this same process to estimate <m>\eval{\DS\dv{R}{p}}_{p=5}</m> and <m>\eval{\DS\dv{R}{p}}_{p=9}</m>. How does the sensitivity of revenue to changes in price compare at these different prices?
+					Use this same process to estimate <m>\eval{\DS\dv{L}{v}}_{v=30}</m> and <m>\eval{\DS\dv{L}{v}}_{v=70}</m>. How does the sensitivity of stopping distance to changes in speed compare at these different speeds?
 				</p>
 			</statement>
 		</activity>
@@ -356,9 +302,25 @@
 
 	<subsection xml:id="subsec-interpreting-sensitivity">
 		<title>Interpreting sensitivity</title>
-		
 		<p>
-			We can get some useful information about how the revenue changes with respect to the price by looking at the slope of the graph at each point:
+			Let's look at another example. Suppose the following graph shows <m>R</m>, the revenue earned (in thousands of dollars) from selling a product, as a function of <m>p</m>, the price charged (in dollars):
+		</p>
+		<image width="75%">
+			<prefigure label="revenue-price" xmlns="https://prefigure.org">
+				<diagram dimensions="(300,300)" margins="5">
+				<definition>f(x)=x*(16-x)</definition>
+				<definition>a = 50</definition>
+				<definition>b = 55</definition>
+				<coordinates bbox="(-5,-10,21,80)">
+					<grid-axes xlabel="p" ylabel="R(p)"/>
+					<graph at="graph" function="f" domain="(0,16)"/>
+					<point p="(a,f(a))" alignment="ne"/>
+				</coordinates>
+				</diagram>
+			</prefigure>
+		</image>
+		<p>
+			Even though we don't have an explicit formula for <m>R(p)</m>, we can still determine the sign of the sensitivity <m>\DS\dv{R}{p}</m> by looking at the slope of the graph at each point:
 		</p>
 		<ul>
 			<li>
@@ -374,8 +336,8 @@
 		</ul>
 
 		<p>
-			So looking at the <em>sign</em> of the sensitivity can tell us the <em>direction</em> in which our function responds to changes. We can also use it to tell <em>how much</em> the revenue will change to a small change in price. For example, suppose that at a price of <m>\$9.00</m>, we know that the sensitivity is <me>\eval{\DS\dv{R}{p}}_{p=9} = -0.5\text{ thousand dollars earned per dollar charged}</me>.
-			Now suppose we want to raise the price from <m>\$9.00</m> to <m>\$9.10</m>. Since the sensitivity <m>\DS\dv{R}{p}</m> is supposed to be the ratio of <sq>infinitely small</sq> changes, we can write:
+			So looking at the <em>sign</em> of the sensitivity can tell us the <em>direction</em> in which our function responds to changes. We can also use it to tell <em>how much</em> the revenue will change to a small change in price. For example, suppose that at a price of $10, the sensitivity is <me>\eval{\DS\dv{R}{p}}_{p=10} = -4\text{ thousand dollars earned per dollar charged}</me>.
+			Now suppose we want to raise the price from $10 to $10.50. Since the sensitivity <m>\DS\dv{R}{p}</m> is supposed to be the ratio of <sq>infinitely small</sq> changes, we can write:
 			<me>
 				\dfrac{\Delta R}{\Delta p} \approx \DS\dv{R}{p}
 			</me>
@@ -385,72 +347,24 @@
 			</me>.
 			Substituting what we know, we have
 			<md>
-				<mrow>\Delta R \amp \approx -0.5\cdot 0.10</mrow>
-				<mrow>\amp = -0.05\text{ thousand dollars}</mrow>.
+				<mrow>\Delta R \amp \approx -4\cdot 0.5</mrow>
+				<mrow>\amp = -2\text{ thousand dollars}</mrow>.
 			</md>
-			Hence if we increase the price from <m>$9.00</m> to <m>$9.10</m>, we can estimate that the revenue will decrease by approximately <m>\$50.00</m>.
+			Hence if we increase the price from $10 to $10.50, we can estimate that the revenue will decrease by approximately $2,000.
 		</p>
 		<p>
-			In this case, we can explicitly calculate the actual change in revenue to see how good our estimate is. We have
-			<md>
-				<mrow>\Delta R \amp = R(9.1) - R(9)</mrow>
-				<mrow>\amp = 15.6975 - 15.75</mrow>
-				<mrow>\amp = -0.0525\text{ thousand dollars}</mrow>
-			</md>.
-			So our estimate of a <m>\$50.00</m> decrease in revenue was pretty close to the actual decrease of about <m>\$52.50</m>. However, computing the actual decrease required we compute the revenue at two different prices, and for a different change in price, we'd need to compute a new revenue every single time. Using the sensitivity at a point instead lets us make lots of quick estimates of how the revenue will change in response to small changes in price without having to recompute the revenue every time.
+			Again, notice that we were able to make this estimation without having an explicit formula for <m>R(p)</m>. In many cases, we don't have a formula for the function we're interested in, such as when our model is based on data. In those cases, understanding how sensitivity lets us estimate change is useful for making predictions in how the output will respond to a change in input.
 		</p>
 		<activity>
 			<statement>
 				<p>
-					Suppose that we decide to <em>decrease</em> the price from <m>$9.00</m> to <m>$8.95</m>. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <m>p=9</m> to justify your answer.
+					Suppose that we decide to <em>decrease</em> the price from $10 to $9.50. How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <m>p=10</m> to justify your answer.
 				</p>
 			</statement>
 		</activity>
 	</subsection>
 
 	<exercises>
-		<exercise>
-			<introduction>
-				<p>
-					In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.
-				</p>
-			</introduction>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{B}{P}</m>, where <m>B=</m> the brightness of a lamp (measured in lumens) and <m>P=</m> the electrical power supplied to the lamp (measured in watts)
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{S}{D}</m>, where <m>S=</m> the strength of a wireless signal (in bars) and <m>D=</m> the distance from the signal source (in meters)
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the number of minutes for which the potato is left to bake in the oven
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
-					</p>
-				</statement>
-			</task>
-			<task>
-				<statement>
-					<p>
-						<m>\DS\dv{C}{h}</m>, where <m>C=</m> the number of calories in a candy bar and <m>h=</m> the elevation (in feet) of the candy bar above sea level
-					</p>
-				</statement>
-			</task>
-		</exercise>
 		<exercise>
 			<introduction>
 				<p>
@@ -529,16 +443,6 @@
 					</p>
 				</statement>
 			</task>
-		</exercise>
-		<exercise>
-			<statement>
-				<p>
-					It can be shown that in the ticket example, the <term>quantity demanded</term> of tickets (the number of tickets that consumers are willing to buy) is a function of the price, given by <m>q(p)=16-p</m>. The revenue is then given by <m>R(p)=p\cdot q(p)</m>.
-				</p>
-				<p>
-					Find the sensitivity of the quantity demanded to changes in price at the point <m>p=3</m>. What does the sign of this sensitivity tell you about how the quantity demanded changes in response to changes in price?
-				</p>
-			</statement>
 		</exercise>
 		<exercise>
 			<introduction>
@@ -642,6 +546,48 @@
 				<statement>
 					<p>
 						<m>y=x^2-5x+4</m>, at <m>x=1</m> and <m>x=4</m>
+					</p>
+				</statement>
+			</task>
+		</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					In this exercise, you'll interpret the sign of the sensitivity for various real-world contexts. For each one, determine whether the sensitivity should be positive, negative, or zero, and explain your answer. (Think: if you increase the independent variable, what would you expect to happen to the dependent variable?) Also give the units for the sensitivity.
+				</p>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{B}{P}</m>, where <m>B=</m> the brightness of a lamp (measured in lumens) and <m>P=</m> the electrical power supplied to the lamp (measured in watts)
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{q}{p}</m>, where <m>q=</m> the number of packages of gourmet coffee beans that are ordered by consumers and <m>p=</m> the price (in dollars per package) of the coffee beans
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{T}{t}</m>, where <m>T=</m> the temperature (in degrees Fahrenheit) of a baked potato and <m>t=</m> the number of minutes for which the potato is left to bake in the oven
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{t}{T}</m>, where <m>t=</m> the number of minutes it takes to fully bake a potato (i.e. to get it to reach a desired temperature) and <m>T=</m> the temperature (in degrees Fahrenheit) of the oven
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						<m>\DS\dv{C}{h}</m>, where <m>C=</m> the number of calories in a candy bar and <m>h=</m> the elevation (in feet) of the candy bar above sea level
 					</p>
 				</statement>
 			</task>
