@@ -158,7 +158,7 @@
 			</prefigure>
 		</image>
 		<p>
-			For example, since the graph goes through the point <m>(3,9.75)</m>, you know that if you charge a price of <m>\$3.00</m> for your product, your revenue will be <m>R=9.75</m>, that is, <m>\$9,\!750</m>. In function notation, we can write this as <m>R(3)=9.75</m>.
+			For example, since the graph goes through the point <m>(3,9.75)</m>, you know that if you charge a price of <m>\$3.00</m> for a ticket, your revenue will be <m>R=9.75</m>, that is, <m>\$9,\!750</m>. In function notation, we can write this as <m>R(3)=9.75</m>.
 		</p>
         <p>
             Notice the nonlinear shape of the graph of the revenue function:
