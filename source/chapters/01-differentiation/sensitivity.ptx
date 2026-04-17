@@ -74,54 +74,60 @@
 	</introduction>
 
     <subsection xml:id="subsec-introduction-to-sensitivity">
-        <title>Introduction to sensitivity</title>
-        <p>
-            Imagine you have two faucets in your bathroom, one for the sink and one for the shower. The temperature <m>T</m> of the water (in degrees Fahrenheit) depends on how many inches <m>x</m> you turn the handle to the left or right. As you would expect, turning the faucet to the left makes the water colder, while turning it to the right makes it warmer.
+		<title>Introduction to sensitivity</title>
+		<p>
+			Imagine you're adjusting the volume knob in two different cars: your own car and your friend's car. Let <m>V</m> be the volume of the music in decibels (dB), and let <m>x</m> be the number of millimeters you turn the knob to the right from the minimum-volume position. (More precisely, it's how many millimeters you turn the <em>outer edge</em> of the knob.)
 		</p>
 		<p>
-			Suppose that for the shower faucet, for each inch you twist the handle to the right, the temperature increases by <m>4</m> degrees Fahrenheit. Meanwhile, for the sink faucet, for each inch you twist the handle to the right, the temperature increases by <m>8</m> degrees Fahrenheit. In this case, we would say that the temperature of the water from the sink is more <term>sensitive</term> to changes in the handle position.
-        </p>
-        <p>
-            We can get a better understanding of this sensitivity by looking at a graph. Suppose the blue line represents the graph of the shower faucet's temperature, while the red line represents the graph of the sink faucet's temperature.
-        </p>
-        <image width="75%">
-			<prefigure label="faucets" xmlns="https://prefigure.org">
-				<diagram dimensions="(300,350)" margins="30">
-				<definition>f(x)=70 + 4*x</definition>
-				<definition>g(x)=65 + 8*x</definition>
-				<coordinates bbox="(-2,0,2,90)">
-					<grid-axes xlabel="x" ylabel="T" h-frame="bottom" />
-					<graph at="graph" function="f" domain="(-4,4)" stroke="blue"/>
-					<graph at="graph" function="g" domain="(-4,4)" stroke="red"/>
+			Suppose that in both cars, the volume ranges from <m>0</m> dB at the minimum setting up to <m>80</m> dB at the maximum setting. In your car, turning the knob <m>40</m> mm to the right brings the volume from <m>0</m> dB to <m>80</m> dB.
+			In your friend's car, however, you only have to turn the knob <m>20</m> mm to go from <m>0</m> dB to <m>80</m> dB. Hence the volume knob in your friend's car is more <term>sensitive</term>.
+		</p>
+		<p>
+			We can quantify the sensitivity by calculating how many decibels the volume increases <em>per</em> millimeter of turning the knob. In your car, the volume increases from <m>0</m> dB to <m>80</m> dB when you turn the knob by <m>40</m> mm, so the sensitivity is
+			<me>
+				\frac{80\text{ dB}}{40\text{ mm}}=2\text{ dB per mm}
+			</me>.
+			Meanwhile, in your friend's car, the volume increases from <m>0</m> dB to <m>80</m> dB when you turn the knob by <m>20</m> mm, so the sensitivity is
+			<me>
+				\frac{80\text{ dB}}{20\text{ mm}}=4\text{ dB per mm}
+			</me>.
+			Hence the volume in your friend's car is more <term>sensitive</term> to changes in the knob position.
+		</p>
+		<p>
+			We can also visualize the sensitivity by looking at a graph. Suppose the blue line represents the volume in your car, while the red line represents the volume in your friend's car.
+		</p>
+		<image width="50%">
+			<prefigure label="volume-knobs" xmlns="https://prefigure.org">
+				<diagram dimensions="(200,400)" margins="30">
+				<definition>f(x)=2*x</definition>
+				<definition>g(x)=4*x</definition>
+				<coordinates bbox="(0,0,45,90)">
+					<grid-axes xlabel="x" ylabel="V" h-frame="bottom" v-frame="left" spacings="((0,10,40),(0,10,80))"/>
+					<graph at="graph" function="f" domain="(0,40)" stroke="blue"/>
+					<graph at="graph" function="g" domain="(0,20)" stroke="red"/>
 				</coordinates>
 				</diagram>
 			</prefigure>
 		</image>
-		<aside>
-			<p>
-				Note that the figure is not drawn with equal scales on the axes, so the slopes of the lines you see are not actually <m>4</m> and <m>8</m>. The important thing is that the red line is steeper than the blue line.
-			</p>
-		</aside>
 		<p>
-			The equation of the line for the shower faucet is <m>T = 4x + 70</m>, and the equation for the sink faucet is <m>T = 8x + 65</m>. Notice that the sensitivity we calculated above is the <em>slope</em> of each line:
+			The equation of the line for your car is <m>V=2x</m>, and the equation for your friend's car is <m>V=4x</m>. Notice that the sensitivity is the <em>slope</em> of each line:
 		</p>
-		
 		<ul>
 			<li>
 				<p>
-					For the shower, the sensitivity is <m>4</m> degrees Fahrenheit per inch turned.
+					For your car, the sensitivity is <m>2</m> dB/mm.
 				</p>
 			</li>
 			<li>
 				<p>
-					For the sink, the sensitivity is <m>8</m> degrees Fahrenheit per inch turned.
+					For your friend's car, the sensitivity is <m>4</m> dB/mm.
 				</p>
 			</li>
 		</ul>
 		<p>
-			Hence, steeper the graph, the more sensitive the dependent variable is to changes in the independent variable.
-        </p>
-    </subsection>
+			Hence, a steeper slope represents a more sensitive relationship between the variables.
+		</p>
+	</subsection>
 
     <subsection xml:id="subsec-sensitivity-of-nonlinear-functions">
         <title>Sensitivity of nonlinear functions</title>
@@ -181,13 +187,13 @@
             </li>
         </ul>
 		<p>
-			Now, suppose you're currently charging <m>\$3.00</m>, and you decide to raise the price to <m>\$5.00</m>; that is,
+			Now, suppose you're currently charging <m>\$3.00</m>, and you decide to raise the price to <m>\$5.00</m>; that is, the <term>change</term> in price (<m>\Delta p</m>) is
 			<md>
 				<mrow>\Delta p \amp = p\tsub{final} - p\tsub{init}</mrow>
 				<mrow>\amp = 5 - 3</mrow>
 				<mrow>\amp = 2 \text{ dollars charged}</mrow>
 			</md>.
-			Then the resulting change in revenue would be
+			Then the resulting change in revenue (<m>\Delta R</m>) would be
 			<md>
 				<mrow>\Delta R \amp = R\tsub{final} - R\tsub{init}</mrow>
 				<mrow>\amp = R(5) - R(3)</mrow>
@@ -346,7 +352,7 @@
 			</statement>
 		</definition>
 		<p>
-			Now, you might be a bit skeptical of this idea of using <sq>infinitely small</sq> changes. If so, you're in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on <mdash/> just how small is <sq>infinitely small</sq> anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise, which will allow us to use them with confidence to describe real-world phenomena in a variety of applied contexts.
+			Now, you might be a bit skeptical of this idea of using <sq>infinitely small</sq> changes. If so, you're in good company! This idea of using infinitesimal quantities has long been a controversial topic in mathematics. On one hand, infinity is notoriously difficult to get a handle on <mdash/> just how small is <sq>infinitely small</sq> anyway? On the other hand, allowing ourselves to work with these infinitesimal ideas has helped us solve a lot of tricky problems throughout history. By developing calculus, we'll be able to find a way to make these intuitive-but-somewhat-vague arguments more precise; this will enable us to confidently use them to describe real-world phenomena in a variety of applied contexts.
 		</p>
 		<activity>
 			<statement>
@@ -403,7 +409,7 @@
 				<mrow>\amp = 15.6975 - 15.75</mrow>
 				<mrow>\amp = -0.0525\text{ thousand dollars}</mrow>
 			</md>.
-			So our estimate of a <m>\$50.00</m> decrease in revenue was pretty close to the actual decrease of about <m>\$52.50</m>. However, computing the actual decrease required we compute the revenue at two different prices, and for a different change in price, we'd need to compute a new revenue every single time. Using the sensitivity at a point instead lets us make lots of quick estimates of how the revenue will change in response to small changes in price without having to recompute the revenue every time.
+			So our estimate of a <m>\$50.00</m> decrease in revenue was pretty close to the actual decrease of about <m>\$52.50</m>. However, computing the actual decrease required we compute the revenue at two different prices, and for a different change in price, we'd need to compute a new revenue every single time. On the other hand, using the sensitivity at a point lets us make lots of quick estimates of how the revenue will change in response to small changes in price without having to recompute the revenue every time.
 		</p>
 		<activity>
 			<statement>
