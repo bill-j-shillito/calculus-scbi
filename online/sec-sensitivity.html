@@ -614,45 +614,63 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Subsection: Introduction to sensitivity"><a href="#subsec-introduction-to-sensitivity" title="Copy heading and permalink for Subsection: Introduction to sensitivity" aria-label="Copy heading and permalink for Subsection: Introduction to sensitivity">🔗</a></div></section><section class="subsection" id="subsec-sensitivity-of-nonlinear-functions"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity of nonlinear functions</span>
 </h3>
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-2">In the example above, the temperature of the water from each faucet was a <dfn class="terminology">linear</dfn> function of the position of each handle, which means that the sensitivity was the same no matter which two points we chose to calculate it between. But what if we analyze a situation where the relationship is <dfn class="terminology">nonlinear</dfn>?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-2">In the example above, the volume of the sound system was a <dfn class="terminology">linear</dfn> function of the position of each knob, which means that the sensitivity was the same no matter which two points we chose to calculate it between. But what if we analyze a situation where the relationship is <dfn class="terminology">nonlinear</dfn>?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-3">
-<div class="para">Imagine you’re selling tickets for a small concert you’re organizing at your university. The revenue <span class="process-math">\(R\)</span> that you earn (in thousands of dollars) is a function of the price <span class="process-math">\(p\)</span> that you charge (in dollars), modeled by the function</div>
-<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-3-3">
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-3">Imagine you’re selling tickets for a small concert you’re organizing at your university. You’re currently charging <span class="process-math">\(\$3.00\)</span> per ticket, but you wonder whether you should increase the price. You wonder, how <em class="emphasis">sensitive</em> would your revenue be to a change in the price?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-4">
+<div class="para">Based on some market research, you find that the revenue <span class="process-math">\(R\)</span> that you earn (in thousands of dollars) can be modeled by the function</div>
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-4-2">
+\begin{equation*}
+R = 4p - 0.25p^2\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(p\)</span> is the price (in dollars) that you charge for each ticket. To emphasize that the revenue is a <em class="emphasis">function</em> of the price, we can also write this as</div>
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-4-5">
 \begin{equation*}
 R(p) = 4p - 0.25p^2\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-sensitivity-of-nonlinear-functions-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-of-nonlinear-functions-4-1">In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in <span class="process-math">\(y\)</span> depending on <span class="process-math">\(x\)</span> and writing <span class="process-math">\(y = y(x)\text{,}\)</span> or we can give the function a separate name and write <span class="process-math">\(y = f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details><div class="para" id="subsec-sensitivity-of-nonlinear-functions-5">The graph of revenue according to price is shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<details id="subsec-sensitivity-of-nonlinear-functions-5" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsec-sensitivity-of-nonlinear-functions-5-1">In general, when one quantity depends on another, there are two common ways to name this relationship. We can name the output directly, as in <span class="process-math">\(y\)</span> depending on <span class="process-math">\(x\)</span> and writing <span class="process-math">\(y = y(x)\text{,}\)</span> or we can give the function a separate name and write <span class="process-math">\(y = f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-6">
+<div class="para">For example, at the current price of <span class="process-math">\(\$3.00\text{,}\)</span> we have</div>
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-6-2">
+\begin{align*}
+R(3) \amp = 4\cdot 3 - 0.25\cdot 3^2\\
+\amp = 9.75\text{ thousand dollars}\text{,}
+\end{align*}
+</div>
+<div class="para">so the revenue is <span class="process-math">\(\$9,\!750\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-7">The graph of revenue according to price is shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/prefigure/revenue-price.svg" role="img" class="contained"></div>
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-7">For example, since the graph goes through the point <span class="process-math">\((3,9.75)\text{,}\)</span> you know that if you charge a price of <span class="process-math">\(\$3.00\)</span> for a ticket, your revenue will be <span class="process-math">\(R=9.75\text{,}\)</span> that is, <span class="process-math">\(\$9,\!750\text{.}\)</span> In function notation, we can write this as <span class="process-math">\(R(3)=9.75\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-9">Notice the nonlinear shape of the graph of the revenue function:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-8">Notice the nonlinear shape of the graph of the revenue function:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="subsec-sensitivity-of-nonlinear-functions-10">
+<li id="subsec-sensitivity-of-nonlinear-functions-10-1">
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-10-1-1">At a price of <span class="process-math">\(\$0.00\text{,}\)</span> you of course earn no revenue, since you’re not charging anything for tickets.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ul class="disc" id="subsec-sensitivity-of-nonlinear-functions-9">
-<li id="subsec-sensitivity-of-nonlinear-functions-9-1">
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-9-1-1">At a price of <span class="process-math">\(\$0.00\text{,}\)</span> you of course earn no revenue, since you’re not charging anything for tickets.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-9-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-10-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-sensitivity-of-nonlinear-functions-9-2">
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-9-2-1">As the price begins to increase, your revenue increases as well, reaching a maximum of <span class="process-math">\(R=16\)</span> (that is, <span class="process-math">\(\$16,\!000\)</span>) when you charge <span class="process-math">\(\$8.00\)</span> per ticket.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-sensitivity-of-nonlinear-functions-10-2">
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-10-2-1">As the price begins to increase, your revenue increases as well, reaching a maximum of <span class="process-math">\(R=16\)</span> (that is, <span class="process-math">\(\$16,\!000\)</span>) when you charge <span class="process-math">\(\$8.00\)</span> per ticket.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-9-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-10-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-sensitivity-of-nonlinear-functions-9-3">
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-9-3-1">After the price exceeds <span class="process-math">\(\$8.00\text{,}\)</span> the revenue starts to decrease, until at a price of <span class="process-math">\(\$16.00\text{,}\)</span> consumers are no longer willing to buy tickets, and once again you earn no revenue.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-sensitivity-of-nonlinear-functions-10-3">
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-10-3-1">After the price exceeds <span class="process-math">\(\$8.00\text{,}\)</span> the revenue starts to decrease, until at a price of <span class="process-math">\(\$16.00\text{,}\)</span> consumers are no longer willing to buy tickets, and once again you earn no revenue.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-9-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-10-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-10">
+<div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-11">
 <div class="para">Now, suppose you’re currently charging <span class="process-math">\(\$3.00\text{,}\)</span> and you decide to raise the price to <span class="process-math">\(\$5.00\text{;}\)</span> that is, the <dfn class="terminology">change</dfn> in price (<span class="process-math">\(\Delta p\)</span>) is</div>
-<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-10-5">
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-11-5">
 \begin{align*}
 \Delta p \amp = p\tsub{final} - p\tsub{init}\\
 \amp = 5 - 3\\
@@ -660,7 +678,7 @@ R(p) = 4p - 0.25p^2\text{.}
 \end{align*}
 </div>
 <div class="para">Then the resulting change in revenue (<span class="process-math">\(\Delta R\)</span>) would be</div>
-<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-10-7">
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-11-7">
 \begin{align*}
 \Delta R \amp = R\tsub{final} - R\tsub{init}\\
 \amp = R(5) - R(3)\\
@@ -670,49 +688,49 @@ R(p) = 4p - 0.25p^2\text{.}
 \end{align*}
 </div>
 <div class="para">Hence the <dfn class="terminology">sensitivity</dfn> of the revenue to this change in price is</div>
-<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-10-9">
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-11-9">
 \begin{align*}
 \frac{\Delta R}{\Delta p} \amp = \frac{R(5) - R(3)}{5 - 3}\\
 \amp = \frac{4\text{ thousand dollars earned}}{2\text{ dollars charged}}\\
 \amp = 2\text{ thousand dollars earned per dollar charged}\text{.}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="subsec-sensitivity-of-nonlinear-functions-11"><h4 class="heading">
+<article class="definition definition-like" id="subsec-sensitivity-of-nonlinear-functions-12"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity between two points.</span>
 </h4>
-<div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-11-2-1">
+<div class="para logical" id="subsec-sensitivity-of-nonlinear-functions-12-2-1">
 <div class="para">If <span class="process-math">\(y=f(x)\text{,}\)</span> then the <dfn class="terminology">sensitivity</dfn> of <span class="process-math">\(f\)</span> between the points <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> is defined as</div>
-<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-11-2-1-6">
+<div class="displaymath process-math" id="subsec-sensitivity-of-nonlinear-functions-12-2-1-6">
 \begin{equation*}
 \frac{\Delta y}{\Delta x} = \frac{f(b) - f(a)}{b - a}\text{.}
 \end{equation*}
 </div>
 <div class="para">That is, the sensitivity is the ratio of the change in the output to the change in the input over that interval. We often say this out loud as ‘the sensitivity of <span class="process-math">\(y\)</span> to the change in <span class="process-math">\(x\text{.}\)</span>’</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="subsec-sensitivity-of-nonlinear-functions-11-2-2">We will also use the notation <span class="process-math">\(\dfrac{\Delta f}{\Delta x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-11-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsec-sensitivity-of-nonlinear-functions-12-2-2">We will also use the notation <span class="process-math">\(\dfrac{\Delta f}{\Delta x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1: Sensitivity between two points"><a href="#subsec-sensitivity-of-nonlinear-functions-11" title="Copy heading and permalink for Definition 1: Sensitivity between two points" aria-label="Copy heading and permalink for Definition 1: Sensitivity between two points">🔗</a></div></article><div class="para" id="subsec-sensitivity-of-nonlinear-functions-12">However, notice that since our graph is nonlinear, the sensitivity would be different if we had chosen a different pair of points.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 1: Sensitivity between two points"><a href="#subsec-sensitivity-of-nonlinear-functions-12" title="Copy heading and permalink for Definition 1: Sensitivity between two points" aria-label="Copy heading and permalink for Definition 1: Sensitivity between two points">🔗</a></div></article><div class="para" id="subsec-sensitivity-of-nonlinear-functions-13">However, notice that since our graph is nonlinear, the sensitivity would be different if we had chosen a different pair of points.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="activity project-like" id="subsec-sensitivity-of-nonlinear-functions-13"><h4 class="heading">
+<article class="activity project-like" id="subsec-sensitivity-of-nonlinear-functions-14"><h4 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-13-1-1">Use this same process to find the sensitivity when the ticket price changes:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <ul class="disc" id="subsec-sensitivity-of-nonlinear-functions-13-1-2">
-<li id="subsec-sensitivity-of-nonlinear-functions-13-1-2-1">
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-13-1-2-1-1">from <span class="process-math">\(\$3\)</span> to <span class="process-math">\(\$4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-13-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-14-1-1">Use this same process to find the sensitivity when the ticket price changes:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ul class="disc" id="subsec-sensitivity-of-nonlinear-functions-14-1-2">
+<li id="subsec-sensitivity-of-nonlinear-functions-14-1-2-1">
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-14-1-2-1-1">from <span class="process-math">\(\$3\)</span> to <span class="process-math">\(\$4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-14-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-13-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-14-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-sensitivity-of-nonlinear-functions-13-1-2-2">
-<div class="para" id="subsec-sensitivity-of-nonlinear-functions-13-1-2-2-1">from <span class="process-math">\(\$4\)</span> to <span class="process-math">\(\$5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-13-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-sensitivity-of-nonlinear-functions-14-1-2-2">
+<div class="para" id="subsec-sensitivity-of-nonlinear-functions-14-1-2-2-1">from <span class="process-math">\(\$4\)</span> to <span class="process-math">\(\$5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-14-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-13-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-sensitivity-of-nonlinear-functions-14-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-</ul> <div class="para" id="subsec-sensitivity-of-nonlinear-functions-13-1-3">How do these sensitivites compare to the sensitivity we calculated above when the ticket price changes from <span class="process-math">\(\$3\)</span> to <span class="process-math">\(\$5\text{?}\)</span> What do you notice about the relationship between the sensitivity and the shape of the graph?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-13-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</ul> <div class="para" id="subsec-sensitivity-of-nonlinear-functions-14-1-3">How do these sensitivites compare to the sensitivity we calculated above when the ticket price changes from <span class="process-math">\(\$3\)</span> to <span class="process-math">\(\$5\text{?}\)</span> What do you notice about the relationship between the sensitivity and the shape of the graph?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-of-nonlinear-functions-14-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1"><a href="#subsec-sensitivity-of-nonlinear-functions-13" title="Copy heading and permalink for Activity 1" aria-label="Copy heading and permalink for Activity 1">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Sensitivity of nonlinear functions"><a href="#subsec-sensitivity-of-nonlinear-functions" title="Copy heading and permalink for Subsection: Sensitivity of nonlinear functions" aria-label="Copy heading and permalink for Subsection: Sensitivity of nonlinear functions">🔗</a></div></section><section class="subsection" id="subsec-sensitivity-at-a-point"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Activity 1"><a href="#subsec-sensitivity-of-nonlinear-functions-14" title="Copy heading and permalink for Activity 1" aria-label="Copy heading and permalink for Activity 1">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Sensitivity of nonlinear functions"><a href="#subsec-sensitivity-of-nonlinear-functions" title="Copy heading and permalink for Subsection: Sensitivity of nonlinear functions" aria-label="Copy heading and permalink for Subsection: Sensitivity of nonlinear functions">🔗</a></div></section><section class="subsection" id="subsec-sensitivity-at-a-point"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sensitivity at a point</span>
 </h3>
 <div class="para" id="subsec-sensitivity-at-a-point-2">Our calculation of the sensitivity above was somewhat coarse: since the graph of <span class="process-math">\(R(p)\)</span> is curved, the slope gets gradually steeper as we go along the curve. In other words, our calculation seems to mix together several sensitivities.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sensitivity-at-a-point-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -837,7 +855,7 @@ R(p) = 4p - 0.25p^2\text{.}
 \amp = -0.05\text{ thousand dollars}
 \end{align*}
 </div>
-<div class="para">Hence if we increase the price from <span class="process-math">\($9.00\)</span> to <span class="process-math">\($9.10\text{,}\)</span> we can estimate that the revenue will decrease by approximately <span class="process-math">\(\$50.00\text{.}\)</span>
+<div class="para">Hence if we increase the price from <span class="process-math">\(\$9.00\)</span> to <span class="process-math">\(\$9.10\text{,}\)</span> we can estimate that the revenue will decrease by approximately <span class="process-math">\(\$50.00\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-interpreting-sensitivity-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -856,7 +874,7 @@ R(p) = 4p - 0.25p^2\text{.}
 <article class="activity project-like" id="subsec-interpreting-sensitivity-7"><h4 class="heading">
 <span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="subsec-interpreting-sensitivity-7-1-1">Suppose that we decide to <em class="emphasis">decrease</em> the price from <span class="process-math">\($9.00\)</span> to <span class="process-math">\($8.95\text{.}\)</span> How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <span class="process-math">\(p=9\)</span> to justify your answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-interpreting-sensitivity-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-interpreting-sensitivity-7-1-1">Suppose that we decide to <em class="emphasis">decrease</em> the price from <span class="process-math">\(\$9.00\)</span> to <span class="process-math">\(\$8.95\text{.}\)</span> How much would we estimate the revenue to change? Would it increase or decrease? Use the sensitivity at <span class="process-math">\(p=9\)</span> to justify your answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-interpreting-sensitivity-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Activity 4"><a href="#subsec-interpreting-sensitivity-7" title="Copy heading and permalink for Activity 4" aria-label="Copy heading and permalink for Activity 4">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Interpreting sensitivity"><a href="#subsec-interpreting-sensitivity" title="Copy heading and permalink for Subsection: Interpreting sensitivity" aria-label="Copy heading and permalink for Subsection: Interpreting sensitivity">🔗</a></div></section><section class="exercises" id="sec-sensitivity-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
@@ -1045,13 +1063,13 @@ R(p) \amp = p \cdot x(p) \\
 <div class="para" id="sec-sensitivity-8-9-1-1">A car is driven along a fixed 100-mile route. The table below shows the total amount of energy <span class="process-math">\(E\)</span> used for the trip as a function of the car’s speed <span class="process-math">\(v\text{.}\)</span> Here <span class="process-math">\(v\)</span> is measured in miles per hour and <span class="process-math">\(E\)</span> is measured in kilowatt-hours.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sensitivity-8-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b1 r1 l0 t0 lines"><span class="process-math">\(v \text{ (mph)}\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(45\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(50\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(55\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(60\)</span></th>
-<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(65\)</span></th>
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(v \text{ (mph)}\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(45\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(50\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(55\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(60\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(65\)</span></td>
 </tr>
 <tr>
 <td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(E \text{ (kWh)}\)</span></td>
