@@ -531,14 +531,32 @@
 			</task>
 		</exercise>
 		<exercise>
-			<statement>
+			<introduction>
 				<p>
-					It can be shown that in the ticket example, the <term>quantity demanded</term> of tickets (the number of tickets that consumers are willing to buy) is a function of the price, given by <m>q(p)=16-p</m>. The revenue is then given by <m>R(p)=p\cdot q(p)</m>.
+					It can be shown that in the ticket example, the <term>quantity demanded</term> of tickets (the number of tickets that consumers are willing to buy, measured in thousands of tickets) is a function of the price, given by <m>x(p)=16-p</m>. The revenue is then given by <m>R(p)=p\cdot x(p)</m>.
 				</p>
-				<p>
-					Find the sensitivity of the quantity demanded to changes in price at the point <m>p=3</m>. What does the sign of this sensitivity tell you about how the quantity demanded changes in response to changes in price?
-				</p>
-			</statement>
+			</introduction>
+			<task>
+				<statement>
+					<p>
+						Find <m>\DS\dv{x}{p}</m>, the sensitivity of the quantity demanded to changes in price, including correct units.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Interpret the value and the sign of the <m>\DS\dv{x}{p}</m> in the context of the problem.
+					</p>
+				</statement>
+			</task>
+			<task>
+				<statement>
+					<p>
+						Suppose you raise the price from <m>\$3.00</m> to <m>\$3.10</m>. What will happen to the number of tickets people are willing to buy?
+					</p>
+				</statement>
+			</task>
 		</exercise>
 		<exercise>
 			<introduction>
