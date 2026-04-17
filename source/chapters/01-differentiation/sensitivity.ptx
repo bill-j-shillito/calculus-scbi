@@ -39,7 +39,7 @@
 			</li>
 			<li>
 				<p>
-					The daily calories needed by an organism depends on its mass.
+					The daily calorie intake needed by an organism depends on its mass.
 				</p>
 			</li>
 			<li>
@@ -76,47 +76,50 @@
     <subsection xml:id="subsec-introduction-to-sensitivity">
         <title>Introduction to sensitivity</title>
         <p>
-            Imagine you have two faucets in your bathroom, one for the sink and one for the shower. The temperature <m>T</m> of the water (in degrees Fahrenheit) depends on how many inches <m>x</m> you turn the handle to the left or right. Suppose both faucets have a temperature of <m>70</m> degrees Fahrenheit when the handle is centered (<m>x=0</m>), and the temperature increases as you turn the handle to the right. When you turn the shower handle half an inch to the right, the temperature rises to <m>72</m> degrees Fahrenheit. Hence we can calculate the sensitivity of the shower faucet by finding the <em>ratio</em> between the change in temperature (<m>\Delta T</m>) and the change in handle position (<m>\Delta x</m>):
+            Imagine you have two faucets in your bathroom, one for the sink and one for the shower. The temperature <m>T</m> of the water (in degrees Fahrenheit) depends on how many inches <m>x</m> you turn the handle to the left or right. As you would expect, turning the faucet to the left makes the water colder, while turning it to the right makes it warmer.
+		</p>
+		<p>
+			Suppose that for the shower faucet, for each inch you twist the handle to the right, the temperature increases by <m>4</m> degrees Fahrenheit. Meanwhile, for the sink faucet, for each inch you twist the handle to the right, the temperature increases by <m>8</m> degrees Fahrenheit. In this case, we would say that the temperature of the water from the sink is more <term>sensitive</term> to changes in the handle position.
         </p>
-        <md>
-            <mrow> \dfrac{\Delta T}{\Delta x} \amp = \dfrac{T\tsub{final} - T\tsub{init}}{x\tsub{final} - x\tsub{init}} </mrow>
-            <mrow> \amp = \dfrac{72 - 70}{0.5 - 0} </mrow>
-            <mrow> \amp = \dfrac{2\text{ degrees Fahrenheit}}{0.5\text{ inches}} </mrow>
-            <mrow> \amp = 4\text{ degrees Fahrenheit per inch} </mrow>
-        </md>
-        <p>
-            But when you turn the sink faucet half an inch to the right, the temperature instead rises to <m>74</m> degrees Fahrenheit. Then the sensitivity of the sink faucet would be:
-        </p>
-        <md>
-            <mrow> \dfrac{\Delta T}{\Delta x} \amp = \dfrac{74 - 70}{0.5 - 0} </mrow>
-            <mrow> \amp = \dfrac{4\text{ degrees Fahrenheit}}{0.5\text{ inches}} </mrow>
-            <mrow> \amp = 8\text{ degrees Fahrenheit per inch} </mrow>
-        </md>
-
-        <p>
-            Hence the temperature of the water from the sink is more <term>sensitive</term> than the temperature of the water from the shower when we make changes in the handle position.
-        </p>
-        
         <p>
             We can get a better understanding of this sensitivity by looking at a graph. Suppose the blue line represents the graph of the shower faucet's temperature, while the red line represents the graph of the sink faucet's temperature.
         </p>
         <image width="75%">
 			<prefigure label="faucets" xmlns="https://prefigure.org">
-				<diagram dimensions="(300,400)" margins="30">
-				<coordinates bbox="(-4,0,4,90)">
-					<grid-axes xlabel="x" ylabel="T(x)" h-frame="bottom" />
-                    <line p1="(-3,58)" p2="(3,82)" stroke="blue"/>
-                    <line p1="(-2,54)" p2="(2,86)" stroke="red"/>
-                    <point p="(-3,58)" fill="blue"/>
-                    <point p="(-2,54)" fill="red"/>
-                    <point p="(3,82)" fill="blue"/>
-                    <point p="(2,86)" fill="red"/>
+				<diagram dimensions="(300,350)" margins="30">
+				<definition>f(x)=70 + 4*x</definition>
+				<definition>g(x)=65 + 8*x</definition>
+				<coordinates bbox="(-2,0,2,90)">
+					<grid-axes xlabel="x" ylabel="T" h-frame="bottom" />
+					<graph at="graph" function="f" domain="(-4,4)" stroke="blue"/>
+					<graph at="graph" function="g" domain="(-4,4)" stroke="red"/>
 				</coordinates>
 				</diagram>
 			</prefigure>
 		</image>
-        <p>
-            Notice that the sensitivity we calculated above is the <em>slope</em> of each line segment. The steeper the graph, the more sensitive the dependent variable is to changes in the independent variable.
+		<aside>
+			<p>
+				Note that the figure is not drawn with equal scales on the axes, so the slopes of the lines you see are not actually <m>4</m> and <m>8</m>. The important thing is that the red line is steeper than the blue line.
+			</p>
+		</aside>
+		<p>
+			The equation of the line for the shower faucet is <m>T = 4x + 70</m>, and the equation for the sink faucet is <m>T = 8x + 65</m>. Notice that the sensitivity we calculated above is the <em>slope</em> of each line:
+		</p>
+		
+		<ul>
+			<li>
+				<p>
+					For the shower, the sensitivity is <m>4</m> degrees Fahrenheit per inch turned.
+				</p>
+			</li>
+			<li>
+				<p>
+					For the sink, the sensitivity is <m>8</m> degrees Fahrenheit per inch turned.
+				</p>
+			</li>
+		</ul>
+		<p>
+			Hence, steeper the graph, the more sensitive the dependent variable is to changes in the independent variable.
         </p>
     </subsection>
 
@@ -126,7 +129,7 @@
             In the example above, the temperature of the water from each faucet was a <term>linear</term> function of the position of each handle, which means that the sensitivity was the same no matter which two points we chose to calculate it between. But what if we analyze a situation where the relationship is <term>nonlinear</term>?
         </p>
         <p>
-			Imagine you're organizing a large concert and selling tickets. The revenue <m>R</m> that you earn (in thousands of dollars) is a function of the price <m>p</m> that you charge (in dollars), modeled by the function
+			Imagine you're selling tickets for a small concert you're organizing at your university. The revenue <m>R</m> that you earn (in thousands of dollars) is a function of the price <m>p</m> that you charge (in dollars), modeled by the function
 			<me>
 				R(p) = 4p - 0.25p^2
 			</me>.
