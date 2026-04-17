@@ -533,7 +533,12 @@
 		<exercise>
 			<introduction>
 				<p>
-					It can be shown that in the ticket example, the <term>quantity demanded</term> of tickets (the number of tickets that consumers are willing to buy, measured in thousands of tickets) is a function of the price, given by <m>x(p)=16-p</m>. The revenue is then given by <m>R(p)=p\cdot x(p)</m>.
+					It can be shown that in the ticket example, the <term>quantity demanded</term> of tickets (the number of tickets that consumers are willing to buy, measured in thousands of tickets) is a function of the price, given by <m>x(p)=4-0.25p</m>. The revenue is then given by
+					<md>
+						<mrow>R(p) \amp = p \cdot x(p) </mrow>
+						<mrow>\amp = p \cdot (4-0.25p) </mrow>
+						<mrow>\amp = 4p - 0.25p^2 </mrow>
+					</md>.
 				</p>
 			</introduction>
 			<task>
