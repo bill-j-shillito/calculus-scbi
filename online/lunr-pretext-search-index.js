@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The derivative",
-  "body": " The derivative     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      Introduction goes here.     Given a function , we now know how to find its sensitivity at any point. We can use this to derive a new function , pronounced prime , such that gives the sensitivity of at any point . This new function is called the derivative of .    In differential form:     We will sometimes separate the notation into and read the symbol as the derivative with respect to . The with respect to just reminds us that is the independent variable.    We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
+  "body": " The derivative     Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.      We now have a process for finding the sensitivity of a function at any point: consider smaller and smaller changes from our point of interest, find the slope over the corresponding interval, and imagine what happens as the change becomes infinitesimal. This process is called differentiation . However, as you no doubt have noticed, these successive approximations can make for a tedious process. Our goal in this section is to find a more direct and efficient way to compute the sensitivity of a function at any point.    The derivative of a function  Consider the function , whose graph is the parabola shown below.  (Insert graph of here)  We can compute the sensitivity of at any point by following the process we outlined above. We can collect our results in a table:                                    What we notice remarkably is that at each point , the sensitivity of is .  Put another way, the sensitivity of is itself a function that depends on the input value. We'll write this new function as , which now tells us the slope of at any point. Since this function was derived from our original function , we'll call the derivative of .   The derivative   The derivative of a function is a new function (read as prime ) defined by . That is, gives the sensitivity of at the point .  Geometrically, gives the slope of the graph of at the point .    With this derivative function, we can instantly find the slope of the graph at any point. For example, at , the slope of is .    Differentiating linear functions  Let's take a moment to consider the simplest functions: linear functions. A linear function has the form , where and are constants. Since the graph of a linear function is a straight line, the sensitivity over any interval is equal to the slope of the line, which is . Hence the derivative of this function is .  A special case of linear functions is constant functions, which have the form for some constant . This can be rewritten as , so the slope of the line (and hence the sensitivity over any interval) is . This makes sense, since by definition a constant function doesn't change as changes, so its sensitivity should be zero. Hence the derivative of a constant function is .     Given a function , we now know how to find its sensitivity at any point. We can use this to derive a new function , pronounced prime , such that gives the sensitivity of at any point . This new function is called the derivative of .    In differential form:     We will sometimes separate the notation into and read the symbol as the derivative with respect to . The with respect to just reminds us that is the independent variable.    We should believe that if , then     If changes by a small amount and changes by a small amount , we should expect the linearity properties to hold:     Derivative of can be done by visualizing a square of side length and seeing how the area changes as changes. You get two rectangles of area and a small square of area , which is negligible , so the total change in area is approximately , and we imagine that if the change were infinitesimal, the change in area would be exactly .  We can temporarily justify this sense of being negligible by looking at the ratios of changes: If we imagine that becomes infinitesimal, the second term drops out, so we say that .  We'll make this sense of negligibility much more precise later when we introduce limits, but for now, we can just rely on intuition and the idea that if is very small, then is even smaller and can be ignored.    Same thing can be done with , by visualizing a cube of side length and seeing how the volume changes as changes. You get three rectangular boxes of volume and three rectangular boxes of volume and a small cube of volume . The higher powers of are negligible , so the total change in volume is approximately , and we imagine that if the change were infinitesimal, the change in volume would be exactly .    Power Rule (as a conjecture right now): (Only works when is a natural number so far)    Derivative of a polynomial term by term... can verify the derivative done last section! If , then , so , which is the same as the slope of the tangent line we found last section. But it's much more direct and efficient.    "
 },
 {
   "id": "sec-the-derivative-2",
@@ -244,9 +244,36 @@ var ptx_lunr_docs = [
   "body": "   Understand and apply linearity properties of the derivative.    Differentiate constant, linear, and power functions.    Combine linearity with product rules to differentiate polynomials.    "
 },
 {
-  "id": "sec-the-derivative-4-1-1",
+  "id": "sec-the-derivative-3-1",
   "level": "2",
-  "url": "sec-the-derivative.html#sec-the-derivative-4-1-1",
+  "url": "sec-the-derivative.html#sec-the-derivative-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "differentiation "
+},
+{
+  "id": "subsec-the-derivative-of-a-function-7",
+  "level": "2",
+  "url": "sec-the-derivative.html#subsec-the-derivative-of-a-function-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "derivative "
+},
+{
+  "id": "def-derivative",
+  "level": "2",
+  "url": "sec-the-derivative.html#def-derivative",
+  "type": "Definition",
+  "number": "3",
+  "title": "The derivative.",
+  "body": " The derivative   The derivative of a function is a new function (read as prime ) defined by . That is, gives the sensitivity of at the point .  Geometrically, gives the slope of the graph of at the point .   "
+},
+{
+  "id": "sec-the-derivative-6-1-1",
+  "level": "2",
+  "url": "sec-the-derivative.html#sec-the-derivative-6-1-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -662,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-2-1",
   "type": "Theorem",
-  "number": "3",
+  "number": "4",
   "title": "Squeeze Theorem.",
   "body": " Squeeze Theorem   If for all sufficiently close to , and , then .   "
 },
@@ -671,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-3-1",
   "type": "Theorem",
-  "number": "4",
+  "number": "5",
   "title": "Intermediate Value Theorem.",
   "body": " Intermediate Value Theorem   If is continuous on , then for all between and , there exists such that .   "
 },
@@ -680,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-4-1",
   "type": "Theorem",
-  "number": "5",
+  "number": "6",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem   If is continuous on , then there exist such that for all .   "
 },
@@ -689,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-valuable-theorems.html#sec-valuable-theorems-4-5-1",
   "type": "Theorem",
-  "number": "6",
+  "number": "7",
   "title": "Mean Value Theorem.",
   "body": " Mean Value Theorem   If is continuous on and differentiable on , then there exists such that .   "
 },
@@ -1157,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fourier-series.html#sec-fourier-series-4-4-1-1",
   "type": "Theorem",
-  "number": "7",
+  "number": "8",
   "title": "Fourier Convergence Theorem.",
   "body": " Fourier Convergence Theorem   Suppose that is periodic of period and that and are continuous on the interval , expect for at most a finite number of jump discontinuities. Then, has a convergent Fourier series expansion. Further, the series converges to when is continuous at and to at any points where is discontinuous.   "
 },
@@ -1310,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-higher-order-partial-derivatives.html#sec-higher-order-partial-derivatives-4-2-1-1",
   "type": "Theorem",
-  "number": "8",
+  "number": "9",
   "title": "Clairaut’s Theorem.",
   "body": " Clairaut's Theorem   If is defined on a disk containing and and are continuous in that disk, then .   "
 },
@@ -1949,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-contour-integrals.html#sec-contour-integrals-4-3-1-1",
   "type": "Theorem",
-  "number": "9",
+  "number": "10",
   "title": "ML Inequality.",
   "body": " ML Inequality   If is continuous on a smooth curve , and if for all on , then , where is the length of .   "
 },
@@ -2012,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-conservative-vector-fields.html#sec-conservative-vector-fields-4-2-1-1",
   "type": "Theorem",
-  "number": "10",
+  "number": "11",
   "title": "Gradient thoerem.",
   "body": " Gradient thoerem   Suppose is a smooth curve parametrized by the vector function with , and let be a differentiable function whose gradient is continuous. Then    "
 },
@@ -2039,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-greens-theorem.html#sec-greens-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "11",
+  "number": "12",
   "title": "Green’s theorems.",
   "body": " Green's theorems   Let be a positively-oriented, piecewise-smooth, simple closed curve in the plane, and let be the region bounded by . Furthermore, let be a vector field such that and have continuous partial derivatives on an open region that contains . Then:   Green's curl theorem:     Green's divergence theorem:       "
 },
@@ -2066,7 +2093,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-2-1",
   "type": "Theorem",
-  "number": "12",
+  "number": "13",
   "title": "Gauss’s divergence theorem.",
   "body": " Gauss's divergence theorem   Let be a simple solid region and let be the boundary surface of , given with positive (outward) orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -2075,7 +2102,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-fundamental-theorems-in-higher-dimensions.html#sec-fundamental-theorems-in-higher-dimensions-4-3-1",
   "type": "Theorem",
-  "number": "13",
+  "number": "14",
   "title": "Stokes’s curl theorem.",
   "body": " Stokes's curl theorem   Let be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve with positive orientation. Let be a vector field whose component functions have continuous partial derivatives on an open region containing . Then:    "
 },
@@ -2102,7 +2129,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-2-1",
   "type": "Theorem",
-  "number": "14",
+  "number": "15",
   "title": "Cauchy’s integral theorem.",
   "body": " Cauchy's integral theorem   Suppose is holomorphic in a simply connected domain and that is continuous in . Then for every simple closed contour in ,     Let be the Pólya vector field of .   Since is holomorphic, it satisfies the Cauchy-Riemann equation, so is irrotational and incompressible. Hence .   "
 },
@@ -2111,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-3-1-1",
   "type": "Theorem",
-  "number": "15",
+  "number": "16",
   "title": "Cauchy-Goursat theorem.",
   "body": " Cauchy-Goursat theorem   Suppose is holomorphic in a simply connected domain . Then for every simple closed contour in , .   "
 },
@@ -2120,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-5-1-1",
   "type": "Theorem",
-  "number": "16",
+  "number": "17",
   "title": "Cauchy-Goursat for simply connected domains.",
   "body": " Cauchy-Goursat for simply connected domains   Suppose are simple closed curves with positive orientation such that are interior to but the regions interior to each , , have no points in common. If is holomorphic on each contour and at each point interior to but exterior to all the , , then    "
 },
@@ -2129,7 +2156,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-9-1-1",
   "type": "Theorem",
-  "number": "17",
+  "number": "18",
   "title": "Cauchy’s integral formula.",
   "body": " Cauchy's integral formula   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -2138,7 +2165,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-integrals-of-holomorphic-functions.html#sec-integrals-of-holomorphic-functions-4-10-1-1",
   "type": "Theorem",
-  "number": "18",
+  "number": "19",
   "title": "Cauchy’s integral formula for derivatives.",
   "body": " Cauchy's integral formula for derivatives   Suppose that is holomorphic in a simply connected domain and is any simple closed contour lying entirely within . Then for any point within ,    "
 },
@@ -2183,7 +2210,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-5-1",
   "type": "Theorem",
-  "number": "19",
+  "number": "20",
   "title": "Cauchy’s residue theorem.",
   "body": " Cauchy's residue theorem   Let be a simply connected domain and a simple closed contour lying entirely within . If is meromorphic on and within with isolated singularities within , then    "
 },
@@ -2192,7 +2219,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-7-1",
   "type": "Theorem",
-  "number": "20",
+  "number": "21",
   "title": "Argument principle.",
   "body": " Argument principle   Let be a simple closed contour lying entirely within a domain . Suppose is meromorphic in and on . Then where is the total number of zeros of (up to multiplicity) inside and is the number of poles of (up to multiplicity) inside .   "
 },
@@ -2201,7 +2228,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-residue-theorem.html#sec-the-residue-theorem-4-8-1-1",
   "type": "Theorem",
-  "number": "21",
+  "number": "22",
   "title": "Rouché’s theorem.",
   "body": " Rouché's theorem   Let be a simple closed contour lying entirely within a domain . Suppose and are analytic in . If the strict inequality holds for all on , then and have the same number of zeros (counted according to their order or multiplicities) inside .   "
 },
@@ -2651,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-picards-theorem.html#sec-picards-theorem-4-2-1-1",
   "type": "Theorem",
-  "number": "22",
+  "number": "23",
   "title": "Picard-Lindelöf theorem.",
   "body": " Picard-Lindelöf theorem   Let be compact intervals, let and be their interiors, and let . Suppose is continuous and Lipschitz in the second variable, that is, there exists an such that Then there exists an such that and a unique differentiable function such that    "
 },
