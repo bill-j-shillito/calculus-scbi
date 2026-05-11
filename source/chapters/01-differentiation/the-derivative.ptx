@@ -25,9 +25,95 @@
 
   <introduction>
     <p>
-      Introduction goes here.
+      We now have a process for finding the sensitivity of a function at any point: consider smaller and smaller changes from our point of interest, find the slope over the corresponding interval, and imagine what happens as the change becomes infinitesimal. This process is called <term>differentiation</term>. However, as you no doubt have noticed, these successive approximations can make for a tedious process. Our goal in this section is to find a more direct and efficient way to compute the sensitivity of a function at <em>any</em> point.
     </p>
   </introduction>
+
+  <subsection xml:id="subsec-the-derivative-of-a-function">
+    <title>The derivative of a function</title>
+    <p>
+      Consider the function <m>f(x)=x^2</m>, whose graph is the parabola shown below.
+    </p>
+    <p>
+      (Insert graph of <m>f(x)=x^2</m> here)
+    </p>
+    <p>
+      We can compute the sensitivity of <m>f</m> at any point by following the process we outlined above. We can collect our results in a table:
+    </p>
+    <tabular>
+      <row header="yes" bottom="minor">
+        <cell><m>x=a</m></cell>
+        <cell><m>\DS\eval{\dv{y}{x}}_{x=a}</m></cell>
+      </row>
+      <row>
+        <cell><m>-3</m></cell>
+        <cell><m>-6</m></cell>
+      </row>
+      <row>
+        <cell><m>-2</m></cell>
+        <cell><m>-4</m></cell>
+      </row>
+      <row>
+        <cell><m>-1</m></cell>
+        <cell><m>-2</m></cell>
+      </row>
+      <row>
+        <cell><m>0</m></cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>1</m></cell>
+        <cell><m>2</m></cell>
+      </row>
+      <row>
+        <cell><m>2</m></cell>
+        <cell><m>4</m></cell>
+      </row>
+      <row>
+        <cell><m>3</m></cell>
+        <cell><m>6</m></cell>
+      </row>
+    </tabular>
+    <p>
+      What we notice <mdash/> remarkably <mdash/> is that at each point <m>x=a</m>, the sensitivity of <m>f</m> is <me>\eval{\DS\dv{f}{x}}_{x=a}=2a</me>.
+    </p>
+    <p>
+      Put another way, the sensitivity of <m>f</m> is itself a function that depends on the input value. We'll write this new function as <me>f'(x)=2x</me>, which now tells us the slope of <m>f(x)=x^2</m> at any point.
+      Since this function <m>f'</m> was <em>derived</em> from our original function <m>f</m>, we'll call <m>f'</m> the <term>derivative</term> of <m>f</m>.
+    </p>
+    <definition xml:id="def-derivative">
+      <title>The derivative</title>
+      <statement>
+        <p>
+          The <term>derivative</term> of a function <m>f</m> is a new function <m>f'</m> (read as <q><m>f</m> prime</q>) defined by
+          <me>
+            f'(a) = \eval{\dv{f}{x}}_{x=a}
+          </me>.
+          That is, <m>f'(a)</m> gives the sensitivity of <m>f</m> at the point <m>x=a</m>.
+        </p>
+        <p>
+          Geometrically, <m>f'(a)</m> gives the slope of the graph of <m>y=f(x)</m> at the point <m>(a,f(a))</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      With this derivative function, we can instantly find the slope of the graph at any point. For example, at <m>x=10</m>, the slope of <m>y=x^2</m> is
+      <md>
+        <mrow>f'(10) \amp = 2(10)</mrow>
+        <mrow> \amp = 20</mrow>
+      </md>.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-differentiating-linear-functions">
+    <title>Differentiating linear functions</title>
+    <p>
+      Let's take a moment to consider the simplest functions: linear functions. A linear function has the form <me>f(x)=mx+b</me>, where <m>m</m> and <m>b</m> are constants. Since the graph of a linear function is a straight line, the sensitivity over any interval is equal to the slope of the line, which is <m>m</m>. Hence the derivative of this function is <me>f'(x)=m</me>.
+    </p>
+    <p>
+      A special case of linear functions is constant functions, which have the form <me>f(x)=c</me> for some constant <m>c</m>. This can be rewritten as <me>f(x)=0x+c</me>, so the slope of the line (and hence the sensitivity over any interval) is <m>0</m>. This makes sense, since by definition a constant function doesn't change as <m>x</m> changes, so its sensitivity should be zero. Hence the derivative of a constant function is <me>f'(x)=0</me>.
+    </p>
+  </subsection>
   
 
   <ul>
